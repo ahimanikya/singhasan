@@ -4,7 +4,9 @@ Pravakar Satapathy’s first Odia poetry collection, presented as an online book
 
 Live site: https://singhasan.poemwithoutborders.org/
 
-The home page introduces the poet and five illustrated passages. The illustrated book pairs each poem with artwork and an English image narrative. Quiet mode provides a continuous, text-only, paginated reader with local bookmarks, text sizing and underlining.
+The home page introduces the poet and five illustrated passages. Each poem has a permanent page in the Kabita Live reading style, with selectable verse, artwork, an English image narrative and reader tools. The illustrated book and quiet reader use the same source text. Quiet mode provides a continuous, text-only, paginated reader with local bookmarks, text sizing and underlining.
+
+Permanent addresses such as `poem-1.html` open the regular poem page. “Read in the book” adds `?view=book` for the framed, illustrated book; “Read quietly” opens the spread containing the current poem. The main Quiet reading link starts at the title page. Sharing always returns the permanent poem address, and canonical metadata uses that same address.
 
 ## Build and preview
 

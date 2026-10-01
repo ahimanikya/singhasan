@@ -37,3 +37,20 @@ assert len(ET.parse(root/'sitemap.xml').getroot())==74
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
 print('Validated 74 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+
+# Every permanent poem URL renders the same source text and exposes the book view.
+for chapter in book['chapters']:
+    name='intro.html' if not chapter['number'] else f"poem-{chapter['number']}.html"
+    html=(root/name).read_text()
+    assert 'reading-page standalone-page' in html, name
+    assert f'href="{name}?view=book"' in html, name
+    data=json.loads(re.search(r'<script type="application/json" id="reading-data">(.*?)</script>',html,re.S).group(1))
+    assert data['id']==chapter['number']
+    expected=[]
+    for page in chapter['pages']:
+        for block in re.split(r'\n\s*\n',page['text']):
+            expected.append([block.replace('\n',' ')] if chapter['kind']=='prose' else block.split('\n'))
+    assert data['variants']['or']['stanzas']==expected, name
+assert 'href="intro.html?view=book"' in (root/'book.html').read_text()
+assert 'poem-68.html?view=book&amp;leaf=last' in (root/'back-cover.html').read_text()
+print('All 69 standalone sections preserve their source text and link to the same section in book view.')

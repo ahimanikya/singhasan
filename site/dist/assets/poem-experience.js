@@ -95,16 +95,16 @@ function turn(direction){
  render();save();if(!pages[pageIndex]?.cover)paperTurn(direction,paper);if(effects.sound)rustle();
 }
 function announcePoem(){$('#focus-announcement').textContent=pages[pageIndex]?.cover?(pages[pageIndex].cover==='front'?'Title page':'End of the book'):poems[poemIndex].variants[chosen()].title}
-async function openReader(){
+async function openReader(start='poem'){
  if(opening||dialog.open)return;opening=true;returnFocus=document.activeElement;returnScroll=scrollY;closeSavedPage();
  const entry=$('#open-focus');entry.setAttribute('aria-busy','true');const loaded=await loadEdition();entry.removeAttribute('aria-busy');
  language=document.querySelector('[data-reading-language][aria-selected=true]')?.dataset.readingLanguage||pageData.source_language;if(language==='original')language=pageData.source_language;
  try{const saved=JSON.parse(localStorage.getItem(savedKey));if(['22','26','30'].includes(saved?.size))$('#focus-size').value=saved.size}catch{}
- dialog.style.setProperty('--focus-size',$('#focus-size').value+'px');syncEffects();dialog.showModal();document.body.style.overflow='hidden';await document.fonts.ready;paginate({cover:'front'});area.focus();opening=false;
+ dialog.style.setProperty('--focus-size',$('#focus-size').value+'px');syncEffects();dialog.showModal();document.body.style.overflow='hidden';await document.fonts.ready;paginate(start==='cover'?{cover:'front'}:{id:pageData.id,unit:-1});area.focus();opening=false;
  $('#focus-load-note').hidden=loaded;$('#focus-load-note').textContent=loaded?'':'The complete book could not be loaded. Close and reopen to try again.';
 }
 function closeReader(){cancelPaperTurn();clearSelection();save();settings.hidden=true;$('#focus-settings-button').setAttribute('aria-expanded','false');dialog.close()}
-$('#open-focus').addEventListener('click',openReader);$('#close-focus').addEventListener('click',closeReader);
+$('#open-focus').addEventListener('click',()=>openReader());$('#close-focus').addEventListener('click',closeReader);
 dialog.addEventListener('close',()=>{cancelPaperTurn();save();document.body.style.overflow='';window.scrollTo(0,returnScroll);returnFocus?.focus({preventScroll:true})});
 $('#focus-settings-button').addEventListener('click',()=>{settings.hidden=!settings.hidden;$('#focus-settings-button').setAttribute('aria-expanded',String(!settings.hidden));if(!settings.hidden){clearSelection();renderSaved();$('#focus-language').focus()}});
 function dismissQuietSettings(restore=false){settings.hidden=true;$('#focus-settings-button').setAttribute('aria-expanded','false');if(restore)$('#focus-settings-button').focus({preventScroll:true})}
@@ -271,5 +271,5 @@ refreshSavedButton();
 
 // Sharing uses the site's complete share dialog.
 document.querySelector('[data-share]')?.addEventListener('click',()=>closeSavedPage(),true);
-window.addEventListener('load',()=>{const code=query.get('lang');if(code==='original'||pageData.variants[code])$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();refreshSavedButton();if(query.get('focus')==='1')openReader()});
+window.addEventListener('load',()=>{const code=query.get('lang');if(code==='original'||pageData.variants[code])$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();refreshSavedButton();if(query.get('focus')==='1')openReader(query.get('start')==='cover'||pageData.id===0?'cover':'poem')});
 })();
