@@ -1,0 +1,21 @@
+<dialog id="focus-reader" aria-label="Quiet book reader">
+ <div class="focus-shell">
+  <header class="focus-top"><button id="close-focus" aria-label="Exit reading mode">← <span>Exit reading</span></button><div class="focus-top-tools"><button id="focus-bookmark" aria-label="Bookmark this page" aria-pressed="false" title="Bookmark this page"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg></button><button id="focus-settings-button" aria-expanded="false" aria-controls="focus-settings" aria-label="Reading settings">Aa</button></div></header>
+  <section id="focus-settings" hidden aria-label="Reading settings">
+   <label>Language <select id="focus-language"><option value="original">Odia</option><option value="or" hidden>Odia</option></select></label>
+   <label>Text size <select id="focus-size"><option value="22">Standard</option><option value="26">Large</option><option value="30">Extra large</option></select></label>
+   <label>Section <select id="focus-poem"></select></label>
+   <label class="focus-switch"><span>Paper turn</span><input type="checkbox" id="focus-motion"></label>
+   <label class="focus-switch"><span>Soft page sound</span><input type="checkbox" id="focus-sound"></label>
+   <button id="focus-sound-test" type="button" hidden>Try the sound</button>
+   <p id="focus-load-note" role="status" hidden></p><p id="focus-effects-note" role="status"></p>
+   <details id="focus-saved"><summary>Saved places &amp; passages</summary><div id="focus-saved-list"></div></details>
+   <p>Select a word or phrase to underline it. On a phone, hold a word and adjust the handles.</p>
+   <p>Your place, bookmarks and underlines stay on this device.</p>
+  </section>
+  <div class="focus-book-frame"><main id="focus-pages" tabindex="0" aria-label="Book pages"></main></div>
+  <div id="focus-selection-tools" role="toolbar" aria-label="Selected passage" hidden><button id="focus-mark">Underline</button><button id="focus-erase">Remove underline</button><button id="focus-selection-close" aria-label="Dismiss passage tools">×</button></div>
+  <footer class="focus-bottom"><button id="focus-prev" aria-label="Previous page">←</button><span id="focus-progress" role="status" aria-live="polite"></span><button id="focus-next" aria-label="Next page">→</button></footer>
+  <span class="sr-only" id="focus-announcement" role="status"></span>
+ </div>
+</dialog>

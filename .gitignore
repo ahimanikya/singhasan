@@ -1,0 +1,13 @@
+# Publish the self-contained website, keeping local working material outside Git.
+/*
+!/.gitignore
+!/README.md
+!/.github/
+!/site/
+site/__pycache__/
+site/import_design_system.py
+site/EDITORIAL-PREFERENCES.txt
+**/.DS_Store
+**/*.pyc
+**/.env*
+site/.openai/

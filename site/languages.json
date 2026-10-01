@@ -1,0 +1,46 @@
+{
+  "or": {
+    "name": "Odia",
+    "native": "ଓଡ଼ିଆ"
+  },
+  "en": {
+    "name": "English",
+    "native": "English"
+  },
+  "hi": {
+    "name": "Hindi",
+    "native": "हिन्दी"
+  },
+  "bn": {
+    "name": "Bengali",
+    "native": "বাংলা"
+  },
+  "ta": {
+    "name": "Tamil",
+    "native": "தமிழ்"
+  },
+  "te": {
+    "name": "Telugu",
+    "native": "తెలుగు"
+  },
+  "ml": {
+    "name": "Malayalam",
+    "native": "മലയാളം"
+  },
+  "kn": {
+    "name": "Kannada",
+    "native": "ಕನ್ನಡ"
+  },
+  "mr": {
+    "name": "Marathi",
+    "native": "मराठी"
+  },
+  "gu": {
+    "name": "Gujarati",
+    "native": "ગુજરાતી"
+  },
+  "as": {
+    "name": "Assamese",
+    "native": "অসমীয়া"
+  }
+}

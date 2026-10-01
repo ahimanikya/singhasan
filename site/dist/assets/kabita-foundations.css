@@ -1,0 +1,10 @@
+/* Imported approved foundations. Book composition lives in book-pages.css. */
+@font-face{font-family:'Noto Serif Oriya';src:url('fonts/NotoSerifOriya-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('fonts/CormorantGaramond-Variable.ttf') format('truetype');font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('fonts/CormorantGaramond-Italic-Variable.ttf') format('truetype');font-weight:300 700;font-style:italic;font-display:swap}
+@font-face{font-family:'Source Serif 4';src:url('fonts/SourceSerif4-Variable.ttf') format('truetype');font-weight:200 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Source Serif 4';src:url('fonts/SourceSerif4-Italic-Variable.ttf') format('truetype');font-weight:200 900;font-style:italic;font-display:swap}
+@font-face{font-family:'Tiro Devanagari Hindi';src:url('fonts/TiroDevanagariHindi-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+:root{--paper:#F5EFDF;--rust:#963F28;--sea:#125465;--hearth:#78643A;--ink:#263C3C;--muted:#655F51;--panel:#EAE1CD;--line:#D2C6AC;--display:'Cormorant Garamond',Georgia,serif;--serif:'Source Serif 4',Georgia,serif;--odia:'Noto Serif Oriya',serif;--ui:Arial,'Noto Serif Oriya',sans-serif;--reading-leading:1.95;--book-binding:#735035;--book-desk:#e5dfce;}
+body.night{--paper:#1c292b;--panel:#293a3b;--ink:#f3eadb;--muted:#c0bcae;--rust:#eeaa8b;--sea:#a9c9c8;--hearth:#cbb58c;--line:#4a5653;--book-binding:#101c1e;--book-desk:#142022;color-scheme:dark}
+[lang=or]{font-synthesis:none;letter-spacing:normal}.reading-page #experience-verse:is([lang=hi],[lang=mr]),.poem-heading h1:is(:lang(hi),:lang(mr)){font-family:'Tiro Devanagari Hindi',serif;font-weight:400;font-synthesis:none}a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--sea);outline-offset:4px}.poem-actions button{min-height:48px}.poem-actions button:disabled{opacity:.45;cursor:default}

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "NotoSerifBengali-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifbengali/NotoSerifBengali%5Bwdth%2Cwght%5D.ttf",
+    "bytes": 981812
+  },
+  {
+    "file": "NotoSerifBengali-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifbengali/OFL.txt",
+    "bytes": 4383
+  },
+  {
+    "file": "NotoSerifTamil-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoseriftamil/NotoSerifTamil%5Bwdth%2Cwght%5D.ttf",
+    "bytes": 420124
+  },
+  {
+    "file": "NotoSerifTamil-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoseriftamil/OFL.txt",
+    "bytes": 4381
+  },
+  {
+    "file": "NotoSerifTelugu-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoseriftelugu/NotoSerifTelugu%5Bwght%5D.ttf",
+    "bytes": 543100
+  },
+  {
+    "file": "NotoSerifTelugu-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoseriftelugu/OFL.txt",
+    "bytes": 4382
+  },
+  {
+    "file": "NotoSerifMalayalam-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifmalayalam/NotoSerifMalayalam%5Bwght%5D.ttf",
+    "bytes": 242048
+  },
+  {
+    "file": "NotoSerifMalayalam-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifmalayalam/OFL.txt",
+    "bytes": 4385
+  },
+  {
+    "file": "NotoSerifKannada-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifkannada/NotoSerifKannada%5Bwght%5D.ttf",
+    "bytes": 495384
+  },
+  {
+    "file": "NotoSerifKannada-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifkannada/OFL.txt",
+    "bytes": 4383
+  },
+  {
+    "file": "NotoSerifGujarati-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifgujarati/NotoSerifGujarati%5Bwght%5D.ttf",
+    "bytes": 378356
+  },
+  {
+    "file": "NotoSerifGujarati-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifgujarati/OFL.txt",
+    "bytes": 4384
+  }
+]

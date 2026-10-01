@@ -1,0 +1,18 @@
+@font-face{font-family:'Noto Serif Bengali';src:url('fonts/NotoSerifBengali-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Serif Tamil';src:url('fonts/NotoSerifTamil-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Serif Telugu';src:url('fonts/NotoSerifTelugu-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Serif Malayalam';src:url('fonts/NotoSerifMalayalam-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Serif Kannada';src:url('fonts/NotoSerifKannada-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Noto Serif Gujarati';src:url('fonts/NotoSerifGujarati-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Tiro Devanagari Hindi';src:url('fonts/TiroDevanagariHindi-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+.reading-page #experience-verse[lang="or"],#focus-reader .focus-page[lang="or"],.poem-heading h1:lang(or),.share-card [lang="or"]{font-family:"Noto Serif Oriya",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="hi"],#focus-reader .focus-page[lang="hi"],.poem-heading h1:lang(hi),.share-card [lang="hi"]{font-family:"Tiro Devanagari Hindi",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="mr"],#focus-reader .focus-page[lang="mr"],.poem-heading h1:lang(mr),.share-card [lang="mr"]{font-family:"Tiro Devanagari Hindi",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="bn"],#focus-reader .focus-page[lang="bn"],.poem-heading h1:lang(bn),.share-card [lang="bn"]{font-family:"Noto Serif Bengali",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="as"],#focus-reader .focus-page[lang="as"],.poem-heading h1:lang(as),.share-card [lang="as"]{font-family:"Noto Serif Bengali",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="ta"],#focus-reader .focus-page[lang="ta"],.poem-heading h1:lang(ta),.share-card [lang="ta"]{font-family:"Noto Serif Tamil",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="te"],#focus-reader .focus-page[lang="te"],.poem-heading h1:lang(te),.share-card [lang="te"]{font-family:"Noto Serif Telugu",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="ml"],#focus-reader .focus-page[lang="ml"],.poem-heading h1:lang(ml),.share-card [lang="ml"]{font-family:"Noto Serif Malayalam",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="kn"],#focus-reader .focus-page[lang="kn"],.poem-heading h1:lang(kn),.share-card [lang="kn"]{font-family:"Noto Serif Kannada",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="gu"],#focus-reader .focus-page[lang="gu"],.poem-heading h1:lang(gu),.share-card [lang="gu"]{font-family:"Noto Serif Gujarati",serif;font-synthesis:none}
+.reading-page #experience-verse[lang="en"],#focus-reader .focus-page[lang="en"],.poem-heading h1:lang(en),.share-card [lang="en"]{font-family:"Source Serif 4",serif;font-synthesis:none}

@@ -1,0 +1,57 @@
+/* Approved shared poem reader. Typography and colours inherit the site system. */
+.reading-page .poem-opening{margin-top:30px}
+.reading-page .experience-bar{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;width:100%;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.reading-page .reading-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.reading-page .reading-tabs button{font:18px/1.5 var(--ui);min-height:56px;padding:8px 16px;border-bottom:2px solid transparent}
+.reading-page .reading-tabs button span{display:block;font:12px/1.5 var(--ui);color:var(--muted)}
+.reading-page .reading-tabs button[aria-selected=true]{border-color:var(--rust);color:var(--rust)}
+.reading-page .reading-tabs button[lang=hi]{font-family:'Tiro Devanagari Hindi',serif}
+.reading-page .reading-tabs button[lang=or]{font-family:var(--odia)}
+.reading-page .mark-toggle{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:8px 12px;font:16px/1.5 var(--ui)}
+.reading-page .reader-tools{display:flex;justify-content:space-between;align-items:center;gap:16px;border:0;padding:0;margin:0 0 6px}
+.reading-page .mark-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.reading-page .mark-toggle[aria-pressed=true]{color:var(--rust);background:color-mix(in srgb,var(--panel) 55%,transparent)}
+.reading-page .clear-marks{font:14px/1.5 var(--ui);text-decoration:underline;text-underline-offset:4px;min-height:44px;padding:8px}
+.reading-page .mark-help{position:absolute;right:0;top:100%;z-index:35;width:300px;max-width:calc(100vw - 32px);box-sizing:border-box;padding:14px 16px;font:14px/1.6 var(--ui);color:var(--ink);background:var(--paper);border:1px solid var(--line);box-shadow:0 4px 16px #0002;border-radius:4px}
+.reading-page .mark-help[hidden]{display:none}
+.reading-page .verse{margin-top:0;max-width:730px}
+.reading-page .poem-line{display:block;min-height:1.9em;line-height:1.9;overflow-wrap:anywhere}
+.reading-page .pencil-mark{text-decoration-line:underline;text-decoration-color:color-mix(in srgb,var(--rust) 75%,transparent);text-decoration-thickness:.07em;text-underline-offset:.19em;text-decoration-skip-ink:auto}
+@media(max-width:760px){
+ .reading-page .experience-bar{gap:12px}.reading-page .reading-tabs{width:100%;justify-content:space-between;gap:0}.reading-page .reading-tabs button{padding:8px 12px;min-width:92px}
+}
+
+.reading-page [role=tabpanel]:focus-visible{outline:2px solid var(--rust);outline-offset:8px}
+
+.reading-page .line-words{user-select:text;-webkit-user-select:text;cursor:text}
+.reading-page .selection-tools{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:30;display:flex;gap:4px;max-width:calc(100vw - 24px);padding:6px;background:var(--paper);border:1px solid var(--line);box-shadow:0 4px 20px #0002;color:var(--ink)}
+.reading-page .selection-tools[hidden]{display:none}
+.reading-page .selection-tools button{min-height:44px;padding:8px 12px;white-space:nowrap;font:15px/1.5 var(--ui)}
+.reading-page #underline-selection{color:var(--rust)}
+
+
+/* A little breathing room above the poem artwork. */
+.reading-page .poem-opening>.poem-art{margin-top:24px}
+@media(max-width:760px){.reading-page .poem-opening>.poem-art{margin-top:8px}}
+
+/* The underline action retains a full touch target. */
+.reading-page .mark-pair{display:inline-flex;align-items:center;gap:0;flex-wrap:nowrap}
+.reading-page .reader-tools .mark-toggle{padding-right:0}
+
+/* Text size and underlining share one quiet reading-controls row. */
+.reading-page .reader-tools{justify-content:flex-start;gap:0}
+.reading-page .mark-tools{display:contents}
+.reading-page .reader-tools .mark-toggle{width:48px;min-width:48px;height:48px;padding:0 0 0 12px;justify-content:flex-end}
+.reading-page .mark-toggle svg{width:20px;height:20px}
+@media(min-width:761px){.reading-page .mark-help{left:0;right:auto}}
+
+/* Final compact control: icon only, alongside the three size choices. */
+.reading-page .reader-tools .mark-toggle{padding:0;justify-content:center}
+
+.reading-page .mark-pair{position:relative}
+@media(max-width:760px){.reading-page .reader-tools{align-items:start;flex-wrap:wrap}.reading-page .mark-help{position:fixed;left:16px;right:16px;top:auto;bottom:80px;width:auto}}
+.reading-page .source-end-marker[hidden]{display:none}
+/* Source-backed stanza restoration, including the formerly flattened poem 9. */
+.reading-page .verse .stanza+.stanza{margin-top:1.35em}
+.reading-page .inline-verse-break{display:block;height:0}
+.reading-page .inline-verse-break.stanza-break{height:1.35em}

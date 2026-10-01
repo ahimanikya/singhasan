@@ -1,0 +1,28 @@
+/* The two boards of the same volume. Typography scales with the cover itself. */
+.cover-face{position:relative;isolation:isolate;container-type:inline-size;aspect-ratio:2/3;width:100%;height:100%;overflow:hidden;background:#eee5ce;color:#263c3c;border-radius:1px}
+.cover-face::after{content:'';position:absolute;inset:0;z-index:4;pointer-events:none;box-shadow:inset 0 0 0 1px #36251930,inset 2px 0 3px #ffffff50,inset -1px -1px 2px #21170d30}
+.cover-face-front .front-cover-art{width:100%;height:100%;object-fit:cover;box-shadow:none}
+.front-cover-colophon{position:absolute;bottom:4.3%;left:16%;right:16%;display:flex;align-items:center;justify-content:center;gap:3cqw;color:#f5e9ce;font:400 3.3cqw/1.6 var(--odia);text-shadow:0 1px 3px #26180e}
+.front-cover-colophon span{height:1px;width:6cqw;background:currentColor;opacity:.65}
+.cover-face-back{background:linear-gradient(#f2ead7c9,#f2ead7c9),url('cotton-paper.webp') center/cover}
+.back-cover-copy{position:relative;z-index:2;padding:6cqw 10cqw 0}
+.cover-face-back .back-cover-ornament{width:6cqw;height:6cqw;object-fit:contain;margin:0 0 3cqw;box-shadow:none;opacity:.8}
+.cover-face-back h2{margin:0 0 4cqw;font:600 8.2cqw/1.08 var(--display);letter-spacing:-.02em;color:#263c3c}
+.back-cover-blurb{font:400 3.45cqw/1.6 var(--serif);color:#3d463c}
+.back-cover-blurb p{margin:0 0 3.3cqw}
+.back-cover-author{display:grid;grid-template-columns:22cqw minmax(0,1fr);gap:4cqw;align-items:center;border-top:1px solid #b9ad8e;padding-top:4cqw;margin-top:4cqw}
+.cover-face-back .back-cover-author img{display:block;width:22cqw;height:29.33cqw;object-fit:cover;box-shadow:none;border-radius:1px;mix-blend-mode:multiply}
+.back-cover-author h3{font:400 4.3cqw/1.65 var(--odia);margin:0 0 1.8cqw;color:#263c3c;white-space:nowrap}
+.back-cover-author p{font:400 3cqw/1.65 var(--serif);margin:0;color:#3d463c}
+.back-cover-landscape{position:absolute;bottom:0;left:0;right:0;height:28cqw;background:url('covers/singhasan-back-cover-v1.png') center bottom/100% auto no-repeat;mask-image:linear-gradient(transparent,#000 28%)}
+.bound-cover{position:relative;border:1px solid #735035;border-left:8px solid #735035;border-radius:3px 2px 2px 3px;box-shadow:1px 1px 0 #b7a383,3px 2px 0 #e9dcc3,5px 3px 0 #baaa8a,7px 4px 0 #ecdfc5,9px 5px 0 #735035,13px 16px 24px #29332230;isolation:isolate}
+.bound-cover::after{content:'';position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(90deg,#29170740,transparent 2%,#ffffff26 3%,#2a170e30 3.6%,transparent 5.4%)}
+.bound-back{border-left:1px solid #735035;border-right:8px solid #735035;border-radius:2px 3px 3px 2px;box-shadow:-1px 1px 0 #b7a383,-3px 2px 0 #e9dcc3,-5px 3px 0 #baaa8a,-7px 4px 0 #ecdfc5,-9px 5px 0 #735035,-13px 16px 24px #29332230}
+.bound-back::after{transform:scaleX(-1)}
+.book-opening{grid-template-columns:minmax(0,1fr) 350px;gap:64px}.book-opening .book-cover{width:100%;margin-top:12px}.back-cover-page{max-width:460px;padding-inline:10px}.back-cover-links{margin-top:32px}
+#focus-reader .focus-cover{height:100%;width:100%}#focus-reader .focus-cover img{object-fit:cover}#focus-reader .focus-cover .back-cover-ornament{object-fit:contain}
+.focus-book-frame.closed-book{border-width:1px;border-left-width:8px;--binding:#735035;border-color:var(--binding)}
+.focus-book-frame.closed-book::after{z-index:5;box-shadow:none;background:linear-gradient(90deg,#29170740,transparent 2%,#ffffff26 3%,#2a170e30 3.6%,transparent 5.4%)}
+.focus-book-frame.closed-book.back-facing{border-left-width:1px;border-right-width:8px;box-shadow:-2px 1px 0 #c9b99c,-4px 2px 0 #eee2ca,-6px 3px 0 #b8a789,-8px 4px 0 var(--binding),-10px 12px 28px #19231e3d}
+.focus-book-frame.closed-book.back-facing::after{transform:scaleX(-1)}
+@media(max-width:760px){.book-opening{gap:32px;padding-inline:8px}.book-opening .book-cover{width:calc(100% - 16px);max-width:360px;margin-top:0}.back-cover-page{padding-inline:8px}.bound-cover{border-left-width:6px}.bound-back{border-left-width:1px;border-right-width:6px}}
