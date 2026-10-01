@@ -52,3 +52,20 @@
  .standalone-page .page-nav a{font-size:13px}
 }
 @media print{.standalone-page .poem-reading-options,.standalone-page .book-reading-end{display:none}.standalone-page .printed-spread{display:block}.standalone-page #reading{width:100%;margin:0}}
+
+/* The book counterpart of Kabita Live's nearby-edition panel. */
+.book-glance{display:none}
+.standalone-page .book-glance{display:block;margin:24px 0 0;padding:20px;max-width:100%;box-sizing:border-box;color:var(--ink);background:color-mix(in srgb,var(--rust) 7%,transparent);border-radius:3px}
+.book-glance h2{font:600 26px/1.25 var(--display);margin:0 0 10px}
+.book-glance ol{list-style:none;margin:0;padding:0}
+.book-glance li{margin:0;border-bottom:1px solid color-mix(in srgb,var(--line) 55%,transparent)}
+.book-glance a{display:grid;grid-template-columns:24px minmax(0,1fr);column-gap:10px;align-items:start;min-height:48px;padding:10px 8px;text-decoration:none;border-left:2px solid transparent}
+.book-glance .toc-number{font:13px/1.7 var(--ui);color:var(--muted)}
+.book-glance .toc-title{font:18px/1.55 var(--odia);overflow-wrap:anywhere}
+.book-glance a[aria-current=page]{border-left-color:var(--rust);background:color-mix(in srgb,var(--rust) 5%,transparent)}
+.book-glance a[aria-current=page] .toc-title{color:var(--rust)}
+.book-glance a:hover{background:color-mix(in srgb,var(--ink) 5%,transparent)}
+.book-glance a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.book-glance .toc-all{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;font:15px var(--ui);text-decoration:underline;text-underline-offset:4px;border:0}
+@media(max-width:760px){.standalone-page .book-glance{margin-top:18px;padding:16px 12px}.book-glance h2{font-size:24px}.book-glance .toc-title{font-size:17px}}
+@media print{.standalone-page .book-glance{display:none}}

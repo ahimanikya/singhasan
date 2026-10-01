@@ -41,6 +41,15 @@ def excerpt(c,limit=3):
         text=lines[0];end=text.find('।',text.find('।')+1)+1
         return e(text[:end])
     return '<br>'.join(e(line) for line in lines[:limit])
+def book_panel(c):
+    position=chapters.index(c)
+    start=max(0,min(position-2,len(chapters)-5))
+    rows=[]
+    for item in chapters[start:start+5]:
+        current=' aria-current="page"' if item['number']==c['number'] else ''
+        rows.append(f'<li><a href="{path(item)}"{current}><span class="toc-number"><span class="sr-only">Page </span>{book_page(item):02}</span><span class="toc-title" lang="or">{e(first_line(item))}</span></a></li>')
+    return '<section class="book-glance"><nav aria-labelledby="book-glance-heading" lang="en"><h2 id="book-glance-heading">In the book</h2><ol>'+''.join(rows)+'</ol><a class="toc-all" href="contents.html">All poems in the book</a></nav></section>'
+
 def nearby(c):
     current=c['number']
     if current:
@@ -49,7 +58,7 @@ def nearby(c):
     else:
         illustration=art['0'];image_src='assets/poems/'+illustration['id']+'.png';alt=illustration['alt']
         title='At the threshold';narrative='The introduction opens a conversation about poetry itself: its freedom, its inward life, and its capacity to hold the human world. A flute beside still water offers a quiet threshold before the journey through power and history begins.'
-    return f'<aside class="book-companion"><figure class="poem-art"><img src="{image_src}" width="1536" height="1024" alt="{e(alt)}" loading="eager"><figcaption lang="en">{e(title)}</figcaption></figure><div class="illustration-reading"><p class="eyebrow" lang="en">Image story</p><h2 lang="en">{e(title)}</h2><p class="image-narrative" lang="en">{e(narrative)}</p><blockquote lang="or">{excerpt(c)}</blockquote><span class="image-page-ornament" aria-hidden="true">{icon("talapatra")}</span></div></aside>'
+    return f'<aside class="book-companion"><figure class="poem-art"><img src="{image_src}" width="1536" height="1024" alt="{e(alt)}" loading="eager"><figcaption lang="en">{e(title)}</figcaption></figure><div class="illustration-reading"><p class="eyebrow" lang="en">Image story</p><h2 lang="en">{e(title)}</h2><p class="image-narrative" lang="en">{e(narrative)}</p><blockquote lang="or">{excerpt(c)}</blockquote><span class="image-page-ornament" aria-hidden="true">{icon("talapatra")}</span></div>{book_panel(c)}</aside>'
 
 def reader_toolkit(c):
     tabs=''
