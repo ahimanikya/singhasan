@@ -49,5 +49,15 @@
       "Same-assistant design verification; no independent editorial or linguistic review."
     ]
   },
-  "publication": "pending"
+  "publication": {
+    "status": "deployed-and-browser-verified",
+    "commit": "f276372ccfd99753176490c8c526f28b0d2f7c77",
+    "run": "https://github.com/ahimanikya/singhasan/actions/runs/37002648411",
+    "url": "https://singhasan.poemwithoutborders.org/contents.html",
+    "checks": [
+      "Live contents has Aa, Share and Read quietly",
+      "Quiet section chooser opens selected poem in full-book spread",
+      "Live spread left-aligned with no page overflow"
+    ]
+  }
 }
