@@ -13,7 +13,7 @@
   "model": "v6",
   "submission_limit": 4,
   "generation_policy": "One submission per part, no automatic retries. Four parts at completed paragraph boundaries; combine the selected recordings in source order without changing speed or pitch.",
-  "status": "assembled-for-review",
+  "status": "published-for-review",
   "parts": [
     {
       "part": 1,
@@ -164,5 +164,13 @@
     }
   ],
   "assembly": "All four selected takes concatenated in source order, retaining their complete audio. No trimming, overlap, speed or pitch changes. Decoded to stereo 48 kHz PCM, then encoded once to AAC at 192 kbps.",
-  "listening_review": "Pronunciation, word completeness and vocal continuity remain for human review; file checks do not establish spoken accuracy."
+  "listening_review": "Pronunciation, word completeness and vocal continuity remain for human review; file checks do not establish spoken accuracy.",
+  "publication": {
+    "url": "https://singhasan.poemwithoutborders.org/listen.html#introduction",
+    "media_commit": "7ddf2bb9a793cbf5559b08fe7b6c753efa57e003",
+    "deployment_run": "https://github.com/ahimanikya/singhasan/actions/runs/36992274970",
+    "deployment_status": "success",
+    "validation": "71 recording hashes and 75 pages validated; four source parts and combined introduction fully decoded; live introduction playback confirmed; byte-range seeking supported (HTTP 206).",
+    "pronunciation_review": "pending"
+  }
 }

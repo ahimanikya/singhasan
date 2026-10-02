@@ -8,7 +8,7 @@
   "weirdness": 20,
   "model": "v6",
   "generation_policy": "One submission per track; preserve both returned candidates; no automatic retries.",
-  "source_file": "site/dist/book.js",
+  "source_file": "output/singhasan-edition/site/dist/book.js",
   "source_sha256": "140dd15a8d3a33c52432bccc0a7fd85d52d627a0f4b5cfe74cc96c1026df5229",
   "text_review_status": "Current edition text, full proofreading pending per audit; unchanged for recitation.",
   "tracks": [
@@ -1969,7 +1969,7 @@
   },
   "strategy": "The existing full Odia prose introduction follows the short English welcome; then one complete track per poem, in book order, and the English closing. Continuous playback or individual track selection.",
   "submission_limit": 70,
-  "status": "all-70-published-for-review",
+  "status": "all-71-published-for-review",
   "workspace_url": "https://suno.com/create?wid=fecafd89-1904-43d6-8cd7-46d0ccd5465b",
   "default_controls": {
     "duration": "Auto",
@@ -1986,14 +1986,14 @@
   "english_style": "Warm, natural English spoken narration for an Odia poetry audiobook. Flowing conversational pace, gentle poetic cadence, relaxed and intimate, lightly expressive phrase endings. Speak every supplied word clearly and naturally. Clear close voice, dry sound, no echo. Very faint bamboo flute before and after the narration. Spoken delivery, no singing.",
   "publication": {
     "url": "https://singhasan.poemwithoutborders.org/listen.html",
-    "media_commit": "efa65d16d3d7a5d60d36a0e65f909dd601e3552a",
-    "deployment_run": "https://github.com/ahimanikya/singhasan/actions/runs/36989421553",
+    "media_commit": "7ddf2bb9a793cbf5559b08fe7b6c753efa57e003",
+    "deployment_run": "https://github.com/ahimanikya/singhasan/actions/runs/36992274970",
     "deployment_status": "success",
-    "validation": "75 pages, all 68 poem listening links, and 70 file hashes validated; all 70 MP3s fully decoded; live playback of welcome and poem 68 verified; local continuous playback, speed, resume and track navigation verified.",
+    "validation": "71 recording hashes and 75 pages validated; four source parts and combined introduction fully decoded; live introduction playback confirmed; byte-range seeking supported (HTTP 206).",
     "pronunciation_review": "pending"
   },
   "full_odia_introduction": {
-    "status": "assembled-publication-pending",
+    "status": "published-for-review",
     "title": "ସିଂହଦ୍ଵାର",
     "language": "or",
     "placement": "after English welcome, before poem 1",
@@ -2018,10 +2018,13 @@
     }
   },
   "validation": {
-    "tracks": 70,
+    "tracks": 71,
     "poems": 68,
     "all_mp3s_decoded": true,
-    "sequence": "English welcome, poems 1–68, English closing",
-    "duration_seconds": 6454.751999999999
+    "sequence": "English welcome, original Odia prose introduction, poems 1–68, English closing",
+    "duration_seconds": 7522.312,
+    "introduction_decoded": true,
+    "live_introduction_playback": true,
+    "introduction_range_response": 206
   }
 }
