@@ -57,10 +57,6 @@
  .artistic-label{gap:8px}
 }
 @media print{.opening-waterline,.contents-page .poem-actions{display:none}}
-/* Match Kabita Live's fine centre rule without changing measured text width. */
-@media(min-width:1000px) and (min-height:500px){
- #focus-reader #focus-pages>.focus-page+.focus-page{box-shadow:inset 1px 0 0 var(--line)}
-}
 /* Three calm reading surfaces; woven cloth uses a subtle code-native weave. */
 body[data-reading-surface=cloth]{--surface-image:repeating-linear-gradient(0deg,transparent 0 2px,#78643a 2px 3px,transparent 3px 6px),repeating-linear-gradient(90deg,transparent 0 3px,#78643a 3px 4px,transparent 4px 7px);--surface-size:7px 6px;--surface-opacity:.03}
 body[data-reading-surface=earth]{--surface-image:url('backgrounds/earth-wash.webp');--surface-size:100% auto;--surface-opacity:.16}

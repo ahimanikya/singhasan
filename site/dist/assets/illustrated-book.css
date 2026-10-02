@@ -5,7 +5,6 @@
  .illustrated-mode.pagination-on #reading{width:min(1240px,calc(100% - 48px));margin:12px auto 16px}
  .illustrated-mode.pagination-on .printed-spread{grid-template-rows:auto minmax(0,1fr) 56px;padding:20px 32px 8px;border:1px solid var(--line);border-top:3px solid var(--rust);border-radius:0;box-shadow:0 3px 12px #263c3c0a}
  .illustrated-mode .printed-spread::before{background-image:var(--surface-image);background-size:var(--surface-size);opacity:var(--surface-opacity)}
- .illustrated-mode .printed-spread::after{inset:auto;top:108px;bottom:68px;left:50%;width:1px;background:var(--line);border-radius:0}
  .illustrated-mode.pagination-on .book-running-head{display:none}
  .illustrated-mode.pagination-on .printed-spread>.poem-heading{grid-row:1;margin:0 0 18px;padding:0 0 12px;border-bottom:1px solid var(--line);gap:0 20px}
  .illustrated-mode.pagination-on .reader-meta{font:11px/1.4 var(--ui);letter-spacing:.04em;color:var(--muted);margin:0 0 4px}
@@ -37,7 +36,6 @@
 @media screen and (max-width:760px){
  .illustrated-mode.pagination-on #reading{width:calc(100% - 24px);margin:8px auto 12px}
  .illustrated-mode.pagination-on .printed-spread{padding:12px 18px 6px;grid-template-rows:auto minmax(0,1fr) 54px}
- .illustrated-mode .printed-spread::after{display:none}
  .illustrated-mode.pagination-on .printed-spread>.poem-heading{display:grid;grid-template-columns:1fr;grid-template-rows:auto auto;margin:0 0 12px;padding-bottom:4px}
  .illustrated-mode.pagination-on .reader-meta{display:none}
  .illustrated-mode.pagination-on .chapter-header h1{grid-row:1;font-size:28px;line-height:1.5}
@@ -60,7 +58,6 @@
  .illustrated-mode.pagination-on .printed-spread>.poem-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;padding-bottom:4px}
  .illustrated-mode.pagination-on .chapter-header h1{font-size:24px}
  .illustrated-mode.pagination-on .reader-meta{display:none}
- .illustrated-mode .printed-spread::after{top:60px}
  .illustrated-mode.pagination-on .illustration-reading h2{font-size:26px;margin-bottom:12px}
  .illustrated-mode.pagination-on .image-narrative{font-size:16px;line-height:1.6}
 }
@@ -81,4 +78,33 @@
  .illustrated-mode.pagination-on .illustration-reading h2{font-size:28px;margin-bottom:14px}
  .illustrated-mode.pagination-on .illustration-reading .eyebrow{margin-bottom:8px}
  .illustrated-mode.pagination-on .image-narrative{font-size:17px;line-height:1.65}
+}
+
+/* Both readers use the same paper frame and content-aligned centre divider.
+   An overlay leaves pagination measurements and original text untouched. */
+@media screen{
+ .illustrated-mode.pagination-on .printed-spread,
+ #focus-reader .focus-book-frame:not(.closed-book){
+  border:1px solid var(--line);border-top:3px solid var(--rust);
+  border-radius:0;box-shadow:0 3px 12px #263c3c0a;
+ }
+ .illustrated-mode .printed-spread::after{display:none}
+ .illustrated-mode.pagination-on .printed-spread>.reader,
+ .illustrated-mode.pagination-on .printed-spread>.book-companion,
+ #focus-reader #focus-pages{position:relative}
+ .illustrated-mode.pagination-on .printed-spread>.reader::after,
+ .illustrated-mode.pagination-on .printed-spread>.book-companion::after,
+ #focus-reader #focus-pages::after{
+  content:'';display:none;position:absolute;left:50%;top:0;bottom:0;
+  width:0;border-left:1px solid var(--line);pointer-events:none;z-index:1;
+ }
+ .night.illustrated-mode.pagination-on .printed-spread,
+ .night #focus-reader .focus-book-frame:not(.closed-book){box-shadow:none}
+}
+@media screen and (min-width:761px){
+ .illustrated-mode.pagination-on .printed-spread>.reader::after,
+ .illustrated-mode.pagination-on .printed-spread>.book-companion::after{display:block}
+}
+@media screen and (min-width:1000px) and (min-height:500px){
+ #focus-reader #focus-pages:not(.has-cover)::after{display:block;top:28px;bottom:28px}
 }
