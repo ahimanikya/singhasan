@@ -38,9 +38,9 @@ async function loadEdition(){
 function unitNode(unit,plain=false){
  const p=poems.find(p=>p.id===unit.poemId),v=p.variants[unit.code];
  if(unit.type==='title'){
- const group=document.createElement('div'),title=document.createElement('h2'),by=document.createElement('p');
+ const group=document.createElement('div'),title=document.createElement('h2');
  group.className='focus-title'+(unit.poemIndex>0?' after-poem':'');group.lang=unit.code;group.dataset.poemId=unit.poemId;
- title.className='focus-poem-title';title.textContent=v.title;by.className='focus-author';by.lang='en';by.textContent='Pravakar Satapathy';group.append(title,by);return group;
+ title.className='focus-poem-title';title.textContent=v.title;group.append(title);return group;
  }
  const line=document.createElement('div');line.className='focus-line'+(unit.stanza?' stanza-start':'');line.lang=unit.code;line.dataset.unit=unit.index;line.dataset.poemId=unit.poemId;line.dataset.sourceLine=unit.sourceLine;line.dataset.start=unit.start;
  let cursor=0;for(const m of plain?[]:readMarks(unit.poemId,unit.code).filter(m=>m.line===unit.sourceLine)){
@@ -84,7 +84,7 @@ function paginate(anchor=currentUnit()){
 }
 function render(){
  cancelPaperTurn();const cover=pages[pageIndex]?.cover;area.replaceChildren();area.classList.toggle('has-cover',!!cover);dialog.querySelector('.focus-book-frame').classList.toggle('closed-book',!!cover);dialog.querySelector('.focus-book-frame').classList.toggle('back-facing',cover==='back');
- if(cover){const figure=document.createElement('figure');figure.className='focus-cover';figure.classList.add('quiet-title-leaf');const text=document.createElement('div');text.className='quiet-title-copy';text.innerHTML=cover==='front'?'<p class="quiet-edition-label" lang="en">Odia poetry</p><h1 lang="or">ସିଂହାସନ</h1><p class="quiet-title-author" lang="or">ପ୍ରଭାକର ଶତପଥୀ</p>':'<p class="quiet-edition-label" lang="en">The end</p><h1 lang="or">ସମାପ୍ତ</h1><p class="quiet-title-author" lang="or">ସିଂହାସନ</p>';figure.append(text);area.append(figure);$('#focus-poem').value=cover;progress.textContent=cover==='front'?'Title page':'End of the book'}
+ if(cover){const figure=document.createElement('figure');figure.className='focus-cover';figure.classList.add('quiet-title-leaf');const text=document.createElement('div');text.className='quiet-title-copy';text.innerHTML=cover==='front'?'<p class="quiet-edition-label" lang="en">Odia poetry</p><h1 lang="or">ସିଂହାସନ</h1>':'<p class="quiet-edition-label" lang="en">The end</p><h1 lang="or">ସମାପ୍ତ</h1><p class="quiet-title-author" lang="or">ସିଂହାସନ</p>';figure.append(text);area.append(figure);$('#focus-poem').value=cover;progress.textContent=cover==='front'?'Title page':'End of the book'}
  else{
  for(let i=0;i<visibleCount();i++){const pg=pages[pageIndex+i],slot=document.createElement('article');slot.className='focus-page';slot.setAttribute('aria-label',`Page ${pageIndex+i} of ${pages.length-2}`);slot.lang=pg[0].code;pg.forEach(u=>slot.append(unitNode(u)));area.append(slot)}
  const first=pages[pageIndex][0];poemIndex=Math.max(0,poems.findIndex(p=>p.id===first.poemId));$('#focus-poem').value=String(poemIndex);

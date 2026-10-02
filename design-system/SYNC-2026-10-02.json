@@ -59,5 +59,22 @@
       "Quiet section chooser opens selected poem in full-book spread",
       "Live spread left-aligned with no page overflow"
     ]
+  },
+  "followup_surfaces_and_footer": {
+    "request": "Three backgrounds including cloth; no repeated quiet-reader poet name; lotus and boat at opposite footer edges.",
+    "changes": [
+      "Device-local Page surface control in ordinary and quiet reader tools: Woven cloth, Earth wash, Monsoon wash.",
+      "Cloth is a subtle CSS weave; earth and monsoon use the imported Kabita Live assets. Dark reading suppresses textures.",
+      "Quiet poem headings and title leaf omit the repeated author name. Centre separator remains.",
+      "Two edge-positioned views of the existing footer watercolor; removed the additional central boat icon."
+    ],
+    "checks": [
+      "75 pages and all 69 source sections validated; all 71 audio hashes unchanged.",
+      "All six shared pagination tests passed; both changed scripts passed syntax checks.",
+      "Desktop earth and monsoon textures visually inspected; surface choice survives page navigation and synchronizes normal and quiet controls.",
+      "390px iframe quiet reading has one page, no repeated author, no horizontal overflow; footer edges stay within the viewport.",
+      "Dark reader suppresses textures and keeps centre separator."
+    ],
+    "audio_status": "Second introduction takes already exist. Selection across the four parts awaits clarification; account UI showed zero downloads remaining. Existing audio preserved."
   }
 }

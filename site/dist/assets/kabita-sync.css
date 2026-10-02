@@ -61,3 +61,25 @@
 @media(min-width:1000px) and (min-height:500px){
  #focus-reader #focus-pages>.focus-page+.focus-page{box-shadow:inset 1px 0 0 var(--line)}
 }
+/* Three calm reading surfaces; woven cloth uses a subtle code-native weave. */
+body[data-reading-surface=cloth]{--surface-image:repeating-linear-gradient(0deg,transparent 0 2px,#78643a 2px 3px,transparent 3px 6px),repeating-linear-gradient(90deg,transparent 0 3px,#78643a 3px 4px,transparent 4px 7px);--surface-size:7px 6px;--surface-opacity:.03}
+body[data-reading-surface=earth]{--surface-image:url('backgrounds/earth-wash.webp');--surface-size:100% auto;--surface-opacity:.16}
+body[data-reading-surface=monsoon]{--surface-image:url('backgrounds/monsoon-wash.webp');--surface-size:100% auto;--surface-opacity:.16}
+body[data-reading-surface]::before{background-image:var(--surface-image);background-size:var(--surface-size);background-repeat:repeat;opacity:var(--surface-opacity)}
+body[data-reading-surface]::after{display:none}
+#focus-reader .focus-page,#focus-reader .quiet-title-leaf{position:relative;isolation:isolate}
+#focus-reader .focus-page::before,#focus-reader .quiet-title-leaf::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:var(--surface-image);background-size:var(--surface-size);background-repeat:repeat;opacity:var(--surface-opacity)}
+body.night #focus-reader .focus-page::before,body.night #focus-reader .quiet-title-leaf::before{display:none}
+.surface-control{display:block;font:12px/1.4 var(--ui);color:var(--muted);margin:12px 0}
+.surface-control select{display:block;width:100%;min-height:44px;padding:8px;margin-top:5px;font:16px/1.4 var(--ui);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:0}
+/* The original watercolor's two ends stay at opposite page edges. */
+.footer-landscape{display:flex;align-items:end;justify-content:space-between;height:180px;margin-top:32px;margin-bottom:8px;background:none;pointer-events:none}
+.footer-landscape .footer-lotus,.footer-landscape .footer-boat{display:block;width:190px;height:180px;background-image:url('odisha-watercolour.webp');background-repeat:no-repeat;background-size:540px 180px;opacity:.8}
+.footer-landscape .footer-lotus{background-position:left bottom}.footer-landscape .footer-boat{background-position:right bottom}
+@media(max-width:760px){
+ body[data-reading-surface=earth],body[data-reading-surface=monsoon]{--surface-opacity:.12}
+ .footer-landscape{height:110px;margin-top:24px}
+ .footer-landscape .footer-lotus,.footer-landscape .footer-boat{width:115px;height:110px;background-size:330px 110px}
+}
+@media(forced-colors:active){body[data-reading-surface]::before,#focus-reader .focus-page::before,#focus-reader .quiet-title-leaf::before{display:none}}
+@media print{body[data-reading-surface]::before{display:none}}
