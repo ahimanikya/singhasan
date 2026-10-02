@@ -111,5 +111,6 @@
   "listening_review": "Pronunciation, word completeness and vocal continuity remain for human review; file checks do not establish spoken accuracy.",
   "supersedes": "site/production/prose-introduction-run.json",
   "review_status": "user-selected-take-2-review",
-  "next_action": "Download the four selected MP3s through Suno once allowance is available; preserve current first-take files; concatenate in source order and publish for listening review."
+  "next_action": "Download the four selected MP3s through Suno once allowance is available; preserve current first-take files; concatenate in source order and publish for listening review.",
+  "download_check": "The normal Download action for Part 01 Take 2 opened an Out of Downloads dialog. No media downloaded; all four selected takes remain pending."
 }
