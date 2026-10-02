@@ -22,11 +22,18 @@
     "360x640 and 390x740 phone iframe layouts reviewed; longer Poem 50 narrative fits without internal overflow at 360x640 after refinement.",
     "Phone footer controls remain within viewport and direct Read poem action opens the text.",
     "Next from Poem 19 reaches Poem 20; last leaf of Poem 68 reaches back cover.",
-    "Front/back covers inspected in phone viewport."
+    "Front/back covers inspected in phone viewport.",
+    "Dark mode removes texture; handoff to quiet reader retains two pages and no repeated author names.",
+    "Live illustrated spread has a 1px frame, no repeated author row or desktop caption, selected monsoon surface and a working Read poem page turn."
   ],
   "limitations": [
     "Browser iframe viewport checks, not physical touchscreen testing.",
     "Existing artwork interpretation and Odia text proofreading were not independently re-reviewed."
   ],
-  "status": "local-review-complete"
+  "status": "published-and-browser-verified",
+  "publication": {
+    "commit": "0d5012d9d15380af89e46a5df2096fd96b6b5f69",
+    "workflow": "https://github.com/ahimanikya/singhasan/actions/runs/37009313833",
+    "review_url": "https://singhasan.poemwithoutborders.org/poem-19.html?view=book"
+  }
 }
