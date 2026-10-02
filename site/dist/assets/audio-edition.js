@@ -47,6 +47,7 @@
   });
   audio.addEventListener('timeupdate', () => { if (Date.now() - lastSave > 3000) { save(); lastSave = Date.now(); } });
   audio.addEventListener('pause', save);
+  audio.addEventListener('play', () => { status.textContent = ''; });
   audio.addEventListener('ended', () => {
     if (continuous.checked && index < tracks.length - 1) select(index + 1, true);
     else { status.textContent = index === tracks.length - 1 ? 'You’ve reached the end of the available readings.' : 'This poem has ended.'; save(); }
