@@ -230,12 +230,12 @@
       "id": "poem-19",
       "poem": 19,
       "label": "Poem 19",
-      "src": "assets/audio/poem-19-9676b3cb.mp3",
-      "duration_label": "2:11",
-      "duration_seconds": 131.4,
-      "source_url": "https://suno.com/song/9676b3cb-5398-435a-b7d7-05a3c1483c50",
-      "review": "first-take-review",
-      "sha256": "1e8d2d0590aa085b8c51e2718e74cd96d873b6f1b728c2e2028e017bb100fe39"
+      "src": "assets/audio/poem-19-e82513fe.mp3",
+      "duration_label": "1:33",
+      "duration_seconds": 93.44,
+      "source_url": "https://suno.com/song/e82513fe-b49b-467a-bf55-cc8de6b19b2b",
+      "review": "user-selected-replacement",
+      "sha256": "b704e60a37c9286a3e44588c5568c9a1ce67eb95ebfc779150679cb6a3a08b93"
     },
     {
       "id": "poem-20",

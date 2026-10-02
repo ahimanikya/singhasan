@@ -1,0 +1,64 @@
+{
+  "section": 19,
+  "title": "Singhasan 19 — କବିତା ୧୯",
+  "language": "or",
+  "authorization": "User supplied the replacement Suno link and requested replacing the singing version on the site.",
+  "provided_url": "https://suno.com/s/iGFxPRNw3vv1Ou7C",
+  "selected": "https://suno.com/song/e82513fe-b49b-467a-bf55-cc8de6b19b2b",
+  "source_text": "ଦିନେ ପରିଚାରିକା\nଶୁଣି ପକାଇଲା\nଦର୍ପଣ ସାମ୍ନାରେ\nଶୃଂଗାର କାଳରେ,\nମହାରାଣୀଂକ\nକରୁଣ ବିଳାପ:\nଏଠି ମୁକ୍ତି ନାହିଁ,\nଥରୁଟିଏ ମନ ଭରି\nକାଂଦିବା ପାଇଁ\nଥାନଟିକେ ନାହିଁ,\nକ୍ଷୀରଭରା ଥନଟାକୁ\nହସି ହସି\nଭରିଦେବା ପାଇଁ\nଆଁଟିଏ ନାହିଁ ।\n\nମୁଁ ବଂଦିନୀଟିଏ,\nରୂପ ପସରାର\nରାଜଧାନୀଟିଏ,\nପ୍ରଜାମାନଂକ ଲୁହ\nଆଉ ଲୁହରେ ଗଢ଼ା\nଯାତନାର\nସୁନା ନୀଡ଼ ଭିତରେ\nଶୋଇ\nକେତେ କାଳ\nମୁକୁଟ ଓ ସିଂହାସନର\nରୂପକୁ ଦେଖିବି?\nଲୁଣ ଖାଇ ଗୁଣ ସୁମରିବି,\nଶିହରିବି\nବଂଜର ମାଟିର ଯଂତ୍ରଣାରେ?\n\nପରିଚାରିକାକୁ\nକିଏ ବୁଝାଇବ:\nଦୁଃଖ ସମାନ,\nଖାଲି ଯା’\nଅଲଗା ଅଲଗା ଭେକ ।",
+  "source_sha256": "30f8642c44bfa5d64c52a3ba3a7d33de92671e329b9d8907815e22d0d65f2f44",
+  "previous_recording": {
+    "id": "poem-19",
+    "poem": 19,
+    "label": "Poem 19",
+    "src": "assets/audio/poem-19-9676b3cb.mp3",
+    "duration_label": "2:11",
+    "duration_seconds": 131.4,
+    "source_url": "https://suno.com/song/9676b3cb-5398-435a-b7d7-05a3c1483c50",
+    "review": "first-take-review",
+    "sha256": "1e8d2d0590aa085b8c51e2718e74cd96d873b6f1b728c2e2028e017bb100fe39"
+  },
+  "previous_production_track": {
+    "section": 19,
+    "title": "Singhasan 19 — କବିତା ୧୯",
+    "language": "or",
+    "text": "ଦିନେ ପରିଚାରିକା\nଶୁଣି ପକାଇଲା\nଦର୍ପଣ ସାମ୍ନାରେ\nଶୃଂଗାର କାଳରେ,\nମହାରାଣୀଂକ\nକରୁଣ ବିଳାପ:\nଏଠି ମୁକ୍ତି ନାହିଁ,\nଥରୁଟିଏ ମନ ଭରି\nକାଂଦିବା ପାଇଁ\nଥାନଟିକେ ନାହିଁ,\nକ୍ଷୀରଭରା ଥନଟାକୁ\nହସି ହସି\nଭରିଦେବା ପାଇଁ\nଆଁଟିଏ ନାହିଁ ।\n\nମୁଁ ବଂଦିନୀଟିଏ,\nରୂପ ପସରାର\nରାଜଧାନୀଟିଏ,\nପ୍ରଜାମାନଂକ ଲୁହ\nଆଉ ଲୁହରେ ଗଢ଼ା\nଯାତନାର\nସୁନା ନୀଡ଼ ଭିତରେ\nଶୋଇ\nକେତେ କାଳ\nମୁକୁଟ ଓ ସିଂହାସନର\nରୂପକୁ ଦେଖିବି?\nଲୁଣ ଖାଇ ଗୁଣ ସୁମରିବି,\nଶିହରିବି\nବଂଜର ମାଟିର ଯଂତ୍ରଣାରେ?\n\nପରିଚାରିକାକୁ\nକିଏ ବୁଝାଇବ:\nଦୁଃଖ ସମାନ,\nଖାଲି ଯା’\nଅଲଗା ଅଲଗା ଭେକ ।",
+    "source_sha256": "30f8642c44bfa5d64c52a3ba3a7d33de92671e329b9d8907815e22d0d65f2f44",
+    "status": "published-review",
+    "candidates": [
+      {
+        "take": 1,
+        "url": "https://suno.com/song/9676b3cb-5398-435a-b7d7-05a3c1483c50",
+        "status": "generated",
+        "duration": "2:11"
+      },
+      {
+        "take": 2,
+        "url": "https://suno.com/song/9b34960d-734c-4c4c-bd68-8efa66ee7073",
+        "status": "generated",
+        "duration": "2:06"
+      }
+    ],
+    "selected": "https://suno.com/song/9676b3cb-5398-435a-b7d7-05a3c1483c50",
+    "submitted_at": "2026-10-02T08:52:17.593Z",
+    "media_path": "site/dist/assets/audio/poem-19-9676b3cb.mp3",
+    "audio_sha256": "1e8d2d0590aa085b8c51e2718e74cd96d873b6f1b728c2e2028e017bb100fe39",
+    "duration_seconds": 131.4,
+    "public_url": "https://singhasan.poemwithoutborders.org/assets/audio/poem-19-9676b3cb.mp3"
+  },
+  "status": "imported-for-publication",
+  "review": "user-selected-replacement",
+  "source_check": "Displayed Suno lyrics correspond to Poem 19. Spoken completeness and pronunciation are not established by metadata checks.",
+  "audio": {
+    "id": "poem-19",
+    "poem": 19,
+    "label": "Poem 19",
+    "src": "assets/audio/poem-19-e82513fe.mp3",
+    "duration_label": "1:33",
+    "duration_seconds": 93.44,
+    "source_url": "https://suno.com/song/e82513fe-b49b-467a-bf55-cc8de6b19b2b",
+    "review": "user-selected-replacement",
+    "sha256": "b704e60a37c9286a3e44588c5568c9a1ce67eb95ebfc779150679cb6a3a08b93"
+  },
+  "verification": "Selected MP3 fully decoded; 93.44 seconds decoded PCM, matching the 1:33 Suno display."
+}
