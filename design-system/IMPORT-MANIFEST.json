@@ -1,0 +1,161 @@
+{
+  "imported": "2026-10-02",
+  "assets": [
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/kb/artifacts/design/brand-guide/DESIGN-SYSTEM.md",
+      "local": "design-system/KABITA-LIVE-DESIGN-SYSTEM.md",
+      "sha256": "0db7c5d78b1ee85e3e545771adb467c0c4a9dad3f5fdcff807c54cd8f1dc3190"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/kb/artifacts/design/brand-guide/assets/brand-tokens.json",
+      "local": "design-system/brand-tokens.json",
+      "sha256": "e433fe216c1571eb1a597704626582f9ec1f7872ff4c6d9a1cf10c5139d551f2"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/CormorantGaramond-Variable.ttf",
+      "local": "site/dist/assets/fonts/CormorantGaramond-Variable.ttf",
+      "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/CormorantGaramond-Italic-Variable.ttf",
+      "local": "site/dist/assets/fonts/CormorantGaramond-Italic-Variable.ttf",
+      "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/SourceSerif4-Variable.ttf",
+      "local": "site/dist/assets/fonts/SourceSerif4-Variable.ttf",
+      "sha256": "97b2d4da6e3cb494b5a1e66ae176914d852ccabef49e0c02c0df25f3e39aca0b"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/SourceSerif4-Italic-Variable.ttf",
+      "local": "site/dist/assets/fonts/SourceSerif4-Italic-Variable.ttf",
+      "sha256": "15fbc7e4679489a501998c3669272637a6646388ef7e4bd77eebb5bf967a1f42"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/NotoSerifOriya-Variable.ttf",
+      "local": "site/dist/assets/fonts/NotoSerifOriya-Variable.ttf",
+      "sha256": "9fa2a08cb6a677d155a823bc58b4c587613780bd43013fd362369c251001502a"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/TiroDevanagariHindi-Regular.ttf",
+      "local": "site/dist/assets/fonts/TiroDevanagariHindi-Regular.ttf",
+      "sha256": "d2abcb4d352f0bfab91632df5d9c8173882073c182e662fa731a5a738e6681d7"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/CormorantGaramond-OFL.txt",
+      "local": "site/dist/assets/fonts/CormorantGaramond-OFL.txt",
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/SourceSerif4-OFL.txt",
+      "local": "site/dist/assets/fonts/SourceSerif4-OFL.txt",
+      "sha256": "5f94c3fd3a23131a417ab5a0c8452de57e70c3cfb9f604d88241f7065ebf9fd9"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/NotoSerifOriya-OFL.txt",
+      "local": "site/dist/assets/fonts/NotoSerifOriya-OFL.txt",
+      "sha256": "c90ff15ade263a49148e35af34e9c177c6d56881e81260b29f10123e9e227eca"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/fonts/TiroDevanagariHindi-OFL.txt",
+      "local": "site/dist/assets/fonts/TiroDevanagariHindi-OFL.txt",
+      "sha256": "2ed6051706542c5d6d96480318152b17900bb6d4dbadb11d7d5d6464d8b3e0dd"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/read.svg",
+      "local": "site/dist/assets/icons/read.svg",
+      "sha256": "de992c86f1c92f668eeae649b5622638da7a6c2db25cc2c51b4f2da6714493c7"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/share.svg",
+      "local": "site/dist/assets/icons/share.svg",
+      "sha256": "12b17c661cec6750c6f87d3655d2a8732fad1eaf40036fe91483323469312e3c"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/bookmark.svg",
+      "local": "site/dist/assets/icons/bookmark.svg",
+      "sha256": "c60cc58f4e672e93cf03fde3d797293b3d5985c940be4b22d45f374572a95544"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/next-poetic.svg",
+      "local": "site/dist/assets/icons/next-poetic.svg",
+      "sha256": "9d636e5c42364850e12185cdb10ebd213bb3d7cd8d8192c8dad716e6af2fe11c"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/paddy.svg",
+      "local": "site/dist/assets/icons/paddy.svg",
+      "sha256": "6e13e96b499bcc2ec26f9b010f910f376a1a3693340fea5119d5abfa97478f34"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/talapatra.svg",
+      "local": "site/dist/assets/icons/talapatra.svg",
+      "sha256": "e5286836f754c41f110c3749a3885927e685f30f57695c7e8865dd74850e8378"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/jhoti.svg",
+      "local": "site/dist/assets/icons/jhoti.svg",
+      "sha256": "c286310e31262ce4d069cf05964729a9861fc63d798e1e2b63b03f02b1019ad5"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/menu.svg",
+      "local": "site/dist/assets/icons/menu.svg",
+      "sha256": "585bf38bc2321c7a6b1d65ebc3a87ab57199df61ec66041d875e2abaf8b5eaee"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/close.svg",
+      "local": "site/dist/assets/icons/close.svg",
+      "sha256": "85fe6f48915d3e9bcd5bbc695dd4bb90489d336622d119edaeee6f82e63ff656"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/boita.svg",
+      "local": "site/dist/assets/icons/boita.svg",
+      "sha256": "d77ecc8736d0dc7e874c82c84ff89f72777eea88612ace3c7c5370ff37a229d0"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/footer-story.svg",
+      "local": "site/dist/assets/icons/footer-story.svg",
+      "sha256": "9245575e70e15586c1b0be9f0cf7f2fadcc6cb27ae0fe43e2c6f2bbc2a7092c1"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/kendu.svg",
+      "local": "site/dist/assets/icons/kendu.svg",
+      "sha256": "c41dab08dde60b091c99cb9a41790221ea487597e7451435be754602c970efa5"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/write.svg",
+      "local": "site/dist/assets/icons/write.svg",
+      "sha256": "fcb64f7f50523afde7089d31a3edc0942bfa52c2b20d84de528c5afddda77797"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/icons/earth-voice-v1/ink/listen.svg",
+      "local": "site/dist/assets/icons/listen.svg",
+      "sha256": "a676a1e6df09fe2122f7332d4119c47b742f23770b2e70212ab21c5e07531c36"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/backgrounds/cotton-paper.webp",
+      "local": "site/dist/assets/cotton-paper.webp",
+      "sha256": "8421aad2056e58278680b5c0a5b3230704211aaa83171a54c8a6f34177b5a77b"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/backgrounds/earth-wash.webp",
+      "local": "site/dist/assets/backgrounds/earth-wash.webp",
+      "sha256": "0fb72966b8e9553f16f6466c949300511420e2f6a4752dd2b1e9d4e9e04a07f1"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/backgrounds/monsoon-wash.webp",
+      "local": "site/dist/assets/backgrounds/monsoon-wash.webp",
+      "sha256": "6a6b384d4b210c4a4870163037df0103166f28f25fe22d7038a68f9ff7d971f8"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/poetic-waterline.svg",
+      "local": "site/dist/assets/poetic-waterline.svg",
+      "sha256": "694af22896efe94bb23b219c38b3d7bd174342a01e259d4c1faa26f3b38f4c66"
+    },
+    {
+      "source": "/Users/ahimanikya/Projects/Kabita Live/projects/site/assets/reader-pagination.mjs",
+      "local": "site/dist/assets/reader-pagination.mjs",
+      "sha256": "392a9b017969393d98c5919159b54dacbdc3a570c1fc1aae0c72ec1483551397"
+    }
+  ],
+  "adaptation": "Book identity, biography, covers and attribution preferences remain specific to Singhasan."
+}

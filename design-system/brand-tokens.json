@@ -1,0 +1,25 @@
+{
+  "name_odia": "କବିତା ଲାଇଭ.",
+  "name_roman": "Kabita Live",
+  "signature": "ମାଟିର ମହକ · ମନର ସ୍ୱର",
+  "epigraph": "Poetry is an echo, asking a shadow to dance.",
+  "colours": {
+    "Paper": "#F5EFDF",
+    "Laterite": "#963F28",
+    "Sea blue": "#125465",
+    "Hearth": "#78643A",
+    "Ink": "#263C3C",
+    "Muted ink": "#655F51",
+    "Pale paper": "#EAE1CD",
+    "Rule": "#D2C6AC"
+  },
+  "fonts": {
+    "wordmark": "Cormorant Garamond",
+    "english_display": "Cormorant Garamond",
+    "english_display_weight": 500,
+    "odia": "Noto Serif Oriya",
+    "hindi": "Tiro Devanagari Hindi",
+    "english": "Source Serif 4",
+    "interface": "Arial, system sans-serif"
+  }
+}

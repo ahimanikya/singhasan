@@ -1,3 +1,4 @@
+import {packReadingPages} from './reader-pagination.mjs';
 import {normalized,subtract} from './poem-marks.mjs?v=2';
 (()=>{
 'use strict';
@@ -19,7 +20,13 @@ function fillLanguages(){
 function fillContents(){
  const select=$('#focus-poem');select.replaceChildren();
  function option(value,label){const el=document.createElement('option');el.value=value;el.textContent=label;select.append(el)}
- option('front','Title page');poems.forEach((p,i)=>option(String(i),p.variants[chosen(p)].title));option('back','End of the book');
+ const term=($('#focus-search')?.value||'').trim().toLocaleLowerCase();
+ if(!term)option('front','Title page');
+ poems.forEach((p,i)=>{const v=p.variants[chosen(p)];if(!term||(v.title+' '+v.stanzas.flat().join(' ')).toLocaleLowerCase().includes(term))option(String(i),p.id?`Poem ${p.id} · ${v.stanzas.flat().find(line=>line.trim())||v.title}`:v.title)});
+ if(!term)option('back','End of the book');
+ $('#focus-read-section').disabled=!select.options.length;
+ $('#focus-search-status').textContent=term?(select.options.length?`${select.options.length} matching section${select.options.length===1?'':'s'}.`:'No sections match. Try another word.'):'The introduction and all 68 poems.';
+
 }
 async function loadEdition(){
  if(editionLoaded)return true;
@@ -30,7 +37,11 @@ async function loadEdition(){
 }
 function unitNode(unit,plain=false){
  const p=poems.find(p=>p.id===unit.poemId),v=p.variants[unit.code];
- if(unit.type==='title'){const title=document.createElement('h2');title.className='focus-poem-title';title.lang=unit.code;title.textContent=v.title;title.dataset.poemId=unit.poemId;return title}
+ if(unit.type==='title'){
+ const group=document.createElement('div'),title=document.createElement('h2'),by=document.createElement('p');
+ group.className='focus-title'+(unit.poemIndex>0?' after-poem':'');group.lang=unit.code;group.dataset.poemId=unit.poemId;
+ title.className='focus-poem-title';title.textContent=v.title;by.className='focus-author';by.lang='en';by.textContent='Pravakar Satapathy';group.append(title,by);return group;
+ }
  const line=document.createElement('div');line.className='focus-line'+(unit.stanza?' stanza-start':'');line.lang=unit.code;line.dataset.unit=unit.index;line.dataset.poemId=unit.poemId;line.dataset.sourceLine=unit.sourceLine;line.dataset.start=unit.start;
  let cursor=0;for(const m of plain?[]:readMarks(unit.poemId,unit.code).filter(m=>m.line===unit.sourceLine)){
  const a=Math.max(0,m.start-unit.start),b=Math.min(unit.text.length,m.end-unit.start);if(b<=a)continue;
@@ -45,19 +56,20 @@ function pageFor(anchor){
  const found=pages.findIndex(pg=>!pg.cover&&pg.some(u=>u.poemId===anchor?.id&&(u.index===anchor.unit||(u.type==='line'&&anchor.unit>=u.index&&anchor.unit<u.index+u.text.length))));
  return found<0?0:1+Math.floor((found-1)/spread)*spread;
 }
+function setReadingSize(){const size=$('#focus-size').value;dialog.style.setProperty('--focus-size',(size==='22'?(matchMedia('(min-width:761px)').matches?24:22):size)+'px')}
 function paginate(anchor=currentUnit()){
- if(!dialog.open)return;clearSelection();fillLanguages();fillContents();
+ if(!dialog.open)return;setReadingSize();clearSelection();fillLanguages();fillContents();
  spread=matchMedia('(min-width:1000px) and (min-height:500px)').matches?2:1;
  area.classList.remove('has-cover');dialog.querySelector('.focus-book-frame').classList.remove('closed-book','back-facing');
  area.replaceChildren();for(let i=0;i<spread;i++){const slot=document.createElement('article');slot.className='focus-page';area.append(slot)}
  const slot=area.firstElementChild,style=getComputedStyle(slot),width=slot.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight),height=slot.clientHeight-parseFloat(style.paddingTop)-parseFloat(style.paddingBottom);
  const measure=document.createElement('article');measure.className='focus-page focus-measure';measure.style.width=width+'px';measure.style.padding='0';dialog.append(measure);
  units=[];
- for(const p of poems){const code=chosen(p),v=p.variants[code];units.push({type:'title',index:-1,poemId:p.id,code});let sourceLine=-1;
+ for(const [poemIndex,p] of poems.entries()){const code=chosen(p),v=p.variants[code];units.push({type:'title',index:-1,poemId:p.id,poemIndex,code});let sourceLine=-1;
  for(const [si,stanza] of v.stanzas.entries())for(const [li,text] of stanza.entries()){
  sourceLine++;if(text.trim()==='∎'||(v.hidden_lines||[]).includes(sourceLine))continue;
  let remaining=text,start=0,first=true;const lineLimit=p.kind==='prose'?parseFloat(getComputedStyle(measure).fontSize)*1.8:height;
- while(remaining){const unit={type:'line',index:sourceLine*1000000+start,poemId:p.id,code,sourceLine,start,text:remaining,stanza:first&&si>0&&li===0};measure.replaceChildren(unitNode(unit,true));
+ while(remaining){const unit={type:'line',index:sourceLine*1000000+start,poemId:p.id,poemIndex,code,sourceLine,start,text:remaining,stanza:first&&si>0&&li===0};measure.replaceChildren(unitNode(unit,true));
  if(measure.scrollHeight<=lineLimit+1){units.push(unit);break}
  const ends=Array.from(new Intl.Segmenter(code,{granularity:'grapheme'}).segment(remaining),x=>x.index+x.segment.length);let low=1,high=ends.length,best=1;
  while(low<=high){const mid=Math.floor((low+high)/2);measure.replaceChildren(unitNode({...unit,text:remaining.slice(0,ends[mid-1])},true));if(measure.scrollHeight<=lineLimit+1){best=mid;low=mid+1}else high=mid-1}
@@ -66,16 +78,9 @@ function paginate(anchor=currentUnit()){
  }
  }
  }
- // One continuous flow: only the two covers force a new leaf.
- pages=[{cover:'front'}];let page=[];measure.replaceChildren();
- for(let i=0;i<units.length;i++){
- const unit=units[i],node=unitNode(unit,true);measure.append(node);
- // Keep a poem heading with its first verse line when it fits on one leaf.
- let probe=null;if(unit.type==='title'&&units[i+1]?.type==='line'){probe=unitNode(units[i+1],true);measure.append(probe)}
- const overflow=measure.scrollHeight>height+1;probe?.remove();
- if(overflow&&page.length){node.remove();pages.push(page);page=[];measure.replaceChildren(node)}page.push(unit);
- }
- if(page.length)pages.push(page);pages.push({cover:'back'});measure.remove();pageIndex=pageFor(anchor);render();
+ // Import the shared three-line opening rule, retaining this book's title/end leaves.
+ const packed=packReadingPages(units,candidate=>{measure.replaceChildren(...candidate.map(u=>unitNode(u,true)));return measure.scrollHeight<=height+1});
+ pages=[{cover:'front'},...packed,{cover:'back'}];measure.remove();pageIndex=pageFor(anchor);render();
 }
 function render(){
  cancelPaperTurn();const cover=pages[pageIndex]?.cover;area.replaceChildren();area.classList.toggle('has-cover',!!cover);dialog.querySelector('.focus-book-frame').classList.toggle('closed-book',!!cover);dialog.querySelector('.focus-book-frame').classList.toggle('back-facing',cover==='back');
@@ -83,7 +88,7 @@ function render(){
  else{
  for(let i=0;i<visibleCount();i++){const pg=pages[pageIndex+i],slot=document.createElement('article');slot.className='focus-page';slot.setAttribute('aria-label',`Page ${pageIndex+i} of ${pages.length-2}`);slot.lang=pg[0].code;pg.forEach(u=>slot.append(unitNode(u)));area.append(slot)}
  const first=pages[pageIndex][0];poemIndex=Math.max(0,poems.findIndex(p=>p.id===first.poemId));$('#focus-poem').value=String(poemIndex);
- const end=pageIndex+visibleCount()-1;progress.textContent=`${pageIndex}${end>pageIndex?'–'+end:''} / ${pages.length-2}`;
+ const end=pageIndex+visibleCount()-1;progress.textContent=`${pageIndex}${end>pageIndex?'–'+end:''}`;
  }
  previous.disabled=pageIndex===0;next.disabled=pageIndex===pages.length-1;previous.textContent='←';next.textContent='→';previous.setAttribute('aria-label','Previous page');next.setAttribute('aria-label','Next page');updateBookmark();
  area.dataset.page=pageIndex;area.dataset.pageCount=pages.length;area.dataset.poemId=cover||pages[pageIndex][0].poemId;area.dataset.lineCount=units.filter(u=>u.type==='line').length;
@@ -99,25 +104,29 @@ async function openReader(start='poem'){
  if(opening||dialog.open)return;opening=true;returnFocus=document.activeElement;returnScroll=scrollY;closeSavedPage();
  const entry=$('#open-focus');entry.setAttribute('aria-busy','true');const loaded=await loadEdition();entry.removeAttribute('aria-busy');
  language=document.querySelector('[data-reading-language][aria-selected=true]')?.dataset.readingLanguage||pageData.source_language;if(language==='original')language=pageData.source_language;
- try{const saved=JSON.parse(localStorage.getItem(savedKey));if(['22','26','30'].includes(saved?.size))$('#focus-size').value=saved.size}catch{}
- dialog.style.setProperty('--focus-size',$('#focus-size').value+'px');syncEffects();dialog.showModal();document.body.style.overflow='hidden';await document.fonts.ready;paginate(start==='cover'?{cover:'front'}:{id:pageData.id,unit:-1});area.focus();opening=false;
+ try{const saved=JSON.parse(localStorage.getItem(savedKey));if(['22','28','32'].includes(saved?.size))$('#focus-size').value=saved.size;else if(saved?.size==='24')$('#focus-size').value='22';else if(saved?.size==='26')$('#focus-size').value='28';else if(saved?.size==='30')$('#focus-size').value='32'}catch{}
+ const selectedSize=document.querySelector('[data-size][aria-pressed=true]')?.dataset.size;if(selectedSize&&selectedSize!=='24')$('#focus-size').value=selectedSize;setReadingSize();syncEffects();dialog.showModal();document.body.style.overflow='hidden';await document.fonts.ready;paginate(start==='cover'?{cover:'front'}:{id:pageData.id,unit:-1});area.focus();opening=false;
  $('#focus-load-note').hidden=loaded;$('#focus-load-note').textContent=loaded?'':'The complete book could not be loaded. Close and reopen to try again.';
 }
 function closeReader(){cancelPaperTurn();clearSelection();save();settings.hidden=true;$('#focus-settings-button').setAttribute('aria-expanded','false');dialog.close()}
-$('#open-focus').addEventListener('click',()=>openReader());$('#close-focus').addEventListener('click',closeReader);
+$('#open-focus').addEventListener('click',()=>openReader(document.body.classList.contains('contents-page')?'cover':'poem'));$('#close-focus').addEventListener('click',closeReader);
 dialog.addEventListener('close',()=>{cancelPaperTurn();save();document.body.style.overflow='';window.scrollTo(0,returnScroll);returnFocus?.focus({preventScroll:true})});
-$('#focus-settings-button').addEventListener('click',()=>{settings.hidden=!settings.hidden;$('#focus-settings-button').setAttribute('aria-expanded',String(!settings.hidden));if(!settings.hidden){clearSelection();renderSaved();$('#focus-language').focus()}});
+$('#focus-settings-button').addEventListener('click',()=>{settings.hidden=!settings.hidden;$('#focus-settings-button').setAttribute('aria-expanded',String(!settings.hidden));if(!settings.hidden){clearSelection();renderSaved();$('#focus-settings-close').focus()}});
+$('#focus-settings-close').addEventListener('click',()=>dismissQuietSettings(true));
 function dismissQuietSettings(restore=false){settings.hidden=true;$('#focus-settings-button').setAttribute('aria-expanded','false');if(restore)$('#focus-settings-button').focus({preventScroll:true})}
 dialog.addEventListener('pointerdown',e=>{if(!settings.hidden&&!settings.contains(e.target)&&!$('#focus-settings-button').contains(e.target))dismissQuietSettings()});
 dialog.addEventListener('cancel',e=>{if(!settings.hidden){e.preventDefault();dismissQuietSettings(true)}});
 $('#focus-language').addEventListener('change',e=>{const anchor=currentUnit();language=e.target.value;paginate(anchor);save()});
-$('#focus-size').addEventListener('change',()=>{const anchor=currentUnit();dialog.style.setProperty('--focus-size',$('#focus-size').value+'px');paginate(anchor);save()});
-$('#focus-poem').addEventListener('change',e=>{const value=e.target.value;pageIndex=['front','back'].includes(value)?pageFor({cover:value}):pageFor({id:poems[Number(value)].id,unit:-1});dismissQuietSettings();render();save();area.focus();announcePoem()});
+$('#focus-size').addEventListener('change',()=>{const anchor=currentUnit();setReadingSize();paginate(anchor);save()});
+$('#focus-read-section').addEventListener('click',()=>{const value=$('#focus-poem').value;if(!value)return;pageIndex=['front','back'].includes(value)?pageFor({cover:value}):pageFor({id:poems[Number(value)].id,unit:-1});dismissQuietSettings();render();save();area.focus();announcePoem()});
+$('#focus-search').addEventListener('input',fillContents);
+$('#focus-read-all').addEventListener('click',()=>{pageIndex=0;dismissQuietSettings();render();save();area.focus();announcePoem()});
 previous.addEventListener('click',()=>turn(-1));next.addEventListener('click',()=>turn(1));
 dialog.addEventListener('keydown',e=>{if(e.target.closest('select,input')||!settings.hidden)return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='u'&&captureSelection().length){e.preventDefault();markSelection(false);return}if(e.shiftKey||!getSelection().isCollapsed)return;if(['ArrowRight','PageDown'].includes(e.key)){e.preventDefault();turn(1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();turn(-1)}});
 let pointer=null;area.addEventListener('touchstart',e=>{if(e.touches.length===1)pointer={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});
 area.addEventListener('touchend',e=>{if(!pointer||!getSelection().isCollapsed)return;const dx=e.changedTouches[0].clientX-pointer.x,dy=e.changedTouches[0].clientY-pointer.y;pointer=null;if(Math.abs(dx)>70&&Math.abs(dy)<40)turn(dx<0?1:-1)},{passive:true});
 let lastWheel=0,wheelTotal=0,wheelTurned=false;area.addEventListener('wheel',e=>{if(!dialog.open||!settings.hidden||e.ctrlKey||e.metaKey||!getSelection().isCollapsed)return;const now=performance.now();if(now-lastWheel>220){wheelTotal=0;wheelTurned=false}lastWheel=now;if(Math.abs(e.deltaX)<Math.abs(e.deltaY)*1.35||Math.abs(e.deltaX)<1)return;e.preventDefault();if(wheelTurned)return;const delta=e.deltaX*(e.deltaMode===1?16:e.deltaMode===2?area.clientWidth:1);if(wheelTotal&&Math.sign(wheelTotal)!==Math.sign(delta))wheelTotal=0;wheelTotal+=delta;if(Math.abs(wheelTotal)>=65){wheelTurned=true;turn(wheelTotal>0?1:-1)}},{passive:false});
+document.fonts.addEventListener('loadingdone',()=>{if(dialog.open)paginate(currentUnit())});
 let resizeTimer;window.addEventListener('resize',()=>{cancelPaperTurn();clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>paginate(currentUnit()),150)});
 // Device-local preferences and passages never modify publication text.
 const prefKey='singhasan-quiet-tools-v1',bookKey='singhasan-quiet-bookmarks-v1';
@@ -125,7 +134,7 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const sessionMemory=new Map();
 function readJSON(key,fallback){try{return JSON.parse(localStorage.getItem(key))??sessionMemory.get(key)??fallback}catch{return sessionMemory.get(key)??fallback}}
 function writeJSON(key,value){sessionMemory.set(key,value);try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$('#focus-announcement').textContent=$('#page-saved-status').textContent='Device storage is unavailable; this change lasts for this visit.';return false}}
-const storedEffects=readJSON(prefKey,{}),effects={motion:storedEffects.motion!==false,sound:storedEffects.sound===true};
+const storedEffects=readJSON(prefKey,{}),effects={motion:storedEffects.motion===true,sound:storedEffects.sound===true};
 let audioContext,selectionCuts=[],selectionTimer,turnLayer=null,turnFrame=0;
 const selectionTools=$('#focus-selection-tools');
 function syncEffects(){
@@ -231,11 +240,11 @@ function renderSaved(){
 // One reader menu brings language, size and saved passages together.
 const savedPanel=$('#page-bookmarks'),savedButton=$('#page-bookmarks-button'),pageBookKey=`singhasan-page-bookmarks-v1:${pageData.id}`;
 let pageScrollTimer;
-function pageCode(){return pageVerse.lang||pageData.source_language}
+function pageCode(){return pageVerse?.lang||pageData.source_language}
 function pageBooks(){const raw=readJSON(pageBookKey,[]);return Array.isArray(raw)?raw.filter(b=>b.id===pageData.id&&pageData.variants[b.language]&&Number.isInteger(b.line)&&b.line>=0&&b.line<pageData.variants[b.language].stanzas.flat().length):[]}
 function pageMarks(code){const raw=readJSON(`singhasan-poem-marks-v1:${pageData.id}:${code}`,[]);return normalized(Array.isArray(raw)?raw:[],pageData.variants[code].stanzas.flat(),code)}
 function currentPageLine(){if(document.body.classList.contains('pagination-on'))return Number(pageVerse.dataset.pageLine||0);const lines=[...pageVerse.querySelectorAll('[data-line]')];const visible=lines.find(n=>{const r=n.getBoundingClientRect();return r.bottom>100&&r.top<innerHeight*.8});return Number((visible||lines[0])?.dataset.line||0)}
-function refreshSavedButton(){savedButton.classList.toggle('has-saved',pageBooks().length>0||Object.keys(pageData.variants).some(code=>pageMarks(code).length));}
+function refreshSavedButton(){if(!pageVerse)return;savedButton.classList.toggle('has-saved',pageBooks().length>0||Object.keys(pageData.variants).some(code=>pageMarks(code).length));}
 function placePageMenu(){
  if(savedPanel.hidden)return;
  const anchor=savedButton.getBoundingClientRect(),height=savedPanel.getBoundingClientRect().height;
@@ -249,6 +258,7 @@ new ResizeObserver(placePageMenu).observe(savedPanel);
 function closeSavedPage(restore=false){savedPanel.hidden=true;savedButton.setAttribute('aria-expanded','false');if(restore)savedButton.focus({preventScroll:true})}
 function jumpPage(code,line,offset=0){$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();closeSavedPage();const target=pageVerse.querySelector(`[data-line="${line}"]`);if(target){target.tabIndex=-1;if(document.body.classList.contains('pagination-on'))document.dispatchEvent(new CustomEvent('book-jump-line',{detail:{line,offset}}));else target.scrollIntoView({block:'center',behavior:'auto'});target.focus({preventScroll:true})}}
 function renderPageSaved(){
+ if(!pageVerse)return;
  const list=$('#page-saved-list');list.replaceChildren();const current=pageBooks().find(b=>b.language===pageCode());$('#page-save-place').textContent=current?'Remove bookmark':pageData.id===0?'Bookmark the introduction':'Bookmark this poem';
  function row(label,detail,go,remove){const node=document.createElement('div'),button=document.createElement('button'),del=document.createElement('button');node.className='focus-saved-row';button.textContent=label;button.setAttribute('aria-label',label+' · '+detail);button.onclick=go;del.textContent='×';del.setAttribute('aria-label','Remove '+detail);del.onclick=()=>{remove();renderPageSaved();refreshSavedButton()};node.append(button,del);list.append(node)}
  for(const b of pageBooks())row('Continue reading · '+languageNames[b.language],pageData.variants[b.language].title,()=>jumpPage(b.language,b.line,b.offset||0),()=>writeJSON(pageBookKey,pageBooks().filter(x=>x.language!==b.language)));
@@ -264,7 +274,7 @@ $('#page-save-place').onclick=()=>{const code=pageCode(),saved=pageBooks(),exist
 document.addEventListener('click',e=>{if(!savedPanel.hidden&&!savedPanel.contains(e.target)&&!savedButton.contains(e.target))closeSavedPage()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!savedPanel.hidden){e.preventDefault();e.stopPropagation();closeSavedPage(true)}});
 document.addEventListener('poem-marks-changed',()=>{refreshSavedButton();if(!savedPanel.hidden)renderPageSaved()});
-window.addEventListener('scroll',()=>{clearTimeout(pageScrollTimer);pageScrollTimer=setTimeout(()=>{if(document.body.classList.contains('pagination-on')||dialog.open||!savedPanel.hidden)return;const bounds=pageVerse.getBoundingClientRect();if(bounds.bottom<=100||bounds.top>=innerHeight*.8)return;const saved=pageBooks(),entry=saved.find(b=>b.language===pageCode());if(entry){entry.line=currentPageLine();writeJSON(pageBookKey,saved)}},180)},{passive:true});
+window.addEventListener('scroll',()=>{clearTimeout(pageScrollTimer);pageScrollTimer=setTimeout(()=>{if(!pageVerse||document.body.classList.contains('pagination-on')||dialog.open||!savedPanel.hidden)return;const bounds=pageVerse.getBoundingClientRect();if(bounds.bottom<=100||bounds.top>=innerHeight*.8)return;const saved=pageBooks(),entry=saved.find(b=>b.language===pageCode());if(entry){entry.line=currentPageLine();writeJSON(pageBookKey,saved)}},180)},{passive:true});
 document.querySelectorAll('[data-reading-language]').forEach(tab=>tab.addEventListener('click',()=>{if(!savedPanel.hidden)renderPageSaved()}));
 document.addEventListener('book-page-turn',event=>{const saved=pageBooks(),entry=saved.find(b=>b.language===pageCode());if(entry){entry.line=event.detail.line;entry.offset=event.detail.offset;writeJSON(pageBookKey,saved)}});
 refreshSavedButton();

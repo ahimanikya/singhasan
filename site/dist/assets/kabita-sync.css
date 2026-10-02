@@ -1,0 +1,59 @@
+/* Kabita Live's consolidated 2 October 2026 design, adapted to one book. */
+.artistic-label{display:flex;align-items:center;gap:10px}
+.artistic-label svg{width:26px;height:26px;flex:none;color:var(--rust)}
+.opening-waterline{width:115px;height:23px;margin:24px 0 0;background:url('poetic-waterline.svg') left center/115px 23px no-repeat}
+.poem-actions svg,.poem-actions .reader-aa{color:var(--rust)}
+.poem-actions button{color:var(--muted)}
+.standalone-page .chapter-header h1.long-title{font-size:42px}
+.standalone-page .illustration-reading h2,.scene-copy h2{font-weight:700}
+.standalone-page .poem-reading-options{flex-wrap:wrap;gap:4px 24px}
+.book-related{margin-top:16px;border-top:1px solid var(--line)}
+.book-glance .book-related a{display:flex;flex-direction:column;justify-content:center;gap:4px;padding:10px 0;min-height:64px;border:0;font:500 16px/1.4 var(--ui)}
+.book-related small{font:400 14px/1.5 var(--ui);color:var(--muted)}
+.reader-field-label{font:12px/1.4 var(--ui);color:var(--muted);margin:8px 0 4px}
+#page-bookmarks .reading-tabs{margin-bottom:8px}
+#page-bookmarks .size-group button[aria-pressed=true]{background:none;text-decoration:underline;text-underline-offset:6px}
+#page-bookmarks .page-tools-tip{font-size:12px;line-height:1.5}
+#focus-settings{width:350px;padding:16px}
+#focus-settings label{font:12px/1.4 var(--ui);margin-bottom:10px}
+#focus-settings select,#focus-settings input[type=search]{width:100%;font:16px/1.4 var(--ui);min-height:44px;padding:8px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:0}
+#focus-settings .page-tools-head button{font-size:24px;min-width:44px;min-height:44px}
+#focus-library{font:14px/1.5 var(--ui);border-bottom:1px solid var(--line);margin-bottom:12px;padding-bottom:8px}
+#focus-library summary{min-height:44px;align-content:center;cursor:pointer}
+.focus-library-actions{display:flex;flex-wrap:wrap;gap:8px 16px}
+.focus-library-actions button{min-height:44px;font:14px var(--ui);text-decoration:underline;text-underline-offset:5px}
+#focus-reader .focus-title{display:flow-root}
+#focus-reader .focus-title:not(:first-child){padding-top:24px}
+#focus-reader .focus-title.after-poem:before{content:'';display:block;width:115px;height:23px;margin-bottom:12px;background:url('poetic-waterline.svg') left center/contain no-repeat}
+#focus-reader .focus-title h2{font:400 30px/1.6 var(--odia);margin:0 0 8px;overflow-wrap:anywhere}
+#focus-reader .focus-title:lang(en) h2{font-family:var(--display)}
+#focus-reader .focus-author{font:14px/1.5 var(--ui);color:var(--muted);margin:0 0 18px}
+#focus-reader .focus-page{font-size:var(--focus-size,22px)}
+#focus-reader .focus-line:lang(or){font-family:var(--odia)}
+#focus-reader .focus-line:is(:lang(hi),:lang(mr)){font-family:'Tiro Devanagari Hindi',serif}
+.contents-page .book-contents{border:0;box-shadow:none;background:none;max-width:1040px;padding:16px 0;margin:28px auto 40px}
+.contents-heading h1{margin:12px 0 14px}.contents-invitation{font:20px/1.6 var(--serif);margin:0 0 24px;color:var(--muted)}
+.contents-page .poem-actions{margin:0 0 4px}
+.contents-page .book-contents>.opening-waterline{margin:0 0 4px}
+.contents-page .book-index{padding-top:0}
+.contents-page #page-save-place,.contents-page #page-saved-details,.contents-page .toolkit-contents,.contents-page .page-tools-tip{display:none}
+.contents-page .contents-title{font-size:var(--reading-size,24px)}
+.author-page .author-profile{background:none;border:0;box-shadow:none;padding:16px 0}
+.author-page .author-roman{margin-bottom:0}
+.author-page .author-portrait{padding:12px;border:1px solid var(--line);border-bottom:3px solid var(--rust);background:var(--paper);box-shadow:5px 6px 0 color-mix(in srgb,var(--rust) 7%,transparent)}
+.author-page .biography-label{font:500 28px/1.4 var(--display);margin:28px 0 18px}
+.listening-heading:after{content:'';display:block;width:115px;height:23px;margin-top:24px;background:url('poetic-waterline.svg') left center/contain no-repeat}
+@media(min-width:761px){#focus-reader .focus-page{font-size:var(--focus-size,24px)}}
+@media(max-width:760px){
+ .standalone-page .chapter-header h1.long-title{font-size:32px}
+ .standalone-page .book-glance{padding-inline:12px}
+ .contents-page .book-contents{padding-inline:0;margin-top:20px}
+ .contents-page .contents-title{font-size:var(--reading-size,22px)}
+ .author-page .author-portrait{padding:8px;box-shadow:3px 4px 0 color-mix(in srgb,var(--rust) 7%,transparent)}
+ .footer{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+ .footer nav{justify-content:flex-start}
+ .book-companion .poem-art img{width:100%;height:auto;aspect-ratio:auto}
+ #focus-reader .focus-title h2{font-size:28px}
+ .artistic-label{gap:8px}
+}
+@media print{.opening-waterline,.contents-page .poem-actions{display:none}}

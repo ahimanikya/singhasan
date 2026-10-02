@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-02",
+  "source": "Kabita Live: current artistic page system consolidated 2 October 2026",
+  "guide_sha256": "0db7c5d78b1ee85e3e545771adb467c0c4a9dad3f5fdcff807c54cd8f1dc3190",
+  "scope": [
+    "Poem pages and In the book panel",
+    "Contents reading actions",
+    "Home and poet-page artistic details",
+    "Quiet reader",
+    "Mobile footer and reader tools"
+  ],
+  "applied": [
+    "Reimported approved foundations, fonts, licenses, icons, textures and compact waterline",
+    "Laterite reading icons, current title caps and English poet byline",
+    "Related links with explanatory text in the existing tinted book panel; same single panel moves into mobile Aa",
+    "Contents Aa, Share and Read quietly; compact waterline before the ordered book contents",
+    "Existing portrait paper frame and laterite lower edge, home and biography marks",
+    "Shared continuous pagination module: heading and at least three verse lines before starting another poem; preserves poem and line identity",
+    "Page/spread numbers without totals, compact settings, explicit close button and outside/Escape dismissal",
+    "Searchable section chooser with deliberate Read section or Read the whole book actions",
+    "Responsive 24px/22px standard type and 28px/32px enlargement; saved size migration",
+    "Paper-turn and sound effects off by default, preserving explicit saved choices"
+  ],
+  "book_specific_preferences": [
+    "Image stories remain visible as requested",
+    "Quiet reading remains image-free, with typographic title/end leaves and small separators; no repeated poet portraits",
+    "Single-book chooser instead of editions/poets library",
+    "Profile keeps expanded biography without contribution list",
+    "Audio edition remains available; no generic attribution or credit notices added"
+  ],
+  "verification": {
+    "publication_validation": "75 pages,69 source sections,68 distinct illustrations,71 recording hashes",
+    "pagination_tests": 6,
+    "browser_checks": [
+      "desktop mixed-poem spread, page numbering and no overflow",
+      "360px and390px iframe viewport layouts, no horizontal overflow",
+      "mobile toolkit contains the single In the book panel and stays within viewport",
+      "32px quiet prose reflow without clipped page content",
+      "section search preserves current page and disables empty result action",
+      "whole-book entry starts at title page despite search",
+      "contents sharing uses book title and contents URL",
+      "collection enlargement carries into quiet reading",
+      "bookmark survives next/previous and test bookmark removed",
+      "Escape closes settings while reader remains open",
+      "night quiet mode and illustrated book page turns"
+    ],
+    "limitations": [
+      "Responsive checks used browser iframe viewports; physical touch/Apple trackpad and audio-effect audition were not performed.",
+      "Same-assistant design verification; no independent editorial or linguistic review."
+    ]
+  },
+  "publication": "pending"
+}

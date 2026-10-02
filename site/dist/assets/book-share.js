@@ -10,12 +10,12 @@
   if(selected&&selected!=='original')link.searchParams.set('lang',selected);else link.searchParams.delete('lang');
   url.value=link.href;status.textContent='';
   const title=document.querySelector('#chapter-title'),verse=document.querySelector('#experience-verse');
-  const excerpt=verse.innerText.split('\n').filter(line=>line.trim()).slice(0,4).join('\n');
+  const excerpt=(verse?.innerText||'').split('\n').filter(line=>line.trim()).slice(0,4).join('\n');
   const excerptText=excerpt.length>320?excerpt.slice(0,320).replace(/\s+\S*$/,'')+'…':excerpt;
   const cardTitle=dialog.querySelector('.share-title'),cardVerse=dialog.querySelector('.share-verse');
-  heading=title.textContent;cardTitle.textContent=heading;cardTitle.lang=title.lang||'or';cardVerse.textContent=excerptText;cardVerse.lang=verse.lang;
+  dialog.querySelector('.share-book').hidden=!verse;cardVerse.hidden=!verse;heading=title?.textContent||'ସିଂହାସନ';cardTitle.textContent=heading;cardTitle.lang=title?.lang||'or';cardVerse.textContent=excerptText;cardVerse.lang=verse?.lang||'or';
   caption=heading+'\nପ୍ରଭାକର ଶତପଥୀ\n\n'+excerptText;
-  dialog.querySelector('h2').textContent=location.pathname.endsWith('intro.html')?'Share the introduction':'Share this poem';
+  dialog.querySelector('h2').textContent=location.pathname.endsWith('intro.html')?'Share the introduction':verse?'Share this poem':'Share the book';
   document.querySelector('#share-whatsapp').href='https://wa.me/?text='+encodeURIComponent(caption+'\n\n'+url.value);
   document.querySelector('#share-facebook').href='https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url.value);
   native.hidden=typeof navigator.share!=='function';

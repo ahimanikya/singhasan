@@ -2,9 +2,10 @@
  <div class="focus-shell">
   <header class="focus-top"><button id="close-focus" aria-label="Exit reading mode">← <span>Exit reading</span></button><div class="focus-top-tools"><button id="focus-bookmark" aria-label="Bookmark this page" aria-pressed="false" title="Bookmark this page"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 3.5h12v17l-6-4-6 4z"/></svg></button><button id="focus-settings-button" aria-expanded="false" aria-controls="focus-settings" aria-label="Reading settings">Aa</button></div></header>
   <section id="focus-settings" hidden aria-label="Reading settings">
+   <div class="page-tools-head"><strong>Reader tools</strong><button id="focus-settings-close" type="button" aria-label="Close reading settings">×</button></div>
+   <details id="focus-library"><summary>Choose a poem or introduction</summary><label>Find words in the book<input id="focus-search" type="search" placeholder="Search poems" autocomplete="off"></label><label>Section <select id="focus-poem"></select></label><p id="focus-search-status" role="status"></p><div class="focus-library-actions"><button id="focus-read-section" type="button">Read section</button><button id="focus-read-all" type="button">Read the whole book</button></div></details>
    <label>Language <select id="focus-language"><option value="original">Odia</option><option value="or" hidden>Odia</option></select></label>
-   <label>Text size <select id="focus-size"><option value="22">Standard</option><option value="26">Large</option><option value="30">Extra large</option></select></label>
-   <label>Section <select id="focus-poem"></select></label>
+   <label>Text size <select id="focus-size"><option value="22">Standard</option><option value="28">Large</option><option value="32">Extra large</option></select></label>
    <label class="focus-switch"><span>Paper turn</span><input type="checkbox" id="focus-motion"></label>
    <label class="focus-switch"><span>Soft page sound</span><input type="checkbox" id="focus-sound"></label>
    <button id="focus-sound-test" type="button" hidden>Try the sound</button>

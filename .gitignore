@@ -3,10 +3,10 @@
 !/.gitignore
 !/.gitattributes
 !/README.md
+!/design-system/
 !/.github/
 !/site/
 site/__pycache__/
-site/import_design_system.py
 site/EDITORIAL-PREFERENCES.txt
 **/.DS_Store
 **/*.pyc

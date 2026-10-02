@@ -4,6 +4,7 @@ import {snap as snapRange, normalized as normalizeRanges, subtract, poemMarkKey,
 const payload=document.querySelector('#reading-data');if(!payload)return;
 const data=JSON.parse(payload.textContent);
 const tabs=[...document.querySelectorAll('[data-reading-language]:not(:disabled)')],verse=document.querySelector('#experience-verse'),panel=document.querySelector('#reading-panel');
+if(!verse||!panel)return;
 const clear=document.querySelector('#clear-marks');
 let language=data.source_language,marks=[],pending=[],storageOK=true;
 const selectionBar=document.querySelector('#selection-tools');

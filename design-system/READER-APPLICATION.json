@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-01",
+  "scope": "Normal introduction and all 68 poem pages, with coordinated contents and poet pages",
+  "layout": "Two-leaf scrollable book on desktop; single framed page on phones; matching bound covers",
+  "import": "26 local guide, token, font, license, texture and Quiet ink icon assets from Kabita Live",
+  "navigation": "Paper drawer at compact widths; native modal focus containment, Escape dismissal and focus return",
+  "verified": {
+    "desktop": [1280, 720],
+    "phones": [[390, 844], [360, 800]],
+    "reading_sizes": [22, 24, 28, 32],
+    "longest_line_poem": 65,
+    "verse_text_unchanged": true,
+    "horizontal_overflow": false,
+    "clipped_lines": 0,
+    "night_texture_disabled": true,
+    "quiet_reader_cover_and_spread": true,
+    "all_72_pages_links_and_assets": true,
+    "browser_errors": [],
+    "reader_archive_updated": true
+  }
+}

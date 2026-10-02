@@ -25,3 +25,9 @@ python3 -m http.server 8768 --directory site/dist
 Push to `main` to build, validate and deploy `site/dist` to GitHub Pages. The custom domain is `singhasan.poemwithoutborders.org`; its DNS CNAME points to `ahimanikya.github.io`. The main poemwithoutborders.org website is hosted separately.
 
 The poems and illustrations are not offered under an open-source license. Font license files accompany the bundled fonts.
+
+## Design-system sync · 2 October 2026
+
+The current Kabita Live guide, import hashes and book-specific application record are kept in `design-system/`. Refresh shared foundations with `python3 site/import_design_system.py --source "/path/to/Kabita Live"`, then review the page-specific adaptations in `site/dist/assets/kabita-sync.css` before rebuilding. The import does not overwrite Singhasan’s covers, illustration narratives, audio, source poems or device-local saved passages.
+
+Quiet reading uses Kabita Live’s shared `reader-pagination.mjs` three-line opening rule. Run `node --test site/tests/reader-pagination.test.mjs` when changing pagination. The book retains image-free title/end leaves; its section chooser searches the introduction and all poems without changing the current place until Read section is chosen. Read the whole book starts at the title page regardless of the search.
