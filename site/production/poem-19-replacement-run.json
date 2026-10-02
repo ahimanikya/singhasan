@@ -46,7 +46,7 @@
     "duration_seconds": 131.4,
     "public_url": "https://singhasan.poemwithoutborders.org/assets/audio/poem-19-9676b3cb.mp3"
   },
-  "status": "imported-for-publication",
+  "status": "published-for-review",
   "review": "user-selected-replacement",
   "source_check": "Displayed Suno lyrics correspond to Poem 19. Spoken completeness and pronunciation are not established by metadata checks.",
   "audio": {
@@ -60,5 +60,11 @@
     "review": "user-selected-replacement",
     "sha256": "b704e60a37c9286a3e44588c5568c9a1ce67eb95ebfc779150679cb6a3a08b93"
   },
-  "verification": "Selected MP3 fully decoded; 93.44 seconds decoded PCM, matching the 1:33 Suno display."
+  "verification": "Selected MP3 fully decoded; 93.44 seconds decoded PCM, matching the 1:33 Suno display.",
+  "publication": {
+    "commit": "dda0ccc9ce2e40f8bdb56d82bf3a663d9314f2d2",
+    "workflow": "https://github.com/ahimanikya/singhasan/actions/runs/37006804444",
+    "url": "https://singhasan.poemwithoutborders.org/listen.html#poem-19",
+    "verification": "Live player loaded poem-19-e82513fe.mp3, duration 93.44 seconds; playback advanced without media errors. Only Poem 19 changed; all 75 pages and 71 audio entries validated."
+  }
 }

@@ -522,7 +522,7 @@
       "language": "or",
       "text": "ଦିନେ ପରିଚାରିକା\nଶୁଣି ପକାଇଲା\nଦର୍ପଣ ସାମ୍ନାରେ\nଶୃଂଗାର କାଳରେ,\nମହାରାଣୀଂକ\nକରୁଣ ବିଳାପ:\nଏଠି ମୁକ୍ତି ନାହିଁ,\nଥରୁଟିଏ ମନ ଭରି\nକାଂଦିବା ପାଇଁ\nଥାନଟିକେ ନାହିଁ,\nକ୍ଷୀରଭରା ଥନଟାକୁ\nହସି ହସି\nଭରିଦେବା ପାଇଁ\nଆଁଟିଏ ନାହିଁ ।\n\nମୁଁ ବଂଦିନୀଟିଏ,\nରୂପ ପସରାର\nରାଜଧାନୀଟିଏ,\nପ୍ରଜାମାନଂକ ଲୁହ\nଆଉ ଲୁହରେ ଗଢ଼ା\nଯାତନାର\nସୁନା ନୀଡ଼ ଭିତରେ\nଶୋଇ\nକେତେ କାଳ\nମୁକୁଟ ଓ ସିଂହାସନର\nରୂପକୁ ଦେଖିବି?\nଲୁଣ ଖାଇ ଗୁଣ ସୁମରିବି,\nଶିହରିବି\nବଂଜର ମାଟିର ଯଂତ୍ରଣାରେ?\n\nପରିଚାରିକାକୁ\nକିଏ ବୁଝାଇବ:\nଦୁଃଖ ସମାନ,\nଖାଲି ଯା’\nଅଲଗା ଅଲଗା ଭେକ ।",
       "source_sha256": "30f8642c44bfa5d64c52a3ba3a7d33de92671e329b9d8907815e22d0d65f2f44",
-      "status": "imported-for-publication",
+      "status": "published-review",
       "candidates": [
         {
           "take": 1,
@@ -550,7 +550,8 @@
       "duration_seconds": 93.44,
       "public_url": "https://singhasan.poemwithoutborders.org/assets/audio/poem-19-e82513fe.mp3",
       "review": "user-selected-replacement",
-      "replacement_record": "site/production/poem-19-replacement-run.json"
+      "replacement_record": "site/production/poem-19-replacement-run.json",
+      "publication_commit": "dda0ccc9ce2e40f8bdb56d82bf3a663d9314f2d2"
     },
     {
       "section": 20,
