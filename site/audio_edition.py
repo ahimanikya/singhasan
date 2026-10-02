@@ -11,7 +11,7 @@ def render_audio(root, chapters, icon):
     rows=[]
     for track in tracks:
         number=track.get('poem')
-        label=f'Poem {number:02}' if number else track['label']
+        label=f'Poem {number:02}' if number else ('Opening' if track['id']=='welcome' else 'Closing')
         title=next((line.strip() for c in chapters if c['number']==number for p in c['pages'] for line in p['text'].splitlines() if line.strip()),track['label']) if number else track['label']
         track['title']=title
         track['label']=label

@@ -29,6 +29,7 @@
     title.textContent = track.title;
     title.lang = track.poem ? 'or' : 'en';
     document.getElementById('audio-read').href = track.poem ? `poem-${track.poem}.html` : 'book.html';
+    document.getElementById('audio-read').textContent = track.poem ? 'Read the poem' : 'Open the book';
     previous.disabled = index === 0;
     next.disabled = index === tracks.length - 1;
     buttons.forEach(button => {
