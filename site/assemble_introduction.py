@@ -63,7 +63,7 @@ duration_label=f'{int(duration)//60}:{int(duration)%60:02}'
 entry={'id':'introduction','poem':None,'label':run['title'],'language':'or',
        'src':str(destination.relative_to(root/'dist')),'duration_label':duration_label,
        'duration_seconds':duration,'source_urls':[p['selected'] for p in run['parts']],
-       'review':'first-take-review','sha256':hashlib.sha256(destination.read_bytes()).hexdigest()}
+       'review':run.get('review_status','first-take-review'),'sha256':hashlib.sha256(destination.read_bytes()).hexdigest()}
 (root/'introduction-audio.json').write_text(json.dumps(entry,ensure_ascii=False,indent=2)+'\n')
 catalog=json.loads((root/'audio-edition.json').read_text())
 catalog['tracks']=[t for t in catalog['tracks'] if t['id']!='introduction']

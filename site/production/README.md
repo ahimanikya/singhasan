@@ -9,3 +9,5 @@ The introduction is the existing Odia prose “ସିଂହଦ୍ଵାର”, n
 Only downloaded, validated files appear in `../audio-edition.json` and on the listening page. Audio is stored with Git LFS; the publishing workflow fetches LFS objects before creating the Pages artifact. The site provides continuous playback, track links, speed controls and a listening position saved on the listener's device. Playback begins only after a listener action.
 
 Do not resubmit a track marked submitting or submitted without reconciling its Suno workspace. Preserve both candidates and existing files. Download through the normal Suno controls; do not use hidden media endpoints or buy allowance without a specific user instruction.
+
+The user subsequently selected Take 2 for all four introduction parts. `prose-introduction-take-2-run.json` records that replacement review version; the original run is preserved as `prose-introduction-first-take-run.json`, alongside its media. `prose-introduction-run.json` points to the currently published version. Selection is for listening review, not confirmation of pronunciation or spoken completeness.
