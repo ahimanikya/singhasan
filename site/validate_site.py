@@ -15,7 +15,7 @@ class Page(HTMLParser):
         if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
 errors=[]
 pages=sorted(root.glob('*.html'))
-assert len(pages)==75, 'Expected home, contents, two covers, poet, listening edition, introduction and 68 poems'
+assert len(pages)==76, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -33,10 +33,10 @@ for n in range(1,69):
     assert f'assets/poems/unique/poem-{n:02}.png' in html and 'class="illustration-reading"' in html
 assert len({hashlib.sha256((root/f'assets/poems/unique/poem-{n:02}.png').read_bytes()).hexdigest() for n in range(1,69)})==68
 assert (root/'CNAME').read_text().strip()=='singhasan.poemwithoutborders.org'
-assert len(ET.parse(root/'sitemap.xml').getroot())==75
+assert len(ET.parse(root/'sitemap.xml').getroot())==76
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 75 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 76 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -75,3 +75,27 @@ for track in audio:
         assert track['source_urls']==[p['selected'] for p in production['parts']]
         assert abs(track['duration_seconds']-sum(p['duration_seconds'] for p in production['parts']))<0.2
 print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')
+
+# Listen-along cues belong to this exact recording and the unchanged source words.
+reading_book=json.loads((root/'assets/reading-book.json').read_text())
+for track in audio:
+    if track['id'] in ('welcome','closing'):
+        continue
+    cues_file=root/'assets/audio-sync'/f"{track['id']}.json"
+    assert cues_file.is_file(), f"Missing follow timings: {track['id']}"
+    timing=json.loads(cues_file.read_text())
+    section=next(p for p in reading_book['poems'] if p['id']==timing['section'])
+    stanzas=section['variants']['or']['stanzas']; lines=sum(stanzas,[])
+    source=json.dumps(stanzas,ensure_ascii=False,separators=(',',':')).encode()
+    assert timing['audioSha256']==track['sha256'], f"Stale recording timings: {track['id']}"
+    assert timing['textSha256']==hashlib.sha256(source).hexdigest(), f"Stale source timings: {track['id']}"
+    assert timing['language']=='or' and timing['cues'], track['id']
+    assert not timing.get('partialCoverage') or timing.get('syncSafe') is False, track['id']
+    previous=0
+    for cue in timing['cues']:
+        assert 0<=previous<=cue['start']<=cue['end']<=track['duration_seconds']+.1, track['id']
+        assert lines[cue['line']][cue['offset']:cue['endOffset']]==cue['text'], track['id']
+        previous=cue['end']
+assert 'id="follow-book"' in (root/'read-along.html').read_text()
+assert 'id="audio-follow"' in (root/'listen.html').read_text()
+print('Validated acoustic follow timings for the introduction and all 68 poems against their recordings and source words.')

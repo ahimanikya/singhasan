@@ -1,0 +1,38 @@
+@media screen{
+ .read-along-page{height:100dvh;min-height:0;overflow:hidden}
+ .read-along-page>.masthead,.read-along-page>.header-rule,.read-along-page>.footer,.read-along-page>.footer-landscape{display:none}
+ .read-along-page #reading{display:flex;flex-direction:column;width:100%;max-width:none;height:100%;margin:0;padding:0}
+ #follow-book{display:block;flex:1;min-height:0;width:100%;border:0;background:var(--paper)}
+ .follow-player{flex:none;padding:8px 24px 10px;border-top:1px solid var(--line);background:var(--paper);color:var(--ink);font:13px/1.4 var(--ui)}
+ .follow-main{display:flex;gap:16px;align-items:center}
+ .follow-main button,.follow-options button{min-height:40px;min-width:44px;background:none;border:0;color:var(--sea);font:inherit;cursor:pointer}
+ #follow-play{border:1px solid var(--line);padding:4px 16px;min-width:76px}
+ #follow-label{white-space:nowrap;color:var(--muted)}
+ #follow-seek{flex:1;min-width:50px;accent-color:var(--sea)}
+ #follow-time{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+ .follow-options{display:flex;gap:4px 20px;align-items:center;justify-content:center;flex-wrap:wrap}
+ .follow-options label{display:flex;align-items:center;gap:6px;min-height:36px}
+ .follow-options input{accent-color:var(--sea)}
+ .follow-options select{font:inherit;background:var(--paper);color:var(--ink);min-height:36px;border:1px solid var(--line)}
+ #follow-status{margin:0;text-align:center;color:var(--muted);font-size:12px;min-height:17px}
+ #follow-resume{text-decoration:underline;text-underline-offset:4px}
+ #follow-audio{display:none}
+ .reader-listen{display:inline-flex;align-items:center;gap:6px;min-width:44px;min-height:44px;justify-content:center;font:14px var(--ui);color:var(--sea)}
+ .reader-listen svg{width:22px;height:22px}
+ .reader-topbar .reader-listen span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+ .embedded-reader .reader-listen{display:none!important}
+ .audio-stanza .line-words{background:color-mix(in srgb,var(--rust) 12%,transparent);box-decoration-break:clone;-webkit-box-decoration-break:clone}
+ .night .audio-stanza .line-words{background:color-mix(in srgb,var(--sea) 28%,transparent)}
+}
+@media screen and (max-width:760px){
+ .follow-player{padding:6px 12px max(6px,env(safe-area-inset-bottom))}
+ .follow-main{gap:8px;flex-wrap:wrap}
+ #follow-label{font-size:11px}
+ #follow-time{font-size:11px}
+ #follow-play{min-width:60px;padding-inline:8px}
+ .follow-options{gap:0 10px;font-size:11px}
+ .follow-options button{min-width:32px;font-size:11px}
+ .full-page-reader .reader-topbar .poem-actions{gap:4px 8px}
+ .reader-topbar{padding-inline:12px}
+}
+@media print{.follow-player,.reader-listen{display:none}}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02",
+  "feature": "Listen & follow in the unified book",
+  "coverage": {
+    "recordings": 71,
+    "automaticallyFollowedPoems": 67,
+    "manualSections": [
+      "introduction",
+      "poem-50"
+    ]
+  },
+  "timings": "Acoustic forced alignment of the exact audio and original source words; fluent listening review pending.",
+  "checked": [
+    "Desktop and phone page layout",
+    "Spoken stanza highlighting",
+    "Page turns after seek and during playback",
+    "Continuous playback from Poem 19 into Poem 20",
+    "Text-size reflow preserves the narrated passage",
+    "Manual browsing and resume following",
+    "Explicit Follow pages preference persists across recordings",
+    "Cover quiet toggle persists into introduction and poems",
+    "Exit reader leaves the frame and stops playback",
+    "Reader headphones link starts at the visible spread",
+    "Listening page hands over the selected recording and time",
+    "Partial recordings have following disabled and a persistent note",
+    "Source text, existing audio hashes, links, and sitemap validated",
+    "16 reader tests passed; five timeline tests repeated after final changes"
+  ],
+  "knownIssues": [
+    "The introduction and Poem 50 appear to omit source text; their automatic following is disabled.",
+    "The in-app browser emitted a MutationObserver exception in its injected Electron UI script; no site-script exception was found in the recorded stack."
+  ],
+  "timingAudit": "../site/alignment/TIMING-AUDIT-2026-10-02.json"
+}

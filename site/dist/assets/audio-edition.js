@@ -29,6 +29,7 @@
     title.textContent = track.title;
     title.lang = track.language || (track.poem ? 'or' : 'en');
     document.getElementById('audio-read').href = track.reading_route || (track.poem ? `poem-${track.poem}.html` : 'book.html');
+    document.getElementById('audio-follow').href = `read-along.html?track=${encodeURIComponent(track.id)}`;
     document.getElementById('audio-read').textContent = track.id === 'introduction' ? 'Read the introduction' : (track.poem ? 'Read the poem' : 'Open the book');
     previous.disabled = index === 0;
     next.disabled = index === tracks.length - 1;
@@ -40,6 +41,12 @@
     status.textContent = time > 0 ? 'Your listening place has been restored. Press play to continue.' : 'Press play to listen.';
     if (autoplay) play();
   }
+  document.getElementById('audio-follow').addEventListener('click', event => {
+    const link = event.currentTarget, url = new URL(link.href);
+    url.searchParams.set('time', String(audio.currentTime));
+    link.href = url.href;
+    audio.pause();
+  });
   audio.addEventListener('loadedmetadata', () => {
     if (restoreTime > 0 && Number.isFinite(audio.duration)) audio.currentTime = Math.min(restoreTime, Math.max(0, audio.duration - 1));
     restoreTime = 0;
