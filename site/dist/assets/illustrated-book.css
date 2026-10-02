@@ -124,3 +124,16 @@
  .illustrated-mode.pagination-on .leaf-folios{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));position:absolute;inset:8px 0 0;align-items:center;text-align:center;pointer-events:none;font:13px/1.4 var(--ui);font-variant-numeric:tabular-nums;color:var(--muted)}
  .illustrated-mode #leaf-progress{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 }
+
+/* Kabita Live's compact quiet-reader toolkit, shared by the whole book. */
+.book-only-control{display:none!important}
+.illustrated-mode .book-only-control:not([hidden]){display:inline-flex!important}
+.illustrated-mode #open-share{display:none}
+.illustrated-mode #quick-bookmark{min-width:44px;justify-content:center}
+#quick-bookmark[aria-pressed=true] svg{fill:color-mix(in srgb,var(--rust) 18%,transparent)}
+#page-bookmarks .reader-select{display:block;font:12px/1.4 var(--ui);color:var(--muted);margin:12px 0}
+#page-bookmarks .reader-select select{display:block;width:100%;min-height:44px;padding:8px;margin-top:5px;font:16px/1.4 var(--ui);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:0}
+#page-bookmarks .reader-compat-controls{display:none!important}
+.book-library-actions{display:flex;flex-wrap:wrap;gap:4px 16px}
+#page-bookmarks .book-library-actions button,#page-bookmarks #book-sound-test{min-height:44px;font:14px/1.4 var(--ui);text-decoration:underline;text-underline-offset:4px}
+#book-effects-note:empty{display:none}

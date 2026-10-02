@@ -1,0 +1,8 @@
+{
+  "reference": "Kabita Live site/templates/quiet-reader.html and consolidated design guide",
+  "scope": "Unified Singhasan book reader; ordinary poem pages retain sharing",
+  "restored": ["Direct page bookmark button", "Compact language and text-size selects", "In this book section selector", "Search and Read the whole book", "Paper curl using the previous quiet reader's effect", "Soft sound preview and reduced-motion feedback", "Fixed multiple page bookmarks rather than moving poem bookmarks"],
+  "preserved": ["Quiet/illustrated toggle", "Shaded centre fold", "Individual page folios", "Shared saved underlines", "All-book saved passages", "Three reading surfaces", "Listening links", "Outside click and Escape close settings"],
+  "checks": ["No Share control visible in the book toolbar", "Two distinct bookmarks remain on their original pages", "Text-size select changes rendered type", "Sound preview reports active audio playback; switched off after review", "Paper-curl layer appears, uses opaque paper and is removed after animation", "No console errors in reviewed pages", "390x844 toolkit remains inside viewport with internal scrolling", "Odia search returns matching poem", "Read the whole book returns to the cover retaining quiet mode"],
+  "limitations": ["Phone checks use a browser viewport", "No independent native-language or physical-device audio review"]
+}

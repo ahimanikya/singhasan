@@ -1,3 +1,4 @@
+import {capturePaper,paperTurn,cancelPaperTurn} from './book-paper-turn.mjs';
 import {bookURL,leafNumbers} from './reader-state.mjs?v=2';
 /* Native column fragmentation keeps the original verse and saved mark offsets intact. */
 const body=document.body,book=document.querySelector('.printed-spread'),verse=document.querySelector('#experience-verse'),panel=document.querySelector('#reading-panel');
@@ -29,10 +30,10 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
   next.querySelector('.leaf-button-label').textContent=kind==='art'&&mobile.matches?'Image story':isArt()?readLabel:index===count()-1?(after.includes('back-cover')?'Back cover':'Next poem'):'Next';
   panel.setAttribute('aria-label',`Book text, ${spread===2?'spread':'page'} ${Math.max(1,index-openingLeaves()+1)} of ${textPages}`);
   book.dataset.leaf=String(index+1);book.dataset.leaves=String(count());book.dataset.textLeaves=String(textPages);book.dataset.textColumns=String(textColumns);book.dataset.spread=String(spread);book.dataset.leafKind=kind;
-  anchor=visibleAnchor();if(!isArt()){try{localStorage.setItem('singhasan-book-place-v1',JSON.stringify({route:location.pathname.split('/').pop(),...anchor,language:verse.lang,quiet}))}catch{}}verse.dataset.pageLine=anchor.line;verse.dataset.pageOffset=anchor.offset;if(updateURL)url();if(remember&&!isArt())document.dispatchEvent(new CustomEvent('book-page-turn',{detail:anchor}));
+  anchor=visibleAnchor();if(!isArt()){try{localStorage.setItem('singhasan-book-place-v1',JSON.stringify({route:location.pathname.split('/').pop(),...anchor,language:verse.lang,quiet}))}catch{}}verse.dataset.pageLine=anchor.line;verse.dataset.pageOffset=anchor.offset;if(updateURL)url();document.dispatchEvent(new Event('book-page-rendered'));if(remember)document.dispatchEvent(new CustomEvent('book-page-turn',{detail:anchor}));
  }
  function layout(){
-  if(!ready)return;const oldKind=book.dataset.leafKind,oldAnchor=anchor;book.classList.remove('art-page','story-page');
+  if(!ready)return;cancelPaperTurn();const oldKind=book.dataset.leafKind,oldAnchor=anchor;book.classList.remove('art-page','story-page');
   const width=panel.getBoundingClientRect().width;if(width<1||panel.clientHeight<1)return;
   spread=mobile.matches?1:2;gap=mobile.matches?32:80;columnWidth=(width-gap*(spread-1))/spread;
   verse.style.setProperty('--leaf-width',columnWidth+'px');verse.style.setProperty('--leaf-gap',gap+'px');verse.style.setProperty('--leaf-shift','0px');stride=width+gap;
@@ -45,7 +46,7 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  }
  function schedule(){clearTimeout(timer);timer=setTimeout(layout,60)}
  function bookRoute(href,last=false){return bookURL(new URL(href,location.href).pathname.split('/').pop(),{quiet,language:verse.lang,last})}
- function turn(direction){if(blocked())return;window.getSelection()?.removeAllRanges();document.querySelector('#selection-tools').hidden=true;const target=index+direction;if(target<0){location.href=bookRoute(before,true);return}if(target>=count()){location.href=bookRoute(after);return}index=target;render(true,true);if(body.dataset.pageMotion!=='false'&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const leaf=isArt()?book.querySelector('.book-companion'):book.querySelector('.reader');leaf.animate([{opacity:.55,transform:`translateX(${direction*14}px)`},{opacity:1,transform:'translateX(0)'}],{duration:210,easing:'ease-out'})}}
+ function turn(direction){if(blocked())return;window.getSelection()?.removeAllRanges();document.querySelector('#selection-tools').hidden=true;const target=index+direction;if(target<0){location.href=bookRoute(before,true);return}if(target>=count()){location.href=bookRoute(after);return}const paper=body.dataset.pageMotion!=='false'?capturePaper(isArt()?book.querySelector('.book-companion'):book.querySelector('.reader'),book):null;index=target;render(true,true);paperTurn(direction,paper,book)}
  document.addEventListener('book-set-quiet',event=>{if(!ready)return;const saved=visibleAnchor();quiet=event.detail;body.classList.toggle('quiet-mode',quiet);try{localStorage.setItem('singhasan-book-quiet-v1',String(quiet))}catch{}pendingJump=saved;layout();document.dispatchEvent(new Event('book-mode-changed'))});
  document.querySelector('#leaf-switch').addEventListener('click',()=>{if(blocked()||quiet)return;index=isArt()?openingLeaves():0;render(true,true)});
  previous.addEventListener('click',()=>turn(-1));next.addEventListener('click',()=>turn(1));
