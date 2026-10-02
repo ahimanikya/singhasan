@@ -137,3 +137,27 @@
 .book-library-actions{display:flex;flex-wrap:wrap;gap:4px 16px}
 #page-bookmarks .book-library-actions button,#page-bookmarks #book-sound-test{min-height:44px;font:14px/1.4 var(--ui);text-decoration:underline;text-underline-offset:4px}
 #book-effects-note:empty{display:none}
+
+/* The unified book fills the browser, with an explicit way back to the site. */
+@media screen{
+ .full-page-reader{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+ .full-page-reader>.masthead,.full-page-reader>.header-rule,.full-page-reader>.footer,.full-page-reader>.footer-landscape{display:none}
+ .reader-topbar{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:4px 24px;color:var(--ink);font:14px/1.4 var(--ui)}
+ .reader-topbar .exit-reader{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap;text-decoration:none}
+ .reader-topbar .exit-reader:hover{color:var(--rust)}
+ .full-page-reader .reader-topbar .poem-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;margin:0;padding:0;border:0;gap:8px 20px}
+ .reader-topbar button{display:inline-flex;align-items:center;gap:8px;min-height:44px;border:0;background:none;color:var(--ink);padding:4px 0;font:14px/1.4 var(--ui)}
+ .reader-topbar button svg{width:22px;height:22px}
+ .reader-topbar .reader-aa{font:24px var(--serif)}
+ .full-page-reader.illustrated-mode.pagination-on #reading{width:calc(100% - 32px);max-width:none;margin:0 16px 12px}
+ .full-page-reader.illustrated-mode.pagination-on .printed-spread>.poem-heading{display:block;margin-bottom:12px;padding-bottom:8px}
+ .full-page-reader.cover-edition #reading{width:100%;max-width:none;margin:0;flex:1;min-height:0}
+}
+@media screen and (max-width:760px){
+ .reader-topbar{padding:2px 16px;gap:8px}
+ .full-page-reader .reader-topbar .poem-actions{gap:4px 14px}
+ .reader-topbar button{font-size:12px;gap:4px}
+ .reader-topbar [data-quiet-toggle] svg{display:none}
+ .full-page-reader.illustrated-mode.pagination-on #reading{width:calc(100% - 16px);margin:0 8px 8px}
+}
+@media print{.reader-topbar{display:none}}
