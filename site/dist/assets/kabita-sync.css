@@ -57,3 +57,7 @@
  .artistic-label{gap:8px}
 }
 @media print{.opening-waterline,.contents-page .poem-actions{display:none}}
+/* Match Kabita Live's fine centre rule without changing measured text width. */
+@media(min-width:1000px) and (min-height:500px){
+ #focus-reader #focus-pages>.focus-page+.focus-page{box-shadow:inset 1px 0 0 var(--line)}
+}
