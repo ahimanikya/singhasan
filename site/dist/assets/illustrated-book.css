@@ -80,33 +80,18 @@
  .illustrated-mode.pagination-on .image-narrative{font-size:17px;line-height:1.65}
 }
 
-/* Both readers use the same paper frame and content-aligned centre divider.
-   An overlay leaves pagination measurements and original text untouched. */
+/* The original illustrated book's softly shaded spine, shared by both modes. */
 @media screen{
- .illustrated-mode.pagination-on .printed-spread,
- #focus-reader .focus-book-frame:not(.closed-book){
-  border:1px solid var(--line);border-top:3px solid var(--rust);
-  border-radius:0;box-shadow:0 3px 12px #263c3c0a;
- }
  .illustrated-mode .printed-spread::after{display:none}
- .illustrated-mode.pagination-on .printed-spread>.reader,
- .illustrated-mode.pagination-on .printed-spread>.book-companion,
- #focus-reader #focus-pages{position:relative}
- .illustrated-mode.pagination-on .printed-spread>.reader::after,
- .illustrated-mode.pagination-on .printed-spread>.book-companion::after,
- #focus-reader #focus-pages::after{
-  content:'';display:none;position:absolute;left:50%;top:0;bottom:0;
-  width:0;border-left:1px solid var(--line);pointer-events:none;z-index:1;
- }
- .night.illustrated-mode.pagination-on .printed-spread,
- .night #focus-reader .focus-book-frame:not(.closed-book){box-shadow:none}
 }
 @media screen and (min-width:761px){
- .illustrated-mode.pagination-on .printed-spread>.reader::after,
- .illustrated-mode.pagination-on .printed-spread>.book-companion::after{display:block}
-}
-@media screen and (min-width:1000px) and (min-height:500px){
- #focus-reader #focus-pages:not(.has-cover)::after{display:block;top:28px;bottom:28px}
+ .illustrated-mode .printed-spread::after{
+  display:block;inset:0;width:auto;border:0;border-radius:0;
+  background:linear-gradient(90deg,#3b29171a,transparent 2%,transparent 46%,#4c3b2010 48%,#4c3b2029 49.7%,#fff3 50%,#4c3b2010 51.1%,transparent 54%,transparent 98%,#3b291710);
+ }
+ .illustrated-mode.night .printed-spread::after{
+  background:linear-gradient(90deg,#0002,transparent 3%,transparent 46%,#0003 49.7%,#ffffff0c 50%,transparent 54%,transparent 97%,#0002);
+ }
 }
 
 /* Quiet is a setting of this same reader, with identical text measurements. */
