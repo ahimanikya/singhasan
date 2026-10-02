@@ -1967,7 +1967,7 @@
     "duration_seconds": 28.2,
     "public_url": "https://singhasan.poemwithoutborders.org/assets/audio/closing-9b71e58b.mp3"
   },
-  "strategy": "One full poem per track, English welcome and closing as separate tracks; continuous site playback. The user will supply the full Odia introduction, to be inserted as a selectable track after the welcome and before poem 1.",
+  "strategy": "The existing full Odia prose introduction follows the short English welcome; then one complete track per poem, in book order, and the English closing. Continuous playback or individual track selection.",
   "submission_limit": 70,
   "status": "all-70-published-for-review",
   "workspace_url": "https://suno.com/create?wid=fecafd89-1904-43d6-8cd7-46d0ccd5465b",
@@ -1993,13 +1993,29 @@
     "pronunciation_review": "pending"
   },
   "full_odia_introduction": {
-    "status": "awaiting-narration-workflow-confirmation",
+    "status": "assembled-publication-pending",
     "title": "ସିଂହଦ୍ଵାର",
     "language": "or",
     "placement": "after English welcome, before poem 1",
     "source": "Existing prose introduction in site/dist/book.js",
-    "prepared_run": "site/production/prose-introduction-run.json",
-    "direction": "User clarified they mean the existing prose. Explicit approval is pending for Suno generation after automatic review identified ambiguity about whether the user would record it."
+    "production_run": "site/production/prose-introduction-run.json",
+    "audio": {
+      "id": "introduction",
+      "poem": null,
+      "label": "ସିଂହଦ୍ଵାର",
+      "language": "or",
+      "src": "assets/audio/introduction-8b9bd7ce8d1d.m4a",
+      "duration_label": "17:47",
+      "duration_seconds": 1067.56,
+      "source_urls": [
+        "https://suno.com/song/52ae726a-71d3-4ace-a98f-6089fafe453b",
+        "https://suno.com/song/1432a8a3-8e44-44cb-8338-8c11d4f24387",
+        "https://suno.com/song/c0467e1a-e01e-4bbe-8434-1b8474fb44b1",
+        "https://suno.com/song/5658402e-ddee-4003-b2e1-ca0288a1de2d"
+      ],
+      "review": "first-take-review",
+      "sha256": "232a9f0033991fa7629e2a4dcd85a4962d5fd022b33115ddde1a73cab8fea77b"
+    }
   },
   "validation": {
     "tracks": 70,

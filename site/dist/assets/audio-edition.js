@@ -50,9 +50,9 @@
   audio.addEventListener('play', () => { status.textContent = ''; });
   audio.addEventListener('ended', () => {
     if (continuous.checked && index < tracks.length - 1) select(index + 1, true);
-    else { status.textContent = index === tracks.length - 1 ? 'You’ve reached the end of the available readings.' : 'This poem has ended.'; save(); }
+    else { status.textContent = index === tracks.length - 1 ? 'You’ve reached the end of the available readings.' : 'This reading has ended.'; save(); }
   });
-  audio.addEventListener('error', () => { status.textContent = 'This recording could not load. Check your connection and try the poem again.'; });
+  audio.addEventListener('error', () => { status.textContent = 'This recording could not load. Check your connection and try this track again.'; });
   previous.addEventListener('click', () => select(index - 1, !audio.paused));
   next.addEventListener('click', () => select(index + 1, !audio.paused));
   buttons.forEach(button => button.addEventListener('click', () => select(tracks.findIndex(t => t.id === button.dataset.track), true)));

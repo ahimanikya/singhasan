@@ -69,4 +69,9 @@ for track in audio:
     if track['id']=='introduction':
         assert 'listen.html#introduction' in (root/'intro.html').read_text()
         assert [t['id'] for t in audio[:3]]==['welcome','introduction','poem-1']
+        production=json.loads((root.parent/'production/prose-introduction-run.json').read_text())
+        introduction='\n\n'.join(p['text'] for p in book['chapters'][0]['pages'])
+        assert introduction==production['source_text']=='\n\n'.join(p['text'] for p in production['parts'])
+        assert track['source_urls']==[p['selected'] for p in production['parts']]
+        assert abs(track['duration_seconds']-sum(p['duration_seconds'] for p in production['parts']))<0.2
 print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')
