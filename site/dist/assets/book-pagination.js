@@ -18,7 +18,11 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
   index=Math.max(0,Math.min(count()-1,index));const kind=isArt()?(mobile.matches&&index===1?'story':'art'):'text';
   book.classList.toggle('art-page',isArt());book.classList.toggle('story-page',kind==='story');
   verse.style.setProperty('--leaf-shift',-Math.max(0,index-openingLeaves())*stride+'px');panel.scrollLeft=panel.scrollTop=0;
-  status.textContent=(kind==='art'?'Illustration · ':kind==='story'?'Image story · ':'')+`${index+1} / ${count()}`;
+  status.textContent=`${index+1} / ${count()}`;
+  const prose=verse.classList.contains('prose'),readLabel=prose?'Read introduction':'Read poem';
+  document.querySelector('#leaf-switch').textContent=isArt()?readLabel:'Illustration';
+  document.querySelector('#leaf-switch').hidden=isArt()&&(!mobile.matches||kind==='story');
+  next.querySelector('.leaf-button-label').textContent=kind==='art'&&mobile.matches?'Image story':isArt()?readLabel:index===count()-1?(after.includes('back-cover')?'Back cover':'Next poem'):'Next';
   panel.setAttribute('aria-label',`Book text, ${spread===2?'spread':'page'} ${Math.max(1,index-openingLeaves()+1)} of ${textPages}`);
   book.dataset.leaf=String(index+1);book.dataset.leaves=String(count());book.dataset.textLeaves=String(textPages);book.dataset.textColumns=String(textColumns);book.dataset.spread=String(spread);book.dataset.leafKind=kind;
   anchor=visibleAnchor();verse.dataset.pageLine=anchor.line;verse.dataset.pageOffset=anchor.offset;if(updateURL)url();if(remember&&!isArt())document.dispatchEvent(new CustomEvent('book-page-turn',{detail:anchor}));
@@ -38,6 +42,7 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  function schedule(){clearTimeout(timer);timer=setTimeout(layout,60)}
  function bookRoute(href,last=false){const u=new URL(href,location.href);if(/\/(intro|poem-\d+)\.html$/.test(u.pathname)){u.searchParams.set('view','book');if(last)u.searchParams.set('leaf','last');const code=verse.lang;if(code&&code!=='or')u.searchParams.set('lang',code)}return u.href}
  function turn(direction){if(blocked())return;window.getSelection()?.removeAllRanges();document.querySelector('#selection-tools').hidden=true;const target=index+direction;if(target<0){location.href=bookRoute(before,true);return}if(target>=count()){location.href=bookRoute(after);return}index=target;render(true,true);if(!matchMedia('(prefers-reduced-motion:reduce)').matches){const leaf=isArt()?book.querySelector('.book-companion'):book.querySelector('.reader');leaf.animate([{opacity:.55,transform:`translateX(${direction*14}px)`},{opacity:1,transform:'translateX(0)'}],{duration:210,easing:'ease-out'})}}
+ document.querySelector('#leaf-switch').addEventListener('click',()=>{if(blocked())return;index=isArt()?openingLeaves():0;render(true,true)});
  previous.addEventListener('click',()=>turn(-1));next.addEventListener('click',()=>turn(1));
  document.addEventListener('keydown',event=>{if(blocked()||event.defaultPrevented||event.ctrlKey||event.metaKey||event.altKey||event.shiftKey||event.target.closest('input,select,textarea,[role=tab]'))return;if(event.key==='ArrowRight'||event.key==='PageDown'){event.preventDefault();turn(1)}else if(event.key==='ArrowLeft'||event.key==='PageUp'){event.preventDefault();turn(-1)}});
  let start=null;book.addEventListener('touchstart',e=>{if(e.touches.length===1)start={x:e.touches[0].clientX,y:e.touches[0].clientY,time:Date.now()}},{passive:true});book.addEventListener('touchend',e=>{if(!start||!window.getSelection()?.isCollapsed)return;const touch=e.changedTouches[0],dx=touch.clientX-start.x,dy=touch.clientY-start.y;if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.5&&Date.now()-start.time<650)turn(dx<0?1:-1);start=null},{passive:true});
