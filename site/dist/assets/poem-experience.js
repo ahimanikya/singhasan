@@ -1,5 +1,5 @@
 import {normalized,subtract} from './poem-marks.mjs?v=2';
-import {bookURL,legacyAnchor} from './reader-state.mjs';
+import {bookURL,legacyAnchor} from './reader-state.mjs?v=2';
 const $=s=>document.querySelector(s),query=new URLSearchParams(location.search);
 const pageData=JSON.parse($('#reading-data').textContent),pageVerse=$('#experience-verse');
 const languageNames=Object.fromEntries(Object.entries(pageData.languages).map(([code,entry])=>[code,entry.name]));

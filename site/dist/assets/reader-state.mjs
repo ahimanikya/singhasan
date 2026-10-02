@@ -7,3 +7,9 @@ export function bookURL(route,{quiet=false,language='or',line,offset=0,last=fals
  if(Number.isInteger(line)&&line>=0){query.set('line',line);query.set('offset',Math.max(0,Number(offset)||0))}
  if(last)query.set('leaf','last');return route+'?'+query;
 }
+
+export function leafNumbers({quiet,mobile,index,textColumns}){
+ const opening=quiet?0:(mobile?2:1),spread=mobile?1:2,total=textColumns+(quiet?0:2);
+ const first=index<opening?(mobile?index+1:1):(quiet?0:2)+(index-opening)*spread+1;
+ return {first,second:spread===2&&first<total?first+1:null,total};
+}

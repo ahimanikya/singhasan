@@ -1,4 +1,4 @@
-import {bookURL} from './reader-state.mjs';
+import {bookURL,leafNumbers} from './reader-state.mjs?v=2';
 /* Native column fragmentation keeps the original verse and saved mark offsets intact. */
 const body=document.body,book=document.querySelector('.printed-spread'),verse=document.querySelector('#experience-verse'),panel=document.querySelector('#reading-panel');
 if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
@@ -20,7 +20,9 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
   index=Math.max(0,Math.min(count()-1,index));const kind=isArt()?(mobile.matches&&index===1?'story':'art'):'text';
   book.classList.toggle('art-page',isArt());book.classList.toggle('story-page',kind==='story');
   verse.style.setProperty('--leaf-shift',-Math.max(0,index-openingLeaves())*stride+'px');panel.scrollLeft=panel.scrollTop=0;
-  status.textContent=`${index+1} / ${count()}`;
+  const folios=leafNumbers({quiet,mobile:mobile.matches,index,textColumns});
+  document.querySelector('#leaf-folio-left').textContent=folios.first;document.querySelector('#leaf-folio-right').textContent=folios.second??'';
+  status.textContent=mobile.matches?`${folios.first} / ${folios.total}`:`Page${folios.second?'s':''} ${folios.first}${folios.second?'–'+folios.second:''} of ${folios.total}`;
   const prose=verse.classList.contains('prose'),readLabel=prose?'Read introduction':'Read poem';
   document.querySelector('#leaf-switch').textContent=isArt()?readLabel:'Illustration';
   document.querySelector('#leaf-switch').hidden=quiet||isArt()&&(!mobile.matches||kind==='story');
