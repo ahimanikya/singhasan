@@ -36,3 +36,11 @@
  .reader-topbar{padding-inline:12px}
 }
 @media print{.follow-player,.reader-listen{display:none}}
+/* The audio player restores its own place, so its cover needs only book controls. */
+@media screen{
+ .embedded-reader .continue-reading{display:none}
+ .full-page-reader.cover-edition:not(.embedded-reader) .book-cover-route>figure{width:min(calc(100cqw - 20px),calc((100cqh - 120px)*.666667))}
+}
+@media screen and (max-width:760px){
+ .full-page-reader.cover-edition:not(.embedded-reader) .book-cover-route>figure{width:min(calc(100cqw - 20px),calc((100cqh - 160px)*.666667))}
+}
