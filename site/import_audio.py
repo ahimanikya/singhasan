@@ -40,5 +40,8 @@ for track in [{**run['opening'],'kind':'welcome'},*run['tracks'],{**run['closing
         'src':'assets/audio/'+filename,'duration_label':take['duration'],
         'duration_seconds':duration,'source_url':take['url'],
         'review':'first-take-review','sha256':digest})
+intro=root/'introduction-audio.json'
+if intro.exists():
+    catalog.insert(1 if catalog and catalog[0]['id']=='welcome' else 0,json.loads(intro.read_text()))
 (root/'audio-edition.json').write_text(json.dumps({'tracks':catalog},ensure_ascii=False,indent=2)+'\n')
 print(f'Imported and checked {len(catalog)} recordings.')

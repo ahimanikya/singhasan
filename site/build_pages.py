@@ -99,6 +99,8 @@ for i,c in enumerate(chapters):
     previous_link=f'<a href="{prev}" aria-label="Previous: {e(chapters[i-1]["title"])}"><span class="previous-arrow">{icon('next-poetic')}</span><span>Previous page</span></a>' if i else f'<a href="book.html" aria-label="Front cover"><span class="previous-arrow">{icon("next-poetic")}</span><span>Front cover</span></a>'
     next_link=f'<a href="{next_page}" aria-label="Next: {e(chapters[i+1]["title"])}"><span>Next page</span>{icon('next-poetic')}</a>' if i<len(chapters)-1 else f'<a href="back-cover.html" aria-label="Back cover"><span>Back cover</span>{icon("next-poetic")}</a>'
     audio_link=f'<a href="listen.html#poem-{c["number"]}">Listen to this poem</a>' if c['number'] in audio_poems else ''
+    if not c['number'] and 0 in audio_poems:
+        audio_link='<a href="listen.html#introduction">Listen to the introduction</a>'
     body=f'''<article class="book-poem printed-spread">
 <div class="book-running-head"><a href="{path(c)}" lang="en">← {"Poem page" if c["number"] else "Introduction"}</a><a href="author.html" lang="or">ପ୍ରଭାକର ଶତପଥୀ</a></div>
 <header class="chapter-header poem-heading"><p class="reader-meta" lang="en">{count}</p><h1 id="chapter-title">{e(c['title'])}</h1><p class="byline" lang="or"><a href="author.html"><img src="assets/writers/41-earth-voice-v1.png" width="52" height="52" alt=""><span>ପ୍ରଭାକର ଶତପଥୀ</span></a></p>{reader_toolkit(c)}<nav class="poem-reading-options" aria-label="Reading edition" lang="en"><a class="read-in-book" href="{path(c)}?view=book">{icon("read")}Read in the book</a>{audio_link}</nav></header>

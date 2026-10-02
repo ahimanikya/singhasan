@@ -57,7 +57,8 @@ print('All 69 standalone sections preserve their source text and link to the sam
 
 audio=json.loads((root.parent/'audio-edition.json').read_text())['tracks']
 assert len({t['id'] for t in audio})==len(audio), 'Duplicate recording ID'
-assert len({t['source_url'] for t in audio})==len(audio), 'Duplicate selected take'
+sources=[url for t in audio for url in t.get('source_urls',[t.get('source_url')])]
+assert all(sources) and len(set(sources))==len(sources), 'Missing or duplicate selected take'
 for track in audio:
     file=root/track['src']
     assert file.is_file() and file.stat().st_size>1000, track['id']
@@ -65,4 +66,7 @@ for track in audio:
     assert hashlib.sha256(file.read_bytes()).hexdigest()==track['sha256'], track['id']
     if track.get('poem'):
         assert f'listen.html#poem-{track["poem"]}' in (root/f'poem-{track["poem"]}.html').read_text()
+    if track['id']=='introduction':
+        assert 'listen.html#introduction' in (root/'intro.html').read_text()
+        assert [t['id'] for t in audio[:3]]==['welcome','introduction','poem-1']
 print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')

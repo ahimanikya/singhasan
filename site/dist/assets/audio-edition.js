@@ -27,9 +27,9 @@
     document.getElementById('audio-label').textContent = track.label;
     const title = document.getElementById('audio-title');
     title.textContent = track.title;
-    title.lang = track.poem ? 'or' : 'en';
-    document.getElementById('audio-read').href = track.poem ? `poem-${track.poem}.html` : 'book.html';
-    document.getElementById('audio-read').textContent = track.poem ? 'Read the poem' : 'Open the book';
+    title.lang = track.language || (track.poem ? 'or' : 'en');
+    document.getElementById('audio-read').href = track.reading_route || (track.poem ? `poem-${track.poem}.html` : 'book.html');
+    document.getElementById('audio-read').textContent = track.id === 'introduction' ? 'Read the introduction' : (track.poem ? 'Read the poem' : 'Open the book');
     previous.disabled = index === 0;
     next.disabled = index === tracks.length - 1;
     buttons.forEach(button => {

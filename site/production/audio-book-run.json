@@ -1993,10 +1993,13 @@
     "pronunciation_review": "pending"
   },
   "full_odia_introduction": {
-    "status": "awaiting-user-recording",
+    "status": "awaiting-narration-workflow-confirmation",
+    "title": "ସିଂହଦ୍ଵାର",
     "language": "or",
     "placement": "after English welcome, before poem 1",
-    "direction": "User will record the full introduction for completeness; retain as a separate selectable track."
+    "source": "Existing prose introduction in site/dist/book.js",
+    "prepared_run": "site/production/prose-introduction-run.json",
+    "direction": "User clarified they mean the existing prose. Explicit approval is pending for Suno generation after automatic review identified ambiguity about whether the user would record it."
   },
   "validation": {
     "tracks": 70,
