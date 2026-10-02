@@ -1,0 +1,1869 @@
+{
+  "date": "2026-10-02",
+  "book": "Singhasan",
+  "author": "Pravakar Satapathy",
+  "authorization": "User requested generation of the whole book and embedding a listening edition in the site; subsequently requested an English introduction and closing.",
+  "style": "Warm, natural Odia poetry recitation with a gentle lyrical cadence. Read at a flowing conversational pace. Give selected line endings a small melodic rise and fall, lightly holding the final word before releasing it naturally. Let recurring sounds in the poem carry the rhythm. Vary the emphasis with the meaning, keeping the delivery relaxed and intimate. Preserve every original word. Mostly spoken, with subtle musical inflection at phrase endings. Clear voice, no echo, very faint bamboo flute between stanzas.",
+  "style_influence": 75,
+  "weirdness": 20,
+  "model": "v6",
+  "generation_policy": "One submission per track; preserve both returned candidates; no automatic retries.",
+  "source_file": "site/dist/book.js",
+  "source_sha256": "140dd15a8d3a33c52432bccc0a7fd85d52d627a0f4b5cfe74cc96c1026df5229",
+  "text_review_status": "Current edition text, full proofreading pending per audit; unchanged for recitation.",
+  "tracks": [
+    {
+      "section": 1,
+      "title": "Singhasan 01 — କବିତା ୧",
+      "language": "or",
+      "text": "ସବୁ ଠିକ୍ ଥିଲା-\nଗାଈ ଚରୁଥିଲେ\nସାରା ପଡ଼ିଆରେ,\nଚାରଣ ଭୂଇଁର ଗାଲିଚାରେ\n\nଘାସଫୁଲ ଫୁଟୁଥିଲା\nହରେକ ରଂଗରେ,\nଗାଈଆଳ ପିଲା\nକଦଂବ ତାଳରୁ\nଫୁଂକୁଥିଲା ଶୁଷୁରି,\nସାପ ଓ ସରୀସୃପମାନେ\nଶୁଣୁଥିଲେ ଗୀତ;\nଝଗଡ଼ାରେ ସୁତ୍ରପାତ ହେଲା,\nକାମିନୀ କାଂଚନ କିଛି ବି ନଥିଲାକ\nଝଗଡ଼ା ବଢ଼ିଲା ।\n\nଭାଳେଣି ପଡ଼ିଲା:\nଘଟିଯିବ କି\nଗୋଟାଏ ଅଘଟଣ ?\nଜଳି ଯିବ କି ଗାଁ ଗିଲବଣ?\nଉଡ଼ାଇନେବ କି ପବନ ଦେହରୁ ବସନ?\nଲିଭିଯିବ କି\nକଦଂବ ଡାଳରୁ ଭାସି ଆସୁଥିବା ବଂଶୀସ୍ଵନ?\nଝଡ଼ିପଡ଼ିବେ କି ଖଂଡ ଖଂଡ ହୋଇ\nନଭ ଓ ନକ୍ଷତ୍ରମାନ?\nଉଡ଼ିଯିବ କି\nମୁଠାଏ ପାଉଁଶ ହୋଇ\nପ୍ରଚଂଡ ସୂର୍ଯର ତେଜ ଓ ଗୁମାନ?\nଛିଡ଼ିଯିବ କି\nଯୋଡ଼ିବାର ସବୁ ସୁତ୍ର\nମନକୁ ମନ?\nଅରାଜକତା ଅଜଗର\nଗିଳିଦେବ କି\nଦେଶ ଓ ଶାସନ?\n\nଏମିତି ଆକାଶେ ଆଶଂକାକୁ ମିଛ କରି\nକେଉଁଠି ଥିଲା କେଜାଣି,\nଦଉଡ଼ି ଆସିଲା\nସୁନା ରଂଗର ସକାଳ ପରି\nସୁଠାମ ଟୋକାଟିଏ,\nଉଁଚା ମାଟି ଗଦା ଉପରୁ\nନିର୍ଦେଶିଲା ରାଜାର ଠାଣିରେ,\nସାଂଗ ସାଥୀମାନେ ପ୍ରଜା ପରି\nବସିରହିଲେ ତଳେ,\nହଟ୍ଟଗୋଳ ଲିଭିଗଲା\n\nମୁହୂର୍ତ୍ତ ମଧ୍ୟରେ ।\nବିକ୍ରମାଦିତ୍ୟମାନଂକର\nକିଛି କରାମତି ନ ଥିଲା,\nମାଟି ଖୋଳୁ ଖୋଳୁ ଜଣାପଡ଼ିଲା-\nଉଁଚା ମାଟିଗଦା ତଳେ\nସିଂହାସନ ଲୁଚି ରହିଥିଲା ।",
+      "source_sha256": "a81d046e7e5f0c6ac37ce1086932edf24e46115b9b61cfb463060a717f56cae2",
+      "status": "imported",
+      "candidates": [
+        {
+          "status": "generated",
+          "take": 1,
+          "url": "https://suno.com/song/6fc38c9e-3190-47c1-be83-5676e643a9ab",
+          "duration": "2:08"
+        },
+        {
+          "status": "generated",
+          "take": 2,
+          "url": "https://suno.com/song/2f7c99fa-6469-40ec-b0ad-7f405b1ac3de",
+          "duration": "2:00"
+        }
+      ],
+      "selected": "https://suno.com/song/6fc38c9e-3190-47c1-be83-5676e643a9ab",
+      "submitted_at": "2026-10-02T08:29:39.206Z",
+      "media_path": "site/dist/assets/audio/poem-01-6fc38c9e.mp3",
+      "audio_sha256": "ae0ce4aa59a0954484f761540f40a080f81d915cf4629c3aa687669c5f0f22f8",
+      "duration_seconds": 127.872
+    },
+    {
+      "section": 2,
+      "title": "Singhasan 02 — କବିତା ୨",
+      "language": "or",
+      "text": "ମୁହୂର୍ତକ ପାଇଁ ବି\nସିଂହାସନ ଖାଲି ପଡ଼େ ନାହିଁ,\nଅରାଜକତାର ଭୟ ଯେ!\n\nତେଣୁ\nମୃତ୍ୟୁକୁ ଘୋଡ଼ାଇ ଦିଅ\nଧଳା ଚାଦରଟେ ।\n\n“ରାଜାଦାଂଡରେ ମୁର୍ଦାର ପଡ଼ିଛି ।”-\nନତଜାନୁ କଟୁଆଳ\nଶୁଣାଇଦେବ ସଂବାଦ\nରାଜାଦଂଡ ସାମ୍ନାରେ,\nଶିରପା ବଂଧା ସରିଲେ ।\n\nତା’ ପରେ\nଆଦେଶ ପାଳିବାକୁ ହେବ:\n-ରାଜ ମର୍ଯାଦାରେ\nଶବ ଶତ୍କାର କରାଯାଉ,\n-ରାଜକୋଷ\nଖୋଲି ଦିଆଯାଉ,\n-ରାଷ୍ଟ୍ରୀୟ ଶୋକରେ\nଅର୍ଧନମିତ ରଖାଯାଉ ପତାକା,\n-ଗଣଚେତନାରେ\nପ୍ରସାରିତ ହେଉଥାଉ\nକରୁଣ ସ୍ଵରଟିଏ,\n-ରଂଗାୟିତ କରିରଖାଯାଉ\nଶ୍ମଶାନକୁ\nଓ\nପରବର୍ତୀ ପାରିଷଦରେ\nରଂଗାଧରମାନଂକ ମଂତ୍ରଣା ପାଇଁ\nଜୀବଂତ ପ୍ରସ୍ତୁତି ଲାଗିରହିଥାଉ ।\n\nଅହୋରାତ୍ର\nକଟୁଆଳମାନଂକ\nଘେର ଭିତରେ\nଦରବାର\nଖୋଲାରହିଥାଏ",
+      "source_sha256": "7bde250001cba7a06b231c32b574b7d812274fa335ef799867964993cfa5447c",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/fa2bf254-91fe-48e6-a538-470ad2b82a74",
+          "status": "generated",
+          "duration": "1:36"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/a7497dc7-ffbf-4905-9f78-e7cc6bcff2c1",
+          "status": "generated",
+          "duration": "1:43"
+        }
+      ],
+      "selected": "https://suno.com/song/fa2bf254-91fe-48e6-a538-470ad2b82a74",
+      "submitted_at": "2026-10-02T08:34:45.930Z",
+      "media_path": "site/dist/assets/audio/poem-02-fa2bf254.mp3",
+      "audio_sha256": "a1522baca2e2235fcafd0ebde71130c8e12e6e5eac269fd88b15df49b5ce117b",
+      "duration_seconds": 96.024
+    },
+    {
+      "section": 3,
+      "title": "Singhasan 03 — କବିତା ୩",
+      "language": "or",
+      "text": "ଶୁନ୍ୟରୁ ପଡ଼ି\nଭୂମିରେ\nପାଦ ଥାପିଲା ମାତ୍ରେ\nଧ୍ନିତ ହୁଏ ଶବ୍ଦ,\nପ୍ରତିଧ୍ନି ଗର୍ଜଇ ଛାତିରେ,\nଭୂମି କଂପିଉଠେ\nସମଗ୍ର ରାଜ୍ୟରେ!\nକାଳେ\nଯଂତ୍ରଣାର ବାଡ଼ ଚିରି\nଖୋଲି କଂସା କବାଟ\nଚାଲିଆସିବ ସିଏ,\nଯମୁନା ପାଣିକୁ\nଭାଗ ଭାଗ କରି\nନିରସ୍ତ୍ର ବାପ ମୁଂଡର\nବିଚିତ୍ର ବୋଝରୁ\nଦେଖାଇଦେବ\nଶଂଖ ଚକ୍ର ଗଦା ପଦ୍ମର ଚିହ୍ନମାନ;\nପଦ୍ମ ଗଂଧରେ ମହକିବ\nବନ ଓ ପବନ,\nଭୟ ମାଡ଼ିବସେ\nସମଗ୍ର ସିଂହାସନ ।",
+      "source_sha256": "0a3a69dc31ad5dda89a5bfddc5d9699f46637e10efccaf9e57c4f2b9d54b64c0",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/52bada0c-55ec-473b-8e46-19d384c715c3",
+          "status": "generated",
+          "duration": "0:57"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/3bfe5454-85d6-4b98-af58-1e7089464cf9",
+          "status": "generated",
+          "duration": "0:53"
+        }
+      ],
+      "selected": "https://suno.com/song/52bada0c-55ec-473b-8e46-19d384c715c3",
+      "submitted_at": "2026-10-02T08:38:47.031Z",
+      "media_path": "site/dist/assets/audio/poem-03-52bada0c.mp3",
+      "audio_sha256": "65ee933e081220edc61d9d5e0d583270dc41ced2208fe9621787a5d1cb410b16",
+      "duration_seconds": 56.784
+    },
+    {
+      "section": 4,
+      "title": "Singhasan 04 — କବିତା ୪",
+      "language": "or",
+      "text": "ସବୁ ସଂବାଦ\nସଂଦେହ ଘେରରେ,\nଦୂତ ସଭା ମଝିଟାରେ ।\n\nଶଂକିତ ସଭାଜନ,\nପାଦରେ,\nପାଦ ଶବ୍ଦରେ,\nପବନରେ,\nପବନର ହିଲ୍ଲୋଳରେ ଉଡ଼ୁଥିବା\nପତାକାରେ\nଗୁଂଜନ,\nକିଏ ଅଟକାଇ ପାରିବ କହ\nରଂଗସଭାର ଆୟୋଜନ?\n\nଆଜ୍ଞା ପାଳନର ବିଶ୍ଵାସରେ,\nମାମୁଘର ଉଆସକୁ ଦେଖିବାର ଉଲ୍ଲାସରେ\nଫାଟିପଡ଼ୁଥିବା\nଅଲିଅଳ\nହସିଲା ବଦନ\nଓହ୍ଲାଇ ପଡ଼ୁ ପଡ଼ୁ ରଥରୁ\nପୁତନାମାନେ ଖୋଲିଦିଅଂତି\nସ୍ତନ,\nଚାରୁଣମାନଂକ କଂଠରେ\nବିଷ ଆଉ ବିଶ୍ଵାସକୁ\nଫେଂଟୁଥିବା ଖେଳର\nଆହ୍ବାନ ।\nଆଟୋପରେ\nଗଢ଼ି ଉଠୁଥିବା ମଂଚମାନ,\nକ’ଣ ଗୋଟେ ଖସି\nତଳେ ପଡ଼ିଯିବା ଶବ୍ଦରେ\nକେମିତି ଲୁଚିଯାଏ\nବୁଝାଇବା ନିଷ୍ପ୍ରୟୋଜନ ।",
+      "source_sha256": "5b830947a70d9af0e769ff3d2f1e8ca0158174631cfbecb89eec623f22735afc",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/e581c5a7-2e31-4fe6-b677-2196afc3778b",
+          "status": "generated",
+          "duration": "1:19"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/7e63f591-e3b4-4abc-ac40-085ae6124986",
+          "status": "generated",
+          "duration": "1:22"
+        }
+      ],
+      "selected": "https://suno.com/song/e581c5a7-2e31-4fe6-b677-2196afc3778b",
+      "submitted_at": "2026-10-02T08:39:44.115Z",
+      "media_path": "site/dist/assets/audio/poem-04-e581c5a7.mp3",
+      "audio_sha256": "d1e40808ee5b3d1562c38e1e38d4d36e78ba8876dd2c235adbde8548ea58abe1",
+      "duration_seconds": 78.792
+    },
+    {
+      "section": 5,
+      "title": "Singhasan 05 — କବିତା ୫",
+      "language": "or",
+      "text": "କେତେବେଳେ ପୂର୍ଣ୍ଣ\nକେତେବେଳେ ଶୂନ୍ୟ\nମହାମହିମମାନକଂର\nଅହମିକାର ସିଂହାସନ ।\n\nସେ ତ ମହାର୍ଘ ବସ୍ତୁଟିଏ\nଅପହଂଚ ମଂତ୍ରଟିଏ,\nକେମିତି ପୁଣି\nକଂଢ଼େଇ ପରି\nଖେଳେ ଓ ଖେଳାଏ\nରଜା ଓ ପ୍ରଜାଂକୁ\nଏକ ସଂଗେ\nଚତୁରପଣରେ?\n\nଓଃ!\nକିଏ ବା ଖେଳେନି ଯେ?\nସିଂହାସନ ଖେଳିଲା ବୋଲି\nନଟ ଓ ଦୁଆରୀମାନେ\nଖେଳିଲେ ବୋଲି\nଡିବି ଡିବି ଡେଂଗୁରା ବାଜୁଛି,\nଜନପଦ\nହୁତ୍ ହୁତ୍ ଜଳୁଛି!\n\nଶକୁନି\nପଶାକାଠିଟା\nଗଡ଼ାଇ ଦେଉଁ ଦେଉଁ\nପ୍ରାଣ ଖୋଲି ହସୁଛି :\nଖେଳିବାରେ ଦୋଷ କ’ଣ?\nଖେଳଟା ଲାଗିଲା ଯଦି\nଜମିଯିବା ଦରକାର,\nଖେଳୁଆଡପଣଟା\nଫିଟିଯିବା ଦରକାର,\n‘କଚେ ପୁଅ ବାର’-\nଡାକି ଦେଉଁ ଦେଉଁ\nଦାନଟା ଫିଟିପଡ଼ିବା ଦରକାର ।\nଦେହରୁ ହାଡ଼ମାଂସ\nଖସିପଡ଼ିବା ଦରକାର,\nଦେହ ଭିତରେ ଜମାଟ ବାଂଧିଥିବା\nରକ୍ତ\nଝରିପଡ଼ିବା ଦରକାର,\nଚାହିଁ ରହିଥିବା ଆଖିଟା\nଖୋସି ହୋଇଯିବା ଦରକାର ।",
+      "source_sha256": "258bc656eb4738f2057bee60af955824085e3e40e50a2fdc03b7c8090e7401b8",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/43131c03-1bfa-40fb-b879-cf1612ffe45a",
+          "status": "generated",
+          "duration": "1:47"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/ffb6ae95-7e68-4cfc-b6eb-9e749532c391",
+          "status": "generated",
+          "duration": "1:36"
+        }
+      ],
+      "selected": "https://suno.com/song/43131c03-1bfa-40fb-b879-cf1612ffe45a",
+      "submitted_at": "2026-10-02T08:40:29.313Z",
+      "media_path": "site/dist/assets/audio/poem-05-43131c03.mp3",
+      "audio_sha256": "810f5fb0965cad59993852ad4d00b790059e505e5b87024248f69190b6e37573",
+      "duration_seconds": 106.632
+    },
+    {
+      "section": 6,
+      "title": "Singhasan 06 — କବିତା ୬",
+      "language": "or",
+      "text": "ସଂଜୟ!\nଯେତେ ଦାରୁଣ ହେଲେ ବି\nଯୁଦ୍ଧ ଭୂମିର ନିରୋଳା ସଂବାଦମାନ\nଶୁଣାଉଥାଅ,\nମୋତେ ବୁଝାଅ ନାହିଁ\nରାତି ଅବା ଦିନ ।\nମୁଁ  ଶୁଣୁଥାଏଁ,\nଅନୁଭବୁ ଥାଏଁ\nଆତ୍ମଜମାନଂକର\nମରଣ କାହାଣୀ\nଓ ଆହ୍ଲାଦିତ ହେଉଥାଏଁ\nସିଂହାସନ ସ୍ଵପ୍ନରେ ।\n\nଯିଏ ଯେତେ ଯେଉଁଠି ଅଛ\nମୋତେ ଜଲ୍ଲାଦ କହୁଛ ତ କହ,\nକହୁଥାଅ,\nଚିତକାରୁଥାଅ,\nତୁମ ଘୃଣାର ନାମାବଳିକୁ\nଘୋଡ଼େଇ ହୋଇ ଦେହରେ\nଧୃତରାଷ୍ଟ୍ର ମୁଁ ବଂଚିଥାଏଁ,\nପୁତ୍ର, ପୌତ୍ର, ପ୍ରପୌତ୍ରମାନଂକ ପାଇଁ\nସ୍ଥାବର ଅସ୍ଥାବର ସଂପତ୍ତିକୁ,\nମୋ’ ଅଂଧପଣକୁ\nଜାବୋଡ଼ି ବସିଥାଏଁ\nକଂଟାର ମୁକୁଟ ପିଂଧି\nଖର ନିଃଶ୍ଵାସରେ\nରାଜ ପ୍ରାସାଦରେ ।\n\nତୁମକୁ\nଶତ ବାର\nସହସ୍ର ବାର\nପ୍ରଣାମ ବ୍ୟାସ!\nଧୃତରାଷ୍ଟ୍ରଟିଏ\nଗଢ଼ି ନଥିଲେ, କହ\nକିଏ ଦେଇଥାଆଂତା\nସୁଯୋଗ ଆମକୁ\nତୁମକୁ\nଏ ମହାନ ଦେଶକୁ\nପଚାରିବାକୁ\nଆଗାମୀର ପ୍ରଶ୍ନଟିଏ\nପିତାମହଂକୁ?\nବୁଣିବାକୁ\nହସ୍ତିନାପୁରର ଖବର\nସଚରାଚର?\nପାଂଚସସ୍ର ବର୍ଷପରେ ବି\n\nସେ ମାଟିରେ\nଶଂଖଧ୍ନିରୁ\nସିଂହନାଦରେ\nସିଂହାସନ ଦିଶୁଥାଆଂତା\nଉଜ୍ଜ୍ବଳ ପୁଣି ଆପଣାର!",
+      "source_sha256": "9e0d116636752aacf1894d8541d411ca683fbf3c6b91d69921a3a946ece5832b",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/e6e125f2-4260-4f27-8de1-6b6ccf9c6f99",
+          "status": "generated",
+          "duration": "2:06"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/aa274eff-4ceb-45ab-85c6-3bfe2898a935",
+          "status": "generated",
+          "duration": "2:06"
+        }
+      ],
+      "selected": "https://suno.com/song/e6e125f2-4260-4f27-8de1-6b6ccf9c6f99",
+      "submitted_at": "2026-10-02T08:45:52.158Z",
+      "media_path": "site/dist/assets/audio/poem-06-e6e125f2.mp3",
+      "audio_sha256": "39034af943c5033ca6b8918c70ab5c09a76a602576acb9a26a7baff020d67d0b",
+      "duration_seconds": 125.592
+    },
+    {
+      "section": 7,
+      "title": "Singhasan 07 — କବିତା ୭",
+      "language": "or",
+      "text": "ସେତ ଥିଲା\nସ୍ଵପ୍ନ ଆଉ ସିହରଣର ଦିନ,\nରାଧା କେତେବେଳେ\nଖୋଲିଦିଅଂତି ଦେହରୁ ବସନ\nତ କେତେବେଳେ\nହୃଦୟ ସିଂହାସନ,\nଝୁଲଣ ଯାତ୍ରାରେ\nମଦନମୋହନ\nଭୁଲିଯାଆଂତି\nକିଏ ରାତି କିଏ ଦିନ ।\n\nକେଜାଣେ\nକେଉଁ କାଳୁ\nଭାରତବର୍ଷରେ\nଗଢ଼ି ଉଠିଥିବା\nଠାକୁରଘରମାନଂକରେ\nଏଇ ଗୋଟାକ ବୋଲି ବିଶ୍ଵାସ\nଆଉଁଶି ଚାଲିଛି\nପ୍ରଣୟ ସିଂହାସନ!\nଓ\nସେଇଥିପାଇଁ କି\nଆଉ କେହି\nପଚାରି ଦେଉନି-\nସୁଡଂଗ ଭିତରେ\nପ୍ରହରୀମାନଂକର\nଧାର ଖଂଡା ସାମ୍ନାରେ\nମୁଦୁସୁଲିମାନଂକର\nଧୀର ଚାମର ତଳେ\nସୁରକ୍ଷିତ ଅଛି କି ନାହିଁ\nମାଣିକ୍ୟ ଖଚିତ\nରତ୍ନ ସିଂହାସନ?\n\nହୋଇପାରେ\nଇଏ ଆଉ ଏକ ଖେଳ,\nଘଡ଼ିକ ପାଇଁ ଭୁଲାଇଦେବାକୁ\nଯୁଦ୍ଧ ଓ ଭାଗ୍ୟର ଦାରୁଣ ଜୀବନ,\nଲିଭାଇଦେବାକୁ ପ୍ରାଣରୁ\nସବୁ ଅସମାହିତ ପ୍ରଶ୍ନ ।",
+      "source_sha256": "0a060d846acbbfa4b4d8d67d9e00e45bd04709e1e309c82ac928cf189de3b8b8",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/45327092-bc81-4032-ab21-59f5736f1c60",
+          "status": "generated",
+          "duration": "1:36"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/19924c09-919f-424c-9f67-20aab6186881",
+          "status": "generated",
+          "duration": "1:44"
+        }
+      ],
+      "selected": "https://suno.com/song/45327092-bc81-4032-ab21-59f5736f1c60",
+      "submitted_at": "2026-10-02T08:46:02.735Z",
+      "media_path": "site/dist/assets/audio/poem-07-45327092.mp3",
+      "audio_sha256": "98d70c34decd8123ed393b41f7b0ab2a90289d8a15d7d7b2665eec21652e92fd",
+      "duration_seconds": 95.904
+    },
+    {
+      "section": 8,
+      "title": "Singhasan 08 — କବିତା ୮",
+      "language": "or",
+      "text": "ହସ୍ତିନା କି ଇଂଦ୍ରପ୍ରସ୍ଥ\nସାମ୍ରାଜ୍ୟ କି ସୂଚ୍ୟଗ୍ର ମେଦିନୀ\nମହାକାବ୍ୟର ଅସଲ ରହସ୍ୟ ନଥିଲା ।\n\nରାଜସଭାରେ ଥରୁଟିଏ\nଗୋଟାଏ ନାରୀକୁ ଉଲଗ୍ନ କରିବା\nଏମିତି କିଛି ବଡ଼ ପାପ ବି ନ ଥିଲା ।\n\nସମର୍ପଣ ନା ବିଦ୍ରୋହ-\nମୂଳ ପ୍ରଶ୍ନରୁ ଖିଅ ବାହାରିଲା:\nସହସ୍ରସୂର୍ଯର ମହାରୂପ\nଗୋଟାଏ ରୂପରେ ଦେଖିବୁ\nନା ଡୁବିବୁ\nବ୍ୟାସ ସରୋବରରେ?\nଡିଂଡିମ ପିଟା ସରିଥିବା\nସାମର୍ଥ୍ୟର\nକୀର୍ଡନ ଗାଇବୁ\nନା ଉବୁଟୁବୁ ହେବୁ\nରକ୍ତ ନଦୀରେ?\nମୁଁ କାର୍ଯ ଓ କାରଣ,\nତୁ ନିମିତ୍ତ ମାତ୍ର-\nସ୍ଵୀକାର କରିବୁ\nନା ଅଂଧପଟି ଖୋଲିଲା ବେଳେ\nତୋ’ ଜନନୀର\nଜ୍ବାଳାମୁଖୀ ଜଠରରୁ\nଶେଷ ସହୋଦରର\nଭସ୍ମକୁ ସାଉଁଟିବୁ?\nସର୍ବତୋ ଭାବେ\nଗୋଟାଏ ମେଘବର୍ଣ୍ଣ ଗଗନର,\nବିଶ୍ଵାଧାରା ଶଶିବର୍ଣ୍ଣ ଚତୁର୍ଭୁଜ ରୂପର,\nଅନଂତଶୟନ ଚିତ୍ରର\nସାର୍ବଭୌମତ୍ବକୁ\nସ୍ଵୀକାର କରିବୁ ତ\nମୁହୁର୍ତେ ଲାଗିବନାହିଁ\nହାତ ଟେକିଦେବାକୁ\nବରାଭୟ ମୁଦ୍ରାରେ,\nଘୋଷଣା କରିଦେବାକୁ:\nଏ ଆର୍ଯାବର୍ତ ତୋ’ର\nଏ ଯଜ୍ଞଫଳ ତୋ’ର\nପରମ ପରାକ୍ରମ ତୋ’ର ।\n\nକଥାଟା ଛିଡ଼ିପାରିଲା ନାହିଁ\nସେଇଠି ବୋଲି ତ\nଯୁଗ ଯୁଗ ବିତିଗଲାଣି,\nଲେଖାହେଉଛି ମହାକାବ୍ୟ\n\nଶବ୍ଦର ଭିନ୍ନ ଭିନ୍ନ ଅର୍ଥରେ\nଅର୍ଥପୂର୍ଣ୍ଣ ଶବ୍ଦରେ,\nକାଳର କାରୁଣ୍ୟରେ,\nବିଘ୍ନବିନାଶକମାନଂକ\nସୂକ୍ଷ୍ମ ଲେଖନୀ ମୁନରେ ।",
+      "source_sha256": "7b6765de3a1e3c8d574c56ca050a7367e7203a3ba4e11e8647eba5c7dbd31303",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/895ab4a1-d33c-401b-bcb0-8fed7feae61e",
+          "status": "generated",
+          "duration": "2:21"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/c7885296-cdb9-4a3b-922d-3985dc7ca218",
+          "status": "generated",
+          "duration": "2:12"
+        }
+      ],
+      "selected": "https://suno.com/song/895ab4a1-d33c-401b-bcb0-8fed7feae61e",
+      "submitted_at": "2026-10-02T08:46:17.415Z",
+      "media_path": "site/dist/assets/audio/poem-08-895ab4a1.mp3",
+      "audio_sha256": "f31c8a71d6d874b07994ae7dddea20c09b7cd2ebd3e61583e392025d8f53f796",
+      "duration_seconds": 141.144
+    },
+    {
+      "section": 9,
+      "title": "Singhasan 09 — କବିତା ୯",
+      "language": "or",
+      "text": "ଚତୁରୀ ପୋଇଲି ଚେତାଇ ଦେଲା:\nଆଉ ସେବା ନୁହେଁ\nପ୍ରତିଦାନର କଉଡ଼ି ମାଗିନେବାର ପାଳି ।\n\nଆଃ,\nକଉଡ଼ି କୁହୁକ ଦେଖାଇ ଦେଲା,\nମା’କୁ କରିଦେଲା କୈକେୟି,\nକୈକେୟି\nଓଲଟ ପାଲଟ କରିଦେଲା ଭାଗ୍ୟ-\nରାଜାର, ରାଜ୍ୟର, ସିଂହାସନର ।\n\nଆଉ କିଛି ବି ସତ୍ୟ ନୁହେଁ\nଏ ରାଜକୀୟ ଖେଳରେ,\nସତ୍ୟ ଖାଲି\nଭୟ ଆଉ ଅହଂକାର ।\n\nଆଦର୍ଶର ସୁନାମୁକୁଟ\nକେତେବେଳେ\nପିତୃହତ୍ୟାର କାରଣ ତ\nକେତେବେଳେ\nସୁନାନାକ କାଟିଦେବାର\nଶ୍ଳେଷ ବାକ୍ୟଟିଏ,\nସୁନା ହରିଣ ପଛରେ ଧାଉଁ ଧାଉଁ\nଯୁଦ୍ଧର ନିଆଁ ଜାଳିଦିଏ,\nସ୍ତ୍ରୀକୁ ଠେଲି ଦେଇ ନିଆଁକୁ\nସୁବର୍ଣ୍ଣ ବିମ୍ବଟିଏ ତା’ର\nଗଢ଼ାଇ ଥୋଇଦିଏ\nମୁଖ୍ୟ ଫାଟକରେ,\nପରାକ୍ରମର\nରାଜସୂୟ ଯଜ୍ଞରେ ।\n\n“ମାଟି ତୁ’ ଫାଟି ଯା”ର କାରୁଣ୍ୟ\nଚାପି ହୋଇଯାଏ\nମହର୍ଷି ଦେବର୍ଷିମାନଂକର\nମଂତ୍ରଣାରେ,\nମଂତ୍ର ପାଠରେ,\nଲବକୁଶମାନଂକର\nପିତୃ ପରିଚୟ\nପାଇବାରେ,\nବିଜୟ ବାଦ୍ୟରେ ।",
+      "source_sha256": "7c173ec15c3e41955b5dcfe1774353ccf67476d7f997bb2ff401137a1e467ad2",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/443ccd01-046f-4fb0-89f4-06a609c93132",
+          "status": "generated",
+          "duration": "1:39"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/d631a962-0093-4635-8c0d-5e41ddaa2744",
+          "status": "generated",
+          "duration": "1:41"
+        }
+      ],
+      "selected": "https://suno.com/song/443ccd01-046f-4fb0-89f4-06a609c93132",
+      "submitted_at": "2026-10-02T08:47:19.528Z",
+      "media_path": "site/dist/assets/audio/poem-09-443ccd01.mp3",
+      "audio_sha256": "d4e1a35e5724b8e09e8420e2add7075a43ef748ce5f0da7a3e899aa8bbdf20c1",
+      "duration_seconds": 99
+    },
+    {
+      "section": 10,
+      "title": "Singhasan 10 — କବିତା ୧୦",
+      "language": "or",
+      "text": "ମୃତ୍ୟୁ ଅପସରିଯାଏ\nତା’ର ଉଜ୍ଜ୍ବଳ ଡେଣାରୁ ।\n\nସିଏ ଯିଏ ହୁଅଂତୁ,\nଅଧିଷ୍ଠିତ ହୋଇଗଲେ ଥରେ\nସିଂହାସନରେ,\nକିଷ୍କିଂଧାବାସୀ\nମାନିନିଅଂତି ରାଜ୍ୟକୁ,\nରାଜାକୁ ।\nସମୟ ଆଉଁଶି ଦିଏ\nହୃଦୟରୁ ଦୁଃଖ ଲିଭିଯାଏ,\nଛୋଟ ଛୋଟ ଦୁଃଖମାନ\nଦେହରେ ମଳି ପରି\nଧୋଇ ହୋଇଯାଏ,\nବାଳୀ ଅବା ସୁଗ୍ରୀବ\nଯିଏ ବଂଚିରହେ\nରାଜପଦ\nତାକୁ ମିଳିଯାଏ ।\n\nବାନରମାନେ\nକେଡେ ସହଜରେ\nକ୍ଷମା କରିଦିଅଂତି\nବୀର ସହୋଦରମାନଂକୁ\nହତ୍ୟା କରିଥିବା ଶତ୍ରୁକୁ ।\n\nମୃତ ସ୍ବାମୀ ପାଇଁ\nହୃଦୟ ଫଟାଇ କାଂଦୁଥିବା\nମହାରାଣୀ\nଆଦରିନିଅଂତି\nବୀରଭୋଗ୍ୟା ହେବାର ସତ୍ୟକୁ,\nଜୀବନକୁ ।",
+      "source_sha256": "dd38dd889bd928684e16653a64a1ef39a1f03b657356d6aba5b2cbfecd6ccf97",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/0706f2e6-6784-4d1f-80f0-cbebf983f477",
+          "status": "generated",
+          "duration": "1:17"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/81451825-808e-49e8-b5e7-69e04e239e3e",
+          "status": "generated",
+          "duration": "1:16"
+        }
+      ],
+      "selected": "https://suno.com/song/0706f2e6-6784-4d1f-80f0-cbebf983f477",
+      "submitted_at": "2026-10-02T08:48:07.574Z",
+      "media_path": "site/dist/assets/audio/poem-10-0706f2e6.mp3",
+      "audio_sha256": "522a26498975c990772f6e33da52c8fb6269e86f9b5f855561970627490fbd8b",
+      "duration_seconds": 77.04
+    },
+    {
+      "section": 11,
+      "title": "Singhasan 11 — କବିତା ୧୧",
+      "language": "or",
+      "text": "ନିଜକୁ ଦାସଟିଏ କରି\nସମର୍ପି ଦେବାରେ ହିଁ ଗୌରବ ।\n\nନା, ଚାମର ଝାଡ଼ିବାରେ\nଘୋଳେଇ ପଡ଼େନା ହାତ,\nଶ୍ରମ ସାର୍ଥକ ହୋଇଯାଏ\nମହାରାଜା ‘ସାବାସ’ ନ କହି\nଆଡ଼ ଆଖିରେ ଥରେ ଯଦି\nଅନେଇ ଦିଅଂତି ।\nସିଂହାସନର ଏତେ ନିକଟରେ\nଠିଆହେବା,\nପବନ ପରି ବେଢ଼ାବୁଲିବା,\nକହ ଭଲା କାହା ଭାଗ୍ୟରେ ଥାଏ?\n\nଚାମର ଝାଡ଼ିବା ପାଇଁ ସିନା\nଆମ ଜନ୍ମ,\nଏ ତ ପ୍ରଭୁଂକ ଭିଆଣ-\nନୋହିଲେ କାହିଁ ମହାରାଜା\nକାହିଁ ଏ ଛାର ବାନର ଜୀବନ!",
+      "source_sha256": "2096966d4bf085394cb39b1bd87698d4507a1b2bc1c7016e122772614eead9d8",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/7c356b5a-c544-4d22-8b3b-f869ae596d13",
+          "status": "generated",
+          "duration": "0:57"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/b7a019f2-57a9-45d5-b15e-bf11e834fa7a",
+          "status": "generated",
+          "duration": "0:58"
+        }
+      ],
+      "selected": "https://suno.com/song/7c356b5a-c544-4d22-8b3b-f869ae596d13",
+      "submitted_at": "2026-10-02T08:48:08.236Z",
+      "media_path": "site/dist/assets/audio/poem-11-7c356b5a.mp3",
+      "audio_sha256": "bce87e4061d261b6006e83cb3131316a329eda5cc719c532d369d4ed38bd0577",
+      "duration_seconds": 56.592
+    },
+    {
+      "section": 12,
+      "title": "Singhasan 12 — କବିତା ୧୨",
+      "language": "or",
+      "text": "ଏବେ କାଠ ଘୋଡ଼ାଟାକୁ\nପୋଷା ମନେଇବାର ବେଳ,\nଦୁର୍ଗ ଭିତରକୁ ଟାଣିନେବାର ବେଳ,\nକାଠ ଘୋଡ଼ା ପେଟରୁ\nଛିଟିକି ପଡ଼ିବାର ବେଳ,\nଝରକାରୁ\nଆଖିକୁ ଝକ୍ କରିଦେଉଥିବା ମୁହଁଟାକୁ\nଝାଂପିନେବାର ବେଳ,\nରାତିର ନିସ୍ତବ୍ଧ ପ୍ରହରର\nସୁଖଟିକକ ପାଇଁ\nସ୍ଵପ୍ନରେ ହଜିଯିବାର ବେଳ,\nମାଟି ଦୀପରେ ଘିଅ ସଳିତାକୁ ତେଜି\nଅହୋରାତ୍ର ଜାଳି ରଖିବାର ବେଳ,\nସବୁ ମୂଲ୍ୟ ଗୋଟିଏ ଆହୁତିରେ\nଢାଳିଦେବାର ବେଳ ।\n\nହଁ ସେଇ ମୁହଁଟା ପାଇଁ\nଖାସ ସେଇ ମୁହଁଟା ପାଇଁ\nସିଂହାସନକୁ ବାଜି ରଖିବାର\nସିଂହାସନକୁ ତୁଚ୍ଛ ମଣିବାର\nଶୋଇ ପଡ଼ିଥିବା ମହାରାଜାଂକୁ\nହତ୍ୟା କରିବାର ପ୍ରରଣାଟିଏ\nଖୋଜିବାର\nଏଇ ହେଉଛି ବେଳ!",
+      "source_sha256": "7fb67f0580cbd88a1ebc9c2e510f1c5dd3c4994eb76b8c89f761e99ad723866a",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/937856f6-44c8-4b5a-8ecb-8737df8a96de",
+          "status": "generated",
+          "duration": "1:06"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/17cb7bc2-8f77-443b-a37e-12b09830d96f",
+          "status": "generated",
+          "duration": "1:12"
+        }
+      ],
+      "selected": "https://suno.com/song/937856f6-44c8-4b5a-8ecb-8737df8a96de",
+      "submitted_at": "2026-10-02T08:48:08.507Z",
+      "media_path": "site/dist/assets/audio/poem-12-937856f6.mp3",
+      "audio_sha256": "ace44c014513dc9df7094c1a12208e85c343222ebaa93083f1f253f084dd5b65",
+      "duration_seconds": 66.024
+    },
+    {
+      "section": 13,
+      "title": "Singhasan 13 — କବିତା ୧୩",
+      "language": "or",
+      "text": "ଏମିତି ବି ଘଟେ ବେଳେ ବେଳେ-\nସୁନାର ମୁକୁଟ ଥୋଇଦେଇ ତଳେ\nଅନ୍ୟବାଟ ଖୋଜି ଚାଲିଯାଏ ସିଏ\nଅରଣ୍ୟ ରାସ୍ତାରେ ।\n\nଶୂନ୍ୟକୁ ହାତ ଟେକି\nସିଂହାସନ ପଡ଼ିରହେ\nଘୋର ଅଂଧାରରେ,\nଶିଶୁପୁତ୍ର ନଘୋଡ଼ ନିଦରେ\nମା”ର କୋଳରେ ।\n\nସଂଭ୍ରାଂତ ରାଜ ଚେତନା\nକିଛି ବି ଆଘ୍ରାଣ କରେନାହିଁ\nଯେତେବେଳେ ନିର୍ବାଣର ମଂତ୍ର\nଘୂରିବୁଲେ ସାରା ପୃଥିବୀରେ,\nଦୁଃଖୀମାନଂକ ପାଇଁ\nସ୍ଥାନଟିଏ ସାଇତି ହୃଦୟରେ ।\n\nଇତିହାସ ମୋଡ଼ନିଏ\nଭିନ୍ନ ବାଟରେ-\nପରବର୍ତୀ ଦିନମାନଂକରେ\nଆଉ କେଉଁ ସିଂହାସନର\nପରାକ୍ରମ ତଳେ\n\nସେଦିନ ବାଟଭାଂଗି ଚାଲିଯାଇଥିବା\nଅବତାର ପୁରୁଷଟି\nମଂଦିର କାଂଥରେ\nଅବା ସମାଧି ଫଳକରେ\nକେଉଁଠି ରହିଯାଏ\nଛୋଟ ଶିଳାଲେଖଟିଏ ହୋଇ ।",
+      "source_sha256": "0445436cc28699b424ee2626c1a09ef5442862dfe70a9c4380c7b5cbdcbf51fc",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/72fc7cf2-46ca-4bdb-aaab-b8f96cd81b41",
+          "status": "generated",
+          "duration": "1:21"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/9935ce27-60ee-4ad9-a887-a3e63a7f5c3d",
+          "status": "generated",
+          "duration": "1:28"
+        }
+      ],
+      "selected": "https://suno.com/song/72fc7cf2-46ca-4bdb-aaab-b8f96cd81b41",
+      "submitted_at": "2026-10-02T08:48:09.030Z",
+      "media_path": "site/dist/assets/audio/poem-13-72fc7cf2.mp3",
+      "audio_sha256": "b61dba45ab4366461aeb7fb85902cc390c24a6c1bd009535ac17546d6d3e1b27",
+      "duration_seconds": 81.384
+    },
+    {
+      "section": 14,
+      "title": "Singhasan 14 — କବିତା ୧୪",
+      "language": "or",
+      "text": "ସିଂଦୁରା ଫାଟିଲା ବେଳକୁ\nଗୋଟାଏ କୁଆଁ କୁଆଁ ସ୍ଵର\nଉଠାଇଦେଲା ନିଦରୁ\nସମ୍ରାଟ ଅଜାତଶତ୍ରୁଂକୁ ।\n\nଛଡ଼ାଇଆଣିଥିବା ସିଂହାସନ\nଥରିଉଠିଲା\nଆଉ ଜଣେ ଅଶ୍ଵାରହୀ\n(ତାକୁ) ଝାଂପିନେବାର\nକୋକୁଆ ଭୟରେ ।\n\nଗର୍ଭାଶୟ ବଂଧନରୁ\nଯେ ପ୍ରାଣ ପିତୁଳା\nମୁକୁଳିଗଲା\nନା ବଂଦିଶାଳାର ଅଂଧାର ଗର୍ଭରେ\nଯେଉଁ ଶୀର୍ଣ ପିତୁଳାଟି\nମୁକ୍ତିକୁ ଭୁଲିଯାଉଥିଲା,\nତାକୁ ଯେ ଜୀବନର ଜୀବନ କରି\nଗଢ଼ିଥିଲା-\nକିଏ, କିଏ ତା’ର ପ୍ରିୟତମ ଶତ୍ରୁ,\nକେଉଁ ବିଂବିସାର?\nସିଂହାସନ ବୁଝେନାହିଁ\nଏ ସବୁ ବେଭାର ।",
+      "source_sha256": "b72d45e5bf7cc18b0923d291e02ae3e2b624f4b337fd8707b900c7d2fc4e2372",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/bf1655c3-4813-4836-9e1d-18948262f316",
+          "status": "generated",
+          "duration": "1:00"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/bd0041de-e4c1-4ed6-90d9-de537fc7a925",
+          "status": "generated",
+          "duration": "1:07"
+        }
+      ],
+      "selected": "https://suno.com/song/bf1655c3-4813-4836-9e1d-18948262f316",
+      "submitted_at": "2026-10-02T08:51:28.370Z",
+      "media_path": "site/dist/assets/audio/poem-14-bf1655c3.mp3",
+      "audio_sha256": "2a255ba6a3ff0659303494b9fc1771d1de088a0989f9fae187a68c820f9b4a0a",
+      "duration_seconds": 59.952
+    },
+    {
+      "section": 15,
+      "title": "Singhasan 15 — କବିତା ୧୫",
+      "language": "or",
+      "text": "ଚଂଡାଶୋକ ଅବା ଧର୍ମାଶୋକ-\nମହାରାଜାଂକ ନାମ ହୋଇଥିଲେ\nଯଥେଷ୍ଟ ଯଥେଷ୍ଟ!\n\nଭୂମିରେ ବସିଲେ\nକି ଆସନରେ ଉପବିଷ୍ଟ ହେଲେ\nଏକା କଥା ।\nଛାମୁ ବସିଥିବା ଧୂଳି ମାଟି ତ\nସିଂହାସନ,\nବିଶେଷ୍ୟ ବିଶେଷଣର ବା କି ପ୍ରୟୋଜନ?\n\nଅବୁଝାମଣା ହେଲେ\nକି ପାଳଚୁଂଟା ମଂତ୍ରୀ ରଖିଲେ,\nମଲମଲ ପ୍ରାସଦ ଗଢ଼ିଲେ\nକି ଅସୁମାରି ପ୍ରଜାଂକ ରକ୍ତରେ ନଈ ବୁହାଇଲେ,\nକିଛି ଯାଏ ଆସେ ନାହିଁ ।\n\nସବୁ ସିଂହାସନ କରାମତି\nଯାହା ଘଟିଛି,\nଘଟୁଛି ବା ଘଟିବାକୁ ଯାଉଛି,\nସବୁ ବୀରବିକ୍ରମମାନଂକର\nଐତିହାସିକ କୀର୍ତି ।",
+      "source_sha256": "2f1a6e84fc6082717824292a7a6c6c86099dc90f8a9382f197beb44bb3e273bc",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/a298556d-8c91-477b-bc91-af5e1a2678da",
+          "status": "generated",
+          "duration": "1:06"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/08b47256-3745-4c6f-983a-0951346d8035",
+          "status": "generated",
+          "duration": "1:01"
+        }
+      ],
+      "selected": "https://suno.com/song/a298556d-8c91-477b-bc91-af5e1a2678da",
+      "submitted_at": "2026-10-02T08:51:29.021Z",
+      "media_path": "site/dist/assets/audio/poem-15-a298556d.mp3",
+      "audio_sha256": "b84942d776b3072dd8a23571f1efe26cc861a74f43cd70503f415e1c603fda3b",
+      "duration_seconds": 66.024
+    },
+    {
+      "section": 16,
+      "title": "Singhasan 16 — କବିତା ୧୬",
+      "language": "or",
+      "text": "ନଦୀଶଯ୍ୟାରେ ପାଣି ନ ଥିଲା,\nଲୁହ ଥିଲା ଲହୁ ଥିଲା ।\nଆକାଶରେ ନ ଥିଲା ପବନ\nଥିଲା ଭୂମି ଶ୍ମଶାନ ପାଲଟିବାର\nବୁକୁଫଟା ରୋଦନ ।\nଦୟାନଦୀର ଦାନ\nଲଲାଟ ଲି‌ଖନ-\nପରାଜୟର ଗ୍ଲାନିରେ ପୂର୍ଣ୍ଣ\nସବୁ ଶୂନ୍ୟସ୍ଥାନ ।\n\nମହାକାଶ ତଳେ\nଧଉଳିର ଧର୍ଷିତ ଶିଖର ଉପରେ\nସିଂହାସନ\nକେଡ଼େ ବାଗରେ\nବାଟ ଖୋଜିଲା\nମୁର୍ଧନାକୁ ଚିରି\nନିହାଣ ମୁନରେ\nସାଇତି ଯାଆଂତା\nସ୍ମୃତିଟିଏ\nକାଳର ଗର୍ଭରେ ।\n\nମଧୁର ତାଡ଼ନା ସେ’ତ ମହାରାଜାଂକର\nସମଝଦାରମାନେ ଯେମିତି ବୁଝିଲେ ବି\nହସ ଚହଟିଲା ବିବର୍ଣ ମୁହଁରେ,\nସୁନାପୁଟଦିଆ ବର୍ଣମାଳା ଖୋଜାଗଲା\nବଣିଆ ଦୋକାନରେ:\nକରୁଣାର ମୂର୍ତି-\nହୃଦୟ ବଦଳିବାର ଅସାମାନ୍ୟ କୃତି ।",
+      "source_sha256": "4f40450bc53c85e5f865437264bdeb13f0ac9a997509e0c9537d822fd50e0102",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/df83292d-e5f0-4faf-bb8b-20fe30d548a6",
+          "status": "generated",
+          "duration": "1:19"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/9899d45a-49eb-433f-a01f-2987827c9620",
+          "status": "generated",
+          "duration": "1:29"
+        }
+      ],
+      "selected": "https://suno.com/song/df83292d-e5f0-4faf-bb8b-20fe30d548a6",
+      "submitted_at": "2026-10-02T08:51:34.204Z",
+      "media_path": "site/dist/assets/audio/poem-16-df83292d.mp3",
+      "audio_sha256": "90f8d80392352b7028dbf138c33cddfc774d8f6ebeed199896aa818e5eacffef",
+      "duration_seconds": 79.392
+    },
+    {
+      "section": 17,
+      "title": "Singhasan 17 — କବିତା ୧୭",
+      "language": "or",
+      "text": "ଜଣେ କୌଟିଲ୍ୟ\nଭାବି ଚିଂତି\nବିଧି ଓ ବିଧାନ କଲେ ପ୍ରଣୟନ\nଯେମିତି ଚଳିବ ସିଂହାସନ,\nତ ଟଳି ପଡ଼ିଲା ନଂଦର ଶାସନ ।\n\nକ୍ଷମା ମିଳିଲା ନାହିଁ\nପାଦରେ ଗଳିଯାଉଥିବା\nକୁଶ କଂଟାକୁ ।\nକୁଶ ବଂଶ\nଲୋପ କରିବାର ନିନାଦ\nନିଷ୍ପତ୍ତିଟିଏ ହୋଇ\nଓହ୍ଲାଇପଡ଼ିଲା\nକ୍ରୋଧର କଠିନ ମୁଦ୍ରାକୁ ।\n\nରାଜା ନୁହେଁ ମଂତ୍ରୀ\nଯୁଗପୁରୁଷ ପରି ଚକ୍ ଚକ୍ ଦିଶିଲେ\nଇତିହାସରେ,\nଶିଷ୍ୟକୁ\nରାଜପଦ ଦେବାର ପରାକ୍ରମ\nବଂଧା ହୋଇଗଲା\nଚାଣକ୍ୟଂକ ଚୁଟିରେ ।",
+      "source_sha256": "b787429717b951f3f9c8c0163d8e78f878a78155888c7eb805dc73567a0ca402",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/7e88f55a-14a0-4ac6-a9b3-0b23f71def4f",
+          "status": "generated",
+          "duration": "1:01"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/4f110c85-f21e-4168-a238-734ee6a501cb",
+          "status": "generated",
+          "duration": "1:06"
+        }
+      ],
+      "selected": "https://suno.com/song/7e88f55a-14a0-4ac6-a9b3-0b23f71def4f",
+      "submitted_at": "2026-10-02T08:51:36.205Z",
+      "media_path": "site/dist/assets/audio/poem-17-7e88f55a.mp3",
+      "audio_sha256": "36e896480a1b507495e5fb1b8a6d8e3981e7bb1efe067fdd6097f54b92528714",
+      "duration_seconds": 61.464
+    },
+    {
+      "section": 18,
+      "title": "Singhasan 18 — କବିତା ୧୮",
+      "language": "or",
+      "text": "କୋଷରେ ଶୋଭା ପାଉଥିଲା ଖଡ଼୍ଗ,\nଉନ୍ମୁକ୍ତ ହୋଇ ନଥିଲା କେବେ\nସଂମୁଖ ସଂଗ୍ରାମ\nକି ବିଦ୍ରୋହ ଦମନରେ,\nପରିହାସ କି ପରିଚର୍ଯାର ଜାଲ\nବାଂଧି ନଥିଲା ତାଂକୁ\nବାଳ ପ୍ରମାଣରେ ।\n\nରାଜାଂକ ଆଦେଶ\nଶିରୋଧାର୍ଯ ହେଲା,\nକୋଷମୁକ୍ତ ହୋଇଗଲା ଖଂଡା\nଓ ନିମିଷକେ\nଅଂଧ ହୋଇଗଲେ ରାଜା\nପଟେ କାଠ ଖଂଡାର ଅଗ୍ନିରେ ।\n\nତଟସ୍ଥ ଜନତା ଅନେଇ ରହିଲେ\nକାକୁସ୍ଥରେ,\nସିଂହାସନ କାନ ଡେରିଲା\nଶୁଣିବାକୁ\nସର୍ଜନାର ଆଦିଗୀତ\nଓଡ଼ିଆ ଭାଷାରେ,\nରଜନୀର ଘୋର ତିମିରରେ ।",
+      "source_sha256": "80b62bd5dcde131ca0cadf7ac3bb8063c99c68569a4a64c4bcc2c734a9bf0c78",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/c266e678-532d-440f-8f83-cc24975806ec",
+          "status": "generated",
+          "duration": "1:02"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/154d442d-883d-4812-9bd1-968e557f1d0b",
+          "status": "generated",
+          "duration": "0:56"
+        }
+      ],
+      "selected": "https://suno.com/song/c266e678-532d-440f-8f83-cc24975806ec",
+      "submitted_at": "2026-10-02T08:52:17.047Z",
+      "media_path": "site/dist/assets/audio/poem-18-c266e678.mp3",
+      "audio_sha256": "35eed9a2ce3703eb525058fe13c184a8911bcbc5fe37c16612145d3bf5cf117d",
+      "duration_seconds": 62.4
+    },
+    {
+      "section": 19,
+      "title": "Singhasan 19 — କବିତା ୧୯",
+      "language": "or",
+      "text": "ଦିନେ ପରିଚାରିକା\nଶୁଣି ପକାଇଲା\nଦର୍ପଣ ସାମ୍ନାରେ\nଶୃଂଗାର କାଳରେ,\nମହାରାଣୀଂକ\nକରୁଣ ବିଳାପ:\nଏଠି ମୁକ୍ତି ନାହିଁ,\nଥରୁଟିଏ ମନ ଭରି\nକାଂଦିବା ପାଇଁ\nଥାନଟିକେ ନାହିଁ,\nକ୍ଷୀରଭରା ଥନଟାକୁ\nହସି ହସି\nଭରିଦେବା ପାଇଁ\nଆଁଟିଏ ନାହିଁ ।\n\nମୁଁ ବଂଦିନୀଟିଏ,\nରୂପ ପସରାର\nରାଜଧାନୀଟିଏ,\nପ୍ରଜାମାନଂକ ଲୁହ\nଆଉ ଲୁହରେ ଗଢ଼ା\nଯାତନାର\nସୁନା ନୀଡ଼ ଭିତରେ\nଶୋଇ\nକେତେ କାଳ\nମୁକୁଟ ଓ ସିଂହାସନର\nରୂପକୁ ଦେଖିବି?\nଲୁଣ ଖାଇ ଗୁଣ ସୁମରିବି,\nଶିହରିବି\nବଂଜର ମାଟିର ଯଂତ୍ରଣାରେ?\n\nପରିଚାରିକାକୁ\nକିଏ ବୁଝାଇବ:\nଦୁଃଖ ସମାନ,\nଖାଲି ଯା’\nଅଲଗା ଅଲଗା ଭେକ ।",
+      "source_sha256": "30f8642c44bfa5d64c52a3ba3a7d33de92671e329b9d8907815e22d0d65f2f44",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/9676b3cb-5398-435a-b7d7-05a3c1483c50",
+          "status": "generated",
+          "duration": "2:11"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/9b34960d-734c-4c4c-bd68-8efa66ee7073",
+          "status": "generated",
+          "duration": "2:06"
+        }
+      ],
+      "selected": "https://suno.com/song/9676b3cb-5398-435a-b7d7-05a3c1483c50",
+      "submitted_at": "2026-10-02T08:52:17.593Z",
+      "media_path": "site/dist/assets/audio/poem-19-9676b3cb.mp3",
+      "audio_sha256": "1e8d2d0590aa085b8c51e2718e74cd96d873b6f1b728c2e2028e017bb100fe39",
+      "duration_seconds": 131.4
+    },
+    {
+      "section": 20,
+      "title": "Singhasan 20 — କବିତା ୨୦",
+      "language": "or",
+      "text": "ମେଘର ମାୟାକୁ ଭୁଲି\nଇଂଦ୍ର ବି ଓହ୍ଲାଇ ଆସୁଥିଲେ\nମର୍ତ୍ୟକୁ,\nଝାଡ଼ୁ ମାରିଦେବା ପାଇଁ\nଦାଂଡରେ,\nଯେତେବେଳେ\nସିଂହାସନରୁ ଓହ୍ଲାଇ\nପହଂଡିବିଜେ ପରେ\nରାଜା ଚଢ଼ୁଥିଲେ\nରଥରେ ।\n\nଭୟାର୍ତ ଜନତା\nଧାଡ଼ି ବାଂଧି\nଦେଖୁଥିଲେ ଘୋଷଯାତ୍ରା\nରାସ୍ତା ଧାରରେ,\nବିହ୍ବଳରେ,\nଆରାଧନାର ସକଳ ମୁଦ୍ରାରେ ।\n\nସେମାନଂକ ପେଟର ଭୋକ\nକିଏ ଆଉ ଦେଖିଥାଆଂତା\nମହାରାଜାଂକ ଟହଟହ ହସରେ ।",
+      "source_sha256": "d07c181ada34109e236a5362d445ae33d2f1ddce2eea1c9adf5922fd7a6700b1",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/eb47df10-03e7-47e8-975a-7dbd267bac1d",
+          "status": "generated",
+          "duration": "0:52"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/8493df07-f220-42f1-84b7-4700f5fc69c5",
+          "status": "generated",
+          "duration": "0:56"
+        }
+      ],
+      "selected": "https://suno.com/song/eb47df10-03e7-47e8-975a-7dbd267bac1d",
+      "submitted_at": "2026-10-02T08:52:18.023Z",
+      "media_path": "site/dist/assets/audio/poem-20-eb47df10.mp3",
+      "audio_sha256": "6bf20d5a3e3d7b694139eff33569c92b8d44f8208abe9e3511f8b4310a289ec8",
+      "duration_seconds": 51.984
+    },
+    {
+      "section": 21,
+      "title": "Singhasan 21 — କବିତା ୨୧",
+      "language": "or",
+      "text": "ଦେବତାମାନେ ବି\nକମ୍ ସମଝଦାର ନଥିଲେ!\nଥରେ ଥରେ\nକାହାକୁ କିଛି ନ କହି\nକଳା ଘୋଡ଼ା ଧଳା ଘୋଡ଼ା ଚଢ଼ି\nବାହାରି ପଡ଼ୁଥିଲେ\nଦିଗବିଜୟରେ ।\n\nକାହାଣୀ\nରୋମାଂଚକ ହୋଇ ଉଠୁଥିଲା\nରତ୍ନମୁଦିକୁ ପିଂଧାଇ ଦେଇ\nମାଣିକ ହାତରେ\nଯେବେ ବଢ଼ାକଯାକ\nଦୁଧ ଓ ଅଧାମ\nଉଠାଇ ନେଉଥିଲେ ଗୋସାଇଁ\nରହସ୍ୟରେ ।\nମହାରାଜାଂକ ପରାକ୍ରମ\nସହସ୍ର କୋଶ ବ୍ୟାପିଯାଉଥିଲା\nତୁଂଡବାଇଦରେ:\nଠାକୁର, ରାଜାଂକ ସେବାରେ!\n\nସେପରି କାହାଣୀଟିଏ\nଗଢ଼ା ହୋଇ ନ ଥିଲେ\nକହୁନା\nଏ ଅଧାଗଢ଼ା କାଠ କଂଢେଇକୁ,\nଗୋଟାଏ ଅବୋଧ ଚିତ୍ରକୁ\nକିଏ କାହିଁକି\nଭୋଗ ଲଗାଉଥାଆଂତା\nବଡ଼ଦେଉଳରେ\nରତ୍ନବେଦିରେ\nଅବୋଧ ଶିଶୁର\nସରଳବିଶ୍ଵାସରେ?",
+      "source_sha256": "156f81871399283834c788ef481bfc3bba3101f5e85e9687b6726b89063b0e35",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/49ec8cc4-387e-41e4-8c2d-3b8d40919469",
+          "status": "generated",
+          "duration": "1:21"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/407e6f51-7c28-4c47-bf15-aab5c19301ef",
+          "status": "generated",
+          "duration": "1:25"
+        }
+      ],
+      "selected": "https://suno.com/song/49ec8cc4-387e-41e4-8c2d-3b8d40919469",
+      "submitted_at": "2026-10-02T08:52:18.269Z",
+      "media_path": "site/dist/assets/audio/poem-21-49ec8cc4.mp3",
+      "audio_sha256": "fe4994994d6280d97564a89684b7f1dc540aa1bef3cb49064effde8b9dfa769d",
+      "duration_seconds": 80.712
+    },
+    {
+      "section": 22,
+      "title": "Singhasan 22 — କବିତା ୨୨",
+      "language": "or",
+      "text": "ସିଂହାସନ\nଆରୋହଣ ନୁହେଁ,\nଅପହରଣର ବସ୍ତୁ ହୋଇଗଲା\nଇତିହାସରେ ।\n\nନାଦିର ଶାହ, ଚେଂଗିଜ ଖାଁ,\nଛୋଟିଆ ଛୋଟିଆ ନାଁ,\nଥରିଉଠୁଥିଲା ଛାତି,\nଜଳି ଉଠୁଥିଲା ଦେଶ,\nହତ୍ୟା ଓ ଲୁଣ୍ଠନ ନିଆଁରେ ।\n\nସେମାନେ ଫେରିଗଲେ ଶେଷରେ ।\n\nଫେରିଗଲାବେଳକୁ ଯାହା\nହୀରା ନୀଳା ମୋତି ମାଣିକ୍ୟ ସାଂଗରେ\nସିଂହାସନଟାକୁ ବାଂଧି ନେଇଗଲେ\nଅଂଟିରେ ।\nଜାଣି ନ ଥିଲେ ସେମାନେ\nଦସ୍ୟୁମାନଂକ ନାମ ଦିନେ\nଦରଜ ହୋଇଯିବ ଆମ ଐତିହରେ\nମାଦଳାପାଂଜିରେ!",
+      "source_sha256": "351c236683000308b258ca85cc4936232281128ebe1077568e8684f160bc4d6c",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/8b967b36-2a6b-420e-bf80-2b8a6ab520c7",
+          "status": "generated",
+          "duration": "1:02"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/0ac25f54-1506-41d3-b767-ddd6dc479865",
+          "status": "generated",
+          "duration": "1:13"
+        }
+      ],
+      "selected": "https://suno.com/song/8b967b36-2a6b-420e-bf80-2b8a6ab520c7",
+      "submitted_at": "2026-10-02T08:54:03.958Z",
+      "media_path": "site/dist/assets/audio/poem-22-8b967b36.mp3",
+      "audio_sha256": "3506c75e9f6741d6fd93bbb4502c624cc3b6b1a886e7345792a9564325f19723",
+      "duration_seconds": 61.632
+    },
+    {
+      "section": 23,
+      "title": "Singhasan 23 — କବିତା ୨୩",
+      "language": "or",
+      "text": "କେତେବେଳେ ଦିଲ୍ଲୀରେ ତ\nକେତେବେଳେ ଦଉଲତାବାଦରେ,\nସିଂହାସନ ଘୂରୁଥାଏ\nବାଦଶାହଂକ ସାଥିରେ ।\n\nଆଜି ବାଦଶାହ\nସିଂହାସନ-ପାଗଳ ତ\nକାଲି ସିଂହାସନ\nବାଦଶାହ-ପାଗଳ,\nପ୍ରଜା-ପାଟକମାନେ\nବୁଝିପାରଂତି ନାହିଁ\nରାଜାଗୋଜାମାନଂକର\nଏମଂତ ବେଭାର ।\n\nହେଲା ଏବେ\nଇତିହାସ ଲେଖା ହୋଇଯିବ-\n‘ରାଜା ଆଡ଼ବାୟା’,\nତଥାପି\nକିଏ ପାରିବ ଅଟକାଇ\nଚାରିଆଡ଼େ ରଟୁଥିବା\nସିଂହାସନର ଜୟଜୟକାର?",
+      "source_sha256": "f6723f8392d5a910d2fcdc6762e60d6a9ff9f0755524860e5ce8591819c59ed7",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/b48e0b06-149a-46a4-91da-09681a36b5e6",
+          "status": "generated",
+          "duration": "0:56"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/ebd37dda-1686-43e7-bd25-96a9a34d0870",
+          "status": "generated",
+          "duration": "0:58"
+        }
+      ],
+      "selected": "https://suno.com/song/b48e0b06-149a-46a4-91da-09681a36b5e6",
+      "submitted_at": "2026-10-02T08:54:04.258Z",
+      "media_path": "site/dist/assets/audio/poem-23-b48e0b06.mp3",
+      "audio_sha256": "2fda81a95a6bc673ae79426e3cf76ab326dae355fc150e39ef100a1164d16063",
+      "duration_seconds": 56.352
+    },
+    {
+      "section": 24,
+      "title": "Singhasan 24 — କବିତା ୨୪",
+      "language": "or",
+      "text": "କିଏ ପ୍ରଜା କିଏ ରାଜା?\nକିଏ କପିଳା କିଏ କପିଳେଶ୍ଵର?\n\nହାତୀଶୁଂଢ-କଳସ ବରଷି ଦେଲେ\nଭାଗ୍ୟ ବଦଳିଯାଏ,\nଗାଈଆଳ ପିଲା ସ୍ଵପ୍ନଟିଏ ପରି\nପାଲଟିଯାଏ\nଗଜପତି ପଶୁପତିପତି ବୀରାଧିବୀରବର\nରାଜରାଜେଶ୍ଵର…।\n\nସିଂହାସନେ\nଅଧିଷ୍ଠିତ ହୋଇଗଲେ ଥରେ\nଆଉ ମିଳେନାହିଁ ଭେଟ\nକପିଳାର ।\nକାଶିଆମାନେ ସିଂହଦୁଆରୁ\nଲେଉଟିଆସିବା ଦୃଶ୍ୟ ଦେଖୁଥାଆଂତି\nଦଳେ ନିକମା ମଣିଷ,\nଯେତେବେଳେ ବିଚିତ୍ର ଠାଣିରେ\nଆକଟୁ ଥାଆଂତି\nନିଶୁଆ କଟୁଆଳ ଓ ସଶସ୍ତ୍ର ଦ୍ବାରପାଳ ।",
+      "source_sha256": "b41d4bea2f0754b7dfe15242fa06219303a049e5ca6e15cccbf72e0ab5e27716",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/e085300e-3b20-4677-86f6-9d172786f5e3",
+          "status": "generated",
+          "duration": "1:06"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/3d3d6372-7a52-466f-8f0b-796bb493e2c9",
+          "status": "generated",
+          "duration": "1:03"
+        }
+      ],
+      "selected": "https://suno.com/song/e085300e-3b20-4677-86f6-9d172786f5e3",
+      "submitted_at": "2026-10-02T08:54:04.479Z",
+      "media_path": "site/dist/assets/audio/poem-24-e085300e.mp3",
+      "audio_sha256": "32ef687ce0374cf217e4c314d9cb619c782afad0579bc3aa8642d987c9634af6",
+      "duration_seconds": 66.24
+    },
+    {
+      "section": 25,
+      "title": "Singhasan 25 — କବିତା ୨୫",
+      "language": "or",
+      "text": "ଜେମା ମିଳିଲେ ନାହିଁ ଉଆସରେ\nଗୁଂଜରଣ ଦାନାବାଂଧୁଥିଲା ଅଂତପୁରରେ ।\n\nତୁଂଡରେ ତୁଂଡରେ କଥାଟା\nପ୍ରଘଟ ହୋଇଗଲା ସାରା ରାଇଜରେ ।\n\nଆଉ କିଛି ସମସ୍ୟା ଦିଶିଲାନାହିଁ\nପ୍ରଜାମାନଂକ ଆତୁର ଆଖିରେ,\nଶେଷରେ ସିନା ଚର ଖବର ପେଶିଲା-\nସେ ଦେଖିଛି ରମଣୀରତନଂକୁ\nଦଉଡ଼ୁଥିବା ଘୋଡ଼ାର ପିଠିରେ\nମଥା ରଖି ତରୁଣ ଆରୋହୀର\nନିର୍ଭୟ ଅଂକରେ\nସୁରମ୍ୟ ଅରଣ୍ୟ ପଥରେ,\nସ୍ଵଚକ୍ଷୁରେ ।\n\nଫୁଟିଲା ଫୁଲର ଏପରି ସୁଂଦର ରୂପ\nସେ କେବେ ଦେଖି ନ ଥିଲା\nପାଖାପାଖି ଯୋଡ଼ାଏ ମୁହଁରେ,\nତା’ ରାଜସେବାର ଜୀବନ କାଳରେ ।\n\nଶୁଭୁଥିଲା ଗର୍ଜନ : ଅପହରଣ!\nମଧୁରେ ମୁଧୁରେ ପୁଣି ଗୁଂଜରଣ:\nନା, ଇଚ୍ଛା ବରଣ ।\nହେଲେ ଅହଂକାରମାନେ ଉଠିଲେ ଉର୍ଧ୍କୁ\nଓ ଗଢ଼ିଦେଲେ ଏପରି ଭିଆଣ ଯେ\nଘୋର ଯୁଦ୍ଧରେ ନିପୀଡ଼ିତ ହେଲେ ପ୍ରଜାଗଣ ।\n\nକିଏ ବା ବୁଝଂତା\nକାହା ମୁକୁଟରେ ଝଲମଲ ବିଜୟ ବିଭବ?\nକାହା ଭାଗ୍ୟରେ ଲେଖା ପରାଭବ ।",
+      "source_sha256": "7086948b4972857c8c8eff7fe70b7e3d8b5ee6a6a6f4ac4659ace2717d76a339",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/f3368371-aaa8-4887-b11a-815140720cfc",
+          "status": "generated",
+          "duration": "1:38"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/d292033f-e664-479e-b908-0e7540ee0e61",
+          "status": "generated",
+          "duration": "1:42"
+        }
+      ],
+      "selected": "https://suno.com/song/f3368371-aaa8-4887-b11a-815140720cfc",
+      "submitted_at": "2026-10-02T08:54:04.670Z",
+      "media_path": "site/dist/assets/audio/poem-25-f3368371.mp3",
+      "audio_sha256": "16d77cd8825372de75f955e32721ec6d56142b28fb5555b76e3945f5a1516b55",
+      "duration_seconds": 98.04
+    },
+    {
+      "section": 26,
+      "title": "Singhasan 26 — କବିତା ୨୬",
+      "language": "or",
+      "text": "ହତ୍ୟା ଓ ବିଭୀଷିକା ପରେ ସିଂହାସନ\nନା ଭୋଗର ମାଟିମୁଠେ ଦିଏ\nନା କେଉଁ ବୈକୁଂଠକୁ ବାଟ ସେଠି ଥାଏ!\n\nସାରୁଗଛ ମୂଳେ ଗେଂଗ ରଡ଼ି\nମଧୁର ମୂରଲୀ ପରି\nଛତ୍ରପତିଂକୁ ଅସ୍ତବ୍ୟସ୍ତ କରେ\nସମର୍ପି ଦେବାପାଇଁ ଅଂଗବସ୍ତ୍ର\nକୁକୁଡ଼ା ଲଢ଼େଇର ପାଶବିକତାରେ,\nଷଡ଼ଚକ୍ର ସାଧନାରେ\nଯୋଗିନୀର ଯୋନି ପୂଜାରେ,\nବଳିଦାନରେ ।\n\nଏପରି ଉଦ୍ଦଂତ ମୁହୁର୍ତର ଦରବାରେ\nକିଏ ପହଂଚାଇ ପାରିବ ବାର୍ତା?-\nପ୍ରାସାଦ ବାହାରେ\nମହାରାଜାଂକ ବିଚାର ଅପେକ୍ଷାରେ\nପ୍ରଜାଗଣ,\nଉଠିଆସେ ନତୁବା ପ୍ରତ୍ୟକ୍ଷ କର\nସେମାନଂକ ଭୋକର ନିଆଁରେ\nଗୋଟାଏ ରାଜାର ମରଣ ।",
+      "source_sha256": "4034f7f57a3ee2340cfcef353d68a0f27b16eefcf239e209cedb774b52affeff",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/5bce7bd7-a38a-433a-9c47-8052917309d5",
+          "status": "generated",
+          "duration": "1:10"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/8148d98b-062f-4b94-99a2-584819bf6062",
+          "status": "generated",
+          "duration": "1:18"
+        }
+      ],
+      "selected": "https://suno.com/song/5bce7bd7-a38a-433a-9c47-8052917309d5",
+      "submitted_at": "2026-10-02T08:55:39.121Z",
+      "media_path": "site/dist/assets/audio/poem-26-5bce7bd7.mp3",
+      "audio_sha256": "dba5eb828a8db2441d22cc38c664744f8671bc016b13de26abd70f1b50c165a4",
+      "duration_seconds": 69.6
+    },
+    {
+      "section": 27,
+      "title": "Singhasan 27 — କବିତା ୨୭",
+      "language": "or",
+      "text": "ନାମ ସିନା ଭିନ୍ନ ଭିନ୍ନ\nଚେତନା ଗୋଟିଏ ।\nଭଲମଂଦ ବିଚାର\nକେଉଁଠି ଥାଏ\nଖେଳ ଖେଳିବାରେ?\n\nହାରିବା ଜିତିବା ଏକାକଥା-\nକିଏ କାହାକୁ ବୁଝାଇପାରିଥାଏ?\n\nସିଂହାସନ ଉପରେ\nହିଟର୍ଲ ମୁସୋଲିନି\nଷ୍ଟାଲିନ ଲେନିଓ ମାଓ\nଚତୁର୍ଦଶ ଲୁଇ\nବ୍ରିଟିଶ ସାମ୍ରାଜ୍ଞୀ\nଜବାହାର\nଇଂଦିରା\nଅଟଳ ବିହାରୀ,\nଯାହା ପାଳି ପଡ଼ୁ ଯେତେବେଳେ,\nପ୍ରଜାମରଣର ନିରବ କୌଶଳ,\nରକ୍ତ କ୍ଷରଣର ଭୟଂକର ସୂତ୍ର\nବୁଢ଼ିଆଣୀ ଜାଲ ପରି\nଆପେ ବୁଣାହୋଇଯାଏ ।",
+      "source_sha256": "3a94db182aaa890d12659f4f62bfcbf8b43540d590da3b964c58fdaa952e7107",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/ced6eb4f-3a08-4735-b00b-7bf4f7bc9cb6",
+          "status": "generated",
+          "duration": "0:52"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/ce1333bc-08ce-4ee2-934b-a55932251d97",
+          "status": "generated",
+          "duration": "0:57"
+        }
+      ],
+      "selected": "https://suno.com/song/ced6eb4f-3a08-4735-b00b-7bf4f7bc9cb6",
+      "submitted_at": "2026-10-02T08:55:39.595Z",
+      "media_path": "site/dist/assets/audio/poem-27-ced6eb4f.mp3",
+      "audio_sha256": "5dd5e20793c77d08a6037702511009d705dd7cd5ff70b05423b784fc6cd443ee",
+      "duration_seconds": 52.032
+    },
+    {
+      "section": 28,
+      "title": "Singhasan 28 — କବିତା ୨୮",
+      "language": "or",
+      "text": "ପୋଷାକ ପିଂଧାଇ ଦିଅ\nତାଂକ ଲାବଣ୍ୟ ଅଂଗରେ,\nଅଭିଜ୍ଞାନରେ\nଅଭିଜ୍ଞତାର ପାରଦର୍ଶିତାରେ\nବହୁ ରାଷ୍ଟ୍ରୀୟ ନିର୍ମାଣ କୌଶଳରେ\nତିଆରି ହୋଇଛି,\nକବଚଟିଏ ପରି ସୁରକ୍ଷାଦେବ\nଧୂଆଁରେ ଧୂମାଳରେ\nଟହଟହ ଜଳୁଥିବା ନିଆଁରେ,\nକର୍ଷଣରେ ଧର୍ଷଣରେ\nରମଣରେ ରଣାଂଗନରେ\nଯେ କୌଣସି ଛୁରି ଆଘାତରେ ।\n\nତା’ପରେ କୋମଳ ପୃଷ୍ଠଦେଶକୁ ତାଂକର\nସଜାଡ଼ି ବସାଇ ଦିଅ ସିଂହାସନରେ,\nଖୋଜିଆଣ\nକୋଟାଏ ନିରୀହ ଛେଳି ବା ମଣିଷ-ଛାଗଳ\nଖୋଲିରଖ ତା’ର ମସୃଣ ପିଠିକୁ\nଯେଉଁଠାରେ ଆଉ ଗୋଟେ ଛୁରି ଭୁଶିବାକୁ\nଟିକିଏ ବି କଷ୍ଟ ଲାଗିବ ନାହିଁ\nମହାରାଜାଂକ ଦକ୍ଷିଣ ଭୁଜକୁ ।",
+      "source_sha256": "ed1835ffc2a62295f7638eff0138fc1dcc3ee8044cdb5e133bdf89a021fae75d",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/6bf6b74c-b9ee-46f5-b01e-c3f4ccb69d6d",
+          "status": "generated",
+          "duration": "1:13"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/414a520a-89f7-41b0-9edd-86ea3558f974",
+          "status": "generated",
+          "duration": "1:08"
+        }
+      ],
+      "selected": "https://suno.com/song/6bf6b74c-b9ee-46f5-b01e-c3f4ccb69d6d",
+      "submitted_at": "2026-10-02T08:55:39.934Z",
+      "media_path": "site/dist/assets/audio/poem-28-6bf6b74c.mp3",
+      "audio_sha256": "d6a99f8459ea490d39f2912aa48cf0799de48d1f8132ea48105c0488b2cc18ea",
+      "duration_seconds": 73.2
+    },
+    {
+      "section": 29,
+      "title": "Singhasan 29 — କବିତା ୨୯",
+      "language": "or",
+      "text": "ପ୍ରାସାଦ ସୁଦଂର ଦିଶେ ପର୍ବତ ଶୀର୍ଷରେ,\nମହାରାଜା ଉପଭୋଗ କରଂତି\nଜିଅଂତା ହାତୀଟିଏକୁ\nଗଡ଼ାଇଦେବାର ଦୃଶ୍ୟ\nଉପରୁ ତଳକୁ ପ୍ରକୃତି କୋଳରେ!\nହାତୀର କାରୁଣ୍ୟ\nକେବେ ଭାଂଗିଛି କି ପାହାଡ଼ ।\n\nଶିଖର ଚୂଳରେ ନଅର ଗର୍ଭରେ\nସିଂହାସନକୁ ସୁରକ୍ଷା ଦେଉଥିଲା\nକେଉଁ ମଲାରାଜାଂକ ହାଡ଼?\nହଁ, ଯଦି ପାଗଳା ହାତୀମାନେ\nହଠାତ୍ କେବେ ମାତିଉଠଂତି\nପାହାଡ଼ଟାକୁ ଖାଲି ନୁହେଁ,\nସାରା ରାଜ୍ୟକୁ ଧୂଳି କରିଦେବା ପାଇଁ\nସେମାନଂକ ଥୋଡ଼ପାହୁଡ଼ରେ,\nମାନଚିତ୍ରଟାକୁ\nଉଡ଼ାଇ ଦବା ପାଇଁ\nସେମାନଂକ ଖର ନିଃଶ୍ଵାସରେ(!)\nରାଜତଂତ୍ରର ପାକଳ ମଂଜିଟା\nନିଃଶେଷ ହୋଇଯିବ ସେଦିନ\nଭୋକିଲା ମୂଷାମାନଂକର ଦାଂତରେ ।",
+      "source_sha256": "7df0dc347bfbd4bc90c8a5502564bdb7de52ca5defe5e02e15d32c814d92c3fc",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/8f60361f-6a5a-43f2-ac72-4f6decd6ddba",
+          "status": "generated",
+          "duration": "1:05"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/f0521060-56e8-494d-8d23-04e4ff9510cb",
+          "status": "generated",
+          "duration": "1:08"
+        }
+      ],
+      "selected": "https://suno.com/song/8f60361f-6a5a-43f2-ac72-4f6decd6ddba",
+      "submitted_at": "2026-10-02T08:55:40.609Z",
+      "media_path": "site/dist/assets/audio/poem-29-8f60361f.mp3",
+      "audio_sha256": "9446bfccb7cdda685d455c66f2c616392e2c572c0d640db473d7256a732b3150",
+      "duration_seconds": 64.992
+    },
+    {
+      "section": 30,
+      "title": "Singhasan 30 — କବିତା ୩୦",
+      "language": "or",
+      "text": "ଈଶ୍ଵରଂକ ପ୍ରତିନିଧି\nନର-ନାରାୟଣ(!)\nସିଂହାସନରୁ\nଅନେଇ ଦେଲେ ତଳକୁ\nମଣିଷମାନେ\nପୋକ ମାଛି ପରି ଦିଶଂତି\nଅନାମ ଅଧମ ।\n\nତଥାପି ଭୟ-\nକ୍ଷୀଣ ସ୍ଵରଟିଏ\nଭାସିଆସିବ କି ଅକସ୍ମାତ୍\nସୁରକ୍ଷିତ ଦୁର୍ଗର\nକେଉଁ ଫାଂକଟିଏ ଦେଇ\nଓ କାଚ ଘରର ସୁରକ୍ଷିତ ଜୀବନକୁ\nକଚାଡ଼ିଦେବ ଘୃଣାରେ?\n\nତେଣୁ\nମଂଚା ଦୋହଲିବା ଆଗରୁ\nସଂଧି ମାରିଦିଅ\nଫଟା କାଂଥର,\nପାରିବ ଯଦି\nସେନା ଛାଉଣିରେ\nଅବରୋଧ କରିରଖ\nଦୁର୍ଗ ଓ ମୁହଁର ସୁଡଂଗକୁ\nଓ\nଖଂଜଣି ଧରାଇଦିଅ\nମାଦକଂକ ହାତରେ,\nଅଂଧମାନେ ଭଜନ ଗାଆଂତୁ\nମହାପ୍ରଭୁଂକ ଝୁଲଣ ଯାତରେ ।",
+      "source_sha256": "c57805be6a87147ae92fff015b40aae12452b9cc06159c882cbe1cdda25cab58",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/acf3617c-9406-4658-95c2-8f513b48d9e2",
+          "status": "generated",
+          "duration": "1:19"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/cbff11a1-80a1-4af3-abf8-180360ca1d5e",
+          "status": "generated",
+          "duration": "1:48"
+        }
+      ],
+      "selected": "https://suno.com/song/acf3617c-9406-4658-95c2-8f513b48d9e2",
+      "submitted_at": "2026-10-02T08:57:28.004Z",
+      "media_path": "site/dist/assets/audio/poem-30-acf3617c.mp3",
+      "audio_sha256": "b560b153d4052429dfd787e7165240f49f9567337ff2ef6e3f2a3fa9d3f4509b",
+      "duration_seconds": 79.2
+    },
+    {
+      "section": 31,
+      "title": "Singhasan 31 — କବିତା ୩୧",
+      "language": "or",
+      "text": "କେତେବେଳେ ନିଶା ପାଣିରେ\nକେତେବେଳେ ପଶା ପାଲିରେ,\nନ୍ୟାୟଦଂତ ଅସ୍ତ୍ରଟିଏ ପରି\nଖୋଷା ହୋଇଯାଏ ଅଂଟାରେ ।\n\nଅଂଟାକୁ ଭୁସେନା ଅସ୍ତ୍ର\nଭୁସେ ବିବେକକୁ ।\nମୁକୁଟ ପିଂଧାଇ ଦିଏ ଅଣପୁରୁଷାକୁ ।\n\nବର ଓହଳ ପରି\nଝୁଲିପଡ଼ିଥିବା ଅଂଧାର\nସେତିକିବେଳେ\nଲଗାଇଦିଏ କି ନିଆଁ\nମାଂକଡ ଲାଂଜରେ,\nଜାଳିଦେବା ପାଇଁ\nଏକ ସଂଗେ\nଗଛମୂଳେ\nଏକାକିନୀ କାଂଦୁଥିବା\nଧର୍ଷିତାର ଲୁହ ଓ\nସିଂହାସନର ବାସଂତୀ ରୂପକୁ,\nସୁନାର ଦେଶକୁ?",
+      "source_sha256": "e38a26174c2d23745b2a7d3d87b432dbab72800e6d72f22ffbbe7433db24bad6",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/5296a0ba-ebcc-47a4-ab46-056144588e9d",
+          "status": "generated",
+          "duration": "0:53"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/6e637253-215c-4b1f-b022-0a6708b76d99",
+          "status": "generated",
+          "duration": "0:54"
+        }
+      ],
+      "selected": "https://suno.com/song/5296a0ba-ebcc-47a4-ab46-056144588e9d",
+      "submitted_at": "2026-10-02T08:57:28.565Z",
+      "media_path": "site/dist/assets/audio/poem-31-5296a0ba.mp3",
+      "audio_sha256": "55d3a38d546aab70de04f9d8ee1dc888d17865533fe69008b5fd1e1df616660a",
+      "duration_seconds": 52.992
+    },
+    {
+      "section": 32,
+      "title": "Singhasan 32 — କବିତା ୩୨",
+      "language": "or",
+      "text": "ଗୋଟାଏ ରାଜାର ଖିଆଲ\nପରଂପରାର ମୁଚାଲିକା ହୁଏ!\n\nସମାନ ଉଚ୍ଚତାର\nସମାନ ଗ୍ରୀବା ବାନର ପରି\nସଂମୁଖରେ ଠିଆ ହୋଇଯାଆଂତି\nଅଧୋମୁଖ ହୋଇ\nବଂଶବଦ ପ୍ରଜାଗଣ,\nଟିକିଏ ହେଲେ ନାହିଁ\nସିଂହାସନ,\nଟିକିଏ ହଲଂତିନାହିଁ\nସଭାଜନ,\nଆଖି ପିଛଡ଼ାକେ\nକାଟି ପକାଏ\nସମାଂତରାଳ ଭାବେ\nତୀକ୍ଷଣ କରବାଳ,\nସବୁ ମୁଂଡମାନ ।\n\nସମାନ ମଂତ୍ରର ସ୍ଵର\nସମାନ ଛଂଦରେ\nଆକାଶକୁ ଉଠେ,\nସମାନ ସାଂଦ୍ରତାରେ\nରକ୍ତନଦୀ ବହେ,\nସଭାସଦମାନକଂର\nସାଧୁ ହାସ୍ୟରୋଳ\nପବନରେ\nନିର୍ବୀର୍ଯ ହା’ ହା’ କାରମାନ\nଛାଡ଼ିଦେଇ ଯାଏ ।",
+      "source_sha256": "55fcfd85a50740b2d3eb17198e597b6755db1872cb19bbb43cc3ec86b2ab08e1",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/e84f284d-34ba-4e36-86fe-5204e00455ea",
+          "status": "generated",
+          "duration": "1:00"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/6dcbbead-d66f-4eb7-945b-8707483f48b3",
+          "status": "generated",
+          "duration": "1:07"
+        }
+      ],
+      "selected": "https://suno.com/song/e84f284d-34ba-4e36-86fe-5204e00455ea",
+      "submitted_at": "2026-10-02T08:57:29.309Z",
+      "media_path": "site/dist/assets/audio/poem-32-e84f284d.mp3",
+      "audio_sha256": "2bd2cd7b19e8041bf6393f20d0de0a1345e5980114e42907d82e90feee23f986",
+      "duration_seconds": 60
+    },
+    {
+      "section": 33,
+      "title": "Singhasan 33 — କବିତା ୩୩",
+      "language": "or",
+      "text": "ମହାରାଜାଂକ ଛିଂକ ପାଇଁ ନାସ\nରାଣୀହଂସପୁର ପାଇଁ\nଅତର ଓ ଝିନ ଅଂତର୍ବାସ,\nଆଉ ମହାମଂତ୍ରୀଂକ\nବ୍ରାହ୍ମଣ ମର୍ଯାଦା ପାଇଁ ବିଦାକି ପାଇଁ(?)\nଗଣି ହେଉଥିବା ଗୋଟାଏ\nମୋଟାଅଂକର ପାରିତୋଷ!\n\nବାସ୍,\nହୀରାର ମୂଲ୍ୟରେ\nସଉଦା ହୋଇଯିବ\nଜାହାଜେ ଅଂଗାର,\nରାଜା ମଂତ୍ରୀ ଦେଶ\nକେହି ଜାଣି ନ ଥିବେ\nଖସି ଯାଇଥିବା ଗାଦି,\nବିଦେଶୀ ପଲଟଣ\nଜଗି ବସିଥିବେ\nସିଂହାସନର ଚଉହଦି ।",
+      "source_sha256": "5f77aa3daf9162092c94328030086e325eed52d901e52831246ec698df19f143",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/1eae44b7-7d34-4f88-b5e2-31624c40c29e",
+          "status": "generated",
+          "duration": "0:49"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/4c4d5409-1971-4db8-9c22-dd3cbebaa385",
+          "status": "generated",
+          "duration": "0:53"
+        }
+      ],
+      "selected": "https://suno.com/song/1eae44b7-7d34-4f88-b5e2-31624c40c29e",
+      "submitted_at": "2026-10-02T08:57:29.952Z",
+      "media_path": "site/dist/assets/audio/poem-33-1eae44b7.mp3",
+      "audio_sha256": "e9ef2f2c18d12489604637e77b18524b8e5174c3c8456d785af1c28357aab3af",
+      "duration_seconds": 48.792
+    },
+    {
+      "section": 34,
+      "title": "Singhasan 34 — କବିତା ୩୪",
+      "language": "or",
+      "text": "ବେପାରୀମାନେ\nଫାଟି ପଡ଼ିଲେ ସେଦିନ\nଅହଂକାରରେ:\nସୂର୍ଯ୍ୟ ବୁଡ଼େନାହିଁ\nଭୟରେ\nଆମ ସାମ୍ରାଜ୍ୟରେ ।\n\nସୂର୍ଯ୍ୟବଂଶୀମାନେ\nମୁଂଡ ଟୁଂଗାରୁଥିଲେ\nଢୋଳେଇ ପଡ଼ୁ ପଡ଼ୁ\nଅଫିମ ନିଶାରେ ।\n\nକିଏ ଜାଣିଥିଲା\nଜଣେ ନଂଗଳା ଫକିର ପାଟିରୁ\nନିଗିଡ଼ି ଆସୁଥିବା\nଗୋଟାଏ ବୋଲି ଶବ୍ଦ\nମଂତ୍ର ପରି\nନିନାଦିତ ହେବ\nଭାରତବର୍ଷରେ,\nଯଜ୍ଞକୁଂଡ ଜଳିଉଠିବ\nମୁକ୍ତିର ଶିଖାରେ ।\nସିଂହାସନରେ ବସି\nଖେଳ ଖେଳିବାପଣ\nଧୂଳି ଉଡ଼ିଲା ପରି\nଉଡ଼ିଯିବ ପବନରେ,\nମୁକ୍ତି ଯୁଦ୍ଧରେ,\nବିନା ରକ୍ତପାତରେ ।\n\nଆମେ କି କ’ଣ\nକମ୍ ଫାଟିଲୁ ଗର୍ବରେ:\nଏପରି ଘଟଣା କେହି କେବେ\nପ୍ରତ୍ୟକ୍ଷ କରି ନାହିଁ\nମହୀମଂଡଳରେ ।",
+      "source_sha256": "5b1f9a0c7694178d0bc81e9c00bfe32ae7fbb22cf798d10d8cb457604e5cd5ee",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/841134cb-6f15-4abd-9be7-aed9ad951d3c",
+          "status": "generated",
+          "duration": "1:23"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/6957dbc5-bb35-4588-ac88-c296435be09c",
+          "status": "generated",
+          "duration": "1:19"
+        }
+      ],
+      "selected": "https://suno.com/song/841134cb-6f15-4abd-9be7-aed9ad951d3c",
+      "submitted_at": "2026-10-02T08:58:25.050Z",
+      "media_path": "site/dist/assets/audio/poem-34-841134cb.mp3",
+      "audio_sha256": "d798b660ad3fd991f56d7240006a878df057706cfdb9a0a206148857d0edcf31",
+      "duration_seconds": 83.352
+    },
+    {
+      "section": 35,
+      "title": "Singhasan 35 — କବିତା ୩୫",
+      "language": "or",
+      "text": "କଥାଟା ବାଜୁବାଜୁ କାନରେ\nକାଟି ପକାଇଲେ ଦେଶକୁ ସମାନେ\nଡାଆଣୀ ଛୁଆକୁ କାଟିଲା ପରି\nଶେଷରେ\nଓ ଦୁଇଗଡ଼ କରି ଥୋଇଦେଲେ\nଭୋଗ ଲାଗିଲା ପରି ଥାଳିରେ\nରକ୍ତାଂବରା ମହାଦେଈଂକ\nରକ୍ତ-ପିପାସା-ରୂପର\nସାମ୍ନାରେ ।\nମାଂକଡ ଚକୁଳି ବାଂଟିଲା ପରି\nବିରାଡିମାନଂକୁ,\nଉଦରସ୍ଥ କରି\nମଣିଷର ସରଳ ବିଶ୍ଵାସ,\nଉଲଗ୍ନ କରି\nଛିଡ଼ାକରାଇ ଦେଲେ\nସେମାନେ ମା’କୁ ବଜାରରେ,\nସ୍ଲୋଗାନରେ,\nଭାଷଣବାଜିରେ,\nଛଳନାର\nଚରମ ଉଚ୍ଚାରଣରେ  ।\nସିଂହାସନର ସଂଦିଗ୍ଧ ରୂପକୁ,\nପାଇକ ସାଜି ଲଢ଼ୁଥିବା କାପୁରୁଷମାନେ\nମାନିନେଲେ\nଭତ୍ତା ଓ ଭାତିଆ ଲୋଭରେ,\nଭୟରେ, ନିର୍ଲଜ୍ଜ ପଣରେ!\nକେଉଁ ମହାତ୍ମାଂକ ବଳିଦାନ,\nଅନଶନ,\nକେତେ ଦୁଃଖରେ ମିଳିଥିବା\nକେତେ ସଂଘର୍ଷରୁ ଜନ୍ମ ନେଇଥିବା\nମୁକ୍ତିର ସପନ\nଲୁଚିଗଲା\nତୁଚ୍ଛା ପ୍ରହସନରେ ।",
+      "source_sha256": "ff77a108f52bad80c12a40ccb77274ff8cf063f59cba17a36ac120ca5123c9d1",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/742d6bfd-4ba5-471d-95ff-f9819b34aa29",
+          "status": "generated",
+          "duration": "1:31"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/41637789-17ff-4470-bc09-160ac97d5974",
+          "status": "generated",
+          "duration": "1:37"
+        }
+      ],
+      "selected": "https://suno.com/song/742d6bfd-4ba5-471d-95ff-f9819b34aa29",
+      "submitted_at": "2026-10-02T08:58:25.328Z",
+      "media_path": "site/dist/assets/audio/poem-35-742d6bfd.mp3",
+      "audio_sha256": "9a5fdd2a373db7c28a16ffde6f04fc30812dcc223435f7a629702f2155ae7405",
+      "duration_seconds": 91.104
+    },
+    {
+      "section": 36,
+      "title": "Singhasan 36 — କବିତା ୩୬",
+      "language": "or",
+      "text": "ବୀରବାଦ୍ୟ ବାଜୁଛି,\nରାଜଧାନୀ\nରାଜାରାଣୀଟିଏ ପରି ଦିଶୁଛି ।\n\nଏଇତ ଚିତ୍କାରୁଥିଲା\nରାସ୍ତାଧାରରେ\nଗଲାକାଲି :\nମୁକ୍ତି ଦିଅ ରକ୍ତ ନିଅ,\nଅସୁମାରି ମଣିଷର ସ୍ଵର\nପ୍ରତିଧ୍ନି ଶୁଣାଉଥିଲା:\nରକ୍ତ ନିଅ, ରକ୍ତ ନିଅ ।\n\nପୋଲିସ ହାତରେ ଲାଠି\nତାଂକୁ କେତେବେଳେ ଖେଦୁଥିଲା\nଘାଏ ପଛକୁ ତ\nକେତେବେଳେ\nପିଠିର ମାଂସଳ ଶେଯରେ\nନାଚି ଉଠୁଥିଲା କ୍ରୋଧରେ,\nରକ୍ତ କ୍ଷରଣରେ ।\nହଁ, ଇଏ ସେଇ ଲୋକ,\nଆଜି ମାଡ଼ିଆସୁଛି ରାଜାର ଠାଣିରେ ।\nପୋଲିସବାଲାଂକୁ ତର ସହୁନାହିଁ\nଅଂତରଂଗ ଭୃତ୍ୟ ପରି\nହସିଲା ମୁଁହରେ ସେଲ୍ୟୁଟ ଠୁଂକି\nଟେକିନେଇ ଶୁଆଇଦେବାକୁ ତାଂକୁ\nବୈକୁଂଠପୁର ପରି ସଜା ହୋଇଥିବା\nଲୋଭନୀୟ ସିଂହାସନ ଉପରେ,\nଆଟୋପରେ ।\n‘ଅନଂତ ଶୟନ’ର ସମାନ ଚିତ୍ରଟିଏ ଅବା\nତୋଳିଧରିବା ପାଇଁ\nମୁକ୍ତିକାମୀ ପ୍ରଜାଂକ ପ୍ରାଣରେ ।",
+      "source_sha256": "817023f61049bcd5c9f551ec3ab08f00c71681b354f0ead8e5112b1c4f1a2e8d",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/8c43c2d0-6e40-4ed3-8a40-077d1a64ffcc",
+          "status": "generated",
+          "duration": "1:32"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/e484db98-68ed-4a2e-b740-b8b10db9cb3c",
+          "status": "generated",
+          "duration": "1:37"
+        }
+      ],
+      "selected": "https://suno.com/song/8c43c2d0-6e40-4ed3-8a40-077d1a64ffcc",
+      "submitted_at": "2026-10-02T08:58:25.677Z",
+      "media_path": "site/dist/assets/audio/poem-36-8c43c2d0.mp3",
+      "audio_sha256": "e42a15b08f8e707b70bd4b3a2df7944da53bc1130e222715673d066df1396eb5",
+      "duration_seconds": 92.04
+    },
+    {
+      "section": 37,
+      "title": "Singhasan 37 — କବିତା ୩୭",
+      "language": "or",
+      "text": "ନଗର ନିର୍ମାଣର ଆଦେଶକୁ\nଶିରୋଧାର୍ଯ କରି\nବୋଝକୁ ପିଠିରେ ଲଦି\nପାହାଡ଼ ଚଢ଼ିଲାବେଳେ\nହାତୀମାନେ\nରୋଦନ କରୁଥିଲେ କି\nନିର୍ଯାତନାକୁ ହୃଦୟରେ ବୁଝି?\n\nଆଜି ଭଂଗା ନଅର ତଳେ\nରାଜା ଭ୍ରମୁଛଂତି\nଖାଲି ପାଦରେ,\nଶ୍ରୀ ଅଂଗକୁ ଢାଂକିଦେଇ\nଗେରୁଆ ବସ୍ତ୍ରରେ,\nହାତୀଟିଏ\nସୁନା କଳସ ଢାଳିଦେବାର\nପ୍ରଚଂଡ ଲୋଭରେ\nସିଂହାସନ ସ୍ଵପ୍ନରେ,\nଯଦିଓ ଛାତି ଉପରେ ହାତୀ ଚଢ଼ିଯିବାର\nଆତଂକ ଥରାଉଛି ତାଂକୁ\nଭିତରେ ଭିତରେ ।",
+      "source_sha256": "7c3e209ae2f046d95cd56a0ee0a23ff04148e54488f1c6b029216d13e5e4b391",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/1fd745bc-cbfe-4005-8e0b-7590fb904c8b",
+          "status": "generated",
+          "duration": "0:52"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/0205378c-17eb-446c-ab93-1596053f7d9e",
+          "status": "generated",
+          "duration": "0:56"
+        }
+      ],
+      "selected": "https://suno.com/song/1fd745bc-cbfe-4005-8e0b-7590fb904c8b",
+      "submitted_at": "2026-10-02T08:58:25.955Z",
+      "media_path": "site/dist/assets/audio/poem-37-1fd745bc.mp3",
+      "audio_sha256": "e212f2d41756b31623c55a26ad719ddfe8c6c26ecf063f84d9c42d20d7f6b2c9",
+      "duration_seconds": 51.624
+    },
+    {
+      "section": 38,
+      "title": "Singhasan 38 — କବିତା ୩୮",
+      "language": "or",
+      "text": "ଲହୁରେ ଭାସୁଛି ରାସ୍ତା\nଦିଗବଳୟ ଲୋହିତ ଦିଶୁଛି,\nଆକାଶରେ ବେଲୁନ୍ ଉଡ଼ୁଛି ।\n\nସଭାରେ\nଶୋଭାଯାତ୍ରାରେ\nଉଚ୍ଚାରଣରେ\nଉଚ୍ଚାଟନରେ\nପ୍ରାଚୀରପତ୍ରମାନଂକରେ\nଶବ୍ଦମାନଂକ ମେଲଣ,\nପ୍ରଦର୍ଶନୀର ଅସୁଂଦର ପ୍ରତିଯୋଗିତାରେ\n‘ନିର୍ବାଚନ’-\nଗୋଟିଏ ବୋଲି ନୁଆ ଶବ୍ଦ\nପରିବେଶକୁ ଜଳାଇ ରଖିଛି,\nତାତିରେ ଖଉ ଫୁଟୁଛି,\nହତ୍ୟାର ହୋରି ଖେଳରେ\nଶବମାନଂକୁ ପ୍ରେତ ଶୁଆଇ ଦେଉଛି\nଘରେ,\nବାହାରେ,\nଶ୍ମଶାନ ପରି ଦିଶୁଥିବା\nଦେଶ ଗୋଟାକରେ ।\nଲୁହ ଶୁଖି ଆସୁଥିବା\nନିଷ୍କରୁଣ ପବନରେ\nହିମବଂତର ପାଦଦେଶରେ\nକି ମହାସାଗରର ତଟନେଶରେ\nମହାଭାରତର ସୀମାରେ\nସୀମାଂତର ପେଚାରୀ ଛାଇରେ\nବୃହତ୍ତମ ଗଣତଂତ୍ରର କୋଟିଏ ସଂତାନ\nକାନତରାଟି ଠିଆ ହୋଇଛଂତି,\nକୁହୁଡ଼ିଏ ଆତଂକରେ,\nଭୋକିଲା ପେଟରେ\nଖବର ଶୁଣିବେ:\nକାହା ଭାଗ୍ୟେ ଫିଟିଲା ସିଂହାସନ\nଜନ-ଗଣ-ମନ-ଅଧିନାୟକର\nଅଖଂଡ ସଂମାନ ।",
+      "source_sha256": "cc048ed55472c204b0c74d98c8cb944f370e3647446eb825f1c12c3b96125aba",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/111ad90d-1c8b-456e-8868-9308bf1d7cb0",
+          "status": "generated",
+          "duration": "1:43"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/1f3c89d3-48f6-46e1-8a73-656d6e5465f9",
+          "status": "generated",
+          "duration": "1:45"
+        }
+      ],
+      "selected": "https://suno.com/song/111ad90d-1c8b-456e-8868-9308bf1d7cb0",
+      "submitted_at": "2026-10-02T08:59:17.331Z",
+      "media_path": "site/dist/assets/audio/poem-38-111ad90d.mp3",
+      "audio_sha256": "a3383429a073f9df4fbc04a14428ee8c9cb8806758b1f771e18820f721f28cf4",
+      "duration_seconds": 102.84
+    },
+    {
+      "section": 39,
+      "title": "Singhasan 39 — କବିତା ୩୯",
+      "language": "or",
+      "text": "ଦେଶର ସମୃଦ୍ଧି ଯଦି ବାଣିଜ୍ୟରେ\nଦେଶର ବିକାଶ ଯଦି\nବଣିକମାନଂକ ବିଶ୍ଵାସରେ,\nସୁଯୋଗକୁ କିଏ ଅବା ଛାଡ଼େ?\nତେଣୁ ଡାକିଆଣ\nଭୂମି ନ ଥିବା\nପାଦ ନ ଥିବା\nସାଧୁର ଭେକଟିଏ ଗଳାଇଥିବା\nଜଣେ ବଣିକ ବାମନକୁ,\nଯେମିତି\nସିଂହାସନ ବଡ଼ ଦିଶିବ\nତାର ଛୋଟିଆ ଦେହକୁ ।\nନା, ଆଉକିଛି ଲୋଡ଼ା ନାହିଁ ।\n\nଏଣିକି ନଚାଇବାର ପାଳି,\nଖେଳାଇବାର ପାଳି ।\nବାଜା ବାଜିଲେ\nମାଂକଡ ପରି ନାଚିବ,\nଶୁଷୁରି ଫୁଂକିଲେ ସାପ ପରି ଖେଳିବ ।\n“ବଂଧୁକର ଜବାବ\nକ୍ଷେପଣାସ୍ତ୍ର ନୁହେଁ\nବୋମା,\nଚୁମାଟିଏ ପରି ଫୁଟାଇଦେବୁ\nଆଖି ମିଟିକାରେ ।”-\nନାଟକୀୟ ନାରାବାଜିଟା\nଜାରି ରଖିଥିବ ।\n\nବେପାରଟା କେମିତି ଜମୁଛି-\nଏବେ ଦେଖିବାର ଅଛି ।",
+      "source_sha256": "dbf1070bf5f679bef13aacb75c4e6a80055aad2692d46fc098ffa705be063302",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/c2fb0532-c391-4adf-8458-862210aa0545",
+          "status": "generated",
+          "duration": "1:26"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/12d788d5-bdb5-414f-94c1-fddfcce19276",
+          "status": "generated",
+          "duration": "1:32"
+        }
+      ],
+      "selected": "https://suno.com/song/c2fb0532-c391-4adf-8458-862210aa0545",
+      "submitted_at": "2026-10-02T08:59:17.616Z",
+      "media_path": "site/dist/assets/audio/poem-39-c2fb0532.mp3",
+      "audio_sha256": "0b0427aa5c051d732ab0069c072917e5c4db1bc5ed1c32a58b667834214e62c1",
+      "duration_seconds": 85.56
+    },
+    {
+      "section": 40,
+      "title": "Singhasan 40 — କବିତା ୪୦",
+      "language": "or",
+      "text": "ସେ ଅଂଟା ସଳଖି ବସିଲା\nଦରବାରରେ,\nଶତ୍ରୁମାନଂକୁ ସେଇ ସୁଯୋଗରେ\nଉଡ଼ାଇଦେବାର ମଂତ୍ରଣା\nଜାରି ଥିଲାବେଳେ ।\n\nକେଉଁ ନାକ ପୁଡ଼ାକୁ\nପବନ ରୁଂଧିଛି,\nକେଉଁ ନାକ ପୁଡ଼ାରୁ\nସ୍ଵଚ୍ଛଂଦରେ ପବନ ନିର୍ଗତ ହେଉଛି\nପରଖିଲା ବେଳକୁ\nସବୁ ଓଲଟପାଲଟ ହୋଇଗଲା-\nସୋଦରଟିଏ ଆଉଁଶିଲା ପରି\nଆଉଁଶି ଦେଉଥିବା\nପ୍ରତିପକ୍ଷ ନାରୀର ଭୋଜବିଦ୍ୟା\nଆଂବଟାକୁଆ ପରି\nଫିଂଗିଦେଲା ତାକୁ\nସିଂହାସନରୁ ରାସ୍ତା ଉପରକୁ,\nଯେତେବେଳେ\nକାଂଦିବା ପାଇଁ ଅବା ହସିଦେବା ପାଇଁ\nସିଏ ଟିକିଏ ବି ପ୍ରସ୍ତୁତ ନ ଥିଲା ।\nମଦନ ନ ଥିଲା,\nଦେହ କଂପୁଥିଲା ।\nତଥାପି ସିଏ କେତେ ଖୁସି ହୋଇ ନ ଥିଲା-\nମୁହୂର୍ତକ ପାଇଁ ହେଲେ ବି\nଅଭିଳାଷ ପୂରଣ ହେଲା ତ!",
+      "source_sha256": "670c89db8a6007c6e80d1543a4b370a503794e4eccd98ff58c3ae08b6d024736",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/cd300e7a-f76d-4767-95c5-c7d91e4f7986",
+          "status": "generated",
+          "duration": "1:15"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/42a4a21a-3a1b-4bc8-8f49-4a10915b50bb",
+          "status": "generated",
+          "duration": "1:09"
+        }
+      ],
+      "selected": "https://suno.com/song/cd300e7a-f76d-4767-95c5-c7d91e4f7986",
+      "submitted_at": "2026-10-02T08:59:17.892Z",
+      "media_path": "site/dist/assets/audio/poem-40-cd300e7a.mp3",
+      "audio_sha256": "16d2b7a84a3f1ea200aae2b8e262ce5292244033f47874fcc8e87d423752ced0",
+      "duration_seconds": 74.64
+    },
+    {
+      "section": 41,
+      "title": "Singhasan 41 — କବିତା ୪୧",
+      "language": "or",
+      "text": "ପୋଡ଼ା ଜଳାର ଶିଖା ତଳେ ଦିଲ୍ଲୀ ।\nମାଟି ଜୁଡ଼ୁବୁଡ଼ୁ ରକ୍ତରେ\nଅଂଧକାର ସାରା ସଂସାରରେ ।\n\nଦେବୀ ତ ଦଶଭୁଜା ହୋଇ\nଚକ୍ ଚକ୍ ଦିଶୁଥିଲେ ।\nକିଏ କାହିଁକି ଭାବିବ\nସିଏ ଭୁଜହୀନା ହୋଇ\nଟଳି ପଡ଼ିବେ\nବିନା ପ୍ରତିରୋଧରେ?\n\nଦେଶର ଜନତା ସ୍ତବ୍ଧ-\nଲୁହ ଭିଜେ ଆଖିରେ\nଲହୁ ଯମୁନା ପାଣିରେ ।\nଏ ତ ଦିଲ୍ଲୀର ଆଟୋପ-\nମହାରାଣୀଂକ ଉଷୁମ ରକ୍ତରେ\nମିଶିଯାଉଥିବା\nଶୁଖା ସିକଂଦର ଅବା\nଭୋଲାରାମମାନଂକର\nଶୀତଳ ରକ୍ତର ନିର୍ଝର\nସତେ କ’ଣ ସିଂହାସନର ଦୀପ୍ତିମାନ ରୂପ?",
+      "source_sha256": "54cdb1a2c87403fd5e128a4f7c9535d8d7df13041e65125086badf41d1d32f4b",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/789f97ef-48be-499d-963b-d42499c4bfd4",
+          "status": "generated",
+          "duration": "1:03"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/9b3b93bf-5f02-4b89-89e3-9e32af64a379",
+          "status": "generated",
+          "duration": "1:01"
+        }
+      ],
+      "selected": "https://suno.com/song/789f97ef-48be-499d-963b-d42499c4bfd4",
+      "submitted_at": "2026-10-02T08:59:18.049Z",
+      "media_path": "site/dist/assets/audio/poem-41-789f97ef.mp3",
+      "audio_sha256": "8868b0a23744c12bd8b37457ae9e79e82bf273e2de47b114bbc6bbf55715c694",
+      "duration_seconds": 62.784
+    },
+    {
+      "section": 42,
+      "title": "Singhasan 42 — କବିତା ୪୨",
+      "language": "or",
+      "text": "ବାକ୍ୟ ପୂରଣ କରିବାକୁ ବେଳ ନଥିଲା ହାତରେ,\nମୃତ୍ୟୁର ନିଶବ୍ଦ ବ୍ୟୂହ ଘେରିଗଲା\nମହାରାଣୀଂକୁ ନିଷ୍କାମ ଆବେଗରେ,\nଅଂଧ ମଣିଷଂକ ଅଂତରୀଣ ଆଲୋକ ସ୍ରୋତରେ,\nଅଂଗରକ୍ଷୀର ଧୂଆଁଧାର ବୁଲେଟ୍ ମାଡ଼ରେ ।\n\nଗୋଟାଏ ମୃତ୍ୟୁ ପରେ ଏତେ ମୃତ୍ୟୁ କେଉଁଠି ଥିଲା\nଜଳି ଉଠିବା ପାଇଁ ଉଲଂଗ ପ୍ରତିବଦ୍ଧତାରେ!\nକିଏ କାହାକୁ ପଚାରିବ\nକେତେ ବେଶି ଅଂଧାର ଏ ରାଜୁତିରେ?\nଏତେ ବଡ଼ ନୀଳ ଆକାଶଟା\nକେମିତି ଲାଲ ଚାଂଦୁଆଟେ ପରି ଦିଶିଲା\nଘଡ଼ିକ ଭିତରେ?\n\nନା,\nସିଂହାସନର ଏ ଚିରଂତନ ରକ୍ତରୂପ\nପ୍ରଜାମାନେ ଦେଖିପାରଂତି ନାହିଁ ସବୁବେଳେ\nତାଂକ ଚର୍ମ ଚକ୍ଷୁରେ,\nଅହମିକାର ବରାଭୟକୁ\nଆଖି ପଟଳରେ ସାଇତି ବଂଚିବାଟା\nଯେହେତୁ ତାଂକର ଅଭ୍ୟାସରେ ପଡ଼ିଯାଇଥାଏ ।",
+      "source_sha256": "eb46ed948c9d4b7ec8089fce0cf837c4b609a181c34cfa772e705d96169bb1a1",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/55237269-6ce8-4642-9a5f-7f0a220bbef6",
+          "status": "generated",
+          "duration": "1:22"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/b09c8c20-84e6-4cac-a81e-a45727c3a143",
+          "status": "generated",
+          "duration": "1:16"
+        }
+      ],
+      "selected": "https://suno.com/song/55237269-6ce8-4642-9a5f-7f0a220bbef6",
+      "submitted_at": "2026-10-02T09:00:00.441Z",
+      "media_path": "site/dist/assets/audio/poem-42-55237269.mp3",
+      "audio_sha256": "f80f86134850a01f2273d56a9502d088fe59131bc56f438a20cab1f91492586f",
+      "duration_seconds": 82.44
+    },
+    {
+      "section": 43,
+      "title": "Singhasan 43 — କବିତା ୪୩",
+      "language": "or",
+      "text": "ଉଦ୍ଦଂତ ଗଣନୃତ୍ୟର ଆଖଡ଼ାଘରେ\nମହାରାଜାଂକ ଶବକୁ ଫିଂଗିଦିଆଗଲା\nପୁତ୍ତଳିକାଟିଏ ପରି ମାଟିରେ ।\n\nକାଳ ବିଳଂବ ନ କରି\nପ୍ରିୟତମ ସଂତାନ ତାଂକର,\nଭେକ ବଦଳାଇ ଭିକାରି ବେଶରେ,\nବହୁଦିନରୁ ଗଜା-ମରୁଡ଼ି ହୋଇଯାଇଥିବା\nଓ ହଠାତ୍ କେନା ମାରିବାକୁ ଛନଛନ ହେଉଥିବା\nଲୋଭଟା ସାଇତି ହୃଦୟରେ,\nଠିଆ ହୋଇଗଲା ଆସି\nଶୂନ୍ୟ ସିଂହାସନର ଶୀତଳ ଛାଇରେ\nକରଯୋଡ଼ି କାକୁସ୍ଥ ମୁଦ୍ରାରେ,\nସତେ ଅବା ଡେଇଁ ପଡ଼ିବ ନିଆଁକୁ\nଆଦେଶ ମାତ୍ରକେ ।\n\nବେଶ୍ ସେତିକି ଯଥେଷ୍ଟ ପ୍ରଜାମାନଂକ ପାଇଁ\nଭୁଲିଯିବାକୁ ଯୁଗ ଯୁଗର ଯଂତ୍ରଣା,\nସେଥିକି ଯଥେଷ୍ଟ ଲୋଭର ଚାରାଗଛଟା\nଡଂକେଇ ଉଠିବା ପାଇଁ ଚାଳ ଉପରକୁ ।\nତେଣିକି ଜୟଧ୍ନିରେ କଂପିଲା ନଗର,\nସବୁ ପୋଡ଼ାଜଳା ଭିତରେ ବି\nଶାସନ ହୋଇଗଲା ସ୍ଥିର ।",
+      "source_sha256": "e675df7ff73229b08a0586ea0d54317f8e59cd4a3ecc49194941035d1e075756",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/f6c4d4bf-46be-4ba3-8e32-616581d377ff",
+          "status": "generated",
+          "duration": "1:19"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/e6a59189-e0d5-41ee-ae94-007dca06a2de",
+          "status": "generated",
+          "duration": "1:17"
+        }
+      ],
+      "selected": "https://suno.com/song/f6c4d4bf-46be-4ba3-8e32-616581d377ff",
+      "submitted_at": "2026-10-02T09:00:00.965Z",
+      "media_path": "site/dist/assets/audio/poem-43-f6c4d4bf.mp3",
+      "audio_sha256": "2d877f63fee5b6e781b398b4b428b97fe80ac06fc08ba6a6f558ef092840155e",
+      "duration_seconds": 78.72
+    },
+    {
+      "section": 44,
+      "title": "Singhasan 44 — କବିତା ୪୪",
+      "language": "or",
+      "text": "ଏପରି ଦୃଶ୍ୟଟିଏ\nପୂର୍ବରୁ କେହି କେବେ ଦେଖି ନ ଥିଲା,\nଏହାପରେ ଦେଖାଯିବ କି ନାହିଁ\nକାହାକୁ ବା ଜଣା ଥିଲା?\n\nରାଜାଂକ ପାଦରେ ଜୋତା ଠିକ୍ ଥିଲା,\nହାତର ଗୋଲାପ କଢ଼ି\nକହି ଦେଉଥିଲା ତାଂକ ରସିକତା,\nଗଳାବଂଦ କୋଟ୍\nତାଂକୁ ବେଶ୍ ମାନୁଥିଲା,\nମୁଂଡର ପଗଡ଼ି\nଟିକିଏ ବି ଢିଲା ହୋଇ ନ ଥିଲା,\nସେ ଅପେକ୍ଷା କରିଥିଲେ\nକେତେବେଳେ\nପାଚିଲା କୋଳି ବୃଂତରୁ ଖସିଲାପରି\nତାଂକୁ ଶୂନ୍ୟରେ ଝୁଲାଇଦେଇ\nସେଇ ଅବସ୍ଥାରେ ।\n\nଆଃ! ମହାରାଜାଂକ ମହତପଣ\nଝୁଲୁଥିବା ସୂତାଖିଅକରେ\nବତାସ ବହୁଥିଲା ଭାରତବର୍ଷରେ ।",
+      "source_sha256": "ad76b568c98c433a8d70318a0c5b3857442245392b919e2ebf729a6a00f380cf",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/40e9a914-c4b6-4efb-9e11-2a4b9b27e5c1",
+          "status": "generated",
+          "duration": "1:04"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/e6cda22c-9cd2-4c65-8443-7d97b6298e19",
+          "status": "generated",
+          "duration": "1:02"
+        }
+      ],
+      "selected": "https://suno.com/song/40e9a914-c4b6-4efb-9e11-2a4b9b27e5c1",
+      "submitted_at": "2026-10-02T09:00:01.176Z",
+      "media_path": "site/dist/assets/audio/poem-44-40e9a914.mp3",
+      "audio_sha256": "0e270909d12c12fc16307f99f8455f0b67d1fff9e018cd369dd0cff65f68202f",
+      "duration_seconds": 64.464
+    },
+    {
+      "section": 45,
+      "title": "Singhasan 45 — କବିତା ୪୫",
+      "language": "or",
+      "text": "ଚରମ ପତ୍ର ଭଗବାନଂକୁ,\nନରମ କଥା ପଦେ ଜନଗଣଂକୁ,\nବଂଚିବାର ସୂତ୍ର ମଲା ମଣିଷଂକୁ ।\n\n‘କ୍ରାଂତିର ନମୁନା’- ହ୍ୟାଂଡବିଲ୍\nକଂକାଳମାନଂକ ଛାତି ପକେଟରେ\n‘ମାନବିକ ଅଧିକାର ଉଲ୍ଲଂଘନ’\nଭୋକିଲା ପଟୁଆରର\nନିର୍ବୋଧ ସ୍ଲୋଗାନରେ,\nସେନାବାହିନୀ\nପ୍ରତିବିପ୍ଳବକୁ ରୋକିଦିଅଂତି\nଧାଡ଼ିଏ ଇସ୍ତାହାରରେ ।\n\nଅରାଜକତାର ପହଂଡିବିଜେ କାଳରେ\nକିଏ ପଚାରିବ କାହାକୁ\nକେଉଁଟି ଗୋଲକ\nପୁଣି କେଉଁଠି ସିଂହାସନ?\nକେମିତି ଭୁଷୁଡ଼ି ପଡ଼ୁଛି\nଲହୁ ଓ ଲୁହରେ ଗଢ଼ା\nମୂଷା ଓ ମାଂକଡଂକ\nବିଶ୍ଵାସର ସେତୁବଂଧମାନ ।\nପତାକା ଓ ପାଟଛତିମାନ\nମହାପ୍ରଳୟର ଏ ବିଷମ ବେଳାରେ\nଭାସି ଗଲାବେଳେ\nହାତ କାତ କାହାର ବା\nକେଉଁଠିକି ପାଏ?\n‘ସମସ୍ୟାଟା ଆଂତର୍ଜାତିକ’ –\nବୃହତ-ରାଷ୍ଟ୍ର-ସଂମିଳନୀମାନଂକରେ\nବିଚାର ବିମର୍ଶ ଜାରି ହୋଇଯାଏ ।",
+      "source_sha256": "41413dbe27050cbbd9aae21d43736be13d74cf4997149c88475516f8aa368ac2",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/0a121497-2dd8-4469-ac0d-25f48c7ee79a",
+          "status": "generated",
+          "duration": "1:30"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/83cd41a2-5a3d-4ee5-a0f2-799a4d135c0e",
+          "status": "generated",
+          "duration": "1:27"
+        }
+      ],
+      "selected": "https://suno.com/song/0a121497-2dd8-4469-ac0d-25f48c7ee79a",
+      "submitted_at": "2026-10-02T09:00:01.944Z",
+      "media_path": "site/dist/assets/audio/poem-45-0a121497.mp3",
+      "audio_sha256": "75c655be0aafca283b43db861dcba7fe3e04388005e65b3f7091cdbd643fcda7",
+      "duration_seconds": 90.024
+    },
+    {
+      "section": 46,
+      "title": "Singhasan 46 — କବିତା ୪୬",
+      "language": "or",
+      "text": "ଏବେ ସାରା ଦେଶରେ\nପ୍ରେତ ମାତିବାର ଗୁଜବ ।\nବଜାର ବଂଦ\nତାଟିକବାଟ ବଂଦ\nସହସ୍ରକୋଟି ତାରା\nସହସ୍ରସୂର୍ଯର ତେଜ\nଗୋଟିଏ ତାପଜ କେଂଦ୍ରରୁ\nଆଲୋକ ଢାଳୁଥିଲାବେଳେ\nନିଷ୍ପ୍ରଦୀପ ହୋଇ ଯାଇଛି\nସବୁରି ହୃଦୟ,\nଚାରିଆଡ଼େ ନିଃଶବ୍ଦ ଅସହାୟ\nମେଘ ଢାଂକିଲା ପରି କୋକୁଆ ଭୟ!\n\nକିଏ କଳା କବାଟ ଭିତରୁ\nକିଏ ଘୋଡ଼ାକଂବଳ ତଳୁ\nକିଏ ବହୁତଳ ପ୍ରାସାଦ ଶୀର୍ଷ ଜଳାକବାଟିରୁ\nକିଏ ରଂକ ରତନଂକ ରଂଗମହଲରୁ\nଖୋଜୁଛି ନିଜକୁ\nଉଡାଂଳୁଛି ଭାଗ୍ୟକୁ ।\n\nପ୍ରେତ ମଧ୍ୟ ଯାଇ ପାରୁଛି ସେ ସବୁ ସ୍ଥାନକୁ,\nଜଣେ ତାକୁ ମଦ ଗିଲାସେ ଯାଚୁଛି ତ\nଆଉଜଣେ ଘାଗଡ଼ା ଗଳାରେ ହାଂକିଦେଉଛି:\nଚୁପକରି ନେଇଯା’ ବ୍ରିଫକେଶଟା,\nଗଣା ହୋଇ ରହିଛି ଯା ଚାହିଁଥିଲୁ ।\nତୃତୀୟ ଜଣକ ଗଳାଖଂକାରି ରୋକଠୋକ\nଶୁଣାଇ ଦେଉଛି:\nସେତିକିରେ ସଂତୁଷ୍ଟ ହୋଇଯା’ କହୁଛି\nଦେଖ ଏ ଇସ୍ପାତ ଛୁରି\nଦେଖ ଏ ସଂଗୀନ ମୁନ!\n\nସଚରାଚର ପ୍ରହସନ\nକଳାହାଂଡିରୁ ଦିଲ୍ଲୀ-କଟକ ପର୍ଯଂତ\nପ୍ରେତାବଲୋକନ ।\nସାରା ରାତି କୁହୁଡ଼ିରେ\nପରିଣୟହୀନ ପ୍ରଣୟ ଖେଳରେ\nରଚନା ହୋଇଯାଏ\nକେତେ କେତେ ଅଦଭୁତ ରମଣ,\nସକାଳକୁ ଘୋଷଣା ହେବାକୁ\nଯାହା ବାକି ଥାଏ:\nଆଉ ନାହିଁ ଭୟର କାରଣ\nସିଂହାସନ କରି ସାରିଲାଣି\nନୂଆ ରାଜା ଅଳଂକରଣ ।",
+      "source_sha256": "b86b819a4c81e1859f60cf216fc378287ff62fcb0985cb8eea43d92179bb66b4",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/65afa2b4-f34d-4a53-afa9-5fc628de0cc4",
+          "status": "generated",
+          "duration": "2:08"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/25c5d9d5-12ce-4a34-bf34-c1dde9f8d2da",
+          "status": "generated",
+          "duration": "2:12"
+        }
+      ],
+      "selected": "https://suno.com/song/65afa2b4-f34d-4a53-afa9-5fc628de0cc4",
+      "submitted_at": "2026-10-02T09:00:55.604Z",
+      "media_path": "site/dist/assets/audio/poem-46-65afa2b4.mp3",
+      "audio_sha256": "20eddb8dd7a70052065c16eda5d0a006ee81906e19903d1e6745555856f8eac4",
+      "duration_seconds": 127.8
+    },
+    {
+      "section": 47,
+      "title": "Singhasan 47 — କବିତା ୪୭",
+      "language": "or",
+      "text": "ସେ’ତ ସାଧାରଣ ହନୁଟିଏ\nଛୋଟିଆ କର୍ମୀଟିଏ\nକେମିତି ଉଠିଗଲା ଏତେ ଉପରକୁ?\nକେମିତି ଏତେ ତଳେ ଠିଆହୋଇ ରହିଲେ\nବଡ଼ବଡ଼ମାନେ?\nଭାଷଣ ଶୁଣି ତାରିଫ୍ କଲେ,\nତାଳି ବଜାଇଲେ ।\n\nଏ ତ ବିଧିର ବିଧାନ\nନୋହିଲେ ସିଂହାସନରେ ବସିବାଲୋକ\nକେମିତି ବୀଭତ୍ସ ଶବ ହୋଇଗଲା?\n\nନିଘୋଡ଼ ନିଦରେ ଘୁଂଗୁଡ଼ି ମାରୁଥିବା\nବାନର ଜଣକ ବି ବୁଝିପାରି ନ ଥିଲା\nକେମିତି ସେ ଟଣା ହୋଇ\nଥୁଆ ହୋଇଗଲା ଆସି\nଫୁଲ ଶେଯରେ\nଫୁଲ ବେଶର ସିଂହାସନରେ ।\n\nପରଦା ଆଢୁଆଳରେ ବୁଢ଼ିଆଣୀଟିଏ ପରି\nଖେଳ ଖେଳିବାକୁ ସୂତା ଯୋଡ଼ୁଥିବା,\nଉପରକୁ ଦେବକନ୍ୟା ପରି ଝଟକୁଥିବା ମହାରାଣୀ\nଅଭିନଂଦନ ଜଣାଇଲେ\nଯୋଡ଼ ହସ୍ତରେ,\nବିଷାଦ ଓ ଆନଂଦ ଫେଂଟାଫେଂଟି ନାରଂଗୀ ହସରେ,\nଗଂଭୀର ପଦପାତରେ କ୍ୟାମେରା ସାମ୍ନାରେ ।\nଦେଶ କଂପୁଥିଲା ଶୀତଳ ଅରାଜକତାରେ ।",
+      "source_sha256": "280761eecef5910ca32a6286d3e3833e4caef86e943bf092fcd69da86fed92e4",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/af2454c2-ddbe-45b9-bc1e-ccac44eb7989",
+          "status": "generated",
+          "duration": "1:32"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/b742aa5d-4a73-4796-b2bb-0f32b1cc51bd",
+          "status": "generated",
+          "duration": "1:28"
+        }
+      ],
+      "selected": "https://suno.com/song/af2454c2-ddbe-45b9-bc1e-ccac44eb7989",
+      "submitted_at": "2026-10-02T09:00:56.053Z",
+      "media_path": "site/dist/assets/audio/poem-47-af2454c2.mp3",
+      "audio_sha256": "3dea886add46001f72502b997748f0799b71f290cf88677a647e262399b11fcf",
+      "duration_seconds": 91.56
+    },
+    {
+      "section": 48,
+      "title": "Singhasan 48 — କବିତା ୪୮",
+      "language": "or",
+      "text": "ଦସ୍ୟୁର ଲୁଂଠନ,\nମହାରାଜାଂକ ଦାନ-\nନିକିତିର ଦୁଇ ସମାନ ତରାଜୁ ନୁହେଁ ତ,\nଯେଉଁଥିରେ ଅହରହ ଓଜନ ହେଉଥାଏ\nମଣିଷର ରକ୍ତ ଓ ବିଶ୍ଵାସ?\nସେଇଥିପାଇଁ ତ ମଜା ଲାଗୁଛି\nଦେଖିବାକୁ ଛାଗଳ ଲଢ଼େଇ-\nପ୍ରଚଂଡ ପୁରୁଷ ମହାରାଜା\nଦିନେ କାରାରୁଦ୍ଧ କରିଥିଲେ\nଯେଉଁ ଦସ୍ୟୁ ନାୟିକାକୁ,\nଆଜି ସିଂହାସନ ଉପରୁ\nପ୍ରସାରିତ ବାହୁରେ\nଓହ୍ଲାଇ ଆସୁଛଂତି\nରାଜମର୍ଯାଦାରେ ପାଛୋଟି ନେବାକୁ\nନୂଆମେଘ ପରି ଦିଶୁଥିବା\nସେ ଭୂମିକନ୍ୟାକୁ,\nଜୁଆରିଆ ନଈ ପରି\nଆତଂକ ଖେଳାଇ ଦେଉଥିବା\nତା’ ପାଦର ଘୁଂଗୁରକୁ,\nସିଂହାସନ ହାତଛଡ଼ା ହୋଇଯିବାର\nନିରୁତା ଭୟକୁ ଚାପି ଅଂତର ଭିତରେ,\nଫୁଟିଲା ଫୁଲ ପରି\nଚଂଦ୍ର ଉଦିଆ ମୁଁହରେ\nଠୋ’ ଠୋ’ ହସରେ ।\nପ୍ରଜାମାନେ ଅବା କାହିଁକି\nକୃପଣ ସାଜଂତେ\nମୋହରଟିଏ ମାରିଦେବାକୁ\nତୁଚ୍ଛା ବ୍ୟାଲେଟ୍ କାଗଜରେ?",
+      "source_sha256": "f2040dbd620441f917b69335e7eb34471fa9580ba04400289f34a781f85e3fc5",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/09d56174-1b25-425b-a4db-541f3d8ed943",
+          "status": "generated",
+          "duration": "1:31"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/fc7b1905-fa4e-4016-b044-3a055eb880d6",
+          "status": "generated",
+          "duration": "1:33"
+        }
+      ],
+      "selected": "https://suno.com/song/09d56174-1b25-425b-a4db-541f3d8ed943",
+      "submitted_at": "2026-10-02T09:00:56.268Z",
+      "media_path": "site/dist/assets/audio/poem-48-09d56174.mp3",
+      "audio_sha256": "4d7dbcea702c5bd6e54f17a919661dd7f7cd9d6a81f1e50bf281895e81c93537",
+      "duration_seconds": 91.224
+    },
+    {
+      "section": 49,
+      "title": "Singhasan 49 — କବିତା ୪୯",
+      "language": "or",
+      "text": "ଅସୂର୍ଯ ବଳୟ\nସଂମୋହନର ସୂତ୍ର ହୋଇଯାଏ ।\nମୂକ ସିଂହାସନରୁ ଖାଂପୁଳାଏ\nକିଏ ଝାଂପିନିଏ ଛଂଚାଣ ପରି ତ\nକିଏ ଡାଆଣୀ ପରି ଶୋଷିନିଏ\nମଣିଷର ରକ୍ତରେ ।\n\nଛାମୁ ଭୁଲିଯାଆଂତି ଅଂଗୀକାର\nସବୁଥିରୁ ହରାଇ ବସଂତି ଅକ୍ତିଆର ।\n\nନିଦବଟିକା ମଣୋହି କରି\nପହୁଡ଼କୁ ବିଜେ କଲେ ଛାମୁ\nସିଂହାସନକୁ ଝୁଲାଇ ଦିଆଯାଏ ଦୋଳିରେ ।\n\nଚଉଦୁଆର ବେଢ଼ା ସେନା ଛାଉଣି ଭିତରେ\n‘ନବ ଜାଗରଣ’ର ସାମିଆନା ତଳେ\n‘ନବୀନ ସଂସ୍କୃତି’ ପ୍ରେକ୍ଷାପଟର\nଉଷୁମ ଉଷୁମ ହଟଚମଟରେ\nଶାସନ ଜାରି ରହେ ର୍ନିଦ୍ଵଂଦରେ ।\nକେଉଁ କାକଦୃଷ୍ଟି କି ବକଧ୍ୟାନ\nକେଉଁ ଶ୍ୟେନ ଦୃଷ୍ଟି କି ସିଂହାବଲୋକନ\nଜମାରୁ ପହଂଚି ପାରେନାହିଁ\nତୁହାଇ ତୁହାଇ\nଅମୃତ ବୋଲି କୁହାଯାଉଥିବା\nସେ ନରକ ଯୋନିରେ ।",
+      "source_sha256": "2862e8333d111a64cea0fc456c8b33c3065a42bee4a8373c7c3774552ecff65c",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/cbd51a78-ebf1-49b3-a494-0441014fde7c",
+          "status": "generated",
+          "duration": "1:26"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/7c3d6cd8-673d-4b27-ae06-8431d8d2fdf1",
+          "status": "generated",
+          "duration": "1:26"
+        }
+      ],
+      "selected": "https://suno.com/song/cbd51a78-ebf1-49b3-a494-0441014fde7c",
+      "submitted_at": "2026-10-02T09:00:57.586Z",
+      "media_path": "site/dist/assets/audio/poem-49-cbd51a78.mp3",
+      "audio_sha256": "274ec809a16a00f6c68b87b05db24ccad8c1f158226a4dea4e2f059140f70b2f",
+      "duration_seconds": 86.04
+    },
+    {
+      "section": 50,
+      "title": "Singhasan 50 — କବିତା ୫୦",
+      "language": "or",
+      "text": "“ମଧୁର ବିନୟ ବଚନ\nକହି ତୋଷିବ ଜନମନ”-\nସେ ଶିଖିଥିଲେ ମଧୁ-ବର୍ଣବୋଧରୁ,\nଏବେ ଶୁଣ ପରବର୍ତୀ ଜୀବନ ଜିଜ୍ଞାସାରେ\nକିପରି କଲେ ତା’ର ମଧୁର ରୁପାୟନ ।\n\nଶସ୍ୟଶାମଳା ପୃଥିବୀ ପରି\nକଂଠ କୋମଳ ଥିଲା,\nଧଳା ହସରୁ ଖଂଡେ ବି ଲାଖି ରହିଥିଲା ମୁଁହରେ,\nଆରଂଭରୁ ନାଟକୀୟ ଜଣା ପଡ଼ୁଥିଲା\nତାଂକ କହିବାର ବାଗ:\nହଃେ, ଖାଲି ଟିକେ ହାତ ବଢ଼ାଇଦିଅନା,\nମୁଁ ଉଠିଯାଏଁ ଶିଖରକୁ,\nଖଜୁରୀ ଗଛର ଗଂଡି ଭଳି ଟିକେ ଶୋଇଯାଅନା\nପ୍ରଶ୍ଵାସର ପବନକୁ ରୋକି ଯୋଗମୁଦ୍ରାରେ,\nମୁଁ ପାହାଚ ଚଢ଼ିଲାଭଳି ଚଢ଼ିଯାଏଁ ପାହାଡ଼\nନରମ ପାଦ ପକାଇ ତୁମ ପିଠିରେ ।\n\nଥିଲା ପୁଣି ରାଜକୀୟ ଗାଂଭୀର୍ଯ:\nପ୍ରତିଶୃତି ଦେଉଛି\nଲିଭାଇ ଦେବି ଦେଶରୁ ଜଳୁଥିବା ସବୁ ଅଂଧାର,\nଜଳସ୍ଥଳ ଆକାଶ-ଯୋଡ଼ିଦେବି,\nନିର୍ମାଣିଦେବି ପ୍ରେମ-ବିହାର ।\nମୈଥୁନକୁ\nବୟସ ଓ ମର୍ଯାଦାର ପାହାଚରେ ନ ମାପି\nତା’ ପାଇଁ ନୂଆ ନୂଆ ସଂଜ୍ଞାମାନ ସଂରଚନା କରିଦେବି,\nମୁକ୍ତ ପ୍ରେମ, ମୁକ୍ତ କବିତା-ନୁଆ ଚେତନାଟିଏ\nସର୍ଜିବାର ଇଚ୍ଛାଥିଲା ବହୁତ ଦିନରୁ,\nଭାବୁଛି ସବୁ ହୋଇଯିବ\nଖାଲି ମାଟି ଚାଖଂଡକରେ ଗୋଡ଼ ପୋତି\nଠିଆହୋଇଗଲେ ।\n\nତେଣିକି\nସ୍ଥାବର ଜଂଗମ କୀଟ ପତଂଗମାନଂକୁ\nମୁକ୍ତ କରିଦେବି ତୁମରି ସେବାରେ,\nମହୁର ଝରଣା ବୁହାଇଦେବି ଜନପଦରେ\nମହୁଲି ନିଶା ଜନପଥରେ, ଜହ୍ନରାତିରେ ।\nକ୍ଷୁଧା ଓ ଅଭାବ କେବେ ଘାରିବ ନାହିଁ ଦେଶକୁ,\nତା’ ପାଇଁ ଗଢ଼ା ଶବ୍ଦ ପ୍ରତିଶବ୍ଦମାନଂକୁ\nଉଠାଇଦେବି ଅଭିଧାନର ନୂଆ ସଂସ୍କରଣରୁ,\nଜ୍ଞାନ ଆହୋରଣ ପାଇଁ\nସଂଚାର-ବିକାଶ-ଜାଲରେ ଛଂଦିଦେବି ତାରୁଣ୍ୟକୁ,\nଟିକେ ଚଢ଼ା ଦରରେ ହେଲେ ବି\nଦକ୍ଷତାର ପ୍ରାମଣପତ୍ର\nରକମ୍ ରକମ୍ କରି ଛାପି\n\nଛାଡ଼ିଦେବି ବଜାରକୁ ବିକ୍ରି ପାଇଁ ।\nସ୍ବାସ୍ଥ୍ୟରକ୍ଷାର ସୁଦୂର ପ୍ରସାରୀ ନେଟୱାର୍କରେ\nରୋଗଜୀବାଣୁମାନଂକୁ ସାଇତିଦେବି କାପସୁଲରେ,\nଦେଶରକ୍ଷା ଦପ୍ତରରେ,\nବେପାର ବଣିଜ ପାଇଁ ଦେଶ ବିଦେଶରୁ\nଆକର୍ଷି ଆଣିବି ଜାହାଜମାନଂକୁ ଆମ ବଂଦରକୁ ।\nମହାପୁରୁଷମାନଂକ ଜିନରୁ\nମହାବୀର୍ଯ ନିର୍ମାଣକୌଶଳ ହାସଲ କରିବା ପାଇଁ\nତାଗିଦ୍ କରିଦେବି ବୈଜ୍ଞାନିକମାନଂକୁ ।\nବୀର୍ଯ ଶୁଳ୍କ ବସାଇ ଦେବି\nଯେମିତି ସଂଭ୍ରାଂତ ମା’ମାନେ ଇଚ୍ଛାମୁତାବକ\nବ୍ୟାସ ବାଲ୍ମିକି କର୍ଣ ଏକଲବ୍ୟ ଅବା\nବୁଦ୍ଧ ଗାଂଧି ଓ ଆଇନଷ୍ଟାଇନମାନଂକୁ\nଧାରଣ କରି ପାରିବେ ଗର୍ଭରେ ।\nଆମ ପାଣି ପବନକୁ ଗୋଳିଆ ନ କରି\nତେଜସ୍କ୍ରିୟ ବୋମା ନିର୍ମାଣର ଅଧିକାର\nଓ ଏ ବୃହତ୍ତମ ଗଣତଂତ୍ରର ସୁରକ୍ଷା ଭାର\nଟେକିଦେବି ପୃଥିବୀର ବୃହତ୍ତମ ରାଷ୍ଟ୍ରକୁ\nଯେମିତି ସୁଖନିଦ୍ରା ସବୁଦିନ ପାଇଁ ମିଳିବ\nଦେଶବାସୀଂକୁ ।\nବିଶ୍ଵଶାଂତି ପ୍ରତିଷ୍ଠା ପାଇଁ\nକେତେବେଳେ ଅଣୁଯୁଦ୍ଧ ତ\nକେତେବେଳେ ଯୁଦ୍ଧ ନିରୋଧ ରାଜିନାମାରେ\nହସ୍ତାକ୍ଷର ଲେଖିଦେବି,\nଆଗାମୀର ସୁଖସଂଭାବନାକୁ\nଦେଖିବାକୁ ତୁମ ପ୍ରଚଂଡ ସ୍ଵପ୍ନରେ,\nଅଧିକୃତ ସୀମାରେଖା ସେପାଖରେ\nଘଡ଼ିଏ ହେଲେ ବି ଅଟକାଇ ଦେବି ମୃତ୍ୟୁକୁ ।\n\nଦେଖାଇ ଦେବି ମୋ ବାଁ ହାତର ଖେଳ ।\n\nମୋର ଡାକ ଶୁଣି\nତୁମେ ଖାଲି ଟିକେ ଦଉଡ଼ି ଆସ ନା,\nହାତରେ ହାତ ମିଳାଇ\n\n(“ହେ ବଂଧୁ, ମିଳାଅ ହାତ\nଆଲୋକ ଅଂଧାରେ….. ।”)\nଜିଂଦାବାଦଟିଏ ପକାଅ ନା ।\nତୁମେ ସବୁ ମିଳିମିଶି\nମତେ ଟିକେ ଛୁଇଁଦିଅ ନା!\nତୁମ ଛୁଇଁବାର ଯାଦୁରେ\nମୁଁ ପେଂଡୁଟିଏ ପରି\nଉଠିବାର ଖେଳକୁ ଆଗ ଦେଖାଇଦିଏଁ\nପ୍ରତିପକ୍ଷକୁ ।\nମୁଁ ତ ନିମିତ୍ତ ମାତ୍ର,\nସିଂହାସନ ତୁମର!",
+      "source_sha256": "87bee68cd7985fb0761e6b34edc91c2233c0f813ca5dde68385423add8135124",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/64472a31-4f3b-40ad-9635-f7d3392ff0b9",
+          "status": "generated",
+          "duration": "4:41"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/a765fcfc-350b-4eee-b385-f36af3f8023c",
+          "status": "generated",
+          "duration": "4:30"
+        }
+      ],
+      "selected": "https://suno.com/song/64472a31-4f3b-40ad-9635-f7d3392ff0b9",
+      "submitted_at": "2026-10-02T09:02:01.723Z",
+      "media_path": "site/dist/assets/audio/poem-50-64472a31.mp3",
+      "audio_sha256": "8b2d0a664c7f6093a62fa6dc8066c8cedc5390d6e9559f45a152506be6a2c59a",
+      "duration_seconds": 281.472
+    },
+    {
+      "section": 51,
+      "title": "Singhasan 51 — କବିତା ୫୧",
+      "language": "or",
+      "text": "ଚଉକିରେ ବସିଥିଲେ ବି\nଅହଂକାର ଦୋହଲୁଥାଏ ସିଂହାସନର ।\n\nଆଉ ଖସି ପଡ଼ିଲେ\nନା ଚଉକି ନା ସମ୍ରାଟ\nକିଏ ପଚାରେ କାହାକୁ!\n\nନା ଥାଏ ଭେକ ନା ଥାଳ\nନା ପାଟଛତି ନା ମୁକୁଟ,\nସମ୍ରାଟ ଚପରାସୀ ପରି ଦିଶୁଥାଆଂତି\nଚାଲିଗଲାବେଳେ ରାସ୍ତାରେ ଦୁଇହାତ ଯୋଡ଼ି ।\n\nସେତିକିରେ ସରିଯାଏ ନାହିଁ କଥା ।\n\nରାଜା ପୁଣି ଭିତରର ଭୋକକୁ\nସଉଦା କରି ଦିଅଂତି ହାଟରେ,\nଦୁଆର ଦୁଆର ବୁଲୁଥିଲାବେଳେ\nନିର୍ଲଜ୍ଜପଣକୁ ଦେଖାଇ ଦିଅଂତି\nତାଂକୁ ଆଡ଼ ଆଖିରେ ବି ଅନାଉ ନ ଥିବା\nରାମା ଦାମା ଶାମାଂକ ଆଗରେ:\nଆଉ ଥରକ ପାଇଁ ସୁଯୋଗଟେ ଦିଅ,\nମାତ୍ର ଥରକ ପାଇଁ,\nଦେଖିବ କେମିତି ଭେଳିକି ଲଗାଇଦେବି\nଶତ୍ରୁ ଶିବିରରେ,\nନିଆଁ ଜଳାଇ ଦେବି ପଡ଼ୋଶୀ ରାଜ୍ୟରେ,\nଦେଶର ଓଜନ ବଢ଼ାଇ ଦେବି\nବିଶ୍ଵ ଦରବାରରେ ।\n\nକିଏ କେବେ ବୁଝିଥିଲା ନା ବୁଝିବାକୁ ଚାହିଁବ\nଭାଷାର କୋଣାର୍କ ତଳେ\nଚାପି ହୋଇଥିବା\nଚକ୍ରାଂତର ଏ ରାଜକୀୟ ରହସ୍ୟ:\nପ୍ରାଣ ଡାକେ ମାଡ଼ିଯିବା ପାଇଁ,\nବଳାତ୍କାରେ ଚଉକିକୁ\nସିଂହାସନ କରିଦେବା ପାଇଁ ।",
+      "source_sha256": "6e9feefc755ab46c3185690ec9439d5f5d1eadc8b36c02b7286a3491af48fa82",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/5529636d-e88c-48cb-afd0-16af7fb25ba8",
+          "status": "generated",
+          "duration": "1:48"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/a5055b15-c1b0-4ebf-a830-f6b08738775f",
+          "status": "generated",
+          "duration": "1:51"
+        }
+      ],
+      "selected": "https://suno.com/song/5529636d-e88c-48cb-afd0-16af7fb25ba8",
+      "submitted_at": "2026-10-02T09:02:02.417Z",
+      "media_path": "site/dist/assets/audio/poem-51-5529636d.mp3",
+      "audio_sha256": "7f73843652d2be7284bdbe9b88d833542ff2e1871af3c8e15d605486d4b3e9b0",
+      "duration_seconds": 108.432
+    },
+    {
+      "section": 52,
+      "title": "Singhasan 52 — କବିତା ୫୨",
+      "language": "or",
+      "text": "ଆଦେଶ ନ ଥାଏ,\nସ୍ଵର୍ଗର ଇଂଦ୍ରମାନେ ବଦଳି ଯାଆଂତି ।\n\nସିଂହାସନ ନୁହେଁ\nପ୍ରାଣପ୍ରିୟ ଶଚିଂକୁ\nହସିହସି\nସମର୍ପିଦିଅଂତି\nଆନ ଇଂଦ୍ର ପାଶେ ।\n\nହାତରୁ ରାଜଦଂତ ଖସିଗଲେ ଥରେ\nଇଂଦ୍ର ତ ଛାର,\nକିଏ ଯଦୁପତି- କେଉଁଠି ମଥୁରା\nକିଏ ରଘୁପତି- କେଉଁଠି ଉତ୍ତର କୋଶଳ\nକେହି ତା’ର ହିସାବ ରଖେନା,\nଶ୍ମଶାନ ହୋଇ ଜଳୁଥାଏ\nଇଂଦ୍ରପ୍ରସ୍ତ ଓ ହସ୍ତିନା ।\n\nଇଂଦ୍ରପଦ ପାଇଁ\nକାପୁରୁଷମାନଂକ ପାଟିରୁ ଲାଳ ଗଡ଼ିବା\nବଂଦ ହୁଏନା, ଅଟକି ଯାଏନା ।",
+      "source_sha256": "22c020e5cc87c3dc0dcb6b8a78855ddd7cd05fe937ea5ca57d2a9456b378357a",
+      "status": "imported",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/3f3227ee-20b7-4187-a162-5ca4a6f34522",
+          "status": "generated",
+          "duration": "0:57"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/9e5dbdb8-4614-4b4c-a1b9-63549a53f8bf",
+          "status": "generated",
+          "duration": "0:59"
+        }
+      ],
+      "selected": "https://suno.com/song/3f3227ee-20b7-4187-a162-5ca4a6f34522",
+      "submitted_at": "2026-10-02T09:02:03.207Z",
+      "media_path": "site/dist/assets/audio/poem-52-3f3227ee.mp3",
+      "audio_sha256": "a9b944555fb61bb0c58cf8fc9268c24f6e20b41d9260b12a58de6c9849d86660",
+      "duration_seconds": 56.76
+    },
+    {
+      "section": 53,
+      "title": "Singhasan 53 — କବିତା ୫୩",
+      "language": "or",
+      "text": "“ତୁ’ ତୁ’ ଡାକିଲି ମୁହିଁ\nଦଉଡ଼ି ଆସିଲୁ କୁକୁର ତୁହି ।”\nନା ବର୍ଣ୍ଣମାଳା ଶିଖିବାର\nସହଜ ଖେଳ ଏ ନ ଥିଲା ।\nତୁ’ ତୁ’ ଡାକିଲା ମାତ୍ରେ,\nସତକୁ ସତ, ସେ ଝପଟି ଆସୁ ନ ଥିଲା,\nଆସି ଚାଟି ପକାଉଥିଲା ପାଦକୁ,\nପାଦର ଘା’କୁ,\nଲାଂଜଟେକି ଚକ୍କର ଖାଇ\nଜଣାଇ ଦେଉଥିଲା ତା’ର ବଂଶବଦତା ।\nରାଜା ହସି ଦେଉଥିଲେ\nଓ ବେଳେବେଳେ\nଡାହାଳ କୁକୁରମାନଂକ ସାମ୍ନାରେ ବି\nଆଉଁଶି ପକାଉଥିଲେ ତା’ର ପିଠିକୁ ।\n\nଦିନେ ରାଜା ବିଜେ କଲେ ପାରିଧିରେ,\nନଗ୍ରଲୋକ ଶୋଇଗଲେ ନିର୍ଭୟରେ ।\nବିଶ୍ଵସ୍ତ ସେବକଂକ ଭୋ’ ଭୋ’ ଗର୍ଜନ\nନ ଶୁଣିଲା ପରି\nସିଂହାସନ ପଡ଼ିଥିଲା ଖାଲି ।\nଚଲାଖ୍ କୁକୁର ମାଇନ୍ ବିଛାଇଦେଲା\nପ୍ରବେଶଦ୍ବାରରେ,\nରିମୋଟ୍ କଂଟ୍ରୋଲ ସଜାଡ଼ିଧରି ଛାତି ପକେଟରେ\nଚଢ଼ିଗଲା ଜଗତୀ ଉପରକୁ ଲହଲହ କରି ଜିଭ\nଓ ଅନାଇ ରହିଲା ରାଜାଂକ ଫେରିବା ବାଟକୁ ।\n\nରାଜା ଫେରିଲେ\nଓ ମୃତ୍ୟୁର ମାଇନ୍ ଫୁଟିଲା-\nଘଟଣାଟା ପ୍ରଚାର ହେଉଥିଲା ବେଳେ\nଗଣମାଧ୍ୟମରେ\nକିଛି ବୁଲା କୁକୁର ଭୁକିଲେ,\nବିଶ୍ଵସ୍ତ କୁକୁର ସାଲାମ୍ ଠୁଂକିଲେ\nବିଶ୍ଵାସର ଲାଂଗୁଡ଼ ହଲାଇ\nତୁ’ ତୁ’ ଡାକ ଶୁଣିବାକୁ\nଉଂଚ୍ଚ ମଥାନରୁ ।",
+      "source_sha256": "653ea466f08b6923e6baac3bf67810c73bfb54ba5d87e58c145b0cc19dfa38b1",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/dd40edff-6508-4f0d-bea2-668def25a448",
+          "status": "generated",
+          "duration": "3:05"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/5aec8d4a-7836-4789-8e58-a23e1b11ac3b",
+          "status": "generated",
+          "duration": "2:28"
+        }
+      ],
+      "selected": "https://suno.com/song/dd40edff-6508-4f0d-bea2-668def25a448",
+      "submitted_at": "2026-10-02T09:02:04.541Z"
+    },
+    {
+      "section": 54,
+      "title": "Singhasan 54 — କବିତା ୫୪",
+      "language": "or",
+      "text": "ତୋଟା ଜଗୁଥିଲା,\nପତର ବି ସାଉଁଟୁଥିଲା,\nଦିନେ ତୋଟା ମୂଲ କଲା ।\n\nଶୁଣୁଶୁଣୁ ସମସ୍ତ ହସିଦେଲେ ସିନା\nପରେ ତଂଗ୍ ହୋଇଗଲେ ଡାକ ଶୁଣି,\nତାରିଫ୍ ବି କଲେ କେତେଜଣ ।\n\nଦ୍ବିତୀୟ କି ତୃତୀୟ ଡାକ ବେଳକୁ\nଆଖି ତରାଟି ଚାହିଁଲେ ସଭିଏଁ,\nଶେଷଟା ତ ଡାକ ନୁହେଁ ରଡି ।\nନିଦ ଭାଂଗିଗଲା ଈଶ୍ଵରଂକର,\nରଥ ଚଳାଇ ଝପଟି ଆସି ଦେଖିଲା ବେଳକୁ\nସିଂହଦ୍ବାରରେ ଆରଂଭ ହୋଇଗଲାଣି ଭିଡ଼,\nସବୁ ପ୍ରସ୍ତୁତି ସରିଗଲାଣି ଅଭିଷେକ ଉତ୍ସବର ।\n\nଗଦଗଦ ଆବେଗରେ\nନା ଅଜ୍ଞାତ ଆତଂକରେ(!)\nଈଶ୍ଵର କହି ପକାଇଲେ:\nପରମ ସୌଭାଗ୍ୟ ଆମର\nଏଥର ପ୍ରତିଦ୍ଵଂଦି କେହି ନାହିଁ\nଆରୋହଣ ପର୍ବରେ,\nସିଂହାସନ ଉପରୁ ମହାରାଜା\nଅଲୌକିକ ହସଟିଏ ହସିଦେବେ ବୋଲି\nରହସ୍ୟରେ ।",
+      "source_sha256": "0b4b5f4911356fb33945d608a83688d5794ab1352ecf146ff8080a19dd4e6bc6",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/9f0d4ddb-dc2b-43eb-9489-0ac5afa529ff",
+          "status": "generated",
+          "duration": "1:12"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/40a77543-73b4-488e-a012-45f1f5fcc199",
+          "status": "generated",
+          "duration": "1:11"
+        }
+      ],
+      "selected": "https://suno.com/song/9f0d4ddb-dc2b-43eb-9489-0ac5afa529ff",
+      "submitted_at": "2026-10-02T09:02:53.924Z"
+    },
+    {
+      "section": 55,
+      "title": "Singhasan 55 — କବିତା ୫୫",
+      "language": "or",
+      "text": "ଚାହିଁଦେଲେ\nବଦଳି ଯାଉଥିଲା ମାନଚିତ୍ର,\nଆଂଗୁଠି ଦେଖାଇ ଦେଲେ ଖସିପଡ଼ୁଥିଲା\nଶୁଦ୍ଧ ସୁବର୍ଣ ଆକାଶ,\nଉର୍ଧ୍ରେ ତା’ ଅହଂକାର ଖେଳୁଥିଲା\nଶ୍ବେତବର୍ଣ ମୁହଁରେ,\nଆଲୋକ ଟିକକ ପାଇଁ\nସାରା ପୃଥିବୀ\nଅନେଇ ରହୁଥିଲା ତାଂକୁ ।\n\nଆଉ ଆଜି?\nଗଭୀର ନିଦରୁ ଉଠି\nସିଏ ଦେଖୁଛଂତି\nଭୂମି ନ ଥିବା ପାଦ ନ ଥିବା\nକୀଟଟିଏ ସିଏ ଗୋଟାଏ ଅଂଧ ଶିବିରର ।\n\nଗଲାକାଲି ବିଶ୍ଵର ବୃହତ୍ତମ ରାଷ୍ଟ୍ର\nଆଜି ଘୁଣଖିଆ ବାଉଁଶ ବାଡ଼ିଟିଏ-\nଭାଂଗୁଭାଂଗୁ ରହି ଯାଉଛି,\nଯେତେବେଳେ ସାପ ଓ ସରୀସୃପମାନେ,\nବିଛା ଓ ମାଂକଡ଼ସାମାନେ\nଖେଳୁଛଂତି,\nଖେଳି ବୁଲୁଛଂତି\nତା’ ଆବଡ଼ା ଖାବଡ଼ା ଦେହରେ\nସ୍ଵଚ୍ଛଂଦରେ ।\n\nମହାମହିମ\nଆଜି ବିଚରାଟିଏ,\nଏକା ଏକା\nଏକୁଟିଆ ବାଟୋଇଟିଏ\nନ ଥିବା ରାସ୍ତାରେ!\n\nଡର ଲାଗୁଛି\nକାଳେ ଥାଳଧରି ବାଟଖୋଜୁଥିବା ଭିକାରିଟା\nଚିହ୍ନିଦେବ ସମ୍ରାଟଂକୁ\nଓ ଛେପ ଲଂଡାଏ ଥୁକିଦେବ ମୁହଁକୁ\nଅବା ନିର୍ଭୟରେ ଗୀତ ଗାଉଥିବା\nଅଂଧ ଲୋକଟା\nପାଦଶବ୍ଦ ଶୁଣି ମାଡ଼ିଆସିବ\nଫିଂଗିଦେବାକୁ\nତା’ ହାତର ଲଉଡ଼ିକୁ ସମ୍ରାଟଂକ ଛାତିକୁ ।\nଯୁଗ ପୁରୁଷ ଲୁଚାଇ ଦିଅଂତି ମୁହଁ\nହାତ ପାପୁଲିରେ ।",
+      "source_sha256": "945c1dd67ab1095c973cd3ed9029762d72a2788c939c66de6973ecb8940e56ab",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/9b206e59-6ff7-4ca1-839f-63809b2b0b13",
+          "status": "generated",
+          "duration": "1:52"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/e2afe020-a864-4f65-8451-23ba5f22d4a3",
+          "status": "generated",
+          "duration": "2:00"
+        }
+      ],
+      "selected": "https://suno.com/song/9b206e59-6ff7-4ca1-839f-63809b2b0b13",
+      "submitted_at": "2026-10-02T09:02:54.509Z"
+    },
+    {
+      "section": 56,
+      "title": "Singhasan 56 — କବିତା ୫୬",
+      "language": "or",
+      "text": "କାଉ କି କୋଇଲି\nକାହାରି ସ୍ଵର ଆଉ ଶୁଭୁ ନଥିଲା\nପୋଡ଼ା ବନରେ,\nମାଛିଟିଏ ବି ଗଣଗଣଉ ନ ଥିଲା\nକେଉଁ ନରକ କୁଂଡରେ ।\nସେ ବସିଥିଲେ ଏକୁଟିଆ\nଭଂଗା ଚଉକି ଉପରେ\nଆଂଠୁ ଟେକି,\nପାପୁଲିରେ ମୁଂଡ ଥୋଇ\nଅଧୋମୁଖ ହୋଇ,\nସବୁ କିଛି ଚାଲିଯିବାର\nଅର୍ଖିତ ଭଂଗୀରେ ।\n\nକିଏ ଜାଣିଥିଲା\nଚଡ଼କ ପଡ଼ିଲା ପରି ମିଆଦ ପୂରିଯିବ,\nବିଧି ଅବିଧି ନ ଥିବ ସେଥିରେ,\nପାଖଲୋକମାନେ ଛିନ୍ଛତ୍ର ହୋଇଯିବେ,\nମହୁମାଛିମାନେ ଉଡ଼ିଯିବେ ନୂଆ ରାଣୀଟିଏ ଖୋଜି,\nଦରବାର ପଡ଼ିଯିବ ଖାଲି ।\n\nଥରେ ସେ ଶିଉଳିରେ ଗୋଡ଼ ଖସିଗଲେ\nପଛ ଧାଡ଼ିରେ ବସୁଥିବା ମାଖୁନା ମାଧିଆକୁ\nକଂଢେଇଟେ ପରି ଥୋଇ ଦିଆଯିବ\nସିଂହାସନ ଉପରେ,\nକଟୁଆଳ ଘର ଖାନତଲାସ କରିବାକୁ ପହଂଚିଯିବ\nଓ ଏ ଯାବତ୍ ସାଲ୍ୟୁଟ୍ ମାରୁଥିବା ସିପାହୀ\nଅଚାନକ ଗଳାରେ ଅର୍ଧଚଂଦ୍ର ଦେଇ ଓଟାରି ଆଣିବ\nଫିଂଗିଦେଇ ଆସବାପତ୍ର ।\n\nଗାଦିଚ୍ୟୁତ ମହାରାଜା ଥରୁଥିବେ\nକାଳେ ହିସାବ ବହିର୍ଭୁତ ଆୟ\nଧରା ପଡ଼ିଯିବ\nବେପାରୀଂକ ଟିପାଖାତାରୁ\nମିଳିଯିବ ତାଂକ କୃତକର୍ମର\nସବୁ ଚାଂଚଲ୍ୟକର ଇତିହାସ\nଓ ବଂଦିଶାଳାର ନିର୍ଜନ ବଖରାଟିଏ\nମିଳିଯିବ ତାଂକୁ ସବୁଦିନ ପାଇଁ ।\n\nପିଲା କବିଲା କେହି ନ ଥିବେ ପାଖରେ,\nଚା’ କପ୍ ଧରି ସୁଂଦରି ସୌଦାମିନୀ\nଗେହ୍ଲାହେବା ପାଇଁ ଆଉ ଆସୁ ନ ଥିବେ,\nଗଜଦଂତ ପଲଂକ ନ ଥିବ,\nସଂଗ୍ରାମୀ ଭତ୍ତା ପାଉଥିବା ବାପା\nକେଉଁ ଦୂର ଗାଁରେ\nଆତ୍ମହତ୍ୟା କରିଦେଇଥିବେ ଲଜ୍ୟାରେ\n\nଗଳାରେ ଦଉଡ଼ି ଲଗାଇ\nଓ ଲେଖା ଖଂଡେ ଛାଡ଼ି ଯାଇଥିବେ\nତାଂକ ମୃତ୍ୟୁ ପାଇଁ ବେଳକାଳ ଦାୟୀ ।",
+      "source_sha256": "aaa9eeaf82664712f571b4bd59ea566845a6d16287722d9d852442fc33e01c61",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/4f68c33e-dbc9-4a14-9b1e-f5abf9af32de",
+          "status": "generated",
+          "duration": "2:27"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/545dda89-7dd8-4b8a-80d7-b5b3cc901e78",
+          "status": "generated",
+          "duration": "2:21"
+        }
+      ],
+      "selected": "https://suno.com/song/4f68c33e-dbc9-4a14-9b1e-f5abf9af32de",
+      "submitted_at": "2026-10-02T09:02:55.424Z"
+    },
+    {
+      "section": 57,
+      "title": "Singhasan 57 — କବିତା ୫୭",
+      "language": "or",
+      "text": "ସେମାନେ ଆସିବେ\nତୁମକୁ ଆଲୋକ ଦେବାର\nପ୍ରତିଶୃତି ଧରି ।\n\nସେମାନେ ଆସିବେ\nସୁନା ଇଟାର ତିଆରି ସ୍ଵପ୍ନ ମହଲକୁ\nସୁରକ୍ଷା ଦେଇସାରି,\nମୋତିମାଳ ପିଂଧା\nସୁନାଜରି ପୋଷାକର ମହାରାଣୀଂକ\nହାତରେ ହାତ ଛଂଦି,\nହୀରା ମୋତି ଖଂଜା\nସୁନା ଚପଲ ମାଡ଼ି ।\n\nସେମାନେ ଆସିବେ\nଓ ମାଣିକ୍ୟରେ ଆଲୁଅ\nବିଂଚି ହୋଇଯିବ\nତୁମ ଘର ଦ୍ବାର ।\nଦୟାର,\nଘୃଣାର\nହସ\nଖେଳିଯିବ ତାଂକ ମୁହଁସାରା ।\nସେଇ ମୁହୁର୍ତରେ\nଗୋଟାଏ ଗୁଳିର ଆବାଜକୁ\nଅପେକ୍ଷା କରିଥିବ ଦେଶ,\nଦୁଃଖର ଶିଳାସବୁ\nଶାଳଗ୍ରାମ ହୋଇ ଗଡ଼ିଯିବେ ନଈରେ,\nକ୍ରୋଧ ଫିଂଗିଦେବ\nଯୋଡ଼ାଏ ଶବକୁ\nକୀଟପତଂଗମାନଂକ\nଆହାର ପାଇଁ,\nଛଳନାର ହସ ଲିଭିଯିବ\nଆଖି ମିଟିକାରେ,\nମୁକ୍ତିର ମଂତ୍ର ଖେଳିଯିବ\nରୁଟିର ଗଂଧରେ ।\n\nସିଂହାସନ ପଡ଼ିରହିଥିବ\nଆର୍ତିର ଆଖିରେ,\nଆଉଜଣେ ଭିକ୍ଷାର୍ଥୀର\nଦୁର୍ବଳ ଓ ସଂଦିଗ୍ଧ ମୁହଁକୁ ଅନେଇ ।",
+      "source_sha256": "5b4f5c7c865543135955412eaf28a14762af05f96b3897ec3fe99ba1e351de56",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/21f8431f-e2ff-4b62-b753-be6dbae68988",
+          "status": "generated",
+          "duration": "1:48"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/0d850c47-bfd9-413c-9478-63d85e1408fb",
+          "status": "generated",
+          "duration": "8:00"
+        }
+      ],
+      "selected": "https://suno.com/song/21f8431f-e2ff-4b62-b753-be6dbae68988",
+      "submitted_at": "2026-10-02T09:02:56.046Z"
+    },
+    {
+      "section": 58,
+      "title": "Singhasan 58 — କବିତା ୫୮",
+      "language": "or",
+      "text": "ପ୍ରଜା ମାଗୁଥିଲେ\nରାଜା ଦେଉଥିଲେ,\n‘ସାଧୁ’ ‘ସାଧୁ’ ବର୍ଷାରେ\nଓଦା ହେଉଥିଲା\nସିଂହାସନର ଚେର!\nଏବେ ନଷ୍ଟ ଭୂମିର\nରୁଷ୍ଟ ପ୍ରଜାମାନେ\nମାଗୁ ନାହାଂତି\nକାହାକୁ କିଛି,\nଉଷର ହୃଦୟରେ\nଦରାଂଡୁଛଂତି\nମହୁ\nମହୁଲି\nମହକ ।\n\nତଂଟି ଶୁଖିଗଲା ବେଳେ\nବୋତଲରେ ସୁରକ୍ଷିତ\nମୁଂଦାଏ କର୍ଦମାକ୍ତ ଗଂଗାଜଳ ।\n\nକଳଂକି ଲଗା ଖଂଡାଟାକୁ\nଝୁଲାଇ ଅଂଟାରେ\nକେତେବେଳେ\nଯାତ୍ରାର ଦୁଆରୀ ପରି ତ\nକେତେବେଳେ\nବଜାରର ଛୋଟ ଦାଦାଟିଏ ପରି\nରାସ୍ତା ମୁଂଡରେ\nରାଜା ବିଳପୁଛଂତି:\nଯାହା ଆଣିଲ\nଅଧା ଦେଇଯାଅ,\nଆଗ ଖୋଲିଦିଅ ମୁଣି ।",
+      "source_sha256": "07c9f13fcfb5e22d60d8a60ddabe3297904d207e35ab0dc6775faf7a2ca9e959",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/b4d403ee-9841-4683-9f87-870ab81122ae",
+          "status": "generated",
+          "duration": "1:16"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/7f0525aa-ac7c-4a18-82e8-4aa2b4755b6d",
+          "status": "generated",
+          "duration": "1:21"
+        }
+      ],
+      "selected": "https://suno.com/song/b4d403ee-9841-4683-9f87-870ab81122ae",
+      "submitted_at": "2026-10-02T09:03:39.291Z"
+    },
+    {
+      "section": 59,
+      "title": "Singhasan 59 — କବିତା ୫୯",
+      "language": "or",
+      "text": "ଗର୍ଭଣୀ ଗାଈ ବାଟ ଛାଡ଼ିଦିଏ,\nବାଘୁଣୀ ଶୋଇପଡ଼େ ଆସି ଶେଯରେ\nମୋହିନୀ ବେଶରେ,\nବାଘ ସିଂହ ଓ ହାତୀମାନେ\nକୁକୁର ଓ ବିଲୁଆମାନଂକ ଗହଣରେ\nଗୋଡ଼ଭାଂଗି ଠିଆହୋଇ ରହଂତି\nଉତ୍ତାପ ନ ଥିବା ଉତ୍ତେଜନାରେ,\nଉନ୍ମାଦର ବୀଭତ୍ସ ପଶୁ ମେଲଣରେ,\nଦଶମୁଦ୍ରା ଅର୍ଜନ ପରେ\nଲାଂଜ ହଲାଇ ଦେବାପାଇଁ\nଦରବାରରେ ।\n\nଅଉ କିଏ ପଚାରିବ କାହାକୁ\nପାହାଡ଼କୁ ଢିମା ପକାଇବା କଥା?\n\nସମସ୍ତଂକ ପାଟି ତ ବଂଦ\nମୁଢ଼ି ମୁଠାକରେ,\nକିଣାବିକା ପକ୍କା ହୋଇଯାଏ\nଆଖିର କଜଳ ପରି ଅଂଧାର ରାତିରେ,\nଦୁଷ୍ଟ ଗ୍ରହମାନଂକ\nସଂତୋଷବିଧାନରେ,\nଭୂମି ଅନ୍ନ ବସ୍ତ୍ର ଅଳଂକାର\nବାଂଟିଦିଆଯାଏ ଅକାତରେ ।\n\nରକ୍ତ ବହୁ\nନିଆଁ ଜଳୁ\nକମାଣ ଫୁଟୁ-\nସେଥିବି ପରବାୟ ନ ଥାଏ ।\n“ଦେଶ ଓ ଶାସନ ଠିକ୍ ଅଛି,\nସବୁ ଠିକ୍ ଅଛି ।”-\nଡେଂଗୁରା ପିଟିଦିଆଯାଏ ।",
+      "source_sha256": "a7e29b57c316e3a4cef1c4a0bd6154cf7c5ebbfc3b49d108a829eaf11652c7ae",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/a0cb6de6-2d56-4c75-93a2-b0df924569ef",
+          "status": "generated",
+          "duration": "1:27"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/f4e8972f-3003-494e-abe4-f843bd223f62",
+          "status": "generated",
+          "duration": "1:22"
+        }
+      ],
+      "selected": "https://suno.com/song/a0cb6de6-2d56-4c75-93a2-b0df924569ef",
+      "submitted_at": "2026-10-02T09:03:40.035Z"
+    },
+    {
+      "section": 60,
+      "title": "Singhasan 60 — କବିତା ୬୦",
+      "language": "or",
+      "text": "ସୁରକ୍ଷା ବଳୟ ଭିତରେ\nହାତକଡ଼ି ଗୋଡ଼କଡ଼ିର ଅପୂର୍ବ ଦୃଶ୍ୟରେ\nହାଣକୁ ଯାଉଥିବା ଛେଳିଟିଏ ପରି\nମହାରାଜା, ଟ୍ରାଫିକ ଭିଡ଼ରେ ।\n\nଲଜ୍ଜା କି ସଂକୋଚ\nଫୁଟି ଉଠୁ ନ ଥାଏ ଜମା\nସେ ଲାବଣ୍ୟ ଆଖି ଡୋଳାରେ ।\n‘ଲଜ୍ଜା’ ନାମକ ଶବ୍ଦଟିଏ\nକେହି ତ କେବେ ଶୁଣାଇ ନ ଥିଲେ ତାଂକୁ\nଦରବାରରେ,\nଶିଖାଇ ନ ଥିଲେ ଗୁରୁ ବିଦ୍ୟାମାନ କାଳରେ ।\n\nଏମିତି ଚାଲୁଚାଲୁ\nସ୍ଵପ୍ନ ତାଂକୁ ଉତ୍ତେଜିତ କରେ\nଭାଷଣଟେ ଶୁଣାଇଦେବାକୁ\nଭିଡ଼ଟା ଜମି ଆସୁଥିଲା ବେଳେ:\n“ଏମିତି କିଛି ବଡ଼ ପାପ କରିନାହିଁ\nଦେଶର ସଂପତ୍ତିକୁ ନିଜର ସଂପତ୍ତି ଭାବି\nସାଇତି ଦେଇଛି\nଖାଲିପଡ଼ିଥିବା ଆଉ ଗୋଟାଏ ଅମାରରେ\nପେଟରା ପରି ଦିଶୁଥିବା\nମୋ ପେଟ ଚାଖଂଡକରେ\nକଳାକଂଟା ଗୁଡ଼ାକ ଦିନେ ଧଳା କରିଦେବା ପାଇଁ\nଯକ୍ଷପରି ଜଗିବସିଛି ଗୋଟାଏ ଅଂଧାରୁଆ ଘରେ\nସିଲେଇ କରି ସାଇତି ଦେଇଛି\nଛିଂଡା କଂଥା ତଳେ ।”\nଓ କୁଂଢାଇ ଧରଂତେ ସିଂହାସନକୁ\nଲୁହ ଆଉ ଲହୁର ଢେଉରେ\nପ୍ରେୟସୀକୁ ଭୋଗ କରିବାର ପ୍ରମତ୍ତ ଉନ୍ମାଦରେ\nଛନ୍ ଛନ୍ ହରିଣଟାକୁ ଗୋଟାଛାଁ ଗିଳିଦେବାର\nପ୍ରଚଂଡ ପାଶବିକତାରେ,\nମିଳି ଯାଆଂତା ଯଦି ସେ ଅଦୃଷ୍ଟ\nହାତ ପାଆଂତରେ ।",
+      "source_sha256": "b4fc2e6c5f9f14588883f0a54588a927ac4e900c37935b766d08333163476477",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/0a838671-d7cc-4839-980d-c1c594f9177c",
+          "status": "generated",
+          "duration": "1:52"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/4b68aef1-5710-4768-b5c5-433ef70420a3",
+          "status": "generated",
+          "duration": "1:52"
+        }
+      ],
+      "selected": "https://suno.com/song/0a838671-d7cc-4839-980d-c1c594f9177c",
+      "submitted_at": "2026-10-02T09:03:40.265Z"
+    },
+    {
+      "section": 61,
+      "title": "Singhasan 61 — କବିତା ୬୧",
+      "language": "or",
+      "text": "ସେଦିନ ପିଂପୁଡ଼ିମାନଂକୁ\nନିର୍ବାସିତ କରି ଦିଆଗଲା ରାଜ୍ୟରୁ,\nସୁରକ୍ଷିତ ପ୍ରସାଦ ଭିତରେ\nଯେମିତି ମହାରାଜାଂକ ପ୍ରତିମୂର୍ତି\nନିଖୁଣ ଦିଶିବ ମହାକାଳର କପାଳରେ ।\n\nଏବେ ପିଂପୁଡ଼ିମଂଦା ତଳୁ ଖୋଜା ଚାଲିଛି\nଭଂଗା ପ୍ରାସାଦ,\nଯେଉଁଠି ମିଳିଯିବ\nପ୍ରତ୍ନ ସିଂହାସନ ଉପରେ ଆସୀନ\nରାଜାଂକ ପାଂପରା କଂକାଳ\nମଲମ ବୋଳି ସାଇତି ଦେବାପାଇଁ\nମ୍ୟୁଜିୟମରେ ।\n\nଅଂଧମାନେ ଦିନେ\nହାତୀ ଦେଖିବାକୁ ଆସି\nଉଂଡାଳିବେ ଦେହ,\nପଂଡିତମାନେ ଟାଂକୁ ମାପିବେ,\nଖୋଜି ଗଣିବେ\nଓ ପରିବ୍ରାଜକମାନଂକ ଆଖି ଡୋଳାରେ\nତାହା ହୋଇ ଉଠିବ ମୂଲ୍ୟବାନ୍ ।\nଜନସାଧାରଣ ସେତିକିବେଳେ\nପିତୃପୁରୁଷଂକୁ ମନେ ପକାଇ\nଘୃଣାରେ ଥୁକିଦେବେ\nଶଂଖମଲମଲ ପଥରରେ ତିଆରି\nଡଷ୍ଟବିନରେ ନାଲି ପାନପିକ ।",
+      "source_sha256": "fccd3b1b3b52f0cbf0c6fdf33d94d682dfa9730852ed30b9c6e056682e4a9a41",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/166851d9-02ea-41ae-8146-a6180f59955f",
+          "status": "generated",
+          "duration": "1:22"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/fb9048d4-c100-4bd4-bddf-af3c9463471a",
+          "status": "generated",
+          "duration": "1:20"
+        }
+      ],
+      "selected": "https://suno.com/song/166851d9-02ea-41ae-8146-a6180f59955f",
+      "submitted_at": "2026-10-02T09:03:41.380Z"
+    },
+    {
+      "section": 62,
+      "title": "Singhasan 62 — କବିତା ୬୨",
+      "language": "or",
+      "text": "କାଂଥରେ ଫଳକ ଝୁଲୁଛି:\nଚୁପ୍କର ଦରକାର ଚାଲିଛି!\n\nଏଠି କଥାବାର୍ତା\nସାଂକେତିକ ଭାଷାରେ,\nଗୁପ୍ତଚର ଠିଆହୋଇଛି\nଯୋଡ଼ ହସ୍ତରେ ।\nରାଜାଂକ ଲୋହିତ ଚକ୍ଷୁରେ ପ୍ରଶ୍ନ:\nସମାଚାର?\nପୁତ୍ତଳିକା ବଦନରେ ଉତ୍ତର:\nଭୟଂକର!\nସୀମାଂତରେ ଶତ୍ରୁର ହୁଂକାର ।\n\nବାଶ୍,\nଚମକି ପଡ଼ଂତି ରାଜା,\nଥରି ଯାଆଂତି ପ୍ରଜାଗଣ,\nଗର୍ଜନ, ରୋଦନ\nଏକାକାର\nବୈଷ୍ଣବ ପାଣିଂକ ଗୀତାଭିନୟରେ ।\n\nନାଟ ଦେଖୁଥିବା ଶିଶୁ\nବୁଝିପାରେ ନାହିଁ\nଗଣତଂତ୍ରର ରାଜାଶୂନ୍ୟ ଶାସନରେ\nଶାସନହୀନ ଅଣଶାସନରେ\nନାଟମଂଡପ ଠାରୁ ନାହାଚାଳିଆ ପର୍ଯଂତ\nବିଚାରୁଥିବା ଭୟକଂର ଭୟର ପବନରେ\nଇଏ କେଉଁ ଦେଶ ସିଏ ପୁଣି କେଉଁ ରାଜା\nଥରୁଛି ଓ ଥରାଉଛି ନିଜ ସିଂହାସନ\nକେଉଁ ଆଶଂକାରେ?",
+      "source_sha256": "e8b9a11e7e7a3052a7fa457ccdf827f2b2d01cc76c31e117d196306612a1e8e3",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/5a7688a5-f761-4a19-8fcc-4c273d2564d5",
+          "status": "generated",
+          "duration": "1:26"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/c9c06569-c5da-400d-8ed9-7648f8f82789",
+          "status": "generated",
+          "duration": "1:17"
+        }
+      ],
+      "selected": "https://suno.com/song/5a7688a5-f761-4a19-8fcc-4c273d2564d5",
+      "submitted_at": "2026-10-02T09:04:26.859Z"
+    },
+    {
+      "section": 63,
+      "title": "Singhasan 63 — କବିତା ୬୩",
+      "language": "or",
+      "text": "ଆଗ କଥାଟା ଶୁଣିନିଅ-\n‘ଆଦର୍ଶ ବଗିଚା’ରେ\nଫୁଲ ଫୁଟାଇବା ନିଶାରେ\nଛାମୁ କୋଡ଼ି କୋଦାଳ ଧରି\nମାଟି ହାଣୁଛଂତି,\nଲହୁ ଲୁହ ଏକାଠି ଢାଳୁଛଂତି\nକ୍ୟାମେରା ସାମ୍ନାରେ\nଚାରାଗଛ ମୂଳରେ,\nପୋଖତି ମା’ର ହସ\nଖେଳାଇ ମୁହଁରେ,\nତନୟ ପାଳନର\nଲୋଭନୀୟ ସୁଖରେ,\nଶାସନର ଏଇ ଅଂତିମ\nଦିନ ଗୁଡ଼ାକରେ ।\n\nହତବାକ ମାଳୀ\nଅନାଇ ରହିଛି ମୁହଁକୁ,\nତା’ର କି ସାମର୍ଥ୍ୟ ଅଛି\nଧରି ପକାଇବ\nରାଜ ଛଳନାକୁ?\nସିଏ କେଉଁ ବଶିଷ୍ଠ ଯେ\nଖୋଲିଦେବ ସୁବର୍ଣ ଢାଂକୁଣି\nଘୋଡ଼ାଇ ପକାଇଥିବ ସତ୍ୟକୁ?\n\nଚାପାହସ ଆଲୋଚନାରେ\nଶୀତୁଆ ସକାଳର ଚା’ ଖଟି ଆସରରେ\nଉଷୁମ ଜମୁଛି:\nଏ ତ ସଂବାଦ ନୁହେଁ ସର୍ଜନାର ନୂଆ ଇତିହାସ,\nଭାଗ୍ୟ ଫାଗ୍ୟ ସବୁ ମିଛ\nଦେଖ, ସିଂହାସନ ଟେକି ଧରିଛି\nନିଜ ହାତେ ନିଜର ପୌରୁଷ!",
+      "source_sha256": "38ef1521db46bad422b482a58231b472ba198d845a9ae7698758eca7b2d7f59e",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/716c8ea0-e739-47d7-955a-e028e29b833a",
+          "status": "generated",
+          "duration": "1:32"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/c04fb7f7-eea5-4ef9-834e-2f11166cddd9",
+          "status": "generated",
+          "duration": "1:27"
+        }
+      ],
+      "selected": "https://suno.com/song/716c8ea0-e739-47d7-955a-e028e29b833a",
+      "submitted_at": "2026-10-02T09:04:27.427Z"
+    },
+    {
+      "section": 64,
+      "title": "Singhasan 64 — କବିତା ୬୪",
+      "language": "or",
+      "text": "ଉଲଂଗ ପଟୁଆରରେ ରାଜା,\nଭାଟମାନ ସ୍ତବ ପାଠ କରୁଛଂତି\nପୋଷାକର ।\n\nସିଂହାସନର ବୀଭତ୍ସ ରୂପ\nଦେଖୁଛଂତି ପ୍ରଜାଗଣ\nଅଧୋମୁଖ ହୋଇ ।\n\nକେଉଁଠି ଶୋଇ ପଡ଼ିଛି\nକେଜାଣି ସେ ଲଂଗଳା ଟୋକାଟା,\nକାହିଁ ଦଉଡ଼ି ଆସୁନି ତ ଦାଂଡକୁ\nହସିହସି କହିଦେବା ପାଇଁ:\nରାଜା ତୁ କାହିଁକି ଲୁଗା ପିଂଧିନାହୁଁ?",
+      "source_sha256": "887b5916ccf20c9494b6c4935a419ae6970614d86a18ffec111a18b3a9da4250",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/e946c897-a8f9-42ed-9604-cf05c6f5bb6c",
+          "status": "generated",
+          "duration": "0:41"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/a06e29af-15d0-4a05-b8e0-481ea063c301",
+          "status": "generated",
+          "duration": "0:41"
+        }
+      ],
+      "selected": "https://suno.com/song/e946c897-a8f9-42ed-9604-cf05c6f5bb6c",
+      "submitted_at": "2026-10-02T09:04:27.667Z"
+    },
+    {
+      "section": 65,
+      "title": "Singhasan 65 — କବିତା ୬୫",
+      "language": "or",
+      "text": "ତୁ କେଉଁ ମାଧବରେ\nଅଛୁଆଁ ଛିଡ଼ା କରାଇ ଦେଲୁ ଆଣି ମୋତେ\nଏ ଦୁଇ ଆଗ୍ନେୟଗିରିର ମଝିରେ\nଯେଉଁଠି କିଏ କେତେବେଳେ ଜଳି ଯିବ\nକି ଜାଳିଦେବ ଦେଶଟାକୁ ଜଣା ପଡ଼ୁନାହିଁ?\nସମସ୍ତେ ପ୍ରିୟ ପ୍ରିୟ ଲାଗୁଥିଲେ\nକାହିଁକି ପାପକଥା ଧଇଲୁ ମନରେ?\nକେମିତି ଛେଦିବି କହ\nମୋ’ ପ୍ରଭୁଂକ ମୁଂଡ ପରି ଦିଶୁଥିବା\nଏ ନିରୀହ ଛାଗଳ ମୁଂଡକୁ\nଦଂଥରା କଟୁରିରେ?\nପଡ଼ିବି ନାହିଁ ତ ମୁଁ ଅହି ନରକରେ?\n\nବଂଦକର ବକବାଜ,\nଯେମିତି କହୁଛି ସେମିତି କର:\nଆଗ ମାର, ମାର ମାର\nଯେତେ ଶର ଅଛି ତୋ’ ତୂଣୀରରେ ।\nବିକି ଦେ’ ଯେତେ ସଉଦା ଅଛି ତୋ’ ମୁଣିରେ ।\nମନେରଖ ସୁଯୋଗ ଥରେ ମାତ୍ର ଆସେ,\nହାତଛଡ଼ା କରନା ଉଦାସିଆ ହୋ’ ନା ।\nନୀତି ଫିତି କଥା କହନା ।\nସିଏ ଆଉ ପ୍ରକାରେ ଖେଳ\nସବୁ କାରବାର ଲୁଚେଇ ଦେଇହେବ ସେ ଖେଳ ଭିତରେ,\nଚିତା ଚିତ୍ରିତ ଢାଂକୁଣି ତଳେ ।\n\nଛାଡ଼୍ ସେ କଥା ।\nଯୁଗ ଚାହୁଁଛି ଯା’ ସେଇଆ କର,\nଆମର ଖୋଲାଖୋଲି ବେପାର\nସିଧାସଳଖ କଥା-\nଗଂଠିଲି ଗଂଡିରା ଧରି ଯାହା ବୋହି ଆଣିଛୁ ପିଠିରେ\nଖୋଲି ସଜେଇ ଥୋଇଦେ’ ସବୁକୁ ସୋ’କେସରେ\nଯେମିତି ଲୋଭନୀୟ ଦିଶିବ ଆଖିକୁ\nଯେମିତି କାମ ମୋହିତ କରିଦେବ ଦେଖଣାହାରିଂକୁ,\nଦେଖ୍, ପ୍ରଦର୍ଶନୀ ପଡ଼ିଆରେ ଜମିଗଲାଣି ଭିଡ଼,\nକିଣିବା ପାଇଁ ଅଭାବ ନାହିଁ କାହା ପକେଟରେ,\nବିକେଇବା ଯଚେଇବା ତୋ’ କାମ,\nଲାଗିପଡ଼ ।\nଫୁରସତ ଦେ’ନା ପ୍ରତିପକ୍ଷକୁ ତୀର ବିଂଧିବାରେ,\nଶେଷ ଅସ୍ତ୍ରଟା ପାରୁଛୁ ତ ପ୍ରୟୋଗ କରି ଦେ’\nଆଂଗୁଠି ଦେଖେଇ କହି ଦେ’ ଭାକ୍…. ।”\nବଜାର ଭାଷାରେ\n(ଖରାପ କଥା ବୋଲି ପିଲାଦିନେ କାନମୋଡ଼ା ଖାଇଥିଲୁ-\nଏଇତ?)\nଭୁଲି ଯା’ ସେ ଅଳିଆକାଳର ବାଳିଆ କଥା\nମହୀଭୋଗ ନ ଥାଏ ସବୁ ମଣିଷ ଭାଗ୍ୟରେ\n\nଅଗ୍ନ୍ୟାସ୍ତ୍ର ବ୍ରହ୍ମାସ୍ତ୍ର ଆଦି ଯେତେ ଅସ୍ତ୍ର ଅଛି\nଭାଷାର ଖେଳରେ, ପ୍ରୟୋଗ କରି ଦେ\n“ଛିଃ! ଲଂଗଳା କଂଢେଇଟା ଥେଇଥେଇ ନାଚୁଛିଁ”\nଛେପ ଲଂଡାଏ ଥୁକି ଦେ’,\nନଚେତ ଉଭା ଲଂଗଳା ଠିଆ ହୋଇପଡ଼ ମଂଚରେ ।\nଗଂଭୀର କଂଠରେ ପୋଖତ ବେପାରୀ ପରି ବୁଝାଇ ଦେ’:\nଇଏ ଆଉ ଏକ ପୋଷାକ\nଜରି ପୋଷାକ ଠାରୁ ବେଶି ମୂଲ୍ୟବାନ,\nମୋ’ ଆତ୍ମାର କଥା କହୁଛି,\nପେଟଚାଖଂଡକ ପାଇଁ ଅହରହଃ ଲଂଗଳା ହେଉଥିବା\nଅସୁମାରି ମଣିଷର ଦୁଃଖ ବଖାଣୁଛି ।\nକଥାଟା ଥୋଉଛି\nଦୁଃଖ ଲିଭାଇ ଦେବା ପାଇଁ ନୁହେଁ\nଜଣାଇ ଦେବାପାଇଁ ଯେ\nତୁମ ପରି ଆଉ ଜଣେ ଦୁଃଖି ମଣିଷ\nଏଇଠି ଠିଆ ହୋଇଛି ତୁମରି ସାମ୍ନାରେ ।\nଚେତନାଟିଏ ପରି ଅଛି ତୁମରି ସାଥିରେ ।\n\nପଢ଼ିଦେ’ କବିତା ପଢ଼ିଲା ପରି ବାର ବାର,\nମିଛ ସବୁ ସତ ହୋଇଯିବ ।\nତାଳି ବରଷିବ,\nଭିଡ଼ ବଢ଼ିଯିବ ତୋ’ ବିପଣିରେ ।\n\nଶେଷରେ\nତୋ’ ମୁର୍କି ହସ, ତୋ’ ଗୁଲ୍ବଦନ\nଦିଶିଯିବ ଟିଭି ପର୍ଦାରେ ।\nଓଃ, ଛୋଟ ଛୁଆଗୁଡ଼ାକ ତାଳିମାରି ନାଚିବେ ଯାହା:\nଦେଖ ଦେଖ ଲଂଗଳା ଗଧଟେ\nମୁଂଡରେ ପଗଡ଼ି ଭିଡ଼ି ବସିଛି ସିଂହାସନରେ ।",
+      "source_sha256": "752c14a45036a30f7f929a4a2ff60bec586d71b4e45195f68563a8b679cb9eb8",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/6209e1d6-98e3-4919-a348-23f04975fb43",
+          "status": "generated",
+          "duration": "4:07"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/4f17175a-d94b-46fc-a88a-1b51bfa86c0f",
+          "status": "generated",
+          "duration": "3:56"
+        }
+      ],
+      "selected": "https://suno.com/song/6209e1d6-98e3-4919-a348-23f04975fb43",
+      "submitted_at": "2026-10-02T09:04:28.019Z"
+    },
+    {
+      "section": 66,
+      "title": "Singhasan 66 — କବିତା ୬୬",
+      "language": "or",
+      "text": "ତେଣୁ ଆଦେଶ ପାଳିବାକୁ ହେବ ।\nଗୁଳି ଫୁଟାଇ ବିଚ୍ ରାସ୍ତାରେ\nକୁକୁର ପରି ତାଂକୁ ମାରିବାକୁ ହେବ,\nରୁଦ୍ଧ ଦ୍ବାର ଭିତରେ ବିଷ ଧୂଆଁ ଦେଇ\nତାଂକୁ ନିଃଶେଷ କରିବାକୁ ହେବ,\nପୋଡ଼ିଦେବାକୁ ହେବ ତାଂକ ପୂଜା ମଂଡପକୁ ।\nସେମାନେ ଯୋଗ୍ୟ ନୁହଂତି ଯଜ୍ଞ ରଚନା କରିବା ପାଇଁ ।\nକାରଣ ସେମାନେ ନୀଚ ଯୋନିର,\nତେଣୁ ଅଶୁଦ୍ଧ ରକ୍ତର ।\n\nପ୍ରତିବାଦ କରିପାରିବ ନାହିଁ,\nକଲେ ମିତ୍ରପକ୍ଷର ତାଲିକାରୁ କଟିଯିବ ନାମ ।\nଶୁଣିପାରିବନାହିଁ ସେ ଆର୍ତ ଚିତ୍କାରର ସ୍ଵର,\nପ୍ରତିଦିନ ଶୁଣାଯାଉଥିବା ସବୁ ପରିଚିତ\nସଂପର୍କର ସ୍ଵରଠାରୁ ଭିନ୍ନ ସେଇ ସ୍ଵର ।\nଚାହିଁ ପାରିବନାହିଁ ସେ ଉତ୍ପିଡ଼ିତ ଲୋକଂକ ଆଖି\nତୁମ ସମବେଦନାର ଲୁହପୂର୍ଣ ଆଖିରେ,\nକହି ପାରିବ ନାହିଁ-ତୁମେ ଭାରି ଦୁଃଖିତ ବୋଲି,\nସହି ପାରିବ ନାହିଁ, ନିଜକୁ ବୁଝାଇପାରିବ ନାହିଁ\nତୁମ ଅସାମର୍ଥ୍ୟ ।\n\nଅଥଚ ଅଭ୍ୟାସରେ ପଡ଼ିଯିବ\nସବୁକୁ ଆଖି ବୁଜି ଦେବାର ଅଲାଜୁକପଣ,\nକାଳ କଟିଯିବ ପିଲାକବିଲାଂକୁ ଏସବୁ ନ କହି\nଚାମଚେ ଚାମଚେ କ୍ଷୀର ଢୋକେଇଦେବାରେ\nଢୋକେ ଢୋକେ ପାଣି କଳପାଟିଆ କରି\nତେଂଡେଇଦେବାରେ,\nତାଂକ ଦାନାକନା ପାଇଁ ‘ଭବିଷ୍ୟ ନିଧି’ରେ\nଆଖି ପୂରିଲାଭଳି କିଛିକିଛି ସାଇତି ଯିବାରେ ।\n\n“ମୁଁ କିଏ କି”?- ନିଜକୁ ବୁଝାଇ ଦେବ,\n“ଛାର କିଂକରଟାଏ ଆଦେଶ ପାଳନର ।\nଉତ୍ପୀଡ଼ନର ଲୋମହର୍ଷଣକାରୀ ଦୃଶ୍ୟଦେଖିବାକୁ\nକି ଧାରା ବିବରଣୀ ଶୁଣିବାକୁ ମୋର ଜନ୍ମ ।\nମୁଁ ତ ବିକି ଦେଇଛି ନିଜକୁ ଗୋଟାପଣ,\nକେଉଁଠି ଆଉ ସ୍ଵରଟିଏ ଅଛି ଯେ\nଭାଗିଂଦେବ ଛତ୍ରପତିର ଦାରୁଣ ସିଂହାସନ?”",
+      "source_sha256": "63b58cf58f00280fd68c2cf18a47b1df81549e64b7f60dfa4ffe221426314684",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/176796fe-7347-474d-9b28-75b70bac32e1",
+          "status": "generated",
+          "duration": "2:32"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/37b7d0f1-e728-49a2-a94a-4390d8d7385f",
+          "status": "generated",
+          "duration": "2:37"
+        }
+      ],
+      "selected": "https://suno.com/song/176796fe-7347-474d-9b28-75b70bac32e1",
+      "submitted_at": "2026-10-02T09:05:22.346Z"
+    },
+    {
+      "section": 67,
+      "title": "Singhasan 67 — କବିତା ୬୭",
+      "language": "or",
+      "text": "ଖସାଇ ଦେବାର ଘୋଡ଼ା ବେପାର\nନା ଚଢ଼ିଯିବାର ଘୋଡ଼ା ଦଉଡ଼\nକେଉଁ ଖେଳଟା ବେଶି ଚମତ୍କାର?\nଦର୍ଶକ ଗ୍ୟାଲେରି ଭରପୂର,\nତାଳି ମାରିବେ,\nବସିରହିଛଂତି ଦଳେ ଭାଡୁଆ କୁକୁର ।\nଆଂଠୁ ଛିଡ଼ି ପଡ଼ୁଥିବ,\nଖୋଷଣି ଫିଟି ଯାଉଥିବ,\nଖେଳୁ ଖେଳୁ କିଏ ଗୋଡ଼ ଟାଣି ଦେଉଥିବ\nତ କିଏ ଅଣଚାଶ ପବନ ପରି\nପଛରୁ ଆସି ମାଡ଼ି ଯାଉଥିବା ସବା ଆଗକୁ\nଅର୍ଘାସୁର ପରି ବାଡ଼ ହୋଇ\nଠିଆ ହୋଇଯାଉଥିବା ରାସ୍ତାରେ,\nକେଂପା ହାତରେ ଛୁରିଟାକୁ ହଲାଇ\nକିଏ ଛେଳିକୁ କୁକୁର କହୁଥିବ,\nଛୋଟାମାନଂକ ପଟୁଆରରେ\nପୃଥିବୀ ଦୋହଲୁଥିବ,\nବଡ଼ବଡ଼ କୁଜମାନଂକୁ ଦେଖାଇ\nବର୍ଣାଢ୍ୟ ଆଗ ଧାଡ଼ିରୁ\nକିଏ ଅନୁନାସିକ ସ୍ଵରରେ\nଶୁଷୁରି ଫୁଂକୁଥିବ,\nଦର୍ଶନୀୟ ଆବୁମାନଂକୁ ଆଉଁଶିଦେବା ପାଇଁ\nକିଏ ପୋଇଲି ପଢ଼ିଆର କରି ଖଂଜି ଦେଉଥିବ,\nକିଏ ହାତ ପାପୁଲିରେ ବଜ୍ର ଧରିଲାଭଳି\nପାଦଟେକି ଠିଆ ହୋଇଥିବ ।\nକିଏ ଚାଁହିଦେଲେ ମେଘ ବରଷିଯିବାର\nରୁଦ୍ର କଟାକ୍ଷ ହାଣି ଦେଉଥିବ,\nକିଏ ଛେଳି ପାଦରେ କଦ୍ମତାଲ ପକାଇବାକୁ\nଲହୁଲୁହାଣ ହେଉଥିବ,\nଦାଂତୁରୀମାନଂକ ମହୁମୁହାଣରେ\nହସ କାଂଦ ବୁଝି ହେଉ ନ ଥିବ,\nଛୋଟୀ କାନ ପାରିଥିବ,\nଶ୍ରୀମତି ଡାକ ଶୁଣି\nହାତରେ ‘ଓଡ଼ିଶୀ’ ମୁଦ୍ରା, ‘ଭାରତନାଟ୍ୟମ୍’\nନାଚିଦେବା ପାଇଁ ଗୋଡ଼ ଟେକି ଦେବ ।\n\nଦୃଶ୍ୟ ଉପଭୋଗ୍ୟ ହେଉଥିବ ।\n\nସେଇ ନିର୍ବିକଳ୍ପ ମୁହୂର୍ତମାନଂକ ଖେଳ ଦେଖି\nସିଂହାସନ ନିଃଶ୍ଵାସ ମାରୁ ମାରୁ\nତତ୍ତ୍ବଦର୍ଶୀଟିଏ ପରି ଶୁଣାଇ ଦେଉ‌ଥିବ ଶୂନ୍ୟକୁ:\nଏମିତି ଅନଂତ କାଳ ପାଇଁ\nମଣିଷମାନଂକର ଅପୌରୁଷ ଘୋଡ଼ା ଦଉଡ଼\nଲାଗି ରହିଥାଉ\nଶୂନ୍ୟ ପଡ଼ିଥିବା ସିଂହାସନ ପାଇଁ,\n\nଶୂନ୍ୟରେ ଦୋହଲୁଥିବା,\nଶୂନ୍ୟକୁ ଦୋହଲାଉଥିବା\nଭାଗ୍ୟ ଟିକକ ପାଇଁ ।",
+      "source_sha256": "bea7be31fc5657f3a55438c0925c12dc8234202ca89131a3252c99b1367d74a7",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/10182b9b-ec1a-4f44-93bc-b512ee1add93",
+          "status": "generated",
+          "duration": "2:38"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/f2e5ccf5-6b51-4aeb-9117-1b46012605a0",
+          "status": "generated",
+          "duration": "2:38"
+        }
+      ],
+      "selected": "https://suno.com/song/10182b9b-ec1a-4f44-93bc-b512ee1add93",
+      "submitted_at": "2026-10-02T09:05:23.038Z"
+    },
+    {
+      "section": 68,
+      "title": "Singhasan 68 — କବିତା ୬୮",
+      "language": "or",
+      "text": "ଶେଷରେ ଗୋଟାଏ ବ୍ରାହ୍ମ ମୁହୁର୍ତରେ\nମଦିଂର ଦରଜା ପରି ଫିଟିଗଲା\nସବୁ ଜେଲଖାନାର ଫାଟକ\nସବୁ ଚିଡ଼ିଆଖାନାର କବାଟ\nଖୋଲିଦିଆଗଲା ।\n\nସାହାଣମେଲା ହୋଇଗଲା\nସିଂହ-ଦରଜା,\nଅଂଦରମହଲକୁ ଫିଟିଗଲା ବାଟ\nରିମୋଟ୍ କଂଟ୍ରୋଲ ଆଉ ନ ଥିଲା\nକାହାରି ଭିତରେ ।\n\nମହାବଳମାନେ କାଦଂବରି ପାନ କଲା ପରି\nଶୋଷି ପକାଇଲେ ମଣିଷର ରକ୍ତ,\nପାଂଶୁଳ ଦାରୁଭୁତ ପରି ଦାରୁବ୍ରହ୍ମମାନେ\nଟଳିପଡ଼ିଲେ ଲାଜକୁଳି ଗହଳିରେ\nନାଗଫେଣି କଂଟାବୁଦା ତଳେ,\nଅରଣ୍ୟ କଂପିଲା\nକଂଚା ମାଂସର ମାଦକତାରେ ।\n\nସବୁ ଦଂଶନର ଫଣାମାନ\nଉତ୍ତୋଳିତ ହୋଇ ରହିଗଲା\nକେତେବେଳେ ଭୂମି-ସ୍ପର୍ଶ-ମୁଦ୍ରାରେ ତ\nକେତେବେଳେ ଉତଥିତ ପଦ୍ମାସନରେ ।\nମୁକ୍ତିର ସକାଳ ଦେଖିଲା\nକୁଢ଼ କୁଢ଼ ହାଡ଼ର ପାଉଁଶ ରାସ୍ତାରେ,\nମହାରାଜାଂକ ପୁରୁଷାର୍ଥ\nନିଃଶବ୍ଦରେ ନିକାଂଚନରେ\nପିଂପୁଡ଼ି ମଂଦାରେ,\nମହାରାଣୀଂକ ଜନନେଂଦ୍ରିୟ\nସାଲୁବାଲୁ ତେଲୁଣୀ ପୋକରେ\nଜେମାଂକ ପାଂଡୁର ସ୍ତନରୁ\nରକ୍ତ ଶୋଷୁଛି ମଶା,\nଗଣଧର୍ଷଣର ଜରାୟୁରୁ ତାଂକର\nଅତର୍କିତେ ଖସିପଡ଼ୁଛି\nସମୁଦ୍ର ରଂଗର ମଲା ଛୁଆଟା ।\n\nରାଜକୁମାରଂକ ମଲା ମୁହଁଟାରେ\nତଥାପି ଲାଗିରହିଛି ସଇତାନୀ ହସଟା ।\n\nକେହି ନାହିଁ ହୁକୁମ ଦେବାକୁ,\nକେହି ରହିନାହିଁ\nହୁକୁମ ତାମିଲ୍ କରିବାକୁ ।\n\nନିର୍ଜନ ରାଜପ୍ରାସାଦରେ\n\nଚିତ୍ର ଆଖିମାନ ତରାଟି ଚାହିଁଛି-\nକିଏ ଶୁଣିବ\nକିଏ ଘୋଷଣା କରିବ\nସିଂହାସନ ଖାଲି ପଡ଼ି ନାହିଁ,\nହୁତ୍ ହୁତ୍ ଜଳୁଛି ।\nସାରା ପୃଥିବୀଟା ଅବା ଭସ୍ମଟିକେ ହୋଇ\nଝଡ଼ିପଡ଼ୁଛି\nଲାସଖାନାର ଟେବୁଲ୍ ଉପରେ ।\n\nତଥାପି\nମଂଦ ମଂଦ ପବନ ବହୁଥିଲା ଜନପଦରେ,\nପକ୍ଷୀମାନଂକ ଉଡ଼ାଣରେ\nଶୋକାକ୍ତ ସ୍ଵର କେଉଁ ସାହାନାଇର\nଶୁଭୁଥିଲା ଦୂର ଆକାଶରେ ।\nକେଉଁ କିଆବୁଦା ତଳୁ\nକେଉଁ ଖିରିକୋଳି ବଣରୁ\nକେଉଁ ଗହଳ ଆଂବତୋଟାରୁ\nକେଉଁ କଦଂବ ଡାଳର ଲଳିତ ସ୍ଵନରୁ\nକେଉଁ ମୁଚୁକୁଂଦ ଫୁଲର\nମଧୁର ମଧୁର ବାସ୍ନାରୁ\nକେଉଁ କଠିନ ଗୈରିକ ପାହାଡ଼ର\nଅଂଧାରୁଆ ଗୁଂଫାରୁ\nକେଉଁ ଖଂଡାଧାର ପ୍ରପାତର\nପ୍ରଚଂଡ ପ୍ରବାହରୁ\nକେଉଁ ସମୁଦ୍ରକୂଳର ହେଂତାଳ ବନରେ\nବାଘ ହେଂଟାଳ ପରି ଝଡ଼ର ଗର୍ଜନରୁ\nକିଛି ଅବୋଧ ନିରୀହ ଦୃଷ୍ଟି\nନିରେଖୁଥିଲା ଆକାଶ ପାତାଳ:\nକଳା ଘୋଡ଼ା କି ଧଳା ଘୋଡ଼ାର\nଟାପୁ ଆବାଜରୁ\nପ୍ରଥମ ପ୍ରେମର ହସଟିଏ ହୋଇ\nଦଉଡ଼ି ଆସୁଛି କି\nଜଳଂତା ନିଆଁ ପରି\nହଳଦି ରଂଗର\nସେଇ କଅଁଳା ଟୋକାଟା-\nଖୋଜି ପାଇଯିବା ପାଇଁ\nଉଁଚା ମାଟିଗଦାଟିଏ\nଯେଉଁଠୁ ଗୋଟାଏ ହୁଂକାରରେ\nସେ ଚାଲୁକରିଦେବ ବଂଦ ଦରବାର,\nଯେଉଁଠି ମୁର୍ଦାରମାନେ ଆଖିଖୋଲି\nଚେଇଁ ଉଠୁଥିବାର ବିସଂବାଦ,\nଯେଉଁଠି ଅଲୌକିକ କଳା କୌଶଳର\nଆଉ ଗୋଟାଏ ସିଂହାସନ ଲୁଚି ରହିଥିବାର ଗୁଜବ\nରାତି ପାହିଲାବେଳକୁ\nପ୍ରଜାପତିଟିଏ ଫୁଲ ଉପରେ ଉଡ଼ୁଥିଲା ପରି\nସତ ହୋଇଯିବ ।",
+      "source_sha256": "1337c19dcec4f74e44fb2008dd9c93fa5b99835bd3766c080f12ba462bc26595",
+      "status": "download-pending",
+      "candidates": [
+        {
+          "take": 1,
+          "url": "https://suno.com/song/3e7606d9-9fa7-4cb3-947b-50c7c537d94e",
+          "status": "generated",
+          "duration": "4:11"
+        },
+        {
+          "take": 2,
+          "url": "https://suno.com/song/4f73fd91-a8c5-45ef-a1de-31f0c9099911",
+          "status": "generated",
+          "duration": "4:22"
+        }
+      ],
+      "selected": "https://suno.com/song/3e7606d9-9fa7-4cb3-947b-50c7c537d94e",
+      "submitted_at": "2026-10-02T09:05:23.456Z"
+    }
+  ],
+  "opening": {
+    "status": "imported",
+    "text": "Welcome to Singhasan, the first collection of Odia poems by Pravakar Satapathy. Written during his years of active involvement in politics, these poems bring together myth, history, power, and everyday life. You will hear all sixty-eight poems in their original Odia. Settle in, and let us begin.",
+    "title": "Singhasan — English welcome",
+    "submitted_at": "2026-10-02T09:06:30.777Z",
+    "candidates": [
+      {
+        "take": 1,
+        "url": "https://suno.com/song/14d9bef7-890c-44cd-af4d-c1ebc062b973",
+        "status": "generated",
+        "duration": "0:30"
+      },
+      {
+        "take": 2,
+        "url": "https://suno.com/song/c64408f2-8feb-4cd4-9238-0b87e6384260",
+        "status": "generated",
+        "duration": "0:29"
+      }
+    ],
+    "selected": "https://suno.com/song/14d9bef7-890c-44cd-af4d-c1ebc062b973",
+    "media_path": "site/dist/assets/audio/welcome-14d9bef7.mp3",
+    "audio_sha256": "0874e4cce2a4527d9be3a6d9eb4da465a549dbdc4970d45261d232dc7b8a5d38",
+    "duration_seconds": 30.024
+  },
+  "closing": {
+    "status": "imported",
+    "text": "You have been listening to Singhasan by Pravakar Satapathy. Thank you for spending this time with his poems. You can return to any poem, read its words, or explore its illustrations on the book’s website. Until next time, keep a little room for poetry.",
+    "title": "Singhasan — English closing",
+    "submitted_at": "2026-10-02T09:07:03.864Z",
+    "candidates": [
+      {
+        "take": 1,
+        "url": "https://suno.com/song/9b71e58b-983c-4e74-a948-bb1d36cd550a",
+        "status": "generated",
+        "duration": "0:28"
+      },
+      {
+        "take": 2,
+        "url": "https://suno.com/song/844a8b3b-d690-4cc1-a368-56a9599134bc",
+        "status": "generated",
+        "duration": "0:28"
+      }
+    ],
+    "selected": "https://suno.com/song/9b71e58b-983c-4e74-a948-bb1d36cd550a",
+    "media_path": "site/dist/assets/audio/closing-9b71e58b.mp3",
+    "audio_sha256": "7fb4e6b6bd9c6c4f2b63db31539cd8749e8aa88012d1d5a2c2b070e1a13cd916",
+    "duration_seconds": 28.2
+  },
+  "strategy": "One full poem per track, English welcome and closing as separate tracks; site playlist provides continuous playback. Full Odia introduction deferred pending decision.",
+  "submission_limit": 70,
+  "status": "54-imported-16-download-pending",
+  "workspace_url": "https://suno.com/create?wid=fecafd89-1904-43d6-8cd7-46d0ccd5465b",
+  "default_controls": {
+    "duration": "Auto",
+    "max_mode": "Off",
+    "personalize": "Off",
+    "variety": "Normal",
+    "vocal_gender": "Unspecified, preserving successful form"
+  },
+  "selection_policy": {
+    "rule": "first take for review; replace as requested",
+    "authorized_by": "user",
+    "pronunciation_review": "pending"
+  },
+  "english_style": "Warm, natural English spoken narration for an Odia poetry audiobook. Flowing conversational pace, gentle poetic cadence, relaxed and intimate, lightly expressive phrase endings. Speak every supplied word clearly and naturally. Clear close voice, dry sound, no echo. Very faint bamboo flute before and after the narration. Spoken delivery, no singing."
+}

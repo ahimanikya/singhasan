@@ -1,6 +1,7 @@
 # Publish the self-contained website, keeping local working material outside Git.
 /*
 !/.gitignore
+!/.gitattributes
 !/README.md
 !/.github/
 !/site/

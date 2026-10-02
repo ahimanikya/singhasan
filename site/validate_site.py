@@ -15,7 +15,7 @@ class Page(HTMLParser):
         if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
 errors=[]
 pages=sorted(root.glob('*.html'))
-assert len(pages)==74, 'Expected home, contents, two covers, poet, introduction and 68 poems'
+assert len(pages)==75, 'Expected home, contents, two covers, poet, listening edition, introduction and 68 poems'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -33,10 +33,10 @@ for n in range(1,69):
     assert f'assets/poems/unique/poem-{n:02}.png' in html and 'class="illustration-reading"' in html
 assert len({hashlib.sha256((root/f'assets/poems/unique/poem-{n:02}.png').read_bytes()).hexdigest() for n in range(1,69)})==68
 assert (root/'CNAME').read_text().strip()=='singhasan.poemwithoutborders.org'
-assert len(ET.parse(root/'sitemap.xml').getroot())==74
+assert len(ET.parse(root/'sitemap.xml').getroot())==75
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 74 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 75 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -54,3 +54,15 @@ for chapter in book['chapters']:
 assert 'href="intro.html?view=book"' in (root/'book.html').read_text()
 assert 'poem-68.html?view=book&amp;leaf=last' in (root/'back-cover.html').read_text()
 print('All 69 standalone sections preserve their source text and link to the same section in book view.')
+
+audio=json.loads((root.parent/'audio-edition.json').read_text())['tracks']
+assert len({t['id'] for t in audio})==len(audio), 'Duplicate recording ID'
+assert len({t['source_url'] for t in audio})==len(audio), 'Duplicate selected take'
+for track in audio:
+    file=root/track['src']
+    assert file.is_file() and file.stat().st_size>1000, track['id']
+    assert not file.read_bytes().startswith(b'version https://git-lfs'), 'Fetch LFS audio before building'
+    assert hashlib.sha256(file.read_bytes()).hexdigest()==track['sha256'], track['id']
+    if track.get('poem'):
+        assert f'listen.html#poem-{track["poem"]}' in (root/f'poem-{track["poem"]}.html').read_text()
+print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')
