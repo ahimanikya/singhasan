@@ -30,7 +30,9 @@
     title.lang = track.language || (track.poem ? 'or' : 'en');
     document.getElementById('audio-read').href = track.reading_route || (track.poem ? `poem-${track.poem}.html` : 'book.html');
     document.getElementById('audio-follow').href = `read-along.html?track=${encodeURIComponent(track.id)}`;
-    document.getElementById('audio-read').textContent = track.id === 'introduction' ? 'Read the introduction' : (track.poem ? 'Read the poem' : 'Open the book');
+    document.getElementById('audio-read').textContent = track.id === 'introduction' ? 'Read ସିଂହଦ୍ଵାର' : (track.poem ? 'Read the poem' : track.id === 'closing' ? 'Back cover' : 'Open the book');
+    const review = document.getElementById('audio-review-note');
+    review.textContent = track.review_note || ''; review.hidden = !track.review_note;
     previous.disabled = index === 0;
     next.disabled = index === tracks.length - 1;
     buttons.forEach(button => {

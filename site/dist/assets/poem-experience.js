@@ -35,13 +35,13 @@ let pageScrollTimer;
 function pageCode(){return pageVerse?.lang||pageData.source_language}
 function pageBooks(){const raw=readJSON(pageBookKey,[]);return Array.isArray(raw)?raw.filter(b=>b.id===pageData.id&&pageData.variants[b.language]&&Number.isInteger(b.line)&&b.line>=0&&b.line<pageData.variants[b.language].stanzas.flat().length):[]}
 function pageMarks(code){const raw=readJSON(`singhasan-poem-marks-v1:${pageData.id}:${code}`,[]);return normalized(Array.isArray(raw)?raw:[],pageData.variants[code].stanzas.flat(),code)}
-function currentPageLine(){if(document.body.classList.contains('pagination-on'))return Number(pageVerse.dataset.pageLine||0);const lines=[...pageVerse.querySelectorAll('[data-line]')];const visible=lines.find(n=>{const r=n.getBoundingClientRect();return r.bottom>100&&r.top<innerHeight*.8});return Number((visible||lines[0])?.dataset.line||0)}
+function currentPageLine(){if((document.body.classList.contains('pagination-on')||document.body.classList.contains('intro-paginated')))return Number(pageVerse.dataset.pageLine||0);const lines=[...pageVerse.querySelectorAll('[data-line]')];const visible=lines.find(n=>{const r=n.getBoundingClientRect();return r.bottom>100&&r.top<innerHeight*.8});return Number((visible||lines[0])?.dataset.line||0)}
 function currentBookmark(){
  if(!pageVerse)return;
  const kind=document.querySelector('.printed-spread')?.dataset.leafKind;if(kind==='art'||kind==='story')return;
  return pageBooks().find(b=>{
   if(b.language!==pageCode())return false;
-  if(!document.body.classList.contains('pagination-on'))return b.line===currentPageLine();
+  if(!(document.body.classList.contains('pagination-on')||document.body.classList.contains('intro-paginated')))return b.line===currentPageLine();
   const line=pageVerse.querySelector(`[data-line="${b.line}"] .line-words`);if(!line)return false;
   const walker=document.createTreeWalker(line,NodeFilter.SHOW_TEXT);let node,offset=b.offset||0;
   while(node=walker.nextNode()){if(offset<node.length){const range=document.createRange();range.setStart(node,offset);range.setEnd(node,offset+1);const r=range.getBoundingClientRect(),bounds=$('#reading-panel').getBoundingClientRect();return r.right>bounds.left+1&&r.left<bounds.right-1&&r.bottom>bounds.top&&r.top<bounds.bottom}offset-=node.length}return false;
@@ -60,7 +60,7 @@ $('#page-saved-details').addEventListener('toggle',placePageMenu);
 $('#mobile-nearby')?.addEventListener('toggle',placePageMenu);
 new ResizeObserver(placePageMenu).observe(savedPanel);
 function closeSavedPage(restore=false){savedPanel.hidden=true;savedButton.setAttribute('aria-expanded','false');if(restore)savedButton.focus({preventScroll:true})}
-function jumpPage(code,line,offset=0){if(!pageVerse){location.href=bookURL(pageData.route,{quiet:document.body.classList.contains('quiet-mode'),language:code,line,offset});return}$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();closeSavedPage();const target=pageVerse.querySelector(`[data-line="${line}"]`);if(target){target.tabIndex=-1;if(document.body.classList.contains('pagination-on'))document.dispatchEvent(new CustomEvent('book-jump-line',{detail:{line,offset}}));else target.scrollIntoView({block:'center',behavior:'auto'});target.focus({preventScroll:true})}}
+function jumpPage(code,line,offset=0){if(!pageVerse){location.href=bookURL(pageData.route,{quiet:document.body.classList.contains('quiet-mode'),language:code,line,offset});return}$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();closeSavedPage();const target=pageVerse.querySelector(`[data-line="${line}"]`);if(target){target.tabIndex=-1;if((document.body.classList.contains('pagination-on')||document.body.classList.contains('intro-paginated')))document.dispatchEvent(new CustomEvent('book-jump-line',{detail:{line,offset}}));else target.scrollIntoView({block:'center',behavior:'auto'});target.focus({preventScroll:true})}}
 function renderPageSaved(){
  const list=$('#page-saved-list');list.replaceChildren();const current=currentBookmark();$('#page-save-place').textContent=current?'Remove page bookmark':'Bookmark this page';
  function row(label,detail,go,remove){const node=document.createElement('div'),button=document.createElement('button'),del=document.createElement('button');node.className='focus-saved-row';button.textContent=label;button.setAttribute('aria-label',label+' · '+detail);button.onclick=go;del.textContent='×';del.setAttribute('aria-label','Remove '+detail);del.onclick=()=>{remove();renderPageSaved();refreshSavedButton()};node.append(button,del);list.append(node)}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "contactEmail": "ahimanikya@gmail.com",
+  "firebase": {
+    "enabled": false,
+    "projectId": "singhasan",
+    "apiKey": "AIzaSyD8FdTyVtL9LulRmskiBrNjqgDVDUw6N6o",
+    "authDomain": "singhasan.firebaseapp.com",
+    "appId": "1:38330958383:web:996bba3fb5a67252703cda",
+    "allowedHosts": [
+      "singhasan.poemwithoutborders.org"
+    ]
+  },
+  "engagement": {
+    "likes": false,
+    "publicComments": false,
+    "privateFeedback": false
+  }
+}

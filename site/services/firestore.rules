@@ -1,0 +1,107 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function editor() { return signedIn() && request.auth.token.editor == true; }
+    function throttlePath() { return /databases/$(database)/documents/feedbackThrottle/$(request.auth.uid); }
+    match /feedback/{id} {
+      allow create: if signedIn()
+        && request.resource.data.keys().hasAll(['uid','name','email','message','reason','poemPath','status','consentVersion','createdAt'])
+        && request.resource.data.keys().hasOnly(['uid','name','email','message','reason','poemPath','status','consentVersion','createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.name is string && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 120
+        && request.resource.data.email is string && request.resource.data.email.size() <= 254 && request.resource.data.email.matches('^[^@ ]+@[^@ ]+\\.[^@ ]+$')
+        && request.resource.data.message is string && request.resource.data.message.size() > 0 && request.resource.data.message.size() <= 5000
+        && request.resource.data.reason in ['note','correction']
+        && request.resource.data.poemPath is string && request.resource.data.poemPath.size() <= 300
+        && request.resource.data.status == 'received'
+        && request.resource.data.consentVersion == 'private-feedback-v1'
+        && request.resource.data.createdAt == request.time
+        && getAfter(throttlePath()).data.lastFeedbackId == id
+        && getAfter(throttlePath()).data.lastSubmittedAt == request.time
+        && (!exists(throttlePath()) || get(throttlePath()).data.lastSubmittedAt < request.time - duration.value(60, 's'));
+      allow read, delete: if editor();
+      allow update: if editor() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+        && request.resource.data.status in ['received','reviewed','closed'];
+    }
+    match /feedbackThrottle/{uid} {
+      allow create, update: if signedIn() && uid == request.auth.uid
+        && request.resource.data.keys().hasAll(['lastSubmittedAt','lastFeedbackId'])
+        && request.resource.data.keys().hasOnly(['lastSubmittedAt','lastFeedbackId'])
+        && request.resource.data.lastSubmittedAt == request.time
+        && request.resource.data.lastFeedbackId is string
+        && request.resource.data.lastFeedbackId.matches('^[A-Za-z0-9]{20}$');
+      allow read, delete: if editor();
+    }
+    function poemIdValid(poemId) { return poemId.matches('^([1-9]|[1-5][0-9]|6[0-8])$'); }
+    function statsPath(poemId) { return /databases/$(database)/documents/poemStats/$(poemId); }
+    function votePath(poemId) { return /databases/$(database)/documents/poemLikes/$(poemId)/voters/$(request.auth.uid); }
+    function oldCount(poemId) { return exists(statsPath(poemId)) ? get(statsPath(poemId)).data.likes : 0; }
+    function wasLiked(poemId) { return exists(votePath(poemId)) && get(votePath(poemId)).data.liked; }
+    match /poemStats/{poemId} {
+      allow get: if poemIdValid(poemId);
+      allow create, update: if signedIn() && poemIdValid(poemId)
+        && request.resource.data.keys().hasAll(['likes','updatedAt'])
+        && request.resource.data.keys().hasOnly(['likes','updatedAt'])
+        && request.resource.data.likes is int && request.resource.data.likes >= 0
+        && request.resource.data.updatedAt == request.time
+        && getAfter(votePath(poemId)).data.updatedAt == request.time
+        && getAfter(votePath(poemId)).data.liked == !wasLiked(poemId)
+        && request.resource.data.likes == oldCount(poemId) + (wasLiked(poemId) ? -1 : 1);
+    }
+    match /poemLikes/{poemId}/voters/{uid} {
+      allow get: if signedIn() && uid == request.auth.uid;
+      allow create, update: if signedIn() && uid == request.auth.uid && poemIdValid(poemId)
+        && request.resource.data.keys().hasAll(['liked','updatedAt'])
+        && request.resource.data.keys().hasOnly(['liked','updatedAt'])
+        && request.resource.data.liked is bool
+        && request.resource.data.liked == !wasLiked(poemId)
+        && request.resource.data.updatedAt == request.time
+        && getAfter(statsPath(poemId)).data.updatedAt == request.time
+        && getAfter(statsPath(poemId)).data.likes == oldCount(poemId) + (wasLiked(poemId) ? -1 : 1);
+    }
+    function commentThrottlePath() { return /databases/$(database)/documents/commentThrottle/$(request.auth.uid); }
+    match /commentSubmissions/{id} {
+      allow create: if signedIn()
+        && request.resource.data.keys().hasAll(['uid','poemId','name','message','status','consentVersion','createdAt'])
+        && request.resource.data.keys().hasOnly(['uid','poemId','name','message','status','consentVersion','createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.poemId is string && poemIdValid(request.resource.data.poemId)
+        && request.resource.data.name is string && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 80
+        && request.resource.data.message is string && request.resource.data.message.size() > 0 && request.resource.data.message.size() <= 2000
+        && request.resource.data.status == 'pending'
+        && request.resource.data.consentVersion == 'public-comments-v1'
+        && request.resource.data.createdAt == request.time
+        && getAfter(commentThrottlePath()).data.lastCommentId == id
+        && getAfter(commentThrottlePath()).data.lastSubmittedAt == request.time
+        && (!exists(commentThrottlePath()) || get(commentThrottlePath()).data.lastSubmittedAt < request.time - duration.value(60, 's'));
+      allow read, delete: if editor();
+      allow update: if editor() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+        && request.resource.data.status in ['pending','published','rejected'];
+    }
+    match /commentThrottle/{uid} {
+      allow create, update: if signedIn() && uid == request.auth.uid
+        && request.resource.data.keys().hasAll(['lastSubmittedAt','lastCommentId'])
+        && request.resource.data.keys().hasOnly(['lastSubmittedAt','lastCommentId'])
+        && request.resource.data.lastSubmittedAt == request.time
+        && request.resource.data.lastCommentId is string
+        && request.resource.data.lastCommentId.matches('^[A-Za-z0-9]{20}$');
+      allow read, delete: if editor();
+    }
+    match /publicComments/{id} {
+      // This collection contains only approved public text, never identity/contact fields.
+      allow get: if true;
+      allow list: if request.query.limit != null && request.query.limit <= 20;
+      allow create: if editor()
+        && request.resource.data.keys().hasAll(['poemId','name','message','publishedAt'])
+        && request.resource.data.keys().hasOnly(['poemId','name','message','publishedAt'])
+        && request.resource.data.poemId == get(/databases/$(database)/documents/commentSubmissions/$(id)).data.poemId
+        && request.resource.data.name == get(/databases/$(database)/documents/commentSubmissions/$(id)).data.name
+        && request.resource.data.message == get(/databases/$(database)/documents/commentSubmissions/$(id)).data.message
+        && getAfter(/databases/$(database)/documents/commentSubmissions/$(id)).data.status == 'published'
+        && request.resource.data.publishedAt == request.time;
+      allow delete: if editor();
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

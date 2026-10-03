@@ -1,0 +1,689 @@
+{
+  "edition": "2026-10-03",
+  "items": [
+    {
+      "id": "poem-01",
+      "original": "assets/poems/unique/poem-01.png",
+      "asset": "assets/artwork-2026-10-03/poem-01.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9a60d9f5002dc751883ce75e0d9d431e2813c7605e98cc21596724e1b312907e",
+      "reviewed_source_sha256": "d43c69d13e963254d7b1854a6909646e4cef60f5b406a3b4c7438fa1db42071b"
+    },
+    {
+      "id": "poem-02",
+      "original": "assets/poems/unique/poem-02.png",
+      "asset": "assets/artwork-2026-10-03/poem-02.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5b6d8065eacf4de224bf767904e820db6ef121917bafdd7b5d7471ad1dddcf5d",
+      "reviewed_source_sha256": "0e614133b509f1230e9d49a4c3519dd9f8e33815560c54dfb84cfb26d8f67012"
+    },
+    {
+      "id": "poem-03",
+      "original": "assets/poems/unique/poem-03.png",
+      "asset": "assets/artwork-2026-10-03/poem-03.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "884bcd15882965d38564609c96c20b24db81c7430da674365cbcb4cc84806e21",
+      "reviewed_source_sha256": "0bce5b28d107188bf36803ae8a2477225fe465a44721f56b82df62b7b70940ee"
+    },
+    {
+      "id": "poem-04",
+      "original": "assets/poems/unique/poem-04.png",
+      "asset": "assets/artwork-2026-10-03/poem-04.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6b59bc4cc8501245e1035a982146c2c9a5ce6f4ebf53971bd915218fb8bb44ef",
+      "reviewed_source_sha256": "4fcd51681daa257f9a60ad933ead7fea2c4f75a18cdbf595558e239dd92e0203"
+    },
+    {
+      "id": "poem-05",
+      "original": "assets/poems/unique/poem-05.png",
+      "asset": "assets/artwork-2026-10-03/poem-05.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9ff92e328a4a0666d4484b5a8574edab8c190f0ce540be26b064df96d1bef549",
+      "reviewed_source_sha256": "d42448bc93bb78e71b344316dc67943e43a972b2e363f16b906b30cf20d26a4b"
+    },
+    {
+      "id": "poem-06",
+      "original": "assets/poems/unique/poem-06.png",
+      "asset": "assets/artwork-2026-10-03/poem-06.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "31ccd4a4c5892ca0f69eaaea5dfac2706ac863371872937e096031f242307ed3",
+      "reviewed_source_sha256": "41d488487f68892ae70dacbdf7ba522021d8712b31e5fe9b3d7a0a3bbf06b113"
+    },
+    {
+      "id": "poem-07",
+      "original": "assets/poems/unique/poem-07.png",
+      "asset": "assets/artwork-2026-10-03/poem-07.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "aafe1963ddce727a4e918109eefa0b584df5c279cf0252b3effcbbab08935ead",
+      "reviewed_source_sha256": "d72617a6b339168c06f0acec4ab21897629b3de285ba56b3fa00e129516311b0"
+    },
+    {
+      "id": "poem-08",
+      "original": "assets/poems/unique/poem-08.png",
+      "asset": "assets/artwork-2026-10-03/poem-08.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7ba4c09b7a6a5388b4925f8eaddd411796adea3601a4f618c7c6a1051db19dd2",
+      "reviewed_source_sha256": "78ea445dfc536935fb9a02ac7814e33e1483dd5104d86ecf43634920c72d61a0"
+    },
+    {
+      "id": "poem-09",
+      "original": "assets/poems/unique/poem-09.png",
+      "asset": "assets/artwork-2026-10-03/poem-09.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "16684e4fb8ebca944d8966da402fc7b16532768a8617b607e0827a80e986c592",
+      "reviewed_source_sha256": "2b1898bf519b889a796a9c2ff883a782323fd192eb69665bfc6de6cbbafbdc5b"
+    },
+    {
+      "id": "poem-10",
+      "original": "assets/poems/unique/poem-10.png",
+      "asset": "assets/artwork-2026-10-03/poem-10.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e6453b0627bdb66e4caee8e027a83cfc22df5bc1cb71b50369c3b5cc5abceff7",
+      "reviewed_source_sha256": "ebbe8280f5d33c62789b145d6d68b5ed0f0c773aede197e0c110a812d8c27da4"
+    },
+    {
+      "id": "poem-11",
+      "original": "assets/poems/unique/poem-11.png",
+      "asset": "assets/artwork-2026-10-03/poem-11.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7cd5c1faac8f3e228b5c477919e773f37d7c1d309909e43c7fc41119e184cd29",
+      "reviewed_source_sha256": "7d38498458822608e271f6e60e74fd0f07bcc303fff0516b883d1ed51d8d0f1f"
+    },
+    {
+      "id": "poem-12",
+      "original": "assets/poems/unique/poem-12.png",
+      "asset": "assets/artwork-2026-10-03/poem-12.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "058b205ac55529d5830b085f0b6f15bef3c5c58b19c721dfa7d00849a47ded8a",
+      "reviewed_source_sha256": "b767db7e447242c032c04ac012bdc09ba5eb1ece875313a9d0b6b64e94df2735"
+    },
+    {
+      "id": "poem-13",
+      "original": "assets/poems/unique/poem-13.png",
+      "asset": "assets/artwork-2026-10-03/poem-13.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "08662bffe410a22c54befd82e929ecc4e699cadfcc77c0043847ba9bfd083653",
+      "reviewed_source_sha256": "04479f731278f359d250f366ace3888a4eabccd2796f91ea6c7c373afa3bcedc"
+    },
+    {
+      "id": "poem-14",
+      "original": "assets/poems/unique/poem-14.png",
+      "asset": "assets/artwork-2026-10-03/poem-14.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8c716dedb72de57f20c6c9cca29f4a3c56610db8a9deaf656bd77d4609faa85c",
+      "reviewed_source_sha256": "ab5a703b4348ad3d15d7e58958f627c3fb386eba007033fe172299be7aaa572d"
+    },
+    {
+      "id": "poem-15",
+      "original": "assets/poems/unique/poem-15.png",
+      "asset": "assets/artwork-2026-10-03/poem-15.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "b6d7772a62e44ad1d591e9c75df99c11b2abed8ebd181b6ea63918e88f1c1011",
+      "reviewed_source_sha256": "61a67b7fcdd10de537c3c3645ae8c94fd0b22275b4303f06a97738fea0f2ec9c"
+    },
+    {
+      "id": "poem-16",
+      "original": "assets/poems/unique/poem-16.png",
+      "asset": "assets/artwork-2026-10-03/poem-16.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e0e604df084f11ead4ca662786034b5c80686bb5fc55b871ae87739e3afaa3c2",
+      "reviewed_source_sha256": "576fae30ea50fbad9a7c00013f0e6cfaf6bd0653c950e1a5499fa35c33c8dd10"
+    },
+    {
+      "id": "poem-17",
+      "original": "assets/poems/unique/poem-17.png",
+      "asset": "assets/artwork-2026-10-03/poem-17.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "b4dcea7f0a871db9df5da95d7a205c7944518f7c289e4a465dc5b5e6719e0e77",
+      "reviewed_source_sha256": "a81059fbfa3e405192e3dfe27d34b7a7c53a2b9a184ef9ac71c459beec1505dd"
+    },
+    {
+      "id": "poem-18",
+      "original": "assets/poems/unique/poem-18.png",
+      "asset": "assets/artwork-2026-10-03/poem-18.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "86065ca754224b7f7d4da64c92f987ccbac79f51f45db86195cc96a3002e9977",
+      "reviewed_source_sha256": "58ff6f8e082f8f9ded87e7c0a3dcded4ea8ee06fa393362a9fe734583c0a580e"
+    },
+    {
+      "id": "poem-19",
+      "original": "assets/poems/unique/poem-19.png",
+      "asset": "assets/artwork-2026-10-03/poem-19.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "59c2aa3aa52943e2fc25564e7681695490476e6bd4e4f33e9a292369099bf426",
+      "reviewed_source_sha256": "2786b6b18a3889fd50940f6c7b193470f67909aa3aece8c911b6feeac8ecc61e"
+    },
+    {
+      "id": "poem-20",
+      "original": "assets/poems/unique/poem-20.png",
+      "asset": "assets/artwork-2026-10-03/poem-20.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0a8d403a49380f5b62d4660cc0bbc372f4692540f736e0215cdb0e03aba5df4a",
+      "reviewed_source_sha256": "c48be3c4da58ee7013379cf9aec44906978bb5638c90c97c2ca6931b4037b344"
+    },
+    {
+      "id": "poem-21",
+      "original": "assets/poems/unique/poem-21.png",
+      "asset": "assets/artwork-2026-10-03/poem-21.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8e8e7b8c00c3050b4eb07e853bfb5b604b648fee64c0c17b2003d58f11f2514d",
+      "reviewed_source_sha256": "24e146476eac34882d95db56a6c73292d16f10703003d1602253baa21e6bdc7a"
+    },
+    {
+      "id": "poem-22",
+      "original": "assets/poems/unique/poem-22.png",
+      "asset": "assets/artwork-2026-10-03/poem-22.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "41f96b4131ed7d54b123a31b49bdb9daaf59f4f69fcc516f90e9b0ae65877068",
+      "reviewed_source_sha256": "191978c25003d0feb94a7683bbb9f1cf522734b4dc402580ecc6c878c0a10350"
+    },
+    {
+      "id": "poem-23",
+      "original": "assets/poems/unique/poem-23.png",
+      "asset": "assets/artwork-2026-10-03/poem-23.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7e3184cd7c38cf961b84b88cc84bc261707f04eab55fa5920694e5d228d0261f",
+      "reviewed_source_sha256": "8fdafcb250dfdff7eaf4b810143265df4deaa68d4a922afd0885c7cbaebd27a0"
+    },
+    {
+      "id": "poem-24",
+      "original": "assets/poems/unique/poem-24.png",
+      "asset": "assets/artwork-2026-10-03/poem-24.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "28d1c08ab17047f5c8ee4ee761a0b3d76ffe9195a6d9022808cb4720e0941504",
+      "reviewed_source_sha256": "a39c7c5fba03ecf7c111cdcfa163eb63b39ced93579f7f8c9c6790020df25e34"
+    },
+    {
+      "id": "poem-25",
+      "original": "assets/poems/unique/poem-25.png",
+      "asset": "assets/artwork-2026-10-03/poem-25.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "49a6b5a18f63c3653fe29b10fc77951940ecfa9e05c95fc4b659dfbd6184a86d",
+      "reviewed_source_sha256": "2bcd723792a38a8a6ab1f8bd268cee725efb5c34fd227b369b43e8399eefe29e"
+    },
+    {
+      "id": "poem-26",
+      "original": "assets/poems/unique/poem-26.png",
+      "asset": "assets/artwork-2026-10-03/poem-26.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "bc913453ed6c780484f5a87deab542f0d80c3a63a263bafeb4ccf65f3e11990e",
+      "reviewed_source_sha256": "a2a4ac52998fe65bd767abedbe8415f715665e61aaaf5441ede0161d86020d8c"
+    },
+    {
+      "id": "poem-27",
+      "original": "assets/poems/unique/poem-27.png",
+      "asset": "assets/artwork-2026-10-03/poem-27.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d9db3464395e61356530da627d7b5e07e59c966982e907b876cc30856593038f",
+      "reviewed_source_sha256": "114e3e456091c38ffd4071a2688291c79a5d74d54de5b72ee185b7b24fbfc689"
+    },
+    {
+      "id": "poem-28",
+      "original": "assets/poems/unique/poem-28.png",
+      "asset": "assets/artwork-2026-10-03/poem-28.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0b94db181f2c4155c3d2104a8a3fb186b96e76bc26157afc12d189c9407e2d0b",
+      "reviewed_source_sha256": "6fb2e65322140ebb3002752c4cbacf7af8ce8101b7d60c7ba3baab9c49c2c70e"
+    },
+    {
+      "id": "poem-29",
+      "original": "assets/poems/unique/poem-29.png",
+      "asset": "assets/artwork-2026-10-03/poem-29.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "21b535798bfb1b1882cd906d24f6fc5fd5c95bafa6d26f9f5cbd214e50d9f110",
+      "reviewed_source_sha256": "a4859c5000a8677661c7d60add75f6e1a05efe6925516777e4d36cb3bc8fde12"
+    },
+    {
+      "id": "poem-30",
+      "original": "assets/poems/unique/poem-30.png",
+      "asset": "assets/artwork-2026-10-03/poem-30.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "588e5916e40b714d00e123123115fd6eb5a9d27c9147b94c201b684b7c47003c",
+      "reviewed_source_sha256": "cd9b5dbe00fb6e09a703d7d1468874ca83d29f9a2d15bd73d4eadfbd9840452d"
+    },
+    {
+      "id": "poem-31",
+      "original": "assets/poems/unique/poem-31.png",
+      "asset": "assets/artwork-2026-10-03/poem-31.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "dab4e87a1eb9b06870536f949b73fe565c03fc1bfe9bd2455985e6a8f56f5e67",
+      "reviewed_source_sha256": "c9f8ad4ae4df4e74c72fb83299d8860685d2a55deadeb3c8433331751b238fca"
+    },
+    {
+      "id": "poem-32",
+      "original": "assets/poems/unique/poem-32.png",
+      "asset": "assets/artwork-2026-10-03/poem-32.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "23f116ce68051b0e20f21a54dba0299e8f2e11b3a789bdecaca0b3b89d95da52",
+      "reviewed_source_sha256": "36d616268617f36ff7eb795ebc9d95b217fdd22f26a806430e2608b8239629e6"
+    },
+    {
+      "id": "poem-33",
+      "original": "assets/poems/unique/poem-33.png",
+      "asset": "assets/artwork-2026-10-03/poem-33.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4b7147d57ec8fc0680c75b6c76a43ad54681e913fe09400e7d7211dccff9f110",
+      "reviewed_source_sha256": "bb88ca2010907334f1183c73c5875c8bdcce54a58caf5c3d139550d117613153"
+    },
+    {
+      "id": "poem-34",
+      "original": "assets/poems/unique/poem-34.png",
+      "asset": "assets/artwork-2026-10-03/poem-34.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "87f5ddd7c285e02f68847568e07459d42e37a68ac1172507eab032d7a4f9047a",
+      "reviewed_source_sha256": "8e4a03bb3d02077032321f4251ca1f3c4aca05b3d4a213cc5fb2399eda16c9a8"
+    },
+    {
+      "id": "poem-35",
+      "original": "assets/poems/unique/poem-35.png",
+      "asset": "assets/artwork-2026-10-03/poem-35.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "2936159d8b30f050ea803a460571c7ea006ededdca3b51cd9b6f308ef75d2195",
+      "reviewed_source_sha256": "235be9ce94ec8b60af3d8c9a824845fe4ab27c01fed8adfd68a87546666623fa"
+    },
+    {
+      "id": "poem-36",
+      "original": "assets/poems/unique/poem-36.png",
+      "asset": "assets/artwork-2026-10-03/poem-36.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9aff6af96ba7b436d54143d238aba88f685f5d20b2d5ab2309fea3fa22e7d761",
+      "reviewed_source_sha256": "2b05dc0e1a8da7f2992c805e58bb4b76f41689b8858812a46796c5b51c283c77"
+    },
+    {
+      "id": "poem-37",
+      "original": "assets/poems/unique/poem-37.png",
+      "asset": "assets/artwork-2026-10-03/poem-37.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0e757d9de497d2e227f9321e450fc789467d53d3c3b6c9adf40ec49019055ea0",
+      "reviewed_source_sha256": "a03e6e7f5d7a44ac9af01ea98e4e07d5a7b2de4006f91e13bd5bc9aad7730e67"
+    },
+    {
+      "id": "poem-38",
+      "original": "assets/poems/unique/poem-38.png",
+      "asset": "assets/artwork-2026-10-03/poem-38.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5673823c7dfb7b8099b8e272e37375e5d4bcd5f5f48ad5bf098f32efd9a77d12",
+      "reviewed_source_sha256": "56841ff067470991901b7fe4a34e358026bbddfb1d943f527086b044864db18f"
+    },
+    {
+      "id": "poem-39",
+      "original": "assets/poems/unique/poem-39.png",
+      "asset": "assets/artwork-2026-10-03/poem-39.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f27c5f85b925dd015a7c82befb2737fc555dd0a3d8e6eed961bb0aa4accfc1f5",
+      "reviewed_source_sha256": "70823211304a92b3c2ee2f8679b96a968df9a163cb3f950cbaa0eb354eff8d24"
+    },
+    {
+      "id": "poem-40",
+      "original": "assets/poems/unique/poem-40.png",
+      "asset": "assets/artwork-2026-10-03/poem-40.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "4ef3f890ca9b59383b6e7a0fa3dc95330223b116ab86ea33121c5f1f33a0cd71",
+      "reviewed_source_sha256": "2a3826b30480859a0cebc50782440b7b40191edc8f8a89bcade27563021d8dbe"
+    },
+    {
+      "id": "poem-41",
+      "original": "assets/poems/unique/poem-41.png",
+      "asset": "assets/artwork-2026-10-03/poem-41.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e8416e96fd4da1be3c3408fc414def3532703a80e14c817881b55e96eecf8f9d",
+      "reviewed_source_sha256": "99a9582a1a79ed6ea12a0061eef5ca0306bf4c2e067de5658b8ff6bb4bb93657"
+    },
+    {
+      "id": "poem-42",
+      "original": "assets/poems/unique/poem-42.png",
+      "asset": "assets/artwork-2026-10-03/poem-42.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "74e1867beccc61fa8c4478005c1ed81cb4407bbedb29903b6824ed25c0b0e560",
+      "reviewed_source_sha256": "b263ce8e53b68e57aad8c04c7ad7fba59ad795db0853904a4621a99bea83c5db"
+    },
+    {
+      "id": "poem-43",
+      "original": "assets/poems/unique/poem-43.png",
+      "asset": "assets/artwork-2026-10-03/poem-43.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "89fc49d73f1679311d8af4f7c8ffe8ff6cbf75f67d3036aa16a56dae53c76d56",
+      "reviewed_source_sha256": "ef36d5fe303d84f959dc2287eac2ce53554fab1ca8d3d24f045ed33a9a3be9df"
+    },
+    {
+      "id": "poem-44",
+      "original": "assets/poems/unique/poem-44.png",
+      "asset": "assets/artwork-2026-10-03/poem-44.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8e8d19792ca5cd0bc273c4257ffcdbb17c160c0ef16efa1d7f9459d240556549",
+      "reviewed_source_sha256": "b2ee6198f76f42737d9b7218370d6caf17ffd71fe893a2f26deb98c7ba76da10"
+    },
+    {
+      "id": "poem-45",
+      "original": "assets/poems/unique/poem-45.png",
+      "asset": "assets/artwork-2026-10-03/poem-45.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "12e686c55991ed13a53e81f23c0110e97b9c39736b72092e07595b01bbcb46d3",
+      "reviewed_source_sha256": "d44b9d18ae62028a80590963a87af9d043a0487cd319a50bd6d7e4fbf5220dac"
+    },
+    {
+      "id": "poem-46",
+      "original": "assets/poems/unique/poem-46.png",
+      "asset": "assets/artwork-2026-10-03/poem-46.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "716736e11a92ef2ba75b1dd164e78ccce69befd21b834b74c7c76f85aaef875e",
+      "reviewed_source_sha256": "b4eaf8d7ccd8573d60db0d11f4a944c77ceead41cd72b71cc6f360ba158d44dd"
+    },
+    {
+      "id": "poem-47",
+      "original": "assets/poems/unique/poem-47.png",
+      "asset": "assets/artwork-2026-10-03/poem-47.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5ca91b5eb98ab7ef337b6747d8ac792b2a49c32cc418a62f2861bdb06f58c550",
+      "reviewed_source_sha256": "a3326b98f18472c5991e0a8673442a1cfcad28445d446011bfdfd5980b1b2134"
+    },
+    {
+      "id": "poem-48",
+      "original": "assets/poems/unique/poem-48.png",
+      "asset": "assets/artwork-2026-10-03/poem-48.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6cca40a41359265f3d8383b072c42d28d2d932128fe159fab2ddaee31aae3aa9",
+      "reviewed_source_sha256": "94ef6825b1e4a580d5ce15bc5faf280a55891ea880e77b8c5d4bb2db7c7fa217"
+    },
+    {
+      "id": "poem-49",
+      "original": "assets/poems/unique/poem-49.png",
+      "asset": "assets/artwork-2026-10-03/poem-49.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cc634922a1059855a78099bd59d0aed9680ada7f0a49fe7f50e8a9a487ef1fd5",
+      "reviewed_source_sha256": "f7a490685bafa3e67f95ae590d07d5d6b2f27372c0ab290d41cf84bea6bc847b"
+    },
+    {
+      "id": "poem-50",
+      "original": "assets/poems/unique/poem-50.png",
+      "asset": "assets/artwork-2026-10-03/poem-50.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "774489db1edace6562aa2b0e00b4488be4f999b7c6013a1a1060a03b52a6a4a0",
+      "reviewed_source_sha256": "c906cba8f28f23c03ebff31b5a0626edb1ae60a9de4bc0820a8db7d50dd2479b"
+    },
+    {
+      "id": "poem-51",
+      "original": "assets/poems/unique/poem-51.png",
+      "asset": "assets/artwork-2026-10-03/poem-51.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ef6c505cdda1d75949282c0f8aa2db225c8838bc92b37b45f0492e5f3b2979ac",
+      "reviewed_source_sha256": "9c31803c4501da344464d107b89257e4a677d44e3711c714a697fb383e382aa7"
+    },
+    {
+      "id": "poem-52",
+      "original": "assets/poems/unique/poem-52.png",
+      "asset": "assets/artwork-2026-10-03/poem-52.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "fa58ed69d236805cdca1f31e947cbce3acf8530439b20003728fdd3582d03021",
+      "reviewed_source_sha256": "d6fa38ca4df7d0150651d536bb60f399849dfae69375147c9427bdf158982b55"
+    },
+    {
+      "id": "poem-53",
+      "original": "assets/poems/unique/poem-53.png",
+      "asset": "assets/artwork-2026-10-03/poem-53.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "03160a23bca800647065490debefaa89ace9809a8c31184d542fd2900979e72e",
+      "reviewed_source_sha256": "eacb17570f582e4f4e6db3fcff36548a249748da304453e01ba872950097365e"
+    },
+    {
+      "id": "poem-54",
+      "original": "assets/poems/unique/poem-54.png",
+      "asset": "assets/artwork-2026-10-03/poem-54.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "73aef1f64fedf2b732f7defe0d7684adbe86d1031abc96795eb2a523c49f2dc2",
+      "reviewed_source_sha256": "859e5345d29993c21c9b0efad0abdddc1602a06bf94ebb52a3941ebe6e3e9616"
+    },
+    {
+      "id": "poem-55",
+      "original": "assets/poems/unique/poem-55.png",
+      "asset": "assets/artwork-2026-10-03/poem-55.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e36c3587b6b7da118dfe8a0fe1d5df6da9b0c5d52250116ec9567527bf0261da",
+      "reviewed_source_sha256": "7547050f079ed02397928474a6c3ac5b80b7ef9da04ce213a8b66818618fc035"
+    },
+    {
+      "id": "poem-56",
+      "original": "assets/poems/unique/poem-56.png",
+      "asset": "assets/artwork-2026-10-03/poem-56.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9ee3437741baabc17a12cdd232b0bbba2c4a45959659ff5a662f8a271c9ee265",
+      "reviewed_source_sha256": "6589044f420d927f7ee36c3f121810ef009cf7c2e8a3512d5b4e423604847aea"
+    },
+    {
+      "id": "poem-57",
+      "original": "assets/poems/unique/poem-57.png",
+      "asset": "assets/artwork-2026-10-03/poem-57.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "813d9b84d2f7630c363e36a34dd0393de00973696b9da15fb16693d2552e0683",
+      "reviewed_source_sha256": "b686c4eed897fa3a90967bc2ac5d2031ad593b089b1ca2229d24997bd9421f61"
+    },
+    {
+      "id": "poem-58",
+      "original": "assets/poems/unique/poem-58.png",
+      "asset": "assets/artwork-2026-10-03/poem-58.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f15b07b9bbedf683c9633db8c46da063b2a0a4fbbb9a85df62d042ac0bdbf90e",
+      "reviewed_source_sha256": "769bbcdc460d42565b8bf67548b660e1d8a2c9ee2584aa145027e4684bb5ee2c"
+    },
+    {
+      "id": "poem-59",
+      "original": "assets/poems/unique/poem-59.png",
+      "asset": "assets/artwork-2026-10-03/poem-59.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "2e65a24a8e30e1915b3357a7b25bd5013b985a8a04f353218220a80e38da7e5c",
+      "reviewed_source_sha256": "c43d5114d5798fb8a5383d8ed9b8b3e1a5c34474feb6a6d8913516a59becd596"
+    },
+    {
+      "id": "poem-60",
+      "original": "assets/poems/unique/poem-60.png",
+      "asset": "assets/artwork-2026-10-03/poem-60.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6fc0d3ee6165de9de05dabd6a2613273192ecd5a6f3d8742be5d868afb5da6b2",
+      "reviewed_source_sha256": "6ca06eb2d4e3012fc4691c6eccb19ca2039269fa26b83a3fdacc912580a685fa"
+    },
+    {
+      "id": "poem-61",
+      "original": "assets/poems/unique/poem-61.png",
+      "asset": "assets/artwork-2026-10-03/poem-61.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c28707da19f20125ff90e18f85710567186f50bd32a614f19e4b754249a054b8",
+      "reviewed_source_sha256": "4120cd4e9c08921507a5c92d5f8a9d127707a22e882368e06822147e1a82f361"
+    },
+    {
+      "id": "poem-62",
+      "original": "assets/poems/unique/poem-62.png",
+      "asset": "assets/artwork-2026-10-03/poem-62.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "114047a29ac342daea3c47f179c098b138c8a654cd48c6045490f0deadcd50ac",
+      "reviewed_source_sha256": "ff7cac62168058e454a5c6f2fc471a05e2378432f3199fd25597b947416472c8"
+    },
+    {
+      "id": "poem-63",
+      "original": "assets/poems/unique/poem-63.png",
+      "asset": "assets/artwork-2026-10-03/poem-63.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "9ad525e7c92fd726f8540794880723787cc574ad5fb6c1ed94336d20d555612e",
+      "reviewed_source_sha256": "a864676130bb57fa9b593a04f0bdeab9be7c274e8bd5f46f9afd31a05dd07f30"
+    },
+    {
+      "id": "poem-64",
+      "original": "assets/poems/unique/poem-64.png",
+      "asset": "assets/artwork-2026-10-03/poem-64.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e1ac5d8545f4327368890e9b0868b5389b8500493ee21012cef70ded006117d6",
+      "reviewed_source_sha256": "26fb491ec0b4c4c299e530d0354b2d0cba25d9838c05c8e72f4df45ea9ea5d6e"
+    },
+    {
+      "id": "poem-65",
+      "original": "assets/poems/unique/poem-65.png",
+      "asset": "assets/artwork-2026-10-03/poem-65.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "df9793564300155771a877ef95b57235b84b6830e511c870cbaffe993216b67c",
+      "reviewed_source_sha256": "69475af1b3506fec164fdd1a53764193789fb24ea1b3c025e7353acffa9b2f8d"
+    },
+    {
+      "id": "poem-66",
+      "original": "assets/poems/unique/poem-66.png",
+      "asset": "assets/artwork-2026-10-03/poem-66.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f378addf6ccc3975545b66ccd8be8f4992acd4541afcbe22a1add1200e3d349a",
+      "reviewed_source_sha256": "14b5715a9b254429640a9eda34ba01d19b6c140a6fb733212edca762f527233c"
+    },
+    {
+      "id": "poem-67",
+      "original": "assets/poems/unique/poem-67.png",
+      "asset": "assets/artwork-2026-10-03/poem-67.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5e5176ec2674741273ad6fd2eb6b3049db42ecd3513266ca1d7877bd4dc7bc06",
+      "reviewed_source_sha256": "e7bbcd83d25d4a86d7ab9f24362e260787cb23c9cf14411b652a64024b444e80"
+    },
+    {
+      "id": "poem-68",
+      "original": "assets/poems/unique/poem-68.png",
+      "asset": "assets/artwork-2026-10-03/poem-68.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "64c2cf785d29fcd20237f46b66cdafe1be38cb0f671cd490abe76e02830d8c67",
+      "reviewed_source_sha256": "b033745aa06caba51779164de90c5305e91700924783af540ec0fe1cfa992bc4"
+    },
+    {
+      "id": "introduction",
+      "original": "assets/poems/flute-question.png",
+      "asset": "assets/artwork-2026-10-03/introduction.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "797876ec3e344e0f6c7e4a25ba89ea4675e4f6a42f316737550f386b344a09e1",
+      "reviewed_source_sha256": "d404443a6d68ec791cbaa67f856230b69c3e2c237d8e1ddd04fdb40a905ba801"
+    },
+    {
+      "id": "front-cover",
+      "original": "assets/covers/singhasan-earth-beneath-throne-v2-lettered.png",
+      "asset": "assets/artwork-2026-10-03/front-cover.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "b561b683933bc16a1e83e16019cd7f120b40a61f66d8e40ba70d7a4ea9d27e69",
+      "reviewed_source_sha256": "b561b683933bc16a1e83e16019cd7f120b40a61f66d8e40ba70d7a4ea9d27e69"
+    },
+    {
+      "id": "back-cover",
+      "original": "assets/covers/singhasan-back-cover-v1.png",
+      "asset": "assets/artwork-2026-10-03/back-cover.webp",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "86e33726a5db8ed58178d0bc9cd283cb71418d8ba6037714360f6de2072ba8cf",
+      "reviewed_source_sha256": "94ffa2fca6e9b66b84552299d1521883bde3289ef17ca2f45565d2a10e59345b"
+    },
+    {
+      "id": "poet-portrait",
+      "original": "assets/writers/41-earth-voice-v1.png",
+      "asset": "assets/artwork-2026-10-03/poet-portrait.webp",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "6df1100194408c35b6cee49ccd0fd68d222013e8e9a8e4b1de53437d3d4b0260",
+      "reviewed_source_sha256": "b9e9984f99bd44505cb6a57bfce03d5a97964635e2cc6772e776fb7061e480e5"
+    },
+    {
+      "id": "footer",
+      "original": "assets/odisha-watercolour.webp",
+      "asset": "assets/footer-earth/earth-grass-stone-v1.webp",
+      "width": 2172,
+      "height": 724,
+      "sha256": "e56d24fe14c8fc6c694d2df50d616708b40d3402434b5195db692bcaf39d39f7",
+      "reviewed_source_sha256": "77e0d8058f941c766ff42e0ba7be1f6cbc00b60422b65c65a93c781fd3709f9a"
+    },
+    {
+      "id": "cotton-paper",
+      "original": "assets/cotton-paper.webp",
+      "asset": "assets/artwork-2026-10-03/cotton-paper.webp",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9bf1702d8aa54b50cadfbbde1421d725b461423eb0cbbe546afdea4f9ec801a8",
+      "reviewed_source_sha256": "af880bd06824aba0180f16f25178401066631da850451eec8d97e64188be555d"
+    },
+    {
+      "id": "earth-wash",
+      "original": "assets/backgrounds/earth-wash.webp",
+      "asset": "assets/artwork-2026-10-03/earth-wash.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "5f58b406df3be76dc43f81716b8eb786c18f2e92a80362964f09dc31cb9c38d8",
+      "reviewed_source_sha256": "9f80d0d61d647521fbd46d2b5f4851bde6f513428771e3f8a49d7279835adfe8"
+    },
+    {
+      "id": "monsoon-wash",
+      "original": "assets/backgrounds/monsoon-wash.webp",
+      "asset": "assets/artwork-2026-10-03/monsoon-wash.webp",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "289a96b0c19149eb0f27a2eb93a6bb4f192be920c4b9cd4eb2c5c17267034c09",
+      "reviewed_source_sha256": "3d4a52df843200116e72066a3b942d491931332dd3ccc05e83885f57d5fa02b8"
+    }
+  ]
+}

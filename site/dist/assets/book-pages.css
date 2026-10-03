@@ -3,7 +3,7 @@
 .reading-page::before{opacity:.07}.reading-page::after{opacity:.07}
 .reading-page #reading{width:min(1280px,calc(100% - 72px));margin:32px auto 52px}
 .printed-spread{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto 1fr auto;column-gap:96px;row-gap:0;min-height:820px;padding:30px 56px 26px;border:5px solid var(--book-binding);border-radius:5px;background:var(--paper);box-shadow:0 2px 0 #bcae92,0 4px 0 #eadfc7,0 6px 0 #baa88a,0 8px 0 #eadfc7,0 10px 0 var(--book-binding),0 20px 32px #263c3c24}
-.printed-spread::before{content:'';position:absolute;inset:0;z-index:-2;pointer-events:none;background:url('cotton-paper.webp') center/720px repeat;opacity:.16}
+.printed-spread::before{content:'';position:absolute;inset:0;z-index:-2;pointer-events:none;background:url('artwork-2026-10-03/cotton-paper.webp') center/720px repeat;opacity:.16}
 .printed-spread::after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:2px;background:linear-gradient(90deg,#3b29171a,transparent 2%,transparent 46%,#4c3b2010 48%,#4c3b2029 49.7%,#fff3 50%,#4c3b2010 51.1%,transparent 54%,transparent 98%,#3b291710)}
 .book-running-head{grid-column:1/-1;grid-row:1;display:flex;justify-content:space-between;gap:32px;margin-bottom:32px;padding-bottom:14px;color:var(--muted);font:400 14px/1.8 var(--odia)}
 .book-running-head a{min-height:44px;display:flex;align-items:center;text-underline-offset:5px}.book-running-head a:hover{text-decoration:underline}

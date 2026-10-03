@@ -95,12 +95,16 @@
 }
 
 /* Quiet is a setting of this same reader, with identical text measurements. */
-.unified-quiet-cover{display:none}
 .quiet-mode .book-companion{display:none!important}
-.quiet-mode.cover-edition .bound-cover{display:none}
-.quiet-mode.cover-edition .unified-quiet-cover{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%;color:var(--ink)}
-.unified-quiet-cover p{font:12px/1.5 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.unified-quiet-cover h1{font:400 clamp(38px,7vw,66px)/1.6 var(--odia)}
+/* Same cover boards and copy; only the artwork is hidden. */
+.front-cover-type{display:none}
+.quiet-mode .front-cover-art{display:none}
+.quiet-mode .front-cover-type{display:block;position:absolute;top:7%;left:8%;right:8%;text-align:center;color:#263c3c}
+.front-cover-type h1{font:600 16cqw/1.35 var(--odia);margin:0 0 2cqw}
+.front-cover-type p{font:400 5.8cqw/1.65 var(--odia);margin:0}
+.quiet-mode .front-cover-colophon{color:#263c3c;text-shadow:none}
+.quiet-mode .back-cover-landscape{display:none}
+.quiet-mode .back-cover-ornament,.quiet-mode .back-cover-author img{visibility:hidden}
 .book-cover-route>nav{width:min(680px,100%);flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 24px}
 .book-cover-route>nav [data-quiet-toggle]{font:14px var(--ui);color:var(--sea);background:none;border:0;min-height:44px;text-decoration:underline;text-underline-offset:4px}
 .book-library{border-bottom:1px solid var(--line);margin-bottom:12px;padding-bottom:8px}

@@ -1,4 +1,4 @@
-"""Validate author-supplied translations before adding them to the reader."""
+"""Validate reviewed translations before adding them to the reader."""
 import json
 
 def load_translations(directory, languages):

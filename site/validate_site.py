@@ -3,6 +3,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import hashlib,json,re,xml.etree.ElementTree as ET
+from artwork import image_asset, MANIFEST
 root=Path(__file__).resolve().parent/'dist'
 class Page(HTMLParser):
     def __init__(self):
@@ -15,7 +16,7 @@ class Page(HTMLParser):
         if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
 errors=[]
 pages=sorted(root.glob('*.html'))
-assert len(pages)==76, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems'
+assert len(pages)==77, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -30,20 +31,26 @@ book=json.loads((root/'book.js').read_text().removeprefix('window.BOOK = ').stri
 assert len(book['chapters'])==69
 for n in range(1,69):
     html=(root/f'poem-{n}.html').read_text()
-    assert f'assets/poems/unique/poem-{n:02}.png' in html and 'class="illustration-reading"' in html
-assert len({hashlib.sha256((root/f'assets/poems/unique/poem-{n:02}.png').read_bytes()).hexdigest() for n in range(1,69)})==68
+    assert image_asset(f'assets/poems/unique/poem-{n:02}.png') in html and 'class="illustration-reading"' in html
+assert len({hashlib.sha256((root/image_asset(f'assets/poems/unique/poem-{n:02}.png')).read_bytes()).hexdigest() for n in range(1,69)})==68
+assert len(MANIFEST['items']) == 76
+published = '\n'.join(p.read_text() for p in pages) + '\n' + '\n'.join(p.read_text() for p in root.rglob('*.css'))
+for item in MANIFEST['items']:
+    assert hashlib.sha256((root/item['asset']).read_bytes()).hexdigest() == item['sha256'], item['id']
+    assert Path(item['asset']).name in published, f"Unconnected artwork: {item['id']}"
 assert (root/'CNAME').read_text().strip()=='singhasan.poemwithoutborders.org'
-assert len(ET.parse(root/'sitemap.xml').getroot())==76
+assert len(ET.parse(root/'sitemap.xml').getroot())==77
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 76 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 77 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
     name='intro.html' if not chapter['number'] else f"poem-{chapter['number']}.html"
     html=(root/name).read_text()
     assert 'reading-page standalone-page' in html, name
-    assert f'href="{name}?view=book"' in html, name
+    for quiet in (0,1):
+        assert f'href="{name}?view=book&amp;quiet={quiet}"' in html, name
     data=json.loads(re.search(r'<script type="application/json" id="reading-data">(.*?)</script>',html,re.S).group(1))
     assert data['id']==chapter['number']
     expected=[]
@@ -98,4 +105,11 @@ for track in audio:
         previous=cue['end']
 assert 'id="follow-book"' in (root/'read-along.html').read_text()
 assert 'id="audio-follow"' in (root/'listen.html').read_text()
+catalog=json.loads(re.search(r'<script type="application/json" id="audio-catalog">(.*?)</script>',(root/'listen.html').read_text(),re.S).group(1))
+for track in catalog:
+    if track['id']=='closing':
+        assert track['reading_route']=='back-cover.html', 'Closing should return to the back cover'
+    if track['id'] not in ('welcome','closing'):
+        timing=json.loads((root/'assets/audio-sync'/f"{track['id']}.json").read_text())
+        assert bool(track['review_note']) == (timing.get('syncSafe') is False), f"Missing or stale completeness notice: {track['id']}"
 print('Validated acoustic follow timings for the introduction and all 68 poems against their recordings and source words.')

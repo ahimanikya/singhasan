@@ -12,3 +12,6 @@ site/EDITORIAL-PREFERENCES.txt
 **/*.pyc
 **/.env*
 site/.openai/
+site/services/node_modules
+site/services/*debug.log
+site/services/.firebase/
