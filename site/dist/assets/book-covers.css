@@ -33,3 +33,8 @@
 .focus-book-frame.closed-book.back-facing{border-left-width:1px;border-right-width:8px;box-shadow:-2px 1px 0 #c9b99c,-4px 2px 0 #eee2ca,-6px 3px 0 #b8a789,-8px 4px 0 var(--binding),-10px 12px 28px #19231e3d}
 .focus-book-frame.closed-book.back-facing::after{transform:scaleX(-1)}
 @media(max-width:760px){.book-opening{gap:32px;padding-inline:8px}.book-opening .book-cover{width:calc(100% - 16px);max-width:360px;margin-top:0}.back-cover-page{padding-inline:8px}.bound-cover{border-left-width:6px}.bound-back{border-left-width:1px;border-right-width:6px}}
+
+/* The whole front cover opens the volume, with the same target as its text link. */
+.book-cover-route .cover-entry{display:block;width:100%;height:100%;color:inherit;text-decoration:none;cursor:pointer}
+.book-cover-route .cover-entry:focus-visible{outline:3px solid var(--rust);outline-offset:6px}
+@media(hover:hover){.book-cover-route .cover-entry:hover{filter:brightness(1.035)}}

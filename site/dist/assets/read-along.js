@@ -10,7 +10,7 @@ const format=t=>`${Math.floor(Math.max(0,t)/60)}:${String(Math.floor(Math.max(0,
 const safeToFollow=()=>tracks[index].syncSafe!==false;
 function setStatus(message=''){status.textContent=[safeToFollow()?'':tracks[index].syncNote||'Turn the pages manually for this recording.',message].filter(Boolean).join(' ')}
 function save(){try{localStorage.setItem(key,JSON.stringify({id:tracks[index].id,time:pendingTime===null?audio.currentTime:clampPlaybackTime(pendingTime,tracks[index].duration_seconds),speed:audio.playbackRate,quiet,follow:preferFollowing,continuous:continuous.checked}))}catch{}}
-function updateURL(){const u=new URL(location.href);u.search='';u.searchParams.set('track',tracks[index].id);u.searchParams.set('quiet',quiet?'1':'0');history.replaceState(null,'',u)}
+function updateURL(){const u=new URL(location.href);u.search='';u.searchParams.set('track',tracks[index].id);u.searchParams.set('quiet',quiet?'1':'0');history.replaceState(history.state,'',u)}
 function clearHighlight(){if(highlight){highlight.classList.remove('audio-stanza');highlight=null}}
 function paint(){seek.max=Number.isFinite(audio.duration)?audio.duration:tracks[index].duration_seconds;seek.value=audio.currentTime;seek.setAttribute('aria-valuetext',`${format(audio.currentTime)} of ${format(Number(seek.max))}`);$('#follow-time').textContent=`${format(audio.currentTime)} / ${format(Number(seek.max))}`;const waiting=autoplayTicket===loading;play.textContent=audio.paused&&!waiting?'Play':'Pause';play.setAttribute('aria-label',audio.paused&&!waiting?'Play reading':'Pause reading')}
 function sync(force=false){

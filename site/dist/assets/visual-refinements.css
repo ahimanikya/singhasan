@@ -142,15 +142,12 @@ body.quiet-mode .section-ornament,body.quiet-mode>.footer-landscape{display:none
  .standalone-page>.footer-landscape :is(.footer-grass,.footer-stone){width:78px;height:40px;background-size:216px 72px}
 }
 
-/* A single, quiet closing row: previous arrow, end mark, next arrow. */
+/* Standalone poems close with their ornament; page controls belong to the book. */
 .nav-ending{display:none}
-.standalone-page:not(.illustrated-mode) .reader>.poem-ending{display:none}
-.standalone-page:not(.illustrated-mode) .page-nav{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:12px}
-.standalone-page:not(.illustrated-mode) .page-nav>a{width:44px;max-width:none;min-height:44px;justify-content:center}
-.standalone-page:not(.illustrated-mode) .page-nav>a:first-child{grid-column:1;grid-row:1}
-.standalone-page:not(.illustrated-mode) .page-nav>a:last-child{grid-column:3;grid-row:1}
-.standalone-page:not(.illustrated-mode) .page-nav .nav-label{display:none}
-.standalone-page:not(.illustrated-mode) .page-nav .previous-arrow{display:inline-flex}
-.standalone-page:not(.illustrated-mode) .page-nav .nav-ending{display:flex;grid-column:2;grid-row:1;justify-content:center;align-items:center;color:var(--rust);pointer-events:none}
-.standalone-page:not(.illustrated-mode) .page-nav .nav-ending svg{width:34px;height:22px}
-@media print{.standalone-page:not(.illustrated-mode) .reader>.poem-ending{display:flex}}
+.standalone-page:not(.illustrated-mode) .book-reading-end{display:none}
+.standalone-page:not(.illustrated-mode) .reader>.poem-ending{display:flex;justify-content:center}
+
+/* A brief crossfade between site and reader, where supported by the browser. */
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease-out}
+@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}

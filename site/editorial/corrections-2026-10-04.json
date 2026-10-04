@@ -231,6 +231,20 @@
       "section": 21,
       "before": "ବଢ଼ାକଯାକ",
       "after": "ବଢ଼ାକ ଯାକ"
+    },
+    {
+      "section": 28,
+      "before": "କୋଟାଏ",
+      "after": "ଗୋଟାଏ",
+      "source": "User, 4 October 2026: I think ଗୋଟାଏ is correct",
+      "reason": "User selected singular reading while reviewing the quantity question."
+    },
+    {
+      "section": 38,
+      "before": "ପେଚାରୀ",
+      "after": "ପାଚେରୀ",
+      "source": "User clarification, 4 October 2026: Pacheri",
+      "reason": "Boundary wall; correct vowel placement."
     }
   ],
   "pending": [],

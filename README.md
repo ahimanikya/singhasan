@@ -67,7 +67,7 @@ The standalone ସିଂହଦ୍ଵାର page has no English Introduction eyeb
 
 ## Current editorial phase · 4 October 2026
 
-Audio generation, replacements and listening review are deferred. Human Natural Translation is installed and versioned under `site/editorial/skills/human-natural-translation/`. English, Tamil and Hindi are first, with a proposed complete-poem pilot using 1, 21 and 24; other languages remain planned. No translations have been published. See `site/editorial/translation-review/PLAN.json`.
+Audio generation, replacements and listening review are deferred. Human Natural Translation is installed and versioned under `site/editorial/skills/human-natural-translation/`. English, Tamil and Hindi are first, with a proposed complete-poem pilot using 1, 21 and 24; other languages remain planned. The current publication includes reviewed translations for 3 English, 21 Hindi and 3 Bengali poem sections. Complete working translations and Tamil remain local drafts for review. Only ready sections are included in the public repository and built site; private review notes remain local.
 
 The updated Kabita Live comparison is `design-system/AUDIT-2026-10-04.json`. Search remains in the existing reader tools, as requested for a single book; Contents keeps its current design. Illustrated is the default book mode and starts with paper-turn animation on. Quiet starts with animation off; each mode retains its own explicit choice. Sound stays opt-in and reduced-motion preferences override animation. Translation links retain the chosen language when turning pages, leaving the reader and sharing. An unavailable language falls back visibly to Odia. Source poems and saved-reading data formats are unchanged.
 
@@ -86,3 +86,7 @@ Poem endings use three small botanical SVG fleurons in a stable cycle (leaf, pai
 Standalone poem closing layout: navigation and reader responses align with the poem column; the Like and collapsed Comments controls share a compact row. Opening Comments expands the existing form below. Reduced end spacing and footer art apply only to standalone pages, preserving reader pagination and other page footers.
 
 The poem header contains reading controls only. Like is offered once, in the reader-response section below the poem; no top heart shortcut is rendered.
+
+## Reader navigation · 4 October 2026
+
+The front cover opens the book. Paper turns cover the full paper area, including headings, margins and folios. Quiet mode retains its separate motion preference. Standalone poem pages keep their closing ornament and responses without previous/next navigation. Exit reader returns to the entry page with its language, scroll position and introduction passage, even after moving between chapters. A short view transition is used where supported, respecting reduced motion.

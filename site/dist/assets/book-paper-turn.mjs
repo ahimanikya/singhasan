@@ -1,18 +1,24 @@
 /* Kabita Live's paper curl reveals the actual next page; text stays selectable. */
 let turnLayer=null,turnFrame=0;
 export function cancelPaperTurn(){cancelAnimationFrame(turnFrame);turnFrame=0;turnLayer?.remove();turnLayer=null}
-export function capturePaper(leaf,book){
- cancelPaperTurn();const box=leaf.getBoundingClientRect(),shell=book.getBoundingClientRect(),copy=leaf.cloneNode(true);
- const sources=[leaf,...leaf.querySelectorAll('*')],copies=[copy,...copy.querySelectorAll('*')];
+export function capturePaper(book){
+ cancelPaperTurn();
+ if(matchMedia('(prefers-reduced-motion:reduce)').matches)return null;
+ const box=book.getBoundingClientRect(),sheet=book.cloneNode(true);
+ const sources=[book,...book.querySelectorAll('*')],copies=[sheet,...sheet.querySelectorAll('*')];
  for(let i=0;i<sources.length;i++){
   const from=sources[i],to=copies[i],style=getComputedStyle(from);
-  // Preserve styles that depend on IDs or the direct-child reading layout.
-  if(i===0||from.id)to.style.cssText=Array.from(style,name=>name+':'+style.getPropertyValue(name)).join(';');
-  for(const name of ['break-inside','orphans','widows'])to.style.setProperty(name,style.getPropertyValue(name));
+  // Freeze the outgoing spread before render changes art/text visibility and columns.
+  to.style.cssText=Array.from(style,name=>name+':'+style.getPropertyValue(name)).join(';');
   to.removeAttribute('id');to.removeAttribute('tabindex');to.removeAttribute('data-line');
  }
- copy.classList.add('turn-snapshot');Object.assign(copy.style,{position:'absolute',left:'0',top:'0',margin:'0',width:box.width+'px',height:box.height+'px',visibility:'visible',backgroundColor:getComputedStyle(book).backgroundColor});
- return {copy,width:box.width,height:box.height,left:box.left-shell.left-book.clientLeft,top:box.top-shell.top-book.clientTop};
+ Object.assign(sheet.style,{position:'absolute',left:-book.clientLeft+'px',top:-book.clientTop+'px',margin:'0',width:box.width+'px',height:box.height+'px',boxShadow:'none'});
+ // Clip at the inside of the binding, not at the text or illustration rectangle.
+ // Keeping a separate wrapper lets the fold include headings, margins and folios.
+ const copy=document.createElement('div');copy.className='turn-snapshot';
+ Object.assign(copy.style,{width:book.clientWidth+'px',height:book.clientHeight+'px'});
+ copy.append(sheet);
+ return {copy,width:book.clientWidth,height:book.clientHeight,left:0,top:0};
 }
 export function paperTurn(direction,paper,book){
  if(!paper||matchMedia('(prefers-reduced-motion:reduce)').matches)return;

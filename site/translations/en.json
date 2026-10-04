@@ -1,4 +1,143 @@
 {
   "language": "en",
-  "sections": {}
+  "sections": {
+    "1": {
+      "status": "ready",
+      "title": "Poem 1",
+      "stanzas": [
+        [
+          "All was well—",
+          "cows grazed",
+          "across the field,",
+          "on the pasture’s carpet."
+        ],
+        [
+          "Grass flowers bloomed",
+          "in every colour.",
+          "A cowherd boy",
+          "whistled",
+          "from a kadamba branch;",
+          "snakes and other reptiles",
+          "listened to the tune.",
+          "A quarrel broke out.",
+          "Neither women nor gold were at stake,",
+          "yet the quarrel grew."
+        ],
+        [
+          "Worry took hold:",
+          "was some calamity",
+          "about to strike?",
+          "Would the villages, fields and woods burn?",
+          "Would the wind strip people of their clothes?",
+          "Would the flute notes",
+          "drifting from the kadamba branch die away?",
+          "Would the sky and stars",
+          "fall in pieces?",
+          "Would the fierce sun’s radiance and pride",
+          "blow away",
+          "as a handful of ash?",
+          "Would every thread",
+          "binding heart to heart",
+          "snap?",
+          "Would anarchy, that python,",
+          "swallow the country",
+          "and its government?"
+        ],
+        [
+          "Then, dispelling",
+          "those fears filling the sky,",
+          "from who knows where",
+          "a sturdy young fellow came running,",
+          "like a golden morning.",
+          "From a high mound of earth",
+          "he gave orders with a king’s bearing.",
+          "His companions sat below",
+          "like subjects,",
+          "and the uproar died",
+          "in a moment."
+        ],
+        [
+          "There was no magic",
+          "in the Vikramadityas.",
+          "As the earth was dug away, it became clear—",
+          "beneath that high mound",
+          "a throne lay hidden."
+        ]
+      ]
+    },
+    "21": {
+      "status": "ready",
+      "title": "Poem 21",
+      "stanzas": [
+        [
+          "The gods, too,",
+          "knew a thing or two!",
+          "From time to time,",
+          "without a word to anyone,",
+          "they would mount a black horse, a white horse,",
+          "and set out",
+          "to conquer the world."
+        ],
+        [
+          "The story",
+          "grew thrilling",
+          "when, slipping a jewelled ring",
+          "onto the milk-seller’s hand,",
+          "the Lords took every bit from the milk pot—",
+          "the milk, even what it left behind—",
+          "all in secret.",
+          "Word of the Maharaja’s might",
+          "travelled a thousand kos",
+          "from mouth to mouth:",
+          "the gods, in the king’s service!"
+        ],
+        [
+          "Had no such story",
+          "been fashioned,",
+          "tell me—",
+          "who would bring offerings,",
+          "and why,",
+          "to this half-carved wooden doll,",
+          "this uncomprehending image,",
+          "in the Great Temple,",
+          "on the jewelled altar,",
+          "with an innocent child’s",
+          "simple faith?"
+        ]
+      ]
+    },
+    "24": {
+      "status": "ready",
+      "title": "Poem 24",
+      "stanzas": [
+        [
+          "Who is a subject, who a king?",
+          "Who is Kapila, who Kapileshwar?"
+        ],
+        [
+          "When water pours from the pot",
+          "in an elephant’s trunk,",
+          "fortune changes.",
+          "A cowherd boy, as in a dream,",
+          "becomes",
+          "Gajapati, Pashupatipati,",
+          "mightiest of heroes,",
+          "king of kings…"
+        ],
+        [
+          "Once he is seated",
+          "on the throne,",
+          "there is no getting",
+          "to see Kapila.",
+          "A knot of idlers watches",
+          "the Kasias turn back",
+          "from the Lion Gate,",
+          "while the moustached kotwal",
+          "and armed gatekeepers",
+          "bar the way",
+          "with their strange airs."
+        ]
+      ]
+    }
+  }
 }
