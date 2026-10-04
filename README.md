@@ -43,7 +43,7 @@ Rebuild and validate after replacing any recording. Timings must be regenerated 
 
 ## Reader contact and responses · 3 October 2026
 
-`contact.html` accepts private notes addressed to Ahimanikya at ahimanikya@gmail.com on the poet’s behalf. Its current delivery is an email draft that the reader reviews and sends. Poem-specific links include the source poem. It does not claim that opening a draft delivers the message.
+`contact.html` accepts private notes for the poet’s family through the dedicated Firebase feedback collection. Receipt is confirmed only after the message is saved; failures retain the entered text. Personal contact addresses are never exposed in the public site or client configuration.
 
 All 68 standalone poems include a Like button, a collapsed Comments section with explicit publication consent, and a private-note link. These are excluded from illustrated and quiet reading. The interaction code and visual patterns are adapted from Kabita Live. No Kabita Live cloud configuration, reader records or analytics IDs have been imported.
 
@@ -51,9 +51,9 @@ The separate Singhasan Firebase service runs in the dedicated `singhasan` projec
 
 The site's `allowedHosts` check scopes its own interface to `singhasan.poemwithoutborders.org`. Firebase's authorized-domain list applies to OAuth redirects, not anonymous authentication, and was left unchanged. Security is enforced by the Firestore rules; the public web-app API key is not a secret.
 
-After installing the pinned dependencies in `site/services`, `npm run build` bundles the reader services into the static site. `npm test` checks private email delivery preparation. `npm run test:rules` uses a local Firestore emulator (Java 21+) to test private-message access, atomic likes, rate limits and moderation. The build continues to use Python and GitHub Pages; adding these components does not require migrating the book to Astro.
+After installing the pinned dependencies in `site/services`, `npm run build` bundles the reader services into the static site. `npm test` checks private Firebase delivery, validation, duplicate prevention and failure recovery. `npm run test:rules` uses a local Firestore emulator (Java 21+) to test private-message access, atomic likes, rate limits and moderation. The build continues to use Python and GitHub Pages; adding these components does not require migrating the book to Astro.
 
-Keep using the existing project and database; do not create replacements during maintenance. Deploy changes to `site/services/firestore.rules` and `firestore.indexes.json` deliberately, then verify the affected reader operations before publishing. Keep `privateFeedback` false to deliver private messages through the reader's email app; enabling it would store notes in Firestore without sending email notifications.
+Keep using the existing project and database; do not create replacements during maintenance. Deploy changes to `site/services/firestore.rules` and `firestore.indexes.json` deliberately, then verify the affected reader operations before publishing. Keep `privateFeedback` enabled for the private contact form. Messages are stored in Firestore for the family; automatic email notifications are not configured.
 
 Public comments default to review before publication. In the dedicated project’s console, review `commentSubmissions`; publish only the exact `poemId`, `name`, `message`, and current `publishedAt` to `publicComments` using the same record ID, then mark the source `published`. Never copy UID or private contact fields into public comments. Reject by keeping a submission out of the public collection. The tested editor-client rules require source status and public record changes in one atomic batch; Console administrative writes bypass those client rules. Anonymous likes are per browser identity, not verified-person votes.
 
