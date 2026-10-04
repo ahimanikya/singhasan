@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-04",
+  "status": "Option B selected by the user and applied locally",
+  "options": [
+    {
+      "key": "a",
+      "family": "Noto Serif Oriya",
+      "weight": 600
+    },
+    {
+      "key": "b",
+      "family": "Anek Odia",
+      "weight": 600
+    },
+    {
+      "key": "c",
+      "family": "Baloo Bhaina 2",
+      "weight": 500
+    }
+  ],
+  "artwork": "Existing current front-cover.png, unchanged. CSS paper title panel covers old embedded lettering for the type comparison.",
+  "scope": "Masthead, cover title and lighter poet name; poem reading fonts unchanged.",
+  "verification": {
+    "fonts": "All three families loaded and visually distinct in the browser.",
+    "layout": "No horizontal overflow at 1280px; enlarged specimen opens in a native dialog.",
+    "title": "Title spacing adjusted to retain Odia upper marks.",
+    "production": "Applied locally to the masthead and shared front cover (home, both reader modes, listening edition). Matching social cover exported. Not yet published."
+  },
+  "selected": "b",
+  "social_cover": {
+    "file": "site/dist/assets/covers/singhasan-anek-2026-10-04.png",
+    "width": 1280,
+    "height": 1920,
+    "method": "Browser rendering of the shared HTML/CSS cover at 1280px; existing illustration unchanged.",
+    "sha256": "cd26f6452ad0687b511e289aa3f011041fb51ef9c2ca198b9eccc4cb63951def"
+  }
+}

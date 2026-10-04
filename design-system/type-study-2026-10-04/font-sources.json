@@ -1,0 +1,22 @@
+[
+  {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/anekodia/AnekOdia%5Bwdth%2Cwght%5D.ttf",
+    "file": "design-system/type-study-2026-10-04/fonts/AnekOdia-Variable.ttf",
+    "sha256": "673bb6e51b71af1de1f11f9a547a3a58c50a6fa32d480958e1ef0f06980ca45f"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/anekodia/OFL.txt",
+    "file": "design-system/type-study-2026-10-04/fonts/anekodia-OFL.txt",
+    "sha256": "de62be758bba267e653a5f457dfebb4680957e2c343eb3e7de15aff4746bed05"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/baloobhaina2/BalooBhaina2%5Bwght%5D.ttf",
+    "file": "design-system/type-study-2026-10-04/fonts/BalooBhaina2-Variable.ttf",
+    "sha256": "d22904b7337723201c910edf70be2de6136ec65be366f2b0e6489860f1343f04"
+  },
+  {
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/baloobhaina2/OFL.txt",
+    "file": "design-system/type-study-2026-10-04/fonts/baloobhaina2-OFL.txt",
+    "sha256": "ad09b05dc8bc678c9daf7c4c5f7ef1f55e5726127f4330b2e98e40b9dffcb860"
+  }
+]

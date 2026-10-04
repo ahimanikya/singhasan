@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-04",
+  "status": "Closed: user approved retaining Noto Serif Oriya for poem reading",
+  "current": "Noto Serif Oriya 400",
+  "candidate": "Anek Odia 400, with 450 and 500 available",
+  "baseline": {
+    "fontSize": 24,
+    "lineHeight": 1.9,
+    "phoneTextWidth": 350
+  },
+  "source": "site/dist/book.js",
+  "sourceSha256": "f3e34cdbaa7157cfb529e3456f5d5ba5c7d409710536dc054774cab69afd9162",
+  "poemsIncluded": 68,
+  "suggested": [
+    24,
+    21,
+    1,
+    68
+  ],
+  "review": [
+    "Odia vowel marks and conjuncts",
+    "Long-word recognition and wrapping",
+    "Comfort over a complete poem",
+    "Preference at 400 versus 450"
+  ],
+  "verification": {
+    "text": "All 68 specimens match the source lines and stanzas exactly; source file unchanged.",
+    "fonts": "Both self-hosted font families loaded in browser.",
+    "layout": "No horizontal overflow at 1280px; 350px phone text columns tested inside the comparison.",
+    "samples": "Poems 1, 21, 24 and 68 checked for matching text and wrapping; see browser-review.json.",
+    "controls": "Weight 450, wider columns, single-font view and reset checked.",
+    "limitation": "This compares typography in reading specimens, not the live reader pagination. User preference remains open."
+  },
+  "decision": {
+    "date": "2026-10-04",
+    "approved_font": "Noto Serif Oriya 400",
+    "scope": "All poem-reading surfaces, including standalone, Illustrated and Quiet modes",
+    "action": "Retain the existing reading font; no font or pagination change required",
+    "masthead_and_cover": "Separate Anek Odia identity decision remains unchanged"
+  }
+}

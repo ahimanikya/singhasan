@@ -1,0 +1,6 @@
+interface:
+  display_name: "Human Natural Translation"
+  short_description: "Carry meaning, culture and feeling across languages"
+  default_prompt: "Use $human-natural-translation to carry this work’s meaning and emotional effect naturally into the target language and culture, using Poetic Natural mode for poetry."
+policy:
+  allow_implicit_invocation: true

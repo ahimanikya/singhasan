@@ -16,11 +16,24 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  function charRect(line,offset){const el=line.querySelector('.line-words')||line,p=textPosition(el,offset);if(!p)return null;const range=document.createRange();range.setStart(p.node,p.offset);range.setEnd(p.node,Math.min(p.offset+1,p.node.length));return range.getBoundingClientRect()}
  function visibleAnchor(){if(isArt())return anchor;const r=panel.getBoundingClientRect();for(const line of verse.querySelectorAll('[data-line]')){if(![...line.getClientRects()].some(x=>x.right>r.left+1&&x.left<r.right-1))continue;let lo=0,hi=line.textContent.length-1,best=0;while(lo<=hi){const mid=(lo+hi)>>1,rect=charRect(line,mid);if(rect&&rect.right<=r.left+1){lo=mid+1;best=lo}else hi=mid-1}return {line:Number(line.dataset.line),offset:best}}return anchor}
  function pageFor(a){const line=verse.querySelector(`[data-line="${a.line}"]`);if(!line)return openingLeaves();const r=charRect(line,a.offset||0)||line.getBoundingClientRect(),column=Math.floor((r.left-panel.getBoundingClientRect().left+2)/(columnWidth+gap));return openingLeaves()+Math.max(0,Math.min(textPages-1,Math.floor(column/spread)))}
- function url(){const u=new URL(location.href);u.searchParams.delete('leaf');u.searchParams.delete('focus');u.searchParams.delete('start');u.searchParams.delete('line');u.searchParams.delete('offset');u.searchParams.set('view','book');u.searchParams.set('quiet',quiet?'1':'0');if(index)u.searchParams.set('page',String(index+1));else u.searchParams.delete('page');history.replaceState(null,'',u)}
+ function url(){const u=new URL(location.href);u.searchParams.delete('leaf');u.searchParams.delete('focus');u.searchParams.delete('start');u.searchParams.delete('line');u.searchParams.delete('offset');u.searchParams.set('view','book');u.searchParams.set('quiet',quiet?'1':'0');if(verse.lang==='or')u.searchParams.delete('lang');else u.searchParams.set('lang',verse.lang);if(index)u.searchParams.set('page',String(index+1));else u.searchParams.delete('page');history.replaceState(null,'',u)}
  function render(updateURL=true,remember=false){
   index=Math.max(0,Math.min(count()-1,index));const kind=isArt()?(mobile.matches&&index===1?'story':'art'):'text';
   book.classList.toggle('art-page',isArt());book.classList.toggle('story-page',kind==='story');
+  book.dataset.poemComplete=String(!isArt()&&index===count()-1);
+  const endingCenter=spread===1?columnWidth/2:(textColumns%2?columnWidth/2:columnWidth+gap+columnWidth/2);
+  book.style.setProperty('--ending-center',endingCenter+'px');
   verse.style.setProperty('--leaf-shift',-Math.max(0,index-openingLeaves())*stride+'px');panel.scrollLeft=panel.scrollTop=0;
+  const ending=book.querySelector('.reader>.poem-ending');
+  if(ending&&book.dataset.poemComplete==='true'){
+   const lines=verse.querySelectorAll('[data-line]'),tail=lines[lines.length-1];
+   const tailRect=tail?.getClientRects(),lastRect=tailRect?.[tailRect.length-1],bounds=panel.getBoundingClientRect();
+   const below=lastRect?lastRect.bottom-bounds.top+10:bounds.height;
+   const onRule=below+28>bounds.height;
+   ending.classList.toggle('on-footer-rule',onRule);
+   ending.style.setProperty('--ending-top',(onRule?bounds.height:below)+'px');
+  }
+
   const folios=leafNumbers({quiet,mobile:mobile.matches,index,textColumns});
   document.querySelector('#leaf-folio-left').textContent=folios.first;document.querySelector('#leaf-folio-right').textContent=folios.second??'';
   status.textContent=mobile.matches?`${folios.first} / ${folios.total}`:`Page${folios.second?'s':''} ${folios.first}${folios.second?'–'+folios.second:''} of ${folios.total}`;
@@ -46,7 +59,7 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  }
  function schedule(){clearTimeout(timer);timer=setTimeout(layout,60)}
  function bookRoute(href,last=false){return bookURL(new URL(href,location.href).pathname.split('/').pop(),{quiet,language:verse.lang,last})}
- function turn(direction){if(blocked())return;document.dispatchEvent(new Event('book-manual-turn'));window.getSelection()?.removeAllRanges();document.querySelector('#selection-tools').hidden=true;const target=index+direction;if(target<0){location.href=bookRoute(before,true);return}if(target>=count()){location.href=bookRoute(after);return}const paper=body.dataset.pageMotion!=='false'?capturePaper(isArt()?book.querySelector('.book-companion'):book.querySelector('.reader'),book):null;index=target;render(true,true);paperTurn(direction,paper,book)}
+ function turn(direction){if(blocked())return;document.dispatchEvent(new Event('book-manual-turn'));window.getSelection()?.removeAllRanges();document.querySelector('#selection-tools').hidden=true;const target=index+direction;if(target<0){location.href=bookRoute(before,true);return}if(target>=count()){location.href=bookRoute(after);return}const paper=body.dataset.pageMotion==='true'?capturePaper(isArt()?book.querySelector('.book-companion'):book.querySelector('.reader'),book):null;index=target;render(true,true);paperTurn(direction,paper,book)}
  document.addEventListener('book-set-quiet',event=>{if(!ready)return;const saved=visibleAnchor();quiet=event.detail;body.classList.toggle('quiet-mode',quiet);try{localStorage.setItem('singhasan-book-quiet-v1',String(quiet))}catch{}pendingJump=saved;layout();document.dispatchEvent(new Event('book-mode-changed'))});
  document.querySelector('#leaf-switch').addEventListener('click',()=>{if(blocked()||quiet)return;document.dispatchEvent(new Event('book-manual-turn'));index=isArt()?openingLeaves():0;render(true,true)});
  previous.addEventListener('click',()=>turn(-1));next.addEventListener('click',()=>turn(1));
@@ -61,7 +74,7 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
   const unshifted=rect.left-panel.getBoundingClientRect().left+Math.max(0,index-openingLeaves())*stride;
   const target=openingLeaves()+Math.max(0,Math.min(textPages-1,Math.floor((unshifted+2)/stride)));
   if(target===index)return;
-  const paper=animate&&body.dataset.pageMotion!=='false'?capturePaper(isArt()?book.querySelector('.book-companion'):book.querySelector('.reader'),book):null,direction=target>index?1:-1;
+  const paper=animate&&body.dataset.pageMotion==='true'?capturePaper(isArt()?book.querySelector('.book-companion'):book.querySelector('.reader'),book):null,direction=target>index?1:-1;
   index=target;render();paperTurn(direction,paper,book);
  });
  document.querySelectorAll('[data-size]').forEach(b=>b.addEventListener('click',schedule));

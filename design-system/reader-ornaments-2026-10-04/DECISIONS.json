@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-04",
+  "status": "Applied locally, not published",
+  "masthead": "Anek lettering shifted down 0.25em for optical alignment; no icon geometry changed",
+  "motifs": [
+    "leaf",
+    "paired",
+    "seed"
+  ],
+  "assignment": "(poem number - 1) modulo 3; stable across all views",
+  "accessibility": "Decorative aria-hidden SVGs, excluded from verse and saved line offsets",
+  "reader": "Visible on final text spread only, centered on final occupied column. Below last line or on footer rule when full; no extra pagination space."
+}

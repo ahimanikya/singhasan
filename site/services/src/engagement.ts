@@ -31,7 +31,7 @@ async function start(section:HTMLElement){
   const label=(liked?'Remove your like':'Like this poem')+(count>0?`. ${count} ${count===1?'like':'likes'}`:'');
   button.setAttribute('aria-label',label);button.title=label;
   const text=button.querySelector('[data-like-label]');if(text)text.textContent=liked?'Liked':'Like';
-  const total=button.querySelector<HTMLElement>('[data-like-count]')!;total.textContent=String(count);total.hidden=count===0;
+  const total=button.querySelector<HTMLElement>('[data-like-count]')!;total.textContent=String(count);total.hidden=count===0&&!text;
  });
  // One public count read. Anonymous sign-in is reserved for a reader action.
  if(likesEnabled){busy(true);connect().then(async s=>{

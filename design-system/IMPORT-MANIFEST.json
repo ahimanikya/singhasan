@@ -1,10 +1,10 @@
 {
-  "imported": "2026-10-02",
+  "imported": "2026-10-04",
   "assets": [
     {
       "source": "/Users/ahimanikya/Projects/Kabita Live/kb/artifacts/design/brand-guide/DESIGN-SYSTEM.md",
       "local": "design-system/KABITA-LIVE-DESIGN-SYSTEM.md",
-      "sha256": "0db7c5d78b1ee85e3e545771adb467c0c4a9dad3f5fdcff807c54cd8f1dc3190"
+      "sha256": "524f8be8896380341acebf2bc6c2fb4c4e8576adb864064026fa8be1802abbaf"
     },
     {
       "source": "/Users/ahimanikya/Projects/Kabita Live/kb/artifacts/design/brand-guide/assets/brand-tokens.json",

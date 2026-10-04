@@ -1,0 +1,21 @@
+{
+  "status": "Applied locally, not published",
+  "scope": "Standalone poem ending, navigation, reader responses and footer spacing",
+  "desktopMeasuredClosingHeight": {
+    "before": 600,
+    "after": 344
+  },
+  "verification": [
+    "Desktop light and dark inspected",
+    "390px phone layout inspected",
+    "Comments collapsed initially and expand to full form",
+    "Five existing engagement behavior tests pass",
+    "77-page validation passes"
+  ],
+  "preserved": [
+    "Source poems",
+    "Reader pagination",
+    "Contact privacy",
+    "Moderated comments behavior"
+  ]
+}

@@ -1,7 +1,14 @@
 /* The two boards of the same volume. Typography scales with the cover itself. */
 .cover-face{position:relative;isolation:isolate;container-type:inline-size;aspect-ratio:2/3;width:100%;height:100%;overflow:hidden;background:#eee5ce;color:#263c3c;border-radius:1px}
 .cover-face::after{content:'';position:absolute;inset:0;z-index:4;pointer-events:none;box-shadow:inset 0 0 0 1px #36251930,inset 2px 0 3px #ffffff50,inset -1px -1px 2px #21170d30}
-.cover-face-front .front-cover-art{width:100%;height:100%;object-fit:cover;box-shadow:none}
+@font-face{font-family:'Anek Odia';src:url('fonts/AnekOdia-Variable.ttf') format('truetype');font-style:normal;font-weight:100 800;font-stretch:75% 125%;font-display:swap}
+:root{--book-identity:'Anek Odia','Noto Serif Oriya',serif}
+/* Option B: real lettering over a paper panel, preserving the source artwork. */
+.cover-face-front .front-cover-art{position:absolute;top:7%;left:0;width:100%;height:100%;object-fit:cover;clip-path:inset(19% 0 0);box-shadow:none}
+.cover-face-front .front-cover-type{position:absolute;inset:0 0 auto;height:26%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:1cqw;padding:6cqw 4cqw 0;color:#263c3c;background:#eee8d8}
+.cover-face-front .front-cover-type h1{font:600 18cqw/1.18 var(--book-identity);font-synthesis:none;white-space:nowrap;margin:0;color:inherit;letter-spacing:normal}
+.cover-face-front .front-cover-type p{font:400 5.6cqw/1.4 var(--book-identity);font-synthesis:none;white-space:nowrap;margin:0;color:inherit}
+.listening-cover .cover-face{height:auto}
 .front-cover-colophon{position:absolute;bottom:4.3%;left:16%;right:16%;display:flex;align-items:center;justify-content:center;gap:3cqw;color:#f5e9ce;font:400 3.3cqw/1.6 var(--odia);text-shadow:0 1px 3px #26180e}
 .front-cover-colophon span{height:1px;width:6cqw;background:currentColor;opacity:.65}
 .cover-face-back{background:linear-gradient(#f2ead7c9,#f2ead7c9),url('artwork-2026-10-03/cotton-paper.webp') center/cover}

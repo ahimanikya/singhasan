@@ -2,8 +2,7 @@
 (()=>{
  const query=new URLSearchParams(location.search),cover=/\/(book|back-cover)\.html$/.test(location.pathname);
  const bookMode=query.get('view')==='book'||query.has('page')||query.get('leaf')==='last'||query.get('focus')==='1'||query.get('quiet')==='1';
- let saved=false;try{saved=localStorage.getItem('singhasan-book-quiet-v1')==='true'}catch{}
- const quiet=query.has('quiet')?query.get('quiet')==='1':query.get('focus')==='1'||saved;
+ const quiet=query.has('quiet')?query.get('quiet')==='1':query.get('focus')==='1';
  if(bookMode&&!cover){document.body.classList.remove('standalone-page');document.body.classList.add('illustrated-mode')}
  if((bookMode||cover)&&(query.has('quiet')||query.get('focus')==='1')){try{localStorage.setItem('singhasan-book-quiet-v1',String(quiet))}catch{}}
  if((bookMode||cover)&&quiet)document.body.classList.add('quiet-mode');
@@ -23,7 +22,7 @@
    const bar=document.createElement('header');bar.className='reader-topbar';bar.lang='en';
    const exit=document.createElement('a');exit.className='exit-reader';exit.href=cover?'index.html':location.pathname;exit.textContent='← Exit reader';
    const code=query.get('lang');if(!cover&&code)exit.href+='?lang='+encodeURIComponent(code);
-   if(window.self!==window.top)exit.target='_top';bar.append(exit);const actions=document.querySelector('.poem-actions');if(actions)bar.append(actions);
+   if(window.self!==window.top)exit.target='_top';exit.addEventListener('click',()=>{if(cover)return;const code=document.querySelector('#experience-verse')?.lang;exit.href=location.pathname+(code&&code!=='or'?'?lang='+encodeURIComponent(code):'')});bar.append(exit);const actions=document.querySelector('.poem-actions');if(actions)bar.append(actions);
    else {const toggle=document.querySelector('[data-quiet-toggle]');if(toggle)bar.append(toggle)}
    document.querySelector('#reading').before(bar);
    document.addEventListener('keydown',event=>{

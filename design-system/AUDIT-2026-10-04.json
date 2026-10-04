@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-04",
+  "reference": "Kabita Live current working-copy guide, restraint pass 2026-10-03 and portrait update 2026-10-04",
+  "guide_sha256": "524f8be8896380341acebf2bc6c2fb4c4e8576adb864064026fa8be1802abbaf",
+  "source_manifest_items_verified": 31,
+  "scope": "Book-relevant design and reader feature parity; preserve explicit Singhasan preferences",
+  "items": [
+    {
+      "area": "Shared palette, fonts, textures, icons and pagination source",
+      "status": "Matched",
+      "decision": "All 31 manifest items match their current Kabita Live sources; the upstream guide is refreshed. No wholesale visual-asset replacement is needed."
+    },
+    {
+      "area": "Search and Contents",
+      "status": "Intentional book-specific choice",
+      "decision": "Keep the existing Contents and reader-tool search. User explicitly declined an additional search box on 4 October; this is a single 68-poem book."
+    },
+    {
+      "area": "Quiet-reader effects",
+      "status": "User override applied",
+      "decision": "Illustrated is the default reader with animation on; Quiet defaults to animation off. Separate saved choices, sound opt-in and reduced-motion override remain. Centre divider unchanged."
+    },
+    {
+      "area": "English, Tamil and Hindi readiness",
+      "status": "Applied and checked with private fixtures",
+      "decision": "Language survives page turns, Exit reader and sharing. Unsupported translations explain the fallback to Odia. Private fixtures render with Source Serif 4, Noto Serif Tamil and Tiro Devanagari Hindi. Production language files remain empty."
+    },
+    {
+      "area": "One reader with illustration toggle",
+      "status": "Already present",
+      "decision": "Same illustrated front and back covers in both modes. Quiet hides only interior poem illustration leaves; text, page frame and reader tools are shared."
+    },
+    {
+      "area": "Reader tools",
+      "status": "Already present",
+      "decision": "Three text sizes, language choices when ready, device-local marks/bookmarks, saved place, section chooser, paper surfaces, explicit turn/sound options and Exit reader."
+    },
+    {
+      "area": "Responses and contact",
+      "status": "Kabita Live response component applied",
+      "decision": "Kabita Live Like row and collapsed Comments form; separate Singhasan Firebase service. Contact now submits directly to the private feedback collection with no email-draft step. Automatic email notification is not configured."
+    },
+    {
+      "area": "Responsive navigation and theme",
+      "status": "Already present; spot-checked",
+      "decision": "Named drawer, visible dismissal and focus return; light/dark/system preference. Mobile home and reader checked at 390px. Physical swipe, trackpad and assistive-technology review remain part of the user walkthrough."
+    },
+    {
+      "area": "Cover-story disclosure and restrained practical pages",
+      "status": "Adapt to book context",
+      "decision": "Kabita Live edition disclosures serve multi-issue browsing. Singhasan keeps the approved pictorial home narrative, dedicated covers and simple contact form. Do not replace those with a magazine template."
+    },
+    {
+      "area": "Identity and footer",
+      "status": "Intentional book-specific choice",
+      "decision": "Approved masthead B: Odia Anek wordmark with leaf underline; existing throne favicon retained. Compact earth footer, one poet biography, no journal submissions or contributions list. Noto Serif Oriya remains the approved poem-reading font."
+    },
+    {
+      "area": "Poem 21 artwork language",
+      "status": "Applied",
+      "decision": "An old curd-bowl description now says milk pot, matching the user-confirmed source context. No poem text or illustration pixels changed."
+    },
+    {
+      "area": "Framework, catalogue search, analytics and accounts",
+      "status": "Not required for this scope",
+      "decision": "Keep the static build and dedicated Firebase service. Do not import magazine infrastructure, identities or analytics settings without a book-specific need."
+    },
+    {
+      "area": "Audio",
+      "status": "Deferred by user",
+      "decision": "No new generation, replacement, listening audition or alignment work. Existing published listening routes remain available."
+    },
+    {
+      "area": "Reader walkthrough",
+      "status": "Ready for user review",
+      "decision": "Local linked checklist prepared. No user design approvals or human translation reviews inferred from automated checks."
+    }
+  ],
+  "verification": {
+    "site_validator": "Passed: 77 pages, 69 source sections, 68 distinct poem illustrations, links/assets/sitemap; audio integrity checks only, no listening review.",
+    "automated_tests": "27 reader/service tests passed before Contact change; six replacement Contact tests passed after change.",
+    "skill_validator": "Passed; installed skill files equal versioned source",
+    "translation_release_guard": "Draft entries excluded and empty ready entries rejected; production translations remain empty",
+    "browser": "1280px desktop reader and 390px mobile spot checks; English/Tamil/Hindi fixtures; language-preserving exit/share; no horizontal document overflow in sampled pages. Mobile navigation dismissal returned focus to its trigger; dark quiet reading and the visible unavailable-language message were checked. Reader walkthrough HTML opened and visually reviewed.",
+    "reviewer": "Same assistant, not independent editorial/accessibility certification",
+    "contact_form": "Six submission tests passed; local browser form verified. Firebase rules emulator could not start because installed Java is 11 and the emulator requires 21+. Rules are unchanged from the deployed private-feedback rules; no live contact submission was made."
+  },
+  "publication": "Working copy only; review before next publish",
+  "remaining": [
+    "User reader walkthrough and any resulting adjustments.",
+    "Draft and review the proposed English/Tamil/Hindi pilot.",
+    "Fluent-language and physical-device review when actual translations exist."
+  ],
+  "optional_later": [
+    "Convenient moderator approval/rejection interface; current Firebase moderation already works."
+  ],
+  "latest_user_revision": {
+    "date": "2026-10-04",
+    "covers": "Identical artwork and text in both modes",
+    "comments_template_sha256": "ce21a3ff7e4adf9296e8314b881ea2315adcefecbfd5e796384f3456e5f5811b",
+    "comments_css_sha256": "26c05336d70e6bd86ac770fc880afcba4dd9ca833b3b91b87d1ca7e5ae2c706f",
+    "browser": "Verified front art remains visible, duplicate title hidden, back portrait/landscape visible in Quiet; mode switching toggles animation preference."
+  }
+}

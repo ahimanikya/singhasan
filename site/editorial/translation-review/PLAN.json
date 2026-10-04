@@ -1,0 +1,48 @@
+{
+  "updated": "2026-10-04",
+  "audio": "All generation, replacement and listening review deferred by user; existing published recordings remain available.",
+  "skill": "Installed: ~/.codex/skills/human-natural-translation; versioned source: site/editorial/skills/human-natural-translation",
+  "first_languages": [
+    "en",
+    "ta",
+    "hi"
+  ],
+  "later_languages": [
+    "bn",
+    "te",
+    "ml",
+    "kn",
+    "mr",
+    "gu",
+    "as"
+  ],
+  "source_sections": 69,
+  "completed_translations": 0,
+  "pilot": [
+    {
+      "section": 1,
+      "reason": "Opening pastoral scene, repeated fears, and the final revelation of authority.",
+      "source_sha256": "69d974d5f51f8b7027100626308a9141519f61ee98b9a4592d6b2005eda2d101",
+      "source_title": "କବିତା ୧"
+    },
+    {
+      "section": 21,
+      "reason": "User-confirmed milk pot and residue, ironic praise, and political-devotional agency.",
+      "source_sha256": "e10da65c092bbc9b76191756573af0cbd0183ac50541458eb057e6f27af8d025",
+      "source_title": "କବିତା ୨୧"
+    },
+    {
+      "section": 24,
+      "reason": "Repeated questions, a transformation of social status, and exclusion at the gate.",
+      "source_sha256": "21ec3e5111563242887e9d07829329eeb93c86647220ecb3ec979ce15783b4bf",
+      "source_title": "କବିତା ୨୪"
+    }
+  ],
+  "next_steps": [
+    "Reader walkthrough of the current site.",
+    "Translate complete pilot poems 1, 21 and 24 independently into English, Tamil and Hindi using Human Natural Translation.",
+    "Compare each against current Odia and author context; review idiom and cadence in its target language.",
+    "Refine pilot voice, then proceed in bounded batches including the complete prose introduction."
+  ],
+  "release": "Only reviewed ready entries enter the site; no blanket approval implied by selecting a pilot."
+}

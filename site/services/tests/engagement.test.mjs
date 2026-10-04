@@ -7,7 +7,7 @@ const source=readFileSync(new URL('../src/engagement.ts',import.meta.url),'utf8'
 const {code}=await transform(source,{loader:'ts'});
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 async function fixture({fail=false,enabled=true,commentsOpen=false}={}){
- const buttons=[true,false].map(hasLabel=>{
+ const buttons=[true].map(hasLabel=>{
   const count={hidden:false,textContent:''},label={textContent:''};
   return {disabled:true,attrs:{},count,label,querySelector:s=>s==='[data-like-label]'?(hasLabel?label:null):count,setAttribute(k,v){this.attrs[k]=v},addEventListener(_,fn){this.click=fn}};
  });
@@ -23,23 +23,23 @@ async function fixture({fail=false,enabled=true,commentsOpen=false}={}){
  runInNewContext(code,{document:{body:{classList:{contains:()=>true}},querySelector:()=>section,querySelectorAll:()=>buttons},location:{protocol:'https:',hostname:'singhasan.poemwithoutborders.org'},fetch:async()=>({ok:true,json:async()=>({firebase:{enabled,allowedHosts:['singhasan.poemwithoutborders.org']},engagement:{likes:true,publicComments:true}})}),services:{app:{getApps:()=>[],initializeApp:()=>({})},auth:{getAuth:()=>auth,signInAnonymously:async()=>({user:{uid:'reader'}})},firestore:{...store,getFirestore:()=>({})}}});
  await tick();return {buttons,status,comments,details,reads:()=>reads,release:()=>release(),transactions:()=>transactions};
 }
-test('both hearts share one pending vote, saved state, undo, and accessible count',async()=>{
+test('the response heart prevents duplicate votes and preserves saved state, undo, and accessible count',async()=>{
  const f=await fixture();
- assert.ok(f.buttons.every(b=>!b.disabled&&b.count.hidden));
- const pending=f.buttons[1].click();await tick();
+ assert.ok(f.buttons.every(b=>!b.disabled&&b.count.hidden===!b.querySelector('[data-like-label]')));
+ const pending=f.buttons[0].click();await tick();
  assert.ok(f.buttons.every(b=>b.disabled));await f.buttons[0].click();assert.equal(f.transactions(),1);
  f.release();await pending;
  assert.ok(f.buttons.every(b=>b.attrs['aria-pressed']==='true'&&b.count.textContent==='1'&&!b.count.hidden&&!b.disabled));
  assert.match(f.buttons[0].attrs['aria-label'],/1 like$/);
  const undo=f.buttons[0].click();await tick();f.release();await undo;
- assert.ok(f.buttons.every(b=>b.attrs['aria-pressed']==='false'&&b.count.hidden));
+ assert.ok(f.buttons.every(b=>b.attrs['aria-pressed']==='false'&&b.count.hidden===!b.querySelector('[data-like-label]')));
  assert.equal(f.transactions(),2);
 });
-test('a failed vote leaves both hearts unchanged and available to retry',async()=>{
- const f=await fixture({fail:true});const pending=f.buttons[1].click();await tick();f.release();await pending;
- assert.ok(f.buttons.every(b=>b.attrs['aria-pressed']==='false'&&!b.disabled&&b.count.hidden));assert.match(f.status.textContent,/could not be saved/);
+test('a failed vote leaves the response heart unchanged and available to retry',async()=>{
+ const f=await fixture({fail:true});const pending=f.buttons[0].click();await tick();f.release();await pending;
+ assert.ok(f.buttons.every(b=>b.attrs['aria-pressed']==='false'&&!b.disabled&&b.count.hidden===!b.querySelector('[data-like-label]')));assert.match(f.status.textContent,/could not be saved/);
 });
-test('disabled service never enables either heart',async()=>{
+test('disabled service never enables the response heart',async()=>{
  const f=await fixture({enabled:false});assert.ok(f.buttons.every(b=>b.disabled&&!b.click));assert.equal(f.transactions(),0);
 });
 

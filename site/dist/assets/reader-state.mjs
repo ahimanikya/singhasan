@@ -13,3 +13,9 @@ export function leafNumbers({quiet,mobile,index,textColumns}){
  const first=index<opening?(mobile?index+1:1):(quiet?0:2)+(index-opening)*spread+1;
  return {first,second:spread===2&&first<total?first+1:null,total};
 }
+
+/* Illustrated turns default on; Quiet has its own opt-in. Reduced motion wins. */
+export function readerEffects(preferences={},reducedMotion=false,quiet=false){
+ const p=preferences||{},motion=quiet?p.motionQuiet===true:typeof p.motionIllustrated==='boolean'?p.motionIllustrated:typeof p.motion==='boolean'?p.motion:true;
+ return {motion:motion&&!reducedMotion,sound:p.sound===true};
+}

@@ -22,6 +22,20 @@ The journal should feel like cotton paper, a quiet room and a voice close enough
 | Ornament | One small artistic header separator. Use restrained section rules, quiet external-link marks and no duplicate decorative dividers. |
 | Art | A distinct cultural narrative per cover; protect the focal point and keep typography separate from artwork. Preserve historical originals. |
 
+## Human Natural restraint pass — 3 October 2026
+
+The user approved the remaining naturalness-review suggestions, while deferring signed editorial notes to future editions. These rules supersede the older page-opening and copy instructions below for the named pages. Applied locally; publication is a separate step.
+
+- Poems, Poets, Archive (including saved year routes), Contact, Feedback and Send a poem use compact, text-led openings. Their former decorative illustrations remain preserved in the asset library and KB. Search, filters, forms and email actions arrive promptly. Omit the repeated content waterline on these practical openings; preserve the masthead and footer.
+- Use direct titles: Find a poem, Poets, Past editions, Contact the editors, Write to the editors, Send a poem, Submission details. Counts/dates come from the catalogue. Profile contributions use Poems in Kabita Live. Keep researched biography and poem wording intact.
+- Poet directory cards use a top rule and paper background rather than filled panels. Keep portraits, names, attributed excerpts, contributions and accessible links.
+- Quiet-reader paper turns and sound both default off. Explicit saved opt-in remains valid; reduced-motion always wins over animation.
+- Edition cover shading concentrates behind masthead/signature and bottom metadata, leaving the central scene clear. Keep all 47 artwork identities and full cultural narratives. About this cover is a native disclosure, initially open above760px and closed on phones; the reader controls it afterwards.
+- Three new illustrations are tied specifically to poem724 (gift of dates),644 (carpenter’s craft) and786 (river return). Preserve all previous assets and all other assignments; no random rotations or claims of documentary depiction.
+- The existing35-icon single-ink family remains. Familiar functional icons use20–24px within at least44px targets. Cultural motifs need36–48px for their detail; preserve approved footer24px sizing. Prefer a subject-specific monsoon/Chilika/Deomali/Sambalpuri motif only when useful, not an ornament beside every section. Keep logo, paper surface and footer boat; Pipili remains reserved.
+
+Evidence: `kb/records/poetic-natural-variety-2026-10-03.json`; artwork and icon specimen gallery under `kb/artifacts/artwork/studies/poetic-natural-variety-2026-10-03/`. Same-assistant visual review is not independent editorial or accessibility certification.
+
 ## Current artistic page system — consolidated 2 October 2026
 
 **Use this section for new work and maintenance.** It consolidates the approved refinements already applied to the reader pages. The dated entries later in this document preserve decision history; where they differ, use the current rules here and the cited later application record. This consolidation introduces no new visual direction and does not close outstanding editorial, accessibility or release checks.
@@ -492,3 +506,11 @@ Ahimanikya clarified that the editors’ watercolor artwork treatment applies to
 ## Our Story refinement and artistic treatment · 2 October 2026
 
 Apply the reviewed concise journal narrative, lighter editorial sidebar and consolidated credits with four disclosures: artwork/image sources, translations, typefaces, and poet/portrait/biography references. Reuse existing kendu, pen, manuscript and letter marks on the story heading, editorial/credit labels and invitations. Keep the existing house watercolor and compact opening waterline. Preserve reference IDs and open enclosing disclosures on a direct credit link. Remove the two user-specified sample-illustration/Pipili and editor-portrait explanation paragraphs; retain actual editor sources and other acknowledgements. Privacy follows credits, then journal navigation. Evidence: `kb/records/our-story-polish-applied.json`.
+
+## Reader responses · prepared 2 October 2026
+
+The user requested Likes and public comments. The prepared poem-end section reuses existing paper, fonts, form fields and separators: a labelled heart button with a reversible pressed state and count, followed by a Comments disclosure. Public name and comment fields include explicit consent to publication; private editorial feedback remains a separate link. Controls keep 48px targets, text-only comment rendering and live status messages. The default flow queues comments for editor approval. This implementation is not yet activated on the hosted site; see `kb/records/reader-engagement-2026-10-02.json`.
+
+## Generic missing-photo artwork — 2026-10-04
+
+User-authorized exception to initials fallback: profiles233,258 and416 share a faceless feminine watercolor avatar on ivory paper, based on existing biography pronouns. Label “Generic artwork · photograph unavailable” on each profile and use non-likeness alt text and Our Story credits. It is a generic placeholder, not a portrait reconstruction; no facial features, complexion, age or jewelry are invented. Preserve source-photo holds and all other portraits. Canonical prompt, master hash and verification: `kb/records/generic-portrait-placeholders-2026-10-04.json`.

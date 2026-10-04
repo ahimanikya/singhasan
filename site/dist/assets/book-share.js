@@ -5,7 +5,7 @@
  const url=document.querySelector('#share-url'),status=document.querySelector('#share-status'),native=document.querySelector('#native-book-share');
  let caption='',heading='';
  button.addEventListener('click',()=>{
-  const link=new URL(location.href);for(const key of ['focus','start','view','page','leaf'])link.searchParams.delete(key);link.hash='';
+  const link=new URL(location.href);for(const key of ['focus','start','view','page','leaf','quiet','line','offset'])link.searchParams.delete(key);link.hash='';
   const selected=document.querySelector('[data-reading-language][aria-selected=true]')?.dataset.readingLanguage;
   if(selected&&selected!=='original')link.searchParams.set('lang',selected);else link.searchParams.delete('lang');
   url.value=link.href;status.textContent='';

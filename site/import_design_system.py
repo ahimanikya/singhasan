@@ -1,6 +1,8 @@
 """Import approved Kabita Live foundations; retain book-specific layout separately."""
 from pathlib import Path
 import json,hashlib,shutil,argparse
+from datetime import datetime
+from zoneinfo import ZoneInfo
 ROOT=Path(__file__).resolve().parent
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--source',type=Path,default=Path('/Users/ahimanikya/Projects/Kabita Live'),help='Kabita Live working copy')
@@ -34,5 +36,5 @@ css+=':root{'+''.join(f'--{roles[k]}:{v};' for k,v in tokens['colours'].items())
 css+='body.night{--paper:#1c292b;--panel:#293a3b;--ink:#f3eadb;--muted:#c0bcae;--rust:#eeaa8b;--sea:#a9c9c8;--hearth:#cbb58c;--line:#4a5653;--book-binding:#101c1e;--book-desk:#142022;color-scheme:dark}\n'
 css+="[lang=or]{font-synthesis:none;letter-spacing:normal}.reading-page #experience-verse:is([lang=hi],[lang=mr]),.poem-heading h1:is(:lang(hi),:lang(mr)){font-family:'Tiro Devanagari Hindi',serif;font-weight:400;font-synthesis:none}a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--sea);outline-offset:4px}.poem-actions button{min-height:48px}.poem-actions button:disabled{opacity:.45;cursor:default}\n"
 (DEST/'kabita-foundations.css').write_text(css)
-(ARCHIVE/'IMPORT-MANIFEST.json').write_text(json.dumps({'imported':'2026-10-02','assets':manifest,'adaptation':'Book identity, biography, covers and attribution preferences remain specific to Singhasan.'},ensure_ascii=False,indent=2))
+(ARCHIVE/'IMPORT-MANIFEST.json').write_text(json.dumps({'imported':datetime.now(ZoneInfo('America/Chicago')).date().isoformat(),'assets':manifest,'adaptation':'Book identity, biography, covers and attribution preferences remain specific to Singhasan.'},ensure_ascii=False,indent=2))
 print(f'Imported {len(manifest)} design-system sources and assets.')

@@ -1,5 +1,5 @@
 import {normalized,subtract} from './poem-marks.mjs?v=2';
-import {bookURL,legacyAnchor} from './reader-state.mjs?v=2';
+import {bookURL,legacyAnchor,readerEffects} from './reader-state.mjs?v=4';
 const $=s=>document.querySelector(s),query=new URLSearchParams(location.search);
 const pageData=JSON.parse($('#reading-data').textContent),pageVerse=$('#experience-verse');
 const languageNames=Object.fromEntries(Object.entries(pageData.languages).map(([code,entry])=>[code,entry.name]));
@@ -26,7 +26,7 @@ function fillReadingList(){const select=$('#book-current-section');select.replac
 $('#book-current-section').onchange=e=>{location.href=bookURL(e.target.value,{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()})};
 $('#book-read-all').onclick=()=>{location.href=bookURL('book.html',{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()})};
 $('#book-size').onchange=e=>document.querySelector(`[data-size="${e.target.value}"]`)?.click();
-$('#book-language').onchange=e=>{$(`[data-reading-language="${e.target.value===pageData.source_language?'original':e.target.value}"]`)?.click();fillReadingList();fillLibrary()};
+$('#book-language').onchange=e=>{const note=$('#reader-language-note');if(note)note.hidden=true;$(`[data-reading-language="${e.target.value===pageData.source_language?'original':e.target.value}"]`)?.click();fillReadingList();fillLibrary()};
 
 $('#book-read-section').onclick=()=>{if($('#book-section').value)location.href=bookURL($('#book-section').value,{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()})};
 // One reader menu brings language, size and saved passages together.
@@ -96,11 +96,12 @@ if(![24,28,32].includes(textSize)){const old=readJSON('singhasan-quiet-reader-v1
 document.querySelector(`[data-size="${textSize}"]`)?.click();$('#book-size').value=String(textSize);
 document.querySelectorAll('[data-size]').forEach(button=>button.addEventListener('click',()=>{writeJSON('singhasan-reading-size-v1',Number(button.dataset.size));$('#book-size').value=button.dataset.size}));
 const effects=readJSON('singhasan-quiet-tools-v1',{}),reduced=matchMedia('(prefers-reduced-motion: reduce)');
-function syncEffects(){document.body.dataset.pageMotion=String(effects.motion!==false&&!reduced.matches);document.body.dataset.pageSound=String(effects.sound===true);$('#book-motion').checked=effects.motion!==false&&!reduced.matches;$('#book-motion').disabled=reduced.matches;$('#book-sound').checked=effects.sound===true;$('#book-sound-test').hidden=effects.sound!==true;$('#book-effects-note').textContent=reduced.matches?'Paper turns are off to match your reduced-motion setting.':''}
-for(const [id,key] of [['book-motion','motion'],['book-sound','sound']])$('#'+id).onchange=e=>{effects[key]=e.target.checked;writeJSON('singhasan-quiet-tools-v1',effects);syncEffects()};
-reduced.addEventListener('change',syncEffects);syncEffects();
+function syncEffects(){const state=readerEffects(effects,reduced.matches,document.body.classList.contains('quiet-mode'));document.body.dataset.pageMotion=String(state.motion);document.body.dataset.pageSound=String(state.sound);$('#book-motion').checked=state.motion;$('#book-motion').disabled=reduced.matches;$('#book-sound').checked=effects.sound===true;$('#book-sound-test').hidden=effects.sound!==true;$('#book-effects-note').textContent=reduced.matches?'Paper turns are off to match your reduced-motion setting.':''}
+for(const [id,key] of [['book-motion','motion'],['book-sound','sound']])$('#'+id).onchange=e=>{effects[key==='motion'?(document.body.classList.contains('quiet-mode')?'motionQuiet':'motionIllustrated'):key]=e.target.checked;writeJSON('singhasan-quiet-tools-v1',effects);syncEffects()};
+reduced.addEventListener('change',syncEffects);document.addEventListener('book-mode-changed',syncEffects);syncEffects();
 let audioContext;
 async function rustle(){if(!effects.sound)return;try{const Context=window.AudioContext||window.webkitAudioContext;audioContext??=new Context();await audioContext.resume();if(audioContext.state!=='running')throw Error();const buffer=audioContext.createBuffer(1,Math.floor(audioContext.sampleRate*.22),audioContext.sampleRate),samples=buffer.getChannelData(0);let smooth=0;for(let i=0;i<samples.length;i++){smooth=.65*smooth+.35*(Math.random()*2-1);samples[i]=smooth}const source=audioContext.createBufferSource(),filter=audioContext.createBiquadFilter(),gain=audioContext.createGain();source.buffer=buffer;filter.type='bandpass';filter.frequency.value=1700;filter.Q.value=.55;const t=audioContext.currentTime;gain.gain.setValueAtTime(0,t);gain.gain.linearRampToValueAtTime(.09,t+.04);gain.gain.exponentialRampToValueAtTime(.001,t+.21);source.connect(filter).connect(gain).connect(audioContext.destination);source.onended=()=>{source.disconnect();filter.disconnect();gain.disconnect()};source.start();$('#book-effects-note').textContent='Soft page sound is on.'}catch{$('#book-effects-note').textContent='Page sound is unavailable in this browser.'}}
 document.addEventListener('book-page-turn',rustle);$('#book-sound-test').onclick=rustle;
 const code=query.get('lang');if(code==='original'||pageData.variants[code])$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();
+const languageNote=$('#reader-language-note');if(languageNote&&code&&code!=='original'&&languageNames[code]&&!pageData.variants[code]){languageNote.textContent=`${languageNames[code]} is not available for this section yet. Showing ${languageNames[pageData.source_language]}.`;languageNote.hidden=false}
 $('#book-language').value=pageCode();refreshSavedButton();fillLibrary();fillReadingList();

@@ -82,3 +82,5 @@ body.night #focus-reader .focus-page::before,body.night #focus-reader .quiet-tit
 }
 @media(forced-colors:active){body[data-reading-surface]::before,#focus-reader .focus-page::before,#focus-reader .quiet-title-leaf::before{display:none}}
 @media print{body[data-reading-surface]::before{display:none}}
+
+.reader-language-note{font:14px/1.5 var(--ui);color:var(--muted);margin:8px 0}.reader-language-note[hidden]{display:none}

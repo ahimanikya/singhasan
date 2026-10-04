@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-04",
+  "skill": "human-natural-translation",
+  "review_type": "Same-assistant source-based behavioral check; no independent or fluent-reader certification",
+  "source_hash_algorithm": "SHA-256 of UTF-8 JSON stanza arrays, ensure_ascii=False, separators=(comma,colon)",
+  "pilot_sources": [
+    {
+      "section": 1,
+      "reason": "Opening pastoral scene, repeated fears, and the final revelation of authority.",
+      "source_sha256": "69d974d5f51f8b7027100626308a9141519f61ee98b9a4592d6b2005eda2d101",
+      "source_title": "କବିତା ୧"
+    },
+    {
+      "section": 21,
+      "reason": "User-confirmed milk pot and residue, ironic praise, and political-devotional agency.",
+      "source_sha256": "e10da65c092bbc9b76191756573af0cbd0183ac50541458eb057e6f27af8d025",
+      "source_title": "କବିତା ୨୧"
+    },
+    {
+      "section": 24,
+      "reason": "Repeated questions, a transformation of social status, and exclusion at the gate.",
+      "source_sha256": "21ec3e5111563242887e9d07829329eeb93c86647220ecb3ec979ce15783b4bf",
+      "source_title": "କବିତା ୨୪"
+    }
+  ],
+  "checks": [
+    {
+      "case": "Poem 21 cultural nouns",
+      "decision": "Treat ବଢ଼ାକ ଯାକ as the approved milk-pot expression; keep ଅଧାମ as residue, with extraction down to the last bit. Do not substitute curd, cream, whey or mere milk drinking.",
+      "evidence": "Full poem and user context read. The stale curd-bowl artwork description was found and corrected; original poem retained."
+    },
+    {
+      "case": "Poem 21 ironic praise",
+      "decision": "The opening double negative and exclamation can carry irony. Do not silently recast the gods as benevolent helpers or remove the final challenging question.",
+      "evidence": "Opening and ending compared within the complete poem. This is interpretation, not a new author explanation."
+    },
+    {
+      "case": "Poem 1 recurrence and final turn",
+      "decision": "Retain the sequence of questions and threats. Preserve the negative assertion about the Vikramadityas and the buried throne revelation. Do not append a moral about power.",
+      "evidence": "Full source read, including corrected branch and village/field wording."
+    },
+    {
+      "case": "Poem 24 names and status",
+      "decision": "Preserve Kapila/Kapileshwar identity contrast and the accumulating royal titles. The exact historical identity of Kashias and ceremonial details require verification before a confident equivalent. Mark that choice privately if uncertain.",
+      "evidence": "Complete poem reviewed; selected as a useful pilot because it tests both register and cultural uncertainty. No external historical claim made."
+    },
+    {
+      "case": "Uncertain source versus confirmed source",
+      "decision": "Never reopen confirmed ଅଧାମ or silently normalize ବଢ଼ାକ. For other genuine ambiguities, store the exact passage and alternatives without inventing a correction.",
+      "evidence": "Skill source-authority rules and book reference agree with user context."
+    },
+    {
+      "case": "Release honesty",
+      "decision": "A source explanation, automated layout check or self-review does not count as approval of a complete translation. Empty files remain empty. Test text is isolated under /private/tmp, never the published translation folder.",
+      "evidence": "All ten production translation files still have empty sections. Draft/ready release filter tested separately."
+    }
+  ],
+  "limitations": [
+    "No complete translations produced in this preparatory phase.",
+    "English, Tamil and Hindi literary fluency and source fidelity still need passage-level review when drafts exist.",
+    "Typography fixtures test scripts and navigation; they do not certify translation quality."
+  ],
+  "cultural_effect_revision": {
+    "source_chat": {
+      "title": "ଓଡ଼ିଆରେ ଲେଖ",
+      "thread_id": "01a1038e-5fb5-7110-8f6b-ba40918f6d94"
+    },
+    "user_direction": "Preserve understanding, emotion and feeling across languages and cultures; Human Natural Translation with Poetic Natural mode.",
+    "same_assistant_comparison": [
+      {
+        "case": "Banana saying",
+        "finding": "Literal scene preserves identity and comic mismatch but may need contextual support; kitchen/cookies preserves recognizable behavior while changing the culture; moral-only summary loses performance. Skill now explicitly distinguishes these choices."
+      },
+      {
+        "case": "Singhasan poem 21",
+        "finding": "Recast syntax and tone for natural understanding, but retain the confirmed milk-pot and residue image and political-devotional relationship; cultural substitution cannot silently overwrite user-confirmed meaning."
+      }
+    ],
+    "human_review_of_translation": "Not performed; no complete translations drafted by this revision."
+  }
+}

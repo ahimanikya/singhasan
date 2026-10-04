@@ -12,3 +12,7 @@ Rebuild with build_pages.py after adding text. Only ready, nonempty sections app
 Source context for translation
 
 Read poem-context.json before translating or reviewing the covered poems in any target language. It records user-confirmed meanings and editorial decisions. Poem 21 preserves ବଢ଼ାକ ଯାକ (milk-pot expression) and ଅଧାମ (the residue left after taking the milk): everything is extracted, down to the last bit. Keep both the concrete image and its full-extraction meaning. These notes are internal translation guidance, not reader-facing copy or completed translations.
+
+Current phase — 4 October 2026
+
+Start with English, Tamil and Hindi. Bengali, Telugu, Malayalam, Kannada, Marathi, Gujarati and Assamese remain planned for later. All audio work is deferred. Use the installed Human Natural Translation skill; its versioned source is site/editorial/skills/human-natural-translation/. Read the source context before drafting. The private pilot plan and honest review records live in site/editorial/translation-review/. All language files are still empty: no completed translations are claimed.

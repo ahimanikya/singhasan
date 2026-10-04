@@ -73,11 +73,71 @@ body.quiet-mode .section-ornament,body.quiet-mode>.footer-landscape{display:none
 .back-cover-author h3{font-size:4.5cqw}
 .author-closing{flex-wrap:wrap}
 
-/* A throne rooted in the earth: the book's own small publisher-style mark. */
-.masthead .book-brand{display:inline-flex;align-items:center;gap:12px;flex-shrink:0;color:var(--ink);text-decoration:none}
-.masthead .book-brand>svg{width:54px;height:62px;color:inherit}
-.masthead .book-brand .brand-wordmark{display:flex;flex-direction:column;gap:2px;color:inherit}
-.masthead .book-brand .brand-odia{font:500 32px/1.45 var(--odia);color:inherit;white-space:nowrap}
+/* Approved B: Odia literary wordmark with a quiet leaf underline. */
+.masthead .book-brand{display:inline-flex;align-items:center;flex-shrink:0;color:var(--ink);text-decoration:none;font-size:32px}
+.masthead .book-brand .brand-wordmark{position:relative;display:block;padding-bottom:.28em;color:inherit;font-size:inherit}
+.masthead .book-brand .brand-odia{display:block;font:600 1em/1.45 var(--book-identity);font-synthesis:none;color:inherit;white-space:nowrap;transform:translateY(.04em)}
+.masthead .book-brand .brand-wordmark>svg{display:block;position:absolute;bottom:0;left:-.04em;width:100%;height:.3em;color:var(--rust);pointer-events:none}
 .masthead .book-brand:hover,.masthead .book-brand:focus-visible{color:var(--rust)}
-@media(max-width:760px){.masthead .book-brand{gap:9px}.masthead .book-brand>svg{width:43px;height:52px}.masthead .book-brand .brand-odia{font-size:27px}}
-@media(max-width:370px){.masthead .book-brand{gap:7px}.masthead .book-brand>svg{width:38px;height:46px}.masthead .book-brand .brand-odia{font-size:24px}}
+@media(max-width:760px){.masthead .book-brand{font-size:27px}}
+@media(max-width:370px){.masthead .book-brand{font-size:24px}}
+
+/* Shared, decorative end marks. Source verse and saved line offsets stay intact. */
+.printed-spread .reader>.poem-ending{display:flex;align-items:center;justify-content:center;position:static;width:100%;margin:24px 0 8px;color:var(--rust);pointer-events:none;user-select:none}
+.printed-spread .reader>.poem-ending::before,.printed-spread .reader>.poem-ending::after{content:none}
+.printed-spread .reader>.poem-ending svg{width:42px;height:28px;flex:none}
+.pagination-on .printed-spread>.reader{position:relative;overflow:visible}
+.pagination-on .printed-spread .reader>.poem-ending{position:absolute;left:var(--ending-center,50%);top:var(--ending-top,0px);bottom:auto;transform:translateX(-50%);width:42px;height:28px;margin:0;visibility:hidden;z-index:2}
+.pagination-on .printed-spread .reader>.poem-ending.on-footer-rule{background:var(--paper);box-shadow:0 0 0 4px var(--paper)}
+.pagination-on .printed-spread[data-poem-complete="true"] .reader>.poem-ending{visibility:visible}
+@media print{.printed-spread .reader>.poem-ending{position:static;visibility:visible;transform:none}}
+
+/* Keep the close of a standalone poem within its reading column. */
+.standalone-page:not(.illustrated-mode) #experience-verse>.stanza:last-child{margin-bottom:0}
+.standalone-page:not(.illustrated-mode) .reader>.poem-ending{margin:12px 0 0}
+.standalone-page:not(.illustrated-mode) .reader>.poem-ending svg{width:34px;height:22px}
+.standalone-page:not(.illustrated-mode) .book-reading-end{grid-column:1;margin:0;gap:0}
+.standalone-page:not(.illustrated-mode) .page-nav{font-size:13px}
+.standalone-page:not(.illustrated-mode) .page-nav a{min-height:44px;gap:6px}
+.standalone-page:not(.illustrated-mode) .page-nav svg{width:24px;height:24px}
+.standalone-page:not(.illustrated-mode) .poem-engagement{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 22px;width:calc(60% - 19.2px);max-width:none;margin:12px 0 0;padding:12px 0 0}
+.standalone-page .poem-engagement .like-row{grid-column:1;grid-row:1;gap:8px;align-self:start}
+.standalone-page .poem-engagement [data-like]{min-height:44px;padding:4px 0;border:0;border-radius:0;gap:6px;font-size:15px}
+.standalone-page .poem-engagement [data-like] svg{width:20px;height:20px}
+.standalone-page .poem-engagement details{grid-column:2;grid-row:1;margin:0;min-width:0}
+.standalone-page .poem-engagement summary{display:flex;align-items:center;justify-content:flex-end;gap:7px;min-height:44px;padding:0;font-size:15px;list-style:none}
+.standalone-page .poem-engagement summary::-webkit-details-marker{display:none}
+.standalone-page .poem-engagement summary::marker{content:""}
+.standalone-page .poem-engagement summary svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.standalone-page .poem-engagement summary .comments-chevron{width:12px;height:12px;margin-left:2px}
+.standalone-page .poem-engagement details[open] summary{justify-content:flex-start}
+.standalone-page .poem-engagement details[open] .comments-chevron{transform:rotate(180deg)}
+.standalone-page .poem-engagement summary:hover{color:var(--rust)}
+.standalone-page .poem-engagement details[open]{grid-column:1/-1;grid-row:2}
+.standalone-page .poem-engagement .service-note{margin:4px 0 0;font-size:13px;line-height:1.5}
+.standalone-page .poem-engagement .service-note a{text-decoration:underline;text-underline-offset:3px}
+.standalone-page .poem-engagement form{margin-top:16px}
+.standalone-page .poem-engagement [data-like-status]:empty{display:none}
+.standalone-page:not(.illustrated-mode) #reading{margin-bottom:12px}
+.standalone-page>.footer-landscape{height:40px;margin-top:0;margin-bottom:0}
+.standalone-page>.footer-landscape :is(.footer-grass,.footer-stone){width:78px;height:40px;background-size:216px 72px}
+.standalone-page>.footer{margin-top:0;padding-top:12px;padding-bottom:20px}
+@media(max-width:760px){
+ .standalone-page:not(.illustrated-mode) .book-reading-end{margin-top:12px}
+ .standalone-page:not(.illustrated-mode) .poem-engagement{width:100%;margin-top:12px}
+ .standalone-page>.footer-landscape{height:40px}
+ .standalone-page>.footer-landscape :is(.footer-grass,.footer-stone){width:78px;height:40px;background-size:216px 72px}
+}
+
+/* A single, quiet closing row: previous arrow, end mark, next arrow. */
+.nav-ending{display:none}
+.standalone-page:not(.illustrated-mode) .reader>.poem-ending{display:none}
+.standalone-page:not(.illustrated-mode) .page-nav{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:12px}
+.standalone-page:not(.illustrated-mode) .page-nav>a{width:44px;max-width:none;min-height:44px;justify-content:center}
+.standalone-page:not(.illustrated-mode) .page-nav>a:first-child{grid-column:1;grid-row:1}
+.standalone-page:not(.illustrated-mode) .page-nav>a:last-child{grid-column:3;grid-row:1}
+.standalone-page:not(.illustrated-mode) .page-nav .nav-label{display:none}
+.standalone-page:not(.illustrated-mode) .page-nav .previous-arrow{display:inline-flex}
+.standalone-page:not(.illustrated-mode) .page-nav .nav-ending{display:flex;grid-column:2;grid-row:1;justify-content:center;align-items:center;color:var(--rust);pointer-events:none}
+.standalone-page:not(.illustrated-mode) .page-nav .nav-ending svg{width:34px;height:22px}
+@media print{.standalone-page:not(.illustrated-mode) .reader>.poem-ending{display:flex}}

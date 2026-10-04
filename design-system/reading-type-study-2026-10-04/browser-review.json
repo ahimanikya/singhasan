@@ -1,0 +1,47 @@
+{
+  "baseline": {
+    "fontSize": 24,
+    "lineHeight": 1.9,
+    "width": 350,
+    "weight": 400
+  },
+  "samples": [
+    {
+      "equal": true,
+      "metrics": [
+        "350px text column · 18 original lines · 18 displayed rows · 0 lines wrap",
+        "350px text column · 18 original lines · 19 displayed rows · 1 lines wrap"
+      ],
+      "overflow": false,
+      "poem": "24"
+    },
+    {
+      "equal": true,
+      "metrics": [
+        "350px text column · 30 original lines · 30 displayed rows · 0 lines wrap",
+        "350px text column · 30 original lines · 30 displayed rows · 0 lines wrap"
+      ],
+      "overflow": false,
+      "poem": "21"
+    },
+    {
+      "equal": true,
+      "metrics": [
+        "350px text column · 48 original lines · 48 displayed rows · 0 lines wrap",
+        "350px text column · 48 original lines · 49 displayed rows · 1 lines wrap"
+      ],
+      "overflow": false,
+      "poem": "1"
+    },
+    {
+      "equal": true,
+      "metrics": [
+        "350px text column · 84 original lines · 85 displayed rows · 1 lines wrap",
+        "350px text column · 84 original lines · 88 displayed rows · 4 lines wrap"
+      ],
+      "overflow": false,
+      "poem": "68"
+    }
+  ],
+  "controls": "450 weight, wide column, single-font view and reset verified in browser"
+}

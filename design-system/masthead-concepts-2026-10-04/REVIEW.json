@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-04",
+  "status": "B approved by user and applied locally; awaiting publication",
+  "font": "Self-hosted Anek Odia, 600",
+  "concepts": [
+    {
+      "key": "a",
+      "name": "Throne & earth",
+      "idea": "A drawn throne above a few earth lines. Closest to the book’s central image."
+    },
+    {
+      "key": "b",
+      "name": "Literary wordmark",
+      "idea": "The name leads, with a small leaf stroke beneath it. Light and unobtrusive."
+    },
+    {
+      "key": "c",
+      "name": "Publisher’s seal",
+      "idea": "A circular impression beside the title. A more formal, archival character."
+    },
+    {
+      "key": "d",
+      "name": "The threshold",
+      "idea": "A narrow doorway and open rules frame the title. A nod to ସିଂହଦ୍ଵାର."
+    }
+  ],
+  "productionChange": "Literary wordmark with Anek Odia 600 and leaf underline replaces the masthead throne icon. Existing favicon and cover artwork retained.",
+  "assets": "Approved underline copied to site/dist/assets/icons/masthead-leaf.svg; title remains selectable HTML.",
+  "selected": "b"
+}
