@@ -73,6 +73,15 @@ body.quiet-mode .section-ornament,body.quiet-mode>.footer-landscape{display:none
 .back-cover-author h3{font-size:4.5cqw}
 .author-closing{flex-wrap:wrap}
 
+/* Centre the book credit with the 44px navigation targets on wide footers. */
+@media(min-width:761px){
+ .footer{align-items:center}
+ .footer>p{flex:none;margin:0}
+ .footer>nav{align-items:center}
+ .footer>nav>a{align-items:center}
+ .footer>nav>a>svg{display:block;flex:none}
+}
+
 /* Approved B: Odia literary wordmark with a quiet leaf underline. */
 .masthead .book-brand{display:inline-flex;align-items:center;flex-shrink:0;color:var(--ink);text-decoration:none;font-size:32px}
 .masthead .book-brand .brand-wordmark{position:relative;display:block;padding-bottom:.28em;color:inherit;font-size:inherit}
