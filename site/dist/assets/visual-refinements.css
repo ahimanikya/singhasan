@@ -82,13 +82,17 @@ body.quiet-mode .section-ornament,body.quiet-mode>.footer-landscape{display:none
  .footer>nav>a>svg{display:block;flex:none}
 }
 
-/* Approved B: Odia literary wordmark with a quiet leaf underline. */
-.masthead .book-brand{display:inline-flex;align-items:center;flex-shrink:0;color:var(--ink);text-decoration:none;font-size:32px}
-.masthead .book-brand .brand-wordmark{position:relative;display:block;padding-bottom:.28em;color:inherit;font-size:inherit}
-.masthead .book-brand .brand-odia{display:block;font:600 1em/1.45 var(--book-identity);font-synthesis:none;color:inherit;white-space:nowrap;transform:translateY(.04em)}
-.masthead .book-brand .brand-wordmark>svg{display:block;position:absolute;bottom:0;left:-.04em;width:100%;height:.3em;color:var(--rust);pointer-events:none}
+/* Preserved mastheads: A (current throne & earth), B (literary wordmark). */
+.masthead .book-brand{display:inline-flex;align-items:center;flex-shrink:0;gap:10px;color:var(--ink);text-decoration:none;font-size:32px}
+.masthead .book-brand .brand-wordmark{position:relative;display:block;padding:0;color:inherit;font-size:inherit}
+.masthead .book-brand .brand-odia{display:block;font:600 1em/1.45 var(--book-identity);font-synthesis:none;color:inherit;white-space:nowrap;transform:translateY(.25em)}
+.masthead .brand-a>svg{width:1.5em;height:1.65em;flex:none}
+.masthead .brand-a>svg .accent{color:var(--rust)}
+.masthead .brand-b .brand-wordmark{padding-bottom:.28em}
+.masthead .brand-b .brand-odia{transform:translateY(.04em)}
+.masthead .brand-b .brand-wordmark>svg{display:block;position:absolute;bottom:0;left:-.04em;width:100%;height:.3em;color:var(--rust);pointer-events:none}
 .masthead .book-brand:hover,.masthead .book-brand:focus-visible{color:var(--rust)}
-@media(max-width:760px){.masthead .book-brand{font-size:27px}}
+@media(max-width:760px){.masthead .book-brand{font-size:27px;gap:8px}}
 @media(max-width:370px){.masthead .book-brand{font-size:24px}}
 
 /* Shared, decorative end marks. Source verse and saved line offsets stay intact. */

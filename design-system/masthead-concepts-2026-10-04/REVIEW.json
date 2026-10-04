@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "status": "B approved by user and applied locally; awaiting publication",
+  "status": "A selected after full-page comparison; both A and B retained",
   "font": "Self-hosted Anek Odia, 600",
   "concepts": [
     {
@@ -24,7 +24,11 @@
       "idea": "A narrow doorway and open rules frame the title. A nod to ସିଂହଦ୍ଵାର."
     }
   ],
-  "productionChange": "Literary wordmark with Anek Odia 600 and leaf underline replaces the masthead throne icon. Existing favicon and cover artwork retained.",
-  "assets": "Approved underline copied to site/dist/assets/icons/masthead-leaf.svg; title remains selectable HTML.",
-  "selected": "b"
+  "productionChange": "Throne & earth masthead A replaces B; throne favicon and covers unchanged.",
+  "assets": "Both complete HTML templates in site/templates/masthead-{a,b}.html and both SVG marks in site/dist/assets/icons/masthead-{throne,leaf}.svg; shared variant styling retained.",
+  "selected": "a",
+  "history": [
+    "B initially selected and published",
+    "User reconsidered after full-page previews, selected A, and requested both logos be preserved"
+  ]
 }
