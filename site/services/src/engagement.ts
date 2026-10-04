@@ -3,7 +3,8 @@ const section=document.querySelector<HTMLElement>('[data-poem-engagement]');
 if(section&&document.body.classList.contains('standalone-page')) void start(section);
 async function start(section:HTMLElement){
  const poemId=section.dataset.poemEngagement!;
- const like=section.querySelector<HTMLButtonElement>('[data-like]')!;
+ const likes=[...document.querySelectorAll<HTMLButtonElement>('[data-like]')];
+ const busy=(value:boolean)=>likes.forEach(button=>{button.disabled=value;});
  const likeStatus=section.querySelector<HTMLElement>('[data-like-status]')!;
  const details=section.querySelector<HTMLDetailsElement>('details')!;
  const list=section.querySelector<HTMLElement>('[data-comments-list]')!;
@@ -16,7 +17,7 @@ async function start(section:HTMLElement){
  if(!f?.enabled||location.protocol!=='https:'||!f.allowedHosts?.includes(location.hostname)||!/^([1-9]|[1-5][0-9]|6[0-8])$/.test(poemId))return;
  const likesEnabled=runtime.engagement.likes===true,commentsEnabled=runtime.engagement.publicComments===true;
  if(!likesEnabled&&!commentsEnabled)return;
- section.querySelector<HTMLElement>('[data-service-note]')!.hidden=true;section.querySelector<HTMLFieldSetElement>('fieldset')!.disabled=false;like.hidden=!likesEnabled;details.hidden=!commentsEnabled;
+ section.querySelector<HTMLElement>('[data-service-note]')!.hidden=true;section.querySelector<HTMLFieldSetElement>('fieldset')!.disabled=false;likes.forEach(button=>{button.hidden=!likesEnabled;});details.hidden=!commentsEnabled;
  let service:Promise<any>|undefined;
  const connect=()=>service??=(async()=>{
   const [app,auth,store]=await Promise.all([import('firebase/app'),import('firebase/auth'),import('firebase/firestore')]);
@@ -25,16 +26,23 @@ async function start(section:HTMLElement){
  })().catch(error=>{service=undefined;throw error;});
  const identity=async(s:any)=>{const auth=s.auth.getAuth(s.instance);await auth.authStateReady();return auth.currentUser||(await s.auth.signInAnonymously(auth)).user;};
  let liked=false;
- const showLike=(count:number)=>{like.setAttribute('aria-pressed',String(liked));like.setAttribute('aria-label',(liked?'Remove your like. ':'Like this poem. ')+count+' likes');like.querySelector('[data-like-label]')!.textContent=liked?'Liked':'Like';like.querySelector('[data-like-count]')!.textContent=String(count);};
+ const showLike=(count:number)=>likes.forEach(button=>{
+  button.setAttribute('aria-pressed',String(liked));
+  const label=(liked?'Remove your like':'Like this poem')+(count>0?`. ${count} ${count===1?'like':'likes'}`:'');
+  button.setAttribute('aria-label',label);button.title=label;
+  const text=button.querySelector('[data-like-label]');if(text)text.textContent=liked?'Liked':'Like';
+  const total=button.querySelector<HTMLElement>('[data-like-count]')!;total.textContent=String(count);total.hidden=count===0;
+ });
  // One public count read. Anonymous sign-in is reserved for a reader action.
- if(likesEnabled){like.disabled=true;connect().then(async s=>{
+ if(likesEnabled){busy(true);connect().then(async s=>{
   const auth=s.auth.getAuth(s.instance);await auth.authStateReady();
   const snap=await s.store.getDoc(s.store.doc(s.db,'poemStats',poemId));
   if(auth.currentUser){const vote=await s.store.getDoc(s.store.doc(s.db,'poemLikes',poemId,'voters',auth.currentUser.uid));liked=vote.exists()&&vote.data().liked===true;}
   showLike(snap.exists()?snap.data().likes:0);
- }).catch(()=>{likeStatus.textContent='The like count is unavailable. You can try again.';}).finally(()=>{like.disabled=false;});}
- like.addEventListener('click',async()=>{
-  like.disabled=true;likeStatus.textContent='Saving…';
+ }).catch(()=>{likeStatus.textContent='The like count is unavailable. You can try again.';}).finally(()=>{busy(false);});}
+ const toggleLike=async()=>{
+  if(!likesEnabled||likes.some(button=>button.disabled))return;
+  busy(true);likeStatus.textContent='Saving…';
   try{
    const s=await connect(),user=await identity(s),voter=s.store.doc(s.db,'poemLikes',poemId,'voters',user.uid),stats=s.store.doc(s.db,'poemStats',poemId);
    const result=await s.store.runTransaction(s.db,async(tx:any)=>{
@@ -44,8 +52,9 @@ async function start(section:HTMLElement){
     tx.set(stats,{likes:count,updatedAt:s.store.serverTimestamp()});return {liked:next,count};
    });
    liked=result.liked;showLike(result.count);likeStatus.textContent=liked?'Thank you. Your like is saved.':'Your like was removed.';
-  }catch{likeStatus.textContent='Your like could not be saved. Please try again.';}finally{like.disabled=false;}
- });
+  }catch{likeStatus.textContent='Your like could not be saved. Please try again.';}finally{busy(false);}
+ };
+ likes.forEach(button=>button.addEventListener('click',toggleLike));
  let cursor:any,loaded=false,loading=false;
  async function loadComments(){
   if(loading)return;loading=true;more.disabled=true;
