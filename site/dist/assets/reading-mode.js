@@ -37,13 +37,9 @@
    if(cover){const on=!document.body.classList.contains('quiet-mode');document.body.classList.toggle('quiet-mode',on);try{localStorage.setItem('singhasan-book-quiet-v1',String(on))}catch{}const url=new URL(location.href);url.searchParams.set('quiet',on?'1':'0');history.replaceState(history.state,'',url);refresh();document.dispatchEvent(new Event('book-mode-changed'));return}
    window.readerJourney?.remember();const url=new URL(document.body.classList.contains('contents-page')?'book.html':location.pathname,location.href);url.searchParams.set('view','book');url.searchParams.set('quiet','1');const verse=document.querySelector('#experience-verse');if(verse){url.searchParams.set('lang',verse.lang);const line=[...verse.querySelectorAll('[data-line]')].find(el=>el.getBoundingClientRect().bottom>100);if(line)url.searchParams.set('line',line.dataset.line)}location.href=url.href;
   });
-  if(document.body.classList.contains('standalone-page')){
-   const panel=document.querySelector('.book-glance'),companion=document.querySelector('.book-companion'),toolkit=document.querySelector('#page-bookmarks'),wide=matchMedia('(min-width:761px)');
-   if(panel&&companion&&toolkit){const placePanel=()=>{const focused=document.activeElement,keepFocus=panel.contains(focused);(wide.matches?companion:toolkit).append(panel);if(keepFocus)focused.focus({preventScroll:true})};placePanel();wide.addEventListener('change',placePanel)}
-  }
   for(const link of document.querySelectorAll('.read-in-book'))link.addEventListener('click',()=>{const url=new URL(link.href),code=document.querySelector('#experience-verse')?.lang;try{const place=JSON.parse(localStorage.getItem('singhasan-book-place-v1'));if(place?.route===url.pathname.split('/').pop()&&place.language===code){url.searchParams.set('line',place.line);url.searchParams.set('offset',place.offset||0)}}catch{}if(document.body.classList.contains('intro-paginated')){const prose=document.querySelector('#experience-verse');url.searchParams.set('line',prose.dataset.pageLine||0);url.searchParams.set('offset',prose.dataset.pageOffset||0)}if(code&&code!=='or')url.searchParams.set('lang',code);else url.searchParams.delete('lang');link.href=url.href});
   for(const link of document.querySelectorAll('.reader-listen'))link.addEventListener('click',()=>{
-   const url=new URL(link.href),verse=document.querySelector('#experience-verse');url.searchParams.set('quiet',document.body.classList.contains('quiet-mode')?'1':'0');
+   const url=new URL(link.href),verse=document.querySelector('#experience-verse');url.searchParams.set('quiet','1');
    if(document.body.classList.contains('pagination-on')&&verse&&document.querySelector('.printed-spread')?.dataset.leafKind==='text'){url.searchParams.set('line',verse.dataset.pageLine||0);url.searchParams.set('offset',verse.dataset.pageOffset||0)}link.href=url.href;
   });
   // Resume through the single homepage action; retain the cover’s separate resume link.

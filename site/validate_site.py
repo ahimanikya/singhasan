@@ -72,9 +72,9 @@ for track in audio:
     assert not file.read_bytes().startswith(b'version https://git-lfs'), 'Fetch LFS audio before building'
     assert hashlib.sha256(file.read_bytes()).hexdigest()==track['sha256'], track['id']
     if track.get('poem'):
-        assert f'listen.html#poem-{track["poem"]}' in (root/f'poem-{track["poem"]}.html').read_text()
+        assert f'read-along.html?track=poem-{track["poem"]}' in (root/f'poem-{track["poem"]}.html').read_text()
     if track['id']=='introduction':
-        assert 'listen.html#introduction' in (root/'intro.html').read_text()
+        assert 'read-along.html?track=introduction' in (root/'intro.html').read_text()
         assert [t['id'] for t in audio[:3]]==['welcome','introduction','poem-1']
         production=json.loads((root.parent/'production/prose-introduction-run.json').read_text())
         introduction='\n\n'.join(p['text'] for p in book['chapters'][0]['pages'])

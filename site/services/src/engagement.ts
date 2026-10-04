@@ -70,7 +70,7 @@ async function start(section:HTMLElement){
     name.textContent=String(comment.name);text.textContent=String(comment.message);article.append(name,text);list.append(article);
    }
    cursor=result.docs.at(-1)||cursor;more.hidden=result.size<20;loaded=true;
-   if(!list.childElementCount)list.textContent='Be the first to leave a reading response.';
+
   }catch{if(!loaded)list.textContent='Comments could not be loaded. Please try again.';more.hidden=false;more.textContent='Try loading comments again';}
   finally{loading=false;more.disabled=false;}
  }
@@ -80,14 +80,16 @@ async function start(section:HTMLElement){
  more.addEventListener('click',()=>void loadComments());
  form.addEventListener('submit',async event=>{
   event.preventDefault();if(!form.reportValidity())return;
-  const data=new FormData(form),name=String(data.get('name')||'').trim(),message=String(data.get('message')||'').trim();
-  if(!name||name.length>80||!message||message.length>2000){status.textContent='Please enter a name and a comment of up to 2,000 characters.';return;}
-  const button=form.querySelector<HTMLButtonElement>('button[type="submit"]')!;button.disabled=true;status.textContent='Sending your comment for review…';
+  const button=form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+  if(button.disabled)return;
+  const message=String(new FormData(form).get('message')||'').trim();
+  if(!message||message.length>2000){status.textContent='Please write a comment of up to 2,000 characters.';return;}
+  button.disabled=true;status.textContent='Sending…';
   try{
    const s=await connect(),user=await identity(s),ref=s.store.doc(s.store.collection(s.db,'commentSubmissions')),batch=s.store.writeBatch(s.db);
-   batch.set(ref,{uid:user.uid,poemId,name,message,status:'pending',consentVersion:'public-comments-v1',createdAt:s.store.serverTimestamp()});
+   batch.set(ref,{uid:user.uid,poemId,name:'Reader',message,status:'pending',consentVersion:'public-comments-v1',createdAt:s.store.serverTimestamp()});
    batch.set(s.store.doc(s.db,'commentThrottle',user.uid),{lastSubmittedAt:s.store.serverTimestamp(),lastCommentId:ref.id});
-   await batch.commit();form.reset();status.textContent='Thank you. Your comment will appear after it has been reviewed.';
+   await batch.commit();form.reset();status.textContent='Thank you. Your comment is awaiting review.';
   }catch{status.textContent='Your comment could not be saved. Your words are still here. If you just submitted a comment, wait a minute before trying again.';}
   finally{button.disabled=false;}
  });

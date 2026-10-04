@@ -18,7 +18,7 @@ python3 site/validate_site.py
 python3 -m http.server 8768 --directory site/dist
 ```
 
-`site/dist/book.js` contains the original Odia text. Edit templates and the page builder in `site/`, and styles, reader scripts and artwork in `site/dist/assets/`. Future translations belong in `site/translations/`; only entries marked `ready` are published.
+`site/dist/book.js` contains the original Odia text. Edit templates and the page builder in `site/`, and styles, reader scripts and artwork in `site/dist/assets/`. Future translations belong in `site/translations/`; entries marked `ready` or explicitly authorized with `published: true` enter the site. Review status remains independent of publication.
 
 ## Publishing
 
@@ -67,7 +67,7 @@ The standalone ସିଂହଦ୍ଵାର page has no English Introduction eyeb
 
 ## Current editorial phase · 4 October 2026
 
-Audio generation, replacements and listening review are deferred. Human Natural Translation is installed and versioned under `site/editorial/skills/human-natural-translation/`. English, Tamil and Hindi are first, with a proposed complete-poem pilot using 1, 21 and 24; other languages remain planned. The current publication includes reviewed translations for 3 English, 21 Hindi and 3 Bengali poem sections. Complete working translations and Tamil remain local drafts for review. Only ready sections are included in the public repository and built site; private review notes remain local.
+Audio generation, replacements and listening review are deferred. Human Natural Translation is installed and versioned under `site/editorial/skills/human-natural-translation/`. English, Tamil and Hindi are first, with a proposed complete-poem pilot using 1, 21 and 24; other languages remain planned. On 4 October 2026, the user authorized adding all existing translations. The site build now includes the introduction and all 68 poems in English, Hindi, Bengali and Tamil alongside Odia. Entries retain their honest draft/ready review status; `published: true` records the separate release decision. Outstanding English/Hindi/Bengali questions and Tamil family review remain open. Editorial review notes stay private. Audio is offered only for Odia.
 
 The updated Kabita Live comparison is `design-system/AUDIT-2026-10-04.json`. Search remains in the existing reader tools, as requested for a single book; Contents keeps its current design. Illustrated is the default book mode and starts with paper-turn animation on. Quiet starts with animation off; each mode retains its own explicit choice. Sound stays opt-in and reduced-motion preferences override animation. Translation links retain the chosen language when turning pages, leaving the reader and sharing. An unavailable language falls back visibly to Odia. Source poems and saved-reading data formats are unchanged.
 

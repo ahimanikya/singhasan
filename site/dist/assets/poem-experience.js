@@ -7,7 +7,7 @@ const memory=new Map();
 function readJSON(key,fallback){try{return JSON.parse(localStorage.getItem(key))??memory.get(key)??fallback}catch{return memory.get(key)??fallback}}
 function writeJSON(key,value){memory.set(key,value);try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$('#page-saved-status').textContent='Device storage is unavailable; this change lasts for this visit.';return false}}
 let library=[pageData],loaded=false;
-async function loadLibrary(){if(loaded)return;try{const response=await fetch('assets/reading-book.json');if(!response.ok)throw Error();const data=await response.json();library=data.poems;loaded=true;migrateBookmarks();fillReadingList()}catch{$('#book-search-status').textContent='The book list could not be loaded. Use Contents to choose a poem.'}}
+async function loadLibrary(){if(loaded)return;try{const response=await fetch('assets/reading-book.json');if(!response.ok)throw Error();const data=await response.json();library=data.poems;loaded=true;migrateBookmarks()}catch{$('#book-search-status').textContent='The book list could not be loaded. Use Contents to choose a poem.'}}
 function migrateBookmarks(){
  const old=readJSON('singhasan-quiet-bookmarks-v1',[]);if(!Array.isArray(old))return;let copied=true;
  for(const b of old){const p=library.find(p=>p.id===b.id&&p.variants[b.language]);if(!p||!Number.isInteger(b.unit))continue;
@@ -22,13 +22,16 @@ function fillLibrary(){const select=$('#book-section'),term=$('#book-search').va
  if(!term)select.value=pageData.route;$('#book-read-section').disabled=!select.options.length;$('#book-search-status').textContent=loaded?`${select.options.length} section${select.options.length===1?'':'s'}.`:'';
 }
 $('#book-search').addEventListener('input',fillLibrary);
-function fillReadingList(){const select=$('#book-current-section');select.replaceChildren();for(const p of library){const v=p.variants[pageCode()]||p.variants[p.source_language],o=document.createElement('option');o.value=p.route;o.textContent=p.id?`Poem ${p.id} · ${v.stanzas.flat().find(t=>t.trim())||v.title}`:v.title;select.append(o)}select.value=pageData.route}
-$('#book-current-section').onchange=e=>{location.href=bookURL(e.target.value,{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()})};
-$('#book-read-all').onclick=()=>{location.href=bookURL('book.html',{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()})};
 $('#book-size').onchange=e=>document.querySelector(`[data-size="${e.target.value}"]`)?.click();
-$('#book-language').onchange=e=>{const note=$('#reader-language-note');if(note)note.hidden=true;$(`[data-reading-language="${e.target.value===pageData.source_language?'original':e.target.value}"]`)?.click();fillReadingList();fillLibrary()};
+$('#book-language').onchange=e=>{const note=$('#reader-language-note');if(note)note.hidden=true;$(`[data-reading-language="${e.target.value===pageData.source_language?'original':e.target.value}"]`)?.click();fillLibrary()};
 
-$('#book-read-section').onclick=()=>{if($('#book-section').value)location.href=bookURL($('#book-section').value,{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()})};
+$('#book-read-section').onclick=()=>{
+ const route=$('#book-section').value;if(!route)return;
+ if(document.body.classList.contains('full-page-reader'))location.href=bookURL(route,{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()});
+ else location.href=route+(pageCode()==='or'?'':'?lang='+encodeURIComponent(pageCode()));
+};
+// A language selector is useful only when this text has another edition.
+$('#book-language').closest('label').hidden=!pageVerse||$('#book-language').options.length<2;
 // One reader menu brings language, size and saved passages together.
 const savedPanel=$('#page-bookmarks'),savedButton=$('#page-bookmarks-button'),pageBookKey=`singhasan-page-bookmarks-v1:${pageData.id}`;
 let pageScrollTimer;
@@ -104,4 +107,4 @@ async function rustle(){if(!effects.sound)return;try{const Context=window.AudioC
 document.addEventListener('book-page-turn',rustle);$('#book-sound-test').onclick=rustle;
 const code=query.get('lang');if(code==='original'||pageData.variants[code])$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();
 const languageNote=$('#reader-language-note');if(languageNote&&code&&code!=='original'&&languageNames[code]&&!pageData.variants[code]){languageNote.textContent=`${languageNames[code]} is not available for this section yet. Showing ${languageNames[pageData.source_language]}.`;languageNote.hidden=false}
-$('#book-language').value=pageCode();refreshSavedButton();fillLibrary();fillReadingList();
+$('#book-language').value=pageCode();refreshSavedButton();fillLibrary();

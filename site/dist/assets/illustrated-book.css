@@ -1,4 +1,3 @@
-.illustrated-tools-links{display:none}
 /* A light paper frame; colour belongs to the art and the journal's accents. */
 @media screen{
  .illustrated-mode.pagination-on{background:var(--paper)}
@@ -68,8 +67,6 @@
  .illustrated-mode #leaf-switch{min-height:44px;height:44px}
 }
 
-.illustrated-mode .illustrated-tools-links{display:flex;flex-direction:column;gap:0;font:14px/1.5 var(--ui);color:var(--sea)}
-.illustrated-mode .illustrated-tools-links a{display:flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:4px}
 @media screen and (max-width:760px){
  .illustrated-mode.pagination-on .story-page .illustration-reading{justify-content:safe center}
  .illustrated-mode.pagination-on .illustration-reading>*{flex-shrink:0}
@@ -157,3 +154,28 @@
  .full-page-reader.illustrated-mode.pagination-on #reading{width:calc(100% - 16px);margin:0 8px 8px}
 }
 @media print{.reader-topbar{display:none}}
+
+/* Site browsing is available after Exit reader; keep this menu for reading. */
+.full-page-reader #page-bookmarks .toolkit-contents{display:none}
+
+/* Reader tools: preferences first; optional tools stay folded away. */
+#page-bookmarks{box-sizing:border-box}
+#page-bookmarks [hidden]{display:none!important}
+body:not(.full-page-reader) #page-bookmarks .book-reader-only{display:none}
+#page-bookmarks :is(.reader-effects,#page-saved-details,.book-library){border:0;border-top:1px solid var(--line);padding:4px 0;margin:8px 0 0;font:14px/1.5 var(--ui)}
+#page-bookmarks :is(.reader-effects,#page-saved-details,.book-library)>summary{min-height:44px;align-content:center;cursor:pointer}
+#page-bookmarks #book-search-status{font:12px/1.5 var(--ui);color:var(--muted);margin:8px 0}
+#page-bookmarks .page-tools-tip:empty{display:none}
+#page-bookmarks :is(select,input):focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+.contents-page .poem-actions :is(.reader-listen,#open-share){display:none}
+
+.reader-listen[hidden],[data-odia-audio][hidden]{display:none!important}
+
+/* A small printer's ornament occupies only an otherwise blank facing leaf. */
+.blank-leaf-art{display:none;pointer-events:none;user-select:none}
+@media screen and (min-width:761px){
+ .pagination-on .printed-spread>.reader{position:relative}
+ .pagination-on .blank-leaf-art:not([hidden]){position:absolute;inset:0 0 0 auto;width:calc((100% - 80px)/2);display:grid;place-items:center;color:var(--muted);opacity:.55}
+ .pagination-on .blank-leaf-art svg{width:min(60%,240px);height:auto;max-height:45%}
+ .pagination-on.night .blank-leaf-art{opacity:.65}
+}

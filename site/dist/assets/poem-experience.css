@@ -72,3 +72,13 @@
 #page-saved-details summary{min-height:44px;align-content:center;cursor:pointer}
 #page-bookmarks button:focus-visible,#page-bookmarks summary:focus-visible,#page-bookmarks-button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 
+
+/* Turn one complete sheet around the spine; keep the book frame stationary. */
+.hinged-turn .turn-snapshot{will-change:auto}
+.turn-sheet{position:absolute;top:0;height:100%;transform-style:preserve-3d;will-change:transform}
+.turn-face{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--paper)}
+.turn-front{transform:translateZ(.1px)}
+.turn-back{transform:rotateY(180deg)}
+.turn-face-shading{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#000,transparent 30%,transparent 75%,#000);opacity:0}
+.pagination-on .printed-spread{touch-action:pan-y pinch-zoom}
+.pagination-on .printed-spread.is-dragging{user-select:none;-webkit-user-select:none;cursor:grabbing}

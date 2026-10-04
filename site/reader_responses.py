@@ -4,16 +4,12 @@ def responses(c,icon):
     return f'''<section id="reader-responses" class="poem-engagement" data-poem-engagement="{c['number']}" aria-label="Reader responses">
  <div class="like-row"><button type="button" data-like disabled aria-pressed="false" aria-label="Like this poem"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5 3.8 12.4C-1.6 6.8 6.4 0 12 6.8 17.6 0 25.6 6.8 20.2 12.4Z"/></svg><span data-like-label>Like</span><span data-like-count aria-hidden="true" hidden></span></button><span data-like-status role="status"></span></div>
  <details><summary><svg class="comment-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4.5h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 3v-3a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h6"/></svg><span>Comments</span><svg class="comments-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4"/></svg></summary>
-  <p class="service-note" data-service-note>Responses are unavailable here. <a href="contact.html?poem=poem-{c['number']}.html">Write privately</a>.</p>
-  <p class="small muted">A few words about what stayed with you. Comments appear after editorial review.</p>
-  <div data-comments-list role="region" aria-label="Published comments" aria-live="polite">Open comments to read the conversation.</div>
+  <p class="service-note" data-service-note>Comments are unavailable here.</p>
+  <div data-comments-list role="region" aria-label="Published comments" aria-live="polite"></div>
   <button type="button" class="text-link" data-comments-more hidden>Load more comments</button>
   <form data-public-comment><fieldset class="form-stack" disabled><legend class="sr-only">Leave a comment</legend>
-   <label><span class="label">Your public name</span><input name="name" required maxlength="80" autocomplete="nickname"></label>
-   <label><span class="label">Your comment</span><textarea name="message" required maxlength="2000" placeholder="What did this poem bring to mind?"></textarea></label>
-   <label class="comment-consent"><input type="checkbox" required name="consent"><span>I agree that my name and comment may be published after editorial review. I have not included private contact details.</span></label>
-   <p class="small muted">For corrections or a private message, <a href="contact.html?poem=poem-{c['number']}.html">write to the editor</a>. Likes and submissions use an anonymous browser identifier; clearing browser data can reset it.</p>
-   <button class="btn" type="submit">Submit comment for review</button></fieldset><p class="status" role="status"></p>
+   <label><span class="sr-only">Your comment</span><textarea name="message" rows="3" required maxlength="2000" placeholder="Write a comment…" aria-describedby="comment-review-note"></textarea></label>
+   <div class="comment-submit-row"><button class="btn" type="submit">Post comment</button><p class="small muted" id="comment-review-note">Comments are public after review.</p></div></fieldset><p class="status" role="status"></p>
   </form>
  </details>
 </section>'''

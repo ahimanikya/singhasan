@@ -74,6 +74,8 @@ function render(choice){
   save(markKey(),saved);
  }
  marks=normalized(Array.isArray(saved)?saved:[]);drawMarks();
+ document.querySelectorAll('.reader-listen,[data-odia-audio]').forEach(link=>{link.hidden=language!=='or'});
+ document.dispatchEvent(new CustomEvent('reading-language-changed',{detail:{language}}));
 }
 tabs.forEach((tab,index)=>{
  tab.addEventListener('click',()=>render(tab.dataset.readingLanguage));
