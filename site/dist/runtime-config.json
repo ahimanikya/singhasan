@@ -1,6 +1,5 @@
 {
   "schemaVersion": 1,
-  "contactEmail": "ahimanikya@gmail.com",
   "firebase": {
     "enabled": true,
     "projectId": "singhasan",
@@ -14,6 +13,6 @@
   "engagement": {
     "likes": true,
     "publicComments": true,
-    "privateFeedback": false
+    "privateFeedback": true
   }
 }

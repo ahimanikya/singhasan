@@ -64,3 +64,5 @@ The wider Kabita Live technology comparison: shared design tokens, icons, access
 Quiet reading uses the same cover templates, dimensions, page frame, navigation, typography and selected paper surface as illustrated reading. It hides cover art, portrait/landscape artwork and poem illustration leaves. The front title and poet’s name are rendered as text when its lettered artwork is hidden; the back-cover prose is unchanged. There is no separate quiet cover/end-page route.
 
 The standalone ସିଂହଦ୍ଵାର page has no English Introduction eyebrow. Its prose pages extend to align their controls with the bottom of the right-hand companion on desktop; phones use a taller viewport-based page. Text reflows without changing source words or saved anchors.
+
+Privacy preference: never display the family’s personal email address in public pages, mailto links, client scripts or runtime configuration. Reader contact uses the private Firebase form only.
