@@ -58,6 +58,7 @@ async function start(section:HTMLElement){
  let cursor:any,loaded=false,loading=false;
  async function loadComments(){
   if(loading)return;loading=true;more.disabled=true;
+  if(!loaded)list.textContent='Loading comments…';
   try{
    const s=await connect(),clauses=[s.store.where('poemId','==',poemId),s.store.orderBy('publishedAt','desc'),s.store.limit(20)];
    if(cursor)clauses.push(s.store.startAfter(cursor));
@@ -73,7 +74,9 @@ async function start(section:HTMLElement){
   }catch{if(!loaded)list.textContent='Comments could not be loaded. Please try again.';more.hidden=false;more.textContent='Try loading comments again';}
   finally{loading=false;more.disabled=false;}
  }
- details.addEventListener('toggle',()=>{if(details.open&&!loaded)void loadComments();});
+ details.addEventListener('toggle',()=>{if(commentsEnabled&&details.open&&!loaded)void loadComments();});
+ // The reader may open the disclosure while runtime configuration is loading.
+ if(commentsEnabled&&details.open)void loadComments();
  more.addEventListener('click',()=>void loadComments());
  form.addEventListener('submit',async event=>{
   event.preventDefault();if(!form.reportValidity())return;

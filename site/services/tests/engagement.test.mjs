@@ -6,21 +6,22 @@ import {runInNewContext} from 'node:vm';
 const source=readFileSync(new URL('../src/engagement.ts',import.meta.url),'utf8').replace(/import\('firebase\/(app|auth|firestore)'\)/g, "Promise.resolve(services['$1'])");
 const {code}=await transform(source,{loader:'ts'});
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
-async function fixture({fail=false,enabled=true}={}){
+async function fixture({fail=false,enabled=true,commentsOpen=false}={}){
  const buttons=[true,false].map(hasLabel=>{
   const count={hidden:false,textContent:''},label={textContent:''};
   return {disabled:true,attrs:{},count,label,querySelector:s=>s==='[data-like-label]'?(hasLabel?label:null):count,setAttribute(k,v){this.attrs[k]=v},addEventListener(_,fn){this.click=fn}};
  });
- const status={textContent:''},details={addEventListener(){}},form={querySelector:()=>({}),addEventListener(){}},field={disabled:true},note={hidden:false};
- const section={dataset:{poemEngagement:'1'},querySelector:s=>({'[data-like-status]':status,details,form,fieldset:field,'[data-service-note]':note,'[data-comments-more]':{addEventListener(){}}}[s]||{})};
- let storedCount=0,storedLike=false,transactions=0,release;
- const store={doc:(_, ...path)=>path.join('/'),getDoc:async()=>({exists:()=>false}),serverTimestamp:()=>0,runTransaction:async(_,fn)=>{
+ const status={textContent:''},details={open:commentsOpen,addEventListener(_,fn){this.toggle=fn}},form={querySelector:()=>({}),addEventListener(){}},field={disabled:true},note={hidden:false};
+ const comments={textContent:'',childElementCount:0,replaceChildren(){this.textContent=''}};
+ const section={dataset:{poemEngagement:'1'},querySelector:s=>({'[data-like-status]':status,details,form,fieldset:field,'[data-service-note]':note,'[data-comments-list]':comments,'[data-comments-more]':{addEventListener(){}}}[s]||{})};
+ let storedCount=0,storedLike=false,transactions=0,reads=0,release;
+ const store={where:()=>({}),orderBy:()=>({}),limit:()=>({}),collection:()=>({}),query:()=>({}),getDocs:async()=>{reads++;return{docs:[],size:0}},doc:(_, ...path)=>path.join('/'),getDoc:async()=>({exists:()=>false}),serverTimestamp:()=>0,runTransaction:async(_,fn)=>{
   transactions++;await new Promise(resolve=>release=resolve);if(fail)throw Error('offline');
   return fn({get:async path=>({exists:()=>true,data:()=>path.startsWith('poemStats')?{likes:storedCount}:{liked:storedLike}}),set:(path,data)=>{if(path.startsWith('poemStats'))storedCount=data.likes;else storedLike=data.liked}});
  }};
  const auth={authStateReady:async()=>{},currentUser:null};
  runInNewContext(code,{document:{body:{classList:{contains:()=>true}},querySelector:()=>section,querySelectorAll:()=>buttons},location:{protocol:'https:',hostname:'singhasan.poemwithoutborders.org'},fetch:async()=>({ok:true,json:async()=>({firebase:{enabled,allowedHosts:['singhasan.poemwithoutborders.org']},engagement:{likes:true,publicComments:true}})}),services:{app:{getApps:()=>[],initializeApp:()=>({})},auth:{getAuth:()=>auth,signInAnonymously:async()=>({user:{uid:'reader'}})},firestore:{...store,getFirestore:()=>({})}}});
- await tick();return {buttons,status,release:()=>release(),transactions:()=>transactions};
+ await tick();return {buttons,status,comments,details,reads:()=>reads,release:()=>release(),transactions:()=>transactions};
 }
 test('both hearts share one pending vote, saved state, undo, and accessible count',async()=>{
  const f=await fixture();
@@ -40,4 +41,13 @@ test('a failed vote leaves both hearts unchanged and available to retry',async()
 });
 test('disabled service never enables either heart',async()=>{
  const f=await fixture({enabled:false});assert.ok(f.buttons.every(b=>b.disabled&&!b.click));assert.equal(f.transactions(),0);
+});
+
+test('comments opened before service initialization still load without another click',async()=>{
+ const f=await fixture({commentsOpen:true});assert.equal(f.reads(),1);assert.match(f.comments.textContent,/Be the first/);
+ f.details.toggle();await tick();assert.equal(f.reads(),1);
+});
+test('closed comments stay lazy and load once when opened',async()=>{
+ const f=await fixture();assert.equal(f.reads(),0);f.details.open=true;f.details.toggle();await tick();
+ assert.equal(f.reads(),1);assert.match(f.comments.textContent,/Be the first/);
 });
