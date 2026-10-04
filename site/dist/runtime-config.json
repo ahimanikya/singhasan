@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "contactEmail": "ahimanikya@gmail.com",
   "firebase": {
-    "enabled": false,
+    "enabled": true,
     "projectId": "singhasan",
     "apiKey": "AIzaSyD8FdTyVtL9LulRmskiBrNjqgDVDUw6N6o",
     "authDomain": "singhasan.firebaseapp.com",
@@ -12,8 +12,8 @@
     ]
   },
   "engagement": {
-    "likes": false,
-    "publicComments": false,
+    "likes": true,
+    "publicComments": true,
     "privateFeedback": false
   }
 }
