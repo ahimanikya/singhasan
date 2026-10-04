@@ -14,17 +14,19 @@
 .poem-engagement .like-status:empty{display:none}
 .poem-engagement .service-note{grid-column:1/-1;grid-row:4;font:14px/1.6 var(--ui);color:var(--muted);max-width:56ch;margin:12px 0}
 .poem-engagement details{grid-column:1/-1;grid-row:2;margin:0}
-.poem-engagement summary{display:flex;align-items:center;gap:9px;justify-self:start;cursor:pointer;min-height:48px;box-sizing:border-box;padding:8px 144px 8px 0;list-style:none;font:15px/1.5 var(--ui)}
+.poem-engagement summary{display:flex;align-items:center;gap:8px;justify-self:start;cursor:pointer;min-height:48px;box-sizing:border-box;padding:8px 144px 8px 0;list-style:none;font:15px/1.5 var(--ui)}
 .poem-engagement summary::-webkit-details-marker{display:none}
 .poem-engagement summary svg{width:20px;height:20px}
-.response-chevron{width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:0 4px 4px 6px}
-.poem-engagement details[open] .response-chevron{transform:rotate(225deg);margin-top:6px}
-.poem-engagement .comments-panel{border-top:1px solid var(--line);padding:24px 0 0;margin-top:12px;font:16px/1.6 var(--ui)}
+.response-chevron{width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:9px solid currentColor;flex:none;transform:rotate(0deg)}
+.poem-engagement details[open] .response-chevron{transform:rotate(90deg)}
+.poem-engagement .comments-panel{padding:16px 0 0;font:16px/1.6 var(--ui)}
+.poem-engagement .comments-intro,.poem-engagement .comments-note{font:14px/1.65 var(--ui);color:var(--muted);margin:0 0 8px}
+.poem-engagement .comments-note{margin:4px 0 24px}
+.poem-engagement .comments-note a{text-underline-offset:3px}
 .poem-engagement details:not([open]) .comments-panel{display:none}
 .poem-engagement article{padding:16px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
 .poem-engagement article p{white-space:pre-wrap;margin:8px 0;font:19px/1.75 var(--serif)}
-.poem-engagement form{margin-top:24px;max-width:620px}
-.poem-engagement textarea{min-height:130px}
+.poem-engagement form{margin-top:32px;width:100%}
 .poem-engagement .comment-consent{display:flex;gap:10px;align-items:flex-start;font:14px/1.6 var(--ui)}
 .poem-engagement .comment-consent input{width:20px;height:20px;min-height:20px;flex:0 0 20px;margin-top:2px}
 .poem-engagement .private-note-link{position:absolute;right:0;top:72px;display:inline-flex;justify-self:end;gap:8px;align-items:center;min-height:48px;font:14px/1.5 var(--ui);text-underline-offset:4px}
@@ -32,12 +34,17 @@
 .reader-message h2{font:500 30px/1.3 var(--display);margin:0 0 20px}
 @media(max-width:420px){.poem-engagement{column-gap:12px}.poem-engagement h2{font-size:24px}.poem-engagement .private-note-link{gap:4px;font-size:13px}}
 .poem-engagement fieldset{border:0;padding:0;margin:0;min-width:0}
-.poem-engagement legend{font:20px var(--serif);margin-bottom:16px}
+.poem-engagement legend:not(.sr-only){font:20px var(--serif);margin-bottom:16px}
 .poem-engagement label,.reader-message label{display:flex;flex-direction:column;gap:8px;margin:0 0 20px;font:15px/1.5 var(--ui)}
 .poem-engagement .comment-consent{flex-direction:row}
 .poem-engagement input,.poem-engagement textarea,.reader-message input,.reader-message textarea,.reader-message select{width:100%;box-sizing:border-box;min-height:48px;padding:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:17px/1.6 var(--ui);border-radius:0}
 .poem-engagement textarea,.reader-message textarea{resize:vertical}
+.poem-engagement textarea{min-height:140px}
+.poem-engagement input,.poem-engagement textarea{border-color:var(--muted)}
 .poem-engagement button[type=submit],.reader-message button[type=submit]{min-height:48px;padding:12px 18px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);font:16px var(--ui)}
+.poem-engagement button[type=submit]{background:transparent;color:var(--ink);line-height:1.5;cursor:pointer}
+.poem-engagement button[type=submit]:hover{background:var(--ink);color:var(--paper)}
+.poem-engagement input:focus-visible,.poem-engagement textarea:focus-visible,.poem-engagement button:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
 .poem-engagement fieldset:disabled{opacity:.55}
 .illustrated-mode .poem-engagement,.full-page-reader .poem-engagement,.illustrated-mode .poem-like-shortcut,.full-page-reader .poem-like-shortcut{display:none}
 .contact-poet{max-width:1000px;margin:44px auto 64px}

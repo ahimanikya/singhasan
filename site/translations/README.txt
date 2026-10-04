@@ -8,3 +8,7 @@ Example structure (replace placeholders with actual wording before marking ready
 {"language":"en","sections":{"1":{"status":"draft","title":"","stanzas":[]}}}
 
 Rebuild with build_pages.py after adding text. Only ready, nonempty sections appear in the language selector on their poem page and in the quiet reader. Each language has separate bookmarks and underlines. Keep the original poem numbering. No PDF links belong in the reading edition.
+
+Source context for translation
+
+Read poem-context.json before translating or reviewing the covered poems in any target language. It records user-confirmed meanings and editorial decisions. Poem 21 preserves ବଢ଼ାକ ଯାକ (milk-pot expression) and ଅଧାମ (the residue left after taking the milk): everything is extracted, down to the last bit. Keep both the concrete image and its full-extraction meaning. These notes are internal translation guidance, not reader-facing copy or completed translations.

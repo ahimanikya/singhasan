@@ -1,0 +1,384 @@
+{
+  "date": "2026-10-04",
+  "approval": "User approved all proposed corrections; unresolved wording remains for the poet.",
+  "applied": [
+    {
+      "section": 0,
+      "before": "ଅଗୀଂକାର",
+      "after": "ଅଂଗୀକାର"
+    },
+    {
+      "section": 0,
+      "before": "ରଖିବାପୁ",
+      "after": "ରଖିବାକୁ"
+    },
+    {
+      "section": 0,
+      "before": "ଇଥିହାସ",
+      "after": "ଇତିହାସ"
+    },
+    {
+      "section": 0,
+      "before": "ଗନଗଣର",
+      "after": "ଜନଗଣର"
+    },
+    {
+      "section": 0,
+      "before": "ବିଶ୍ଵାଦ ଟିକକ କରିଯାଏନି",
+      "after": "ବିଶ୍ଵାସ ଟିକକ ମରିଯାଏନି"
+    },
+    {
+      "section": 0,
+      "before": "ଚିତ୍ତସବୁଠି",
+      "after": "ଚିତ୍ତ\nସବୁଠି"
+    },
+    {
+      "section": 0,
+      "before": "ସୗେଂଦର୍ଯ",
+      "after": "ସୌଂଦର୍ଯ"
+    },
+    {
+      "section": 0,
+      "before": "ଆଇ ଗୋଟାଏ",
+      "after": "ଆଉ ଗୋଟାଏ"
+    },
+    {
+      "section": 0,
+      "before": "ଈପ୍ ସିତ",
+      "after": "ଈପ୍ସିତ"
+    },
+    {
+      "section": 1,
+      "before": "ନଥିଲାକ",
+      "after": "ନଥିଲା"
+    },
+    {
+      "section": 3,
+      "before": "ଧ୍ନିତ",
+      "after": "ଧ୍ଵନିତ"
+    },
+    {
+      "section": 3,
+      "before": "ପ୍ରତିଧ୍ନି",
+      "after": "ପ୍ରତିଧ୍ଵନି"
+    },
+    {
+      "section": 5,
+      "before": "ମହାମହିମମାନକଂର",
+      "after": "ମହାମହିମମାନଂକର"
+    },
+    {
+      "section": 6,
+      "before": "ପାଂଚସସ୍ର",
+      "after": "ପାଂଚସହସ୍ର"
+    },
+    {
+      "section": 6,
+      "before": "ଶଂଖଧ୍ନିରୁ",
+      "after": "ଶଂଖଧ୍ଵନିରୁ"
+    },
+    {
+      "section": 8,
+      "before": "କୀର୍ଡନ",
+      "after": "କୀର୍ତନ"
+    },
+    {
+      "section": 12,
+      "before": "ପ୍ରରଣାଟିଏ",
+      "after": "ପ୍ରେରଣାଟିଏ"
+    },
+    {
+      "section": 13,
+      "before": "ନଘୋଡ଼",
+      "after": "ନିଘୋଡ଼"
+    },
+    {
+      "section": 14,
+      "before": "ଅଶ୍ଵାରହୀ",
+      "after": "ଅଶ୍ଵାରୋହୀ"
+    },
+    {
+      "section": 25,
+      "before": "ମୁଧୁରେ",
+      "after": "ମଧୁରେ"
+    },
+    {
+      "section": 27,
+      "before": "ହିଟର୍ଲ",
+      "after": "ହିଟଲର୍"
+    },
+    {
+      "section": 27,
+      "before": "ଲେନିଓ",
+      "after": "ଲେନିନ"
+    },
+    {
+      "section": 29,
+      "before": "ସୁଦଂର",
+      "after": "ସୁଂଦର"
+    },
+    {
+      "section": 31,
+      "before": "ନ୍ୟାୟଦଂତ",
+      "after": "ନ୍ୟାୟଦଂଡ"
+    },
+    {
+      "section": 32,
+      "before": "ସଭାସଦମାନକଂର",
+      "after": "ସଭାସଦମାନଂକର"
+    },
+    {
+      "section": 36,
+      "before": "ପ୍ରତିଧ୍ନି",
+      "after": "ପ୍ରତିଧ୍ଵନି"
+    },
+    {
+      "section": 38,
+      "before": "ତଟନେଶରେ",
+      "after": "ତଟଦେଶରେ"
+    },
+    {
+      "section": 43,
+      "before": "ଜୟଧ୍ନିରେ",
+      "after": "ଜୟଧ୍ଵନିରେ"
+    },
+    {
+      "section": 46,
+      "before": "ଉଡାଂଳୁଛି",
+      "after": "ଉଂଡାଳୁଛି"
+    },
+    {
+      "section": 49,
+      "before": "ର୍ନିଦ୍ଵଂଦରେ",
+      "after": "ନିର୍ଦ୍ଵଂଦରେ"
+    },
+    {
+      "section": 50,
+      "before": "ହଃେ",
+      "after": "ହେଃ"
+    },
+    {
+      "section": 50,
+      "before": "ପ୍ରାମଣପତ୍ର",
+      "after": "ପ୍ରମାଣପତ୍ର"
+    },
+    {
+      "section": 52,
+      "before": "ରାଜଦଂତ",
+      "after": "ରାଜଦଂଡ"
+    },
+    {
+      "section": 53,
+      "before": "ନଗ୍ରଲୋକ",
+      "after": "ନଗରଲୋକ"
+    },
+    {
+      "section": 53,
+      "before": "ଉଂଚ୍ଚ",
+      "after": "ଉଚ୍ଚ"
+    },
+    {
+      "section": 56,
+      "before": "ଆସବାପତ୍ର",
+      "after": "ଆସବାବପତ୍ର"
+    },
+    {
+      "section": 56,
+      "before": "ଲଜ୍ୟାରେ",
+      "after": "ଲଜ୍ଜାରେ"
+    },
+    {
+      "section": 62,
+      "before": "ଚୁପ୍କର ଦରକାର ଚାଲିଛି",
+      "after": "ଚୁପ୍କର ଦରବାର ଚାଲିଛି"
+    },
+    {
+      "section": 62,
+      "before": "ଭୟକଂର",
+      "after": "ଭୟଂକର"
+    },
+    {
+      "section": 66,
+      "before": "ଭାଗିଂଦେବ",
+      "after": "ଭାଂଗିଦେବ"
+    },
+    {
+      "section": 68,
+      "before": "ମଦିଂର",
+      "after": "ମଂଦିର"
+    },
+    {
+      "section": 68,
+      "before": "ଉତଥିତ",
+      "after": "ଉତ୍ଥିତ"
+    },
+    {
+      "section": 1,
+      "before": "କଦଂବ ତାଳରୁ",
+      "after": "କଦଂବ ଡାଳରୁ"
+    },
+    {
+      "section": 0,
+      "before": "ଅକ୍ଟୋକଶୀ",
+      "after": "ଅକ୍ଟୋପାଶୀ"
+    },
+    {
+      "section": 1,
+      "before": "ଗିଲବଣ",
+      "after": "ବିଲବଣ"
+    },
+    {
+      "section": 21,
+      "before": "ବଢ଼ାକଯାକ",
+      "after": "ବଢ଼ାକ ଯାକ"
+    }
+  ],
+  "pending": [],
+  "sourceBeforeSha256": "140dd15a8d3a33c52432bccc0a7fd85d52d627a0f4b5cfe74cc96c1026df5229",
+  "audioOffsetUpdates": [
+    {
+      "track": "introduction",
+      "changedWordRecords": 10,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-1",
+      "changedWordRecords": 3,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-3",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-5",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-6",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-8",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-12",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-13",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-14",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-25",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-27",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-29",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-31",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-32",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-36",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-38",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-43",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-46",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-49",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-50",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-52",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-53",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-56",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-62",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-66",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-68",
+      "changedWordRecords": 2,
+      "timestampsUnchanged": true
+    },
+    {
+      "track": "poem-21",
+      "changedWordRecords": 1,
+      "timestampsUnchanged": true
+    }
+  ],
+  "sourceAfterSha256": "f3e34cdbaa7157cfb529e3456f5d5ba5c7d409710536dc054774cab69afd9162",
+  "confirmedUnchanged": [
+    {
+      "section": 21,
+      "term": "ଅଧାମ",
+      "date": "2026-10-04",
+      "reason": "User confirmed the word for the residue remaining after the milk is taken out; extracting it too means taking everything to the last bit."
+    }
+  ]
+}

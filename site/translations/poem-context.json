@@ -1,0 +1,45 @@
+{
+  "source": "User clarification, 2026-10-04",
+  "scope": "Interpretive context for poem 21, to be used in every planned translation. This is not a finished translation.",
+  "targetLanguages": [
+    "en",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "ml",
+    "kn",
+    "mr",
+    "gu",
+    "as"
+  ],
+  "sections": {
+    "21": {
+      "sourceLines": [
+        "ଯେବେ ବଢ଼ାକ ଯାକ",
+        "ଦୁଧ ଓ ଅଧାମ",
+        "ଉଠାଇ ନେଉଥିଲେ ଗୋସାଇଁ"
+      ],
+      "terms": [
+        {
+          "word": "ବଢ଼ାକ",
+          "baseWord": "ବଢ଼ା",
+          "meaning": "A kind of pot, typically a milk pot.",
+          "editorialDecision": "Keep the approved expression ବଢ଼ାକ ଯାକ, with a space before ଯାକ. Do not replace the poetic form ବଢ଼ାକ with its explanatory base word."
+        },
+        {
+          "word": "ଅଧାମ",
+          "meaning": "The residue remaining after the milk is taken out.",
+          "editorialDecision": "Keep the Odia spelling unchanged."
+        }
+      ],
+      "passageMeaning": "The milk is taken, and even the residue is extracted: everything is taken, down to the last bit.",
+      "translationGuidance": [
+        "Preserve the concrete milk-pot image and the sense of complete extraction together.",
+        "Do not soften the action to merely drinking or pouring milk; even the remaining residue is taken.",
+        "Do not specify the residue as cream, curds, whey, or another dairy product without further confirmation.",
+        "Use natural literary phrasing in each target language while preserving the approved meaning."
+      ]
+    }
+  }
+}

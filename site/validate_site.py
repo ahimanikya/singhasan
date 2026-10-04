@@ -78,12 +78,22 @@ for track in audio:
         assert [t['id'] for t in audio[:3]]==['welcome','introduction','poem-1']
         production=json.loads((root.parent/'production/prose-introduction-run.json').read_text())
         introduction='\n\n'.join(p['text'] for p in book['chapters'][0]['pages'])
-        assert introduction==production['source_text']=='\n\n'.join(p['text'] for p in production['parts'])
+        recorded_source=production['source_text']
+        assert recorded_source=='\n\n'.join(p['text'] for p in production['parts'])
+        # Recording provenance stays intact when the family approves text edits.
+        revised_source=recorded_source
+        for ledger in sorted((root.parent/'editorial').glob('corrections-*.json')):
+            for edit in json.loads(ledger.read_text())['applied']:
+                if edit['section']==0:
+                    assert revised_source.count(edit['before'])==1, edit
+                    revised_source=revised_source.replace(edit['before'],edit['after'])
+        assert introduction==revised_source
         assert track['source_urls']==[p['selected'] for p in production['parts']]
         assert abs(track['duration_seconds']-sum(p['duration_seconds'] for p in production['parts']))<0.2
 print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')
 
-# Listen-along cues belong to this exact recording and the unchanged source words.
+# Listen-along cues reference this exact recording and current editorial text.
+# Text revisions preserve prior acoustic timing and record their offset remapping.
 reading_book=json.loads((root/'assets/reading-book.json').read_text())
 for track in audio:
     if track['id'] in ('welcome','closing'):
@@ -112,4 +122,4 @@ for track in catalog:
     if track['id'] not in ('welcome','closing'):
         timing=json.loads((root/'assets/audio-sync'/f"{track['id']}.json").read_text())
         assert bool(track['review_note']) == (timing.get('syncSafe') is False), f"Missing or stale completeness notice: {track['id']}"
-print('Validated acoustic follow timings for the introduction and all 68 poems against their recordings and source words.')
+print('Validated recording hashes and current-text cue offsets for the introduction and all 68 poems.')

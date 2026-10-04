@@ -66,3 +66,17 @@ Run the two correction scripts against the same cache, then run
 `audit_timings.py --out site/alignment/TIMING-AUDIT-2026-10-02.json` from the
 Singhasan repository root. Replacing a recording requires a new acoustic
 alignment tied to its new SHA-256 hash; reusing its earlier cues is invalid.
+
+## Approved text corrections - 4 October 2026
+
+The family approved 46 text corrections, recorded in
+`site/editorial/corrections-2026-10-04.json`. The remaining word ଅଧାମ was confirmed unchanged; no current proofreading questions remain.
+The original recording-production submissions remain historical evidence.
+
+For the 27 affected sections, cue character offsets now reference the corrected
+reading text. Acoustic start/end times, scores, romanizations, and existing
+completeness flags are unchanged. Each timing file records `textRevision` with
+the previous source hash; changed cue wording retains its `alignedText`. This
+is an editorial offset mapping, not a fresh acoustic alignment or pronunciation
+approval. Corrected wording still needs comparison with the existing recordings
+during the planned natural-audio review.
