@@ -16,3 +16,10 @@
 .reading-page #experience-verse[lang="kn"],#focus-reader .focus-page[lang="kn"],.poem-heading h1:lang(kn),.share-card [lang="kn"]{font-family:"Noto Serif Kannada",serif;font-synthesis:none}
 .reading-page #experience-verse[lang="gu"],#focus-reader .focus-page[lang="gu"],.poem-heading h1:lang(gu),.share-card [lang="gu"]{font-family:"Noto Serif Gujarati",serif;font-synthesis:none}
 .reading-page #experience-verse[lang="en"],#focus-reader .focus-page[lang="en"],.poem-heading h1:lang(en),.share-card [lang="en"]{font-family:"Source Serif 4",serif;font-synthesis:none}
+@font-face{font-family:'Noto Nastaliq Urdu';src:url('fonts/NotoNastaliqUrdu-Variable.ttf') format('truetype');font-weight:400 700;font-style:normal;font-display:swap}
+.reading-page #experience-verse[lang="ur"],#focus-reader .focus-page[lang="ur"],.poem-heading h1:lang(ur),.share-card [lang="ur"]{font-family:"Noto Nastaliq Urdu",serif;font-synthesis:none;line-height:2.65}
+/* Keep column progression in the book's order; only the Urdu text runs RTL. */
+.reading-page #experience-verse[lang="ur"] .stanza,.poem-heading h1:lang(ur),.share-card [lang="ur"]{direction:rtl;text-align:right}
+.reading-page #experience-verse[lang="ur"] .poem-line{line-height:2.65;padding-left:.35em;padding-right:1.35em;unicode-bidi:isolate}
+
+.reading-page .poem-heading.chapter-header h1:lang(ur),.illustrated-mode.pagination-on .chapter-header h1:lang(ur){font-family:"Noto Nastaliq Urdu",serif;line-height:2.2;padding-inline:.25em}

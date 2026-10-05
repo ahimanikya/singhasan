@@ -3,6 +3,7 @@ from pathlib import Path
 from html import escape
 import json
 from artwork import image_asset
+from translation_article import ROUTE as ARTICLE_ROUTE, HERO as ARTICLE_HERO, DESCRIPTION as ARTICLE_DESCRIPTION, ALT as ARTICLE_ALT
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_URL='https://singhasan.poemwithoutborders.org'
@@ -10,6 +11,7 @@ COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 
 def page_image(route):
+    if route==ARTICLE_ROUTE:return ARTICLE_HERO
     if route.startswith('poem-'):
         number=int(route.removeprefix('poem-').removesuffix('.html'))
         return image_asset(f'assets/poems/unique/poem-{number:02}.png')
@@ -22,6 +24,7 @@ def page_image(route):
     }.get(route,COVER)
 
 def page_details(route,chapters,illustrations):
+    if route==ARTICLE_ROUTE:return ARTICLE_DESCRIPTION,ARTICLE_ALT
     if route.startswith('poem-'):
         n=int(route.removeprefix('poem-').removesuffix('.html'))
         chapter=next(c for c in chapters if c['number']==n)
@@ -43,7 +46,7 @@ def sharing_metadata(route,title,chapters,illustrations):
     canonical=PUBLIC_URL+('/' if route=='index.html' else '/'+route)
     description,alt=page_details(route,chapters,illustrations)
     preview=PUBLIC_URL+'/'+image['src']
-    tags={'og:type':'website','og:site_name':'Singhasan','og:title':title,
+    tags={'og:type':'article' if route==ARTICLE_ROUTE else 'website','og:site_name':'Singhasan','og:title':title,
           'og:description':description,'og:url':canonical,'og:image':preview,
           'og:image:secure_url':preview,'og:image:type':image['type'],
           'og:image:width':image['width'],'og:image:height':image['height'],'og:image:alt':alt}

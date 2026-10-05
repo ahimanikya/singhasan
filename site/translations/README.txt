@@ -1,22 +1,25 @@
-Current inclusion decision — 4 October 2026
+Singhasan translations — updated 4 October 2026
 
-The user authorized adding ALL existing English, Hindi, Bengali and Tamil translations, including the introduction and all 68 poems per language. Each existing entry is explicitly published: true. This overrides earlier ready-only inclusion guidance below without claiming that pending language reviews are complete. The loader includes ready entries or entries with published: true; other drafts remain excluded. Existing draft/ready statuses and editorial questions are preserved. Do not automatically expose new drafts or other languages. Audio remains Odia-only. This change has been built locally; deployment is a separate step.
+Odia is authoritative. Eleven translation languages are planned: English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu.
 
-Singhasan translations
+Current inclusion decision
 
-Odia remains the source language. The ten target languages are English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati and Assamese. The user has authorized Human Natural literary translations. Current coverage and review status are recorded in editorial/translation-review/PLAN.json; no placeholder or unreviewed translation appears publicly.
+The user authorized all existing English, Hindi, Bengali and Tamil translations, including the introduction and 68 poems per language. These are published; their editorial draft/ready states and remaining review questions are preserved. Publication does not claim that every translation has completed human review.
 
-Add each translation to the matching language file, under sections. Use "0" for the introduction and "1" through "68" for poems. Each section has a title, stanzas (a list of stanzas, each a list of exact lines), and status. Use "draft" while translating and reviewing; use "ready" only when the translation has passed source comparison and the intended language review. Record review status honestly. For introduction prose, put each paragraph in its own stanza as one string. The original and translation can have different line counts.
+The seven additional languages each have three complete pilot poem drafts (1, 21, 24). They remain unpublished. Each still needs the introduction and 65 poems. Private comparison and reader fixtures are in review/six-language-pilot-2026-10-04; the directory retains its original name after adding Urdu. Progress and review evidence are in editorial/translation-review/PLAN.json and its pilot directory. Audio remains Odia-only; new audio work is deferred.
 
-Example structure (replace placeholders with actual wording before marking ready):
-{"language":"en","sections":{"1":{"status":"draft","title":"","stanzas":[]}}}
+Format and release
 
-Rebuild with build_pages.py after adding text. Only ready, nonempty sections appear in the language selector on their poem page and in the quiet reader. Each language has separate bookmarks and underlines. Keep the original poem numbering. No PDF links belong in the reading edition.
+Each language file has language and sections. Section 0 is the introduction; 1–68 are poems. Each entry has title, stanzas (arrays of exact lines), and status (draft or ready). Use draft while translating/reviewing and ready after the intended review. Published: true is a separate explicit release choice. The loader includes ready entries OR entries with published: true; other drafts stay excluded. Never automatically expose new drafts.
 
-Source context for translation
+For introduction prose, use one stanza per paragraph with one string. Preserve the full prose. Original and translated line counts may differ. Keep original numbering. Rebuild with build_pages.py. Each language has separate bookmarks and underlines.
 
-Read poem-context.json before translating or reviewing the covered poems in any target language. It records user-confirmed meanings and editorial decisions. Poem 21 preserves ବଢ଼ାକ ଯାକ (milk-pot expression) and ଅଧାମ (the residue left after taking the milk): everything is extracted, down to the last bit. Keep both the concrete image and its full-extraction meaning. These notes are internal translation guidance, not reader-facing copy or completed translations.
+Translation method
 
-Current phase — 4 October 2026
+Use Human Natural Translation with Poetic Natural for poetry, Reflective Prose for the introduction. Read poem-context.json and the latest approved Odia before translating. Existing translations may assist comparison but are not the authority. Review records distinguish same-assistant comparison, fluent-reader review and user approval.
 
-Start with English, Tamil and Hindi. Bengali now has a complete direct-Odia working edition: all 68 poems and the full introduction. The user approved pilot poems 1, 21 and 24; their exact wording is ready in local edition data. The 66 newly drafted sections remain private pending review. Only two uncertain source expressions remain listed in bengali-full-2026-10-04/Bengali-word-questions.txt. Telugu, Malayalam, Kannada, Marathi, Gujarati and Assamese remain planned for later. All audio work is deferred. Use the installed Human Natural Translation skill; its versioned source is site/editorial/skills/human-natural-translation/. Read the source context before drafting. The private pilot plan and honest review records live in site/editorial/translation-review/. English, Hindi, Tamil and Bengali now have complete working drafts (the unabridged introduction and all 68 poems in each language). All 69 Tamil sections remain drafts for later family/fluent review; see tamil-full-2026-10-04/review.json and the private Tamil/English/Odia comparison page. New full-book Hindi passages remain drafts, with concerns in hindi-full-2026-10-04/review.json; only individually ready sections enter the site build.
+Poem 21: ବଢ଼ାକ ଯାକ is the milk-pot expression; ଅଧାମ is residue after taking the milk. Everything is extracted, down to the last bit. Do not replace it with cream, curds or whey. These notes are private guidance, not reader-facing explanation. Source questions in poems 46 and 50 remain deferred.
+
+Urdu
+
+Use Urdu script and natural literary free verse; do not relocate cultural references or force rhyme. Noto Nastaliq Urdu is self-hosted with its OFL license. Set RTL at stanza level while preserving the shared book's page progression. Protect Nastaliq overhang and line spacing. Urdu pilot proper-name spellings and residue wording await fluent review.

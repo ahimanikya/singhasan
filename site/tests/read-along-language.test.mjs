@@ -27,7 +27,7 @@ test('switching to a translation pauses audio and disables playback; returning t
  f.nodes['#follow-play'].onclick();await tick();assert.equal(f.audio.paused,false);assert.equal(f.audio.plays,2);
 });
 test('all translated language selections block Odia playback',async()=>{
- const f=await fixture();for(const language of ['en','hi','bn','ta','te','ml','kn','mr','gu','as']){
+ const f=await fixture();for(const language of ['en','hi','bn','ta','te','ml','kn','mr','gu','as','ur']){
   f.change(language);f.nodes['#follow-play'].onclick();await tick();assert.equal(f.audio.paused,true);assert.equal(f.nodes['#follow-play'].disabled,true);
  }assert.equal(f.audio.plays,0);
 });

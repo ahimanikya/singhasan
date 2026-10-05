@@ -4,6 +4,10 @@ Pravakar Satapathy’s first Odia poetry collection, presented as an online book
 
 Live site: https://singhasan.poemwithoutborders.org/
 
+## Rules for future changes
+
+Start with the [book-site rulebook](design-system/BOOK-SITE-RULEBOOK.md), use the [change checklist](design-system/CHANGE-CHECKLIST.md), and follow the [current design system](design-system/SINGHASAN-DESIGN-SYSTEM.md). Repository [agent instructions](AGENTS.md) make these the starting point for future work. The current guides and latest user decisions take precedence over historical implementation notes below. The checklist is a verification template, not a claim that all checks have already passed.
+
 The home page introduces the poet and five illustrated passages. Each poem has a permanent page in the Kabita Live reading style, with selectable verse, artwork, an English image narrative and reader tools. The illustrated book and quiet reader use the same source text. Quiet mode uses the same full-page book with poem illustrations hidden, the same illustrated covers, local bookmarks, text sizing and underlining.
 
 Permanent addresses such as `poem-1.html` open the regular poem page. “Read in the book” adds `?view=book` for the framed, illustrated book; “Read quietly” opens the spread containing the current poem. The main Quiet reading link starts at the title page. Sharing always returns the permanent poem address, and canonical metadata uses that same address.
@@ -104,3 +108,7 @@ The home cover links to Poems; the reading action still opens the book. Each ill
 Every public route has static Open Graph and Twitter metadata with a page-specific image: the complete cover for home and book/audio entry pages, the poet portrait for profile/contact, individual artwork for each poem and introduction, the catalogue’s throne, and the back-cover landscape. Canonical addresses omit reading-state queries. Social services may retain a cached earlier preview after deployment.
 
 After changing selected artwork, run `python site/tools/prepare_social_images.py` with Pillow, then rebuild. Commit `site/social-images.json` and `site/dist/assets/social/` with the page changes. Source and output hashes are validated, JPEG copies preserve the whole composition, and the original lettered cover export remains intact.
+
+## Translation essay · 5 October 2026
+
+The site includes `thirty-languages-and-the-journey-of-a-poem.html`, linked from an illustrated feature after the five home-page scenes and from the shared About translation footer link. The article uses its lead image for sharing, preserves both accessible population tables and source links, and remains outside the book sequence. Source HTML/CSS are in `site/articles/thirty-languages/`; `site/translation_article.py` connects them to the standard builder. Only prepared public assets and article content enter `site/dist`, not the source package or private preview notes.

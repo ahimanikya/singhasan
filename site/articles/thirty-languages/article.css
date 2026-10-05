@@ -1,0 +1,50 @@
+/* Article-specific layout; shared Singhasan tokens and components stay authoritative. */
+.article-page .essay{width:min(1160px,calc(100% - 64px));margin:46px auto 72px}
+.article-page .essay-header{max-width:960px;margin:0 auto 38px;text-align:center}
+.article-page .essay-header .eyebrow{font:12px/1.5 var(--ui);letter-spacing:.14em;color:var(--rust);text-transform:uppercase;margin-bottom:22px}
+.article-page .essay-header h1{font:500 clamp(44px,5.8vw,78px)/1.05 var(--display);letter-spacing:-.025em;text-wrap:balance;margin:0 auto 24px;max-width:900px}
+.article-page .standfirst{font:22px/1.65 var(--serif);color:var(--muted);max-width:750px;margin:auto;text-wrap:pretty}
+.article-page .essay-meta{display:flex;align-items:center;justify-content:center;gap:18px;font:12px/1.5 var(--ui);margin:24px 0 0;color:var(--muted)}
+.article-page .essay-meta span+span:before{content:'·';margin-right:18px}
+.article-page figure{margin:0}
+.article-page .lead{margin:0 0 58px}
+.article-page .lead img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.article-page figcaption{font:13px/1.65 var(--ui);color:var(--muted);padding-top:14px;max-width:780px}
+.article-page .lead figcaption{margin:auto;text-align:center}
+.article-page .essay-grid{display:grid;grid-template-columns:210px minmax(0,740px);gap:68px;justify-content:center;align-items:start}
+.article-page .essay-index{position:sticky;top:28px;border-top:1px solid var(--line);padding-top:16px}
+.article-page .essay-index h2{font:11px/1.5 var(--ui);text-transform:uppercase;letter-spacing:.13em;color:var(--muted);margin-bottom:14px}
+.article-page .essay-index a{display:block;font:14px/1.5 var(--ui);padding:10px 0;color:var(--muted)}
+.article-page .essay-index a:hover{color:var(--rust)}
+.article-page .essay-index a:last-child{margin-top:10px;border-top:1px solid var(--line)}
+.article-page .essay-body{min-width:0;font:21px/1.85 var(--serif)}
+.article-page .essay-body>p{margin:0 0 25px;text-wrap:pretty}
+.article-page .essay-body>h2{font:500 39px/1.15 var(--display);margin:58px 0 22px;color:var(--ink);text-wrap:balance;scroll-margin-top:28px}
+.article-page .essay-body a:not(.figure-link){color:var(--sea);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.article-page .saying{margin:32px 0!important;padding:22px 28px;border-left:2px solid var(--rust);background:color-mix(in srgb,var(--panel) 45%,transparent)}
+.article-page .saying [lang=or]{display:block;font:24px/1.9 var(--odia);color:var(--rust);margin:0 0 14px}
+.article-page .essay-body .infographic{margin:34px 0 22px}
+.article-page .infographic .figure-link{display:block;max-width:630px;margin:auto;background:var(--panel);position:relative}
+.article-page .infographic img{width:100%;height:auto}
+.article-page .infographic .figure-action{display:block;text-align:right;padding:8px 0;font:12px/1.5 var(--ui);color:var(--sea)}
+.article-page .infographic figcaption{padding-top:4px}
+.article-page .data{border-block:1px solid var(--line);margin:20px 0 28px;font:15px/1.6 var(--ui)}
+.article-page .data summary{cursor:pointer;min-height:52px;padding:14px 0;font-weight:500;color:var(--sea)}
+.article-page .table-scroll{overflow-x:auto;max-width:100%;padding-bottom:10px;overscroll-behavior-x:contain}
+.article-page table{border-collapse:collapse;width:100%;min-width:500px;font:14px/1.55 var(--ui);font-variant-numeric:tabular-nums}
+.article-page caption{text-align:left;padding:10px 0 20px;color:var(--muted)}
+.article-page th,.article-page td{padding:12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+.article-page th:first-child{text-align:left;padding-left:0}
+.article-page thead th{font-weight:600;background:color-mix(in srgb,var(--panel) 55%,transparent)}
+.article-page tbody th{font-weight:400}.article-page .table-note{font:14px/1.7 var(--ui);color:var(--muted)}
+.article-page .data-download{font:13px/1.5 var(--ui);padding:14px 0}
+.article-page .article-notes{border-top:1px solid var(--line);margin-top:46px;padding-top:24px;font:14px/1.8 var(--ui);color:var(--muted)}
+.article-page .article-notes h2{font:500 26px/1.2 var(--display);margin-bottom:12px;scroll-margin-top:28px}
+.article-page .essay-closing{border-top:1px solid var(--line);margin:54px 0 0;padding-top:30px;display:flex;align-items:center;gap:24px;justify-content:space-between}
+.article-page .essay-closing p{font:500 29px/1.2 var(--display);max-width:450px}.article-page .essay-closing a{font:15px/1.5 var(--ui);display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:12px 20px;background:var(--ink);color:var(--paper);text-decoration:none;white-space:nowrap}
+.article-page .essay-end{display:flex;justify-content:center;color:var(--rust);margin:38px 0}.article-page .essay-end svg{width:45px;height:30px}
+@media(max-width:960px){.article-page .essay-grid{display:block;max-width:740px;margin:auto}.article-page .essay-index{position:static;margin-bottom:34px;padding:16px 0;display:flex;gap:4px 24px;flex-wrap:wrap;border-bottom:1px solid var(--line)}.article-page .essay-index h2{width:100%;margin-bottom:4px}.article-page .essay-index a{font-size:13px;max-width:46%}.article-page .essay-index a:last-child{border:0;margin:0}.article-page .lead{margin-bottom:32px}}
+@media(max-width:600px){.article-page .essay{width:calc(100% - 36px);margin-top:28px;margin-bottom:40px}.article-page .essay-header{margin-bottom:26px}.article-page .essay-header h1{font-size:46px;line-height:1.05}.article-page .essay-header .eyebrow{font-size:10px;letter-spacing:.09em;margin-bottom:18px}.article-page .standfirst{font-size:19px;line-height:1.6}.article-page .essay-meta{margin-top:18px;font-size:11px}.article-page .essay-body{font-size:19px;line-height:1.8}.article-page .essay-body>h2{font-size:33px;margin-top:42px}.article-page .essay-index{gap:0 20px}.article-page .essay-index a{width:calc(50% - 10px);font-size:12px;line-height:1.5;min-height:44px}.article-page .saying{padding:16px 18px}.article-page .saying [lang=or]{font-size:21px}.article-page .essay-closing{display:block;margin-top:36px}.article-page .essay-closing p{font-size:28px;margin-bottom:20px}.article-page figcaption{font-size:12px}.article-page .essay-end{margin:28px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.article-page .masthead,.article-page .essay-index,.article-page .essay-closing,.article-page .footer,.article-page .footer-landscape{display:none}.article-page .essay,.article-page .essay-grid{display:block;width:100%;margin:0}.article-page .essay-body{font-size:12pt}.article-page figure{break-inside:avoid}}
+.article-page .essay-body .essay-closing a{color:var(--paper);text-decoration:none}

@@ -58,5 +58,19 @@
     "file": "NotoSerifGujarati-OFL.txt",
     "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifgujarati/OFL.txt",
     "bytes": 4384
+  },
+  {
+    "file": "NotoNastaliqUrdu-Variable.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonastaliqurdu/NotoNastaliqUrdu%5Bwght%5D.ttf",
+    "bytes": 690304,
+    "sha256": "98a4787f34eb6fde57fb9a1121a8f216301196ab0da98ea110cad581be8abbcd"
+  },
+  {
+    "file": "NotoNastaliqUrdu-OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonastaliqurdu/OFL.txt",
+    "bytes": 4383,
+    "sha256": "ab798c35e5366a5aa2694aa3f824735c8bffd1706793762e44325d5b83d2c3a0",
+    "source_sha256": "e90279e3fb2003c4d54f8685e25274bd7838b1b21c891520d71dbdb1d4a98907",
+    "normalization": "Trailing whitespace removed; license wording unchanged."
   }
 ]

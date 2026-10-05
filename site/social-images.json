@@ -1,4 +1,13 @@
 {
+  "assets/articles/thirty-languages/poetry-across-languages-hero-ff3dea84bf3d-1672.webp": {
+    "source_sha256": "58ead8a7f3c3619acd68e2cb23fbf884c77021ca4fdeb25cb756c2f261a5500b",
+    "src": "assets/social/poetry-across-languages-hero-ff3dea84bf3d-1672-58ead8a7f3c3-v1.jpg",
+    "width": 1200,
+    "height": 675,
+    "type": "image/jpeg",
+    "bytes": 219604,
+    "sha256": "0788608a82b3c432b5e6f3ab7183e72d7c054886f48d8e6102827ff2a5a9b5e8"
+  },
   "assets/artwork-2026-10-03/back-cover.webp": {
     "source_sha256": "86e33726a5db8ed58178d0bc9cd283cb71418d8ba6037714360f6de2072ba8cf",
     "src": "assets/social/back-cover-86e33726a5db-v1.jpg",

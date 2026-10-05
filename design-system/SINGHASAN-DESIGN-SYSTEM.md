@@ -1,6 +1,8 @@
 # Singhasan — current design system
 
-Updated 4 October 2026. This is the book-specific application of the imported [Kabita Live design system](KABITA-LIVE-DESIGN-SYSTEM.md). The decisions here take precedence for Singhasan. Imported tokens, font licences and source snapshots remain intact; do not overwrite Kabita Live’s own rules with single-book exceptions.
+Updated 5 October 2026. This is the book-specific application of the imported [Kabita Live design system](KABITA-LIVE-DESIGN-SYSTEM.md). The decisions here take precedence for Singhasan. Imported tokens, font licences and source snapshots remain intact; do not overwrite Kabita Live’s own rules with single-book exceptions.
+
+Use alongside the [book-site rulebook](BOOK-SITE-RULEBOOK.md) for editorial/product constraints and the [change checklist](CHANGE-CHECKLIST.md) for verification. The latest explicit user decision controls when updating these documents.
 
 ## Identity and type
 
@@ -13,6 +15,7 @@ Updated 4 October 2026. This is the book-specific application of the imported [K
 ## Page roles and navigation
 
 - **Home** narrates the book and poet’s world, with artwork, exact poem extracts and English commentary. Keep one primary reading action in the opening. The home cover links to **Poems** (`contents.html`); the separate “Read the book” action enters the reader.
+- The translation essay has a small illustrated home feature after the five visual-story scenes and before the reading invitation. Its permanent route is `thirty-languages-and-the-journey-of-a-poem.html`. The shared footer includes a text link, **About translation**; keep it readable on phones. The main menu stays focused on the book. The essay is not an additional book chapter or a claim that thirty translated editions are available.
 - The closing home invitation offers Read the book, Listen to the audiobook and Browse all poems. Retain Listen in top navigation.
 - Use **Poems**, replacing the visible label Contents. Preserve `contents.html` so existing links continue to work. This single-book catalogue keeps its existing opening-line list and limited search; no journal-wide filters are required.
 - Standalone poem pages remain permanent, shareable destinations. Their “In the book” panel includes illustrated and quiet entry links. Reader tools keep language, size, surface and saved passages; optional search and saved-item controls stay folded.
@@ -63,10 +66,17 @@ Render canonical, Open Graph and large-image Twitter metadata into the initial H
 | Opening prose | Its threshold/flute illustration |
 | Poems catalogue | Its stone-throne artwork |
 | Back cover | Its closing landscape artwork |
+| Translation essay | Its two-readers lead illustration |
 
 Use absolute HTTPS image addresses, matching MIME type and actual dimensions, descriptive image alt text, and a page-specific title and description. Generate lightweight JPEG sharing copies of artwork without cropping; reuse the complete lettered cover export in its actual file format. Keep source hashes and stable image URLs in `site/social-images.json`.
 
-`site/tools/prepare_social_images.py` prepares the files when artwork changes. Ordinary page builds read the committed manifest. The validator checks all 77 pages and the source/output hashes. Updating the website cannot force a social service to discard a previously cached preview; actual card cropping and refresh timing belong to the sharing service.
+`site/tools/prepare_social_images.py` prepares the files when artwork changes. Ordinary page builds read the committed manifest. The validator checks all 78 pages and the source/output hashes. Updating the website cannot force a social service to discard a previously cached preview; actual card cropping and refresh timing belong to the sharing service.
+
+## Urdu typography (review preview)
+
+- Urdu is the final planned translation language. Use self-hosted Noto Nastaliq Urdu with its OFL license, including the poem title. Pilot drafts stay private until selected for release.
+- Set Urdu stanza direction to RTL and align right. Keep the shared Odia book’s page sequence; do not reverse the column container. Mirror hanging indents and leave a small inset for Nastaliq overhang.
+- Use 2.65 line height for verse and 2.2 for headings to protect the script’s ascenders and descenders. Saved anchors follow logical character order rather than assuming Latin left-to-right character positions. Audio remains Odia-only.
 
 ## Verification and release
 

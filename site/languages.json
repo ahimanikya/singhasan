@@ -42,5 +42,10 @@
   "as": {
     "name": "Assamese",
     "native": "অসমীয়া"
+  },
+  "ur": {
+    "name": "Urdu",
+    "native": "اردو",
+    "direction": "rtl"
   }
 }

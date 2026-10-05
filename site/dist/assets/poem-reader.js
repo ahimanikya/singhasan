@@ -57,10 +57,10 @@ function render(choice){
  pending=[];selectionBar.hidden=true;language=code;
  const v=data.variants[code];tabs.forEach(t=>{const on=t.dataset.readingLanguage===choice;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;});
  if(tabs.length)panel.setAttribute('aria-labelledby','tab-'+choice);verse.lang=code;verse.className='verse '+code+(data.kind==='prose'?' prose':'');
- const title=document.querySelector('.poem-heading h1');title.textContent=v.title;title.lang=code;title.className=code;title.classList.toggle('long-title',Array.from(v.title).length>42);
+ const title=document.querySelector('.poem-heading h1');title.textContent=v.title;title.lang=code;title.dir=code==='ur'?'rtl':'ltr';title.className=code;title.classList.toggle('long-title',Array.from(v.title).length>42);
  verse.replaceChildren();
  let idx=0;
- v.stanzas.forEach((stanza,si)=>{const p=document.createElement('p');p.className='stanza';
+ v.stanzas.forEach((stanza,si)=>{const p=document.createElement('p');p.className='stanza';p.dir=code==='ur'?'rtl':'ltr';
   stanza.forEach((text,li)=>{const lineIndex=idx++;if(text.trim()==='∎'||(v.hidden_lines||[]).includes(lineIndex))return;const line=document.createElement('span');line.className='poem-line';
    line.dataset.line=String(lineIndex);
    const words=document.createElement('span');words.className='line-words';words.textContent=text;line.append(words);p.append(line);
