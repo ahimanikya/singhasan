@@ -1,5 +1,5 @@
 import {normalized,subtract} from './poem-marks.mjs?v=2';
-import {bookURL,legacyAnchor,readerEffects} from './reader-state.mjs?v=4';
+import {bookURL,legacyAnchor,readerEffects} from './reader-state.mjs?v=5';
 const $=s=>document.querySelector(s),query=new URLSearchParams(location.search);
 const pageData=JSON.parse($('#reading-data').textContent),pageVerse=$('#experience-verse');
 const languageNames=Object.fromEntries(Object.entries(pageData.languages).map(([code,entry])=>[code,entry.name]));
@@ -7,7 +7,7 @@ const memory=new Map();
 function readJSON(key,fallback){try{return JSON.parse(localStorage.getItem(key))??memory.get(key)??fallback}catch{return memory.get(key)??fallback}}
 function writeJSON(key,value){memory.set(key,value);try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$('#page-saved-status').textContent='Device storage is unavailable; this change lasts for this visit.';return false}}
 let library=[pageData],loaded=false;
-async function loadLibrary(){if(loaded)return;try{const response=await fetch('assets/reading-book.json');if(!response.ok)throw Error();const data=await response.json();library=data.poems;loaded=true;migrateBookmarks()}catch{$('#book-search-status').textContent='The book list could not be loaded. Use Contents to choose a poem.'}}
+async function loadLibrary(){if(loaded)return;try{const response=await fetch('assets/reading-book.json');if(!response.ok)throw Error();const data=await response.json();library=data.poems;loaded=true;migrateBookmarks()}catch{$('#book-search-status').textContent='The book list could not be loaded. Use Poems to choose a poem.'}}
 function migrateBookmarks(){
  const old=readJSON('singhasan-quiet-bookmarks-v1',[]);if(!Array.isArray(old))return;let copied=true;
  for(const b of old){const p=library.find(p=>p.id===b.id&&p.variants[b.language]);if(!p||!Number.isInteger(b.unit))continue;

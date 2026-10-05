@@ -69,3 +69,7 @@
 .book-glance .toc-all{display:inline-flex;align-items:center;min-height:44px;padding:8px 0;font:15px var(--ui);text-decoration:underline;text-underline-offset:4px;border:0}
 @media(max-width:760px){.standalone-page .book-glance{margin-top:18px;padding:16px 12px}.book-glance h2{font-size:24px}.book-glance .toc-title{font-size:17px}}
 @media print{.standalone-page .book-glance{display:none}}
+
+/* The image story sits inside a quiet measure, like the verse beside it. */
+.standalone-page:not(.illustrated-mode) .illustration-reading{width:min(40ch,calc(100% - 40px));margin-inline:auto;font:17px/1.7 var(--serif)}
+@media(max-width:760px){.standalone-page:not(.illustrated-mode) .illustration-reading{width:calc(100% - 32px)}}

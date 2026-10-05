@@ -1,0 +1,659 @@
+{
+  "assets/artwork-2026-10-03/back-cover.webp": {
+    "source_sha256": "86e33726a5db8ed58178d0bc9cd283cb71418d8ba6037714360f6de2072ba8cf",
+    "src": "assets/social/back-cover-86e33726a5db-v1.jpg",
+    "width": 800,
+    "height": 1200,
+    "type": "image/jpeg",
+    "bytes": 290547,
+    "sha256": "e2e23f402a37bf68df26bb33e00cc7f4ebca4e56a2cdc57c7694d4e39bd44441"
+  },
+  "assets/artwork-2026-10-03/introduction.webp": {
+    "source_sha256": "797876ec3e344e0f6c7e4a25ba89ea4675e4f6a42f316737550f386b344a09e1",
+    "src": "assets/social/introduction-797876ec3e34-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 254216,
+    "sha256": "24182f48b195c647815e17edcdebaa7a51b2f94e214ed308feaeea897355ee0f"
+  },
+  "assets/artwork-2026-10-03/poem-01.webp": {
+    "source_sha256": "9a60d9f5002dc751883ce75e0d9d431e2813c7605e98cc21596724e1b312907e",
+    "src": "assets/social/poem-01-9a60d9f5002d-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 311989,
+    "sha256": "d566aed0a0f4c9c83f4c671809af0862aa6176ab674ddb95f2c8c515a837f89c"
+  },
+  "assets/artwork-2026-10-03/poem-02.webp": {
+    "source_sha256": "5b6d8065eacf4de224bf767904e820db6ef121917bafdd7b5d7471ad1dddcf5d",
+    "src": "assets/social/poem-02-5b6d8065eacf-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 256446,
+    "sha256": "f68e7d1a78781ef11b8d02425fb899b3b74a659f0cbd08e4627940e8c339b09b"
+  },
+  "assets/artwork-2026-10-03/poem-03.webp": {
+    "source_sha256": "884bcd15882965d38564609c96c20b24db81c7430da674365cbcb4cc84806e21",
+    "src": "assets/social/poem-03-884bcd158829-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 268816,
+    "sha256": "0d8f9214af1d1b03a6985c40073fc3e11e8b0d8db41447d3c965913d32a60f74"
+  },
+  "assets/artwork-2026-10-03/poem-04.webp": {
+    "source_sha256": "6b59bc4cc8501245e1035a982146c2c9a5ce6f4ebf53971bd915218fb8bb44ef",
+    "src": "assets/social/poem-04-6b59bc4cc850-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 252919,
+    "sha256": "436fedfb1e79c1b3472d35830ebe031bbdc9baae0b8680d3489b0a7016b76a41"
+  },
+  "assets/artwork-2026-10-03/poem-05.webp": {
+    "source_sha256": "9ff92e328a4a0666d4484b5a8574edab8c190f0ce540be26b064df96d1bef549",
+    "src": "assets/social/poem-05-9ff92e328a4a-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 271734,
+    "sha256": "910ffc7c23815fc9aef4dc781d7f06b956d46f266219d12bfd8ca7a6c98aa95d"
+  },
+  "assets/artwork-2026-10-03/poem-06.webp": {
+    "source_sha256": "31ccd4a4c5892ca0f69eaaea5dfac2706ac863371872937e096031f242307ed3",
+    "src": "assets/social/poem-06-31ccd4a4c589-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 210713,
+    "sha256": "1f9007a3c203bb6e7ce29e25ca30f1dc60ae15d9e0060410f23db5caa7b3ff6a"
+  },
+  "assets/artwork-2026-10-03/poem-07.webp": {
+    "source_sha256": "aafe1963ddce727a4e918109eefa0b584df5c279cf0252b3effcbbab08935ead",
+    "src": "assets/social/poem-07-aafe1963ddce-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 300141,
+    "sha256": "b97a1c338bbe8d5853b1e5652278e36324f21e8c4aa6738de28aadb63e107daa"
+  },
+  "assets/artwork-2026-10-03/poem-08.webp": {
+    "source_sha256": "7ba4c09b7a6a5388b4925f8eaddd411796adea3601a4f618c7c6a1051db19dd2",
+    "src": "assets/social/poem-08-7ba4c09b7a6a-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 284655,
+    "sha256": "ee55ca5dd55a54a2a995b86d38f63011bffac95a5d8763be6c9746c342fa3465"
+  },
+  "assets/artwork-2026-10-03/poem-09.webp": {
+    "source_sha256": "16684e4fb8ebca944d8966da402fc7b16532768a8617b607e0827a80e986c592",
+    "src": "assets/social/poem-09-16684e4fb8eb-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 308535,
+    "sha256": "810afa060e091ca21cf4a6661661e1f9e6acb5462b084fd16a58b12915830203"
+  },
+  "assets/artwork-2026-10-03/poem-10.webp": {
+    "source_sha256": "e6453b0627bdb66e4caee8e027a83cfc22df5bc1cb71b50369c3b5cc5abceff7",
+    "src": "assets/social/poem-10-e6453b0627bd-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 347912,
+    "sha256": "d6c2ef899faeccdcea64b5dff1e488439d41156b8d467e433fbf00638ed80edd"
+  },
+  "assets/artwork-2026-10-03/poem-11.webp": {
+    "source_sha256": "7cd5c1faac8f3e228b5c477919e773f37d7c1d309909e43c7fc41119e184cd29",
+    "src": "assets/social/poem-11-7cd5c1faac8f-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 200299,
+    "sha256": "267d0047c89b3c663263703d57fbad1b42a7a126d03d8e39d85c50bbb3ae175f"
+  },
+  "assets/artwork-2026-10-03/poem-12.webp": {
+    "source_sha256": "058b205ac55529d5830b085f0b6f15bef3c5c58b19c721dfa7d00849a47ded8a",
+    "src": "assets/social/poem-12-058b205ac555-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 267886,
+    "sha256": "ad90268f96c95ee2a047d3bc04e850fc7f30b5fb9bbfaca14ea5876e70da4100"
+  },
+  "assets/artwork-2026-10-03/poem-13.webp": {
+    "source_sha256": "08662bffe410a22c54befd82e929ecc4e699cadfcc77c0043847ba9bfd083653",
+    "src": "assets/social/poem-13-08662bffe410-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 258053,
+    "sha256": "6a34cbd650b638093208bd85bf3dd8eb909de3876043ef6b81db80df2afc22d7"
+  },
+  "assets/artwork-2026-10-03/poem-14.webp": {
+    "source_sha256": "8c716dedb72de57f20c6c9cca29f4a3c56610db8a9deaf656bd77d4609faa85c",
+    "src": "assets/social/poem-14-8c716dedb72d-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 201413,
+    "sha256": "9b4b3cfdf79ea003978990a5473b15953bcdd0a1bc3c4b00e06de149610879c4"
+  },
+  "assets/artwork-2026-10-03/poem-15.webp": {
+    "source_sha256": "b6d7772a62e44ad1d591e9c75df99c11b2abed8ebd181b6ea63918e88f1c1011",
+    "src": "assets/social/poem-15-b6d7772a62e4-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 343530,
+    "sha256": "94453ed500b3d7073240b0b13b4fc4197781bbc5870dedbd34608bc6e5db46ba"
+  },
+  "assets/artwork-2026-10-03/poem-16.webp": {
+    "source_sha256": "e0e604df084f11ead4ca662786034b5c80686bb5fc55b871ae87739e3afaa3c2",
+    "src": "assets/social/poem-16-e0e604df084f-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 299335,
+    "sha256": "523fd97f56c3d92690442b203c0f318c859e671e525508fcf126bcff503f50a8"
+  },
+  "assets/artwork-2026-10-03/poem-17.webp": {
+    "source_sha256": "b4dcea7f0a871db9df5da95d7a205c7944518f7c289e4a465dc5b5e6719e0e77",
+    "src": "assets/social/poem-17-b4dcea7f0a87-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 242242,
+    "sha256": "bc5474396a13396fc0415d726c8c5cc17a3189f9d005d598e09825649403e1c0"
+  },
+  "assets/artwork-2026-10-03/poem-18.webp": {
+    "source_sha256": "86065ca754224b7f7d4da64c92f987ccbac79f51f45db86195cc96a3002e9977",
+    "src": "assets/social/poem-18-86065ca75422-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 252693,
+    "sha256": "14548800ec3ff6140b6115e93de62df229a9a23428e986a663157877f80a30c8"
+  },
+  "assets/artwork-2026-10-03/poem-19.webp": {
+    "source_sha256": "59c2aa3aa52943e2fc25564e7681695490476e6bd4e4f33e9a292369099bf426",
+    "src": "assets/social/poem-19-59c2aa3aa529-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 222387,
+    "sha256": "e8a2c088c53f4aa58ca9834b0a3f51175732d8ebb8384eaccfad56715950d3ae"
+  },
+  "assets/artwork-2026-10-03/poem-20.webp": {
+    "source_sha256": "0a8d403a49380f5b62d4660cc0bbc372f4692540f736e0215cdb0e03aba5df4a",
+    "src": "assets/social/poem-20-0a8d403a4938-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 312479,
+    "sha256": "9c38ad3d948417601091f9053d4eeea1e86c6d0181ced3c23a9078b9ff3c30a8"
+  },
+  "assets/artwork-2026-10-03/poem-21.webp": {
+    "source_sha256": "8e8e7b8c00c3050b4eb07e853bfb5b604b648fee64c0c17b2003d58f11f2514d",
+    "src": "assets/social/poem-21-8e8e7b8c00c3-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 268017,
+    "sha256": "e6595278c983b7b572c9dee53fcba715b7d9b78d29fa91d430ff9f75d636130f"
+  },
+  "assets/artwork-2026-10-03/poem-22.webp": {
+    "source_sha256": "41f96b4131ed7d54b123a31b49bdb9daaf59f4f69fcc516f90e9b0ae65877068",
+    "src": "assets/social/poem-22-41f96b4131ed-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 312473,
+    "sha256": "b021ca79b8e8e1b03660f1a374a5824f0350bac22548e21ba9ee32a39ec61378"
+  },
+  "assets/artwork-2026-10-03/poem-23.webp": {
+    "source_sha256": "7e3184cd7c38cf961b84b88cc84bc261707f04eab55fa5920694e5d228d0261f",
+    "src": "assets/social/poem-23-7e3184cd7c38-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 326512,
+    "sha256": "028df6e59296c7aba97a5d1bd3875c31237bf6c16a2d19fa5b315994e9f83595"
+  },
+  "assets/artwork-2026-10-03/poem-24.webp": {
+    "source_sha256": "28d1c08ab17047f5c8ee4ee761a0b3d76ffe9195a6d9022808cb4720e0941504",
+    "src": "assets/social/poem-24-28d1c08ab170-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 279012,
+    "sha256": "0ec36f2eab842ed6ed2bd09c84d6331d6802d8f614b84310d24b1ef3b9b8d660"
+  },
+  "assets/artwork-2026-10-03/poem-25.webp": {
+    "source_sha256": "49a6b5a18f63c3653fe29b10fc77951940ecfa9e05c95fc4b659dfbd6184a86d",
+    "src": "assets/social/poem-25-49a6b5a18f63-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 331583,
+    "sha256": "cdceb1620e99cb0dcebb3bd9a5d4f3f34a280e959d7c4bac2500f582347e950c"
+  },
+  "assets/artwork-2026-10-03/poem-26.webp": {
+    "source_sha256": "bc913453ed6c780484f5a87deab542f0d80c3a63a263bafeb4ccf65f3e11990e",
+    "src": "assets/social/poem-26-bc913453ed6c-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 247046,
+    "sha256": "c72553c6cd264a10533cb4395a44666b528d3841c4b827ffac3c7ce41920dddc"
+  },
+  "assets/artwork-2026-10-03/poem-27.webp": {
+    "source_sha256": "d9db3464395e61356530da627d7b5e07e59c966982e907b876cc30856593038f",
+    "src": "assets/social/poem-27-d9db3464395e-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 238380,
+    "sha256": "dc6a4464e32d47d9b7b781b3a3276a4bc5f580dee1f922e8a3b7a3d4da45f38c"
+  },
+  "assets/artwork-2026-10-03/poem-28.webp": {
+    "source_sha256": "0b94db181f2c4155c3d2104a8a3fb186b96e76bc26157afc12d189c9407e2d0b",
+    "src": "assets/social/poem-28-0b94db181f2c-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 261851,
+    "sha256": "978b1a0b4a824d458cf090c824fa72c9a4eee99bdfcf8ade6d1e63fd52be3a27"
+  },
+  "assets/artwork-2026-10-03/poem-29.webp": {
+    "source_sha256": "21b535798bfb1b1882cd906d24f6fc5fd5c95bafa6d26f9f5cbd214e50d9f110",
+    "src": "assets/social/poem-29-21b535798bfb-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 302564,
+    "sha256": "f2fe61aae1a42fb6a7f5013efec934af1d85e074adf72612a91d31cc0c36616f"
+  },
+  "assets/artwork-2026-10-03/poem-30.webp": {
+    "source_sha256": "588e5916e40b714d00e123123115fd6eb5a9d27c9147b94c201b684b7c47003c",
+    "src": "assets/social/poem-30-588e5916e40b-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 279462,
+    "sha256": "f2a47be5484adecf615c3292bd5b878b4ece22c1af92321dfcb267af7063b34f"
+  },
+  "assets/artwork-2026-10-03/poem-31.webp": {
+    "source_sha256": "dab4e87a1eb9b06870536f949b73fe565c03fc1bfe9bd2455985e6a8f56f5e67",
+    "src": "assets/social/poem-31-dab4e87a1eb9-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 265674,
+    "sha256": "c32659c59cfa98743b87a7c4b0f85a67f7eb04d3448f151c21ff21ca190950bd"
+  },
+  "assets/artwork-2026-10-03/poem-32.webp": {
+    "source_sha256": "23f116ce68051b0e20f21a54dba0299e8f2e11b3a789bdecaca0b3b89d95da52",
+    "src": "assets/social/poem-32-23f116ce6805-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 355985,
+    "sha256": "3b0c4cb08b6132d38df2803dd7f3ecc61cbce0c9decb943f3e0e78ce18a8495a"
+  },
+  "assets/artwork-2026-10-03/poem-33.webp": {
+    "source_sha256": "4b7147d57ec8fc0680c75b6c76a43ad54681e913fe09400e7d7211dccff9f110",
+    "src": "assets/social/poem-33-4b7147d57ec8-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 269722,
+    "sha256": "f3cefc33f97eb6b4842b642f2bfc3ca8fc1b260c430d18004ee86be239438c56"
+  },
+  "assets/artwork-2026-10-03/poem-34.webp": {
+    "source_sha256": "87f5ddd7c285e02f68847568e07459d42e37a68ac1172507eab032d7a4f9047a",
+    "src": "assets/social/poem-34-87f5ddd7c285-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 237684,
+    "sha256": "b5f473c3ad20f717088bb9fb994bf02f29aad4e00314f47bf94e189b90febd73"
+  },
+  "assets/artwork-2026-10-03/poem-35.webp": {
+    "source_sha256": "2936159d8b30f050ea803a460571c7ea006ededdca3b51cd9b6f308ef75d2195",
+    "src": "assets/social/poem-35-2936159d8b30-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 296610,
+    "sha256": "ec2d64e2e238180847b9f191c373056b555675a6fbb02d2a85888f8a8b84a9ee"
+  },
+  "assets/artwork-2026-10-03/poem-36.webp": {
+    "source_sha256": "9aff6af96ba7b436d54143d238aba88f685f5d20b2d5ab2309fea3fa22e7d761",
+    "src": "assets/social/poem-36-9aff6af96ba7-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 293652,
+    "sha256": "d203dba2845f3cb6eae37350c86faeeca0172c24c896291047bb5bc72d933d56"
+  },
+  "assets/artwork-2026-10-03/poem-37.webp": {
+    "source_sha256": "0e757d9de497d2e227f9321e450fc789467d53d3c3b6c9adf40ec49019055ea0",
+    "src": "assets/social/poem-37-0e757d9de497-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 298791,
+    "sha256": "a0993b654d68be264bcdafe7a344574d515c24321a85eb8c6da57d3b71f0017d"
+  },
+  "assets/artwork-2026-10-03/poem-38.webp": {
+    "source_sha256": "5673823c7dfb7b8099b8e272e37375e5d4bcd5f5f48ad5bf098f32efd9a77d12",
+    "src": "assets/social/poem-38-5673823c7dfb-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 271838,
+    "sha256": "14806043677d2b7133e68f37505b86c763f020d8ba849d9f5c987e9654787ae1"
+  },
+  "assets/artwork-2026-10-03/poem-39.webp": {
+    "source_sha256": "f27c5f85b925dd015a7c82befb2737fc555dd0a3d8e6eed961bb0aa4accfc1f5",
+    "src": "assets/social/poem-39-f27c5f85b925-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 299982,
+    "sha256": "a41d7ab80170a2c8595b62cf8ab9c78309899f88dbbb9706d7a093eb484af616"
+  },
+  "assets/artwork-2026-10-03/poem-40.webp": {
+    "source_sha256": "4ef3f890ca9b59383b6e7a0fa3dc95330223b116ab86ea33121c5f1f33a0cd71",
+    "src": "assets/social/poem-40-4ef3f890ca9b-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 254355,
+    "sha256": "73787cd52df930818cb04caa1e38b563931b52b984421500f78d5b5e5c6d00b7"
+  },
+  "assets/artwork-2026-10-03/poem-41.webp": {
+    "source_sha256": "e8416e96fd4da1be3c3408fc414def3532703a80e14c817881b55e96eecf8f9d",
+    "src": "assets/social/poem-41-e8416e96fd4d-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 239736,
+    "sha256": "fbd9c324d9b6d02c4d0193911ce7aba9e01b9134ece084b9b559735f455ae36b"
+  },
+  "assets/artwork-2026-10-03/poem-42.webp": {
+    "source_sha256": "74e1867beccc61fa8c4478005c1ed81cb4407bbedb29903b6824ed25c0b0e560",
+    "src": "assets/social/poem-42-74e1867beccc-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 252389,
+    "sha256": "7b4afa98538e1c0e19aa7a68ff723bc1347780e5ea29f23cb5af21f7e1192143"
+  },
+  "assets/artwork-2026-10-03/poem-43.webp": {
+    "source_sha256": "89fc49d73f1679311d8af4f7c8ffe8ff6cbf75f67d3036aa16a56dae53c76d56",
+    "src": "assets/social/poem-43-89fc49d73f16-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 299678,
+    "sha256": "dbcb66bc3bcc740f13b277f4784f56e6b7e17be265555702e0dffc0c9ad3716b"
+  },
+  "assets/artwork-2026-10-03/poem-44.webp": {
+    "source_sha256": "8e8d19792ca5cd0bc273c4257ffcdbb17c160c0ef16efa1d7f9459d240556549",
+    "src": "assets/social/poem-44-8e8d19792ca5-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 218523,
+    "sha256": "2e1b4268742489efc35d11e4ecbbd2404b9114f11a84269a02ef7575677447ff"
+  },
+  "assets/artwork-2026-10-03/poem-45.webp": {
+    "source_sha256": "12e686c55991ed13a53e81f23c0110e97b9c39736b72092e07595b01bbcb46d3",
+    "src": "assets/social/poem-45-12e686c55991-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 287582,
+    "sha256": "e2afe0d11a038793f012d5fce654e0933eb04c0ef628c438d7eaa94be90385f0"
+  },
+  "assets/artwork-2026-10-03/poem-46.webp": {
+    "source_sha256": "716736e11a92ef2ba75b1dd164e78ccce69befd21b834b74c7c76f85aaef875e",
+    "src": "assets/social/poem-46-716736e11a92-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 228785,
+    "sha256": "4ff1c59f13363917a2765b33f6a12810ad02e0a17167fe32899a7427f611e10f"
+  },
+  "assets/artwork-2026-10-03/poem-47.webp": {
+    "source_sha256": "5ca91b5eb98ab7ef337b6747d8ac792b2a49c32cc418a62f2861bdb06f58c550",
+    "src": "assets/social/poem-47-5ca91b5eb98a-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 256981,
+    "sha256": "af1b9d41ab37d6e7c2fa7b68c759bd0663f55a11dcf5d972549d21453d90b09a"
+  },
+  "assets/artwork-2026-10-03/poem-48.webp": {
+    "source_sha256": "6cca40a41359265f3d8383b072c42d28d2d932128fe159fab2ddaee31aae3aa9",
+    "src": "assets/social/poem-48-6cca40a41359-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 282552,
+    "sha256": "ac379b89a6cbe4c9614f321de740d33ace71d7feab31a9c8223a41ec828e38f8"
+  },
+  "assets/artwork-2026-10-03/poem-49.webp": {
+    "source_sha256": "cc634922a1059855a78099bd59d0aed9680ada7f0a49fe7f50e8a9a487ef1fd5",
+    "src": "assets/social/poem-49-cc634922a105-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 273462,
+    "sha256": "af8b1fd0ad926cf17bb2e29606c12dd5caac9cd109b9124509fcb8f77bef74e9"
+  },
+  "assets/artwork-2026-10-03/poem-50.webp": {
+    "source_sha256": "774489db1edace6562aa2b0e00b4488be4f999b7c6013a1a1060a03b52a6a4a0",
+    "src": "assets/social/poem-50-774489db1eda-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 245161,
+    "sha256": "9067d19960ebc4dad6045938d83b8ba728692df74e5da3c55a89847387eb2178"
+  },
+  "assets/artwork-2026-10-03/poem-51.webp": {
+    "source_sha256": "ef6c505cdda1d75949282c0f8aa2db225c8838bc92b37b45f0492e5f3b2979ac",
+    "src": "assets/social/poem-51-ef6c505cdda1-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 275030,
+    "sha256": "f201fc83d767bd0f360e2e7cdbf5d1935d231d42e67365e34c45a5ce2775deb0"
+  },
+  "assets/artwork-2026-10-03/poem-52.webp": {
+    "source_sha256": "fa58ed69d236805cdca1f31e947cbce3acf8530439b20003728fdd3582d03021",
+    "src": "assets/social/poem-52-fa58ed69d236-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 253984,
+    "sha256": "639023e380a78193907c8370c2504f5d9a724de4bad17eb4e6e29e8e32aacde2"
+  },
+  "assets/artwork-2026-10-03/poem-53.webp": {
+    "source_sha256": "03160a23bca800647065490debefaa89ace9809a8c31184d542fd2900979e72e",
+    "src": "assets/social/poem-53-03160a23bca8-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 269245,
+    "sha256": "636840acc68604fe82105492055b4831d73375091497480d22df6d063ca43d69"
+  },
+  "assets/artwork-2026-10-03/poem-54.webp": {
+    "source_sha256": "73aef1f64fedf2b732f7defe0d7684adbe86d1031abc96795eb2a523c49f2dc2",
+    "src": "assets/social/poem-54-73aef1f64fed-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 361258,
+    "sha256": "cf5bee6e957db807ce50105fa9d144da6a5d9070fcec767ef24df96b293f1467"
+  },
+  "assets/artwork-2026-10-03/poem-55.webp": {
+    "source_sha256": "e36c3587b6b7da118dfe8a0fe1d5df6da9b0c5d52250116ec9567527bf0261da",
+    "src": "assets/social/poem-55-e36c3587b6b7-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 306974,
+    "sha256": "ca95691446922960e4ab3ceaf9151b0cfed53ea934fe40397693f3caf4a9c8cb"
+  },
+  "assets/artwork-2026-10-03/poem-56.webp": {
+    "source_sha256": "9ee3437741baabc17a12cdd232b0bbba2c4a45959659ff5a662f8a271c9ee265",
+    "src": "assets/social/poem-56-9ee3437741ba-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 352571,
+    "sha256": "1c1f39f4889b81b4ab913a4c6285194e5935dcee27236bf855443ce2f81b8b47"
+  },
+  "assets/artwork-2026-10-03/poem-57.webp": {
+    "source_sha256": "813d9b84d2f7630c363e36a34dd0393de00973696b9da15fb16693d2552e0683",
+    "src": "assets/social/poem-57-813d9b84d2f7-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 241824,
+    "sha256": "84f142073872f09e928eebedbbd1f3b72fa84c5272bcca7f2ab29e6f5167df2a"
+  },
+  "assets/artwork-2026-10-03/poem-58.webp": {
+    "source_sha256": "f15b07b9bbedf683c9633db8c46da063b2a0a4fbbb9a85df62d042ac0bdbf90e",
+    "src": "assets/social/poem-58-f15b07b9bbed-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 268431,
+    "sha256": "45ce219a1899c9a711e6c53906431202d2ae5a80314431d4f4a4621b8d163172"
+  },
+  "assets/artwork-2026-10-03/poem-59.webp": {
+    "source_sha256": "2e65a24a8e30e1915b3357a7b25bd5013b985a8a04f353218220a80e38da7e5c",
+    "src": "assets/social/poem-59-2e65a24a8e30-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 312299,
+    "sha256": "7aa51b22b375f24f108336111a885518ff227c61af482d6daa80464abe6e8556"
+  },
+  "assets/artwork-2026-10-03/poem-60.webp": {
+    "source_sha256": "6fc0d3ee6165de9de05dabd6a2613273192ecd5a6f3d8742be5d868afb5da6b2",
+    "src": "assets/social/poem-60-6fc0d3ee6165-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 239460,
+    "sha256": "3ca6e5893a9ea2d6bc9515aaf291cddd147cb1996ff5539cdf4277d58481a24c"
+  },
+  "assets/artwork-2026-10-03/poem-61.webp": {
+    "source_sha256": "c28707da19f20125ff90e18f85710567186f50bd32a614f19e4b754249a054b8",
+    "src": "assets/social/poem-61-c28707da19f2-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 314400,
+    "sha256": "6720e853dd5a54f808ae4668f8fe2416013445a8ddcaa380519d62dcbf4c3ee0"
+  },
+  "assets/artwork-2026-10-03/poem-62.webp": {
+    "source_sha256": "114047a29ac342daea3c47f179c098b138c8a654cd48c6045490f0deadcd50ac",
+    "src": "assets/social/poem-62-114047a29ac3-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 196693,
+    "sha256": "5d49302963209cd96fbcf15c00e799ee848d8e872db5106c47f8807f9a1bf544"
+  },
+  "assets/artwork-2026-10-03/poem-63.webp": {
+    "source_sha256": "9ad525e7c92fd726f8540794880723787cc574ad5fb6c1ed94336d20d555612e",
+    "src": "assets/social/poem-63-9ad525e7c92f-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 302218,
+    "sha256": "44cb1424386d19d9fac077dcc02aca7647fbab2300daf73a72169af7fd6f88a9"
+  },
+  "assets/artwork-2026-10-03/poem-64.webp": {
+    "source_sha256": "e1ac5d8545f4327368890e9b0868b5389b8500493ee21012cef70ded006117d6",
+    "src": "assets/social/poem-64-e1ac5d8545f4-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 278678,
+    "sha256": "27263a7fb0904c4a3790d39b9b14dbebcfffb2547bbab28cd875840b8ec40e18"
+  },
+  "assets/artwork-2026-10-03/poem-65.webp": {
+    "source_sha256": "df9793564300155771a877ef95b57235b84b6830e511c870cbaffe993216b67c",
+    "src": "assets/social/poem-65-df9793564300-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 269069,
+    "sha256": "02cec8c1aa10d71afbff0b5e924a63d0f2ea89236c4f035ce3767a2ff5279bef"
+  },
+  "assets/artwork-2026-10-03/poem-66.webp": {
+    "source_sha256": "f378addf6ccc3975545b66ccd8be8f4992acd4541afcbe22a1add1200e3d349a",
+    "src": "assets/social/poem-66-f378addf6ccc-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 211877,
+    "sha256": "4dd7b846a7028b1d171bd9fe15227f53895f67fb1c55d66a6901c0d16e8e7e4c"
+  },
+  "assets/artwork-2026-10-03/poem-67.webp": {
+    "source_sha256": "5e5176ec2674741273ad6fd2eb6b3049db42ecd3513266ca1d7877bd4dc7bc06",
+    "src": "assets/social/poem-67-5e5176ec2674-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 330317,
+    "sha256": "ab59f488b4b559019b8fda1de2e66f4be3efbdf534166126b05e5b180c55011a"
+  },
+  "assets/artwork-2026-10-03/poem-68.webp": {
+    "source_sha256": "64c2cf785d29fcd20237f46b66cdafe1be38cb0f671cd490abe76e02830d8c67",
+    "src": "assets/social/poem-68-64c2cf785d29-v1.jpg",
+    "width": 1200,
+    "height": 800,
+    "type": "image/jpeg",
+    "bytes": 315713,
+    "sha256": "90999cb0114edb08f0a4683f16d233e600e73edd076ec8828df468b7931f433f"
+  },
+  "assets/artwork-2026-10-03/poet-portrait.webp": {
+    "source_sha256": "6df1100194408c35b6cee49ccd0fd68d222013e8e9a8e4b1de53437d3d4b0260",
+    "src": "assets/social/poet-portrait-6df110019440-v1.jpg",
+    "width": 900,
+    "height": 1200,
+    "type": "image/jpeg",
+    "bytes": 229462,
+    "sha256": "fe601659d1f50b30f634eef1a5eb01ed34185f3a66998e8916ffce5362052851"
+  },
+  "assets/covers/singhasan-anek-2026-10-04.png": {
+    "source_sha256": "cd26f6452ad0687b511e289aa3f011041fb51ef9c2ca198b9eccc4cb63951def",
+    "src": "assets/social/singhasan-anek-2026-10-04-cd26f6452ad0.jpg",
+    "width": 1280,
+    "height": 1920,
+    "type": "image/jpeg",
+    "bytes": 434064,
+    "sha256": "cd26f6452ad0687b511e289aa3f011041fb51ef9c2ca198b9eccc4cb63951def"
+  },
+  "assets/footer-earth/throne-v1.webp": {
+    "source_sha256": "dd5889089148f1d9aac793ceef8b5f8000dd48d93914632a374a77b7386d44ad",
+    "src": "assets/social/throne-v1-dd5889089148-v1.jpg",
+    "width": 1200,
+    "height": 1200,
+    "type": "image/jpeg",
+    "bytes": 138499,
+    "sha256": "17af5467de4637564380df3f36079d4e70c7bffed5f286867d95b3a7162f8ab9"
+  }
+}

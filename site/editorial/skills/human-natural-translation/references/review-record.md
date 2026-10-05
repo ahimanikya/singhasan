@@ -28,3 +28,5 @@ Try actual source passages that exercise different risks:
 - A publication request with a draft-only rule: produce reviewable work without inventing approval.
 
 Describe this as a same-assistant check unless a separate reviewer actually participated. Structural validators cannot certify literary quality.
+
+For a repeated word attached to different people or images, compare both occurrences together. A natural translation may need different words, but record the lost echo and its effect as a real tradeoff. Do not call a repetition check passed merely because each occurrence is individually plausible, or force one awkward equivalent everywhere to satisfy a checklist.

@@ -9,8 +9,8 @@ export function bookURL(route,{quiet=false,language='or',line,offset=0,last=fals
 }
 
 export function leafNumbers({quiet,mobile,index,textColumns}){
- const opening=quiet?0:(mobile?2:1),spread=mobile?1:2,total=textColumns+(quiet?0:2);
- const first=index<opening?(mobile?index+1:1):(quiet?0:2)+(index-opening)*spread+1;
+ const spread=mobile?1:2,total=textColumns+(quiet?0:1);
+ const first=index*spread+1;
  return {first,second:spread===2&&first<total?first+1:null,total};
 }
 

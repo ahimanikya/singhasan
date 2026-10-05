@@ -1,0 +1,7 @@
+/* The preview is part of the HTML, so it paints before any image request finishes. */
+img.progressive-art{background-size:contain;background-position:center;background-repeat:no-repeat}
+img.front-cover-art.progressive-art{background-size:cover}
+img.progressive-art.image-ready{background-image:none!important}
+@keyframes artwork-resolve{from{filter:blur(2px)}to{filter:blur(0)}}
+@media(prefers-reduced-motion:no-preference){img.progressive-art.image-reveal{animation:artwork-resolve .24s ease-out both}}
+@media print{img.progressive-art{animation:none!important}}

@@ -132,14 +132,10 @@ body.quiet-mode .section-ornament,body.quiet-mode>.footer-landscape{display:none
 .standalone-page .poem-engagement form{margin-top:16px}
 .standalone-page .poem-engagement [data-like-status]:empty{display:none}
 .standalone-page:not(.illustrated-mode) #reading{margin-bottom:12px}
-.standalone-page>.footer-landscape{height:40px;margin-top:0;margin-bottom:0}
-.standalone-page>.footer-landscape :is(.footer-grass,.footer-stone){width:78px;height:40px;background-size:216px 72px}
 .standalone-page>.footer{margin-top:0;padding-top:12px;padding-bottom:20px}
 @media(max-width:760px){
  .standalone-page:not(.illustrated-mode) .book-reading-end{margin-top:12px}
  .standalone-page:not(.illustrated-mode) .poem-engagement{width:100%;margin-top:12px}
- .standalone-page>.footer-landscape{height:40px}
- .standalone-page>.footer-landscape :is(.footer-grass,.footer-stone){width:78px;height:40px;background-size:216px 72px}
 }
 
 /* Standalone poems close with their ornament; page controls belong to the book. */
@@ -151,3 +147,8 @@ body.quiet-mode .section-ornament,body.quiet-mode>.footer-landscape{display:none
 @view-transition{navigation:auto}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:140ms;animation-timing-function:ease-out}
 @media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}}
+
+/* One quiet earth border throughout the site, aligned to the same outer edges. */
+body>.footer-landscape{height:56px;margin-top:12px;margin-bottom:0}
+body>.footer-landscape :is(.footer-grass,.footer-stone){width:110px;height:56px;background-size:302px 101px}
+.visual-story-heading>.line-art-vignette svg{width:130px;height:92px;margin:0 auto 20px;color:var(--muted);opacity:.65}

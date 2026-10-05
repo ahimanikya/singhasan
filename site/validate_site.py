@@ -4,24 +4,40 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import hashlib,json,re,xml.etree.ElementTree as ET
 from artwork import image_asset, MANIFEST
+from social_metadata import page_image, PUBLIC_URL
 root=Path(__file__).resolve().parent/'dist'
 class Page(HTMLParser):
     def __init__(self):
-        super().__init__();self.links=[];self.ids=[];self.canonical=[]
+        super().__init__();self.links=[];self.ids=[];self.canonical=[];self.metadata={}
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         for k in ('href','src'):
             if a.get(k):self.links.append(a[k])
+        if tag=='img' and a.get('srcset'):
+            self.links.extend(candidate.strip().split()[0] for candidate in a['srcset'].split(','))
+        if tag=='meta':self.metadata.setdefault(a.get('property') or a.get('name'),[]).append(a.get('content',''))
         if a.get('id'):self.ids.append(a['id'])
         if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
 errors=[]
 pages=sorted(root.glob('*.html'))
+social=json.loads((root.parent/'social-images.json').read_text())
 assert len(pages)==77, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
     if len(p.canonical)!=1 or not p.canonical[0].startswith('https://singhasan.poemwithoutborders.org/'):errors.append(f'{f.name}: canonical address')
     if 'content="noindex"' in html:errors.append(f'{f.name}: search indexing disabled')
+    share=social[page_image(f.name)]
+    expected_image=PUBLIC_URL+'/'+share['src']
+    for key,value in {'og:image':expected_image,'og:image:secure_url':expected_image,
+                      'twitter:image':expected_image,'og:image:width':str(share['width']),
+                      'og:image:height':str(share['height']),'og:image:type':share['type'],
+                      'twitter:card':'summary_large_image',
+                      'og:url':PUBLIC_URL+('/' if f.name=='index.html' else '/'+f.name)}.items():
+        if p.metadata.get(key)!=[value]:errors.append(f'{f.name}: incorrect {key}')
+    for key in ('og:title','og:description','og:image:alt','twitter:title','twitter:description','twitter:image:alt','description'):
+        if len(p.metadata.get(key,[]))!=1 or not p.metadata[key][0].strip():errors.append(f'{f.name}: missing or duplicate {key}')
+    if p.metadata.get('description')!=p.metadata.get('og:description'):errors.append(f'{f.name}: inconsistent descriptions')
     for link in p.links:
         u=urlsplit(link)
         if u.scheme or u.netloc or not u.path:continue
@@ -123,3 +139,23 @@ for track in catalog:
         timing=json.loads((root/'assets/audio-sync'/f"{track['id']}.json").read_text())
         assert bool(track['review_note']) == (timing.get('syncSafe') is False), f"Missing or stale completeness notice: {track['id']}"
 print('Validated recording hashes and current-text cue offsets for the introduction and all 68 poems.')
+
+# Responsive copies must match the selected artwork and remain available to browsers.
+responsive=json.loads((root.parent/'responsive-images.json').read_text())
+for source,entry in responsive.items():
+    assert hashlib.sha256((root/source).read_bytes()).hexdigest()==entry['source_sha256'], f'Rebuild responsive images: {source}'
+    assert entry['preview'].startswith('data:image/webp;base64,')
+    assert entry['variants'] and [v['width'] for v in entry['variants']]==sorted({v['width'] for v in entry['variants']})
+    for variant in entry['variants']:
+        assert (root/variant['src']).stat().st_size==variant['bytes'], variant['src']
+print(f'Validated {len(responsive)} responsive image families and their source hashes.')
+
+# Social copies must track the current artwork and point to complete public files.
+for source,entry in social.items():
+    assert hashlib.sha256((root/source).read_bytes()).hexdigest()==entry['source_sha256'], f'Rebuild sharing image: {source}'
+    output=root/entry['src'];payload=output.read_bytes()
+    assert len(payload)==entry['bytes'] and hashlib.sha256(payload).hexdigest()==entry['sha256'], entry['src']
+    assert entry['type'] in ('image/png','image/jpeg') and entry['width']>0 and entry['height']>0
+    assert payload.startswith(b'\x89PNG') if entry['type']=='image/png' else payload.startswith(b'\xff\xd8'), entry['src']
+assert len({social[page_image(f'poem-{n}.html')]['src'] for n in range(1,69)})==68
+print('Validated page-specific sharing images, metadata and source/output hashes for all 77 pages.')

@@ -1,21 +1,48 @@
 {
-  "date": "2026-10-01",
-  "scope": "Normal introduction and all 68 poem pages, with coordinated contents and poet pages",
-  "layout": "Two-leaf scrollable book on desktop; single framed page on phones; matching bound covers",
-  "import": "26 local guide, token, font, license, texture and Quiet ink icon assets from Kabita Live",
-  "navigation": "Paper drawer at compact widths; native modal focus containment, Escape dismissal and focus return",
-  "verified": {
-    "desktop": [1280, 720],
-    "phones": [[390, 844], [360, 800]],
-    "reading_sizes": [22, 24, 28, 32],
-    "longest_line_poem": 65,
-    "verse_text_unchanged": true,
-    "horizontal_overflow": false,
-    "clipped_lines": 0,
-    "night_texture_disabled": true,
-    "quiet_reader_cover_and_spread": true,
-    "all_72_pages_links_and_assets": true,
-    "browser_errors": [],
-    "reader_archive_updated": true
+  "date": "2026-10-04",
+  "guide": "SINGHASAN-DESIGN-SYSTEM.md",
+  "scope": "All 77 public pages",
+  "layout": "One reader: illustration plus narrative on one leaf, poem on the next; two leaves desktop, one phone; Quiet hides the interior art leaf",
+  "navigation": "Poems label retains contents.html; home cover opens Poems; Exit reader restores entry context",
+  "footer": "Identical grass-and-stone artwork and compact scale across normal site pages",
+  "sharing": "Static page-specific Open Graph and Twitter image metadata; selected artwork and source hashes in site/social-images.json",
+  "release": "Publication authorized by the user on 4 October 2026; GitHub Pages builds and deploys pushes to main.",
+  "previous_application_record": {
+    "date": "2026-10-01",
+    "scope": "Normal introduction and all 68 poem pages, with coordinated contents and poet pages",
+    "layout": "Two-leaf scrollable book on desktop; single framed page on phones; matching bound covers",
+    "import": "26 local guide, token, font, license, texture and Quiet ink icon assets from Kabita Live",
+    "navigation": "Paper drawer at compact widths; native modal focus containment, Escape dismissal and focus return",
+    "verified": {
+      "desktop": [
+        1280,
+        720
+      ],
+      "phones": [
+        [
+          390,
+          844
+        ],
+        [
+          360,
+          800
+        ]
+      ],
+      "reading_sizes": [
+        22,
+        24,
+        28,
+        32
+      ],
+      "longest_line_poem": 65,
+      "verse_text_unchanged": true,
+      "horizontal_overflow": false,
+      "clipped_lines": 0,
+      "night_texture_disabled": true,
+      "quiet_reader_cover_and_spread": true,
+      "all_72_pages_links_and_assets": true,
+      "browser_errors": [],
+      "reader_archive_updated": true
+    }
   }
 }

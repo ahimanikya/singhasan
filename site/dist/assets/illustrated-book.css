@@ -179,3 +179,24 @@ body:not(.full-page-reader) #page-bookmarks .book-reader-only{display:none}
  .pagination-on .blank-leaf-art svg{width:min(60%,240px);height:auto;max-height:45%}
  .pagination-on.night .blank-leaf-art{opacity:.65}
 }
+
+/* One illustrated leaf, followed immediately by the first leaf of verse. */
+@media screen{
+ .illustrated-mode.pagination-on .printed-spread.opening-page>.book-companion{display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;gap:16px;width:calc((100% - 80px)/2);height:100%;grid-column:1;grid-row:2;overflow:auto;overscroll-behavior:contain;z-index:1;padding:0 4px 0 0}
+ .illustrated-mode.pagination-on .opening-page .poem-art{display:block;flex:none;height:auto;width:100%;margin:0}
+ .illustrated-mode.pagination-on .opening-page .poem-art img{display:block;width:100%;height:auto;max-height:33dvh;object-fit:contain}
+ .illustrated-mode.pagination-on .opening-page .poem-art figcaption{display:none}
+ .illustrated-mode.pagination-on .opening-page .illustration-reading{display:block;flex:none;height:auto;max-height:none;overflow:visible;align-self:center;padding:0;width:min(40ch,calc(100% - 56px));margin-inline:auto;font:17px/1.7 var(--serif)}
+ .illustrated-mode.pagination-on .opening-page .illustration-reading .eyebrow{display:none}
+ .illustrated-mode.pagination-on .opening-page .illustration-reading h2{font-size:clamp(24px,2.4vw,32px);margin:0 0 12px;line-height:1.15}
+ .illustrated-mode.pagination-on .opening-page .image-narrative{font-size:17px;line-height:1.6;max-width:none;margin:0}
+ .pagination-on .blank-leaf-art.after-text:not([hidden]){display:grid;place-items:center;position:absolute;inset:auto;top:var(--vignette-top);left:var(--vignette-left);width:var(--vignette-width);height:var(--vignette-height);color:var(--muted);opacity:.5}
+ .pagination-on .blank-leaf-art.after-text svg{width:min(40%,150px);height:auto;max-height:80%}
+}
+@media screen and (max-width:760px){
+ .illustrated-mode.pagination-on .printed-spread.opening-page>.book-companion{width:100%;padding:0;gap:14px}
+ .illustrated-mode.pagination-on .opening-page .poem-art img{max-height:29dvh}
+ .illustrated-mode.pagination-on .opening-page .illustration-reading{width:calc(100% - 32px);font-size:16px}
+ .illustrated-mode.pagination-on .opening-page .image-narrative{font-size:16px;line-height:1.7}
+ .pagination-on .printed-spread>.reader{position:relative}
+}

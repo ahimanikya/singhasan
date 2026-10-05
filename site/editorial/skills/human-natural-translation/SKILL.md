@@ -25,6 +25,10 @@ Read the complete poem or prose section before translating. Use the latest appro
 
 Identify who speaks, who acts, who receives the action, what changes, and where the emotional or rhetorical turn occurs. Preserve negation, degree, tense, repetitions, contrasts, and uncertain agency. Distinguish author-confirmed meaning from your interpretation. When uncertainty materially changes the passage, keep a provisional draft, explain the exact uncertainty privately, and continue independent sections. Do not invent an answer or block a whole collection over one word.
 
+When a passage alludes to a familiar story, distinguish what the poem actually says from supplied author context and remembered versions of the story. Background knowledge can clarify a reference; it must not silently replace the poem’s stated object, action, or attitude.
+
+Before capitalising or transliterating an unfamiliar expression as a person’s name, determine whether it is a role, title, epithet, generic character type, or an actual named figure. Plural mythological names may invoke recurring types rather than identify individuals. Render clear roles naturally in the target language; preserve meaningful allusions and real names. A user’s correction of the category does not confirm a specific English role: keep uncertain equivalents provisional in the private record.
+
 Translate directly from the source where capable. A bridge translation is a working aid, not the new authority; disclose its use in the private record and check decisive choices against the source. Translate each target language independently so one English interpretation does not silently determine all versions.
 
 ## Choose the mode

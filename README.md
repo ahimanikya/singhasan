@@ -28,7 +28,7 @@ The poems and illustrations are not offered under an open-source license. Font l
 
 ## Design-system sync · 4 October 2026
 
-The current Kabita Live guide, import hashes and book-specific application record are kept in `design-system/`. Refresh shared foundations with `python3 site/import_design_system.py --source "/path/to/Kabita Live"`, then review the page-specific adaptations in `site/dist/assets/kabita-sync.css` before rebuilding. The import does not overwrite Singhasan’s covers, illustration narratives, audio, source poems or device-local saved passages.
+The current book-specific guide is `design-system/SINGHASAN-DESIGN-SYSTEM.md`; it takes precedence over the imported Kabita Live snapshot. Import hashes and historical application records remain in `design-system/`. Refresh shared foundations with `python3 site/import_design_system.py --source "/path/to/Kabita Live"`, then review the page-specific adaptations in `site/dist/assets/kabita-sync.css` before rebuilding. The import does not overwrite Singhasan’s covers, illustration narratives, audio, source poems or device-local saved passages.
 
 Quiet reading uses Kabita Live’s shared `reader-pagination.mjs` three-line opening rule. Run `node --test site/tests/reader-pagination.test.mjs` when changing pagination. Quiet reading retains the identical illustrated front and back covers; only interior poem illustration leaves are hidden. Its section chooser searches the introduction and all poems without changing the current place until Read section is chosen. Read the whole book starts at the title page regardless of the search.
 
@@ -45,7 +45,7 @@ Rebuild and validate after replacing any recording. Timings must be regenerated 
 
 `contact.html` accepts private notes for the poet’s family. The Send message form writes directly to the dedicated Firebase feedback collection, with the poem context preserved. Receipt is confirmed only after the atomic message/throttle write succeeds; failures retain the entered text. Messages are private and require editor access; automatic email notifications are not configured.
 
-All 68 standalone poems include a Like button, a collapsed Comments section with explicit publication consent, and a private-contact link within the comments form. These are excluded from illustrated and quiet reading. The interaction code and visual patterns are adapted from Kabita Live. No Kabita Live cloud configuration, reader records or analytics IDs have been imported.
+All 68 standalone poems include a Like button, a collapsed Comments section with one text box and a submission action, and a private-contact link within the disclosure. These are excluded from illustrated and quiet reading. The interaction code and visual patterns are adapted from Kabita Live. No Kabita Live cloud configuration, reader records or analytics IDs have been imported.
 
 The separate Singhasan Firebase service runs in the dedicated `singhasan` project and web app on the Spark plan. Anonymous authentication is enabled with the user's explicit approval. The default Firestore database is in `nam5` (Standard edition); the reviewed rules and the `publicComments` index are deployed. Live checks verified anonymous sign-in, atomic like/unlike, rejection of forged counts, private pending comments, and rejection of reader self-publication. `site/dist/runtime-config.json` enables likes and public comments and enables private database feedback. The public site uses anonymous browser identities; it does not require named registration.
 
@@ -69,7 +69,7 @@ The standalone ସିଂହଦ୍ଵାର page has no English Introduction eyeb
 
 Audio generation, replacements and listening review are deferred. Human Natural Translation is installed and versioned under `site/editorial/skills/human-natural-translation/`. English, Tamil and Hindi are first, with a proposed complete-poem pilot using 1, 21 and 24; other languages remain planned. On 4 October 2026, the user authorized adding all existing translations. The site build now includes the introduction and all 68 poems in English, Hindi, Bengali and Tamil alongside Odia. Entries retain their honest draft/ready review status; `published: true` records the separate release decision. Outstanding English/Hindi/Bengali questions and Tamil family review remain open. Editorial review notes stay private. Audio is offered only for Odia.
 
-The updated Kabita Live comparison is `design-system/AUDIT-2026-10-04.json`. Search remains in the existing reader tools, as requested for a single book; Contents keeps its current design. Illustrated is the default book mode and starts with paper-turn animation on. Quiet starts with animation off; each mode retains its own explicit choice. Sound stays opt-in and reduced-motion preferences override animation. Translation links retain the chosen language when turning pages, leaving the reader and sharing. An unavailable language falls back visibly to Odia. Source poems and saved-reading data formats are unchanged.
+The updated Kabita Live comparison is `design-system/AUDIT-2026-10-04.json`. Search remains in the existing reader tools, as requested for a single book; the catalogue keeps its current design and is labelled Poems. Illustrated is the default book mode and starts with paper-turn animation on. Quiet starts with animation off; each mode retains its own explicit choice. Sound stays opt-in and reduced-motion preferences override animation. Translation links retain the chosen language when turning pages, leaving the reader and sharing. An unavailable language falls back visibly to Odia. Source poems and saved-reading data formats are unchanged.
 
 The reader walkthrough is prepared under `review/reader-walkthrough-2026-10-04.html`, outside the published site. Its choices are for the user to review; automated verification does not count as user approval.
 
@@ -83,10 +83,24 @@ Privacy preference: never display the family’s personal email address in publi
 
 Poem endings use three small botanical SVG fleurons in a stable cycle (leaf, paired leaves, seed). A poem retains its ornament across its standalone page and both reader modes. In the reader it appears below the final text column only; it follows the last line where space permits, or rests on the footer rule without changing pagination. The ornaments are decorative, outside the source-text container and hidden from assistive technology. After reviewing both full-page previews, the user selected masthead A (Throne & earth): a restrained throne icon beside the Anek Odia 600 title. Both complete logo templates are preserved in `site/templates/masthead-a.html` and `masthead-b.html`, with variant styles and SVG marks retained for future use. A is active; B (Literary wordmark with leaf underline) remains available. The throne favicon and cover artwork are unchanged.
 
-Standalone poem closing layout: navigation and reader responses align with the poem column; the Like and collapsed Comments controls share a compact row. Opening Comments expands the existing form below. Reduced end spacing and footer art apply only to standalone pages, preserving reader pagination and other page footers.
+Standalone poem closing layout: navigation and reader responses align with the poem column; the Like and collapsed Comments controls share a compact row. Opening Comments expands the existing form below. Reduced end spacing applies to standalone pages. All normal pages now share the same compact grass-and-stone footer artwork and scale.
 
 The poem header contains reading controls only. Like is offered once, in the reader-response section below the poem; no top heart shortcut is rendered.
 
 ## Reader navigation · 4 October 2026
 
 The front cover opens the book. Paper turns cover the full paper area, including headings, margins and folios. Quiet mode retains its separate motion preference. Standalone poem pages keep their closing ornament and responses without previous/next navigation. Exit reader returns to the entry page with its language, scroll position and introduction passage, even after moving between chapters. A short view transition is used where supported, respecting reduced motion.
+
+## Progressive image delivery
+
+The page builder adds responsive WebP copies and a tiny inline preview to book art, covers, portraits and ornaments. Images keep their original dimensions while downloading; the cover is prioritised and other images use native lazy loading. The enhancements work without JavaScript; the small image-loading script only softens the final reveal and respects reduced motion. Quiet mode does not eagerly fetch hidden poem art.
+
+Original artwork remains unchanged. After replacing artwork, run `python site/tools/prepare_images.py` with Pillow, then build normally. Commit `site/responsive-images.json` and its `site/dist/assets/responsive/` files along with the generated pages. Ordinary builds need no Pillow and reuse filenames derived from the artwork hash and encoding recipe. Changing text or styles does not change image URLs. The site validator checks source hashes and every responsive candidate.
+
+## Page identity and sharing images · 4 October 2026
+
+The home cover links to Poems; the reading action still opens the book. Each illustrated opening combines the image and narrative on one leaf, with verse starting on the following leaf. Quiet retains the same covers and source anchors while omitting that interior illustration leaf. Decorative line drawings may occupy a blank facing leaf or sufficient spare space after the final text.
+
+Every public route has static Open Graph and Twitter metadata with a page-specific image: the complete cover for home and book/audio entry pages, the poet portrait for profile/contact, individual artwork for each poem and introduction, the catalogue’s throne, and the back-cover landscape. Canonical addresses omit reading-state queries. Social services may retain a cached earlier preview after deployment.
+
+After changing selected artwork, run `python site/tools/prepare_social_images.py` with Pillow, then rebuild. Commit `site/social-images.json` and `site/dist/assets/social/` with the page changes. Source and output hashes are validated, JPEG copies preserve the whole composition, and the original lettered cover export remains intact.
