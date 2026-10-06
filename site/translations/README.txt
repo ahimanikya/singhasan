@@ -1,8 +1,10 @@
-Singhasan translations — updated 4 October 2026
+Singhasan translations — updated 5 October 2026
 
 Odia is authoritative. Eleven translation languages are planned: English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu.
 
 Current inclusion decision
+
+The 5 October Human Natural review refines wording in the existing English, Hindi, Bengali and Tamil editions without changing their publication or review flags. The introduction and 17 poems in each of these languages have received a full source/target comparison in this pass; 51 poems per language still await that literary review. This is an assistant review, not a new fluent-reader or author sign-off. Original Odia is unchanged. Private pilot revisions and detailed review records are excluded from this release.
 
 The user authorized all existing English, Hindi, Bengali and Tamil translations, including the introduction and 68 poems per language. These are published; their editorial draft/ready states and remaining review questions are preserved. Publication does not claim that every translation has completed human review.
 

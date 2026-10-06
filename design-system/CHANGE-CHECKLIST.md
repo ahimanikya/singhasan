@@ -17,7 +17,8 @@ Copy the relevant sections into a private change record. Mark each item **pass**
 - [ ] Extracts, verse line/stanza order, introduction and hidden/display-only ornaments are handled correctly.
 - [ ] Translation uses the current source and contextual glossary; source fingerprints are current.
 - [ ] Meaning, agency, negation, quantities, roles/names, satire and final emotional turn survive; no invented explanatory lines or forced rhyme.
-- [ ] Uncertain words are privately flagged; self-review, fluent review, acceptance and release are recorded separately.
+- [ ] The target preserves the human effect, irony and revelation; idioms do not introduce different implications, and grammatical gender does not invent participant identity.
+- [ ] Uncertain words are privately flagged; structural screening, complete literary reading, fluent review, acceptance and release are recorded separately, with before/after versions and an exact remaining queue.
 - [ ] Actual coverage is verified. `ready` and `published: true` changes expose only intended sections; private pilots remain excluded.
 - [ ] Script fonts, language tags, punctuation, wrapping and saved language-specific positions work. For Urdu, check RTL, Nastaliq overhang, title and switch back to LTR.
 - [ ] A source/recording change triggers review of affected translations and timing; old evidence is not silently reused.
