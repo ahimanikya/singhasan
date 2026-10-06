@@ -3,6 +3,7 @@ from pathlib import Path
 from html import escape
 import json
 from artwork import image_asset
+from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
 from translation_article import ROUTE as ARTICLE_ROUTE, HERO as ARTICLE_HERO, DESCRIPTION as ARTICLE_DESCRIPTION, ALT as ARTICLE_ALT
 
 ROOT=Path(__file__).resolve().parent
@@ -24,6 +25,7 @@ def page_image(route):
     }.get(route,COVER)
 
 def page_details(route,chapters,illustrations):
+    if route==STORY_ROUTE:return STORY_DESCRIPTION,'ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'
     if route==ARTICLE_ROUTE:return ARTICLE_DESCRIPTION,ARTICLE_ALT
     if route.startswith('poem-'):
         n=int(route.removeprefix('poem-').removesuffix('.html'))

@@ -21,7 +21,7 @@ class Page(HTMLParser):
 errors=[]
 pages=sorted(root.glob('*.html'))
 social=json.loads((root.parent/'social-images.json').read_text())
-assert len(pages)==78, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus the translation essay'
+assert len(pages)==79, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus the translation essay and Our Story'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -55,10 +55,10 @@ for item in MANIFEST['items']:
     assert hashlib.sha256((root/item['asset']).read_bytes()).hexdigest() == item['sha256'], item['id']
     assert Path(item['asset']).name in published, f"Unconnected artwork: {item['id']}"
 assert (root/'CNAME').read_text().strip()=='singhasan.poemwithoutborders.org'
-assert len(ET.parse(root/'sitemap.xml').getroot())==78
+assert len(ET.parse(root/'sitemap.xml').getroot())==79
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 78 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 79 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -158,7 +158,7 @@ for source,entry in social.items():
     assert entry['type'] in ('image/png','image/jpeg') and entry['width']>0 and entry['height']>0
     assert payload.startswith(b'\x89PNG') if entry['type']=='image/png' else payload.startswith(b'\xff\xd8'), entry['src']
 assert len({social[page_image(f'poem-{n}.html')]['src'] for n in range(1,69)})==68
-print('Validated page-specific sharing images, metadata and source/output hashes for all 78 pages.')
+print('Validated page-specific sharing images, metadata and source/output hashes for all 79 pages.')
 
 # The essay is a standalone editorial page, outside the book's section sequence.
 from translation_article import ROUTE as ARTICLE_ROUTE
@@ -167,7 +167,30 @@ assert '<html lang="en">' in essay and essay.count('<table>')==2
 assert 'og:type" content="article"' in essay
 assert 'source-package' not in essay and '/site/dist/' not in essay
 for f in pages:
-    assert f'href="{ARTICLE_ROUTE}">About translation</a>' in f.read_text(), f.name
+    assert 'href="our-story.html" aria-label="Our Story"' in f.read_text(), f.name
+    assert '<span>Our Story</span>' in f.read_text(), f.name
+
 home=(root/'index.html').read_text()
 assert home.index('home-visual-story')<home.index('home-translation-feature')<home.index('home-reading-choice')
 print('Validated translation essay, home feature and shared footer links.')
+
+# Optional path is part of Poems, never a second illustrated homepage.
+from reading_path import STOPS, PATH_ID, ROUTE as PATH_ROUTE
+guide=(root/'contents.html').read_text()
+assert [stop[0] for stop in STOPS]==[1,24,6,38,62]
+assert 'id="reading-path"' in guide
+for number,*_ in STOPS:
+    assert f'id="path-stop-{number}"' in guide
+    assert f'poem-{number}.html?path={PATH_ID}' in guide
+    assert f'data-reading-path="{PATH_ID}"' in (root/f'poem-{number}.html').read_text()
+assert 'data-reading-path=' not in (root/'poem-2.html').read_text()
+assert f'href="{PATH_ROUTE}"' in (root/'index.html').read_text()
+assert not (root/'reading-path.html').exists()
+assert 'reading-path.html' not in (root/'sitemap.xml').read_text()
+print('Validated compact five-stop path on Poems, Home invitation and scoped poem panels.')
+
+story=(root/'our-story.html').read_text()
+for target in (ARTICLE_ROUTE,'https://poemwithoutborders.org/','https://poemwithoutborders.org/#story'):
+    assert f'href="{target}"' in story
+assert 'Ahimanikya Satapathy' in story and 'poet’s son' in story
+print('Validated Our Story, consolidated links and edition credit.')

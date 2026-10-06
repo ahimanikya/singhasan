@@ -5,6 +5,8 @@ import json,re,hashlib
 from translation_data import load_translations
 from reader_responses import responses, contact_page
 from homepage import render_home
+from our_story import render_story, ROUTE as STORY_ROUTE, TITLE as STORY_TITLE
+from reading_path import invitation as path_invitation, path_panel
 from translation_article import render_article, ROUTE as ARTICLE_ROUTE, TITLE as ARTICLE_TITLE
 from audio_edition import render_audio
 from artwork import image_asset, resolve_artwork
@@ -62,7 +64,7 @@ def book_panel(c):
         current=' aria-current="page"' if item['number']==c['number'] else ''
         rows.append(f'<li><a href="{path(item)}"{current}><span class="toc-number"><span class="sr-only">Page </span>{book_page(item):02}</span><span class="toc-title" lang="or">{e(first_line(item))}</span></a></li>')
     entry_actions=f'<div class="book-entry-actions"><a class="read-in-book" href="{path(c)}?view=book&amp;quiet=0">{icon("read")}<span>Read in the book</span></a><a class="read-in-book" href="{path(c)}?view=book&amp;quiet=1">{icon("read")}<span>Read quietly</span></a></div>'
-    return '<section class="book-glance"><nav aria-labelledby="book-glance-heading" lang="en"><h2 id="book-glance-heading">In the book</h2>'+entry_actions+'<ol>'+''.join(rows)+'</ol><a class="toc-all" href="contents.html">All poems in the book</a></nav><div class="book-related" lang="en"><a href="author.html"><span>About the poet</span><small>Explore Pravakar Satapathy’s life and writing.</small></a><a href="listen.html" data-odia-audio><span>Listen to the book</span><small>Hear the introduction and all sixty-eight poems.</small></a></div></section>'
+    return '<section class="book-glance"><nav aria-labelledby="book-glance-heading" lang="en"><h2 id="book-glance-heading">In the book</h2>'+entry_actions+'<ol>'+''.join(rows)+'</ol><a class="toc-all" href="contents.html">All poems in the book</a></nav>'+path_panel(c['number'])+'<div class="book-related" lang="en"><a href="author.html"><span>About the poet</span><small>Explore Pravakar Satapathy’s life and writing.</small></a><a href="listen.html" data-odia-audio><span>Listen to the book</span><small>Hear the introduction and all sixty-eight poems.</small></a></div></section>'
 
 def nearby(c):
     current=c['number']
@@ -109,6 +111,10 @@ def shell(title,body,kind='edition'):
         extras+='<link rel="stylesheet" href="assets/engagement.css?v=2"><script type="module" src="assets/services/engagement.js?v=2"></script>'
     if kind.startswith('article-page'):
         extras+='<link rel="stylesheet" href="assets/translation-article.css">'
+    if 'path-invitation' in body or 'data-reading-path' in body or 'id="reading-path"' in body:
+        extras+='<link rel="stylesheet" href="assets/reading-path.css"><script src="assets/reading-path.js" defer></script>'
+    if kind=='our-story-page':
+        extras+='<link rel="stylesheet" href="assets/our-story.css">'
     if kind=='contact-page':
         extras+='<link rel="stylesheet" href="assets/engagement.css?v=2"><script type="module" src="assets/services/private-feedback.js"></script>'
     html=f'''<!doctype html>
@@ -117,7 +123,7 @@ def shell(title,body,kind='edition'):
 <header class="wrap masthead">{masthead_logo()}<div class="header-controls"><button type="button" class="theme-toggle" data-theme-toggle hidden><span class="appearance-label sr-only">Theme: System</span><svg class="theme-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><svg class="theme-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg><span class="theme-dark" aria-hidden="true">{icon('night')}</span></button><button id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="book-menu-drawer" aria-haspopup="dialog"><span class="menu-open-icon">{icon('menu')}</span><span class="menu-close-icon">{icon('close')}</span></button></div><nav id="book-navigation" class="nav" aria-label="Book navigation" lang="en"><a href="index.html">Home</a><a href="book.html">Read the book</a><a href="listen.html">Listen</a><a href="author.html">The poet</a><a href="contents.html">Poems</a></nav><dialog id="book-menu-drawer" class="book-menu-drawer" aria-labelledby="book-menu-heading"><div class="book-menu-heading"><p id="book-menu-heading" lang="en">Within the book</p><button id="book-menu-close" type="button" aria-label="Close navigation">{icon("close")}</button></div><div id="book-menu-slot"></div><a class="drawer-back-cover" href="back-cover.html" lang="en">Back cover</a></dialog></header>
 <div class="wrap header-rule" aria-hidden="true">{icon('header-separator')}</div>
 <main id="reading" class="wrap" tabindex="-1">{body}</main>
-<div class="wrap footer-landscape"><span class="footer-grass" aria-hidden="true"></span><span class="footer-stone" aria-hidden="true"></span></div><footer class="wrap footer"><p lang="or">ସିଂହାସନ · ପ୍ରଭାକର ଶତପଥୀ</p><nav aria-label="Footer" lang="en"><a href="author.html" aria-label="The poet">{icon('footer-story')}<span>The poet</span></a><a href="contents.html" aria-label="Poems">{icon('read')}<span>Poems</span></a><a class="footer-translation" href="{ARTICLE_ROUTE}">About translation</a><a href="contact.html" aria-label="Contact the poet">{icon("footer-contact")}<span>Contact the poet</span></a></nav></footer></body></html>'''
+<div class="wrap footer-landscape"><span class="footer-grass" aria-hidden="true"></span><span class="footer-stone" aria-hidden="true"></span></div><footer class="wrap footer" id="site-footer"><div class="footer-identity"><p lang="or">ସିଂହାସନ · ପ୍ରଭାକର ଶତପଥୀ</p></div><nav aria-label="Footer" lang="en"><a href="author.html" aria-label="The poet">{icon('footer-story')}<span>The poet</span></a><a href="contents.html" aria-label="Poems">{icon('read')}<span>Poems</span></a><a href="{STORY_ROUTE}" aria-label="Our Story" title="Our Story">{icon("write")}<span>Our Story</span></a><a href="contact.html" aria-label="Contact the poet">{icon("footer-contact")}<span>Contact the poet</span></a></nav></footer></body></html>'''
     if kind.startswith('article-page'):
         html=html.replace('<html lang="or">','<html lang="en">',1).replace('<main id="reading" class="wrap"','<main id="reading" class="essay"',1)
     def version_asset(match):
@@ -163,6 +169,7 @@ for c in chapters:
     detail=''
     rows.append(f'''<li><a href="{path(c)}" aria-label="{e(c['title'])}, page {book_page(c)}"><span class="contents-title" lang="or">{e(first_line(c))}{detail}</span><span class="contents-leader" aria-hidden="true"></span><span class="contents-page" lang="en">{book_page(c):02}</span></a></li>''')
 contents_body=f'<section class="book-contents" aria-labelledby="edition-poems"><div class="contents-heading"><div><p class="eyebrow artistic-label" lang="en">{icon("talapatra")}The complete book</p><h1 id="edition-poems" tabindex="-1" lang="en">Poems</h1><p class="contents-invitation" lang="en">Find a poem. Stay a little longer.</p></div><img class="section-ornament contents-throne" src="assets/footer-earth/throne-v1.webp" alt="" width="1254" height="1254"></div>{reader_toolkit(chapters[0])}<div class="opening-waterline" aria-hidden="true"></div><ol class="book-index" id="reading-panel">{"".join(rows)}</ol></section>'
+contents_body=contents_body.replace('<ol class="book-index"',path_invitation()+'<ol class="book-index"',1)
 contents_body+=share_dialog()+'<script type="application/json" id="reading-data">'+encoded(reading_data(chapters[0]))+'</script>'
 (DIST/'contents.html').write_text(shell('Poems',contents_body,'contents-page'))
 (DIST/'index.html').write_text(shell('Singhasan',render_home(chapters,unique_art,icon,excerpt,cover_face),'home-page'))
@@ -178,6 +185,7 @@ back_body=f'''<section class="book-cover-route"><figure class="bound-cover bound
 
 (DIST/'contact.html').write_text(shell('Contact the poet',contact_page(icon),'contact-page'))
 
+(DIST/STORY_ROUTE).write_text(shell(STORY_TITLE,render_story(icon),'our-story-page').replace('<html lang="or">','<html lang="en">',1))
 (DIST/ARTICLE_ROUTE).write_text(shell(ARTICLE_TITLE,render_article(),'article-page earth-wash'))
 
 # Public address and preview metadata are generated alongside every page.

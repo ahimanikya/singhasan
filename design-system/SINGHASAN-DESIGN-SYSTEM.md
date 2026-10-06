@@ -15,9 +15,10 @@ Use alongside the [book-site rulebook](BOOK-SITE-RULEBOOK.md) for editorial/prod
 ## Page roles and navigation
 
 - **Home** narrates the book and poet’s world, with artwork, exact poem extracts and English commentary. Keep one primary reading action in the opening. The home cover links to **Poems** (`contents.html`); the separate “Read the book” action enters the reader.
-- The translation essay has a small illustrated home feature after the five visual-story scenes and before the reading invitation. Its permanent route is `thirty-languages-and-the-journey-of-a-poem.html`. The shared footer includes a text link, **About translation**; keep it readable on phones. The main menu stays focused on the book. The essay is not an additional book chapter or a claim that thirty translated editions are available.
+- The translation essay has a small illustrated home feature after the five visual-story scenes and before the reading invitation. Its permanent route is `thirty-languages-and-the-journey-of-a-poem.html`. The translation essay is linked from **Our Story**; the shared footer links to Our Story with a matching icon. The main menu stays focused on the book. The essay is not an additional book chapter or a claim that thirty translated editions are available.
 - The closing home invitation offers Read the book, Listen to the audiobook and Browse all poems. Retain Listen in top navigation.
 - Use **Poems**, replacing the visible label Contents. Preserve `contents.html` so existing links continue to work. This single-book catalogue keeps its existing opening-line list and limited search; no journal-wide filters are required.
+- **Suggested reading path:** Home has a small “Not sure where to begin?” invitation linking to `contents.html#reading-path`. Poems contains the compact five-stop sequence “Power and the people” (1 → 24 → 6 → 38 → 62), short editorial labels and Start reading. Use a two-column introduction/list layout on wide screens and a single column on phones; each stop has its poem number above its title, never three cramped inline text columns. No separate illustrated guide, duplicate image narrative, extra main-menu item or change to the homepage’s storytelling. The contextual panel on those five standalone poems appears only when `path=power-and-people` is present; it preserves language and links to the next stop/Poems overview. Keep it outside the bound reader; no chapter reordering or footer previous/next navigation.
 - Standalone poem pages remain permanent, shareable destinations. Their “In the book” panel includes illustrated and quiet entry links. Reader tools keep language, size, surface and saved passages; optional search and saved-item controls stay folded.
 - The poet profile is a substantial biography without a contribution list. Family-supplied age and visiting invitation require periodic review; never infer a birth date. Contact uses the private Firebase form. Do not publish the family’s personal email address.
 
@@ -43,6 +44,7 @@ Use alongside the [book-site rulebook](BOOK-SITE-RULEBOOK.md) for editorial/prod
 ## Ornament and footer
 
 - Use the **same grass-and-stone earth artwork** at the far left and right of every normal site footer, with consistent scale: 56px landscape height, 110px side elements, 12px top margin. The full-page reader hides the site footer.
+- Footer navigation uses The poet, Poems, Our Story and Contact: matching icon-and-label links on desktop and four 44px icon-only targets on phones with accessible names. Our Story (`our-story.html`) gathers the translation essay, Poem Without Borders homepage/story links and the user-requested credit to Ahimanikya Satapathy for reimagining and designing this online edition. Do not repeat the credit or external project links in every footer.
 - Do not restore the central throne or boat to the footer. Throne imagery remains appropriate for the favicon, masthead and the Poems page.
 - Three botanical closing fleurons rotate predictably by poem; a poem keeps the same motif in standalone and reader views. Place it after the final line or on the footer rule when necessary.
 - Use the small throne, reeds and palm line drawings only in genuine spare space. A blank facing leaf may carry one drawing. A finished text leaf may carry a smaller drawing below its ending when at least 170px remains after a 56px separation. Never overlay verse or insert a decorative extra page.
@@ -67,10 +69,11 @@ Render canonical, Open Graph and large-image Twitter metadata into the initial H
 | Poems catalogue | Its stone-throne artwork |
 | Back cover | Its closing landscape artwork |
 | Translation essay | Its two-readers lead illustration |
+| Our Story | Complete lettered front cover |
 
 Use absolute HTTPS image addresses, matching MIME type and actual dimensions, descriptive image alt text, and a page-specific title and description. Generate lightweight JPEG sharing copies of artwork without cropping; reuse the complete lettered cover export in its actual file format. Keep source hashes and stable image URLs in `site/social-images.json`.
 
-`site/tools/prepare_social_images.py` prepares the files when artwork changes. Ordinary page builds read the committed manifest. The validator checks all 78 pages and the source/output hashes. Updating the website cannot force a social service to discard a previously cached preview; actual card cropping and refresh timing belong to the sharing service.
+`site/tools/prepare_social_images.py` prepares the files when artwork changes. Ordinary page builds read the committed manifest. The validator checks all 79 pages and the source/output hashes. Updating the website cannot force a social service to discard a previously cached preview; actual card cropping and refresh timing belong to the sharing service.
 
 ## Urdu typography (review preview)
 

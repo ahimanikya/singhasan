@@ -22,7 +22,7 @@ Do not silently choose between contradictory current documents. Resolve them aga
 - The approved book contains the opening prose, ସିଂହଦ୍ଵାର, and 68 numbered poems. Preserve their identity, order, wording, stanza structure and meaningful punctuation. Do not silently correct dialect or unusual words.
 - `site/dist/book.js` is the Odia source input. Apply authorized corrections there and rebuild all dependent views. Check affected translations and audio offsets when the source changes; do not silently certify old reviews against new text.
 - Home-page extracts must match the source. English illustration narratives interpret artwork; they are not poem translations. Do not insert explanatory prose, invented imagery or morals into a translated poem.
-- Keep the poet's name and book title on the cover. Avoid repeating the title in adjacent cover narrative. No PDF/recovery references, AI-generation labels, design credits or unsolicited acknowledgements on reader-facing pages. Preserve internal provenance and required asset/font licences.
+- Keep the poet's name and book title on the cover. Avoid repeating the title in adjacent cover narrative. No PDF/recovery references, AI-generation labels or unsolicited acknowledgements on reader-facing pages. The user-requested design/edition credit to Ahimanikya Satapathy belongs once in Our Story, separate from the poet’s authorship. Preserve internal provenance and required asset/font licences.
 - Biography uses family-supplied or verified facts. Do not infer birth dates, political offices, party affiliations or personal history. Review the supplied age when updating it. Invitations to meet the poet in Bhubaneswar go through private Contact; do not publish private addresses or contact details.
 
 ## 3. Site structure and navigation
@@ -34,7 +34,9 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Standalone poem | Permanent shareable page with selectable verse, companion artwork/narrative and an “In the book” panel with illustrated and quiet entry. No footer previous/next navigation. |
 | ସିଂହଦ୍ଵାର (`intro.html`) | Full opening prose, paginated where needed for comfortable reading. Do not restore the English “Introduction” heading beside its Odia title. |
 | Book reader | One paginated reader with Illustrated and Quiet settings, same source and saved-place model. |
-| Translation essay | Standalone editorial page linked from the home feature and the shared “About translation” footer link; outside the book sequence and main menu. |
+| Our Story | Family purpose, translation essay link, wider Poem Without Borders project/story, and one edition/design credit to Ahimanikya Satapathy. Shared footer entry; not part of the book sequence. |
+| Suggested reading path | Compact thematic sequence within `contents.html#reading-path`, linked from a small Home invitation. No separate illustrated guide. Editorial prompts stay separate from titles/verse; contextual continuation stays outside the book reader. |
+| Translation essay | Standalone editorial page linked from the home feature and Our Story; outside the book sequence and main menu. |
 | Listen | Existing audiobook and Listen & follow. Keep Listen accessible in the top menu and the home closing invitation. |
 | Poet | Substantial biography and portrait, without a contributions list. |
 | Contact | Simple private Firebase form, including poem context when entered from a poem. |
