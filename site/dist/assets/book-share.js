@@ -6,8 +6,8 @@
  let caption='',heading='';
  button.addEventListener('click',()=>{
   const link=new URL(location.href);for(const key of ['focus','start','view','page','leaf','quiet','line','offset'])link.searchParams.delete(key);link.hash='';
-  const selected=document.querySelector('[data-reading-language][aria-selected=true]')?.dataset.readingLanguage;
-  if(selected&&selected!=='original')link.searchParams.set('lang',selected);else link.searchParams.delete('lang');
+  const selected=document.querySelector('#book-language')?.value||document.querySelector('[data-reading-language][aria-selected=true]')?.dataset.readingLanguage;
+  if(selected&&selected!=='original'&&selected!=='or')link.searchParams.set('lang',selected);else link.searchParams.delete('lang');
   url.value=link.href;status.textContent='';
   const title=document.querySelector('#chapter-title'),verse=document.querySelector('#experience-verse');
   const excerpt=(verse?.innerText||'').split('\n').filter(line=>line.trim()).slice(0,4).join('\n');

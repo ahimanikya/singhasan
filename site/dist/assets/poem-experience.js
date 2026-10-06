@@ -6,8 +6,10 @@ const languageNames=Object.fromEntries(Object.entries(pageData.languages).map(([
 const memory=new Map();
 function readJSON(key,fallback){try{return JSON.parse(localStorage.getItem(key))??memory.get(key)??fallback}catch{return memory.get(key)??fallback}}
 function writeJSON(key,value){memory.set(key,value);try{localStorage.setItem(key,JSON.stringify(value));return true}catch{$('#page-saved-status').textContent='Device storage is unavailable; this change lasts for this visit.';return false}}
+const catalogue=document.body.classList.contains('contents-page');
+let catalogueLanguage=pageData.source_language;
 let library=[pageData],loaded=false;
-async function loadLibrary(){if(loaded)return;try{const response=await fetch('assets/reading-book.json');if(!response.ok)throw Error();const data=await response.json();library=data.poems;loaded=true;migrateBookmarks()}catch{$('#book-search-status').textContent='The book list could not be loaded. Use Poems to choose a poem.'}}
+async function loadLibrary(){if(loaded)return;try{const response=await fetch('assets/reading-book.json');if(!response.ok)throw Error();const data=await response.json();library=data.poems;loaded=true;await migrateBookmarks()}catch{($('#book-search-status')||$('#page-saved-status')).textContent='The book list could not be loaded. Please try again.'}}
 function migrateBookmarks(){
  const old=readJSON('singhasan-quiet-bookmarks-v1',[]);if(!Array.isArray(old))return;let copied=true;
  for(const b of old){const p=library.find(p=>p.id===b.id&&p.variants[b.language]);if(!p||!Number.isInteger(b.unit))continue;
@@ -17,25 +19,38 @@ function migrateBookmarks(){
  // Remove only after each valid legacy bookmark is durably copied.
  if(copied&&old.every(b=>{const p=library.find(p=>p.id===b.id&&p.variants[b.language]);return !p||readJSON(`singhasan-page-bookmarks-v1:${p.id}`,[]).some(x=>x.language===b.language&&x.line===legacyAnchor(b.unit).line&&(x.offset||0)===legacyAnchor(b.unit).offset)}))writeJSON('singhasan-quiet-bookmarks-v1',[]);
 }
-function fillLibrary(){const select=$('#book-section'),term=$('#book-search').value.trim().toLocaleLowerCase();select.replaceChildren();
+function fillLibrary(){
+ if(catalogue){
+  if(!loaded)return;
+  document.querySelectorAll('.book-index>li').forEach(row=>{const link=row.querySelector('a'),route=link.getAttribute('href').split('?')[0],poem=library.find(p=>p.route===route);if(!poem)return;const variant=poem.variants[catalogueLanguage]||poem.variants[poem.source_language],code=poem.variants[catalogueLanguage]?catalogueLanguage:poem.source_language,title=row.querySelector('.contents-title');title.textContent=poem.id?variant.stanzas.flat().find(t=>t.trim()):variant.title;title.lang=code;title.dir=code==='ur'?'rtl':'ltr';link.href=route+(catalogueLanguage==='or'?'':'?lang='+encodeURIComponent(catalogueLanguage));link.setAttribute('aria-label',variant.title);});
+  return;
+ }
+ const select=$('#book-section'),term=$('#book-search').value.trim().toLocaleLowerCase();select.replaceChildren();
  for(const p of library){const v=p.variants[pageCode()]||p.variants[p.source_language];if(term&&!(v.title+' '+v.stanzas.flat().join(' ')).toLocaleLowerCase().includes(term))continue;const o=document.createElement('option');o.value=p.route;o.textContent=p.id?`Poem ${p.id} · ${v.stanzas.flat().find(t=>t.trim())||v.title}`:v.title;select.append(o)}
  if(!term)select.value=pageData.route;$('#book-read-section').disabled=!select.options.length;$('#book-search-status').textContent=loaded?`${select.options.length} section${select.options.length===1?'':'s'}.`:'';
 }
-$('#book-search').addEventListener('input',fillLibrary);
+$('#book-search')?.addEventListener('input',fillLibrary);
 $('#book-size').onchange=e=>document.querySelector(`[data-size="${e.target.value}"]`)?.click();
-$('#book-language').onchange=e=>{const note=$('#reader-language-note');if(note)note.hidden=true;$(`[data-reading-language="${e.target.value===pageData.source_language?'original':e.target.value}"]`)?.click();fillLibrary()};
+$('#book-language').onchange=e=>{if(catalogue)catalogueLanguage=e.target.value;const note=$('#reader-language-note');if(note)note.hidden=true;$(`[data-reading-language="${e.target.value===pageData.source_language?'original':e.target.value}"]`)?.click();syncVisibleLanguage();fillLibrary()};
 
-$('#book-read-section').onclick=()=>{
+$('#book-read-section')?.addEventListener('click',()=>{
  const route=$('#book-section').value;if(!route)return;
  if(document.body.classList.contains('full-page-reader'))location.href=bookURL(route,{quiet:document.body.classList.contains('quiet-mode'),language:pageCode()});
  else location.href=route+(pageCode()==='or'?'':'?lang='+encodeURIComponent(pageCode()));
-};
+});
 // A language selector is useful only when this text has another edition.
-$('#book-language').closest('label').hidden=!pageVerse||$('#book-language').options.length<2;
+$('#book-language').closest('label').hidden=$('#book-language').options.length<2;
+if(document.body.classList.contains('full-page-reader'))$('#page-bookmarks .page-tools-head').after($('#book-language').closest('label'));
+function syncVisibleLanguage(){const code=pageCode();$('#book-language').value=code;document.querySelectorAll('.page-quiet-entry').forEach(a=>{const url=new URL(a.href);url.searchParams.set('lang',code);a.href=url.href});if(catalogue){const url=new URL(location.href);if(code==='or')url.searchParams.delete('lang');else url.searchParams.set('lang',code);history.replaceState(history.state,'',url);document.querySelectorAll('.reading-path a[href*="poem-"]').forEach(a=>{const target=new URL(a.href);if(code==='or')target.searchParams.delete('lang');else target.searchParams.set('lang',code);a.href=target.href});document.querySelectorAll('.reader-listen').forEach(a=>a.hidden=code!=='or')}}
+document.addEventListener('reading-language-changed',syncVisibleLanguage);
 // One reader menu brings language, size and saved passages together.
 const savedPanel=$('#page-bookmarks'),savedButton=$('#page-bookmarks-button'),pageBookKey=`singhasan-page-bookmarks-v1:${pageData.id}`;
+if(document.body.classList.contains('full-page-reader')){
+ savedButton.setAttribute('aria-label','Reading settings');savedButton.dataset.tip='Reading settings';savedPanel.setAttribute('aria-label','Reader tools');savedPanel.querySelector('.page-tools-head strong').textContent='Reader tools';$('#page-bookmarks-close').setAttribute('aria-label','Close reader tools');
+}else{$('#page-saved-details').open=true;}
+
 let pageScrollTimer;
-function pageCode(){return pageVerse?.lang||pageData.source_language}
+function pageCode(){return pageVerse?.lang||(catalogue?catalogueLanguage:pageData.source_language)}
 function pageBooks(){const raw=readJSON(pageBookKey,[]);return Array.isArray(raw)?raw.filter(b=>b.id===pageData.id&&pageData.variants[b.language]&&Number.isInteger(b.line)&&b.line>=0&&b.line<pageData.variants[b.language].stanzas.flat().length):[]}
 function pageMarks(code){const raw=readJSON(`singhasan-poem-marks-v1:${pageData.id}:${code}`,[]);return normalized(Array.isArray(raw)?raw:[],pageData.variants[code].stanzas.flat(),code)}
 function currentPageLine(){if((document.body.classList.contains('pagination-on')||document.body.classList.contains('intro-paginated')))return Number(pageVerse.dataset.pageLine||0);const lines=[...pageVerse.querySelectorAll('[data-line]')];const visible=lines.find(n=>{const r=n.getBoundingClientRect();return r.bottom>100&&r.top<innerHeight*.8});return Number((visible||lines[0])?.dataset.line||0)}
@@ -81,7 +96,7 @@ function renderPageSaved(){
 }
 savedButton.onclick=()=>{const open=savedPanel.hidden;savedPanel.hidden=!open;savedButton.setAttribute('aria-expanded',String(open));if(open){renderPageSaved();loadLibrary().then(()=>{renderPageSaved();fillLibrary()});placePageMenu();$('#page-bookmarks-close').focus({preventScroll:true})}};
 $('#page-bookmarks-close').onclick=()=>closeSavedPage(true);
-function toggleBookmark(){if(!pageVerse||$('#quick-bookmark').disabled)return;const saved=pageBooks(),entry=currentBookmark();writeJSON(pageBookKey,entry?saved.filter(b=>!(b.language===entry.language&&b.line===entry.line&&(b.offset||0)===(entry.offset||0))):saved.concat({id:pageData.id,language:pageCode(),line:currentPageLine(),offset:Number(pageVerse.dataset.pageOffset||0)}));renderPageSaved();refreshSavedButton();$('#page-saved-status').textContent=entry?'Bookmark removed.':'Page bookmarked.'}
+function toggleBookmark(){if(!pageVerse||$('#quick-bookmark').disabled)return;const saved=pageBooks(),entry=currentBookmark();const durable=writeJSON(pageBookKey,entry?saved.filter(b=>!(b.language===entry.language&&b.line===entry.line&&(b.offset||0)===(entry.offset||0))):saved.concat({id:pageData.id,language:pageCode(),line:currentPageLine(),offset:Number(pageVerse.dataset.pageOffset||0)}));renderPageSaved();refreshSavedButton();$('#page-saved-status').textContent=durable?(entry?'Bookmark removed.':'Page bookmarked.'):'Device storage is unavailable; this change lasts for this visit.'}
 $('#page-save-place').onclick=toggleBookmark;$('#quick-bookmark').onclick=toggleBookmark;
 
 document.addEventListener('click',e=>{if(!savedPanel.hidden&&!savedPanel.contains(e.target)&&!savedButton.contains(e.target))closeSavedPage()});
@@ -107,4 +122,5 @@ async function rustle(){if(!effects.sound)return;try{const Context=window.AudioC
 document.addEventListener('book-page-turn',rustle);$('#book-sound-test').onclick=rustle;
 const code=query.get('lang');if(code==='original'||pageData.variants[code])$(`[data-reading-language="${code===pageData.source_language?'original':code}"]`)?.click();
 const languageNote=$('#reader-language-note');if(languageNote&&code&&code!=='original'&&languageNames[code]&&!pageData.variants[code]){languageNote.textContent=`${languageNames[code]} is not available for this section yet. Showing ${languageNames[pageData.source_language]}.`;languageNote.hidden=false}
-$('#book-language').value=pageCode();refreshSavedButton();fillLibrary();
+if(catalogue&&pageData.variants[code])catalogueLanguage=code;
+syncVisibleLanguage();refreshSavedButton();fillLibrary();if(catalogue)loadLibrary().then(()=>{if(loaded)fillLibrary()});

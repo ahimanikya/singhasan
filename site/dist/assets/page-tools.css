@@ -1,0 +1,52 @@
+/* Visible language and compact controls, shared by Poems and standalone poems. */
+.page-language{flex:0 1 122px;min-width:0;margin:0;font:12px/1.5 var(--ui);color:var(--muted)}
+.page-language label{display:block}
+.page-language select{box-sizing:border-box;width:100%;min-height:44px;background:transparent;color:var(--ink);border:0;border-bottom:1px solid var(--line);border-radius:0;padding:6px 20px 6px 4px;font:16px/1.5 var(--ui)}
+body:not(.full-page-reader) .compact-page-actions{display:flex;align-items:center;flex-wrap:nowrap;gap:6px;margin:12px 0 16px;padding:0;border:0}
+body:not(.full-page-reader) .compact-page-actions .page-icon{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;min-width:44px;height:44px;min-height:44px;padding:0;border:0;border-radius:3px;background:transparent;color:var(--muted);text-decoration:none}
+body:not(.full-page-reader) .compact-page-actions .page-icon:hover,body:not(.full-page-reader) .compact-page-actions .page-icon:focus-visible{background:var(--panel);color:var(--rust)}
+.compact-page-actions .page-icon svg{display:block;width:22px;height:22px}
+.compact-page-actions [hidden]{display:none!important}
+.page-settings-icon{display:flex}.book-settings-icon{display:none}
+.full-page-reader .page-only-control,.full-page-reader .page-language,.full-page-reader .page-settings-icon{display:none!important}
+.full-page-reader .book-settings-icon{display:inline}
+.page-icon::after{content:attr(data-tip);position:absolute;top:calc(100% + 6px);left:0;z-index:30;max-width:min(230px,70vw);width:max-content;padding:6px 9px;background:var(--ink);color:var(--paper);font:12px/1.5 var(--ui);pointer-events:none;opacity:0;visibility:hidden;box-shadow:0 2px 8px #0002}
+.page-icon:is(:hover,:focus-visible)::after{opacity:1;visibility:visible}
+.compact-page-actions:has(:focus-visible) .page-icon:not(:focus-visible)::after{opacity:0;visibility:hidden}
+.book-index>li[hidden]{display:none!important}
+.contents-page .contents-title:lang(en){font-family:var(--serif)}
+.contents-page .contents-title:lang(ur){font-family:'Noto Nastaliq Urdu',serif;line-height:2.65;text-align:right}
+.contents-page .contents-title:is(:lang(hi),:lang(mr)){font-family:'Tiro Devanagari Hindi',serif}
+.contents-page .contents-title:is(:lang(bn),:lang(as)){font-family:'Noto Serif Bengali',serif}
+.contents-page .contents-title:lang(ta){font-family:'Noto Serif Tamil',serif}
+.contents-page .contents-title:lang(te){font-family:'Noto Serif Telugu',serif}
+.contents-page .contents-title:lang(ml){font-family:'Noto Serif Malayalam',serif}
+.contents-page .contents-title:lang(kn){font-family:'Noto Serif Kannada',serif}
+.contents-page .contents-title:lang(gu){font-family:'Noto Serif Gujarati',serif}
+@media print{.page-language{display:none}}
+
+.contents-page .compact-page-actions :is(.reader-listen,#open-share):not([hidden]){display:inline-flex}
+.page-icon[aria-expanded=true]::after,.full-page-reader .page-icon::after{display:none}
+.contents-page #page-bookmarks #page-saved-details{display:block}
+.contents-page #page-bookmarks #page-saved-list .page-tools-tip{display:block}
+
+@media(max-width:370px){body:not(.full-page-reader) .compact-page-actions{gap:2px}.page-language{flex-basis:106px}}
+
+.full-page-reader #page-bookmarks .reading-language-caption{position:static;width:auto;height:auto;padding:0;clip:auto;clip-path:none;overflow:visible;white-space:normal}
+.page-icon::after{display:none}
+.page-icon:is(:hover,:focus-visible)::after{display:block}
+.page-icon[aria-expanded=true]::after,.full-page-reader .page-icon::after{display:none}
+.page-quiet-entry::after{left:auto;right:0}
+.compact-page-actions:has(:focus-visible) .page-icon:not(:focus-visible)::after{display:none}
+
+/* On normal pages this is a bookmark panel, not reading settings. */
+body:not(.full-page-reader) #page-bookmarks .book-reader-only{display:none!important}
+body:not(.full-page-reader) #page-bookmarks #page-saved-details{border:0;margin:0;padding:0}
+body:not(.full-page-reader) #page-bookmarks #page-saved-details>summary{display:none}
+body:not(.full-page-reader) #page-bookmarks #page-save-place{min-height:44px;text-decoration:underline;text-underline-offset:4px}
+
+/* One division between the suggested path and the complete poem list. */
+.contents-page .contents-heading{border:0;padding-bottom:12px}
+.contents-page .reading-path{border-top:0;border-bottom:1px solid var(--line);margin:8px 0 16px;padding:12px 0 24px}
+.contents-page .reading-path .path-stops li{border:0}
+.contents-page .compact-page-actions{margin:12px 0 8px}

@@ -30,8 +30,8 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Destination | Purpose and constraints |
 | --- | --- |
 | Home | Rich introduction to the book and poet, exact extracts and English image narratives. One primary opening reading action. Cover image opens Poems. Closing invitation offers Read the book, Listen to the audiobook and Browse all poems. |
-| Poems (`contents.html`) | Opening-line catalogue for this single book. Keep the established limited search. Visible label is Poems; preserve the existing address. |
-| Standalone poem | Permanent shareable page with selectable verse, companion artwork/narrative and an “In the book” panel with illustrated and quiet entry. No footer previous/next navigation. |
+| Poems (`contents.html`) | Opening-line catalogue for this single book. No search field, search prompt or section count. Bookmark icon opens saved places. Visible label is Poems; preserve the existing address. |
+| Standalone poem | Permanent shareable page with selectable verse, companion artwork/narrative and an “In the book” panel with illustrated and quiet entry. Compact single-line page tools; no page text-size control. No footer previous/next navigation. |
 | ସିଂହଦ୍ଵାର (`intro.html`) | Full opening prose, paginated where needed for comfortable reading. Do not restore the English “Introduction” heading beside its Odia title. |
 | Book reader | One paginated reader with Illustrated and Quiet settings, same source and saved-place model. |
 | Our Story | Family purpose, translation essay link, wider Poem Without Borders project/story, and one edition/design credit to Ahimanikya Satapathy. Shared footer entry; not part of the book sequence. |
