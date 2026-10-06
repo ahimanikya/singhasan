@@ -1,27 +1,19 @@
-Singhasan translations — updated 5 October 2026
+Singhasan translations — release prepared 6 October 2026
 
-Odia is authoritative. Eleven translation languages are planned: English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu.
+Odia remains authoritative. All eleven target languages have complete editions: English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu. Each contains the complete introduction and 68 poems (759 translated sections).
 
-Current inclusion decision
+Publication and review
 
-The 5 October Human Natural review refines wording in the existing English, Hindi, Bengali and Tamil editions without changing their publication or review flags. The introduction and 17 poems in each of these languages have received a full source/target comparison in this pass; 51 poems per language still await that literary review. This is an assistant review, not a new fluent-reader or author sign-off. Original Odia is unchanged. Private pilot revisions and detailed review records are excluded from this release.
+The user accepted the proposed wording treatments, clarified poems 53 and 46, and requested publication. This release adds all 69 sections in Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu using published: true. Draft/ready review states remain unchanged: publication is not a claim of fluent-reader or poet approval of every translation.
 
-The user authorized all existing English, Hindi, Bengali and Tamil translations, including the introduction and 68 poems per language. These are published; their editorial draft/ready states and remaining review questions are preserved. Publication does not claim that every translation has completed human review.
+The latest corrections use “did not come rushing”, without “merely”, in poem 53 and attach the blood to the palace in poem 46, implying many deaths there. Duari is retained without asserting an unconfirmed gatekeeper identity. Broad insect wording avoids an unverified species. Poem 50 retains its provisional wording and deferred source question. Finer role/idiom/allusion and local vocabulary nuances remain documented for later review; accepted provisional treatments do not turn them into dictionary definitions.
 
-The seven additional languages each have three complete pilot poem drafts (1, 21, 24). They remain unpublished. Each still needs the introduction and 65 poems. Private comparison and reader fixtures are in review/six-language-pilot-2026-10-04; the directory retains its original name after adding Urdu. Progress and review evidence are in editorial/translation-review/PLAN.json and its pilot directory. Audio remains Odia-only; new audio work is deferred.
+The remaining Human Natural literary review of the four previously published languages and the planned family/fluent Tamil review remain unfinished. Private evidence and current review coverage are maintained in site/editorial/translation-review/PLAN.json and the dated review folders, outside the deployed site.
 
-Format and release
+Format and inclusion
 
-Each language file has language and sections. Section 0 is the introduction; 1–68 are poems. Each entry has title, stanzas (arrays of exact lines), and status (draft or ready). Use draft while translating/reviewing and ready after the intended review. Published: true is a separate explicit release choice. The loader includes ready entries OR entries with published: true; other drafts stay excluded. Never automatically expose new drafts.
+Each language JSON has language and sections. Section 0 is the introduction; 1–68 are poems. Each entry has title, stanzas (arrays of lines), and status (draft or ready). The loader includes ready entries OR entries with published: true. Keep review status independent from explicit release authorization. Never expose future drafts automatically.
 
-For introduction prose, use one stanza per paragraph with one string. Preserve the full prose. Original and translated line counts may differ. Keep original numbering. Rebuild with build_pages.py. Each language has separate bookmarks and underlines.
+Translate using Human Natural Translation: Poetic Natural for poems, Reflective Prose for the complete introduction. Read the approved Odia and poem-context.json before translating. Preserve source meaning, imagery, satire and emotional turns; do not invent names from roles or substitute a bridge translation for Odia.
 
-Translation method
-
-Use Human Natural Translation with Poetic Natural for poetry, Reflective Prose for the introduction. Read poem-context.json and the latest approved Odia before translating. Existing translations may assist comparison but are not the authority. Review records distinguish same-assistant comparison, fluent-reader review and user approval.
-
-Poem 21: ବଢ଼ାକ ଯାକ is the milk-pot expression; ଅଧାମ is residue after taking the milk. Everything is extracted, down to the last bit. Do not replace it with cream, curds or whey. These notes are private guidance, not reader-facing explanation. Source questions in poems 46 and 50 remain deferred.
-
-Urdu
-
-Use Urdu script and natural literary free verse; do not relocate cultural references or force rhyme. Noto Nastaliq Urdu is self-hosted with its OFL license. Set RTL at stanza level while preserving the shared book's page progression. Protect Nastaliq overhang and line spacing. Urdu pilot proper-name spellings and residue wording await fluent review.
+Urdu uses self-hosted Noto Nastaliq Urdu and right-to-left stanza text, with the shared book’s existing page progression. Every language keeps separate reading positions. Audio is available only in Odia; new audio work remains deferred.

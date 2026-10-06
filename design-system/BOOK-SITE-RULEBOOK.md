@@ -76,7 +76,7 @@ Preserve established routes, incoming anchors and shared links. The cover is an 
 - Keep section fingerprints, coverage and uncertainty in private review records. Separate drafting, same-assistant review, fluent review, user acceptance and publication. Preserve unresolved questions rather than inventing answers. Record structural screening and complete source/target literary reading as separate coverage counts; keep exact remaining sections and before/after target fingerprints. Preserve prior versions before revisions.
 - Release behaviour: `site/translation_data.py` includes an entry when `status` is `ready` **or** `published` is `true`. Changing either can expose text in the next build. Use the project's actual review/release decision, not a blanket status conversion.
 - Urdu uses Nastaliq and right-to-left stanzas, with mirrored hanging indents and room for overhanging letterforms. Keep the shared book's page progression. Test logical saved anchors and switching back to left-to-right scripts.
-- Current coverage belongs in `site/translations/README.txt` and private `site/editorial/translation-review/PLAN.json`; it is not a permanent rule. As of this rulebook, four translated editions are published and seven additional languages have private three-poem pilots. Audio work and the separate app remain deferred.
+- Current coverage belongs in `site/translations/README.txt` and private `site/editorial/translation-review/PLAN.json`; it is not a permanent rule. The 6 October release includes all eleven complete translated editions with explicit publication flags; editorial review states and the deferred Poem 50 question remain separate. Audio work and the separate app remain deferred.
 
 ## 7. Listening, comments and private contact
 

@@ -37,7 +37,7 @@ Use alongside the [book-site rulebook](BOOK-SITE-RULEBOOK.md) for editorial/prod
 
 - Audio is available for **Odia only**. Entering Listen & follow switches interior illustrations off; the reader may explicitly turn them back on. Changing to a translated language pauses and disables Odia playback.
 - Keep the player compact. Use progressive spoken-word colouring from verified recording-specific timings. Never invent timing from poem length; preserve notices where existing recordings omit source text.
-- The existing English, Hindi, Bengali and Tamil translations are available alongside Odia. Publication and editorial review status are separate; do not imply that every draft has completed human review.
+- The eleven complete translations—English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu—are available alongside Odia. Publication and editorial review status are separate; do not imply that every draft has completed human review.
 - Offer Like once below the poem, never in the poem header. Like and collapsed Comments share a compact row. Opening Comments exposes one text box and a submission action; publication remains moderated. Service notices stay inside the disclosure.
 - Standalone poem footers have no previous/next page navigation. Page controls belong in the reader.
 
@@ -75,9 +75,9 @@ Use absolute HTTPS image addresses, matching MIME type and actual dimensions, de
 
 `site/tools/prepare_social_images.py` prepares the files when artwork changes. Ordinary page builds read the committed manifest. The validator checks all 79 pages and the source/output hashes. Updating the website cannot force a social service to discard a previously cached preview; actual card cropping and refresh timing belong to the sharing service.
 
-## Urdu typography (review preview)
+## Urdu typography
 
-- Urdu is the final planned translation language. Use self-hosted Noto Nastaliq Urdu with its OFL license, including the poem title. Pilot drafts stay private until selected for release.
+- Urdu is the final planned translation language. Use self-hosted Noto Nastaliq Urdu with its OFL license, including the poem title. The complete Urdu edition is selected for the 6 October release; fluent review remains separate.
 - Set Urdu stanza direction to RTL and align right. Keep the shared Odia book’s page sequence; do not reverse the column container. Mirror hanging indents and leave a small inset for Nastaliq overhang.
 - Use 2.65 line height for verse and 2.2 for headings to protect the script’s ascenders and descenders. Saved anchors follow logical character order rather than assuming Latin left-to-right character positions. Audio remains Odia-only.
 

@@ -1,6 +1,6 @@
 {
   "source": "User clarification, 2026-10-04",
-  "scope": "Interpretive context for poem 21, to be used in every planned translation. This is not a finished translation.",
+  "scope": "Interpretive context for indexed poems in all planned translations. Each entry distinguishes confirmed meanings from tentative suggestions; individual glosses do not approve whole translations.",
   "targetLanguages": [
     "en",
     "hi",
@@ -18,7 +18,8 @@
       "sourceLines": [
         "ଯେବେ ବଢ଼ାକ ଯାକ",
         "ଦୁଧ ଓ ଅଧାମ",
-        "ଉଠାଇ ନେଉଥିଲେ ଗୋସାଇଁ"
+        "ଉଠାଇ ନେଉଥିଲେ ଗୋସାଇଁ",
+        "କଳା ଘୋଡ଼ା ଧଳା ଘୋଡ଼ା ଚଢ଼ି"
       ],
       "terms": [
         {
@@ -31,6 +32,18 @@
           "word": "ଅଧାମ",
           "meaning": "The residue remaining after the milk is taken out.",
           "editorialDecision": "Keep the Odia spelling unchanged."
+        },
+        {
+          "word": "ଚଢ଼ି",
+          "meaning": "Getting onto the horses before setting out, in the currently preferred translation.",
+          "editorialDecision": "After discussing mount versus ride, the user preferred the original English mount. Restore mount in this passage; this supersedes the earlier ride-only instruction. It is a contextual translation preference, not a universal definition of ଚଢ଼ି."
+        },
+        {
+          "word": "ମାଣିକ",
+          "meaning": "The milk-seller; user approved this role wording on 4 October 2026.",
+          "editorialDecision": "Use the milk-seller in English and the corresponding natural role description in other languages. This supersedes the earlier decision to retain Manika provisionally. Do not present it as an identified personal name.",
+          "confirmedBy": "user",
+          "date": "2026-10-04"
         }
       ],
       "passageMeaning": "The milk is taken, and even the residue is extracted: everything is taken, down to the last bit.",
@@ -40,6 +53,392 @@
         "Do not specify the residue as cream, curds, whey, or another dairy product without further confirmation.",
         "Use natural literary phrasing in each target language while preserving the approved meaning."
       ]
+    },
+    "2": {
+      "sourceLines": [
+        "ପରବର୍ତୀ ପାରିଷଦରେ",
+        "ରଂଗାଧରମାନଂକ ମଂତ୍ରଣା ପାଇଁ",
+        "ଜୀବଂତ ପ୍ରସ୍ତୁତି ଲାଗିରହିଥାଉ ।"
+      ],
+      "terms": [
+        {
+          "word": "ରଂଗାଧରମାନଂକ",
+          "meaning": "Scheming courtiers, performers — a role/type, not a personal name.",
+          "confirmedBy": "user",
+          "date": "2026-10-04",
+          "editorialDecision": "Use “the scheming courtiers’ counsels” in the English draft. Preserve the performative nuance in other languages without inventing a named individual."
+        }
+      ]
+    },
+    "46": {
+      "sourceLines": [
+        "କିଏ ରଂକ ରତନଂକ ରଂଗମହଲରୁ",
+        "ଖୋଜୁଛି ନିଜକୁ",
+        "ଉଂଡାଳୁଛି ଭାଗ୍ୟକୁ ।"
+      ],
+      "terms": [
+        {
+          "word": "ରଂକ",
+          "meaning": "Blood",
+          "status": "meaning_confirmed_by_user",
+          "source": "46, meaning\n\nରଂକ  - Blood\nରତନଂକ - Blood in the body",
+          "date": "2026-10-06"
+        },
+        {
+          "word": "ରତନଂକ",
+          "meaning": "Blood in the body",
+          "status": "meaning_confirmed_by_user",
+          "source": "46, meaning\n\nରଂକ  - Blood\nରତନଂକ - Blood in the body",
+          "date": "2026-10-06"
+        }
+      ],
+      "history": [
+        {
+          "recorded_before": "2026-10-06 word clarification",
+          "terms": [
+            {
+              "word": "ରଂକ ରତନଂକ",
+              "meaning": "Tentative user interpretation: someone who has taken a dip in blood.",
+              "status": "provisional_pending_poet_confirmation",
+              "source": "User, 2026-10-04, qualified the interpretation with “I guess”.",
+              "editorialDecision": "English draft uses “those steeped in blood.” Do not retain the earlier champions-of-the-poor guess or assert a confirmed dictionary definition. Preserve original Odia spelling."
+            }
+          ]
+        },
+        {
+          "date": "2026-10-06 before combined-phrase confirmation",
+          "combinedPhraseStatus": "Word meanings confirmed; combined phrase interpretation still open. Do not infer blood-soaked/covered bodies solely from blood in the body.",
+          "translationGuidance": "Retain existing targets as provisional pending combined-phrase clarification. No Odia spelling change authorized."
+        }
+      ],
+      "combinedPhraseStatus": "meaning_confirmed_by_user",
+      "translationGuidance": "Use blood-soaked palace/pleasure halls in context. Preserve the implied deaths without inserting an explanatory line or inferring who killed whom.",
+      "combinedPhraseMeaning": "A palace with much blood, implying that many people died there. The blood belongs to the palace image, not an invented group of blood-soaked owners.",
+      "combinedPhraseUserQuote": "ରଂଗମହଲରୁ - palace with lots of blood - which means lots of people died there",
+      "scope": "Passage-specific interpretation supplied by user, not a general dictionary definition of ରଂଗମହଲ."
+    },
+    "56": {
+      "sourceLines": [
+        "ପଛ ଧାଡ଼ିରେ ବସୁଥିବା ମାଖୁନା ମାଧିଆକୁ",
+        "କଂଢେଇଟେ ପରି ଥୋଇ ଦିଆଯିବ",
+        "ସିଂହାସନ ଉପରେ,",
+        "ଚା’ କପ୍ ଧରି ସୁଂଦରି ସୌଦାମିନୀ",
+        "ଗେହ୍ଲାହେବା ପାଇଁ ଆଉ ଆସୁ ନ ଥିବେ,"
+      ],
+      "terms": [
+        {
+          "word": "ମାଖୁନା ମାଧିଆ",
+          "status": "meaning_confirmed_by_user",
+          "source": "User clarification, 4 October 2026: insignificant person, known through common names like Joe or Sam.",
+          "editorialDecision": "Render the generic insignificant-person reference naturally. Current English choice: some nobody from the back row. Do not make this a specific named person or infer simpleton.",
+          "meaning": "An insignificant person, referred to through generic common names, like Joe or Sam in English.",
+          "draftWording": "some nobody from the back row"
+        },
+        {
+          "word": "ସୁଂଦରି ସୌଦାମିନୀ",
+          "meaning": "A generic name for a beautiful woman.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User clarification, 4 October 2026.",
+          "draftWording": "the beautiful woman",
+          "editorialDecision": "Preserve a generic beautiful-woman reference. Do not infer a specific named person or relationship; the earlier companion wording is superseded."
+        }
+      ]
+    },
+    "5": {
+      "sourceLines": [
+        "‘କଚେ ପୁଅ ବାର’-",
+        "ଡାକି ଦେଉଁ ଦେଉଁ",
+        "ଦାନଟା ଫିଟିପଡ଼ିବା ଦରକାର ।"
+      ],
+      "terms": [
+        {
+          "word": "କଚେ ପୁଅ ବାର",
+          "meaning": "An extremely favourable or advantageous turn/time. The folk expression combines two advantageous traditional stick-dice throws, not one literal total.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User supplied detailed Odia explanation and Hindi equivalent, 4 October 2026",
+          "editorialDecision": "Preserve the extremely favourable turn and dice-call setting, using natural target-language idiom. Do not replace the phrase with the isolated number twelve, claim both throws total twelve, or insert a rules lesson into the verse. Source meaning resolved; new target wording remains draft pending language review.",
+          "userExplanationVerbatim": "କଚେ ପୁଅ ବାର\nପଶା ର ନିୟମ ଅନୁଯାୟୀ ୩ ଗୋଟି କାଠି ରେ ୬,୫,୧ ପଡ଼ିଲେ କଚେ ୧୨ ଯାହା ଯୁଗ ଦାନ ଓ ଖେଳାଳୀ ସୁବିଧାଜନକ ସ୍ଥିତି କୁ ଯାଇଥାଏ ପୁଅବାର କହିଲେ ଗୋଟି କାଠି ରେ ୬,୬,୧ ମାନେ ୧୩ ହୁଏ କିନ୍ତୁ ୧୨ ଘର ଯୁଗ ଚଳାଯାଏ ଏହା ମଧ୍ୟ ସୁବିଧାଜନକ ଏଣୁ ଲୋକ ବୋଲି ରେ ଉଭୟ କୁ ମିଶାଇ \"କଚେ ପୁଅ ବାର\" କହିଥାନ୍ତି ଯାହାର ଅର୍ଥ ଅତ୍ୟନ୍ତ ଲାଭପ୍ରଦ ସମୟ\nଯଥା ହିନ୍ଦୀରେ\" नहले पे दहला\"",
+          "gameContext": {
+            "kache": "6, 5, 1 gives 12; a favourable paired throw (ଯୁଗ ଦାନ).",
+            "puabara": "6, 6, 1 totals 13, but the pair advances 12 spaces; also favourable.",
+            "provenance": "User explanation, retained as supplied; no independent rules verification claimed."
+          },
+          "hindiEquivalent": "नहले पे दहला"
+        }
+      ],
+      "history": [
+        {
+          "word": "କଚେ ପୁଅ ବାର",
+          "meaning": "Broadly understood as a call for a desired dice result; exact idiom and numerical force uncertain.",
+          "status": "provisional_function_only",
+          "source": "User, 4 October 2026, qualified the earlier suggestion of twelve: it may be more than one number, and they are unsure how the game is played.",
+          "draftWording": "Come on—a good throw!",
+          "editorialDecision": "Use only a provisional functional dice call. Do not treat twelve, a combination of numbers, or any particular rules as confirmed. Keep the original expression in the private question list for the poet."
+        }
+      ]
+    },
+    "28": {
+      "sourceLines": [
+        "ଖୋଜିଆଣ",
+        "ଗୋଟାଏ ନିରୀହ ଛେଳି ବା ମଣିଷ-ଛାଗଳ",
+        "ଖୋଲିରଖ ତା’ର ମସୃଣ ପିଠିକୁ"
+      ],
+      "terms": [
+        {
+          "word": "ଗୋଟାଏ",
+          "meaning": "One",
+          "status": "user_selected_source_correction",
+          "source": "User, 4 October 2026: I think ଗୋଟାଏ is correct",
+          "editorialDecision": "Replace କୋଟାଏ with ଗୋଟାଏ in poem 28. Translate as singular: an innocent goat, or a human goat. Earlier quantity uncertainty resolved through user selection."
+        },
+        {
+          "word": "କର୍ଷଣ",
+          "meaning": "Pulling or dragging.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User, 4 October 2026: pulling or dragging",
+          "editorialDecision": "Use खींचतान में in the Hindi garment-protection passage. Keep the original Odia unchanged."
+        }
+      ]
+    },
+    "30": {
+      "sourceLines": [
+        "ଖଂଜଣି ଧରାଇଦିଅ",
+        "ମାଦକଂକ ହାତରେ,",
+        "ଅଂଧମାନେ ଭଜନ ଗାଆଂତୁ"
+      ],
+      "terms": [
+        {
+          "word": "ମାଦକଂକ",
+          "meaning": "The intoxicated, in this passage.",
+          "status": "contextual_reading_accepted_by_user",
+          "source": "User, 4 October 2026: souds right",
+          "acceptedWording": "in the hands of the intoxicated",
+          "editorialDecision": "Retain the contextual intoxicated-people reading in translation. Do not infer a particular intoxicant or general dictionary definition. This accepts the phrase, not the entire poem."
+        }
+      ]
+    },
+    "38": {
+      "sourceLines": [
+        "ମହାଭାରତର ସୀମାରେ",
+        "ସୀମାଂତର ପାଚେରୀ ଛାଇରେ"
+      ],
+      "terms": [
+        {
+          "word": "ପାଚେରୀ",
+          "meaning": "A boundary wall.",
+          "status": "source_word_clarified_by_user",
+          "source": "User, 4 October 2026: Pacheri",
+          "draftWording": "in the shadow of the border wall",
+          "editorialDecision": "Correct ପେଚାରୀ to ପାଚେରୀ; preserve the concrete wall and its shadow in all translations."
+        }
+      ]
+    },
+    "6": {
+      "sourceLines": [
+        "ଯେତେ ଦାରୁଣ ହେଲେ ବି",
+        "ଯୁଦ୍ଧ ଭୂମିର ନିରୋଳା ସଂବାଦମାନ",
+        "ଶୁଣାଉଥାଅ,",
+        "ମୋତେ ବୁଝାଅ ନାହିଁ",
+        "ରାତି ଅବା ଦିନ ।"
+      ],
+      "terms": [
+        {
+          "word": "ମୋତେ ବୁଝାଅ ନାହିଁ / ରାତି ଅବା ଦିନ",
+          "meaning": "Do not try to reason with me, by night or day.",
+          "status": "contextual_reading_confirmed_by_user",
+          "source": "User, 4 October 2026: Thats correct, after seeing the full opening stanza and interpretation.",
+          "editorialDecision": "Night or day modifies the refusal to be reasoned with. Dhritarashtra requests reports but resists reasoning that would challenge his attachment to power. Preserve this contradiction without inserting its explanation into the poem."
+        }
+      ]
+    },
+    "62": {
+      "sourceLines": [
+        "ନାଟମଂଡପ ଠାରୁ ନାହାଚାଳିଆ ପର୍ଯଂତ"
+      ],
+      "terms": [
+        {
+          "word": "ନାହାଚାଳିଆ",
+          "meaning": "A small thatched dwelling.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User, 4 October 2026: Correct a small thatched dwelling",
+          "draftWording": "the small thatched dwelling",
+          "editorialDecision": "Preserve the small dwelling and thatched roof; do not use porch. Keep original Odia spelling."
+        }
+      ]
+    },
+    "26": {
+      "sourceLines": [
+        "ସାରୁଗଛ ମୂଳେ ଗେଂଗ ରଡ଼ି",
+        "ମଧୁର ମୂରଲୀ ପରି"
+      ],
+      "terms": [
+        {
+          "word": "ଗେଂଗ",
+          "meaning": "Frog (ବେଙ୍ଗ / benga).",
+          "status": "meaning_confirmed_by_user",
+          "source": "User clarification, 4 October 2026: benga",
+          "editorialDecision": "Keep Hindi मेंढक की टर्राहट. This clarification does not authorize a source spelling change or approve the whole translated poem."
+        }
+      ]
+    },
+    "41": {
+      "sourceLines": [
+        "ଶୁଖା ସିକଂଦର ଅବା",
+        "ଭୋଲାରାମମାନଂକର",
+        "ଶୀତଳ ରକ୍ତର ନିର୍ଝର"
+      ],
+      "terms": [
+        {
+          "word": "ଶୁଖା",
+          "meaning": "Dry; adjective, not a personal name.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User, 4 October 2026: ଶୁଖା is dry",
+          "editorialDecision": "Replace सुखा-सिकंदरों with सूखे सिकंदरों. Do not invent a person named Sukha."
+        },
+        {
+          "word": "ସିକଂଦର",
+          "meaning": "User indicates the Hindi word/expression सिकंदर; precise figurative force remains to be clarified.",
+          "status": "partial_user_clarification",
+          "source": "User, 4 October 2026: ସିକଂଦର is more like hindi word",
+          "editorialDecision": "Retain सिकंदर; do not identify a particular historical person or assert self-styled conqueror as author-confirmed."
+        },
+        {
+          "word": "ଭୋଲାରାମ",
+          "meaning": "An innocent person represented by a generic name: innocent Ram.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User, 4 October 2026: ଭୋଲାରାମ innocent ram a generic name",
+          "editorialDecision": "Retain भोलारामों in Hindi, preserving the familiar innocent-person suggestion and plural generic reference. Do not identify a particular person or add a relationship."
+        }
+      ],
+      "approvedHindiPhrase": "सुखा सिकंदर",
+      "latestDecision": {
+        "date": "2026-10-04",
+        "userQuote": "सुखा सिकंदर is fine",
+        "editorialDecision": "Use the exact latest approved Hindi phrase सुखा सिकंदर, superseding सूखे सिकंदरों. Retain earlier clarification that ଶୁଖା means dry, not a separate personal name. Approval of the Hindi phrase does not confirm the proposed conqueror gloss. Bholaram remains a generic innocent person."
+      }
+    },
+    "45": {
+      "sourceLines": [
+        "କେଉଁଟି ଗୋଲକ",
+        "ପୁଣି କେଉଁଠି ସିଂହାସନ?"
+      ],
+      "terms": [
+        {
+          "word": "ଗୋଲକ",
+          "meaning": "Goloka, in this passage.",
+          "status": "hindi_rendering_approved_by_user",
+          "source": "User, 4 October 2026: गोलोक, is fine",
+          "editorialDecision": "Use गोलोक in Hindi. Preserve original Odia spelling; do not add a theological explanation to the poem."
+        }
+      ]
+    },
+    "65": {
+      "sourceLines": [
+        "ପଡ଼ିବି ନାହିଁ ତ ମୁଁ ଅହି ନରକରେ?"
+      ],
+      "terms": [
+        {
+          "word": "ଅହି ନରକ",
+          "meaning": "Snake-filled hell.",
+          "status": "meaning_and_hindi_preference_confirmed_by_user",
+          "source": "User, 4 October 2026: सर्पों के नरक may be better other one is also correct",
+          "editorialDecision": "Prefer सर्पों के नरक; अहि नरक is also accepted. Preserve original Odia spelling."
+        }
+      ]
+    },
+    "67": {
+      "sourceLines": [
+        "ଅର୍ଘାସୁର ପରି ବାଡ଼ ହୋଇ",
+        "ଠିଆ ହୋଇଯାଉଥିବା ରାସ୍ତାରେ,"
+      ],
+      "terms": [
+        {
+          "word": "ଅର୍ଘାସୁର",
+          "status": "hindi_rendering_preferred_by_user",
+          "source": "User, 4 October 2026: अघासुर may be better for hindi",
+          "editorialDecision": "Use अघासुर in Hindi. This target-language preference does not authorize changing the Odia source spelling."
+        },
+        {
+          "word": "ପୋଇଲି ପଢ଼ିଆର",
+          "meaning": "Maids and servants/attendants in this passage.",
+          "status": "contextual_hindi_rendering_accepted_by_user",
+          "source": "User, 4 October 2026: ok, in response to दासियाँ और सेवक",
+          "editorialDecision": "Keep दासियाँ और सेवक in Hindi. No more specific servant roles inferred; original Odia unchanged."
+        }
+      ]
+    },
+    "0": {
+      "sourceLines": [
+        "ମଣିଷର ଇତିହାସ ପ୍ରତି ଥିବା ବ୍ୟକ୍ତିନିଷ୍ଠ ଆଦେଶ"
+      ],
+      "terms": [
+        {
+          "word": "ବ୍ୟକ୍ତିନିଷ୍ଠ ଆଦେଶ",
+          "meaning": "Subjective/individual command; command rather than demands or expectations.",
+          "status": "meaning_confirmed_by_user",
+          "source": "User, 4 October 2026: command",
+          "editorialDecision": "Retain इतिहास के प्रति मनुष्य के व्यक्तिनिष्ठ आदेश. Preserve the literal command sense; original Odia unchanged."
+        }
+      ]
+    },
+    "53": {
+      "sourceLines": [
+        "ସତକୁ ସତ, ସେ ଝପଟି ଆସୁ ନ ଥିଲା,",
+        "ଆସି ଚାଟି ପକାଉଥିଲା ପାଦକୁ,"
+      ],
+      "terms": [
+        {
+          "word": "ସେ ଝପଟି ଆସୁ ନ ଥିଲା",
+          "meaning": "Did not come rushing. Literal negation, not a not-merely contrast.",
+          "status": "meaning_confirmed_by_user",
+          "source": "for 53 merely is not require - your suggestion \"did not come rushing\" is corerct",
+          "date": "2026-10-06",
+          "editorialDecision": "Remove merely/only/just equivalents that turn the denial into a not-merely contrast. Preserve the following foot-licking action and the rest of the poem."
+        }
+      ]
+    }
+  },
+  "accepted_treatments_2026_10_06": {
+    "record": "site/editorial/translation-review/seven-languages-completion-2026-10-05/accepted-treatments-2026-10-06/decisions.json",
+    "scope": "Provisional editorial treatment approved; does not resolve open source meanings.",
+    "decisions": {
+      "5": {
+        "status": "accepted_provisional_treatment",
+        "treatment": "Retain duari in each target script. Do not assert gatekeeper or a specific theatrical role.",
+        "remaining": "Precise role remains unconfirmed; acceptance authorizes retention, not a dictionary definition."
+      },
+      "15": {
+        "status": "accepted_provisional_treatment",
+        "treatment": "Keep Gujarati નકામા મંત્રીઓ (useless/inept ministers).",
+        "remaining": "Exact rural idiom remains unconfirmed; other languages were outside the Gujarati-specific proposal."
+      },
+      "41": {
+        "status": "accepted_existing_treatment",
+        "treatment": "Retain confirmed dry sense and Sikandar, with generic innocent Bholaram. Preserve approved Hindi wording.",
+        "remaining": "Do not add a historical person or conqueror gloss; finer allusion remains unconfirmed."
+      },
+      "46": {
+        "status": "meaning_confirmed_by_user",
+        "treatment": "Blood-soaked palace / pleasure halls: the palace carries the blood of many deaths. Remove the earlier invented blood-steeped owners. Corrected in all eleven translations.",
+        "remaining": "No source question remains for this phrase. Fluent review of full editions is separate.",
+        "record": "poem-46-confirmed-2026-10-06/decision.json"
+      },
+      "50": {
+        "status": "deferred_by_user",
+        "treatment": "Keep defence-office phrase separate and in original position.",
+        "remaining": "Syntactic attachment deferred."
+      },
+      "53": {
+        "status": "meaning_confirmed_by_user",
+        "treatment": "Use “did not come rushing”, without merely. Corrected in all seven new editions and English; Hindi, Bengali and Tamil already match.",
+        "remaining": "No source question remains for this phrase. Fluent review of full target editions remains separate.",
+        "record": "poem-53-confirmed-2026-10-06/decision.json"
+      },
+      "68": {
+        "status": "accepted_provisional_treatment",
+        "treatment": "Retain local plant names; broad crawling/wriggling insects without assigning species.",
+        "remaining": "Exact insect identity and fluent local equivalents remain unconfirmed. Applied the same treatment to Telugu/Kannada unverified many-legged wording as well."
+      }
     }
   }
 }
