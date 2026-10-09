@@ -1,6 +1,6 @@
 # Singhasan book-site rulebook
 
-Established 5 October 2026. This is the maintenance contract for the book at `singhasan.poemwithoutborders.org`.
+Established 5 October 2026. This is the maintenance contract for the book at `singhasan.kabitawithoutborders.org`.
 
 ## 1. How to use this rulebook
 
@@ -113,3 +113,7 @@ Do not treat `site/dist/` as disposable: it contains original text and maintaine
 Apply proportionate checks from the checklist. Keep unrelated working changes intact. Do not stage private notes or all untracked files indiscriminately. A `main` push triggers GitHub Pages; follow the user's existing publication authorization and verify both the workflow and live result. Publishing code, deploying Firebase rules and publishing a translation are distinct actions.
 
 Report what changed, evidence of verification, and any real limitations. Do not describe local work as live. Update the controlling rule/design document when an approved decision changes, and mark superseded guidance so future work does not restore it.
+
+## Public address · 9 October 2026
+
+The canonical book address is `https://singhasan.kabitawithoutborders.org`. Preserve existing paths, language query parameters and fragment anchors when forwarding from `https://singhasan.poemwithoutborders.org`. The old domain is served by the separate `ahimanikya/singhasan-redirect` GitHub Pages repository; it contains only generated redirect pages, not a second book edition. Canonical metadata, sharing images, sitemaps and the Firebase client host allowlist use the new address. Keep the existing Singhasan Firebase project, data and content IDs. Links to the wider poetry project use `https://kabitawithoutborders.org`.

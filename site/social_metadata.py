@@ -7,7 +7,7 @@ from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
 from translation_article import ROUTE as ARTICLE_ROUTE, HERO as ARTICLE_HERO, DESCRIPTION as ARTICLE_DESCRIPTION, ALT as ARTICLE_ALT
 
 ROOT=Path(__file__).resolve().parent
-PUBLIC_URL='https://singhasan.poemwithoutborders.org'
+PUBLIC_URL='https://singhasan.kabitawithoutborders.org'
 COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 

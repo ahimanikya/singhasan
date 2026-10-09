@@ -198,7 +198,7 @@ back_body=f'''<section class="book-cover-route"><figure class="bound-cover bound
 (DIST/ARTICLE_ROUTE).write_text(shell(ARTICLE_TITLE,render_article(),'article-page earth-wash'))
 
 # Public address and preview metadata are generated alongside every page.
-PUBLIC_URL='https://singhasan.poemwithoutborders.org'
+PUBLIC_URL='https://singhasan.kabitawithoutborders.org'
 public_pages=sorted(DIST.glob('*.html'))
 for page in public_pages:
     content=page.read_text()
@@ -207,7 +207,7 @@ for page in public_pages:
     metadata,description=sharing_metadata(page.name,unescape(page_title),chapters,unique_art)
     content=re.sub(r'<meta name="description" content="[^"]*">',lambda _:f'<meta name="description" content="{e(description,quote=True)}">',content)
     page.write_text(content.replace('</head>',metadata+'</head>'))
-(DIST/'CNAME').write_text('singhasan.poemwithoutborders.org\n')
+(DIST/'CNAME').write_text('singhasan.kabitawithoutborders.org\n')
 (DIST/'.nojekyll').touch()
 (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+PUBLIC_URL+'/sitemap.xml\n')
 urls=''.join('<url><loc>'+PUBLIC_URL+('/' if p.name=='index.html' else '/'+p.name)+'</loc></url>' for p in public_pages)

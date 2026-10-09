@@ -98,3 +98,7 @@ Tooltips must not cause horizontal overflow, obscure an open panel or compete wi
 ### Poems page hierarchy and separators — 6 October 2026
 
 Keep the opening heading, then the suggested reading path, then the single-line bookmark/language toolbar immediately above the complete poem list. Use one subtle rule below the suggested path. Remove the heading's lower border, the small waterline and the five path-row separators. Retain the site's masthead/footer treatment and the list's functional dotted page-number leaders. This supersedes placing tools above the suggested path.
+
+## Public address · 9 October 2026
+
+The canonical book address is `https://singhasan.kabitawithoutborders.org`. Preserve existing paths, language query parameters and fragment anchors when forwarding from `https://singhasan.poemwithoutborders.org`. The old domain is served by the separate `ahimanikya/singhasan-redirect` GitHub Pages repository; it contains only generated redirect pages, not a second book edition. Canonical metadata, sharing images, sitemaps and the Firebase client host allowlist use the new address. Keep the existing Singhasan Firebase project, data and content IDs. Links to the wider poetry project use `https://kabitawithoutborders.org`.

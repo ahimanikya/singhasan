@@ -25,7 +25,7 @@ assert len(pages)==79, 'Expected home, contents, two covers, poet, listening edi
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
-    if len(p.canonical)!=1 or not p.canonical[0].startswith('https://singhasan.poemwithoutborders.org/'):errors.append(f'{f.name}: canonical address')
+    if len(p.canonical)!=1 or not p.canonical[0].startswith('https://singhasan.kabitawithoutborders.org/'):errors.append(f'{f.name}: canonical address')
     if 'content="noindex"' in html:errors.append(f'{f.name}: search indexing disabled')
     share=social[page_image(f.name)]
     expected_image=PUBLIC_URL+'/'+share['src']
@@ -54,7 +54,7 @@ published = '\n'.join(p.read_text() for p in pages) + '\n' + '\n'.join(p.read_te
 for item in MANIFEST['items']:
     assert hashlib.sha256((root/item['asset']).read_bytes()).hexdigest() == item['sha256'], item['id']
     assert Path(item['asset']).name in published, f"Unconnected artwork: {item['id']}"
-assert (root/'CNAME').read_text().strip()=='singhasan.poemwithoutborders.org'
+assert (root/'CNAME').read_text().strip()=='singhasan.kabitawithoutborders.org'
 assert len(ET.parse(root/'sitemap.xml').getroot())==79
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
@@ -190,7 +190,7 @@ assert 'reading-path.html' not in (root/'sitemap.xml').read_text()
 print('Validated compact five-stop path on Poems, Home invitation and scoped poem panels.')
 
 story=(root/'our-story.html').read_text()
-for target in (ARTICLE_ROUTE,'https://poemwithoutborders.org/','https://poemwithoutborders.org/#story'):
+for target in (ARTICLE_ROUTE,'https://kabitawithoutborders.org/','https://kabitawithoutborders.org/#story'):
     assert f'href="{target}"' in story
 assert 'Ahimanikya Satapathy' in story and 'poet’s son' in story
 print('Validated Our Story, consolidated links and edition credit.')

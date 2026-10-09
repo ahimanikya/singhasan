@@ -2,7 +2,7 @@
 
 Pravakar Satapathy’s first Odia poetry collection, presented as an online book.
 
-Live site: https://singhasan.poemwithoutborders.org/
+Live site: https://singhasan.kabitawithoutborders.org/
 
 ## Rules for future changes
 
@@ -26,7 +26,7 @@ python3 -m http.server 8768 --directory site/dist
 
 ## Publishing
 
-Push to `main` to build, validate and deploy `site/dist` to GitHub Pages. The custom domain is `singhasan.poemwithoutborders.org`; its DNS CNAME points to `ahimanikya.github.io`. The main poemwithoutborders.org website is hosted separately.
+Push to `main` to build, validate and deploy `site/dist` to GitHub Pages. The custom domain is `singhasan.kabitawithoutborders.org`; its DNS CNAME points to `ahimanikya.github.io`. The main poemwithoutborders.org website is hosted separately.
 
 The poems and illustrations are not offered under an open-source license. Font license files accompany the bundled fonts.
 
@@ -53,7 +53,7 @@ All 68 standalone poems include a Like button, a collapsed Comments section with
 
 The separate Singhasan Firebase service runs in the dedicated `singhasan` project and web app on the Spark plan. Anonymous authentication is enabled with the user's explicit approval. The default Firestore database is in `nam5` (Standard edition); the reviewed rules and the `publicComments` index are deployed. Live checks verified anonymous sign-in, atomic like/unlike, rejection of forged counts, private pending comments, and rejection of reader self-publication. `site/dist/runtime-config.json` enables likes and public comments and enables private database feedback. The public site uses anonymous browser identities; it does not require named registration.
 
-The site's `allowedHosts` check scopes its own interface to `singhasan.poemwithoutborders.org`. Firebase's authorized-domain list applies to OAuth redirects, not anonymous authentication, and was left unchanged. Security is enforced by the Firestore rules; the public web-app API key is not a secret.
+The site's `allowedHosts` check scopes its own interface to `singhasan.kabitawithoutborders.org`. Firebase's authorized-domain list applies to OAuth redirects, not anonymous authentication, and was left unchanged. Security is enforced by the Firestore rules; the public web-app API key is not a secret.
 
 After installing the pinned dependencies in `site/services`, `npm run build` bundles the reader services into the static site. `npm test` checks private form submission, retained text on failure, duplicate-submit prevention and unavailable-service handling. `npm run test:rules` uses a local Firestore emulator (Java 21+) to test private-message access, atomic likes, rate limits and moderation. The build continues to use Python and GitHub Pages; adding these components does not require migrating the book to Astro.
 
