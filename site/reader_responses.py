@@ -1,9 +1,9 @@
 """Singhasan's private correspondence and moderated reader responses."""
 def responses(c,icon):
     if not c['number']:return ''
-    return f'''<section id="reader-responses" class="poem-engagement" data-poem-engagement="{c['number']}" aria-label="Reader responses">
- <div class="like-row"><button type="button" data-like disabled aria-pressed="false" aria-label="Like this poem"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5 3.8 12.4C-1.6 6.8 6.4 0 12 6.8 17.6 0 25.6 6.8 20.2 12.4Z"/></svg><span data-like-label>Like</span><span data-like-count aria-hidden="true" hidden></span></button><span data-like-status role="status"></span></div>
- <details><summary><svg class="comment-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4.5h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 3v-3a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h6"/></svg><span>Comments</span><svg class="comments-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4"/></svg></summary>
+    return f'''<section id="reader-responses" class="poem-engagement compact-responses" data-poem-engagement="{c['number']}" aria-label="Reader responses">
+ <div class="like-row"><button type="button" data-like disabled aria-pressed="false" aria-label="Like this poem" title="Like this poem"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20.5 3.8 12.4C-1.6 6.8 6.4 0 12 6.8 17.6 0 25.6 6.8 20.2 12.4Z"/></svg><span data-like-label class="sr-only">Like</span><span data-like-count aria-hidden="true" hidden></span></button></div><span class="response-action-status" data-like-status role="status"></span>
+ <details class="response-comments"><summary title="Comments" aria-label="Comments"><svg class="comment-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4.5h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 3v-3a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"/><path d="M7 9h10M7 13h6"/></svg><span class="sr-only">Comments</span></summary>
   <p class="service-note" data-service-note>Comments are unavailable here.</p>
   <div data-comments-list role="region" aria-label="Published comments" aria-live="polite"></div>
   <button type="button" class="text-link" data-comments-more hidden>Load more comments</button>
@@ -12,6 +12,7 @@ def responses(c,icon):
    <div class="comment-submit-row"><button class="btn" type="submit">Post comment</button><p class="small muted" id="comment-review-note">Comments are public after review.</p></div></fieldset><p class="status" role="status"></p>
   </form>
  </details>
+ <a class="response-letter" href="contact.html?poem=poem-{c['number']}.html" title="Write a private letter" aria-label="Write a private letter">{icon("footer-contact")}<span class="sr-only">Send a private note about this poem</span></a>
 </section>'''
 
 

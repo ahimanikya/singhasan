@@ -200,3 +200,21 @@ body:not(.full-page-reader) #page-bookmarks .book-reader-only{display:none}
  .illustrated-mode.pagination-on .opening-page .image-narrative{font-size:16px;line-height:1.7}
  .pagination-on .printed-spread>.reader{position:relative}
 }
+
+/* One compact set of controls in both illustrated and quiet reading. */
+.reader-topbar-tools{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-width:0}
+.reader-topbar .reader-fullscreen{flex:0 0 44px;justify-content:center;width:44px;height:44px;padding:0;border-radius:4px}
+.reader-fullscreen:hover{background:color-mix(in srgb,var(--ink) 8%,transparent)}
+.reader-fullscreen:focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+.reader-fullscreen .contract-screen,.reader-fullscreen[aria-pressed="true"] .expand-screen{display:none}
+.reader-fullscreen[aria-pressed="true"] .contract-screen{display:block}
+@media(max-width:760px){.reader-topbar-tools{gap:4px}.reader-topbar .reader-fullscreen{flex-basis:44px}}
+@media(max-width:460px){
+ .full-page-reader .reader-topbar{padding:4px 8px;gap:4px}
+ .reader-topbar .exit-reader{font-size:12px}
+ .reader-topbar-tools{gap:0}
+ .full-page-reader .reader-topbar .reader-topbar-tools .poem-actions{flex-wrap:nowrap;gap:0}
+ .reader-topbar [data-quiet-toggle]{width:44px;justify-content:center}
+ .reader-topbar [data-quiet-toggle] svg{display:block;width:22px;height:22px}
+ .reader-topbar [data-quiet-toggle] span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+}

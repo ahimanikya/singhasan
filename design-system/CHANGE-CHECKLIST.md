@@ -29,12 +29,14 @@ Copy the relevant sections into a private change record. Mark each item **pass**
 - [ ] Original poem font remains Noto Serif Oriya; masthead/cover typography remains Anek Odia. Translation fonts render their scripts.
 - [ ] Home cover opens Poems; the primary reading action enters the book. Closing three actions and menu Listen remain available.
 - [ ] Illustration and English narrative share one leaf, with poem text on the next. Narratives have balanced margins and art is not cropped.
-- [ ] Like is below the poem only; Comments starts collapsed with one text box. Standalone footer has no previous/next navigation.
+- [ ] Like is below the poem only; the heart, comment and letter icons share one 44px-target row. Comments starts collapsed with one text box; hover/focus labels and private-message context work. Standalone footer has no previous/next navigation.
 - [ ] Footer art matches across normal pages. Ending ornaments/line art do not overlap text, create empty leaves or change source offsets.
 - [ ] Check phone and desktop, enlarged text, a short viewport and night/light surfaces when affected. No clipped text or horizontal page overflow.
 - [ ] Keyboard focus, icon labels, touch targets, contrast, language/direction and reduced motion remain usable.
 
 ## Reader changes
+
+- [ ] Full-screen button/F toggle and Escape work without losing the reader; arrow/Page keys work across both modes and covers, while ignoring typing, selections, open panels and held-key repeats. Check 320px toolbar touch targets.
 
 - [ ] Front-cover click enters; the book ends at the back cover. Both modes keep identical covers.
 - [ ] Illustrated defaults to whole-paper turns; Quiet defaults off. Explicit mode preferences persist independently; sound is opt-in and reduced motion wins.

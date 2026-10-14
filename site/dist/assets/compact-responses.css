@@ -1,0 +1,33 @@
+/* A quiet 44px icon row; native disclosures keep forms out of the reading flow. */
+body .compact-responses,
+body.standalone-page:not(.illustrated-mode) .compact-responses{
+ position:relative;display:block;box-sizing:border-box;min-height:64px;padding:60px 0 0;margin-top:16px;margin-bottom:12px;
+}
+body .compact-responses .like-row,body .compact-responses .response-actions{position:absolute;top:8px;left:0;margin:0;display:block}
+body .compact-responses details,body.standalone-page .compact-responses details[open]{margin:0;padding:0;border:0;min-width:0}
+body .compact-responses :is([data-like],[data-response-like],summary,.response-letter),
+body.standalone-page .compact-responses :is([data-like],summary,.response-letter){
+ display:inline-flex;align-items:center;justify-content:center;gap:4px;box-sizing:border-box;min-height:44px;height:44px;min-width:44px;padding:0 10px;border:0;border-radius:50%;background:none;color:var(--muted);text-decoration:none;cursor:pointer;list-style:none;
+}
+body .compact-responses summary,body .compact-responses .response-letter{position:absolute;top:8px;left:56px;width:44px;margin:0}
+body .compact-responses .response-private summary,body .compact-responses .response-letter{left:112px}
+body .compact-responses summary::-webkit-details-marker{display:none}
+body .compact-responses summary::marker{content:''}
+body .compact-responses :is([data-like],[data-response-like],summary,.response-letter) svg{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+body .compact-responses :is([data-like],[data-response-like])[aria-pressed=true]{color:var(--rust);background:none}
+body .compact-responses :is([data-like],[data-response-like])[aria-pressed=true] svg{fill:currentColor}
+body .compact-responses :is(button,summary,.response-letter):hover,body .compact-responses details[open]>summary{color:var(--rust)}
+body .compact-responses :is(button,summary,.response-letter):focus-visible{outline:2px solid var(--rust);outline-offset:2px}
+body .compact-responses [data-like-count]{position:absolute;top:1px;right:0;font:10px/1.3 var(--ui);color:var(--muted)}
+body .compact-responses .response-action-status{display:block;font:13px/1.5 var(--ui);margin:0 0 8px;color:var(--muted)}
+body .compact-responses .response-action-status:empty{display:none}
+body .compact-responses details form{margin-top:8px}
+body .compact-responses details[open]{padding-top:4px}
+body .compact-responses .sr-only{position:absolute;display:block;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+body.illustrated-mode .compact-responses,body.full-page-reader .compact-responses{display:none}
+@media print{body .compact-responses{display:none!important}}
+body .compact-responses :is([data-like],[data-response-like],summary,.response-letter)::after{content:attr(aria-label);position:absolute;z-index:10;left:0;bottom:calc(100% + 5px);width:max-content;max-width:210px;padding:5px 8px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);font:12px/1.4 var(--ui);white-space:normal;pointer-events:none;opacity:0;visibility:hidden}
+body .compact-responses :is([data-like],[data-response-like]){position:relative}
+body .compact-responses :is([data-like],[data-response-like],summary,.response-letter):is(:hover,:focus-visible)::after{opacity:1;visibility:visible}
+body .compact-responses details[open]>summary::after{display:none}
+body .compact-responses:focus-within :is([data-like],[data-response-like],summary,.response-letter):hover:not(:focus-visible)::after{opacity:0;visibility:hidden}

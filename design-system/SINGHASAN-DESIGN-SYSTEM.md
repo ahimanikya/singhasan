@@ -38,7 +38,7 @@ Use alongside the [book-site rulebook](BOOK-SITE-RULEBOOK.md) for editorial/prod
 - Audio is available for **Odia only**. Entering Listen & follow switches interior illustrations off; the reader may explicitly turn them back on. Changing to a translated language pauses and disables Odia playback.
 - Keep the player compact. Use progressive spoken-word colouring from verified recording-specific timings. Never invent timing from poem length; preserve notices where existing recordings omit source text.
 - The eleven complete translations—English, Hindi, Bengali, Tamil, Telugu, Malayalam, Kannada, Marathi, Gujarati, Assamese and Urdu—are available alongside Odia. Publication and editorial review status are separate; do not imply that every draft has completed human review.
-- Offer Like once below the poem, never in the poem header. Like and collapsed Comments share a compact row. Opening Comments exposes one text box and a submission action; publication remains moderated. Service notices stay inside the disclosure.
+- Offer Like once below the poem, never in the poem header. Like, collapsed Comments and private correspondence share one compact icon-only row: heart, speech bubble and envelope. Use muted ink, 44px touch targets, accessible names, hover/focus labels and a rust active state. Keep forms and idle service notices inside their disclosures. Opening Comments exposes one text box and a submission action; publication remains moderated. Service notices stay inside the disclosure.
 - Standalone poem footers have no previous/next page navigation. Page controls belong in the reader.
 
 ## Ornament and footer
@@ -102,3 +102,11 @@ Keep the opening heading, then the suggested reading path, then the single-line 
 ## Public address · 9 October 2026
 
 The canonical book address is `https://singhasan.kabitawithoutborders.org`. Preserve existing paths, language query parameters and fragment anchors when forwarding from `https://singhasan.poemwithoutborders.org`. The old domain is served by the separate `ahimanikya/singhasan-redirect` GitHub Pages repository; it contains only generated redirect pages, not a second book edition. Canonical metadata, sharing images, sitemaps and the Firebase client host allowlist use the new address. Keep the existing Singhasan Firebase project, data and content IDs. Links to the wider poetry project use `https://kabitawithoutborders.org`.
+
+## Reader full screen and keyboard · 15 October 2026
+
+Keep the existing full-page reader and Exit reader destination. Offer a compact 44px full-screen button when the browser supports it. F toggles native full screen; Escape leaves native full screen before it can exit the reader. Do not re-enter full screen automatically. Browsers may leave native full screen when a new poem document opens; the full-page book layout remains. In Listen & follow, the full-screen target includes the audio player.
+
+Left/Right and Page Up/Page Down turn through both modes, including cover entry and return from the back cover. Do not wrap around the book's ends. Ignore held-key repeats, composition, modified keys, selected text, editable fields, widgets and open reader panels. Label controls and expose shortcut tooltips. Keep the toolbar in one row at narrow phone widths, using an accessible icon for the quiet toggle.
+
+The same response icon treatment applies to the opening prose and editorial articles. On poem pages, the envelope opens Contact with poem context; articles retain their inline private-feedback disclosure. Preserve entered messages, moderation, disabled service states and submission confirmation behavior.

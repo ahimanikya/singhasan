@@ -14,7 +14,7 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  const isArt=()=>isOpening()&&mobile.matches;
  const count=()=>Math.ceil((textColumns+openingColumns())/spread);
  const shift=()=>(openingColumns()-index*spread)*(columnWidth+gap);
- const blocked=()=>!!document.querySelector('dialog[open]')||!document.querySelector('#page-bookmarks').hidden;
+ const blocked=()=>!!document.querySelector('dialog[open]')||!!document.querySelector('#page-bookmarks:not([hidden])');
  function textPosition(element,offset){const walker=document.createTreeWalker(element,NodeFilter.SHOW_TEXT);let node,last;while(node=walker.nextNode()){last=node;if(offset<node.length)return {node,offset};offset-=node.length}return last?{node:last,offset:Math.max(0,last.length-1)}:null}
  function charRect(line,offset){const el=line.querySelector('.line-words')||line,p=textPosition(el,offset);if(!p)return null;const range=document.createRange();range.setStart(p.node,p.offset);range.setEnd(p.node,Math.min(p.offset+1,p.node.length));return range.getBoundingClientRect()}
  function visibleAnchor(){if(isArt())return anchor;const r=panel.getBoundingClientRect();for(const line of verse.querySelectorAll('[data-line]')){if(![...line.getClientRects()].some(x=>x.right>r.left+1&&x.left<r.right-1))continue;
@@ -86,7 +86,7 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  function warmChapter(href){const target=bookRoute(href);if(prefetched.has(target))return;prefetched.add(target);const link=document.createElement('link');link.rel='prefetch';link.as='document';link.href=target;document.head.append(link)}
  document.addEventListener('book-page-rendered',()=>{warmChapter(before);warmChapter(after)});
  function turn(direction,interactive=false){
-  if(blocked()||turning)return null;
+  if(!ready||blocked()||turning)return null;
   const target=index+direction;
   document.dispatchEvent(new Event('book-manual-turn'));
   window.getSelection()?.removeAllRanges();document.querySelector('#selection-tools').hidden=true;
@@ -106,7 +106,6 @@ if(book&&verse&&panel&&body.classList.contains('illustrated-mode')){
  document.addEventListener('book-set-quiet',event=>{if(!ready)return;cancelPaperTurn();const saved=visibleAnchor();quiet=event.detail;body.classList.toggle('quiet-mode',quiet);try{localStorage.setItem('singhasan-book-quiet-v1',String(quiet))}catch{}pendingJump=saved;layout();document.dispatchEvent(new Event('book-mode-changed'))});
  document.querySelector('#leaf-switch').addEventListener('click',()=>{if(blocked()||quiet)return;document.dispatchEvent(new Event('book-manual-turn'));index=isArt()?1:0;render(true,true)});
  previous.addEventListener('click',()=>turn(-1));next.addEventListener('click',()=>turn(1));
- document.addEventListener('keydown',event=>{if(blocked()||event.defaultPrevented||event.ctrlKey||event.metaKey||event.altKey||event.shiftKey||event.target.closest('input,select,textarea,[role=tab]')||!window.getSelection()?.isCollapsed)return;if(event.key==='ArrowRight'||event.key==='PageDown'){event.preventDefault();turn(1)}else if(event.key==='ArrowLeft'||event.key==='PageUp'){event.preventDefault();turn(-1)}});
  // Begin in the outer margin; long-press and text selection keep their normal behaviour.
  book.addEventListener('pointerdown',e=>{
   if(blocked()||turning||!e.isPrimary||e.button!==0||e.target.closest('a,button,input,select,textarea,summary,[data-line],.image-narrative')||!window.getSelection()?.isCollapsed)return;

@@ -12,7 +12,7 @@
  function refresh(){
   const on=document.body.classList.contains('quiet-mode');
   const language=document.querySelector('#experience-verse')?.lang||new URL(location.href).searchParams.get('lang')||'or';
-  for(const button of document.querySelectorAll('[data-quiet-toggle]')){button.querySelector('span').textContent=on?'Show illustrations':'Read quietly';if(bookMode||cover)button.setAttribute('aria-pressed',String(on))}
+  for(const button of document.querySelectorAll('[data-quiet-toggle]')){button.querySelector('span').textContent=on?'Show illustrations':'Read quietly';button.title=on?'Show illustrations':'Read quietly';if(bookMode||cover)button.setAttribute('aria-pressed',String(on))}
   if(bookMode||cover)for(const link of document.querySelectorAll('.page-nav a,.book-index a,a[href*="contents.html"],.book-cover-route a')){
    if(link.classList.contains('exit-reader'))continue;
    const url=new URL(link.href);if(/\/(intro|poem-\d+|contents|book|back-cover)\.html$/.test(url.pathname)){url.searchParams.set('view','book');url.searchParams.set('quiet',on?'1':'0');if(!link.classList.contains('continue-reading')){if(language==='or')url.searchParams.delete('lang');else if(/^[a-z]{2,3}$/.test(language))url.searchParams.set('lang',language)}link.href=url.href}
@@ -27,8 +27,13 @@
    if(window.self!==window.top)exit.target='_top';exit.addEventListener('click',()=>{window.readerJourney?.prepareExit();if(returnTo||cover)return;const code=document.querySelector('#experience-verse')?.lang;exit.href=location.pathname+(code&&code!=='or'?'?lang='+encodeURIComponent(code):'')});bar.append(exit);const actions=document.querySelector('.poem-actions');if(actions)bar.append(actions);
    else {const toggle=document.querySelector('[data-quiet-toggle]');if(toggle)bar.append(toggle)}
    document.querySelector('#reading').before(bar);
+   let fullscreenExitAt=0;
+   let screenDocument=document;try{if(parent!==window&&parent.document.querySelector('#follow-book')?.contentWindow===window)screenDocument=parent.document}catch{}
+   const trackFullscreenExit=()=>{if(!screenDocument.fullscreenElement)fullscreenExitAt=Date.now()};
+   screenDocument.addEventListener('fullscreenchange',trackFullscreenExit);
+   window.addEventListener('pagehide',()=>screenDocument.removeEventListener('fullscreenchange',trackFullscreenExit),{once:true});
    document.addEventListener('keydown',event=>{
-    if(event.key!=='Escape'||event.defaultPrevented||document.querySelector('dialog[open]')||document.querySelector('#page-bookmarks:not([hidden]),#selection-tools:not([hidden])'))return;
+    if(event.key!=='Escape'||event.defaultPrevented||event.repeat||screenDocument.fullscreenElement||Date.now()-fullscreenExitAt<500||document.querySelector('dialog[open]')||document.querySelector('#page-bookmarks:not([hidden]),#selection-tools:not([hidden])'))return;
     event.preventDefault();exit.click();
    });
   }
