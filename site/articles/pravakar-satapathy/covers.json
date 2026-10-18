@@ -1,0 +1,29 @@
+[
+  {
+    "record_id": "B04",
+    "title": "Sabuthi Kabita",
+    "edition": "PEN IN Books edition · undated",
+    "source_label": "Odisha eStore",
+    "source_url": "https://www.odishaestore.com/writer-pravakar-satpathy/sabuthi-kabita",
+    "asset": "assets/book-covers/sabuthi-kabita-8d5effc343.jpg",
+    "width": 1024,
+    "height": 1024,
+    "back_cover": {
+      "asset": "assets/book-covers/sabuthi-kabita-back-821d9e3ed0.jpg",
+      "width": 800,
+      "height": 1200,
+      "source_label": "Ritikart",
+      "source_url": "https://ritikart.com/collections/odia-literature-poems-poetry-books/products/sabuthi-kabita-by-prabhakar-satapathy"
+    }
+  },
+  {
+    "record_id": "B03",
+    "title": "Sahityare Biplaba O Little Magazine",
+    "edition": "Athena Books · retailer cover",
+    "source_label": "Odisha eStore",
+    "source_url": "https://www.odishaestore.com/writer-pravakar-satpathy/sahityare-biplaba-o-little-magazin",
+    "asset": "assets/book-covers/sahityare-biplaba-04142ba725.jpg",
+    "width": 1024,
+    "height": 1024
+  }
+]

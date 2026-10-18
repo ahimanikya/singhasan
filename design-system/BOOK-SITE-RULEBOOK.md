@@ -18,7 +18,7 @@ Do not silently choose between contradictory current documents. Resolve them aga
 
 ## 2. Identity and editorial integrity
 
-- This is Pravakar Satapathy's first Odia poetry book, written during his involvement in politics. It is a literary book site, not a journal or a technology showcase.
+- This is an Odia poetry collection by Pravakar Satapathy, written during his involvement in politics. It is a literary book site, not a journal or a technology showcase.
 - The approved book contains the opening prose, ସିଂହଦ୍ଵାର, and 68 numbered poems. Preserve their identity, order, wording, stanza structure and meaningful punctuation. Do not silently correct dialect or unusual words.
 - `site/dist/book.js` is the Odia source input. Apply authorized corrections there and rebuild all dependent views. Check affected translations and audio offsets when the source changes; do not silently certify old reviews against new text.
 - Home-page extracts must match the source. English illustration narratives interpret artwork; they are not poem translations. Do not insert explanatory prose, invented imagery or morals into a translated poem.
@@ -38,7 +38,8 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Suggested reading path | Compact thematic sequence within `contents.html#reading-path`, linked from a small Home invitation. No separate illustrated guide. Editorial prompts stay separate from titles/verse; contextual continuation stays outside the book reader. |
 | Translation essay | Standalone editorial page linked from the home feature and Our Story; outside the book sequence and main menu. |
 | Listen | Existing audiobook and Listen & follow. Keep Listen accessible in the top menu and the home closing invitation. |
-| Poet | Substantial biography and portrait, without a contributions list. |
+| Poet | Substantial biography and portrait, linking to the separate literary record. |
+| Literary record | Source-linked books, magazine contributions, translations, recordings and literary life; keep unverified leads clearly qualified. |
 | Contact | Simple private Firebase form, including poem context when entered from a poem. |
 
 Preserve established routes, incoming anchors and shared links. The cover is an entry point into the book. Exiting the reader returns to the originating site page with its language and position, rather than always sending the reader home. An unavailable translation must fall back visibly, not masquerade as translated text.

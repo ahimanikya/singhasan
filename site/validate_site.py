@@ -21,7 +21,7 @@ class Page(HTMLParser):
 errors=[]
 pages=sorted(root.glob('*.html'))
 social=json.loads((root.parent/'social-images.json').read_text())
-assert len(pages)==79, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus the translation essay and Our Story'
+assert len(pages)==80, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus the translation essay, Our Story and the literary record'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -55,10 +55,10 @@ for item in MANIFEST['items']:
     assert hashlib.sha256((root/item['asset']).read_bytes()).hexdigest() == item['sha256'], item['id']
     assert Path(item['asset']).name in published, f"Unconnected artwork: {item['id']}"
 assert (root/'CNAME').read_text().strip()=='singhasan.kabitawithoutborders.org'
-assert len(ET.parse(root/'sitemap.xml').getroot())==79
+assert len(ET.parse(root/'sitemap.xml').getroot())==80
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 79 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 80 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -158,7 +158,7 @@ for source,entry in social.items():
     assert entry['type'] in ('image/png','image/jpeg') and entry['width']>0 and entry['height']>0
     assert payload.startswith(b'\x89PNG') if entry['type']=='image/png' else payload.startswith(b'\xff\xd8'), entry['src']
 assert len({social[page_image(f'poem-{n}.html')]['src'] for n in range(1,69)})==68
-print('Validated page-specific sharing images, metadata and source/output hashes for all 79 pages.')
+print('Validated page-specific sharing images, metadata and source/output hashes for all 80 pages.')
 
 # The essay is a standalone editorial page, outside the book's section sequence.
 from translation_article import ROUTE as ARTICLE_ROUTE

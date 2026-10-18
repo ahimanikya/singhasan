@@ -4,6 +4,7 @@ from html import escape
 import json
 from artwork import image_asset
 from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
+from literary_record import ROUTE as LITERARY_ROUTE, DESCRIPTION as LITERARY_DESCRIPTION
 from translation_article import ROUTE as ARTICLE_ROUTE, HERO as ARTICLE_HERO, DESCRIPTION as ARTICLE_DESCRIPTION, ALT as ARTICLE_ALT
 
 ROOT=Path(__file__).resolve().parent
@@ -12,6 +13,7 @@ COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 
 def page_image(route):
+    if route==LITERARY_ROUTE:return PORTRAIT
     if route==ARTICLE_ROUTE:return ARTICLE_HERO
     if route.startswith('poem-'):
         number=int(route.removeprefix('poem-').removesuffix('.html'))
@@ -25,6 +27,7 @@ def page_image(route):
     }.get(route,COVER)
 
 def page_details(route,chapters,illustrations):
+    if route==LITERARY_ROUTE:return LITERARY_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==STORY_ROUTE:return STORY_DESCRIPTION,'ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'
     if route==ARTICLE_ROUTE:return ARTICLE_DESCRIPTION,ARTICLE_ALT
     if route.startswith('poem-'):
@@ -40,7 +43,7 @@ def page_details(route,chapters,illustrations):
         'back-cover.html':('Power passes. The earth remembers. The closing cover of Singhasan by Pravakar Satapathy.','The closing landscape of Singhasan'),
         'listen.html':('Listen to the Odia poems of Singhasan by Pravakar Satapathy.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'),
         'read-along.html':('Listen to Singhasan in Odia and follow the words through the book.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'),
-    }.get(route,('Singhasan, the first Odia poetry collection by Pravakar Satapathy. Read the illustrated book or switch to Quiet mode.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'))
+    }.get(route,('Singhasan, an Odia poetry collection by Pravakar Satapathy. Read the illustrated book or switch to Quiet mode.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'))
 
 def sharing_metadata(route,title,chapters,illustrations):
     manifest=json.loads((ROOT/'social-images.json').read_text())
@@ -48,7 +51,7 @@ def sharing_metadata(route,title,chapters,illustrations):
     canonical=PUBLIC_URL+('/' if route=='index.html' else '/'+route)
     description,alt=page_details(route,chapters,illustrations)
     preview=PUBLIC_URL+'/'+image['src']
-    tags={'og:type':'article' if route==ARTICLE_ROUTE else 'website','og:site_name':'Singhasan','og:title':title,
+    tags={'og:type':'article' if route in (ARTICLE_ROUTE,LITERARY_ROUTE) else 'website','og:site_name':'Singhasan','og:title':title,
           'og:description':description,'og:url':canonical,'og:image':preview,
           'og:image:secure_url':preview,'og:image:type':image['type'],
           'og:image:width':image['width'],'og:image:height':image['height'],'og:image:alt':alt}
