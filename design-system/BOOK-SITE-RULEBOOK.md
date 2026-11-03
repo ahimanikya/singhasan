@@ -34,9 +34,9 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Standalone poem | Permanent shareable page with selectable verse, companion artwork/narrative and an “In the book” panel with illustrated and quiet entry. Compact single-line page tools; no page text-size control. No footer previous/next navigation. |
 | ସିଂହଦ୍ଵାର (`intro.html`) | Full opening prose, paginated where needed for comfortable reading. Do not restore the English “Introduction” heading beside its Odia title. |
 | Book reader | One paginated reader with Illustrated and Quiet settings, same source and saved-place model. |
-| Our Story | Family purpose, translation essay link, wider Poem Without Borders project/story, and one edition/design credit to Ahimanikya Satapathy. Shared footer entry; not part of the book sequence. |
+| Our Story | Family purpose, wider Poem Without Borders project/story, and one edition/design credit to Ahimanikya Satapathy. Shared footer entry; not part of the book sequence. |
 | Suggested reading path | Compact thematic sequence within `contents.html#reading-path`, linked from a small Home invitation. No separate illustrated guide. Editorial prompts stay separate from titles/verse; contextual continuation stays outside the book reader. |
-| Translation essay | Standalone editorial page linked from the home feature and Our Story; outside the book sequence and main menu. |
+| Translation essay | Belongs to the main site; removed from Singhasan, including local article copies, on 3 November 2026. |
 | Listen | Existing audiobook and Listen & follow. Keep Listen accessible in the top menu and the home closing invitation. |
 | Poet | Substantial biography and portrait, linking to the separate literary record. |
 | Literary record | Source-linked books, magazine contributions, translations, recordings and literary life; keep unverified leads clearly qualified. |

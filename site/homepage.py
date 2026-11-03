@@ -1,6 +1,5 @@
 """The public introduction to the book: a visual essay with source-exact extracts."""
 from html import escape as e
-from translation_article import article_feature
 from reading_path import invitation as path_invitation
 STORIES=[
  (1,'Beneath an ordinary field','Before the throne appears, there is grass, cattle and a familiar patch of earth. Authority enters this everyday world almost unnoticed. The opening asks us to look again at the ground on which a ruler stands.'),
@@ -19,5 +18,4 @@ def render_home(chapters,art,icon,excerpt,cover_face):
 {path_invitation(home=True)}
 <div class="visual-story-heading" id="visual-story" lang="en"><span class="line-art-vignette" aria-hidden="true">{icon('blank-leaf-palm')}</span><p class="eyebrow">A journey in images &amp; verse</p><h2>Five glimpses into the book</h2><p>Read the original Odia words alongside a visual and English narrative of the world they open.</p></div>
 <div class="home-visual-story">{''.join(scenes)}</div>
-{article_feature()}
 <section class="home-reading-choice" aria-labelledby="choose-reading" lang="en"><img class="section-ornament reading-invitation-art" src="assets/book-ornaments/open-book-v1.webp" alt="" width="1254" height="1254" loading="lazy"><p class="eyebrow">Enter the book</p><h2 id="choose-reading">Read at your own pace.</h2><p class="unified-reading-invitation">Turn the illustrated pages, or switch on Read quietly for just the words. Your place, bookmarks and reading settings stay with you.</p><nav class="home-final-actions" aria-label="Explore the book"><a class="home-action home-action-primary" href="book.html">{icon('read')}<span>Read the book</span></a><a class="home-action" href="listen.html">{icon('listen')}<span>Listen to the audiobook</span></a><a class="home-action" href="contents.html">{icon('browse')}<span>Browse all poems</span></a></nav></section>'''

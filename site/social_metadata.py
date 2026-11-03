@@ -5,7 +5,6 @@ import json
 from artwork import image_asset
 from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
 from literary_record import ROUTE as LITERARY_ROUTE, DESCRIPTION as LITERARY_DESCRIPTION
-from translation_article import ROUTE as ARTICLE_ROUTE, HERO as ARTICLE_HERO, DESCRIPTION as ARTICLE_DESCRIPTION, ALT as ARTICLE_ALT
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_URL='https://singhasan.kabitawithoutborders.org'
@@ -14,7 +13,6 @@ PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 
 def page_image(route):
     if route==LITERARY_ROUTE:return PORTRAIT
-    if route==ARTICLE_ROUTE:return ARTICLE_HERO
     if route.startswith('poem-'):
         number=int(route.removeprefix('poem-').removesuffix('.html'))
         return image_asset(f'assets/poems/unique/poem-{number:02}.png')
@@ -29,7 +27,6 @@ def page_image(route):
 def page_details(route,chapters,illustrations):
     if route==LITERARY_ROUTE:return LITERARY_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==STORY_ROUTE:return STORY_DESCRIPTION,'ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'
-    if route==ARTICLE_ROUTE:return ARTICLE_DESCRIPTION,ARTICLE_ALT
     if route.startswith('poem-'):
         n=int(route.removeprefix('poem-').removesuffix('.html'))
         chapter=next(c for c in chapters if c['number']==n)
@@ -51,7 +48,7 @@ def sharing_metadata(route,title,chapters,illustrations):
     canonical=PUBLIC_URL+('/' if route=='index.html' else '/'+route)
     description,alt=page_details(route,chapters,illustrations)
     preview=PUBLIC_URL+'/'+image['src']
-    tags={'og:type':'article' if route in (ARTICLE_ROUTE,LITERARY_ROUTE) else 'website','og:site_name':'Singhasan','og:title':title,
+    tags={'og:type':'article' if route==LITERARY_ROUTE else 'website','og:site_name':'Singhasan','og:title':title,
           'og:description':description,'og:url':canonical,'og:image':preview,
           'og:image:secure_url':preview,'og:image:type':image['type'],
           'og:image:width':image['width'],'og:image:height':image['height'],'og:image:alt':alt}

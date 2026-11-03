@@ -7,7 +7,6 @@ from reader_responses import responses, contact_page
 from homepage import render_home
 from our_story import render_story, ROUTE as STORY_ROUTE, TITLE as STORY_TITLE
 from reading_path import invitation as path_invitation, path_panel
-from translation_article import render_article, ROUTE as ARTICLE_ROUTE, TITLE as ARTICLE_TITLE
 from literary_record import render_literary_record, ROUTE as LITERARY_ROUTE, TITLE as LITERARY_TITLE
 from audio_edition import render_audio
 from artwork import image_asset, resolve_artwork
@@ -200,7 +199,8 @@ back_body=f'''<section class="book-cover-route"><figure class="bound-cover bound
 (DIST/'contact.html').write_text(shell('Contact the poet',contact_page(icon),'contact-page'))
 
 (DIST/STORY_ROUTE).write_text(shell(STORY_TITLE,render_story(icon),'our-story-page').replace('<html lang="or">','<html lang="en">',1))
-(DIST/ARTICLE_ROUTE).write_text(shell(ARTICLE_TITLE,render_article(),'article-page earth-wash'))
+# The language essay belongs to the main site.
+(DIST/'thirty-languages-and-the-journey-of-a-poem.html').unlink(missing_ok=True)
 (DIST/LITERARY_ROUTE).write_text(shell(LITERARY_TITLE,render_literary_record(),'literary-page earth-wash'))
 
 # Public address and preview metadata are generated alongside every page.
