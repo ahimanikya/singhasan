@@ -16,12 +16,14 @@ def render_poetry_archive():
         # The source title is retained in the download; the visible heading replaces it.
         verse = poem['text'].split('\n', 1)[1].strip()
         stanzas = ''.join('<p>' + '<br>'.join(escape(line) for line in stanza.splitlines()) + '</p>' for stanza in verse.split('\n\n'))
-        poems.append(f'<article id="archive-{escape(poem["id"])}"><h3 lang="or">{escape(poem["title"])}</h3><p class="archive-source"><a href="{escape(poem["source_url"])}">{escape(poem["source_label"])}</a></p><details open><summary>Read the poem</summary><div class="archive-verse" lang="or">{stanzas}</div></details><p><a href="assets/poetry-archive/{name}" download>Download Odia text · <span lang="or">{escape(poem["title"])}</span></a></p></article>')
+        source = f'<p class="archive-source"><a href="{escape(poem["source_url"])}">{escape(poem["source_label"])}</a></p>' if poem.get('source_url') else ''
+        poems.append(f'<article id="archive-{escape(poem["id"])}"><h3 lang="or">{escape(poem["title"])}</h3>{source}<details open><summary>Read the poem</summary><div class="archive-verse" lang="or">{stanzas}</div></details><p><a href="assets/poetry-archive/{name}" download>Download Odia text · <span lang="or">{escape(poem["title"])}</span></a></p></article>')
     recordings = []
     for recording in data.get('recordings', []):
         rid = escape(recording['id'])
         media = f'assets/poetry-archive/{rid}'
-        recordings.append(f'<article id="{rid}"><h4 id="{rid}-title" lang="{escape(recording["lang"])}">{escape(recording["title"])}</h4><p>{escape(recording["description"])} · {escape(recording["duration_label"])}</p><video class="archive-video" controls playsinline loading="lazy" preload="none" width="{int(recording["width"])}" height="{int(recording["height"])}" poster="{media}.jpg" aria-labelledby="{rid}-title"><source src="{media}.mp4" type="video/mp4"><a href="{media}.mp4">Watch the recording</a></video><p><a href="{media}.mp4" download>Download video</a> · <a href="{escape(recording["source_url"])}">Source</a></p></article>')
+        source = f' · <a href="{escape(recording["source_url"])}">Source</a>' if recording.get('source_url') else ''
+        recordings.append(f'<article id="{rid}"><h4 id="{rid}-title" lang="{escape(recording["lang"])}">{escape(recording["title"])}</h4><p>{escape(recording["description"])} · {escape(recording["duration_label"])}</p><video class="archive-video" controls playsinline loading="lazy" preload="none" width="{int(recording["width"])}" height="{int(recording["height"])}" poster="{media}.jpg" aria-labelledby="{rid}-title"><source src="{media}.mp4" type="video/mp4"><a href="{media}.mp4">Watch the recording</a></video><p><a href="{media}.mp4" download>Download video</a>{source}</p></article>')
     recordings_section = '<section id="poetry-recordings"><h3>In the poet’s voice</h3>' + ''.join(recordings) + '</section>' if recordings else ''
     sources = ''.join(f'<li><span lang="{escape(item.get("lang", "or"))}">{escape(item["title"])}</span> — <a href="{escape(item["url"])}">{escape(item["label"])}</a></li>' for item in data['sources'])
     articles = ''.join(f'<li><span lang="{escape(item.get("lang", "or"))}">{escape(item["title"])}</span> — <a href="{escape(item["url"])}">{escape(item["label"])}</a></li>' for item in data.get('articles', []))
