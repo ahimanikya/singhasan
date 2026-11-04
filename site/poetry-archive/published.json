@@ -148,5 +148,27 @@
       "label": "Istahar 135–136 · October 2015 · pp. 83–91",
       "lang": "or"
     }
+  ],
+  "recordings": [
+    {
+      "id": "recitation-001",
+      "title": "Poetry reading",
+      "lang": "en",
+      "duration_label": "2 min 53 sec",
+      "description": "Pravakar Satapathy reads from a poetry collection.",
+      "source_url": "https://www.facebook.com/100006603754789/videos/2220678008162303/",
+      "width": 220,
+      "height": 400
+    },
+    {
+      "id": "recitation-002",
+      "title": "ମୟୂର",
+      "lang": "or",
+      "duration_label": "11 sec",
+      "description": "A short recitation of Mayura, described by the poet as his first poem.",
+      "source_url": "https://www.facebook.com/100006603754789/videos/2091075251122580/",
+      "width": 720,
+      "height": 1280
+    }
   ]
 }
