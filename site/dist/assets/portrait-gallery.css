@@ -1,0 +1,15 @@
+.author-longform .portrait-gallery{margin:3rem 0;padding:2rem 0;border-block:1px solid var(--line);max-width:100%}
+.portrait-gallery h2{margin:0 0 1rem}
+.portrait-gallery .portrait-controls{display:flex;align-items:center;justify-content:center;gap:.5rem 1rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.portrait-gallery [hidden]{display:none!important}
+.portrait-controls button{font:inherit;font-size:1rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;min-height:44px;padding:.5rem .8rem;cursor:pointer}
+.portrait-controls button:hover{background:var(--panel)}
+.portrait-controls button:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+.portrait-gallery .portrait-count{font-size:1rem;font-variant-numeric:tabular-nums;min-width:5ch;text-align:center}
+.portrait-slides{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:2rem}
+.portrait-gallery .portrait-slide{margin:0;min-width:0;text-align:center}
+.portrait-gallery .portrait-slide img{display:block;width:100%;height:auto;object-fit:contain;margin:0 auto}
+.portrait-gallery .portrait-slide figcaption{font-size:1rem;line-height:1.5;margin-top:.75rem;color:var(--ink)}
+.portrait-gallery.is-slideshow .portrait-slides{display:block}
+.portrait-gallery.is-slideshow .portrait-slide img{height:clamp(260px,65vh,600px);max-height:none;aspect-ratio:auto!important;background-image:none!important;object-fit:contain}
+@media(max-width:480px){.portrait-controls{gap:.5rem!important}.portrait-controls button{padding:.4rem .6rem}.portrait-count{flex-basis:100%}.portrait-gallery.is-slideshow .portrait-slide img{height:420px;max-height:65vh}}

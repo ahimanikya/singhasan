@@ -5,6 +5,11 @@ import json
 
 ROOT = Path(__file__).resolve().parent
 
+def render_portraits():
+    portraits = json.loads((ROOT / 'poetry-archive/portraits.json').read_text())
+    figures = ''.join(f'<figure class="portrait-slide"><img src="{escape(p["asset"])}" alt="{escape(p["alt"])}" width="{p["width"]}" height="{p["height"]}" loading="lazy" decoding="async"><figcaption>{escape(p["caption"])}</figcaption></figure>' for p in portraits)
+    return '<section class="portrait-gallery" id="portraits" lang="en" aria-labelledby="portraits-heading" aria-roledescription="carousel"><h2 id="portraits-heading">Portraits</h2><div class="portrait-controls" hidden><button type="button" data-portrait-prev aria-label="Previous portrait">← Previous</button><button type="button" data-portrait-play>Play slideshow</button><button type="button" data-portrait-next aria-label="Next portrait">Next →</button><span class="portrait-count" aria-live="polite" aria-atomic="true"></span></div><div class="portrait-slides">' + figures + '</div></section>'
+
 def render_poetry_archive():
     data = json.loads((ROOT / 'poetry-archive/published.json').read_text())
     output = ROOT / 'dist/assets/poetry-archive'
