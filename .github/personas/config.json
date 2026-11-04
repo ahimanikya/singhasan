@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "project": "Singhasan",
+  "prefix": "SGH",
+  "package_kind": "public_framework_export",
+  "version": "1.1.0",
+  "authorization": {
+    "human_owner": "Ahimanikya Satapathy",
+    "adopted_on": "2026-11-04",
+    "assignment_decision": "SGH-DEC-006",
+    "framework_decision": "SGH-DEC-007",
+    "summary": "The project owner adopted the four Blueprint personas and the Kabita Live arrangement for bounded Singhasan work. This public export describes the working framework; it is not a historical activity or private decision record."
+  },
+  "execution_mode": "task_scoped_agents",
+  "dispatch_policy": "default_for_substantive_authorized_tasks",
+  "background_execution": false,
+  "autonomous_dispatch": false,
+  "autonomous_dispatch_meaning": "Unbounded self-directed work is disabled; authorized task-scoped delegation remains enabled.",
+  "publication_authority": "Existing user publishing authorization only; this framework grants no new publication authority.",
+  "access_added": [],
+  "human_reports_to_personas": false,
+  "operating_model": "operating-model.md",
+  "local_runtime_record": ".local/persona-tasks.json",
+  "personas": [
+    {
+      "id": "SGH-PER-001",
+      "assignment_id": "SGH-ASG-001",
+      "jd_id": "SGH-JD-001",
+      "jd_version": "1.1.0",
+      "name": "Disha Dash",
+      "kind": "ai_persona",
+      "role": "Product Steward & AI Project Coordinator",
+      "brief": "roles/disha-dash.md",
+      "reports_to": "Ahimanikya Satapathy",
+      "execution": "root_coordinator",
+      "runtime_state": "on_demand_not_continuous"
+    },
+    {
+      "id": "SGH-PER-002",
+      "assignment_id": "SGH-ASG-002",
+      "jd_id": "SGH-JD-002",
+      "jd_version": "1.1.0",
+      "name": "Anvesha Acharya",
+      "kind": "ai_persona",
+      "role": "Research Editor & Knowledge and Archive Steward",
+      "brief": "roles/anvesha-acharya.md",
+      "reports_to": "Ahimanikya Satapathy",
+      "execution": "separate_task_scoped_agent",
+      "runtime_state": "on_demand_not_continuous"
+    },
+    {
+      "id": "SGH-PER-003",
+      "assignment_id": "SGH-ASG-003",
+      "jd_id": "SGH-JD-003",
+      "jd_version": "1.1.0",
+      "name": "Samanta Chandrasekhar",
+      "kind": "ai_persona",
+      "role": "Experience Designer & Engineer",
+      "brief": "roles/samanta-chandrasekhar.md",
+      "reports_to": "Ahimanikya Satapathy",
+      "execution": "separate_task_scoped_agent",
+      "runtime_state": "on_demand_not_continuous"
+    },
+    {
+      "id": "SGH-PER-004",
+      "assignment_id": "SGH-ASG-004",
+      "jd_id": "SGH-JD-004",
+      "jd_version": "1.1.0",
+      "name": "Drishti Senapati",
+      "kind": "ai_persona",
+      "role": "Quality & Accessibility Reviewer",
+      "brief": "roles/drishti-senapati.md",
+      "reports_to": "Ahimanikya Satapathy",
+      "execution": "separate_task_scoped_agent",
+      "runtime_state": "on_demand_not_continuous"
+    }
+  ]
+}
