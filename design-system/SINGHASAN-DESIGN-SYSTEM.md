@@ -128,3 +128,11 @@ The archive also preserves the poet’s recitations under “In the poet’s voi
 The poet’s own Facebook posts and recordings do not need public source references. Keep their URLs in private provenance records and omit those links from the Poetry archive; retain references to external literary publications.
 
 Do not display “Download Odia text” links in the Poetry archive. Poems remain readable and selectable on the page; preserve archived text files. Video download links remain available.
+
+### Profile enrichment from archived posts
+
+Treat the poet’s posts as research leads. Select original writing, identifiable publications, interviews and documented literary activity; exclude generic quotes, greetings, templates, duplicates and unsupported forwards from the biography. Distinguish author statements from quoted material and interviewer framing. Corroborate factual dates, education, roles, awards and publication history with original institutional or publication records; attribute personal recollections explicitly. Match identity beyond the name and do not use our own profile pages as independent corroboration. Keep a private claim-level evidence record, uncertainty and contradictions; publish only useful supported additions. Facebook provenance remains private.
+
+### Photographs and memories
+
+The Poet page may include a small selection of older photographs under “Photographs and memories,” before the Poetry archive. Exclude photographs containing children. Preserve originals and their full composition; use responsive copies without generated restoration. Identify people and relationships only from explicit captions or family confirmation; neutral captions are appropriate when identities or dates are uncertain. The mother’s white-sari portrait is identified by the poet’s own remembrance accompanying “ବୋଉ.” Keep source URLs, posting dates and audience details private.

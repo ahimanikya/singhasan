@@ -166,5 +166,21 @@
       "width": 720,
       "height": 1280
     }
+  ],
+  "photographs": [
+    {
+      "asset": "assets/poetry-archive/mother.jpg",
+      "caption": "His mother, remembered in his poem “ବୋଉ”.",
+      "alt": "Pravakar Satapathy’s mother wearing a white sari",
+      "width": 1072,
+      "height": 1440
+    },
+    {
+      "asset": "assets/poetry-archive/earlier-portrait.jpg",
+      "caption": "“Loving memory” — an earlier photograph from his collection.",
+      "alt": "An older colour portrait of a man and woman from the poet’s collection",
+      "width": 1040,
+      "height": 1044
+    }
   ]
 }

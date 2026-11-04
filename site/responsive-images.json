@@ -2318,5 +2318,63 @@
         "bytes": 173764
       }
     ]
+  },
+  "assets/poetry-archive/mother.jpg": {
+    "recipe": 1,
+    "source_sha256": "746ee02aff2685d4e5c96f0e94a063eb736a6dcdc47f27bba4531ac3cf648120",
+    "width": 1072,
+    "height": 1440,
+    "preview": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAABwBQCdASoYACAAPwFsrE6rJiQiMAgBYCAJQBe6A+sZWXNmiPjhGd3X5cGG1+52AOnAQ7wAAP7PZw+zMXqGCi/iCoJ99XHXqhLo5jQw9LTXvdkQIfBfI8sBUjHbtdERuvk1/TarWq2aoIUknNlQREjXas5DA4myPgPmExek+YZ1dNyPbNEknMEDDSwvTUaUSCktuFvOepsStcYAyoqYQQEcHWdiZSYYpGVVYYu9jUfODtYzhd4MPcraoOIZ07NzmqZ14L3fIkiMzJ84CLaXpsS2Y9lngyNnQhEwQlzdQAA=",
+    "variants": [
+      {
+        "src": "assets/responsive/mother-746ee02aff26-v1-96.webp",
+        "width": 96,
+        "bytes": 2428
+      },
+      {
+        "src": "assets/responsive/mother-746ee02aff26-v1-480.webp",
+        "width": 480,
+        "bytes": 19460
+      },
+      {
+        "src": "assets/responsive/mother-746ee02aff26-v1-960.webp",
+        "width": 960,
+        "bytes": 65846
+      },
+      {
+        "src": "assets/responsive/mother-746ee02aff26-v1-1072.webp",
+        "width": 1072,
+        "bytes": 84090
+      }
+    ]
+  },
+  "assets/poetry-archive/earlier-portrait.jpg": {
+    "recipe": 1,
+    "source_sha256": "6308debaad391b158e1b124a04d06b7f569b5c907626bfa7285cd7417c63af09",
+    "width": 1040,
+    "height": 1044,
+    "preview": "data:image/webp;base64,UklGRigBAABXRUJQVlA4IBwBAADwBQCdASogACAAPvlkpU6qpaMiMAwBUB8JbACdMxMGVSPEESz7PQp9/x/ncRYHvZ7Kovwy/TIoAAD+9ea56H8V5UZpwu1x0j6TibUEK5SU/Gs/1BZ3UWRqgYoxMdAaTKu7dctdRat5P5Ls2+9FB0VWBV45xWLl8v1UXl2oKWL7wHRHuOgitmU1nQKgoqbSXJMipOBF6X7qreFg9ZRk7RZMlEi1DT93uKhKuOAn+3tYd/WFd+tKOaDLxJ4DituKo05zY1chrI5W6mM/tYQMZ5EIEV7auw5bR8Qm3TD7TcRddbm96Lp3gx05HltFbXMUeL9oKCC53rlPEThIlD6Bk4Ud3xFsgGDz+B2q/OUVTuk8XKezCWiBd9WoI5AAAA==",
+    "variants": [
+      {
+        "src": "assets/responsive/earlier-portrait-6308debaad39-v1-96.webp",
+        "width": 96,
+        "bytes": 2550
+      },
+      {
+        "src": "assets/responsive/earlier-portrait-6308debaad39-v1-480.webp",
+        "width": 480,
+        "bytes": 19074
+      },
+      {
+        "src": "assets/responsive/earlier-portrait-6308debaad39-v1-960.webp",
+        "width": 960,
+        "bytes": 51334
+      },
+      {
+        "src": "assets/responsive/earlier-portrait-6308debaad39-v1-1040.webp",
+        "width": 1040,
+        "bytes": 63070
+      }
+    ]
   }
 }

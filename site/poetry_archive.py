@@ -28,3 +28,9 @@ def render_poetry_archive():
     sources = ''.join(f'<li><span lang="{escape(item.get("lang", "or"))}">{escape(item["title"])}</span> — <a href="{escape(item["url"])}">{escape(item["label"])}</a></li>' for item in data['sources'])
     articles = ''.join(f'<li><span lang="{escape(item.get("lang", "or"))}">{escape(item["title"])}</span> — <a href="{escape(item["url"])}">{escape(item["label"])}</a></li>' for item in data.get('articles', []))
     return '<section class="poetry-archive" id="poetry-archive" lang="en"><h2>Poetry archive</h2><p>Poems by Pravakar Satapathy, preserved in their original Odia. Read the poems and explore the published sources.</p>' + recordings_section + ''.join(poems) + '<h3>From the magazines</h3><p>These poems are preserved in the source issues below. Text editions are being checked against the printed pages.</p><ul>' + sources + '</ul><h3>Articles and conversations</h3><ul>' + articles + '</ul><p>The magazine scans are available through Odia Bibhaba / Srujanika. Some source links may require sign-in.</p></section>'
+
+
+def render_photo_memories():
+    data = json.loads((ROOT / 'poetry-archive/published.json').read_text())
+    figures = ''.join(f'<figure><img src="{escape(photo["asset"])}" alt="{escape(photo["alt"])}" width="{int(photo["width"])}" height="{int(photo["height"])}" loading="lazy"><figcaption>{escape(photo["caption"])}</figcaption></figure>' for photo in data.get('photographs', []))
+    return '<section class="photo-memories" id="photographs-and-memories" lang="en"><h2>Photographs and memories</h2>' + figures + '</section>' if figures else ''
