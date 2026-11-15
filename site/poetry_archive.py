@@ -39,3 +39,16 @@ def render_photo_memories():
     data = json.loads((ROOT / 'poetry-archive/published.json').read_text())
     figures = ''.join(f'<figure><img src="{escape(photo["asset"])}" alt="{escape(photo["alt"])}" width="{int(photo["width"])}" height="{int(photo["height"])}" loading="lazy"><figcaption>{escape(photo["caption"])}</figcaption></figure>' for photo in data.get('photographs', []))
     return '<section class="photo-memories" id="photographs-and-memories" lang="en"><h2>Photographs and memories</h2>' + figures + '</section>' if figures else ''
+
+
+def render_featured_interview():
+    from literary_record import video_preview
+    interview = json.loads((ROOT / 'articles/pravakar-satapathy/link-previews.json').read_text())['49']
+    return ('<section id="featured-interview" lang="en" aria-labelledby="interview-heading">'
+            '<h2 id="interview-heading">The poet in conversation</h2>'
+            '<p>Alongside the poems and printed record, this conversation preserves another way of meeting Pravakar Satapathy: through his own voice, expressions and presence. Set aside half an hour to watch him in conversation on <i>Breakfast Odisha</i>.</p>'
+            '<h3>Breakfast Odisha · Prameya News7</h3>'
+            '<p>Odia interview · 33 minutes 10 seconds · Uploaded 20 November 2017</p>'
+            + video_preview(interview) +
+            '<p><a href="https://www.youtube.com/watch?v=BIVOoqagq6A">Watch the full interview on YouTube</a></p>'
+            '<p><a href="pravakar-satapathy-writings.html#conversations">Explore more interviews and conversations</a></p></section>')
