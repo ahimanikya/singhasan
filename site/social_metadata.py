@@ -5,6 +5,7 @@ import json
 from artwork import image_asset
 from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
 from literary_record import ROUTE as LITERARY_ROUTE, DESCRIPTION as LITERARY_DESCRIPTION
+from posts_archive import ROUTE as POSTS_ROUTE, DESCRIPTION as POSTS_DESCRIPTION
 
 ROOT=Path(__file__).resolve().parent
 PUBLIC_URL='https://singhasan.kabitawithoutborders.org'
@@ -12,7 +13,7 @@ COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 
 def page_image(route):
-    if route==LITERARY_ROUTE:return PORTRAIT
+    if route in (LITERARY_ROUTE, POSTS_ROUTE):return PORTRAIT
     if route.startswith('poem-'):
         number=int(route.removeprefix('poem-').removesuffix('.html'))
         return image_asset(f'assets/poems/unique/poem-{number:02}.png')
@@ -26,6 +27,7 @@ def page_image(route):
 
 def page_details(route,chapters,illustrations):
     if route==LITERARY_ROUTE:return LITERARY_DESCRIPTION,'Portrait of Pravakar Satapathy'
+    if route==POSTS_ROUTE:return POSTS_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==STORY_ROUTE:return STORY_DESCRIPTION,'ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'
     if route.startswith('poem-'):
         n=int(route.removeprefix('poem-').removesuffix('.html'))

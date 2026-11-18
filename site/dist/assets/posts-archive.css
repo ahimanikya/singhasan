@@ -1,0 +1,30 @@
+.posts-archive{max-inline-size:1040px;margin-inline:auto;padding-block:48px 70px;color:var(--ink)}
+.posts-opening{max-inline-size:700px;margin-block-end:54px}
+.posts-eyebrow{font:12px/1.6 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--rust)}
+.posts-opening h1{font:clamp(44px,7vw,70px)/1.08 var(--display);margin-block:12px 22px}
+.posts-opening>p:not([class]){font:23px/1.6 var(--serif);max-inline-size:40ch}
+.posts-links{display:flex;flex-wrap:wrap;gap:4px 28px;margin-block:20px}
+.posts-archive a{color:var(--rust);text-decoration:underline;text-underline-offset:4px}
+.posts-links a,.post-original,.post-media-link{display:inline-flex;align-items:center;min-block-size:44px;font:15px/1.6 var(--ui)}
+.posts-archive a:focus-visible,.post-transcript summary:focus-visible{outline:3px solid var(--rust);outline-offset:5px}
+.posts-intro-note{font:14px/1.7 var(--ui);color:var(--muted);max-inline-size:65ch}
+.posts-list{list-style:none;margin:0;padding:0}
+.profile-post{padding-block:36px 52px;border-block-start:1px solid var(--line);scroll-margin-block-start:24px}
+.post-date{font:13px/1.6 var(--ui);color:var(--muted);margin-block:0 10px}
+.profile-post h2{font:clamp(29px,4vw,40px)/1.2 var(--display);margin-block:0 24px;overflow-wrap:anywhere}
+.profile-post h2[lang="or"]{font-family:var(--odia);font-size:clamp(25px,3.6vw,34px);line-height:1.7}
+.post-summary{font:18px/1.7 var(--serif);max-inline-size:65ch;margin-block:0 26px}
+.post-media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px;align-items:start;inline-size:100%;margin-block:24px}
+.post-media{margin:0;min-inline-size:0}
+.post-media:only-child{max-inline-size:650px}
+.post-image-link{display:block}
+.post-media img,.post-media video{display:block;inline-size:100%;block-size:auto;object-fit:contain;max-inline-size:100%}
+.post-media video{background:#101819}
+.post-media figcaption{font:13px/1.65 var(--ui);color:var(--muted);margin-block-start:12px}
+.post-caption,.post-transcript p{white-space:pre-wrap;overflow-wrap:anywhere;font:19px/1.9 var(--serif);max-inline-size:70ch;margin-block:28px 12px}
+.post-caption[lang="or"],.post-transcript p[lang="or"]{font-family:var(--odia);line-height:2}
+.post-transcript summary{cursor:pointer;min-block-size:44px;padding-block:12px;font:15px/1.6 var(--ui);color:var(--rust)}
+.post-transcript p{font-size:17px;margin-block-start:8px}
+.post-original{margin-block-start:12px}
+@media(max-width:600px){.posts-archive{padding-block-start:28px}.posts-opening{margin-block-end:34px}.posts-opening>p:not([class]){font-size:21px}.profile-post{padding-block:28px 38px}.post-media-grid{gap:24px}.post-caption{font-size:18px}.posts-links{gap:2px 22px}}
+@media print{.posts-links,.post-original,.post-media-link{display:none}.posts-archive{padding:0}.profile-post{break-inside:avoid}.post-media video{display:none}}
