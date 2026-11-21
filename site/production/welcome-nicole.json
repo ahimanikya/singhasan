@@ -1,0 +1,21 @@
+{
+  "track_id": "welcome",
+  "source_provider": "ElevenLabs",
+  "voice": "Nicole - Natural Narrative & Audiobook",
+  "model": "Eleven v4",
+  "take": 2,
+  "language": "en",
+  "script": "Welcome to Singhasan, by Pravakar Satapathy. Among his many published books, Singhasan is a popular and significant collection of Odia poetry. He wrote these sixty eight poems during his years in politics. They bring together myth, history, power, and everyday life. You’ll hear them in their original Odia. Settle in, and let us begin.",
+  "source_text_sha256": "5e1832d97b2cc3f49aec55c80d987570b5a552706fd39ef31f1e88e460956005",
+  "audio_sha256": "039d59dd100f3c35d6c634b067194d6103a6b8d670abe6523635c1164b9418d5",
+  "byte_length": 1027177,
+  "samples": 1129446,
+  "sample_rate": 44100,
+  "narration_sha256": "dd2e6786f9b25f0e98975058882e1f0d3a295076bec90494576b6e6e828ee315",
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "excerpt": "opening"
+  }
+}

@@ -4,12 +4,13 @@
       "id": "welcome",
       "poem": null,
       "label": "English welcome",
-      "src": "assets/audio/welcome-14d9bef7.mp3",
-      "duration_label": "0:30",
-      "duration_seconds": 30.024,
-      "source_url": "https://suno.com/song/14d9bef7-890c-44cd-af4d-c1ebc062b973",
-      "review": "first-take-review",
-      "sha256": "0874e4cce2a4527d9be3a6d9eb4da465a549dbdc4970d45261d232dc7b8a5d38"
+      "src": "assets/audio/welcome-039d59dd100f.mp3",
+      "duration_label": "0:26",
+      "duration_seconds": 25.611020408163267,
+      "review": "approved",
+      "sha256": "039d59dd100f3c35d6c634b067194d6103a6b8d670abe6523635c1164b9418d5",
+      "source_provider": "ElevenLabs",
+      "source_provenance": "production/welcome-nicole.json"
     },
     {
       "id": "introduction",
@@ -779,12 +780,13 @@
       "id": "closing",
       "poem": null,
       "label": "English closing",
-      "src": "assets/audio/closing-9b71e58b.mp3",
-      "duration_label": "0:28",
-      "duration_seconds": 28.2,
-      "source_url": "https://suno.com/song/9b71e58b-983c-4e74-a948-bb1d36cd550a",
-      "review": "first-take-review",
-      "sha256": "7fb4e6b6bd9c6c4f2b63db31539cd8749e8aa88012d1d5a2c2b070e1a13cd916"
+      "src": "assets/audio/closing-1667d4b2e73a.mp3",
+      "duration_label": "0:19",
+      "duration_seconds": 18.931020408163267,
+      "review": "approved",
+      "sha256": "1667d4b2e73a25581d83a685cad5622192eadbd783827c1196e733020a751aff",
+      "source_provider": "ElevenLabs",
+      "source_provenance": "production/closing-baritone.json"
     }
   ]
 }

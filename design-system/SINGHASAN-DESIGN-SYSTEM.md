@@ -144,3 +144,9 @@ The Poet page includes the complete prepared set of sixteen individual portraits
 ## Profile posts archive · 19 November 2026
 
 Maintain `posts-archive.html` as a dedicated dated archive of confirmed posts prepared for the poet’s profile. Link it from `author.html`, and provide return links to the Poet page and his Facebook profile. Reuse the shared masthead, footer, palette and script fonts. Show exact saved captions and uncropped approved images; video controls never autoplay. Preserve originals and private posting evidence outside deployment. Do not imply a draft was published or invent missing captions, dates or permalinks. Keep uncertainty and reconciliation work private; explicitly describe any missing caption in the public entry. Redact private contact details from public documentary reproductions and retain the unaltered original privately. New successful posting work should update the maintained archive data and retain a private verification receipt.
+
+## Book description correction · 22 November 2026
+
+The family’s approved Home introduction is: “Among Pravakar Satapathy’s many published books, Singhasan is a popular and significant collection of Odia poetry.” Keep the opening eyebrow concise and retain the context that he wrote the collection while actively involved in politics. Home, Our Story, the back cover and internal editorial guidance must not describe Singhasan as his first book or first collection. This supersedes the earlier first-book description. The change concerns editorial copy about the book; preserve the author’s original Odia preface, ସିଂହଦ୍ୱାର, and the poems unchanged.
+
+The English welcome uses Nicole’s “Natural Narrative & Audiobook” reading immediately before ସିଂହଦ୍ୱାର. The English closing uses “Cinematic Baritone Storyteller for Audiobooks & Youtube” after poem 68. Both recordings use the instrumental “Quiet Lamp of Dawn” softly under the narration, with a short fade after the final words.

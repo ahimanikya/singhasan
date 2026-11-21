@@ -1,0 +1,21 @@
+{
+  "track_id": "closing",
+  "source_provider": "ElevenLabs",
+  "voice": "Cinematic Baritone Storyteller for Audiobooks & Youtube",
+  "model": "Eleven v4",
+  "take": 1,
+  "language": "en",
+  "script": "You have been listening to Singhasan by Pravakar Satapathy. Thank you for spending this time with his poems. You can return to any poem, read its words, or explore its illustrations on the book’s website. Until next time, keep a little room for poetry.",
+  "source_text_sha256": "d30d0aa04f5a63d8b2c83bbac574ff79c74caaa45190bf4ebcbf5213fb0786fd",
+  "audio_sha256": "1667d4b2e73a25581d83a685cad5622192eadbd783827c1196e733020a751aff",
+  "byte_length": 759684,
+  "samples": 834858,
+  "sample_rate": 44100,
+  "narration_sha256": "b8901fd89cee560586cf23919fd1c739c7fe21348fe353e88771cf743005a0be",
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "excerpt": "ending"
+  }
+}

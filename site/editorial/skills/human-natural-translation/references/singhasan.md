@@ -1,6 +1,6 @@
 # Singhasan application
 
-This is Pravakar Satapathy's first book, written during his involvement in politics. Preserve the correlations between political life, mythology, history, and ordinary people without inventing his party, office, or intentions beyond the text.
+Among Pravakar Satapathy’s many published books, Singhasan is a popular and significant collection of Odia poetry, written during his involvement in politics. This is the family’s corrected description, confirmed on 22 November 2026; do not describe it as his first book or first collection. Preserve the correlations between political life, mythology, history, and ordinary people without inventing his party, office, or intentions beyond the text. This correction concerns the website’s editorial introduction and related descriptive copy; it does not authorize rewriting the original Odia preface, ସିଂହଦ୍ୱାର.
 
 Resolve the current repository from the workspace. Its current location is `output/singhasan-edition` within Poem Without Borders; do not assume that absolute machine path on another installation.
 

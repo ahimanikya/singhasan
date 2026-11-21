@@ -96,16 +96,24 @@ for track in audio:
         assert track==json.loads((root.parent/'introduction-audio.json').read_text())
     if track.get('source_provenance'):
         manifest=json.loads((root.parent/track['source_provenance']).read_text())
-        section=next(c for c in book['chapters'] if c['number']==(track['poem'] or 0))
-        text='\n\n'.join(p['text'] for p in section['pages'])
-        assert manifest['source_title']==section['title']
-        if track['id']=='introduction':
-            assert track['label']==section['title']
+        assert isinstance(manifest['source_provider'],str) and manifest['source_provider'].strip()
         assert manifest['source_provider']==track['source_provider']
-        assert manifest['source_text_sha256']==hashlib.sha256(text.encode()).hexdigest()
         assert manifest['audio_sha256']==track['sha256'] and manifest['byte_length']==file.stat().st_size
+        assert type(manifest['samples']) is int and manifest['samples']>0
+        assert type(manifest['sample_rate']) is int and manifest['sample_rate']>0
         assert abs(manifest['samples']/manifest['sample_rate']-track['duration_seconds'])<0.001
-        source_stanza_hashes[track['id']]=manifest['source_stanzas_sha256']
+        if track['id'] in ('welcome','closing'):
+            assert manifest['track_id']==track['id']
+            text=manifest['script']
+            assert isinstance(text,str) and text.strip(), f"Missing English script: {track['id']}"
+        else:
+            section=next(c for c in book['chapters'] if c['number']==(track['poem'] or 0))
+            text='\n\n'.join(p['text'] for p in section['pages'])
+            assert manifest['source_title']==section['title']
+            if track['id']=='introduction':
+                assert track['label']==section['title']
+            source_stanza_hashes[track['id']]=manifest['source_stanzas_sha256']
+        assert manifest['source_text_sha256']==hashlib.sha256(text.encode()).hexdigest()
 print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')
 
 # Listen-along cues reference this exact recording and current editorial text.

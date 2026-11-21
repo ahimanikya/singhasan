@@ -10,12 +10,14 @@ root=Path(__file__).resolve().parent
 run=json.loads(args.run.read_text())
 catalog=[]
 catalog_file=root/'audio-edition.json'
-# A new import of the original production run must retain later approved poem readings.
+# Reimporting the original run must retain later approved readings and narration.
 published=json.loads(catalog_file.read_text())['tracks'] if catalog_file.exists() else []
-replacement_poems={t['poem']:t for t in published if t.get('poem') and t.get('source_provenance')}
+replacement_tracks={t['id']:t for t in published if t.get('source_provenance') and (t.get('poem') or t['id'] in ('welcome','closing'))}
 for track in [{**run['opening'],'kind':'welcome'},*run['tracks'],{**run['closing'],'kind':'closing'}]:
-    if track.get('section') in replacement_poems:
-        catalog.append(replacement_poems[track['section']])
+    number=track.get('section')
+    identifier=f'poem-{number}' if number else track['kind']
+    if identifier in replacement_tracks:
+        catalog.append(replacement_tracks[identifier])
         continue
     if not track.get('selected'):
         continue
@@ -32,8 +34,6 @@ for track in [{**run['opening'],'kind':'welcome'},*run['tracks'],{**run['closing
         raise ValueError(f'Duration mismatch for {track["title"]}')
     if source.stat().st_size<1000 or source.read_bytes()[:100].startswith(b'version https://git-lfs'):
         raise ValueError('Invalid audio file')
-    number=track.get('section')
-    identifier=f'poem-{number}' if number else track['kind']
     stem=f'poem-{number:02}' if number else track['kind']
     filename=f'{stem}-{take["url"].rsplit("/",1)[1][:8]}.mp3'
     dest=root/'dist/assets/audio'/filename
