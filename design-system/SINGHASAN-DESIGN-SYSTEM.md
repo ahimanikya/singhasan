@@ -152,3 +152,7 @@ The family’s approved Home introduction is: “Among Pravakar Satapathy’s ma
 The English welcome uses Nicole’s “Natural Narrative & Audiobook” reading immediately before ସିଂହଦ୍ୱାର. The English closing uses “Cinematic Baritone Storyteller for Audiobooks & Youtube” after poem 68. Both recordings use the instrumental “Quiet Lamp of Dawn” softly under the narration, with a short fade after the final words.
 
 The Odia preface ସିଂହଦ୍ୱାର also uses “Quiet Lamp of Dawn” beneath the full spoken narration. Keep the narrator’s original pace and align the Odia highlighting to the voice.
+
+## Numbered poems · 22 November 2026
+
+For all 68 poems, use the older “Pravakar Satpathy — Odia” voice in a soft, unhurried poetic reading with light hiss reduction. Keep the approved performances for poems 1–3. Mix “Quiet Lamp of Dawn” quietly beneath each poem and let it fade after the last words. Match the Odia highlighting to the finished recording and retain any specific listening or timing uncertainty in its review record.

@@ -1,0 +1,38 @@
+{
+  "source_title": "କବିତା ୯",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "c3ae5e344a033ae915c23f6e0c599f3c813e897d3d80d69c7f3da6741ea1b8a7",
+  "source_stanzas_sha256": "26a40497059dace80cab8096681570be7b9480ffe0ae787d07004586438ff73a",
+  "byte_length": 2269561,
+  "audio_sha256": "81c99d1f32109510644064f43b72cf9e14d0f71c771c8c4292a4c866f00fad91",
+  "sample_rate": 44100,
+  "samples": 2499485,
+  "decoded_pcm_sha256": "c6ec4e4f0da6ad4a25a82c204ee41746b10016ef0f286a74a92edc57a363f1ba",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "softer poetic narration with instrumental bed",
+  "sync_method": "Fresh recording-specific MMS_FA acoustic alignment; no guessed timing or proportional scaling",
+  "narration_audio_sha256": "b7106f6a33e503dee355f3e51d832fa2b904ef8faf63004fd9511e08c2106be4",
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Quiet instrumental under the full approved narration."
+  },
+  "recorded_script_sha256": "a6163d3e38d81ec18f9e5f497be76af178e3c45ef842f863048630fc0924dc7b",
+  "generation_model": "Eleven v4",
+  "known_acoustic_uncertainties": [
+    {
+      "line": 3,
+      "text": "ଆଃ,",
+      "finding": "The source interjection corresponds to a distinct vocal event between the neighboring spoken phrases. The phonetic model does not reliably transcribe this expressive sound. Original low confidence is retained and its word highlight remains suppressed; no omission or word-perfect recovery is asserted.",
+      "vocal_event_seconds_approximate": [
+        6.92,
+        7.52
+      ],
+      "strongest_100ms_voice_rms_dbfs": -15.8,
+      "review_type": "AI technical review of source anchors, voice-only energy and acoustic output; not fluent listening"
+    }
+  ],
+  "narration_sha256": "b7106f6a33e503dee355f3e51d832fa2b904ef8faf63004fd9511e08c2106be4",
+  "review": "Machine acoustic and technical checks; pronunciation remains subject to human listening."
+}

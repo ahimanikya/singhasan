@@ -1,0 +1,25 @@
+{
+  "source_title": "କବିତା ୫୯",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "077ce05ca9736b8646eb1854fd12df1a4b94219e9024babc560da8c36ae5699d",
+  "source_stanzas_sha256": "ca5d2e7ca99d69657aa7a40e2b5a4ff737216191a9a5188629521d2b2483b2c3",
+  "byte_length": 2183879,
+  "audio_sha256": "c98908b0d2daaa94baa31c3f05becc2bf608a5da41b4c6e6a39285666bd031cb",
+  "sample_rate": 44100,
+  "samples": 2404535,
+  "decoded_pcm_sha256": "e415ebd811231ef026f24ea3b884c19cd0dd7d27b504d903c55f666950e78bd0",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "softer poetic narration with instrumental bed",
+  "sync_method": "Fresh recording-specific MMS_FA acoustic alignment; no guessed timing or proportional scaling",
+  "narration_audio_sha256": "b316b248268236e4652562ae7aa8028a071a9af19859672dbfcb1b7aa6d17af3",
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Quiet instrumental under the full approved narration."
+  },
+  "recorded_script_sha256": "cbed32851b87865084e36f8004c9afe27aac937818e3be697192b2ece741d1a8",
+  "generation_model": "Eleven v4",
+  "narration_sha256": "b316b248268236e4652562ae7aa8028a071a9af19859672dbfcb1b7aa6d17af3",
+  "review": "Machine acoustic and technical checks; pronunciation remains subject to human listening."
+}

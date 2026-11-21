@@ -3,19 +3,19 @@
   "id": "poem-1",
   "section": 1,
   "language": "or",
-  "audioSha256": "4d96b3e73826b34cf4d8f465ac75d5daa012fdcc1260115d7dc7964659ad52cd",
+  "audioSha256": "c77784cacb0bf80fbb88ab9a504e935e480a1023bc1d92d6c97c4defce44652b",
   "textSha256": "32a5c2f895545b1144b4e1573be1ea2f6458ce7fac969f91e3edb95a0d98a60d",
   "method": "Fresh MMS_FA acoustic forced alignment of delivered MP3; uroman ori; 20s inference chunks with1s context,20ms frames. Exact corrected source anchors; audio time begins at decoded MP3 zero, no video offset.",
   "review": "User-selected performance; machine acoustic screening only. Scores and greedy comparison do not certify fluent pronunciation or word-perfect spoken completeness.",
-  "duration": 78.78793650793651,
-  "decodedSamples": 3474548,
+  "duration": 81.28793650793651,
+  "decodedSamples": 3584798,
   "sampleRate": 44100,
   "wordCount": 138,
-  "meanScore": 0.9319,
+  "meanScore": 0.9339,
   "lowScoreWords": 0,
   "partialCoverage": false,
   "syncSafe": true,
-  "coverageNote": "All48 current source lines have acoustic anchors. Machine screening is not fluent-reader certification. Low-confidence words are excluded from highlighting by the reader.",
+  "coverageNote": "All 48 current source lines have acoustic anchors. Machine screening is not fluent-reader certification. Low-confidence words are excluded from highlighting by the reader. The first line remains acoustically uncertain in this approved performance; adding music does not resolve that prior uncertainty.",
   "omittedWordCount": 0,
   "omittedLines": [],
   "omittedWords": [],
@@ -31,7 +31,7 @@
       "romanized": "sabu",
       "start": 0.32,
       "end": 0.6,
-      "score": 0.5233
+      "score": 0.5727
     },
     {
       "line": 0,
@@ -42,7 +42,7 @@
       "romanized": "tthik",
       "start": 0.7,
       "end": 1.04,
-      "score": 0.4774
+      "score": 0.5076
     },
     {
       "line": 0,
@@ -53,7 +53,7 @@
       "romanized": "thilaa",
       "start": 1.12,
       "end": 1.44,
-      "score": 0.4224
+      "score": 0.4269
     },
     {
       "line": 1,
@@ -64,7 +64,7 @@
       "romanized": "gaaii",
       "start": 2.6,
       "end": 2.9,
-      "score": 0.7654
+      "score": 0.7644
     },
     {
       "line": 1,
@@ -75,7 +75,7 @@
       "romanized": "caruthile",
       "start": 2.94,
       "end": 3.46,
-      "score": 0.888
+      "score": 0.8968
     },
     {
       "line": 2,
@@ -86,7 +86,7 @@
       "romanized": "saaraa",
       "start": 3.56,
       "end": 3.88,
-      "score": 0.9043
+      "score": 0.9198
     },
     {
       "line": 2,
@@ -97,7 +97,7 @@
       "romanized": "paddiaare",
       "start": 3.92,
       "end": 4.38,
-      "score": 0.9546
+      "score": 0.9633
     },
     {
       "line": 3,
@@ -108,7 +108,7 @@
       "romanized": "caaranna",
       "start": 4.94,
       "end": 5.36,
-      "score": 0.9039
+      "score": 0.9143
     },
     {
       "line": 3,
@@ -119,7 +119,7 @@
       "romanized": "bhuuimra",
       "start": 5.42,
       "end": 5.76,
-      "score": 0.8195
+      "score": 0.831
     },
     {
       "line": 3,
@@ -130,7 +130,7 @@
       "romanized": "gaalicaare",
       "start": 5.84,
       "end": 6.4,
-      "score": 0.981
+      "score": 0.9804
     },
     {
       "line": 4,
@@ -141,7 +141,7 @@
       "romanized": "ghaasaphula",
       "start": 7.02,
       "end": 7.64,
-      "score": 0.941
+      "score": 0.9466
     },
     {
       "line": 4,
@@ -152,7 +152,7 @@
       "romanized": "phuttuthilaa",
       "start": 7.68,
       "end": 8.26,
-      "score": 0.9491
+      "score": 0.9422
     },
     {
       "line": 5,
@@ -163,7 +163,7 @@
       "romanized": "hareka",
       "start": 8.32,
       "end": 8.74,
-      "score": 0.9015
+      "score": 0.9068
     },
     {
       "line": 5,
@@ -174,7 +174,7 @@
       "romanized": "ramgare",
       "start": 8.78,
       "end": 9.18,
-      "score": 0.8566
+      "score": 0.8585
     },
     {
       "line": 6,
@@ -185,7 +185,7 @@
       "romanized": "gaaiiaalla",
       "start": 9.84,
       "end": 10.3,
-      "score": 0.857
+      "score": 0.8928
     },
     {
       "line": 6,
@@ -194,9 +194,9 @@
       "stanza": 1,
       "text": "ପିଲା",
       "romanized": "pilaa",
-      "start": 10.36,
+      "start": 10.38,
       "end": 10.66,
-      "score": 0.9964
+      "score": 0.9966
     },
     {
       "line": 7,
@@ -207,7 +207,7 @@
       "romanized": "kadamba",
       "start": 11.02,
       "end": 11.48,
-      "score": 0.9772
+      "score": 0.9819
     },
     {
       "line": 7,
@@ -218,7 +218,7 @@
       "romanized": "ddaallaru",
       "start": 11.52,
       "end": 11.92,
-      "score": 0.9936
+      "score": 0.9944
     },
     {
       "line": 8,
@@ -229,7 +229,7 @@
       "romanized": "phumkuthilaa",
       "start": 12.04,
       "end": 12.72,
-      "score": 0.9034
+      "score": 0.9103
     },
     {
       "line": 8,
@@ -240,7 +240,7 @@
       "romanized": "shussuri",
       "start": 12.74,
       "end": 13.16,
-      "score": 0.7502
+      "score": 0.7517
     },
     {
       "line": 9,
@@ -251,7 +251,7 @@
       "romanized": "saapa",
       "start": 13.78,
       "end": 14.12,
-      "score": 0.8757
+      "score": 0.8812
     },
     {
       "line": 9,
@@ -262,7 +262,7 @@
       "romanized": "o",
       "start": 14.3,
       "end": 14.32,
-      "score": 0.9897
+      "score": 0.9909
     },
     {
       "line": 9,
@@ -273,7 +273,7 @@
       "romanized": "sariisrpamaane",
       "start": 14.42,
       "end": 15.28,
-      "score": 0.9163
+      "score": 0.9101
     },
     {
       "line": 10,
@@ -284,7 +284,7 @@
       "romanized": "shunnuthile",
       "start": 15.68,
       "end": 16.2,
-      "score": 0.9818
+      "score": 0.9809
     },
     {
       "line": 10,
@@ -295,7 +295,7 @@
       "romanized": "giita",
       "start": 16.28,
       "end": 16.52,
-      "score": 0.8031
+      "score": 0.8042
     },
     {
       "line": 11,
@@ -306,7 +306,7 @@
       "romanized": "jhagaddaare",
       "start": 17.22,
       "end": 17.72,
-      "score": 0.9735
+      "score": 0.9777
     },
     {
       "line": 11,
@@ -317,7 +317,7 @@
       "romanized": "suutrapaata",
       "start": 17.78,
       "end": 18.4,
-      "score": 0.8132
+      "score": 0.8226
     },
     {
       "line": 11,
@@ -328,7 +328,7 @@
       "romanized": "helaa",
       "start": 18.4,
       "end": 18.66,
-      "score": 0.8367
+      "score": 0.9094
     },
     {
       "line": 12,
@@ -339,7 +339,7 @@
       "romanized": "kaaminii",
       "start": 19.12,
       "end": 19.5,
-      "score": 0.8313
+      "score": 0.8306
     },
     {
       "line": 12,
@@ -350,7 +350,7 @@
       "romanized": "kaamcana",
       "start": 19.52,
       "end": 19.96,
-      "score": 0.92
+      "score": 0.9167
     },
     {
       "line": 12,
@@ -361,7 +361,7 @@
       "romanized": "kichi",
       "start": 20.08,
       "end": 20.38,
-      "score": 0.9691
+      "score": 0.9658
     },
     {
       "line": 12,
@@ -372,7 +372,7 @@
       "romanized": "bi",
       "start": 20.42,
       "end": 20.48,
-      "score": 0.986
+      "score": 0.9866
     },
     {
       "line": 12,
@@ -383,7 +383,7 @@
       "romanized": "nathilaa",
       "start": 20.56,
       "end": 20.96,
-      "score": 0.9293
+      "score": 0.9286
     },
     {
       "line": 13,
@@ -394,7 +394,7 @@
       "romanized": "jhagaddaa",
       "start": 21.26,
       "end": 21.7,
-      "score": 0.9014
+      "score": 0.9185
     },
     {
       "line": 13,
@@ -405,7 +405,7 @@
       "romanized": "baddhilaa",
       "start": 21.7,
       "end": 22.1,
-      "score": 0.9905
+      "score": 0.9772
     },
     {
       "line": 14,
@@ -416,7 +416,7 @@
       "romanized": "bhaallenni",
       "start": 22.76,
       "end": 23.14,
-      "score": 0.8756
+      "score": 0.8949
     },
     {
       "line": 14,
@@ -427,7 +427,7 @@
       "romanized": "paddilaa",
       "start": 23.2,
       "end": 23.58,
-      "score": 0.9882
+      "score": 0.987
     },
     {
       "line": 15,
@@ -438,7 +438,7 @@
       "romanized": "ghattiyiba",
       "start": 24.16,
       "end": 24.7,
-      "score": 0.9927
+      "score": 0.9942
     },
     {
       "line": 15,
@@ -449,7 +449,7 @@
       "romanized": "ki",
       "start": 24.78,
       "end": 24.84,
-      "score": 0.9955
+      "score": 0.9952
     },
     {
       "line": 16,
@@ -460,7 +460,7 @@
       "romanized": "gottaae",
       "start": 24.9,
       "end": 25.22,
-      "score": 0.9882
+      "score": 0.9873
     },
     {
       "line": 16,
@@ -471,7 +471,7 @@
       "romanized": "aghattanna",
       "start": 25.3,
       "end": 25.76,
-      "score": 0.9668
+      "score": 0.9753
     },
     {
       "line": 17,
@@ -482,7 +482,7 @@
       "romanized": "jalli",
       "start": 26.4,
       "end": 26.64,
-      "score": 0.973
+      "score": 0.9677
     },
     {
       "line": 17,
@@ -493,7 +493,7 @@
       "romanized": "yiba",
       "start": 26.7,
       "end": 26.9,
-      "score": 0.9577
+      "score": 0.9722
     },
     {
       "line": 17,
@@ -504,7 +504,7 @@
       "romanized": "ki",
       "start": 26.98,
       "end": 27.06,
-      "score": 0.9955
+      "score": 0.9958
     },
     {
       "line": 17,
@@ -515,7 +515,7 @@
       "romanized": "gaam",
       "start": 27.18,
       "end": 27.42,
-      "score": 0.822
+      "score": 0.8429
     },
     {
       "line": 17,
@@ -526,7 +526,7 @@
       "romanized": "bilabanna",
       "start": 27.46,
       "end": 27.94,
-      "score": 0.9591
+      "score": 0.9667
     },
     {
       "line": 18,
@@ -537,7 +537,7 @@
       "romanized": "uddaaineba",
       "start": 28.54,
       "end": 29.08,
-      "score": 0.974
+      "score": 0.9377
     },
     {
       "line": 18,
@@ -548,7 +548,7 @@
       "romanized": "ki",
       "start": 29.14,
       "end": 29.22,
-      "score": 0.9963
+      "score": 0.9961
     },
     {
       "line": 18,
@@ -559,7 +559,7 @@
       "romanized": "pabana",
       "start": 29.32,
       "end": 29.72,
-      "score": 0.9911
+      "score": 0.9921
     },
     {
       "line": 18,
@@ -570,7 +570,7 @@
       "romanized": "deharu",
       "start": 29.78,
       "end": 30.08,
-      "score": 0.9972
+      "score": 0.9973
     },
     {
       "line": 18,
@@ -581,7 +581,7 @@
       "romanized": "basana",
       "start": 30.12,
       "end": 30.54,
-      "score": 0.9965
+      "score": 0.9275
     },
     {
       "line": 19,
@@ -592,7 +592,7 @@
       "romanized": "libhiyiba",
       "start": 31.16,
       "end": 31.7,
-      "score": 0.9934
+      "score": 0.9933
     },
     {
       "line": 19,
@@ -602,8 +602,8 @@
       "text": "କି",
       "romanized": "ki",
       "start": 31.76,
-      "end": 31.82,
-      "score": 0.994
+      "end": 31.84,
+      "score": 0.9949
     },
     {
       "line": 20,
@@ -614,7 +614,7 @@
       "romanized": "kadamba",
       "start": 31.92,
       "end": 32.36,
-      "score": 0.994
+      "score": 0.9942
     },
     {
       "line": 20,
@@ -625,7 +625,7 @@
       "romanized": "ddaallaru",
       "start": 32.38,
       "end": 32.74,
-      "score": 0.9613
+      "score": 0.9668
     },
     {
       "line": 20,
@@ -636,7 +636,7 @@
       "romanized": "bhaasi",
       "start": 32.8,
       "end": 33.1,
-      "score": 0.9879
+      "score": 0.9911
     },
     {
       "line": 20,
@@ -647,7 +647,7 @@
       "romanized": "aasuthibaa",
       "start": 33.18,
       "end": 33.66,
-      "score": 0.9714
+      "score": 0.9324
     },
     {
       "line": 20,
@@ -658,7 +658,7 @@
       "romanized": "bamshiisvana",
       "start": 33.68,
       "end": 34.34,
-      "score": 0.8327
+      "score": 0.8132
     },
     {
       "line": 21,
@@ -669,7 +669,7 @@
       "romanized": "jhaddipaddibe",
       "start": 35.0,
       "end": 35.64,
-      "score": 0.9594
+      "score": 0.941
     },
     {
       "line": 21,
@@ -680,7 +680,7 @@
       "romanized": "ki",
       "start": 35.72,
       "end": 35.78,
-      "score": 0.9926
+      "score": 0.9933
     },
     {
       "line": 21,
@@ -691,7 +691,7 @@
       "romanized": "khamdda",
       "start": 35.86,
       "end": 36.22,
-      "score": 0.8571
+      "score": 0.819
     },
     {
       "line": 21,
@@ -702,7 +702,7 @@
       "romanized": "khamdda",
       "start": 36.24,
       "end": 36.56,
-      "score": 0.8541
+      "score": 0.8545
     },
     {
       "line": 21,
@@ -713,7 +713,7 @@
       "romanized": "hoi",
       "start": 36.6,
       "end": 36.74,
-      "score": 0.9976
+      "score": 0.9971
     },
     {
       "line": 22,
@@ -724,7 +724,7 @@
       "romanized": "nabha",
       "start": 37.14,
       "end": 37.42,
-      "score": 0.9041
+      "score": 0.8868
     },
     {
       "line": 22,
@@ -735,7 +735,7 @@
       "romanized": "o",
       "start": 37.6,
       "end": 37.62,
-      "score": 0.9859
+      "score": 0.9852
     },
     {
       "line": 22,
@@ -746,7 +746,7 @@
       "romanized": "nakssatramaana",
       "start": 37.7,
       "end": 38.46,
-      "score": 0.9698
+      "score": 0.9679
     },
     {
       "line": 23,
@@ -757,7 +757,7 @@
       "romanized": "uddiyiba",
       "start": 39.1,
       "end": 39.54,
-      "score": 0.9859
+      "score": 0.9919
     },
     {
       "line": 23,
@@ -768,7 +768,7 @@
       "romanized": "ki",
       "start": 39.62,
       "end": 39.7,
-      "score": 0.996
+      "score": 0.9966
     },
     {
       "line": 24,
@@ -779,7 +779,7 @@
       "romanized": "mutthaae",
       "start": 39.78,
       "end": 40.16,
-      "score": 0.9748
+      "score": 0.9762
     },
     {
       "line": 24,
@@ -790,7 +790,7 @@
       "romanized": "paaumsha",
       "start": 40.24,
       "end": 40.62,
-      "score": 0.9758
+      "score": 0.9677
     },
     {
       "line": 24,
@@ -801,7 +801,7 @@
       "romanized": "hoi",
       "start": 40.68,
       "end": 40.82,
-      "score": 0.9969
+      "score": 0.9967
     },
     {
       "line": 25,
@@ -812,7 +812,7 @@
       "romanized": "pracamdda",
       "start": 41.14,
       "end": 41.68,
-      "score": 0.8848
+      "score": 0.8844
     },
     {
       "line": 25,
@@ -823,7 +823,7 @@
       "romanized": "suuryara",
       "start": 41.74,
       "end": 42.22,
-      "score": 0.9356
+      "score": 0.9519
     },
     {
       "line": 25,
@@ -834,7 +834,7 @@
       "romanized": "teja",
       "start": 42.36,
       "end": 42.7,
-      "score": 0.9697
+      "score": 0.9722
     },
     {
       "line": 25,
@@ -845,7 +845,7 @@
       "romanized": "o",
       "start": 42.86,
       "end": 42.88,
-      "score": 0.9775
+      "score": 0.984
     },
     {
       "line": 25,
@@ -856,7 +856,7 @@
       "romanized": "gumaana",
       "start": 42.98,
       "end": 43.38,
-      "score": 0.9334
+      "score": 0.9868
     },
     {
       "line": 26,
@@ -867,7 +867,7 @@
       "romanized": "chiddiyiba",
       "start": 43.98,
       "end": 44.52,
-      "score": 0.9828
+      "score": 0.982
     },
     {
       "line": 26,
@@ -878,7 +878,7 @@
       "romanized": "ki",
       "start": 44.6,
       "end": 44.68,
-      "score": 0.9952
+      "score": 0.9957
     },
     {
       "line": 27,
@@ -889,7 +889,7 @@
       "romanized": "yoddibaara",
       "start": 44.76,
       "end": 45.24,
-      "score": 0.8799
+      "score": 0.8867
     },
     {
       "line": 27,
@@ -900,7 +900,7 @@
       "romanized": "sabu",
       "start": 45.3,
       "end": 45.54,
-      "score": 0.9896
+      "score": 0.9982
     },
     {
       "line": 27,
@@ -911,7 +911,7 @@
       "romanized": "suutra",
       "start": 45.62,
       "end": 46.0,
-      "score": 0.8353
+      "score": 0.8356
     },
     {
       "line": 28,
@@ -922,7 +922,7 @@
       "romanized": "manaku",
       "start": 46.08,
       "end": 46.44,
-      "score": 0.9774
+      "score": 0.9924
     },
     {
       "line": 28,
@@ -933,7 +933,7 @@
       "romanized": "mana",
       "start": 46.5,
       "end": 46.72,
-      "score": 0.9852
+      "score": 0.9796
     },
     {
       "line": 29,
@@ -944,7 +944,7 @@
       "romanized": "araajakataa",
       "start": 47.38,
       "end": 48.06,
-      "score": 0.9553
+      "score": 0.9927
     },
     {
       "line": 29,
@@ -955,7 +955,7 @@
       "romanized": "ajagara",
       "start": 48.16,
       "end": 48.62,
-      "score": 0.9321
+      "score": 0.9134
     },
     {
       "line": 30,
@@ -966,7 +966,7 @@
       "romanized": "gillideba",
       "start": 49.04,
       "end": 49.54,
-      "score": 0.9257
+      "score": 0.929
     },
     {
       "line": 30,
@@ -977,7 +977,7 @@
       "romanized": "ki",
       "start": 49.62,
       "end": 49.7,
-      "score": 0.9958
+      "score": 0.9967
     },
     {
       "line": 31,
@@ -987,8 +987,8 @@
       "text": "ଦେଶ",
       "romanized": "desha",
       "start": 49.82,
-      "end": 50.12,
-      "score": 0.9704
+      "end": 50.14,
+      "score": 0.9658
     },
     {
       "line": 31,
@@ -999,7 +999,7 @@
       "romanized": "o",
       "start": 50.3,
       "end": 50.32,
-      "score": 0.9887
+      "score": 0.9918
     },
     {
       "line": 31,
@@ -1010,7 +1010,7 @@
       "romanized": "shaasana",
       "start": 50.42,
       "end": 50.88,
-      "score": 0.9821
+      "score": 0.9815
     },
     {
       "line": 32,
@@ -1021,7 +1021,7 @@
       "romanized": "emiti",
       "start": 51.84,
       "end": 52.2,
-      "score": 0.8869
+      "score": 0.9719
     },
     {
       "line": 32,
@@ -1032,7 +1032,7 @@
       "romanized": "aakaashe",
       "start": 52.36,
       "end": 52.84,
-      "score": 0.9752
+      "score": 0.9352
     },
     {
       "line": 32,
@@ -1043,7 +1043,7 @@
       "romanized": "aashamkaaku",
       "start": 52.98,
       "end": 53.6,
-      "score": 0.8214
+      "score": 0.8424
     },
     {
       "line": 32,
@@ -1054,7 +1054,7 @@
       "romanized": "micha",
       "start": 53.68,
       "end": 53.96,
-      "score": 0.9902
+      "score": 0.9877
     },
     {
       "line": 32,
@@ -1065,7 +1065,7 @@
       "romanized": "kari",
       "start": 54.02,
       "end": 54.22,
-      "score": 0.998
+      "score": 0.9983
     },
     {
       "line": 33,
@@ -1076,7 +1076,7 @@
       "romanized": "keumtthi",
       "start": 54.68,
       "end": 55.08,
-      "score": 0.956
+      "score": 0.9519
     },
     {
       "line": 33,
@@ -1087,7 +1087,7 @@
       "romanized": "thilaa",
       "start": 55.14,
       "end": 55.42,
-      "score": 0.9878
+      "score": 0.9875
     },
     {
       "line": 33,
@@ -1098,7 +1098,7 @@
       "romanized": "kejaanni",
       "start": 55.44,
       "end": 55.8,
-      "score": 0.9788
+      "score": 0.9744
     },
     {
       "line": 34,
@@ -1109,7 +1109,7 @@
       "romanized": "dauddi",
       "start": 56.36,
       "end": 56.68,
-      "score": 0.9959
+      "score": 0.9954
     },
     {
       "line": 34,
@@ -1120,7 +1120,7 @@
       "romanized": "aasilaa",
       "start": 56.74,
       "end": 57.1,
-      "score": 0.9278
+      "score": 0.9433
     },
     {
       "line": 35,
@@ -1131,7 +1131,7 @@
       "romanized": "sunaa",
       "start": 57.14,
       "end": 57.46,
-      "score": 0.9592
+      "score": 0.9595
     },
     {
       "line": 35,
@@ -1142,7 +1142,7 @@
       "romanized": "ramgara",
       "start": 57.48,
       "end": 57.86,
-      "score": 0.8649
+      "score": 0.8467
     },
     {
       "line": 35,
@@ -1153,7 +1153,7 @@
       "romanized": "sakaalla",
       "start": 57.94,
       "end": 58.34,
-      "score": 0.9646
+      "score": 0.9833
     },
     {
       "line": 35,
@@ -1164,7 +1164,7 @@
       "romanized": "pari",
       "start": 58.4,
       "end": 58.58,
-      "score": 0.9973
+      "score": 0.9977
     },
     {
       "line": 36,
@@ -1173,9 +1173,9 @@
       "stanza": 3,
       "text": "ସୁଠାମ",
       "romanized": "sutthaama",
-      "start": 58.68,
+      "start": 58.66,
       "end": 59.1,
-      "score": 0.9607
+      "score": 0.9663
     },
     {
       "line": 36,
@@ -1186,7 +1186,7 @@
       "romanized": "ttokaattie",
       "start": 59.14,
       "end": 59.68,
-      "score": 0.979
+      "score": 0.9488
     },
     {
       "line": 37,
@@ -1197,7 +1197,7 @@
       "romanized": "umcaa",
       "start": 60.28,
       "end": 60.58,
-      "score": 0.8015
+      "score": 0.796
     },
     {
       "line": 37,
@@ -1208,7 +1208,7 @@
       "romanized": "maatti",
       "start": 60.6,
       "end": 60.84,
-      "score": 0.9967
+      "score": 0.9963
     },
     {
       "line": 37,
@@ -1219,7 +1219,7 @@
       "romanized": "gadaa",
       "start": 60.92,
       "end": 61.2,
-      "score": 0.9721
+      "score": 0.9715
     },
     {
       "line": 37,
@@ -1230,7 +1230,7 @@
       "romanized": "uparu",
       "start": 61.24,
       "end": 61.52,
-      "score": 0.997
+      "score": 0.9972
     },
     {
       "line": 38,
@@ -1241,7 +1241,7 @@
       "romanized": "nirdeshilaa",
       "start": 61.88,
       "end": 62.54,
-      "score": 0.9644
+      "score": 0.9649
     },
     {
       "line": 38,
@@ -1252,7 +1252,7 @@
       "romanized": "raajaara",
       "start": 62.58,
       "end": 62.94,
-      "score": 0.9854
+      "score": 0.9857
     },
     {
       "line": 38,
@@ -1263,7 +1263,7 @@
       "romanized": "tthaannire",
       "start": 62.98,
       "end": 63.42,
-      "score": 0.9978
+      "score": 0.9979
     },
     {
       "line": 39,
@@ -1274,7 +1274,7 @@
       "romanized": "saamga",
       "start": 63.96,
       "end": 64.3,
-      "score": 0.9098
+      "score": 0.9157
     },
     {
       "line": 39,
@@ -1285,7 +1285,7 @@
       "romanized": "saathiimaane",
       "start": 64.34,
       "end": 64.88,
-      "score": 0.8978
+      "score": 0.9256
     },
     {
       "line": 39,
@@ -1296,7 +1296,7 @@
       "romanized": "prajaa",
       "start": 65.18,
       "end": 65.54,
-      "score": 0.9676
+      "score": 0.9516
     },
     {
       "line": 39,
@@ -1307,7 +1307,7 @@
       "romanized": "pari",
       "start": 65.58,
       "end": 65.76,
-      "score": 0.744
+      "score": 0.7839
     },
     {
       "line": 40,
@@ -1318,7 +1318,7 @@
       "romanized": "basirahile",
       "start": 65.82,
       "end": 66.38,
-      "score": 0.9932
+      "score": 0.9947
     },
     {
       "line": 40,
@@ -1328,8 +1328,8 @@
       "text": "ତଳେ,",
       "romanized": "talle",
       "start": 66.46,
-      "end": 66.7,
-      "score": 0.9968
+      "end": 66.68,
+      "score": 0.997
     },
     {
       "line": 41,
@@ -1340,7 +1340,7 @@
       "romanized": "hattttagolla",
       "start": 67.2,
       "end": 67.82,
-      "score": 0.7898
+      "score": 0.7765
     },
     {
       "line": 41,
@@ -1351,7 +1351,7 @@
       "romanized": "libhigalaa",
       "start": 67.88,
       "end": 68.38,
-      "score": 0.9906
+      "score": 0.9911
     },
     {
       "line": 42,
@@ -1362,7 +1362,7 @@
       "romanized": "muhuurtta",
       "start": 68.68,
       "end": 69.12,
-      "score": 0.8372
+      "score": 0.8133
     },
     {
       "line": 42,
@@ -1373,7 +1373,7 @@
       "romanized": "madhyare",
       "start": 69.16,
       "end": 69.6,
-      "score": 0.9492
+      "score": 0.9425
     },
     {
       "line": 43,
@@ -1383,8 +1383,8 @@
       "text": "ବିକ୍ରମାଦିତ୍ୟମାନଂକର",
       "romanized": "bikramaadityamaanamkara",
       "start": 70.24,
-      "end": 71.5,
-      "score": 0.9225
+      "end": 71.48,
+      "score": 0.9433
     },
     {
       "line": 44,
@@ -1395,7 +1395,7 @@
       "romanized": "kichi",
       "start": 71.54,
       "end": 71.78,
-      "score": 0.998
+      "score": 0.9978
     },
     {
       "line": 44,
@@ -1406,7 +1406,7 @@
       "romanized": "karaamati",
       "start": 71.86,
       "end": 72.32,
-      "score": 0.9329
+      "score": 0.9046
     },
     {
       "line": 44,
@@ -1428,7 +1428,7 @@
       "romanized": "thilaa",
       "start": 72.52,
       "end": 72.8,
-      "score": 0.9829
+      "score": 0.9605
     },
     {
       "line": 45,
@@ -1450,7 +1450,7 @@
       "romanized": "khollu",
       "start": 73.62,
       "end": 73.88,
-      "score": 0.9492
+      "score": 0.9464
     },
     {
       "line": 45,
@@ -1461,7 +1461,7 @@
       "romanized": "khollu",
       "start": 73.9,
       "end": 74.14,
-      "score": 0.8904
+      "score": 0.881
     },
     {
       "line": 45,
@@ -1483,7 +1483,7 @@
       "romanized": "umcaa",
       "start": 75.32,
       "end": 75.66,
-      "score": 0.8051
+      "score": 0.7827
     },
     {
       "line": 46,
@@ -1494,7 +1494,7 @@
       "romanized": "maattigadaa",
       "start": 75.68,
       "end": 76.26,
-      "score": 0.9225
+      "score": 0.9646
     },
     {
       "line": 46,
@@ -1505,7 +1505,7 @@
       "romanized": "talle",
       "start": 76.28,
       "end": 76.5,
-      "score": 0.9962
+      "score": 0.9949
     },
     {
       "line": 47,
@@ -1516,7 +1516,7 @@
       "romanized": "simhaasana",
       "start": 76.86,
       "end": 77.56,
-      "score": 0.9884
+      "score": 0.9883
     },
     {
       "line": 47,
@@ -1538,7 +1538,16 @@
       "romanized": "rahithilaa",
       "start": 77.94,
       "end": 78.42,
-      "score": 0.966
+      "score": 0.9793
+    }
+  ],
+  "knownUncertainties": [
+    {
+      "line": 0,
+      "text": "ସବୁ ଠିକ୍ ଥିଲା-",
+      "start": 0.32,
+      "end": 1.44,
+      "finding": "The original approved performance has a previously uncertain opening. Greedy acoustic output does not independently recover the full first line; a score crossing a threshold after adding music does not resolve it. No confirmed omission is asserted."
     }
   ]
 }
