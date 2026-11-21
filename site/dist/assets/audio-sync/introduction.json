@@ -3,10 +3,10 @@
   "id": "introduction",
   "section": 0,
   "language": "or",
-  "audioSha256": "0fcc72ef9a327df9aed31e7b3170fa79ebd88a1e41b34ae96bda6bf0c9c48ecd",
+  "audioSha256": "f1a03dcc01322b337bc430b73324b5264976741094682da339aaae7f9f92a3f8",
   "textSha256": "0ce196971697af8c95efc1dd46f06c6bfbd480b66ed863e54115087ec1706359",
   "sourceBookSha256": "1498ef37471369345420c38924c090b9d7d9831039f09632c80cd7c26de23df1",
-  "method": "MMS_FA acoustic forced alignment, uroman ori; cached recording-specific 20ms word spans; exact44.1kHz assembly sample offsets; source-exact reader anchors. Spoken numeric years grouped as one low-confidence phrase.",
+  "method": "MMS_FA acoustic forced alignment, uroman ori; cached recording-specific 20ms word spans; exact44.1kHz assembly sample offsets; source-exact reader anchors. Spoken numeric years grouped as one low-confidence phrase. The music mix retains the aligned narration at its original sample positions.",
   "review": "Approved recording; machine acoustic alignment. Fluent pronunciation and exact spoken-year verification remain unconfirmed. Low-confidence cues are not highlighted by the reader.",
   "duration": 1019.4808163265307,
   "wordCount": 2069,
@@ -25100,5 +25100,6 @@
       "score": 0.9266,
       "part": 19
     }
-  ]
+  ],
+  "alignedNarrationSha256": "0fcc72ef9a327df9aed31e7b3170fa79ebd88a1e41b34ae96bda6bf0c9c48ecd"
 }
