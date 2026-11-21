@@ -1,0 +1,12 @@
+{
+  "source_title": "କବିତା ୧",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "59106f45a2cf4e105545066ad3f5063609fd604723249101a3f787c37e1930b4",
+  "source_stanzas_sha256": "32a5c2f895545b1144b4e1573be1ea2f6458ce7fac969f91e3edb95a0d98a60d",
+  "byte_length": 1892771,
+  "audio_sha256": "4d96b3e73826b34cf4d8f465ac75d5daa012fdcc1260115d7dc7964659ad52cd",
+  "sample_rate": 44100,
+  "samples": 3474548,
+  "decoded_pcm_sha256": "701a01bd0fb6ffc488bceafb64b0a20dae2e8793f3199eaf33aae66f615fb70a",
+  "recorded_script_sha256": "5ad1f093fd257e8c693898e0e16e48a90bfd826b67d0694143e52e9b711684ed"
+}

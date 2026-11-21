@@ -82,6 +82,7 @@ audio=json.loads((root.parent/'audio-edition.json').read_text())['tracks']
 assert len({t['id'] for t in audio})==len(audio), 'Duplicate recording ID'
 sources=[source for t in audio for source in t.get('source_urls',[t.get('source_url') or t.get('source_provenance')])]
 assert all(sources) and len(set(sources))==len(sources), 'Missing or duplicate selected take'
+source_stanza_hashes={}
 for track in audio:
     file=root/track['src']
     assert file.is_file() and file.stat().st_size>1000, track['id']
@@ -93,14 +94,18 @@ for track in audio:
         assert 'read-along.html?track=introduction' in (root/'intro.html').read_text()
         assert [t['id'] for t in audio[:3]]==['welcome','introduction','poem-1']
         assert track==json.loads((root.parent/'introduction-audio.json').read_text())
+    if track.get('source_provenance'):
         manifest=json.loads((root.parent/track['source_provenance']).read_text())
-        section=book['chapters'][0]
+        section=next(c for c in book['chapters'] if c['number']==(track['poem'] or 0))
         text='\n\n'.join(p['text'] for p in section['pages'])
-        assert manifest['source_title']==section['title']==track['label']
+        assert manifest['source_title']==section['title']
+        if track['id']=='introduction':
+            assert track['label']==section['title']
         assert manifest['source_provider']==track['source_provider']
         assert manifest['source_text_sha256']==hashlib.sha256(text.encode()).hexdigest()
         assert manifest['audio_sha256']==track['sha256'] and manifest['byte_length']==file.stat().st_size
         assert abs(manifest['samples']/manifest['sample_rate']-track['duration_seconds'])<0.001
+        source_stanza_hashes[track['id']]=manifest['source_stanzas_sha256']
 print(f'Validated {len(audio)} available recordings, file hashes and poem listening links.')
 
 # Listen-along cues reference this exact recording and current editorial text.
@@ -117,8 +122,8 @@ for track in audio:
     source=json.dumps(stanzas,ensure_ascii=False,separators=(',',':')).encode()
     assert timing['audioSha256']==track['sha256'], f"Stale recording timings: {track['id']}"
     assert timing['textSha256']==hashlib.sha256(source).hexdigest(), f"Stale source timings: {track['id']}"
-    if track['id']=='introduction':
-        assert timing['textSha256']==manifest['source_stanzas_sha256']
+    if track['id'] in source_stanza_hashes:
+        assert timing['textSha256']==source_stanza_hashes[track['id']]
     assert timing['language']=='or' and timing['cues'], track['id']
     assert not timing.get('partialCoverage') or timing.get('syncSafe') is False, track['id']
     previous=0

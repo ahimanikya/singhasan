@@ -156,7 +156,7 @@ for track in follow_tracks:
     sync_file=DIST/'assets/audio-sync'/f'{track["id"]}.json'
     timing=json.loads(sync_file.read_text()) if sync_file.exists() else {}
     track['sync']='assets/audio-sync/'+sync_file.name if sync_file.exists() else None
-    if track['id']=='introduction' and track['sync']:
+    if track.get('source_provenance') and track['sync']:
         track['sync']+='?v='+hashlib.sha256(sync_file.read_bytes()).hexdigest()[:12]
     track['syncSafe']=timing.get('syncSafe',True)
     if not track['syncSafe']:

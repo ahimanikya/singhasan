@@ -9,7 +9,14 @@ args=parser.parse_args()
 root=Path(__file__).resolve().parent
 run=json.loads(args.run.read_text())
 catalog=[]
+catalog_file=root/'audio-edition.json'
+# A new import of the original production run must retain later approved poem readings.
+published=json.loads(catalog_file.read_text())['tracks'] if catalog_file.exists() else []
+replacement_poems={t['poem']:t for t in published if t.get('poem') and t.get('source_provenance')}
 for track in [{**run['opening'],'kind':'welcome'},*run['tracks'],{**run['closing'],'kind':'closing'}]:
+    if track.get('section') in replacement_poems:
+        catalog.append(replacement_poems[track['section']])
+        continue
     if not track.get('selected'):
         continue
     take=next(t for t in track['candidates'] if t['url']==track['selected'])
@@ -43,5 +50,5 @@ for track in [{**run['opening'],'kind':'welcome'},*run['tracks'],{**run['closing
 intro=root/'introduction-audio.json'
 if intro.exists():
     catalog.insert(1 if catalog and catalog[0]['id']=='welcome' else 0,json.loads(intro.read_text()))
-(root/'audio-edition.json').write_text(json.dumps({'tracks':catalog},ensure_ascii=False,indent=2)+'\n')
+catalog_file.write_text(json.dumps({'tracks':catalog},ensure_ascii=False,indent=2)+'\n')
 print(f'Imported and checked {len(catalog)} recordings.')
