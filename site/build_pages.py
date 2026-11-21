@@ -156,6 +156,8 @@ for track in follow_tracks:
     sync_file=DIST/'assets/audio-sync'/f'{track["id"]}.json'
     timing=json.loads(sync_file.read_text()) if sync_file.exists() else {}
     track['sync']='assets/audio-sync/'+sync_file.name if sync_file.exists() else None
+    if track['id']=='introduction' and track['sync']:
+        track['sync']+='?v='+hashlib.sha256(sync_file.read_bytes()).hexdigest()[:12]
     track['syncSafe']=timing.get('syncSafe',True)
     if not track['syncSafe']:
         track['syncNote']='Some passages in this recording still need a completeness review. Turn its pages manually; automatic following resumes with the poems.' if track['id']=='introduction' else 'The final passage in this recording still needs a completeness review. Turn its pages manually; automatic following resumes with the next poem.'
@@ -176,7 +178,7 @@ for i,c in enumerate(chapters):
     previous_link=f'<a href="{prev}" aria-label="Previous: {e(chapters[i-1]["title"])}"><span class="previous-arrow">{icon('next-poetic')}</span><span class="nav-label">Previous page</span></a>' if i else f'<a href="book.html" aria-label="Front cover"><span class="previous-arrow">{icon("next-poetic")}</span><span class="nav-label">Front cover</span></a>'
     next_link=f'<a href="{next_page}" aria-label="Next: {e(chapters[i+1]["title"])}"><span class="nav-label">Next page</span>{icon('next-poetic')}</a>' if i<len(chapters)-1 else f'<a href="back-cover.html" aria-label="Back cover"><span class="nav-label">Back cover</span>{icon("next-poetic")}</a>'
     body=f'''<article class="book-poem printed-spread">
-<div class="book-running-head"><a href="{path(c)}" lang="en">← {"Poem page" if c["number"] else "ସିଂହଦ୍ଵାର"}</a><a href="author.html" lang="or">ପ୍ରଭାକର ଶତପଥୀ</a></div>
+<div class="book-running-head"><a href="{path(c)}" lang="en">← {"Poem page" if c["number"] else "ସିଂହଦ୍ୱାର"}</a><a href="author.html" lang="or">ପ୍ରଭାକର ଶତପଥୀ</a></div>
 <header class="chapter-header poem-heading">{f'<p class="reader-meta" lang="en">{count}</p>' if count else ''}<h1 id="chapter-title">{e(c['title'])}</h1><p class="byline" lang="or"><a href="author.html"><img src="assets/writers/41-earth-voice-v1.png" width="52" height="52" alt=""><span lang="en">Pravakar Satapathy</span></a></p>{reader_toolkit(c)}<p id="reader-language-note" class="reader-language-note" lang="en" role="status" hidden></p></header>
 <div class="reader">{enhanced_body(c)}{poem_ending(c)}<div class="blank-leaf-art" hidden aria-hidden="true">{icon(("blank-leaf-throne","blank-leaf-reeds","blank-leaf-palm")[c["number"]%3])}</div></div>{nearby(c)}
 <div class="book-reading-end"><p class="book-folio" lang="en"><span class="sr-only">Page </span>{book_page(c):02}</p>

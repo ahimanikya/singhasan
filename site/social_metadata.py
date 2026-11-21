@@ -37,7 +37,7 @@ def page_details(route,chapters,illustrations):
     return {
         'author.html':('Meet Pravakar Satapathy, the Odia poet behind Singhasan, and explore his life and writing.','Portrait of Pravakar Satapathy'),
         'contact.html':('Write privately to Pravakar Satapathy’s family about his poetry or to arrange a visit.','Portrait of Pravakar Satapathy'),
-        'intro.html':('ସିଂହଦ୍ଵାର — Pravakar Satapathy reflects on poetry, power and the human world in the opening prose of Singhasan.','A flute beside still water, at the threshold of the book'),
+        'intro.html':('ସିଂହଦ୍ୱାର — Pravakar Satapathy reflects on poetry, power and the human world in the opening prose of Singhasan.','A flute beside still water, at the threshold of the book'),
         'contents.html':('Browse all sixty-eight poems and the opening prose of Singhasan by Pravakar Satapathy.','A stone throne, the recurring image of Singhasan'),
         'back-cover.html':('Power passes. The earth remembers. The closing cover of Singhasan by Pravakar Satapathy.','The closing landscape of Singhasan'),
         'listen.html':('Listen to the Odia poems of Singhasan by Pravakar Satapathy.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'),

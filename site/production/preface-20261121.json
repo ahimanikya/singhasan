@@ -1,0 +1,11 @@
+{
+  "source_provider": "ElevenLabs",
+  "source_title": "ସିଂହଦ୍ୱାର",
+  "source_text_sha256": "44d414da1c95dfb2bf5c245d5d62e5f202b93876fcbc322a2e31fab0952b2e6b",
+  "source_stanzas_sha256": "0ce196971697af8c95efc1dd46f06c6bfbd480b66ed863e54115087ec1706359",
+  "byte_length": 24468924,
+  "audio_sha256": "0fcc72ef9a327df9aed31e7b3170fa79ebd88a1e41b34ae96bda6bf0c9c48ecd",
+  "sample_rate": 44100,
+  "samples": 44959104,
+  "decoded_pcm_sha256": "62ca03d0d38845f69f58666fe6fbc689a3afa82752a867d8c031fc218162cc8e"
+}
