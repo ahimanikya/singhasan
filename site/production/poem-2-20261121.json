@@ -1,0 +1,12 @@
+{
+  "source_title": "କବିତା ୨",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "b5f696b984111a2f877df81d4f17f9e6e660a8e80161f7a3db47012cbcd1a2b4",
+  "source_stanzas_sha256": "4ce3bf3359b28270a2126f1efa9f70535686997b8ad50f817eb3c761bf2589f4",
+  "byte_length": 1094051,
+  "audio_sha256": "39d03b3f7a6213c24f9e64263085353ca683e310d0f300d304611f12758bf3fc",
+  "sample_rate": 44100,
+  "samples": 2007414,
+  "decoded_pcm_sha256": "080142321a32725cc66a5b1a5ab9ac7484cc50462f48108dce5bc64d4fb99af1",
+  "recorded_script_sha256": "684cb5094455cc0e93431b9be0871073ba58e1b8dad344d398cb11950ffbbda6"
+}

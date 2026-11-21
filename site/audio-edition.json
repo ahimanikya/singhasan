@@ -40,12 +40,13 @@
       "id": "poem-2",
       "poem": 2,
       "label": "Poem 02",
-      "src": "assets/audio/poem-02-fa2bf254.mp3",
-      "duration_label": "1:36",
-      "duration_seconds": 96.024,
-      "source_url": "https://suno.com/song/fa2bf254-91fe-48e6-a538-470ad2b82a74",
-      "review": "first-take-review",
-      "sha256": "a1522baca2e2235fcafd0ebde71130c8e12e6e5eac269fd88b15df49b5ce117b"
+      "src": "assets/audio/poem-02-39d03b3f7a62.mp3",
+      "duration_label": "0:46",
+      "duration_seconds": 45.51959183673469,
+      "review": "user-approved-softer-poetic-reading",
+      "sha256": "39d03b3f7a6213c24f9e64263085353ca683e310d0f300d304611f12758bf3fc",
+      "source_provider": "ElevenLabs",
+      "source_provenance": "production/poem-2-20261121.json"
     },
     {
       "id": "poem-3",
