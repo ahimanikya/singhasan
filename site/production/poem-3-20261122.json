@@ -1,0 +1,12 @@
+{
+  "source_title": "କବିତା ୩",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "406a31dd03f78a0d8c3cd6b3655f2525216ada414f9f9850343e25b7309b1850",
+  "source_stanzas_sha256": "ebceffa6e235171ff38ca2633be5c0c2bd86ac01219ceb782f787b07f0558866",
+  "byte_length": 738576,
+  "audio_sha256": "3ebee2e58dc001a66a1553e04b373b52a3559e16d1e28c84c273e6ad176865f7",
+  "sample_rate": 44100,
+  "samples": 1353647,
+  "decoded_pcm_sha256": "9a30b6d9ddb17ea2ada288ca45d97626aebfb9ee2017ab825a7c604af2f1698c",
+  "recorded_script_sha256": "a512961c7be4e8ce30ff73a9ba8223d3974a268851233f9fb540a2ac52c7c975"
+}
