@@ -29,13 +29,13 @@
       "id": "poem-1",
       "poem": 1,
       "label": "Poem 01",
-      "src": "assets/audio/poem-01-c77784cacb0b.mp3",
-      "duration_label": "1:21",
-      "duration_seconds": 81.28793650793651,
-      "review": "user-authorized-softer-poetic-reading-with-music",
-      "sha256": "c77784cacb0bf80fbb88ab9a504e935e480a1023bc1d92d6c97c4defce44652b",
+      "src": "assets/audio/poem-01-1771339ea01a.mp3",
+      "duration_label": "1:16",
+      "duration_seconds": 76.33333333333333,
+      "review": "user-approved-continuous-title-and-complete-poem-with-music",
+      "sha256": "1771339ea01a3c406b822af5294d1e06ecd2c818ea960d341bd8232bde7b3982",
       "source_provider": "ElevenLabs",
-      "source_provenance": "production/poem-1-music-c77784cacb0b.json"
+      "source_provenance": "production/poem-1-continuous-1771339ea01a.json"
     },
     {
       "id": "poem-2",

@@ -1,0 +1,36 @@
+{
+  "source_title": "କବିତା ୧",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "59106f45a2cf4e105545066ad3f5063609fd604723249101a3f787c37e1930b4",
+  "source_stanzas_sha256": "32a5c2f895545b1144b4e1573be1ea2f6458ce7fac969f91e3edb95a0d98a60d",
+  "byte_length": 3056369,
+  "audio_sha256": "1771339ea01a3c406b822af5294d1e06ecd2c818ea960d341bd8232bde7b3982",
+  "sample_rate": 44100,
+  "samples": 3366300,
+  "decoded_pcm_sha256": "88552879843e9dabd52d3ba4396f27d5b8bbc609a5664532f6c5f0e95e5eef1d",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Single continuous spoken title and complete poem with quiet instrumental accompaniment",
+  "sync_method": "Fresh recording-specific MMS_FA acoustic alignment of the approved final mix; transferred without offset to the gapless MP3 after exact decoded sample-count and zero-lag checks. Focused title recheck resolved whole-recording model context ambiguity.",
+  "narration_audio_sha256": "c4ac62b20192f4c54347d02aeb29be94b98507061a06ea4d61e3068d18b4dea1",
+  "narration_sha256": "c4ac62b20192f4c54347d02aeb29be94b98507061a06ea4d61e3068d18b4dea1",
+  "approved_mix_sha256": "b26f04cde7292cd0b38db09bc3bffc5b401e43f0698e69876e5b192a65e298f1",
+  "spoken_title": "ସିଂହାସନ ଏକ।",
+  "single_take": true,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.88,
+  "boundary_adjustment_applied": false,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "One light hiss/de-ess pass, followed by the approved soft treble and gentle compression treatment. Website encoding adds no filters.",
+    "encoding": "320 kbps MP3, stereo 44100 Hz, gapless Xing metadata"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Approved continuous quiet instrumental mix, approximately 22 dB below active speech, with soft ending.",
+    "music_below_active_voice_db": -21.999999737900247
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "User-approved recording; all verse lines and focused spoken-title acoustic checks passed. Machine checks do not certify fluent pronunciation."
+}
