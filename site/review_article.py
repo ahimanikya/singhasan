@@ -31,7 +31,12 @@ def render_review(language):
     title = ' '.join(blocks[0].splitlines())
     metadata = json.loads((SOURCE / 'metadata.json').read_text(encoding='utf-8'))
     author = metadata.get('author', {}).get(language)
-    byline = f'<p class="review-byline">{escape(author)}</p>' if author else ''
+    author_url = metadata.get('author_url')
+    author_name = escape(author) if author else ''
+    if author_name and author_url:
+        author_name = f'<a href="{escape(author_url, quote=True)}" rel="author">{author_name}</a>'
+    author_language = escape(metadata.get('author_language', language), quote=True)
+    byline = f'<p class="review-byline" lang="{author_language}">{author_name}</p>' if author else ''
     body = []
     for block in blocks[1:]:
         if block in ('Translation note', 'Translation notes', 'ଟୀକା'):
