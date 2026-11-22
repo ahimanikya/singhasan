@@ -7,7 +7,7 @@ import re
 
 ROOT = Path(__file__).resolve().parent
 ROUTE = 'posts-archive.html'
-TITLE = 'Posts archive'
+TITLE = 'From his social posts'
 DESCRIPTION = 'Poems, portraits, recordings and literary memories shared by Pravakar Satapathy, preserved with their original captions.'
 PROFILE_URL = 'https://www.facebook.com/pravakar72/'
 
@@ -46,7 +46,7 @@ def render_media(item, first=False):
     return f'<figure class="post-media">{body}{caption}{transcript}</figure>'
 
 
-def render_posts_archive():
+def render_post_cards():
     data = json.loads((ROOT / 'data/profile-posts.json').read_text())
     posts = [p for p in data['posts'] if p.get('status') == 'published_verified']
     posts.sort(key=lambda p: p['date'], reverse=True)
@@ -72,6 +72,18 @@ def render_posts_archive():
             if not url.startswith(('https://www.facebook.com/', 'https://facebook.com/')):
                 raise ValueError('Archive original-post links must use Facebook HTTPS URLs')
             link = f'<a class="post-original" href="{e(url, quote=True)}">View original post on Facebook</a>'
-        cards.append(f'<li><article class="profile-post" id="{key}" aria-labelledby="{key}-title"><header><p class="post-date"><time datetime="{published.isoformat()}">{date_label}</time></p><h2 id="{key}-title" lang="{e(post.get("title_lang", "or"), quote=True)}">{title}</h2></header>{summary}<div class="post-media-grid">{media}</div>{caption}{link}</article></li>')
-    content = '<ol class="posts-list">'+''.join(cards)+'</ol>' if cards else '<p class="posts-empty">The first posts are being gathered for this archive.</p>'
-    return f'''<section class="posts-archive" aria-labelledby="posts-title"><header class="posts-opening"><p class="posts-eyebrow">Pravakar Satapathy</p><h1 id="posts-title">Posts archive</h1><p>Poems, portraits, recordings and literary memories shared along the way.</p><nav class="posts-links" aria-label="Poet and profile"><a href="author.html">← The poet’s profile</a><a href="{PROFILE_URL}">His Facebook profile</a></nav><p class="posts-intro-note">Dates here mark when posts were shared, rather than when a poem was written or first published. Some original posts may require a Facebook login.</p></header>{content}</section>'''
+        heading = 'h2'
+        cards.append(f'<li><article class="profile-post" id="{key}" aria-labelledby="{key}-title"><header><p class="post-date"><time datetime="{published.isoformat()}">{date_label}</time></p><{heading} id="{key}-title" lang="{e(post.get("title_lang", "or"), quote=True)}">{title}</{heading}></header>{summary}<div class="post-media-grid">{media}</div>{caption}{link}</article></li>')
+    return cards
+
+
+def render_posts_archive():
+    cards = render_post_cards()
+    controls = ('<div class="author-post-controls" hidden>'
+                '<button type="button" data-post-prev aria-label="Previous post" aria-controls="author-post-slides">← Previous</button>'
+                '<span class="author-post-count" aria-live="polite" aria-atomic="true"></span>'
+                '<button type="button" data-post-next aria-label="Next post" aria-controls="author-post-slides">Next →</button>'
+                '<label class="author-post-choose" for="author-post-select">Choose a post</label><select id="author-post-select" aria-controls="author-post-slides"></select>'
+                '</div>')
+    content = controls + '<ol class="posts-list" id="author-post-slides" role="list">'+''.join(cards)+'</ol>' if cards else '<p class="posts-empty">The first posts are being gathered for this archive.</p>'
+    return f'''<section class="posts-archive author-posts" id="social-posts" aria-labelledby="posts-title"><header class="posts-opening"><p class="posts-eyebrow">Pravakar Satapathy</p><h1 id="posts-title">From his social posts</h1><p>Poems, portraits and memories, with the words he shared.</p><nav class="posts-links" aria-label="Poet and profile"><a href="author.html">← The poet’s profile</a><a href="{PROFILE_URL}">His Facebook profile</a></nav><p class="posts-intro-note">Dates here mark when posts were shared, rather than when a poem was written or first published. Some original posts may require a Facebook login.</p></header>{content}</section>'''

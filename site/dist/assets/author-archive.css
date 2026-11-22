@@ -1,0 +1,29 @@
+/* Author-page additions stay within the existing paper, ink and type system. */
+.posts-archive-page .author-posts{max-inline-size:760px;min-inline-size:0}
+.posts-archive-page .author-post-controls{display:grid;grid-template-columns:auto 1fr auto;gap:10px 12px;align-items:center;margin-block:16px 24px}
+.posts-archive-page .author-post-controls[hidden],.posts-archive-page .author-posts li[hidden]{display:none}
+.posts-archive-page .author-post-controls button,.posts-archive-page .author-post-controls select{min-block-size:44px;min-inline-size:0;padding:8px 12px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);font:14px/1.5 var(--ui);cursor:pointer}
+.posts-archive-page .author-post-controls button:hover{border-color:var(--rust);color:var(--rust)}
+.posts-archive-page .author-post-controls :is(button,select):focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+.posts-archive-page .author-post-count{text-align:center;font:13px/1.5 var(--ui);color:var(--muted)}
+.posts-archive-page .author-post-choose{font:13px/1.5 var(--ui);color:var(--muted)}
+.posts-archive-page #author-post-select{grid-column:2 / -1;inline-size:100%;max-inline-size:100%}
+.posts-archive-page .author-posts .profile-post{padding-block:0 20px;border:0;min-inline-size:0}
+.posts-archive-page .author-posts .profile-post h2{font:400 clamp(25px,4vw,33px)/1.5 var(--display);margin:0 0 18px;overflow-wrap:anywhere}
+.posts-archive-page .author-posts .profile-post h2[lang="or"]{font-family:var(--odia);line-height:1.8}
+.posts-archive-page .author-posts .post-date{font:13px/1.6 var(--ui);margin:0 0 8px}
+.posts-archive-page .author-posts .post-summary{font:17px/1.75 var(--serif)}
+.posts-archive-page .author-posts .post-media-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px;margin-block:18px}
+.posts-archive-page .author-posts .post-media:only-child{margin-inline:auto;inline-size:100%}
+.posts-archive-page .author-posts .post-media :is(img,video){max-block-size:60vh;max-block-size:60svh;object-fit:contain;inline-size:100%;block-size:auto}
+.posts-archive-page .author-posts .post-caption{font-size:18px;line-height:1.95;margin-block:20px 12px;max-inline-size:100%}
+.author-page .poetry-archive{margin-block:28px 40px;padding-block:24px;border-block:1px solid var(--line)}
+.author-page .poetry-archive>h2{font:400 25px/1.4 var(--display);margin:0 0 4px}
+.author-page .poetry-archive-disclosure>summary{font:15px/1.6 var(--ui);color:var(--rust)}
+.author-page .poetry-archive-disclosure>p,.author-page .poetry-archive-disclosure>ul{font-size:16px;line-height:1.8}
+.author-page .poetry-archive article{padding-block:18px;border-color:var(--line)}
+.author-page .poetry-archive article h3{font-size:22px;line-height:1.8;margin-block:0 8px}
+.author-page .poetry-archive article summary{font:14px/1.6 var(--ui)}
+.author-page .poetry-archive .archive-source{font:14px/1.7 var(--ui)}
+@media(max-width:400px){.posts-archive-page .author-post-controls{gap:10px 6px}.posts-archive-page .author-post-controls button{padding-inline:8px;font-size:12px}.posts-archive-page .author-post-count{font-size:12px}.posts-archive-page .author-post-choose{grid-column:1 / -1}.posts-archive-page #author-post-select{grid-column:1 / -1}}
+@media print{.posts-archive-page .author-post-controls{display:none}.posts-archive-page .author-posts li[hidden]{display:list-item}.posts-archive-page .author-posts .profile-post{padding-block:24px}.posts-archive-page .author-posts .post-media img{max-block-size:none}}

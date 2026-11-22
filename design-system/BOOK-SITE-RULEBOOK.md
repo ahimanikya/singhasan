@@ -38,8 +38,8 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Suggested reading path | Compact thematic sequence within `contents.html#reading-path`, linked from a small Home invitation. No separate illustrated guide. Editorial prompts stay separate from titles/verse; contextual continuation stays outside the book reader. |
 | Translation essay | Belongs to the main site; removed from Singhasan, including local article copies, on 3 November 2026. |
 | Listen | Existing audiobook and Listen & follow. Keep Listen accessible in the top menu and the home closing invitation. |
-| Poet | Substantial biography and portrait, linking to the separate literary record; a poetry archive with verified original Odia text, external publication references and preserved recitations. |
-| Posts archive (`posts-archive.html`) | Dated copies of confirmed posts prepared for the poet’s Facebook profile, with captions and approved media; linked from the Poet page. Keep drafts and uncertain posting records private. |
+| Poet | Substantial biography and portrait, linking to the separate literary record; a compact expandable poetry archive with verified original Odia text and external publication references, plus an understated link to the separate social-post carousel. Omit the Photographs and memories section and the two poetry-archive recitation players; preserve source assets. |
+| Posts archive (`posts-archive.html`) | “From his social posts”: a manual carousel of dated, confirmed posts prepared for the poet’s Facebook profile, with captions and approved media; linked from the Poet page with a return link. Keep drafts and uncertain posting records private. |
 | Literary record | Source-linked books, magazine contributions, translations, recordings and literary life; keep unverified leads clearly qualified. |
 | Contact | Simple private Firebase form, including poem context when entered from a poem. |
 
