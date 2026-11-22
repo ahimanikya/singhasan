@@ -11,6 +11,7 @@ The canonical section pages below contain the original Odia text in their initia
 - [ସିଂହଦ୍ୱାର — Preface](https://singhasan.kabitawithoutborders.org/intro.html): Opening prose.
 - [Poems](https://singhasan.kabitawithoutborders.org/contents.html): The complete numbered collection.
 - [ପ୍ରଭାକର ଶତପଥୀ — Pravakar Satapathy](https://singhasan.kabitawithoutborders.org/author.html): The poet.
+- [Portraits](https://singhasan.kabitawithoutborders.org/portraits.html): Photographic portraits of the poet.
 - [Poetry archive](https://singhasan.kabitawithoutborders.org/poetry-archive.html): Other original Odia poems and publication sources, separate from the numbered Singhasan collection.
 - [Listen](https://singhasan.kabitawithoutborders.org/listen.html): All 71 recordings, including the Odia preface and 68 poems, with English welcome and closing.
 - [Listen and follow](https://singhasan.kabitawithoutborders.org/read-along.html): The enhanced listening reader.

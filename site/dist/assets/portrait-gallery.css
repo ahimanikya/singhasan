@@ -1,5 +1,10 @@
-.author-longform .portrait-gallery{margin:3rem 0;padding:2rem 0;border-block:1px solid var(--line);max-width:100%}
-.portrait-gallery h2{margin:0 0 1rem}
+.portraits-page .portrait-gallery{max-inline-size:920px;margin:48px auto 70px;color:var(--ink);font:17px/1.7 var(--serif)}
+.portraits-opening{margin-block-end:30px}
+.portraits-eyebrow{font:12px/1.6 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--rust)}
+.portraits-opening h1{font:400 clamp(40px,7vw,64px)/1.15 var(--display);margin-block:12px 20px}
+.portraits-profile-link{display:inline-flex;align-items:center;min-block-size:44px;font:15px/1.6 var(--ui);color:var(--rust);text-decoration:underline;text-underline-offset:4px}
+.portraits-profile-link:focus-visible{outline:2px solid var(--rust);outline-offset:3px}
+@media(max-width:600px){.portraits-page .portrait-gallery{margin-block:28px 48px}}
 .portrait-gallery .portrait-controls{display:flex;align-items:center;justify-content:center;gap:.5rem 1rem;flex-wrap:wrap;margin-bottom:1.25rem}
 .portrait-gallery [hidden]{display:none!important}
 .portrait-controls button{font:inherit;font-size:1rem;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;min-height:44px;padding:.5rem .8rem;cursor:pointer}

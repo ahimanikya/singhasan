@@ -51,6 +51,11 @@
   const revealHash = () => {
     let id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    const portraitsLink = document.querySelector('.author-page [data-portraits-link]');
+    if (portraitsLink && id === 'portraits') {
+      location.replace(portraitsLink.href);
+      return;
+    }
     const archiveLink = document.querySelector('.author-page [data-poetry-archive-ids]');
     if (archiveLink && (id === 'poetry-archive' || archiveLink.dataset.poetryArchiveIds.split(' ').includes(id))) {
       const destination = new URL(archiveLink.href);

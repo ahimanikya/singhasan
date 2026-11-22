@@ -7,14 +7,14 @@ from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
 from literary_record import ROUTE as LITERARY_ROUTE, DESCRIPTION as LITERARY_DESCRIPTION
 from posts_archive import ROUTE as POSTS_ROUTE, DESCRIPTION as POSTS_DESCRIPTION
 from discovery import PUBLIC_URL, structured_markup
-from poetry_archive import ROUTE as POETRY_ROUTE, DESCRIPTION as POETRY_DESCRIPTION
+from poetry_archive import ROUTE as POETRY_ROUTE, DESCRIPTION as POETRY_DESCRIPTION, PORTRAITS_ROUTE, PORTRAITS_DESCRIPTION
 
 ROOT=Path(__file__).resolve().parent
 COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 
 def page_image(route):
-    if route in (LITERARY_ROUTE, POSTS_ROUTE, POETRY_ROUTE):return PORTRAIT
+    if route in (LITERARY_ROUTE, POSTS_ROUTE, POETRY_ROUTE, PORTRAITS_ROUTE):return PORTRAIT
     if route.startswith('poem-'):
         number=int(route.removeprefix('poem-').removesuffix('.html'))
         return image_asset(f'assets/poems/unique/poem-{number:02}.png')
@@ -30,6 +30,7 @@ def page_details(route,chapters,illustrations):
     if route==LITERARY_ROUTE:return LITERARY_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==POSTS_ROUTE:return POSTS_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==POETRY_ROUTE:return POETRY_DESCRIPTION,'Portrait of Pravakar Satapathy'
+    if route==PORTRAITS_ROUTE:return PORTRAITS_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==STORY_ROUTE:return STORY_DESCRIPTION,'ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'
     if route.startswith('poem-'):
         n=int(route.removeprefix('poem-').removesuffix('.html'))

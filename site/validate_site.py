@@ -24,7 +24,7 @@ verification=root/'googleeb3b0703307157d1.html'
 assert verification.read_text().strip()=='google-site-verification: '+verification.name, 'Google ownership verification file changed'
 pages=sorted(page for page in root.glob('*.html') if page!=verification)
 social=json.loads((root.parent/'social-images.json').read_text())
-assert len(pages)==81, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus Our Story, the literary record, posts archive and poetry archive'
+assert len(pages)==82, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus Our Story, the literary record, posts archive, poetry archive and portraits'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -65,7 +65,7 @@ assert len(sitemap_urls)==len(canonical_urls) and set(sitemap_urls)==canonical_u
 assert 'Sitemap: '+PUBLIC_URL+'/sitemap.xml' in (root/'robots.txt').read_text().splitlines()
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 81 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 82 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -211,7 +211,7 @@ for source,entry in social.items():
     assert entry['type'] in ('image/png','image/jpeg') and entry['width']>0 and entry['height']>0
     assert payload.startswith(b'\x89PNG') if entry['type']=='image/png' else payload.startswith(b'\xff\xd8'), entry['src']
 assert len({social[page_image(f'poem-{n}.html')]['src'] for n in range(1,69)})==68
-print('Validated page-specific sharing images, metadata and source/output hashes for all 81 pages.')
+print('Validated page-specific sharing images, metadata and source/output hashes for all 82 pages.')
 
 # The main-site essay is absent from this edition.
 ARTICLE_ROUTE='thirty-languages-and-the-journey-of-a-poem.html'
@@ -295,3 +295,40 @@ for item in archive_data['sources']+archive_data['articles']:
     assert f'href="{escape(item["url"])}"' in archive_html
     assert escape(item['title']) in archive_html and escape(item['label']) in archive_html
 print('Validated separate poetry archive, exact original stanzas, publication sources, profile link and legacy anchor mapping.')
+
+# The portrait gallery is separate; preserve its complete ordered source records.
+from poetry_archive import PORTRAITS_ROUTE, PORTRAITS_DESCRIPTION
+portraits_html=(root/PORTRAITS_ROUTE).read_text()
+portrait_data=json.loads((root.parent/'poetry-archive/portraits.json').read_text())
+assert len(portrait_data)==16
+figures=re.findall(r'<figure class="portrait-slide">(.*?)</figure>',portraits_html,re.S)
+assert len(figures)==len(portrait_data)
+class PortraitImage(HTMLParser):
+    def __init__(self):
+        super().__init__();self.images=[]
+    def handle_starttag(self,tag,attrs):
+        if tag=='img':self.images.append(dict(attrs))
+for figure,record in zip(figures,portrait_data):
+    parsed=PortraitImage();parsed.feed(figure)
+    assert len(parsed.images)==1
+    image=parsed.images[0]
+    assert image.get('data-artwork-source',image['src'])==record['asset']
+    assert image['alt']==record['alt'] and int(image['width'])==record['width'] and int(image['height'])==record['height']
+    caption=re.search(r'<figcaption>(.*?)</figcaption>',figure,re.S)
+    assert caption and unescape(caption[1])==record['caption']
+    assert 'hidden' not in image, 'No-script gallery must preserve every portrait'
+assert portraits_html.count('<h1')==1 and '<h1 id="portraits-heading">Portraits</h1>' in portraits_html
+assert '<html lang="en">' in portraits_html and 'href="author.html"' in portraits_html
+assert 'assets/portrait-gallery.js' in portraits_html and 'data-portrait-play' in portraits_html
+assert 'assets/portrait-gallery.js' not in author_html and 'assets/portrait-gallery.css' not in author_html
+assert 'class="portrait-slide"' not in author_html and 'class="portrait-gallery"' not in author_html
+assert author_html.count(f'href="{PORTRAITS_ROUTE}"')==1 and 'data-portraits-link' in author_html
+assert author_html.count('class="author-portrait"')==1, 'Keep the main artistic portrait'
+assert f'data-artwork-source="{image_asset("assets/writers/41-earth-voice-v1.png")}"' in author_html
+portrait_page=Page();portrait_page.feed(portraits_html)
+assert portrait_page.canonical==[f'{PUBLIC_URL}/{PORTRAITS_ROUTE}']
+assert portrait_page.metadata['description']==[PORTRAITS_DESCRIPTION]
+assert page_image(PORTRAITS_ROUTE)==page_image('author.html')
+assert f'<loc>{PUBLIC_URL}/{PORTRAITS_ROUTE}</loc>' in (root/'sitemap.xml').read_text()
+assert f'({PUBLIC_URL}/{PORTRAITS_ROUTE})' in (root/'llms.txt').read_text()
+print('Validated the separate sixteen-portrait gallery, ordered media and captions, main profile portrait, metadata and discovery links.')

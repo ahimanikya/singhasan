@@ -13,7 +13,7 @@ from urllib.parse import quote
 from our_story import ROUTE as STORY_ROUTE
 from literary_record import ROUTE as LITERARY_ROUTE
 from posts_archive import ROUTE as POSTS_ROUTE
-from poetry_archive import ROUTE as POETRY_ROUTE
+from poetry_archive import ROUTE as POETRY_ROUTE, PORTRAITS_ROUTE
 
 PUBLIC_URL = 'https://singhasan.kabitawithoutborders.org'
 AUTHOR_EN = 'Pravakar Satapathy'
@@ -38,7 +38,7 @@ def public_routes(chapters):
     routes = {
         'index.html', 'book.html', 'contents.html', 'author.html',
         'back-cover.html', 'listen.html', 'read-along.html', 'contact.html',
-        STORY_ROUTE, LITERARY_ROUTE, POSTS_ROUTE, POETRY_ROUTE,
+        STORY_ROUTE, LITERARY_ROUTE, POSTS_ROUTE, POETRY_ROUTE, PORTRAITS_ROUTE,
     }
     routes.update(chapter_route(chapter) for chapter in chapters)
     return tuple(sorted(routes))
@@ -182,6 +182,7 @@ def llms_text(book, tracks, reading_copies=None, languages=None):
         f'- [{introduction["title"]} — Preface]({canonical_url("intro.html")}): Opening prose.',
         f'- [Poems]({canonical_url("contents.html")}): The complete numbered collection.',
         f'- [{book["author"]} — {AUTHOR_EN}]({canonical_url("author.html")}): The poet.',
+        f'- [Portraits]({canonical_url(PORTRAITS_ROUTE)}): Photographic portraits of the poet.',
         f'- [Poetry archive]({canonical_url(POETRY_ROUTE)}): Other original Odia poems and publication sources, separate from the numbered Singhasan collection.',
         f'- [Listen]({canonical_url("listen.html")}): All {len(tracks)} recordings, including the Odia preface and {len(poems)} poems, with English welcome and closing.',
         f'- [Listen and follow]({canonical_url("read-along.html")}): The enhanced listening reader.', '',
