@@ -9,6 +9,8 @@ from posts_archive import ROUTE as POSTS_ROUTE, DESCRIPTION as POSTS_DESCRIPTION
 from discovery import PUBLIC_URL, structured_markup
 from poetry_archive import ROUTE as POETRY_ROUTE, DESCRIPTION as POETRY_DESCRIPTION, PORTRAITS_ROUTE, PORTRAITS_DESCRIPTION
 
+from review_article import ROUTES as REVIEW_ROUTES, DESCRIPTIONS as REVIEW_DESCRIPTIONS
+
 ROOT=Path(__file__).resolve().parent
 COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
@@ -27,6 +29,9 @@ def page_image(route):
     }.get(route,COVER)
 
 def page_details(route,chapters,illustrations):
+    if route in REVIEW_ROUTES.values():
+        language=next(code for code,path in REVIEW_ROUTES.items() if path==route)
+        return REVIEW_DESCRIPTIONS[language],'ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'
     if route==LITERARY_ROUTE:return LITERARY_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==POSTS_ROUTE:return POSTS_DESCRIPTION,'Portrait of Pravakar Satapathy'
     if route==POETRY_ROUTE:return POETRY_DESCRIPTION,'Portrait of Pravakar Satapathy'
@@ -53,13 +58,15 @@ def sharing_metadata(route,title,chapters,illustrations,*,book=None,tracks=None)
     canonical=PUBLIC_URL+('/' if route=='index.html' else '/'+route)
     description,alt=page_details(route,chapters,illustrations)
     preview=PUBLIC_URL+'/'+image['src']
-    tags={'og:type':'article' if route==LITERARY_ROUTE else 'website','og:site_name':'Singhasan','og:title':title,
+    tags={'og:type':'article' if route==LITERARY_ROUTE or route in REVIEW_ROUTES.values() else 'website','og:site_name':'Singhasan','og:title':title,
           'og:description':description,'og:url':canonical,'og:image':preview,
           'og:image:secure_url':preview,'og:image:type':image['type'],
           'og:image:width':image['width'],'og:image:height':image['height'],'og:image:alt':alt}
     twitter={'twitter:card':'summary_large_image','twitter:title':title,
              'twitter:description':description,'twitter:image':preview,'twitter:image:alt':alt}
     metadata=f'<link rel="canonical" href="{canonical}">'
+    if route in REVIEW_ROUTES.values():
+        metadata+=''.join(f'<link rel="alternate" hreflang="{language}" href="{PUBLIC_URL}/{path}">' for language,path in REVIEW_ROUTES.items())
     if route=='contents.html':
         metadata+=f'<link rel="alternate" type="text/plain" href="{PUBLIC_URL}/llms.txt" title="Singhasan reading guide">'
     for attribute,values in [('property',tags),('name',twitter)]:

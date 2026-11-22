@@ -1,0 +1,27 @@
+.literary-review{max-width:68ch;margin:clamp(2rem,5vw,4rem) auto 4rem;color:var(--ink);font:1.2rem/1.8 var(--serif);overflow-wrap:break-word}
+.literary-review:lang(or){font-family:var(--odia);line-height:2;max-width:44rem}
+.review-opening{padding-bottom:2rem;margin-bottom:2.25rem;border-bottom:1px solid var(--line)}
+.review-category{font:0.875rem/1.6 var(--ui);color:var(--rust);letter-spacing:.08em;margin:0 0 1rem}
+.review-category:lang(or){font-family:var(--odia);letter-spacing:normal}
+.review-opening h1{font:500 clamp(2.4rem,5vw,3.5rem)/1.1 var(--display);margin:0 0 1.5rem;text-wrap:balance}
+.literary-review:lang(or) .review-opening h1{font:600 clamp(1.75rem,4vw,2.5rem)/1.65 var(--odia)}
+.review-byline{margin:0 0 1.5rem;color:var(--muted);font-size:1rem}
+.review-languages{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:center;font:1rem/1.6 var(--ui)}
+.review-languages a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:.3em}
+.review-languages a:lang(or){font-family:var(--odia)}
+.review-languages a[aria-current=page]{font-weight:700;text-decoration-thickness:2px}
+.review-body>p{margin:0 0 1.4em}
+.review-body .review-verse{margin:2rem 0 2rem 1rem;padding:.25rem 0 .25rem 1.25rem;border-left:2px solid var(--line);font:inherit;color:var(--ink)}
+.review-verse p{margin:0}
+.review-body sup{line-height:0;font-size:.75em}
+.review-body a,.review-home{text-decoration:underline;text-underline-offset:.2em}
+.review-body .review-notes-title{font:600 1.7rem/1.3 var(--display);padding-top:2rem;margin:2.5rem 0 1rem;border-top:1px solid var(--line)}
+.review-body .review-note{font-size:1rem;line-height:1.7;scroll-margin-top:2rem}
+.review-ending{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.review-home{font-size:1rem;min-height:44px;display:inline-flex;align-items:center}
+.literary-review a:focus-visible,.home-review a:focus-visible{outline:2px solid var(--rust);outline-offset:5px}
+.home-review{max-width:44rem;margin:3rem auto;padding:2rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-review h2{font:500 clamp(2rem,4vw,2.75rem)/1.15 var(--display);margin:0 0 1rem;text-wrap:balance}
+.home-review>p:not(.review-category){font:1.2rem/1.65 var(--serif);margin:0 0 1rem}
+@media(max-width:600px){.literary-review{font-size:1.0625rem}.literary-review:lang(or){font-size:1.125rem}.review-body .review-verse{margin-left:0;padding-left:.85rem}.review-opening{padding-bottom:1.5rem;margin-bottom:1.75rem}}
+@media print{.review-languages,.review-home{display:none}.literary-review{max-width:none;margin:0;font-size:11pt}.review-opening h1{font-size:24pt}.review-body .review-verse{break-inside:avoid}}

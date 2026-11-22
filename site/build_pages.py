@@ -1,4 +1,5 @@
 """Singhasan: standalone reading pages using Kabita Live's approved edition style."""
+from review_article import ROUTES as REVIEW_ROUTES, render_review
 from pathlib import Path
 from html import escape as e, unescape
 import json,re,hashlib
@@ -122,6 +123,8 @@ def shell(title,body,kind='edition'):
     extras='<link rel="stylesheet" href="assets/poem-reader.css"><link rel="stylesheet" href="assets/poem-experience.css?v=2"><link rel="stylesheet" href="assets/book-reader.css"><script src="assets/book-share.js" defer></script><script type="module" src="assets/poem-reader.js?v=3"></script><script type="module" src="assets/poem-experience.js"></script><script type="module" src="assets/book-pagination.js"></script><script type="module" src="assets/intro-pagination.js"></script>' if kind.startswith('reading-page') or kind=='contents-page' else ''
     if 'data-poem-engagement' in body:
         extras+='<link rel="stylesheet" href="assets/engagement.css"><script type="module" src="assets/services/engagement.js?v=2"></script>'
+    if kind.startswith('review-page') or kind == 'home-page':
+        extras+='<link rel="stylesheet" href="assets/review-article.css">'
     if kind.startswith('article-page'):
         extras+='<link rel="stylesheet" href="assets/translation-article.css">'
     if kind.startswith('literary-page') or kind.startswith('author-page'):
@@ -216,6 +219,10 @@ back_body=f'''<section class="book-cover-route"><figure class="bound-cover bound
 (DIST/POSTS_ROUTE).write_text(shell(POSTS_TITLE,render_posts_archive(),'posts-archive-page'))
 (DIST/POETRY_ROUTE).write_text(shell(POETRY_TITLE,render_poetry_archive(),'poetry-archive-page'))
 (DIST/PORTRAITS_ROUTE).write_text(shell(PORTRAITS_TITLE,render_portraits(),'portraits-page'))
+
+for language, route in REVIEW_ROUTES.items():
+    title, body = render_review(language)
+    (DIST/route).write_text(shell(title,body,'review-page').replace('<html lang="or">',f'<html lang="{language}">',1))
 
 # Public address and preview metadata are generated alongside every page.
 public_pages=[DIST/route for route in public_routes(chapters)]

@@ -14,6 +14,7 @@ from our_story import ROUTE as STORY_ROUTE
 from literary_record import ROUTE as LITERARY_ROUTE
 from posts_archive import ROUTE as POSTS_ROUTE
 from poetry_archive import ROUTE as POETRY_ROUTE, PORTRAITS_ROUTE
+from review_article import ROUTES as REVIEW_ROUTES
 
 PUBLIC_URL = 'https://singhasan.kabitawithoutborders.org'
 AUTHOR_EN = 'Pravakar Satapathy'
@@ -40,6 +41,7 @@ def public_routes(chapters):
         'back-cover.html', 'listen.html', 'read-along.html', 'contact.html',
         STORY_ROUTE, LITERARY_ROUTE, POSTS_ROUTE, POETRY_ROUTE, PORTRAITS_ROUTE,
     }
+    routes.update(REVIEW_ROUTES.values())
     routes.update(chapter_route(chapter) for chapter in chapters)
     return tuple(sorted(routes))
 

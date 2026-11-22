@@ -24,7 +24,7 @@ verification=root/'googleeb3b0703307157d1.html'
 assert verification.read_text().strip()=='google-site-verification: '+verification.name, 'Google ownership verification file changed'
 pages=sorted(page for page in root.glob('*.html') if page!=verification)
 social=json.loads((root.parent/'social-images.json').read_text())
-assert len(pages)==82, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus Our Story, the literary record, posts archive, poetry archive and portraits'
+assert len(pages)==84, 'Expected the 82 book-site pages plus Odia and English literary reviews'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -65,7 +65,7 @@ assert len(sitemap_urls)==len(canonical_urls) and set(sitemap_urls)==canonical_u
 assert 'Sitemap: '+PUBLIC_URL+'/sitemap.xml' in (root/'robots.txt').read_text().splitlines()
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 82 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print(f'Validated {len(pages)} pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -211,7 +211,7 @@ for source,entry in social.items():
     assert entry['type'] in ('image/png','image/jpeg') and entry['width']>0 and entry['height']>0
     assert payload.startswith(b'\x89PNG') if entry['type']=='image/png' else payload.startswith(b'\xff\xd8'), entry['src']
 assert len({social[page_image(f'poem-{n}.html')]['src'] for n in range(1,69)})==68
-print('Validated page-specific sharing images, metadata and source/output hashes for all 82 pages.')
+print(f'Validated page-specific sharing images, metadata and source/output hashes for all {len(pages)} pages.')
 
 # The main-site essay is absent from this edition.
 ARTICLE_ROUTE='thirty-languages-and-the-journey-of-a-poem.html'
