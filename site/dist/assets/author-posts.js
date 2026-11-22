@@ -51,6 +51,13 @@
   const revealHash = () => {
     let id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    const archiveLink = document.querySelector('.author-page [data-poetry-archive-ids]');
+    if (archiveLink && (id === 'poetry-archive' || archiveLink.dataset.poetryArchiveIds.split(' ').includes(id))) {
+      const destination = new URL(archiveLink.href);
+      destination.hash = id;
+      location.replace(destination.href);
+      return;
+    }
     const target = id && document.getElementById(id);
     if (!target) return;
     const index = slides.findIndex(slide => slide.contains(target));

@@ -4,6 +4,14 @@ from html import escape
 import json
 
 ROOT = Path(__file__).resolve().parent
+ROUTE = 'poetry-archive.html'
+TITLE = 'Poetry archive'
+DESCRIPTION = 'Original Odia poems by Pravakar Satapathy, with magazine sources, articles and conversations.'
+
+def poetry_archive_anchors():
+    data = json.loads((ROOT / 'poetry-archive/published.json').read_text())
+    return ' '.join('archive-' + poem['id'] for poem in data['poems'])
+
 
 def render_portraits():
     portraits = json.loads((ROOT / 'poetry-archive/portraits.json').read_text())
@@ -22,10 +30,10 @@ def render_poetry_archive():
         verse = poem['text'].split('\n', 1)[1].strip()
         stanzas = ''.join('<p>' + '<br>'.join(escape(line) for line in stanza.splitlines()) + '</p>' for stanza in verse.split('\n\n'))
         source = f'<p class="archive-source"><a href="{escape(poem["source_url"])}">{escape(poem["source_label"])}</a></p>' if poem.get('source_url') else ''
-        poems.append(f'<article id="archive-{escape(poem["id"])}"><h3 lang="or">{escape(poem["title"])}</h3>{source}<details><summary>Read the poem</summary><div class="archive-verse" lang="or">{stanzas}</div></details></article>')
+        poems.append(f'<article id="archive-{escape(poem["id"])}"><h2 lang="or">{escape(poem["title"])}</h2>{source}<details><summary>Read the poem</summary><div class="archive-verse" lang="or">{stanzas}</div></details></article>')
     sources = ''.join(f'<li><span lang="{escape(item.get("lang", "or"))}">{escape(item["title"])}</span> — <a href="{escape(item["url"])}">{escape(item["label"])}</a></li>' for item in data['sources'])
     articles = ''.join(f'<li><span lang="{escape(item.get("lang", "or"))}">{escape(item["title"])}</span> — <a href="{escape(item["url"])}">{escape(item["label"])}</a></li>' for item in data.get('articles', []))
-    return '<section class="poetry-archive" id="poetry-archive" lang="en"><h2>Poetry archive</h2><details class="poetry-archive-disclosure"><summary>Explore poems and published sources</summary><p>Poems by Pravakar Satapathy, preserved in their original Odia. Read the poems and explore the published sources.</p>' + ''.join(poems) + '<h3>From the magazines</h3><p>These poems are preserved in the source issues below. Text editions are being checked against the printed pages.</p><ul>' + sources + '</ul><h3>Articles and conversations</h3><ul>' + articles + '</ul><p>The magazine scans are available through Odia Bibhaba / Srujanika. Some source links may require sign-in.</p></details></section>'
+    return '<section class="poetry-archive" id="poetry-archive" lang="en"><header class="poetry-archive-opening"><p class="archive-eyebrow">Pravakar Satapathy</p><h1>Poetry archive</h1><p>Poems by Pravakar Satapathy, preserved in their original Odia. Read the poems and explore the published sources.</p><a class="archive-profile-link" href="author.html">← The poet’s profile</a></header>' + ''.join(poems) + '<h2>From the magazines</h2><p>These poems are preserved in the source issues below. Text editions are being checked against the printed pages.</p><ul>' + sources + '</ul><h2>Articles and conversations</h2><ul>' + articles + '</ul><p>The magazine scans are available through Odia Bibhaba / Srujanika. Some source links may require sign-in.</p></section>'
 
 
 def render_photo_memories():

@@ -17,13 +17,20 @@
 .posts-archive-page .author-posts .post-media:only-child{margin-inline:auto;inline-size:100%}
 .posts-archive-page .author-posts .post-media :is(img,video){max-block-size:60vh;max-block-size:60svh;object-fit:contain;inline-size:100%;block-size:auto}
 .posts-archive-page .author-posts .post-caption{font-size:18px;line-height:1.95;margin-block:20px 12px;max-inline-size:100%}
-.author-page .poetry-archive{margin-block:28px 40px;padding-block:24px;border-block:1px solid var(--line)}
-.author-page .poetry-archive>h2{font:400 25px/1.4 var(--display);margin:0 0 4px}
-.author-page .poetry-archive-disclosure>summary{font:15px/1.6 var(--ui);color:var(--rust)}
-.author-page .poetry-archive-disclosure>p,.author-page .poetry-archive-disclosure>ul{font-size:16px;line-height:1.8}
-.author-page .poetry-archive article{padding-block:18px;border-color:var(--line)}
-.author-page .poetry-archive article h3{font-size:22px;line-height:1.8;margin-block:0 8px}
-.author-page .poetry-archive article summary{font:14px/1.6 var(--ui)}
-.author-page .poetry-archive .archive-source{font:14px/1.7 var(--ui)}
+/* The poetry collection has its own quiet reading measure. */
+.poetry-archive-page .poetry-archive{max-inline-size:760px;margin:48px auto 70px;color:var(--ink);font:18px/1.8 var(--serif);overflow-wrap:anywhere}
+.poetry-archive-page .poetry-archive-opening{margin-block-end:36px}
+.poetry-archive-page .archive-eyebrow{font:12px/1.6 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--rust)}
+.poetry-archive-page .poetry-archive h1{font:400 clamp(40px,7vw,64px)/1.15 var(--display);margin-block:12px 22px}
+.poetry-archive-page .poetry-archive h2{font:400 29px/1.4 var(--display);margin-block:28px 12px}
+.poetry-archive-page .poetry-archive article{padding-block:24px;border-color:var(--line)}
+.poetry-archive-page .poetry-archive article h2[lang="or"]{font:400 26px/1.8 var(--odia);margin-block:0 8px}
+.poetry-archive-page .poetry-archive summary{font:15px/1.6 var(--ui);color:var(--rust)}
+.poetry-archive-page .archive-source{font:14px/1.7 var(--ui)}
+.poetry-archive-page .archive-profile-link{display:inline-flex;align-items:center;min-block-size:44px;color:var(--rust);font:15px/1.6 var(--ui)}
+.poetry-archive-page .archive-verse{font:20px/2 var(--odia);overflow-wrap:anywhere}
+.poetry-archive-page .archive-verse p{margin-block:1.5em;text-align:start}
+.poetry-archive-page .poetry-archive ul{padding-inline-start:24px}
+@media(max-width:600px){.poetry-archive-page .poetry-archive{margin-block:28px 48px;font-size:17px}.poetry-archive-page .archive-verse{font-size:18px}.poetry-archive-page .poetry-archive article h2[lang="or"]{font-size:23px}}
 @media(max-width:400px){.posts-archive-page .author-post-controls{gap:10px 6px}.posts-archive-page .author-post-controls button{padding-inline:8px;font-size:12px}.posts-archive-page .author-post-count{font-size:12px}.posts-archive-page .author-post-choose{grid-column:1 / -1}.posts-archive-page #author-post-select{grid-column:1 / -1}}
 @media print{.posts-archive-page .author-post-controls{display:none}.posts-archive-page .author-posts li[hidden]{display:list-item}.posts-archive-page .author-posts .profile-post{padding-block:24px}.posts-archive-page .author-posts .post-media img{max-block-size:none}}

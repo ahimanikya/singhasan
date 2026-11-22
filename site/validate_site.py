@@ -1,6 +1,7 @@
 """Check publication routes, assets and original book completeness before deployment."""
 from pathlib import Path
 from html.parser import HTMLParser
+from html import escape, unescape
 from urllib.parse import urlsplit,unquote
 import hashlib,json,re,xml.etree.ElementTree as ET
 from artwork import image_asset, MANIFEST
@@ -23,7 +24,7 @@ verification=root/'googleeb3b0703307157d1.html'
 assert verification.read_text().strip()=='google-site-verification: '+verification.name, 'Google ownership verification file changed'
 pages=sorted(page for page in root.glob('*.html') if page!=verification)
 social=json.loads((root.parent/'social-images.json').read_text())
-assert len(pages)==80, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus Our Story, the literary record and posts archive'
+assert len(pages)==81, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus Our Story, the literary record, posts archive and poetry archive'
 for f in pages:
     p=Page();html=f.read_text();p.feed(html)
     if len(p.ids)!=len(set(p.ids)):errors.append(f'{f.name}: duplicate IDs')
@@ -64,7 +65,7 @@ assert len(sitemap_urls)==len(canonical_urls) and set(sitemap_urls)==canonical_u
 assert 'Sitemap: '+PUBLIC_URL+'/sitemap.xml' in (root/'robots.txt').read_text().splitlines()
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
-print('Validated 80 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
+print('Validated 81 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
 
 # Every permanent poem URL renders the same source text and exposes the book view.
 for chapter in book['chapters']:
@@ -210,7 +211,7 @@ for source,entry in social.items():
     assert entry['type'] in ('image/png','image/jpeg') and entry['width']>0 and entry['height']>0
     assert payload.startswith(b'\x89PNG') if entry['type']=='image/png' else payload.startswith(b'\xff\xd8'), entry['src']
 assert len({social[page_image(f'poem-{n}.html')]['src'] for n in range(1,69)})==68
-print('Validated page-specific sharing images, metadata and source/output hashes for all 80 pages.')
+print('Validated page-specific sharing images, metadata and source/output hashes for all 81 pages.')
 
 # The main-site essay is absent from this edition.
 ARTICLE_ROUTE='thirty-languages-and-the-journey-of-a-poem.html'
@@ -246,3 +247,51 @@ for target in ('https://kabitawithoutborders.org/','https://kabitawithoutborders
     assert f'href="{target}"' in story
 assert 'Ahimanikya Satapathy' in story and 'poet’s son' in story
 print('Validated Our Story, consolidated links and edition credit.')
+
+# The poetry collection is separate from the biography and keeps exact released verse.
+from poetry_archive import ROUTE as POETRY_ROUTE, DESCRIPTION as POETRY_DESCRIPTION
+archive_html=(root/POETRY_ROUTE).read_text()
+author_html=(root/'author.html').read_text()
+archive_data=json.loads((root.parent/'poetry-archive/published.json').read_text())
+assert len(archive_data['poems'])==3 and len(archive_data['sources'])==20 and len(archive_data['articles'])==1
+assert archive_html.count('<h1>')==1 and '<h1>Poetry archive</h1>' in archive_html
+assert '<html lang="en">' in archive_html and 'href="author.html"' in archive_html
+assert 'poetry-archive-disclosure' not in archive_html, 'Do not nest the whole archive in a disclosure'
+assert author_html.count(f'href="{POETRY_ROUTE}"')==1
+assert '<section class="poetry-archive"' not in author_html
+assert all(token not in archive_html and token not in author_html for token in ('recitation-001','recitation-002','photographs-and-memories'))
+assert '<video' not in archive_html
+expected_anchors=['archive-'+poem['id'] for poem in archive_data['poems']]
+assert f'data-poetry-archive-ids="{" ".join(expected_anchors)}"' in author_html
+assert f'<loc>{PUBLIC_URL}/{POETRY_ROUTE}</loc>' in (root/'sitemap.xml').read_text()
+archive_page=Page();archive_page.feed(archive_html)
+assert archive_page.canonical==[f'{PUBLIC_URL}/{POETRY_ROUTE}']
+assert archive_page.metadata['description']==[POETRY_DESCRIPTION]
+assert page_image(POETRY_ROUTE)==page_image('author.html')
+class ArchiveStanzas(HTMLParser):
+    def __init__(self):
+        super().__init__();self.stanzas=[];self.current=None
+    def handle_starttag(self,tag,attrs):
+        if tag=='p':self.current=''
+        elif tag=='br' and self.current is not None:self.current+='\n'
+    def handle_data(self,data):
+        if self.current is not None:self.current+=data
+    def handle_endtag(self,tag):
+        if tag=='p' and self.current is not None:
+            self.stanzas.append(self.current);self.current=None
+for poem in archive_data['poems']:
+    anchor='archive-'+poem['id']
+    article=re.search(r'<article id="'+re.escape(anchor)+r'">(.*?)</article>',archive_html,re.S)
+    assert article, anchor
+    heading=re.search(r'<h2 lang="or">(.*?)</h2>',article[1],re.S)
+    assert heading and unescape(heading[1])==poem['title'], anchor
+    verse=re.search(r'<div class="archive-verse" lang="or">(.*?)</div>',article[1],re.S)
+    assert verse, anchor
+    parsed=ArchiveStanzas();parsed.feed(verse[1])
+    assert parsed.stanzas==poem['text'].split('\n',1)[1].strip().split('\n\n'), f'{anchor}: altered verse'
+    assert (root/'assets/poetry-archive'/f"{poem['id']}.txt").read_text()==poem['text']
+    assert f'id="{anchor}"' not in author_html
+for item in archive_data['sources']+archive_data['articles']:
+    assert f'href="{escape(item["url"])}"' in archive_html
+    assert escape(item['title']) in archive_html and escape(item['label']) in archive_html
+print('Validated separate poetry archive, exact original stanzas, publication sources, profile link and legacy anchor mapping.')
