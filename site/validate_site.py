@@ -19,7 +19,9 @@ class Page(HTMLParser):
         if a.get('id'):self.ids.append(a['id'])
         if tag=='link' and a.get('rel')=='canonical':self.canonical.append(a['href'])
 errors=[]
-pages=sorted(root.glob('*.html'))
+verification=root/'googleeb3b0703307157d1.html'
+assert verification.read_text().strip()=='google-site-verification: '+verification.name, 'Google ownership verification file changed'
+pages=sorted(page for page in root.glob('*.html') if page!=verification)
 social=json.loads((root.parent/'social-images.json').read_text())
 assert len(pages)==80, 'Expected home, contents, two covers, poet, listening edition, read-along, introduction and 68 poems plus Our Story, the literary record and posts archive'
 for f in pages:
@@ -55,7 +57,11 @@ for item in MANIFEST['items']:
     assert hashlib.sha256((root/item['asset']).read_bytes()).hexdigest() == item['sha256'], item['id']
     assert Path(item['asset']).name in published, f"Unconnected artwork: {item['id']}"
 assert (root/'CNAME').read_text().strip()=='singhasan.kabitawithoutborders.org'
-assert len(ET.parse(root/'sitemap.xml').getroot())==80
+canonical_urls={PUBLIC_URL+('/' if page.name=='index.html' else '/'+page.name) for page in pages}
+ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
+sitemap_urls=[loc.text for loc in ET.parse(root/'sitemap.xml').findall('s:url/s:loc',ns)]
+assert len(sitemap_urls)==len(canonical_urls) and set(sitemap_urls)==canonical_urls, 'Sitemap must list each canonical book-site page once'
+assert 'Sitemap: '+PUBLIC_URL+'/sitemap.xml' in (root/'robots.txt').read_text().splitlines()
 assert (root/'.nojekyll').exists()
 assert not errors,'\n'.join(errors)
 print('Validated 80 pages, 69 book sections, 68 distinct poem illustrations, links, assets, sitemap and production metadata.')
@@ -142,6 +148,42 @@ for track in audio:
 assert 'id="follow-book"' in (root/'read-along.html').read_text()
 assert 'id="audio-follow"' in (root/'listen.html').read_text()
 catalog=json.loads(re.search(r'<script type="application/json" id="audio-catalog">(.*?)</script>',(root/'listen.html').read_text(),re.S).group(1))
+def discovery_graph(route):
+    blocks=re.findall(r'<script type="application/ld\+json">(.*?)</script>',(root/route).read_text(),re.S)
+    assert len(blocks)==1, route
+    graph=json.loads(blocks[0])
+    assert graph['@context']=='https://schema.org', route
+    return graph['@graph']
+
+guide=(root/'llms.txt').read_text()
+edition=json.loads((root/'assets/reading-book.json').read_text())['poems']
+published_codes={code for section in edition for code in section['variants'] if code!='or'}
+assert {f.stem for f in (root/'readings').glob('*.md')}==published_codes
+for code in published_codes:
+    assert f'({PUBLIC_URL}/readings/{code}.md)' in guide, code
+    copy=(root/'readings'/f'{code}.md').read_text()
+    sections=[section for section in edition if code in section['variants']]
+    blocks=re.split(r'^## ',copy,flags=re.M)[1:]
+    assert len(blocks)==len(sections), code
+    for block,section in zip(blocks,sections):
+        translated=section['variants'][code]
+        heading,link,stanzas=block.rstrip('\n').split('\n\n',2)
+        assert heading==translated['title'] and f'({PUBLIC_URL}/{section["route"]}?lang={code})' in link
+        assert [stanza.split('\\'+'\n') for stanza in stanzas.split('\n\n')]==translated['stanzas'], (code,section['id'])
+for section in book['chapters']:
+    number=section['number']
+    route=f'poem-{number}.html' if number else 'intro.html'
+    assert f'({PUBLIC_URL}/{route})' in guide, route
+    chapter,=[node for node in discovery_graph(route) if node['@type']=='Chapter']
+    assert (chapter['name'],chapter['url'],chapter['inLanguage'])==(section['title'],f'{PUBLIC_URL}/{route}','or'), route
+graph=discovery_graph('listen.html')
+listing,=[node for node in graph if node['@type']=='ItemList']
+recordings={node['@id']:node for node in graph if node['@type']=='AudioObject'}
+assert len(recordings)==listing['numberOfItems']==len(listing['itemListElement'])==len(catalog)
+for position,(entry,track) in enumerate(zip(listing['itemListElement'],catalog),1):
+    obj=recordings[entry['item']['@id']]
+    assert entry['position']==position and obj['contentUrl']==PUBLIC_URL+'/'+track['src'], track['id']
+    assert obj['inLanguage']==('en' if track['id'] in ('welcome','closing') else 'or'), track['id']
 for track in catalog:
     if track['id']=='closing':
         assert track['reading_route']=='back-cover.html', 'Closing should return to the back cover'

@@ -19,7 +19,7 @@ Do not silently choose between contradictory current documents. Resolve them aga
 ## 2. Identity and editorial integrity
 
 - This is an Odia poetry collection by Pravakar Satapathy, written during his involvement in politics. It is a literary book site, not a journal or a technology showcase.
-- The approved book contains the opening prose, ସିଂହଦ୍ଵାର, and 68 numbered poems. Preserve their identity, order, wording, stanza structure and meaningful punctuation. Do not silently correct dialect or unusual words.
+- The approved book contains the opening prose, ସିଂହଦ୍ୱାର, and 68 numbered poems. Preserve their identity, order, wording, stanza structure and meaningful punctuation. Do not silently correct dialect or unusual words.
 - `site/dist/book.js` is the Odia source input. Apply authorized corrections there and rebuild all dependent views. Check affected translations and audio offsets when the source changes; do not silently certify old reviews against new text.
 - Home-page extracts must match the source. English illustration narratives interpret artwork; they are not poem translations. Do not insert explanatory prose, invented imagery or morals into a translated poem.
 - Keep the poet's name and book title on the cover. Avoid repeating the title in adjacent cover narrative. No PDF/recovery references, AI-generation labels or unsolicited acknowledgements on reader-facing pages. The user-requested design/edition credit to Ahimanikya Satapathy belongs once in Our Story, separate from the poet’s authorship. Preserve internal provenance and required asset/font licences.
@@ -32,7 +32,7 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Home | Rich introduction to the book and poet, exact extracts and English image narratives. One primary opening reading action. Cover image opens Poems. Closing invitation offers Read the book, Listen to the audiobook and Browse all poems. |
 | Poems (`contents.html`) | Opening-line catalogue for this single book. No search field, search prompt or section count. Bookmark icon opens saved places. Visible label is Poems; preserve the existing address. |
 | Standalone poem | Permanent shareable page with selectable verse, companion artwork/narrative and an “In the book” panel with illustrated and quiet entry. Compact single-line page tools; no page text-size control. No footer previous/next navigation. |
-| ସିଂହଦ୍ଵାର (`intro.html`) | Full opening prose, paginated where needed for comfortable reading. Do not restore the English “Introduction” heading beside its Odia title. |
+| ସିଂହଦ୍ୱାର (`intro.html`) | Full opening prose, paginated where needed for comfortable reading. Do not restore the English “Introduction” heading beside its Odia title. |
 | Book reader | One paginated reader with Illustrated and Quiet settings, same source and saved-place model. |
 | Our Story | Family purpose, wider Poem Without Borders project/story, and one edition/design credit to Ahimanikya Satapathy. Shared footer entry; not part of the book sequence. |
 | Suggested reading path | Compact thematic sequence within `contents.html#reading-path`, linked from a small Home invitation. No separate illustrated guide. Editorial prompts stay separate from titles/verse; contextual continuation stays outside the book reader. |
@@ -97,6 +97,7 @@ Preserve established routes, incoming anchors and shared links. The cover is an 
 - Use absolute public HTTPS image addresses, correct type/dimensions and meaningful alternative text. Preserve stable canonical routes and selected language in reader/share navigation. Do not expose private previews or review notes through metadata, sitemaps or release artifacts.
 - All controls work with keyboard and have accessible names, including icon-only controls. Keep visible focus, adequate contrast, useful status messages and readable enlarged text. Decorative art is hidden from assistive technology.
 - Core source text remains available when enhancement scripts fail. Test empty/loading/error states when changing services. A social platform's cached preview and a physical-device walkthrough are separate from automated site checks.
+- Generate the public reading guide at `/llms.txt`, plain-text editions of released translations and structured book, author, section and recording metadata from the published edition. Keep the 80 canonical pages in the sitemap and preserve the Google Search Console ownership file verbatim outside that list.
 
 ## 9. Implementation and release discipline
 

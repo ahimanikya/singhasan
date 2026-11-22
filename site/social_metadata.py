@@ -6,9 +6,9 @@ from artwork import image_asset
 from our_story import ROUTE as STORY_ROUTE, DESCRIPTION as STORY_DESCRIPTION
 from literary_record import ROUTE as LITERARY_ROUTE, DESCRIPTION as LITERARY_DESCRIPTION
 from posts_archive import ROUTE as POSTS_ROUTE, DESCRIPTION as POSTS_DESCRIPTION
+from discovery import PUBLIC_URL, structured_markup
 
 ROOT=Path(__file__).resolve().parent
-PUBLIC_URL='https://singhasan.kabitawithoutborders.org'
 COVER='assets/covers/singhasan-anek-2026-10-04.png'
 PORTRAIT=image_asset('assets/writers/41-earth-voice-v1.png')
 
@@ -44,7 +44,7 @@ def page_details(route,chapters,illustrations):
         'read-along.html':('Listen to Singhasan in Odia and follow the words through the book.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'),
     }.get(route,('Singhasan, an Odia poetry collection by Pravakar Satapathy. Read the illustrated book or switch to Quiet mode.','ସିଂହାସନ — ପ୍ରଭାକର ଶତପଥୀ · Singhasan book cover'))
 
-def sharing_metadata(route,title,chapters,illustrations):
+def sharing_metadata(route,title,chapters,illustrations,*,book=None,tracks=None):
     manifest=json.loads((ROOT/'social-images.json').read_text())
     image=manifest[page_image(route)]
     canonical=PUBLIC_URL+('/' if route=='index.html' else '/'+route)
@@ -57,6 +57,10 @@ def sharing_metadata(route,title,chapters,illustrations):
     twitter={'twitter:card':'summary_large_image','twitter:title':title,
              'twitter:description':description,'twitter:image':preview,'twitter:image:alt':alt}
     metadata=f'<link rel="canonical" href="{canonical}">'
+    if route=='contents.html':
+        metadata+=f'<link rel="alternate" type="text/plain" href="{PUBLIC_URL}/llms.txt" title="Singhasan reading guide">'
     for attribute,values in [('property',tags),('name',twitter)]:
         metadata+=''.join(f'<meta {attribute}="{key}" content="{escape(str(value),quote=True)}">' for key,value in values.items())
+    if book is not None and tracks is not None:
+        metadata+=structured_markup(route,title,book,tracks)
     return metadata,description

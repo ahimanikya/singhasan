@@ -14,6 +14,7 @@ from audio_edition import render_audio
 from artwork import image_asset, resolve_artwork
 from progressive_images import enhance_images
 from social_metadata import sharing_metadata
+from discovery import PUBLIC_URL, public_routes, llms_text, translation_readings, write_translation_readings
 ROOT=Path(__file__).resolve().parent
 DIST=ROOT/'dist'
 book=json.loads((DIST/'book.js').read_text().removeprefix('window.BOOK = ').strip().removesuffix(';'))
@@ -215,17 +216,20 @@ back_body=f'''<section class="book-cover-route"><figure class="bound-cover bound
 (DIST/POSTS_ROUTE).write_text(shell(POSTS_TITLE,render_posts_archive(),'posts-archive-page'))
 
 # Public address and preview metadata are generated alongside every page.
-PUBLIC_URL='https://singhasan.kabitawithoutborders.org'
-public_pages=sorted(DIST.glob('*.html'))
+public_pages=[DIST/route for route in public_routes(chapters)]
+discovery_tracks=json.loads((ROOT/'audio-edition.json').read_text())['tracks']
 for page in public_pages:
     content=page.read_text()
     page_title=re.search(r'<title>(.*?)</title>',content).group(1)
     canonical=PUBLIC_URL+('/' if page.name=='index.html' else '/'+page.name)
-    metadata,description=sharing_metadata(page.name,unescape(page_title),chapters,unique_art)
+    metadata,description=sharing_metadata(page.name,unescape(page_title),chapters,unique_art,book=book,tracks=discovery_tracks)
     content=re.sub(r'<meta name="description" content="[^"]*">',lambda _:f'<meta name="description" content="{e(description,quote=True)}">',content)
     page.write_text(content.replace('</head>',metadata+'</head>'))
 (DIST/'CNAME').write_text('singhasan.kabitawithoutborders.org\n')
 (DIST/'.nojekyll').touch()
+reading_copies=translation_readings(book,languages,translations)
+write_translation_readings(DIST/'readings',reading_copies)
+(DIST/'llms.txt').write_text(llms_text(book,discovery_tracks,reading_copies,languages),encoding='utf-8')
 (DIST/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+PUBLIC_URL+'/sitemap.xml\n')
 urls=''.join('<url><loc>'+PUBLIC_URL+('/' if p.name=='index.html' else '/'+p.name)+'</loc></url>' for p in public_pages)
 (DIST/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls+'</urlset>\n')
