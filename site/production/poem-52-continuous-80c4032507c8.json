@@ -1,0 +1,40 @@
+{
+  "source_title": "କବିତା ୫୨",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "41ac5c042f57e44ceab589b285ffb52709139bf287dd98bdd3df8ab60f01064b",
+  "source_stanzas_sha256": "b5ece3242b2803ee9b81de7b34f2951aabbf06073fabb1c45dea8d627210763d",
+  "byte_length": 1027701,
+  "audio_sha256": "80c4032507c83e7e13dbfb9f6ce3695642ef11b39f2b1289d798c82e62b1efbb",
+  "sample_rate": 44100,
+  "samples": 1615623,
+  "decoded_pcm_sha256": "1f3f8e5a61595f16e0b86fc61e91ef6d44d57afa3168a6bda98baf9b04b7e647",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Single continuous title and complete poem with quiet instrumental accompaniment",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "24030b98e7420694aa053c63fa036e27113bc5b9d1561a1afa3f9fa700a77d5d",
+  "narration_sha256": "24030b98e7420694aa053c63fa036e27113bc5b9d1561a1afa3f9fa700a77d5d",
+  "submitted_script_sha256": "a5d7e89b22c00111e80e1fafcc468d056890d3d81ca90569550b7f2f136b9b64",
+  "canonical_script_sha256": "a5d7e89b22c00111e80e1fafcc468d056890d3d81ca90569550b7f2f136b9b64",
+  "prompt_variation": null,
+  "spoken_title": "ସିଂହାସନ ବାଉନ।",
+  "single_take": true,
+  "title_and_first_stanza_single_take": true,
+  "generated_passage_joins": 0,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.88,
+  "boundary_adjustment_applied": true,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -21.999999660277027
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation."
+}

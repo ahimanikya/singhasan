@@ -1,0 +1,38 @@
+{
+  "source_title": "କବିତା ୩୯",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "8e2b0503f66a309045a8dd44fb81aa0b826b48a0989345c52fe91fef8ed7d753",
+  "source_stanzas_sha256": "8545966eb0091e19518d880937a85f81962cc474b8440b959ae85213a099d427",
+  "byte_length": 1291746,
+  "audio_sha256": "b6c9703cc1f9c7615d99a8fd376907c7ea13ff9b2f635f9bae01c5864cfbc25d",
+  "sample_rate": 44100,
+  "samples": 2032023,
+  "decoded_pcm_sha256": "06c31e177a6d7b22340f7ea55e53269dc5ad1a1fda4117aa30201c98344ce0d3",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Single continuous title and complete poem with quiet instrumental accompaniment",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "f95045e993d6f869a9a312da5e97e0a5f931814a315cc40b87e44ef6c2c21fda",
+  "narration_sha256": "f95045e993d6f869a9a312da5e97e0a5f931814a315cc40b87e44ef6c2c21fda",
+  "submitted_script_sha256": "0b1b49e668bedaa01e98bc408fa2725420270d93662c03f44ba7a9ccb03d8f2d",
+  "canonical_script_sha256": "0b1b49e668bedaa01e98bc408fa2725420270d93662c03f44ba7a9ccb03d8f2d",
+  "prompt_variation": null,
+  "spoken_title": "ସିଂହାସନ ଅଣଚାଳିଶି।",
+  "single_take": true,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.88,
+  "boundary_adjustment_applied": false,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -22.00000019006632
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation."
+}

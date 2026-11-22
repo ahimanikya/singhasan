@@ -1,0 +1,74 @@
+{
+  "source_title": "କବିତା ୫୦",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "7235dd91bb47587d1d995fb4a4674d0b27c7bc8a25219acab6f77377497829fd",
+  "source_stanzas_sha256": "e82fd45cad4cada7cf729a628522920a29a3ffdc7a4b164ebfa851c5463fd4b8",
+  "byte_length": 5213666,
+  "audio_sha256": "a35e5fe51a6875a5dba14ad4b70bc9a697d80cf8ba5b05c46a1690811e275be6",
+  "sample_rate": 44100,
+  "samples": 8208186,
+  "decoded_pcm_sha256": "162f424e69b192db7a89553487ce423bf51293022708a411ec602cd72aa2da37",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Complete reading assembled from two generated passages; title and first stanza share one take",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "6447cb892acfca80c2fe6de309563fcf78f464b0d75f69d87b518c3aa4b0b52a",
+  "narration_sha256": "6447cb892acfca80c2fe6de309563fcf78f464b0d75f69d87b518c3aa4b0b52a",
+  "submitted_script_sha256": "5d9185dd97b286a82555b1de033314207818a5c8f5972634dca58902c7abf11a",
+  "canonical_script_sha256": "5d9185dd97b286a82555b1de033314207818a5c8f5972634dca58902c7abf11a",
+  "prompt_variation": null,
+  "spoken_title": "ସିଂହାସନ ପଚାଶ।",
+  "single_take": false,
+  "title_and_first_stanza_single_take": true,
+  "generated_passage_joins": 1,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.82,
+  "boundary_adjustment_applied": false,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -21.99999987515926
+  },
+  "known_acoustic_uncertainties": [
+    {
+      "line": 10,
+      "text": "ହେଃ,",
+      "start": 23.86,
+      "end": 24.04,
+      "finding": "The exact pronunciation and timing of this expressive interjection are unverified. Its forced cue falls in a quiet interval; a separate brief vocal event occurs in the phrase gap. The original low-confidence cue and source text are retained, with only this highlight suppressed. Following word highlights continue normally. Neither a missing word nor a verbatim phonetic recovery is asserted.",
+      "raw_recording_evidence": {
+        "timebase": "Seconds in the selected joined recording before soft pacing",
+        "quiet_forced_cue_start": 21.56,
+        "quiet_forced_cue_end": 21.7,
+        "separate_vocal_event_start": 21.88,
+        "separate_vocal_event_end": 21.96
+      }
+    }
+  ],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation.",
+  "passage_assembly": {
+    "part_count": 2,
+    "joined_pcm_sha256": "ca2531aec15999f79e7ea2bb45617e03b8e265be9235057ed4dafe34002aa47d",
+    "join_timebase": "Original joined recording PCM samples before tempo processing; current verse cues are freshly aligned after processing.",
+    "parts": [
+      {
+        "part": "a",
+        "audio_sha256": "67f9e11f839ab71a5474023894cce4e96096d2c1064eece825a4ee9cc9c0ac2e",
+        "submitted_script_sha256": "793eec71da1e684cb6d51b4b5041ec96a562d93fba20c6f367e95cc8323d3360",
+        "source_text_sha256": "9e594896b49fd157deb63a53a1a0bef9c6fea46c5bb743a12824f81b33f2a0b9"
+      },
+      {
+        "part": "b",
+        "audio_sha256": "6924fc647f594d650903d344796ee5414bd609e7e439877b165e0f06b0a4fc5e",
+        "submitted_script_sha256": "5600054723efd8f3025144bc57a49960464c38465ab3fc279c41de858081cf04",
+        "source_text_sha256": "da4082549bea4fea323fcbeb6301f933b965a05d17f5c9743bdb87f7f23431e4"
+      }
+    ]
+  }
+}

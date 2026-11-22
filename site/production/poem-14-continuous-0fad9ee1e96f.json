@@ -1,0 +1,42 @@
+{
+  "source_title": "କବିତା ୧୪",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "8f2337eb71d4c05f6a102198b2d089775b7b52db3f850eb21283bd283d7fb440",
+  "source_stanzas_sha256": "57d07c2c3bb35dc7f35706adee0157ef49d6f92d6d7588f98473f261ce3729ad",
+  "byte_length": 1075975,
+  "audio_sha256": "0fad9ee1e96f4418931c5237f2c91c23ec80d513a5d5f0d387c53d61c4875e43",
+  "sample_rate": 44100,
+  "samples": 1691467,
+  "decoded_pcm_sha256": "cfd1db7cb58fde422be1c3cb1a22f20d7dfe11aadf047c407ebe271646b17aed",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Single continuous title and complete poem with quiet instrumental accompaniment",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "8cbfbdb555c4d388607dd88c150d5ff8fd3f191d8f8fc60a879eef3375a401b2",
+  "narration_sha256": "8cbfbdb555c4d388607dd88c150d5ff8fd3f191d8f8fc60a879eef3375a401b2",
+  "submitted_script_sha256": "253396724b77e4233c8a2a5b735de9311f55c6c427776551b0407dcaea7dae94",
+  "canonical_script_sha256": "9234e894f78fca5576f2a35b4d2c932e58a4276a2ab05ff486c157ea9b231cf7",
+  "prompt_variation": {
+    "before": "(ତାକୁ)",
+    "after": "ତାକୁ",
+    "reason": "Authorized punctuation-only delivery to retain this word audibly; canonical text unchanged."
+  },
+  "spoken_title": "ସିଂହାସନ ଚଉଦ।",
+  "single_take": true,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.94,
+  "boundary_adjustment_applied": false,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -22.000000231352352
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation."
+}

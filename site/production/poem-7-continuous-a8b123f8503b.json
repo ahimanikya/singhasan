@@ -1,0 +1,38 @@
+{
+  "source_title": "କବିତା ୭",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "fe3bd6c2150d420be1dafa2df7a57e696df8713147474fc06d9514076fdfbda2",
+  "source_stanzas_sha256": "70bd14972517f93836d164c64c12c2b40dfe461ac8450cbdc114e6d185373866",
+  "byte_length": 1437301,
+  "audio_sha256": "a8b123f8503ba30c9d2838091a8f68a558b98f29c53b9b5cfba94ee1c118eafa",
+  "sample_rate": 44100,
+  "samples": 2260443,
+  "decoded_pcm_sha256": "a69876b1b043bdc0e194bbea16016beca614e8004127e4f2df5cf5bf04a9c150",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Single continuous title and complete poem with quiet instrumental accompaniment",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "8898b89f18479669a7b693b786fcf877423b8a6831b189d06624c5da9656a469",
+  "narration_sha256": "8898b89f18479669a7b693b786fcf877423b8a6831b189d06624c5da9656a469",
+  "submitted_script_sha256": "8804f75f9f36ad981651f1cf21a8a12304d735a7ca6af830bbcdb0bcccca9cbf",
+  "canonical_script_sha256": "8804f75f9f36ad981651f1cf21a8a12304d735a7ca6af830bbcdb0bcccca9cbf",
+  "prompt_variation": null,
+  "spoken_title": "ସିଂହାସନ ସାତ।",
+  "single_take": true,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.9,
+  "boundary_adjustment_applied": true,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -21.99999982540846
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation."
+}

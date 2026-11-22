@@ -3,519 +3,527 @@
   "id": "poem-33",
   "section": 33,
   "language": "or",
-  "audioSha256": "f04b2915acf8ebc8e6900a2f97a866b1b5d0297964e90b5364ca55cf0ed3dbf9",
+  "audioSha256": "576397cee14fea6e0b50e05c92c250406edb8b40519465f4906479f1385df399",
   "textSha256": "dd108f1d59a2b2a271043065c8c94f667a0d60a0711abfb93c55ceb0bbfa979a",
-  "method": "Fresh MMS_FA acoustic forced alignment of delivered MP3; uroman ori; 20s inference chunks with4s context,20ms frames. Exact corrected source anchors; audio time begins at decoded MP3 zero, no video offset.",
-  "review": "User-selected performance; machine acoustic screening only. Scores and greedy comparison do not certify fluent pronunciation or word-perfect spoken completeness.",
-  "duration": 28.664285714285715,
-  "decodedSamples": 1264095,
+  "method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "review": "Machine acoustic and technical checks; pronunciation remains subject to human listening.",
+  "duration": 30.72800453514739,
+  "decodedSamples": 1355105,
   "sampleRate": 44100,
   "wordCount": 45,
-  "meanScore": 0.9375,
+  "meanScore": 0.9391244444444443,
   "lowScoreWords": 0,
   "partialCoverage": false,
   "syncSafe": true,
-  "coverageNote": "All 17 current source lines have acoustic anchors. Machine screening is not fluent-reader certification. Low-confidence words are excluded from highlighting by the reader.",
+  "coverageNote": "All original verse source spans retained; spoken title is separate from verse anchors.",
   "omittedWordCount": 0,
   "omittedLines": [],
   "omittedWords": [],
   "sourceLineCount": 17,
-  "timeBase": "Gapless decoded delivered MP3 starts at0; no container padding, video cover delay, or earlier recording timestamps are added.",
+  "timeBase": "Seconds from gapless decoded audio start.",
   "cues": [
     {
       "line": 0,
       "offset": 0,
       "endOffset": 9,
-      "stanza": 0,
       "text": "ମହାରାଜାଂକ",
       "romanized": "mahaaraajaamka",
-      "start": 0.22,
-      "end": 1.0,
-      "score": 0.8369
+      "start": 2.46,
+      "end": 3.2,
+      "score": 0.9172,
+      "stanza": 0
     },
     {
       "line": 0,
       "offset": 10,
       "endOffset": 14,
-      "stanza": 0,
       "text": "ଛିଂକ",
       "romanized": "chimka",
-      "start": 1.08,
-      "end": 1.48,
-      "score": 0.8241
+      "start": 3.3,
+      "end": 3.74,
+      "score": 0.8588,
+      "stanza": 0
     },
     {
       "line": 0,
       "offset": 15,
       "endOffset": 19,
-      "stanza": 0,
       "text": "ପାଇଁ",
       "romanized": "paaim",
-      "start": 1.54,
-      "end": 1.78,
-      "score": 0.9592
+      "start": 3.8,
+      "end": 4.04,
+      "score": 0.987,
+      "stanza": 0
     },
     {
       "line": 0,
       "offset": 20,
       "endOffset": 23,
-      "stanza": 0,
       "text": "ନାସ",
       "romanized": "naasa",
-      "start": 1.86,
-      "end": 2.2,
-      "score": 0.9948
+      "start": 4.08,
+      "end": 4.38,
+      "score": 0.9817,
+      "stanza": 0
     },
     {
       "line": 1,
       "offset": 0,
       "endOffset": 10,
-      "stanza": 0,
       "text": "ରାଣୀହଂସପୁର",
       "romanized": "raanniihamsapura",
-      "start": 2.94,
-      "end": 3.84,
-      "score": 0.8739
+      "start": 4.88,
+      "end": 5.78,
+      "score": 0.7975,
+      "stanza": 0
     },
     {
       "line": 1,
       "offset": 11,
       "endOffset": 15,
-      "stanza": 0,
       "text": "ପାଇଁ",
       "romanized": "paaim",
-      "start": 3.88,
-      "end": 4.1,
-      "score": 0.9241
+      "start": 5.84,
+      "end": 6.06,
+      "score": 0.9982,
+      "stanza": 0
     },
     {
       "line": 2,
       "offset": 0,
       "endOffset": 3,
-      "stanza": 0,
       "text": "ଅତର",
       "romanized": "atara",
-      "start": 4.3,
-      "end": 4.7,
-      "score": 0.9904
+      "start": 6.2,
+      "end": 6.6,
+      "score": 0.9924,
+      "stanza": 0
     },
     {
       "line": 2,
       "offset": 4,
       "endOffset": 5,
-      "stanza": 0,
       "text": "ଓ",
       "romanized": "o",
-      "start": 4.84,
-      "end": 4.86,
-      "score": 0.9916
+      "start": 6.74,
+      "end": 6.76,
+      "score": 0.993,
+      "stanza": 0
     },
     {
       "line": 2,
       "offset": 6,
       "endOffset": 9,
-      "stanza": 0,
       "text": "ଝିନ",
       "romanized": "jhina",
-      "start": 4.96,
-      "end": 5.38,
-      "score": 0.9405
+      "start": 6.9,
+      "end": 7.26,
+      "score": 0.8149,
+      "stanza": 0
     },
     {
       "line": 2,
       "offset": 10,
       "endOffset": 19,
-      "stanza": 0,
       "text": "ଅଂତର୍ବାସ,",
       "romanized": "amtarbaasa",
-      "start": 5.42,
-      "end": 6.14,
-      "score": 0.8861
+      "start": 7.32,
+      "end": 8.02,
+      "score": 0.8748,
+      "stanza": 0
     },
     {
       "line": 3,
       "offset": 0,
       "endOffset": 2,
-      "stanza": 0,
       "text": "ଆଉ",
       "romanized": "aau",
-      "start": 6.68,
-      "end": 6.82,
-      "score": 0.9988
+      "start": 8.66,
+      "end": 8.8,
+      "score": 0.9991,
+      "stanza": 0
     },
     {
       "line": 3,
       "offset": 3,
       "endOffset": 14,
-      "stanza": 0,
       "text": "ମହାମଂତ୍ରୀଂକ",
       "romanized": "mahaamamtriimka",
-      "start": 6.9,
-      "end": 7.7,
-      "score": 0.7978
+      "start": 8.86,
+      "end": 9.7,
+      "score": 0.7977,
+      "stanza": 0
     },
     {
       "line": 4,
       "offset": 0,
       "endOffset": 8,
-      "stanza": 0,
       "text": "ବ୍ରାହ୍ମଣ",
       "romanized": "braahmanna",
-      "start": 7.8,
-      "end": 8.3,
-      "score": 0.853
+      "start": 9.8,
+      "end": 10.28,
+      "score": 0.8167,
+      "stanza": 0
     },
     {
       "line": 4,
       "offset": 9,
       "endOffset": 16,
-      "stanza": 0,
       "text": "ମର୍ଯାଦା",
       "romanized": "maryaadaa",
-      "start": 8.34,
-      "end": 8.82,
-      "score": 0.9536
+      "start": 10.32,
+      "end": 10.8,
+      "score": 0.9555,
+      "stanza": 0
     },
     {
       "line": 4,
       "offset": 17,
       "endOffset": 21,
-      "stanza": 0,
       "text": "ପାଇଁ",
       "romanized": "paaim",
-      "start": 8.84,
-      "end": 9.06,
-      "score": 0.9979
+      "start": 10.82,
+      "end": 11.06,
+      "score": 0.9978,
+      "stanza": 0
     },
     {
       "line": 4,
       "offset": 22,
       "endOffset": 28,
-      "stanza": 0,
       "text": "ବିଦାକି",
       "romanized": "bidaaki",
-      "start": 9.48,
-      "end": 9.88,
-      "score": 0.9615
+      "start": 11.22,
+      "end": 11.62,
+      "score": 0.9371,
+      "stanza": 0
     },
     {
       "line": 4,
       "offset": 29,
       "endOffset": 36,
-      "stanza": 0,
       "text": "ପାଇଁ(?)",
       "romanized": "paaim",
-      "start": 9.94,
-      "end": 10.18,
-      "score": 0.9971
+      "start": 11.7,
+      "end": 11.94,
+      "score": 0.9975,
+      "stanza": 0
     },
     {
       "line": 5,
       "offset": 0,
       "endOffset": 3,
-      "stanza": 0,
       "text": "ଗଣି",
       "romanized": "ganni",
-      "start": 10.26,
-      "end": 10.52,
-      "score": 0.9884
+      "start": 12.46,
+      "end": 12.7,
+      "score": 0.9809,
+      "stanza": 0
     },
     {
       "line": 5,
       "offset": 4,
       "endOffset": 11,
-      "stanza": 0,
       "text": "ହେଉଥିବା",
       "romanized": "heuthibaa",
-      "start": 10.6,
-      "end": 11.04,
-      "score": 0.9881
+      "start": 12.78,
+      "end": 13.24,
+      "score": 0.9922,
+      "stanza": 0
     },
     {
       "line": 5,
       "offset": 12,
       "endOffset": 17,
-      "stanza": 0,
       "text": "ଗୋଟାଏ",
       "romanized": "gottaae",
-      "start": 11.08,
-      "end": 11.44,
-      "score": 0.9809
+      "start": 13.28,
+      "end": 13.66,
+      "score": 0.9814,
+      "stanza": 0
     },
     {
       "line": 6,
       "offset": 0,
       "endOffset": 8,
-      "stanza": 0,
       "text": "ମୋଟାଅଂକର",
       "romanized": "mottaaamkara",
-      "start": 11.88,
-      "end": 12.66,
-      "score": 0.8997
+      "start": 13.78,
+      "end": 14.52,
+      "score": 0.8756,
+      "stanza": 0
     },
     {
       "line": 6,
       "offset": 9,
       "endOffset": 17,
-      "stanza": 0,
       "text": "ପାରିତୋଷ!",
       "romanized": "paaritossa",
-      "start": 12.72,
-      "end": 13.28,
-      "score": 0.89
+      "start": 14.58,
+      "end": 15.1,
+      "score": 0.8771,
+      "stanza": 0
     },
     {
       "line": 7,
       "offset": 0,
       "endOffset": 5,
-      "stanza": 1,
       "text": "ବାସ୍,",
       "romanized": "baas",
-      "start": 14.18,
-      "end": 14.46,
-      "score": 0.6415
+      "start": 15.88,
+      "end": 16.16,
+      "score": 0.7709,
+      "stanza": 1
     },
     {
       "line": 8,
       "offset": 0,
       "endOffset": 5,
-      "stanza": 1,
       "text": "ହୀରାର",
       "romanized": "hiiraara",
-      "start": 15.14,
-      "end": 15.56,
-      "score": 0.8594
+      "start": 16.84,
+      "end": 17.24,
+      "score": 0.8923,
+      "stanza": 1
     },
     {
       "line": 8,
       "offset": 6,
       "endOffset": 13,
-      "stanza": 1,
       "text": "ମୂଲ୍ୟରେ",
       "romanized": "muulyare",
-      "start": 15.62,
-      "end": 16.04,
-      "score": 0.9937
+      "start": 17.3,
+      "end": 17.72,
+      "score": 0.9966,
+      "stanza": 1
     },
     {
       "line": 9,
       "offset": 0,
       "endOffset": 4,
-      "stanza": 1,
       "text": "ସଉଦା",
       "romanized": "saudaa",
-      "start": 16.16,
-      "end": 16.56,
-      "score": 0.995
+      "start": 17.8,
+      "end": 18.24,
+      "score": 0.9468,
+      "stanza": 1
     },
     {
       "line": 9,
       "offset": 5,
       "endOffset": 11,
-      "stanza": 1,
       "text": "ହୋଇଯିବ",
       "romanized": "hoiyiba",
-      "start": 16.58,
-      "end": 16.98,
-      "score": 0.9841
+      "start": 18.26,
+      "end": 18.64,
+      "score": 0.9949,
+      "stanza": 1
     },
     {
       "line": 10,
       "offset": 0,
       "endOffset": 6,
-      "stanza": 1,
       "text": "ଜାହାଜେ",
       "romanized": "jaahaaje",
-      "start": 17.06,
-      "end": 17.44,
-      "score": 0.9397
+      "start": 18.74,
+      "end": 19.14,
+      "score": 0.9033,
+      "stanza": 1
     },
     {
       "line": 10,
       "offset": 7,
       "endOffset": 13,
-      "stanza": 1,
       "text": "ଅଂଗାର,",
       "romanized": "amgaara",
-      "start": 17.52,
-      "end": 17.96,
-      "score": 0.8615
+      "start": 19.2,
+      "end": 19.64,
+      "score": 0.8264,
+      "stanza": 1
     },
     {
       "line": 11,
       "offset": 0,
       "endOffset": 4,
-      "stanza": 1,
       "text": "ରାଜା",
       "romanized": "raajaa",
-      "start": 18.54,
-      "end": 18.86,
-      "score": 0.905
+      "start": 20.24,
+      "end": 20.54,
+      "score": 0.993,
+      "stanza": 1
     },
     {
       "line": 11,
       "offset": 5,
       "endOffset": 11,
-      "stanza": 1,
       "text": "ମଂତ୍ରୀ",
       "romanized": "mamtrii",
-      "start": 18.88,
-      "end": 19.24,
-      "score": 0.7558
+      "start": 20.58,
+      "end": 20.96,
+      "score": 0.763,
+      "stanza": 1
     },
     {
       "line": 11,
       "offset": 12,
       "endOffset": 15,
-      "stanza": 1,
       "text": "ଦେଶ",
       "romanized": "desha",
-      "start": 19.28,
-      "end": 19.52,
-      "score": 0.9902
+      "start": 20.98,
+      "end": 21.22,
+      "score": 0.9898,
+      "stanza": 1
     },
     {
       "line": 12,
       "offset": 0,
       "endOffset": 4,
-      "stanza": 1,
       "text": "କେହି",
       "romanized": "kehi",
-      "start": 19.72,
-      "end": 19.94,
-      "score": 0.9979
+      "start": 21.42,
+      "end": 21.66,
+      "score": 0.9982,
+      "stanza": 1
     },
     {
       "line": 12,
       "offset": 5,
       "endOffset": 9,
-      "stanza": 1,
       "text": "ଜାଣି",
       "romanized": "jaanni",
-      "start": 20.0,
-      "end": 20.22,
-      "score": 0.9714
+      "start": 21.72,
+      "end": 21.94,
+      "score": 0.9678,
+      "stanza": 1
     },
     {
       "line": 12,
       "offset": 10,
       "endOffset": 11,
-      "stanza": 1,
       "text": "ନ",
       "romanized": "na",
-      "start": 20.28,
-      "end": 20.34,
-      "score": 0.9824
+      "start": 22.0,
+      "end": 22.06,
+      "score": 0.9903,
+      "stanza": 1
     },
     {
       "line": 12,
       "offset": 12,
       "endOffset": 16,
-      "stanza": 1,
       "text": "ଥିବେ",
       "romanized": "thibe",
-      "start": 20.4,
-      "end": 20.58,
-      "score": 0.9969
+      "start": 22.12,
+      "end": 22.32,
+      "score": 0.996,
+      "stanza": 1
     },
     {
       "line": 13,
       "offset": 0,
       "endOffset": 3,
-      "stanza": 1,
       "text": "ଖସି",
       "romanized": "khasi",
-      "start": 20.64,
-      "end": 20.9,
-      "score": 0.9864
+      "start": 22.4,
+      "end": 22.7,
+      "score": 0.985,
+      "stanza": 1
     },
     {
       "line": 13,
       "offset": 4,
       "endOffset": 11,
-      "stanza": 1,
       "text": "ଯାଇଥିବା",
       "romanized": "yaaithibaa",
-      "start": 20.96,
-      "end": 21.4,
-      "score": 0.9686
+      "start": 22.76,
+      "end": 23.2,
+      "score": 0.9841,
+      "stanza": 1
     },
     {
       "line": 13,
       "offset": 12,
       "endOffset": 17,
-      "stanza": 1,
       "text": "ଗାଦି,",
       "romanized": "gaadi",
-      "start": 21.42,
-      "end": 21.68,
-      "score": 0.9928
+      "start": 23.24,
+      "end": 23.52,
+      "score": 0.9928,
+      "stanza": 1
     },
     {
       "line": 14,
       "offset": 0,
       "endOffset": 6,
-      "stanza": 1,
       "text": "ବିଦେଶୀ",
       "romanized": "bideshii",
-      "start": 22.32,
-      "end": 22.74,
-      "score": 0.9365
+      "start": 24.2,
+      "end": 24.64,
+      "score": 0.9844,
+      "stanza": 1
     },
     {
       "line": 14,
       "offset": 7,
       "endOffset": 11,
-      "stanza": 1,
       "text": "ପଲଟଣ",
       "romanized": "palattanna",
-      "start": 22.76,
-      "end": 23.26,
-      "score": 0.9946
+      "start": 24.68,
+      "end": 25.18,
+      "score": 0.9694,
+      "stanza": 1
     },
     {
       "line": 15,
       "offset": 0,
       "endOffset": 3,
-      "stanza": 1,
       "text": "ଜଗି",
       "romanized": "jagi",
-      "start": 23.68,
-      "end": 23.94,
-      "score": 0.9819
+      "start": 25.24,
+      "end": 25.48,
+      "score": 0.9859,
+      "stanza": 1
     },
     {
       "line": 15,
       "offset": 4,
       "endOffset": 11,
-      "stanza": 1,
       "text": "ବସିଥିବେ",
       "romanized": "basithibe",
-      "start": 24.0,
-      "end": 24.48,
-      "score": 0.9852
+      "start": 25.52,
+      "end": 26.02,
+      "score": 0.9938,
+      "stanza": 1
     },
     {
       "line": 16,
       "offset": 0,
       "endOffset": 8,
-      "stanza": 1,
       "text": "ସିଂହାସନର",
       "romanized": "simhaasanara",
-      "start": 24.58,
-      "end": 25.36,
-      "score": 0.9589
+      "start": 26.4,
+      "end": 27.22,
+      "score": 0.9808,
+      "stanza": 1
     },
     {
       "line": 16,
       "offset": 9,
       "endOffset": 14,
-      "stanza": 1,
       "text": "ଚଉହଦି",
       "romanized": "cauhadi",
-      "start": 25.42,
-      "end": 25.9,
-      "score": 0.9808
+      "start": 27.3,
+      "end": 27.8,
+      "score": 0.931,
+      "stanza": 1
     }
-  ]
+  ],
+  "knownUncertainties": [],
+  "spokenTitle": {
+    "text": "ସିଂହାସନ ତେତିଶି।",
+    "start": 0.26,
+    "end": 1.56,
+    "excludedFromVerseAnchors": true
+  },
+  "titleToVersePause": 0.9
 }

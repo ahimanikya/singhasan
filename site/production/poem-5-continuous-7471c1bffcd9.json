@@ -1,0 +1,46 @@
+{
+  "source_title": "କବିତା ୫",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "1b8f98940bd1d90cd8a36e6f30f48bdc597724551b273993e8ddd16df32cb7e5",
+  "source_stanzas_sha256": "8162d770b36ed708c2f160d8680086d63f78aaaac27fa326b4baee1ec3f4b62d",
+  "byte_length": 1511175,
+  "audio_sha256": "7471c1bffcd9d9bd806556ff3de4786a199a79fb4de6ab287286ac0eea3ce324",
+  "sample_rate": 44100,
+  "samples": 2377687,
+  "decoded_pcm_sha256": "e8d22d59887514975feebf72ab9fe13766e0694a42c1cc6e03971da4deb5b21a",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Single continuous title and complete poem with quiet instrumental accompaniment",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "a5d15d25948e254e0805f03d6b7c3fc2b3d99a78e675f8b6798eb988a61afddf",
+  "narration_sha256": "a5d15d25948e254e0805f03d6b7c3fc2b3d99a78e675f8b6798eb988a61afddf",
+  "submitted_script_sha256": "ac83043f40a4b22972f89bbbbe4f0b62626821015d4fa53152d581cd4fe51412",
+  "canonical_script_sha256": "ac83043f40a4b22972f89bbbbe4f0b62626821015d4fa53152d581cd4fe51412",
+  "prompt_variation": null,
+  "spoken_title": "ସିଂହାସନ ପାଞ୍ଚ।",
+  "single_take": true,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 1.02,
+  "boundary_adjustment_applied": false,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -21.999999828181657
+  },
+  "known_acoustic_uncertainties": [
+    {
+      "line": 12,
+      "text": "ଓଃ!",
+      "start": 18.1,
+      "end": 18.2,
+      "finding": "Independent raw acoustic screening recovers an expressive o vowel at the corresponding time. Exact visarga/interjection alignment remains weak; its original low-confidence cue is retained and the reader suppresses this single highlight. Subsequent highlights resume normally. No missing word is asserted."
+    }
+  ],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation."
+}

@@ -1,0 +1,59 @@
+{
+  "source_title": "କବିତା ୬୫",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "f5be1f93136c3177ac3a21fc1438fb8d6c9c60127c3a08c5f019ade376000181",
+  "source_stanzas_sha256": "1afcf05abc7951c78ea4a130d76fe0d3933989c226ccce3ad22a7c565cf619cd",
+  "byte_length": 4568546,
+  "audio_sha256": "12488b6c38ab2ecf9787fed08634140c4538f3eaece59471f3cd9a46e846c28b",
+  "sample_rate": 44100,
+  "samples": 7192307,
+  "decoded_pcm_sha256": "7ad7d81ea1b5c76e3ed79318dc98a6a2334e2aec21faea5b0eb812798810390d",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Complete reading assembled from two generated passages; title and first stanza share one take",
+  "sync_method": "Fresh recording-specific MMS_FA alignment on this exact decoded MP3; full-title/body greedy screening and bounded focused acoustic rechecks. No proportional timing.",
+  "narration_audio_sha256": "1cc1e2a41fbebeb3c492edffb7cada84545370363883a1b97f81d69198fef596",
+  "narration_sha256": "1cc1e2a41fbebeb3c492edffb7cada84545370363883a1b97f81d69198fef596",
+  "submitted_script_sha256": "7332d924264dafa2f9486fc1e1326c07a823f6d7b7ca03299104105947d2e48e",
+  "canonical_script_sha256": "7332d924264dafa2f9486fc1e1326c07a823f6d7b7ca03299104105947d2e48e",
+  "prompt_variation": null,
+  "spoken_title": "ସିଂହାସନ ପଞ୍ଚଷଠି।",
+  "single_take": false,
+  "title_and_first_stanza_single_take": true,
+  "generated_passage_joins": 1,
+  "internal_voiced_splices": 0,
+  "title_to_verse_pause_seconds": 0.92,
+  "boundary_adjustment_applied": true,
+  "processing": {
+    "pace": 0.9,
+    "voice_treatment": "Light hiss/de-ess followed by softened treble and gentle compression.",
+    "encoding": "224 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "Continuous quiet instrumental with smooth crossfaded loops and soft ending.",
+    "music_below_active_voice_db": -21.999999977958517
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "User-authorized production; machine acoustic screening does not certify fluent pronunciation.",
+  "passage_assembly": {
+    "part_count": 2,
+    "joined_pcm_sha256": "6c373f516869b4a316367872c6862afe7959e897db75652516c57b92ae5a1a58",
+    "join_timebase": "Original joined recording PCM samples before tempo processing; current verse cues are freshly aligned after processing.",
+    "parts": [
+      {
+        "part": "a",
+        "audio_sha256": "b41b109d1344f9ae7f15297d04e01d3a0bf699106a14e76b48d44ef7af7aa94a",
+        "submitted_script_sha256": "6da0494962c26868bb7ccafb948103bbdc6644323ffd9b01cb48fd7861036608",
+        "source_text_sha256": "e4467b6cdb0075dcc45ffde60dfeee40429cebc3d4892e2d003bf2a5037357b8"
+      },
+      {
+        "part": "b",
+        "audio_sha256": "90a64ba1c2281c8c1afca79d7b05a35c4aabe329e73412558579b4570f41c236",
+        "submitted_script_sha256": "36fa25f3a84d0c8a58fb58d5cd43dbc5c629241cedb9277c67232018cd64a2fd",
+        "source_text_sha256": "59a419c926a681f55190707a6dc34c9241d22395c1df323fea00873abd7f72f6"
+      }
+    ]
+  }
+}
