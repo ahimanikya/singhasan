@@ -1,8 +1,8 @@
 {
   "author": {
-    "or": "Tuhinamshu Rath",
+    "or": "ତୁହିନାଂଶୁ ରଥ",
     "en": "Tuhinamshu Rath"
   },
-  "author_language": "en",
+  "author_language": {"or": "or", "en": "en"},
   "author_url": "https://kabitalive.com/poet-298.html"
 }

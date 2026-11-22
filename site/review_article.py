@@ -35,7 +35,7 @@ def render_review(language):
     author_name = escape(author) if author else ''
     if author_name and author_url:
         author_name = f'<a href="{escape(author_url, quote=True)}" rel="author">{author_name}</a>'
-    author_language = escape(metadata.get('author_language', language), quote=True)
+    author_language = escape(metadata.get('author_language', {}).get(language, language), quote=True)
     byline = f'<p class="review-byline" lang="{author_language}">{author_name}</p>' if author else ''
     body = []
     for block in blocks[1:]:
