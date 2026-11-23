@@ -53,13 +53,13 @@
       "id": "poem-3",
       "poem": 3,
       "label": "Poem 03",
-      "src": "assets/audio/poem-03-c2e93ddf06a2.mp3",
-      "duration_label": "0:34",
-      "duration_seconds": 33.72238095238095,
-      "review": "user-authorized-continuous-numbered-title-and-poem-with-music",
-      "sha256": "c2e93ddf06a2e7b4d1eb1392ff8afddba05a2e7b71c6207e621920a8f84b05e4",
+      "src": "assets/audio/poem-03-9d01e66988b0.mp3",
+      "duration_label": "0:35",
+      "duration_seconds": 35.2749433106576,
+      "review": "user-approved-original-title-and-earlier-reading-with-music",
+      "sha256": "9d01e66988b0ea969c2809d4c8ce66e9392eba0810d3de17a22f167f0c636bef",
       "source_provider": "ElevenLabs",
-      "source_provenance": "production/poem-3-continuous-c2e93ddf06a2.json"
+      "source_provenance": "production/poem-3-approved-9d01e66988b0.json"
     },
     {
       "id": "poem-4",

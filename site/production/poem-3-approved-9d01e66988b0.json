@@ -1,0 +1,52 @@
+{
+  "source_title": "କବିତା ୩",
+  "source_provider": "ElevenLabs",
+  "source_text_sha256": "406a31dd03f78a0d8c3cd6b3655f2525216ada414f9f9850343e25b7309b1850",
+  "source_stanzas_sha256": "ebceffa6e235171ff38ca2633be5c0c2bd86ac01219ceb782f787b07f0558866",
+  "byte_length": 1413790,
+  "audio_sha256": "9d01e66988b0ea969c2809d4c8ce66e9392eba0810d3de17a22f167f0c636bef",
+  "sample_rate": 44100,
+  "samples": 1555625,
+  "decoded_pcm_sha256": "8cb7bf370ec5d52c7d5b3a50707c393b2a7d8c5f2e94b321bbb86f6453984891",
+  "decoded_pcm_format": "f32le stereo 44100Hz",
+  "recording_kind": "Separately approved spoken title and earlier complete poem reading, joined during their natural pause with one quiet instrumental accompaniment.",
+  "single_take": false,
+  "spoken_title": "ସିଂହାସନ ତିନି।",
+  "title_to_verse_pause_seconds": 0.92,
+  "body_offset_samples": 91728,
+  "body_offset_seconds": 2.08,
+  "internal_voiced_splices": 0,
+  "narration_segments": [
+    {
+      "role": "spoken title",
+      "source_audio_sha256": "fbc74f6d45a3fc36e1ecc43f5d62e3e43833808c90d2d5db56d91c82af1154d9",
+      "source_pcm_sha256": "8cc3b7449d4534094ac37e3eb0d10a49ec213bc2ec62c437d6ba0485f6233501",
+      "kept_start_sample": 0,
+      "kept_end_sample": 91728,
+      "output_start_sample": 0
+    },
+    {
+      "role": "complete poem",
+      "source_audio_sha256": "3ebee2e58dc001a66a1553e04b373b52a3559e16d1e28c84c273e6ad176865f7",
+      "source_pcm_sha256": "9a30b6d9ddb17ea2ada288ca45d97626aebfb9ee2017ab825a7c604af2f1698c",
+      "kept_start_sample": 0,
+      "kept_end_sample": 1353647,
+      "output_start_sample": 91728
+    }
+  ],
+  "processing": {
+    "prior_voice_treatment": "Approved soft, unhurried readings with light hiss reduction and softened treble.",
+    "assembly": "Original processed title and complete body samples retained without new pitch, pace, gain or voice filtering.",
+    "encoding": "320 kbps gapless MP3, stereo 44100 Hz"
+  },
+  "sync_method": "Earlier body recording-specific acoustic cues shifted by exactly 91728 samples; original title cue retained. Fresh final-recording acoustic screening confirms the title, all 21 verse lines and natural pause.",
+  "accompaniment": {
+    "title": "Quiet Lamp of Dawn",
+    "source_provider": "ElevenLabs",
+    "source_audio_sha256": "b02672afad53d91ad2d441be328038996db4745a5daec4b60b9052b31cc97ca5",
+    "arrangement": "One continuous quiet instrumental bed, gentle opening and 2.5-second ending fade.",
+    "music_below_active_voice_db": -22.306118401226044
+  },
+  "known_acoustic_uncertainties": [],
+  "review": "Owner approved the original unshifted title and earlier reading. Independent technical review verified source retention, timing, complete text coverage and no clipping; machine acoustic screening does not certify fluent pronunciation."
+}
