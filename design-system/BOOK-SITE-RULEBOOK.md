@@ -36,7 +36,7 @@ Do not silently choose between contradictory current documents. Resolve them aga
 | Book reader | One paginated reader with Illustrated and Quiet settings, same source and saved-place model. |
 | Our Story | Family purpose, wider Poem Without Borders project/story, and one edition/design credit to Ahimanikya Satapathy. Shared footer entry; not part of the book sequence. |
 | Suggested reading path | Compact thematic sequence within `contents.html#reading-path`, linked from a small Home invitation. No separate illustrated guide. Editorial prompts stay separate from titles/verse; contextual continuation stays outside the book reader. |
-| Book review | The complete review “A Manifesto for a Free Life” in Odia and English on separate linked pages, reached from Home. Keep it outside the book sequence. Use only confirmed reviewer credits. |
+| Book review | The complete review “A Manifesto for a Free Life” in Odia and English on separate linked pages, reached from Home. Keep it outside the book sequence. Credit Tuhinamshu Rath (ତୁହିନାଂଶୁ ରଥ). |
 | Translation essay | Belongs to the main site; removed from Singhasan, including local article copies, on 3 November 2026. |
 | Listen | Existing audiobook and Listen & follow. Keep Listen accessible in the top menu and the home closing invitation. |
 | Poet | Substantial biography and portrait, linking to the separate literary record; understated links to the separate Portraits, Poetry archive and social-post carousel pages. Keep the main artistic portrait and biography on the profile; do not embed the portrait slideshow. Omit the Photographs and memories section and the two poetry-archive recitation players; preserve source assets. |

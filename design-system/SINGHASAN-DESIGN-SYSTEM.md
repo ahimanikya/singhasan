@@ -164,3 +164,7 @@ For all 68 poems, use the older “Pravakar Satpathy — Odia” voice in a soft
 ## Bilingual book review — 22 November 2026
 
 Publish the review “A Manifesto for a Free Life” in Odia and English as separate, mutually linked pages. Use the shared masthead and footer, Noto Serif Oriya for Odia prose and quotations, Source Serif 4 for English prose, and Cormorant Garamond for English display headings. Preserve verse line breaks in a responsive reading column. Home carries a restrained Review entry linking to both languages. Reuse the complete lettered cover for sharing; preserve private transcription and translation records outside public output. Credit the reviewer only when confirmed.
+
+## Bilingual book review — restored 27 November 2026
+
+The review “A Manifesto for a Free Life” has separate, mutually linked Odia and English pages. Use the shared masthead and footer, Noto Serif Oriya for Odia, Source Serif 4 for English prose, and Cormorant Garamond for English headings. Preserve verse line breaks. Home links to both languages; sharing uses the complete lettered cover. Credit ତୁହିନାଂଶୁ ରଥ in Odia and Tuhinamshu Rath in English. Keep private editorial records outside public output.

@@ -31,7 +31,7 @@ if(body.classList.contains('standalone-page')&&verse?.classList.contains('prose'
   verse.style.setProperty('--prose-shift',`${-index*stride}px`);panel.scrollLeft=0;
   previous.disabled=index===0;next.disabled=index===total-1;status.textContent=`Page ${index+1} of ${total}`;
   anchor=visibleAnchor();verse.dataset.pageLine=anchor.line;verse.dataset.pageOffset=anchor.offset;
-  panel.setAttribute('aria-label',`ସିଂହଦ୍ଵାର, page ${index+1} of ${total}`);
+  panel.setAttribute('aria-label',`ସିଂହଦ୍ୱାର, page ${index+1} of ${total}`);
   document.dispatchEvent(new Event('book-page-rendered'));
  }
  function layout(){
