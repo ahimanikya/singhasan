@@ -29,3 +29,7 @@ Reserve exact files, record actual worker IDs and input revision, parallelize on
 Keep actual task ledgers, review notes and private editorial evidence local, using `.local/persona-tasks.json` or an established private KB. They must not be committed or deployed. The public package contains reusable rules and role declarations only. Local history is not a prerequisite for using or validating a fresh clone. Existing book, privacy and publishing rules remain controlling; this framework grants no new publication, account, spending, messaging or background-automation authority.
 
 Run `python3 .github/personas/check.py --self-test` after framework changes. For site changes, also use the book-site change checklist. Configuration checks validate declarations, not actual permissions, human approval or fluent-reader review.
+
+## One working copy
+
+Use the existing canonical Singhasan project folder for all current and future chats and delegated work. Do not create another clone, worktree or snapshot working directory, or restore a retired checkout, unless the project owner explicitly requests a separate copy. Start new chats in the existing local project. Keep archived predecessor chats as historical records and continue through their canonical-folder continuations. Preserve all chat history. Coordinate concurrent edits with file reservations and sequence overlapping work in the shared folder; preserve other chats’ unfinished changes. This rule grants no publication, deletion, reset or history-rewrite authority.
